@@ -501,7 +501,7 @@ const App = {
         if (matchedMinors.length > 0) {
             html += `
                 <div class="px-3.5 py-1.5 bg-pink-50/50 dark:bg-pink-950/30 text-[10px] font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400 flex items-center gap-1.5">
-                    <i class="bi bi-bookmark-star-fill text-pink-500"></i> Minor Specializations (${matchedMinors.length})
+                    <i class="bi bi-bookmark-star-fill text-pink-500"></i> Minors (${matchedMinors.length})
                 </div>
                 ${matchedMinors.slice(0, 5).map(m => `
                     <div onclick="App.openDepartmentView('${m.parent_dept_code}'); App.closeSearchDropdown();" class="p-3 hover:bg-pink-50/70 dark:hover:bg-slate-700/70 cursor-pointer flex items-center justify-between gap-3 transition">
@@ -1309,10 +1309,10 @@ const App = {
                             </div>
                         ` : ''}
 
-                        <!-- Minor Specializations (Full Names) -->
+                        <!-- Minors (Full Names) -->
                         ${minors.length > 0 ? `
                             <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Minor Specializations:</div>
+                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Minors:</div>
                                 <div class="flex flex-wrap gap-1.5">
                                     ${minors.map(m => `
                                         <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40 shadow-2xs" title="${m.name} (${m.code})">
@@ -1613,9 +1613,6 @@ const App = {
                                             ${minor.code}
                                         </span>
                                     </div>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400">
-                                        Official FYUGP Minor Specialization under ${dept.name}
-                                    </p>
                                 </div>
                             </div>
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-800 shadow-2xs">
@@ -1636,7 +1633,7 @@ const App = {
                         <div class="flex items-center gap-2 border-b border-pink-200 dark:border-pink-900/50 pb-2">
                             <i class="bi bi-stars text-pink-600 dark:text-pink-400"></i>
                             <h4 class="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs">
-                                Minor Programmes & Specializations
+                                Minors
                             </h4>
                         </div>
                         ${minorSectionsHtml}

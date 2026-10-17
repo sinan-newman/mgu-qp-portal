@@ -108,12 +108,9 @@
                 <i class="bi bi-shield-check"></i> Official MGU-UGP / Honours (FYUGP 2024+) Question Paper Repository
             </span>
 
-            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
+            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-6">
                 Mahatma Gandhi University FYUGP Question Papers & Schemes
             </h1>
-            <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto mb-6 font-light">
-                Browse department-wise, explore Semester 1 to 8 past papers, preview PDFs in-browser, and download official evaluation schemes.
-            </p>
 
             <!-- Stats Bar -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
@@ -152,10 +149,10 @@
     <!-- Main Content Area -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-        <!-- Navigation Tabs: 1. By Department (Primary), 2. All Question Papers, 3. Saved -->
+        <!-- Navigation Tabs: 1. Department Wise (Primary), 2. All Question Papers, 3. Saved -->
         <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none">
             <button data-tab="departments" class="nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0">
-                <i class="bi bi-diagram-3"></i> By Department
+                <i class="bi bi-diagram-3"></i> Department Wise
             </button>
             <button data-tab="papers" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
                 <i class="bi bi-collection"></i> All Question Papers & Schemes
@@ -306,7 +303,7 @@
             
             <!-- View 1: Department Cards Grid (Top Level) -->
             <div id="deptListContainer">
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                     <div>
                         <div class="flex items-center gap-2">
                             <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Academic Departments (FYUGP)</h2>
@@ -314,25 +311,30 @@
                                 Alphabetical Order (A–Z)
                             </span>
                         </div>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                            Browse all Mahatma Gandhi University FYUGP academic departments. Select a department to explore Semester 1 to 8 question papers and schemes.
-                        </p>
                     </div>
 
-                    <!-- Quick Search / Filter Department Cards -->
-                    <div class="relative w-full sm:w-72 shrink-0">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                            <i class="bi bi-search text-xs"></i>
+                    <!-- Universal Search with Live Partial-Matching Dropdown -->
+                    <div class="relative w-full md:w-96 lg:w-[480px]">
+                        <div class="relative flex items-center">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-blue-600 dark:text-blue-400 text-sm">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <input 
+                                type="text" 
+                                id="deptSearchInput" 
+                                autocomplete="off"
+                                placeholder="Search department, minor, course code or title..." 
+                                class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm font-medium shadow-xs transition"
+                            >
+                            <button id="clearDeptSearchBtn" class="hidden absolute right-3 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1" title="Clear Search">
+                                <i class="bi bi-x-circle-fill text-sm"></i>
+                            </button>
                         </div>
-                        <input 
-                            type="text" 
-                            id="deptSearchInput" 
-                            placeholder="Find department (e.g. Maths, Arabic)..." 
-                            class="w-full pl-9 pr-8 py-2 rounded-xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs font-medium shadow-xs"
-                        >
-                        <button id="clearDeptSearchBtn" class="hidden absolute right-2.5 top-2.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
-                            <i class="bi bi-x-circle-fill text-xs"></i>
-                        </button>
+
+                        <!-- Partial Matching Live Dropdown -->
+                        <div id="deptSearchDropdown" class="hidden absolute left-0 right-0 top-full mt-2 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 max-h-96 overflow-y-auto z-50 divide-y divide-slate-100 dark:divide-slate-700/60 text-xs">
+                            <!-- Populated dynamically while searching -->
+                        </div>
                     </div>
                 </div>
 

@@ -298,18 +298,29 @@ const App = {
             });
         }
 
-        // 2. Department Cards Quick Search Input
+        // 2. Department Cards Quick Search Input with Live Autocomplete Dropdown
         const deptSearchInput = document.getElementById('deptSearchInput');
         const clearDeptSearchBtn = document.getElementById('clearDeptSearchBtn');
         if (deptSearchInput) {
             deptSearchInput.addEventListener('input', (e) => {
-                this.deptState.deptSearchQuery = e.target.value.trim().toLowerCase();
-                if (clearDeptSearchBtn) {
-                    clearDeptSearchBtn.classList.toggle('hidden', !this.deptState.deptSearchQuery);
+                this.handleLiveSearch(e.target.value.trim());
+            });
+
+            deptSearchInput.addEventListener('focus', (e) => {
+                if (e.target.value.trim().length >= 1) {
+                    this.handleLiveSearch(e.target.value.trim());
                 }
-                this.renderDepartmentsList();
             });
         }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const dropdown = document.getElementById('deptSearchDropdown');
+            const searchInput = document.getElementById('deptSearchInput');
+            if (dropdown && !dropdown.contains(e.target) && e.target !== searchInput) {
+                dropdown.classList.add('hidden');
+            }
+        });
 
         if (clearDeptSearchBtn) {
             clearDeptSearchBtn.addEventListener('click', () => {
@@ -392,11 +403,187 @@ const App = {
         }
     },
 
+    handleLiveSearch(query) {
+        const dropdown = document.getElementById('deptSearchDropdown');
+        const clearBtn = document.getElementById('clearDeptSearchBtn');
+        if (!dropdown) return;
+
+        this.deptState.deptSearchQuery = query.toLowerCase();
+        if (clearBtn) clearBtn.classList.toggle('hidden', !query);
+
+        // Also filter the department cards below in real-time
+        this.renderDepartmentsList();
+
+        if (!query || query.length < 1) {
+            dropdown.classList.add('hidden');
+            dropdown.innerHTML = '';
+            return;
+        }
+
+        const q = query.toLowerCase();
+
+        // 1. Matched Departments
+        const matchedDepts = this.departments.filter(d => 
+            d.name.toLowerCase().includes(q) || 
+            d.code.toLowerCase().includes(q)
+        ).slice(0, 5);
+
+        // 2. Matched Minors
+        const matchedMinors = [];
+        this.departments.forEach(d => {
+            (d.minors || []).forEach(m => {
+                if (m.name.toLowerCase().includes(q) || m.code.toLowerCase().includes(q)) {
+                    matchedMinors.push({
+                        ...m,
+                        parent_dept_code: d.code,
+                        parent_dept_name: d.name
+                    });
+                }
+            });
+        });
+
+        // 3. Matched Courses / Question Papers
+        const matchedPapers = [];
+        const seenCourseCodes = new Set();
+        for (const p of this.papers) {
+            const cCode = (p.course_code || '').toLowerCase();
+            const cTitle = (p.title || '').toLowerCase();
+            const pDept = (p.dept_name || '').toLowerCase();
+            const pParent = (p.parent_dept_name || '').toLowerCase();
+
+            if (cCode.includes(q) || cTitle.includes(q) || pDept.includes(q) || pParent.includes(q)) {
+                const uniqueKey = p.course_code || p.id;
+                if (!seenCourseCodes.has(uniqueKey)) {
+                    seenCourseCodes.add(uniqueKey);
+                    matchedPapers.push(p);
+                    if (matchedPapers.length >= 6) break;
+                }
+            }
+        }
+
+        if (matchedDepts.length === 0 && matchedMinors.length === 0 && matchedPapers.length === 0) {
+            dropdown.innerHTML = `
+                <div class="p-4 text-center text-slate-400 text-xs">
+                    No departments, minors, or courses match "<span class="font-semibold text-slate-600 dark:text-slate-300">${query}</span>".
+                </div>
+            `;
+            dropdown.classList.remove('hidden');
+            return;
+        }
+
+        let html = '';
+
+        // Departments Group
+        if (matchedDepts.length > 0) {
+            html += `
+                <div class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-700/60 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                    <i class="bi bi-mortarboard text-blue-600"></i> Departments (${matchedDepts.length})
+                </div>
+                ${matchedDepts.map(d => `
+                    <div onclick="App.openDepartmentView('${d.code}'); App.closeSearchDropdown();" class="p-3 hover:bg-blue-50/70 dark:hover:bg-slate-700/70 cursor-pointer flex items-center justify-between gap-3 transition">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <div class="w-7 h-7 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 flex items-center justify-center text-xs shrink-0 font-bold">
+                                <i class="bi ${d.icon || 'bi-mortarboard'}"></i>
+                            </div>
+                            <div class="truncate">
+                                <span class="font-semibold text-slate-900 dark:text-slate-100">${d.name}</span>
+                            </div>
+                        </div>
+                        <span class="font-mono text-[11px] font-bold px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40 shrink-0">
+                            ${d.code}
+                        </span>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        // Minors Group
+        if (matchedMinors.length > 0) {
+            html += `
+                <div class="px-3.5 py-1.5 bg-pink-50/50 dark:bg-pink-950/30 text-[10px] font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400 flex items-center gap-1.5">
+                    <i class="bi bi-bookmark-star-fill text-pink-500"></i> Minor Specializations (${matchedMinors.length})
+                </div>
+                ${matchedMinors.slice(0, 5).map(m => `
+                    <div onclick="App.openDepartmentView('${m.parent_dept_code}'); App.closeSearchDropdown();" class="p-3 hover:bg-pink-50/70 dark:hover:bg-slate-700/70 cursor-pointer flex items-center justify-between gap-3 transition">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <span class="w-2 h-2 rounded-full bg-pink-500 shrink-0"></span>
+                            <div class="truncate">
+                                <span class="font-semibold text-slate-900 dark:text-slate-100">${m.name}</span>
+                                <span class="text-[11px] text-slate-400 ml-1.5">• under ${m.parent_dept_name}</span>
+                            </div>
+                        </div>
+                        <span class="font-mono text-[11px] font-bold px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-900/60 text-pink-800 dark:text-pink-200 shrink-0">
+                            ${m.code}
+                        </span>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        // Courses / Papers Group
+        if (matchedPapers.length > 0) {
+            html += `
+                <div class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-700/60 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                    <i class="bi bi-file-earmark-text text-indigo-600"></i> Courses & Papers (${matchedPapers.length})
+                </div>
+                ${matchedPapers.map(p => `
+                    <div class="p-3 hover:bg-slate-50 dark:hover:bg-slate-700/70 flex items-center justify-between gap-3 transition">
+                        <div class="min-w-0 flex-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-mono font-bold text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-1.5 py-0.5 rounded">
+                                    ${p.course_code || 'CODE N/A'}
+                                </span>
+                                <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+                                    ${this.extractMonthYear(p.exam_name)}
+                                </span>
+                                ${p.is_minor ? `
+                                    <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded badge-minor">
+                                        ${p.minor_name || p.dept_code} (Minor)
+                                    </span>
+                                ` : ''}
+                            </div>
+                            <div class="font-medium text-slate-900 dark:text-slate-100 truncate mt-0.5" title="${p.title}">
+                                ${p.title}
+                            </div>
+                            <div class="text-[11px] text-slate-400 truncate">
+                                ${p.parent_dept_name}
+                            </div>
+                        </div>
+
+                        <div class="shrink-0 flex items-center gap-1.5">
+                            ${p.has_qp ? `
+                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
+                                    <i class="bi bi-eye"></i> QP
+                                </button>
+                            ` : ''}
+                            <button onclick="App.openDepartmentView('${p.parent_dept}'); App.closeSearchDropdown();" class="px-2 py-1 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Go to Department">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        dropdown.innerHTML = html;
+        dropdown.classList.remove('hidden');
+    },
+
+    closeSearchDropdown() {
+        const dropdown = document.getElementById('deptSearchDropdown');
+        if (dropdown) dropdown.classList.add('hidden');
+    },
+
     clearDeptSearch() {
         const input = document.getElementById('deptSearchInput');
         const btn = document.getElementById('clearDeptSearchBtn');
+        const dropdown = document.getElementById('deptSearchDropdown');
         if (input) input.value = '';
         if (btn) btn.classList.add('hidden');
+        if (dropdown) {
+            dropdown.classList.add('hidden');
+            dropdown.innerHTML = '';
+        }
         this.deptState.deptSearchQuery = '';
         this.renderDepartmentsList();
     },
@@ -617,10 +804,51 @@ const App = {
         }
     },
 
-    renderPaperCard(p) {
-        const isBookmarked = this.bookmarks.has(p.id);
+    extractMonthYear(name) {
+        if (!name) return 'Exam Session';
+        const monthMap = {
+            'jan': 'January', 'feb': 'February', 'mar': 'March', 'apr': 'April',
+            'may': 'May', 'jun': 'June', 'jul': 'July', 'aug': 'August',
+            'sep': 'September', 'oct': 'October', 'nov': 'November', 'dec': 'December'
+        };
+        const m = name.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*[,\s\-]+(20\d\d)/i);
+        if (m) {
+            const rawM = m[1].toLowerCase().slice(0, 3);
+            const fullM = monthMap[rawM] || m[1];
+            return `${fullM} ${m[2]}`;
+        }
+        const y = name.match(/20\d\d/);
+        return y ? y[0] : name;
+    },
+
+    groupPapersByCourse(paperList) {
+        const groups = new Map();
+        paperList.forEach(p => {
+            const key = (p.course_code || p.title || 'UNKNOWN').trim().toUpperCase();
+            if (!groups.has(key)) {
+                groups.set(key, {
+                    course_code: p.course_code,
+                    title: p.title,
+                    course_type: p.course_type,
+                    semester: p.semester,
+                    parent_dept_name: p.parent_dept_name,
+                    dept_name: p.dept_name,
+                    dept_code: p.dept_code,
+                    is_minor: p.is_minor,
+                    minor_name: p.minor_name,
+                    papers: []
+                });
+            }
+            groups.get(key).papers.push(p);
+        });
+        return Array.from(groups.values());
+    },
+
+    renderGroupedCourseCard(course) {
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
-        const ctypeClass = `badge-${(p.course_type || 'dsc').toLowerCase()}`;
+        const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;
+        const firstPaper = course.papers[0];
+        const isBookmarked = course.papers.some(p => this.bookmarks.has(p.id));
 
         return `
             <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs border border-slate-200/80 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition">
@@ -628,15 +856,125 @@ const App = {
                     <!-- Top Badge Bar -->
                     <div class="flex items-start justify-between gap-2 mb-3">
                         <div class="flex flex-wrap items-center gap-1.5">
-                            <span class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
-                                Sem ${p.semester}
+                            ${isAdmin ? `
+                                <span class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+                                    Sem ${course.semester}
+                                </span>
+                            ` : ''}
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded-md ${ctypeClass}">
+                                ${course.course_type}
                             </span>
+                            ${course.is_minor ? `
+                                <span class="text-xs font-semibold px-2 py-0.5 rounded-md badge-minor">
+                                    ${course.minor_name || course.dept_code} (Minor)
+                                </span>
+                            ` : ''}
+                        </div>
+
+                        <!-- Bookmark Button -->
+                        <button 
+                            data-bm-id="${firstPaper.id}"
+                            onclick="App.toggleBookmark('${firstPaper.id}')" 
+                            title="Save for revision" 
+                            class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
+                                isBookmarked 
+                                    ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
+                                    : 'bg-slate-100 dark:bg-slate-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-600 dark:text-slate-300 hover:text-amber-700 border border-slate-200 dark:border-slate-600'
+                            }"
+                        >
+                            <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                            <span>${isBookmarked ? 'Saved' : 'Save'}</span>
+                        </button>
+                    </div>
+
+                    <!-- Course Code (NO QP Code on card) -->
+                    <div class="flex items-center gap-2 mb-1.5">
+                        <span class="font-mono font-bold text-sm text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded border border-blue-100 dark:border-blue-900/40">
+                            ${course.course_code || 'CODE N/A'}
+                        </span>
+                        <span class="text-[11px] font-semibold text-slate-400">
+                            ${course.papers.length} ${course.papers.length === 1 ? 'Exam Paper' : 'Exam Papers'}
+                        </span>
+                    </div>
+
+                    <!-- Course Title -->
+                    <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base leading-snug line-clamp-2 mb-3" title="${course.title}">
+                        ${course.title}
+                    </h3>
+                </div>
+
+                <!-- Grouped Question Papers for this course -->
+                <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 space-y-2">
+                    <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">
+                        Question Papers:
+                    </div>
+                    ${course.papers.map(p => {
+                        const monthYear = this.extractMonthYear(p.exam_name);
+                        return `
+                            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200/70 dark:border-slate-600/50 flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-1.5 min-w-0">
+                                    <i class="bi bi-calendar-event text-blue-600 dark:text-blue-400 text-xs"></i>
+                                    <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 truncate">
+                                        ${monthYear}
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    ${p.has_qp ? `
+                                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
+                                            <i class="bi bi-eye"></i> QP
+                                        </button>
+                                        <a href="${p.qp_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
+                                            <i class="bi bi-download"></i>
+                                        </a>
+                                    ` : ''}
+
+                                    ${p.has_scheme ? `
+                                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
+                                            <i class="bi bi-journal-check"></i> Scheme
+                                        </button>
+                                        <a href="${p.scheme_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
+                                            <i class="bi bi-download"></i>
+                                        </a>
+                                    ` : ''}
+
+                                    ${isAdmin ? `
+                                        <button onclick="App.handleDeletePaper('${p.id}')" title="Delete Paper (Admin)" class="p-1 text-xs rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition">
+                                            <i class="bi bi-trash3 text-rose-500"></i>
+                                        </button>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+    },
+
+    renderPaperCard(p) {
+        const isBookmarked = this.bookmarks.has(p.id);
+        const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
+        const ctypeClass = `badge-${(p.course_type || 'dsc').toLowerCase()}`;
+        const monthYear = this.extractMonthYear(p.exam_name);
+
+        return `
+            <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs border border-slate-200/80 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition">
+                <div>
+                    <!-- Top Badge Bar -->
+                    <div class="flex items-start justify-between gap-2 mb-3">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            ${isAdmin ? `
+                                <span class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+                                    Sem ${p.semester}
+                                </span>
+                            ` : ''}
                             <span class="text-xs font-semibold px-2 py-0.5 rounded-md ${ctypeClass}">
                                 ${p.course_type}
                             </span>
                             ${p.is_minor ? `
                                 <span class="text-xs font-semibold px-2 py-0.5 rounded-md badge-minor">
-                                    ${p.dept_code} (Minor)
+                                    ${p.minor_name || p.dept_code} (Minor)
                                 </span>
                             ` : ''}
                         </div>
@@ -669,16 +1007,11 @@ const App = {
                         </div>
                     </div>
 
-                    <!-- Course Code & QP Code -->
+                    <!-- Course Code (NO QP Code) -->
                     <div class="flex items-center gap-2 mb-1.5">
                         <span class="font-mono font-bold text-sm text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded border border-blue-100 dark:border-blue-900/40">
                             ${p.course_code || 'CODE N/A'}
                         </span>
-                        ${p.qp_code ? `
-                            <span class="font-mono text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700/60 px-1.5 py-0.5 rounded">
-                                QP: ${p.qp_code}
-                            </span>
-                        ` : ''}
                     </div>
 
                     <!-- Course Title -->
@@ -686,17 +1019,17 @@ const App = {
                         ${p.title}
                     </h3>
 
-                    <!-- Department & Exam -->
+                    <!-- Department & Exam Month Year -->
                     <div class="text-xs text-slate-500 dark:text-slate-400 space-y-1 mb-4">
                         <div class="flex items-center gap-1.5 truncate">
                             <i class="bi bi-mortarboard text-slate-400"></i>
                             <span class="truncate font-medium text-slate-700 dark:text-slate-300">
-                                ${p.parent_dept_name} ${p.is_minor ? `(${p.dept_name})` : ''}
+                                ${p.parent_dept_name} ${p.is_minor ? `(${p.minor_name || p.dept_name})` : ''}
                             </span>
                         </div>
-                        <div class="flex items-center gap-1.5 truncate text-[11px] text-slate-400 dark:text-slate-500">
-                            <i class="bi bi-calendar3"></i>
-                            <span class="truncate">${p.exam_name}</span>
+                        <div class="flex items-center gap-1.5 truncate text-[11px] text-slate-500 font-medium">
+                            <i class="bi bi-calendar-event text-blue-500"></i>
+                            <span>Exam: <strong class="text-slate-700 dark:text-slate-200">${monthYear}</strong></span>
                         </div>
                     </div>
                 </div>
@@ -730,14 +1063,16 @@ const App = {
     },
 
     renderPaperTable(items) {
+        const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
+
         return `
             <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 overflow-x-auto">
                 <table class="w-full text-left border-collapse text-xs sm:text-sm">
                     <thead>
                         <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-semibold">
-                            <th class="py-3 px-4">Sem</th>
+                            ${isAdmin ? '<th class="py-3 px-4">Sem</th>' : ''}
                             <th class="py-3 px-4">Course Code</th>
-                            <th class="py-3 px-4">QP Code</th>
+                            <th class="py-3 px-4">Exam Session</th>
                             <th class="py-3 px-4">Course Title</th>
                             <th class="py-3 px-4">Department</th>
                             <th class="py-3 px-4">Type</th>
@@ -747,15 +1082,15 @@ const App = {
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
                         ${items.map(p => {
                             const isBookmarked = this.bookmarks.has(p.id);
-                            const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
+                            const monthYear = this.extractMonthYear(p.exam_name);
                             return `
                                 <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
-                                    <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>
+                                    ${isAdmin ? `<td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>` : ''}
                                     <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
-                                    <td class="py-3 px-4 font-mono text-slate-500">${p.qp_code || '-'}</td>
+                                    <td class="py-3 px-4 font-medium text-slate-600 dark:text-slate-300 whitespace-nowrap">${monthYear}</td>
                                     <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
                                     <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
-                                        ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.dept_code}</span>` : ''}
+                                        ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.minor_name || p.dept_code}</span>` : ''}
                                     </td>
                                     <td class="py-3 px-4">
                                         <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">${p.course_type}</span>
@@ -930,6 +1265,8 @@ const App = {
             return;
         }
 
+        const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
+
         // Render Cards
         container.innerHTML = deptsToRender.map(d => {
             const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
@@ -957,29 +1294,29 @@ const App = {
                         <h4 class="font-bold text-slate-900 dark:text-slate-100 text-base mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                             ${d.name}
                         </h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-3">
-                            ${d.description}
-                        </p>
                     </div>
 
                     <div>
-                        <!-- Semesters Badges -->
-                        <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60 flex flex-wrap items-center gap-1">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Semesters:</span>
-                            ${activeSems.length > 0 ? activeSems.map(s => `
-                                <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40">
-                                    Sem ${s}
-                                </span>
-                            `).join('') : '<span class="text-[10px] text-slate-400 italic">Upcoming</span>'}
-                        </div>
+                        <!-- Semesters Badges (Visible for Admin Only) -->
+                        ${isAdmin && activeSems.length > 0 ? `
+                            <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60 flex flex-wrap items-center gap-1">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Semesters:</span>
+                                ${activeSems.map(s => `
+                                    <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40">
+                                        Sem ${s}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        ` : ''}
 
+                        <!-- Minor Specializations (Full Names) -->
                         ${minors.length > 0 ? `
                             <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Includes Minors:</div>
-                                <div class="flex flex-wrap gap-1">
+                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Minor Specializations:</div>
+                                <div class="flex flex-wrap gap-1.5">
                                     ${minors.map(m => `
-                                        <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40" title="${m.name}">
-                                            ${m.code} · ${m.name.split(' ')[0]}
+                                        <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40 shadow-2xs" title="${m.name} (${m.code})">
+                                            ${m.name} (${m.code})
                                         </span>
                                     `).join('')}
                                 </div>
@@ -1020,7 +1357,7 @@ const App = {
         const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
         const minors = dept.minors || [];
 
-        // Header Banner
+        // Header Banner (Without curriculum description tags)
         const headerEl = document.getElementById('deptDetailHeader');
         if (headerEl) {
             headerEl.innerHTML = `
@@ -1038,15 +1375,12 @@ const App = {
                                     ${dept.code}
                                 </span>
                             </div>
-                            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-                                ${dept.description}
-                            </p>
                             ${minors.length > 0 ? `
                                 <div class="flex flex-wrap items-center gap-1.5 mt-2">
-                                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Minor Departments:</span>
+                                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Minor Programmes:</span>
                                     ${minors.map(m => `
                                         <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-pink-50 dark:bg-pink-950/40 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-900/40">
-                                            ${m.code} - ${m.name}
+                                            ${m.name} (${m.code})
                                         </span>
                                     `).join('')}
                                 </div>
@@ -1153,6 +1487,7 @@ const App = {
         const dept = this.deptState.activeDept;
         const sem = this.deptState.selectedSemester;
         const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
+        const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
 
         // Filter papers for this department
         let semesterPapers = this.papers.filter(p => 
@@ -1203,8 +1538,9 @@ const App = {
 
         let sectionsHtml = '';
 
-        // 1. Major & Core Programmes Section
+        // 1. Major & Core Programmes Section (Grouped by course)
         if (majorPapers.length > 0) {
+            const groupedMajor = this.groupPapersByCourse(majorPapers);
             sectionsHtml += `
                 <div class="space-y-4">
                     <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
@@ -1214,22 +1550,22 @@ const App = {
                                 Major & Core Programmes
                             </h4>
                             <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
-                                ${majorPapers.length} Papers
+                                ${groupedMajor.length} Courses (${majorPapers.length} Papers)
                             </span>
                         </div>
                         <span class="text-xs text-slate-400 font-medium">
-                            ${sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`}
+                            ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
                         </span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        ${majorPapers.map(p => this.renderPaperCard(p)).join('')}
+                        ${groupedMajor.map(course => this.renderGroupedCourseCard(course)).join('')}
                     </div>
                 </div>
             `;
         }
 
-        // 2. Minor Headings and Minor Papers Section
+        // 2. Minor Headings and Minor Papers Section (Grouped by course)
         const deptMinors = dept.minors || [];
         const seenMinors = new Set();
         const minorsList = [];
@@ -1259,6 +1595,8 @@ const App = {
                     return '';
                 }
 
+                const groupedMinor = this.groupPapersByCourse(pForMinor);
+
                 return `
                     <div class="minor-section bg-gradient-to-br from-pink-50/70 via-white to-purple-50/40 dark:from-pink-950/20 dark:via-slate-800 dark:to-purple-950/20 p-5 sm:p-6 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-xs space-y-4">
                         <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-200/60 dark:border-pink-900/40 pb-3">
@@ -1281,12 +1619,12 @@ const App = {
                                 </div>
                             </div>
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-800 shadow-2xs">
-                                ${pForMinor.length} ${pForMinor.length === 1 ? 'Paper' : 'Papers'}
+                                ${groupedMinor.length} Courses (${pForMinor.length} Papers)
                             </span>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                            ${pForMinor.map(p => this.renderPaperCard(p)).join('')}
+                            ${groupedMinor.map(course => this.renderGroupedCourseCard(course)).join('')}
                         </div>
                     </div>
                 `;
@@ -1298,7 +1636,7 @@ const App = {
                         <div class="flex items-center gap-2 border-b border-pink-200 dark:border-pink-900/50 pb-2">
                             <i class="bi bi-stars text-pink-600 dark:text-pink-400"></i>
                             <h4 class="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs">
-                                Minor Programmes & Specializations (${minorPapers.length} Papers)
+                                Minor Programmes & Specializations
                             </h4>
                         </div>
                         ${minorSectionsHtml}

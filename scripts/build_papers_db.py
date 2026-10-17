@@ -146,7 +146,7 @@ def build_database_v3():
                     furl = "https://assist.mgu.ac.in/schema/" + furl.lstrip("/")
                     
                 ftype = "OTHER"
-                if "QP" in ftype_raw or "QUESTION" in ftype_raw:
+                if any(k in ftype_raw for k in ["QP", "QUESTION", "QN", "MCQ"]):
                     ftype = "QP"
                     has_qp = True
                     if not qp_url:
@@ -163,7 +163,8 @@ def build_database_v3():
                     
                 files.append({"type": ftype, "label": ftype_raw or ftype, "url": furl})
                 
-            if files and not qp_url and not scheme_url:
+            if files and not qp_url:
+                # If MGU only provided a single combined SCHEME/QP PDF, allow QP preview from it
                 qp_url = files[0]["url"]
                 has_qp = True
 

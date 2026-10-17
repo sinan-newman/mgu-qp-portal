@@ -58,6 +58,8 @@ body {
 .badge-vac { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
 .badge-mdc { background: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; }
 .badge-aec { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+.badge-ccr { background: #cffafe; color: #0e7490; border: 1px solid #a5f3fc; }
+.badge-mde { background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; }
 .badge-minor { background: #fce7f3; color: #9d174d; border: 1px solid #fbcfe8; }
 .badge-cbcs { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
 
@@ -67,6 +69,8 @@ body {
 .dark .badge-vac { background: #581c87; color: #d8b4fe; border-color: #6b21a8; }
 .dark .badge-mdc { background: #7c2d12; color: #fdba74; border-color: #9a3412; }
 .dark .badge-aec { background: #312e81; color: #a5b4fc; border-color: #3730a3; }
+.dark .badge-ccr { background: #164e63; color: #67e8f9; border-color: #0e7490; }
+.dark .badge-mde { background: #134e4a; color: #5eead4; border-color: #0f766e; }
 .dark .badge-minor { background: #701a75; color: #f472b6; border-color: #86198f; }
 
 /* Custom Scrollbars */

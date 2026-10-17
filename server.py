@@ -106,6 +106,15 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.serve_file(full_data, "application/json; charset=utf-8")
             return
 
+        # Check if file exists in uploads/ (custom admin uploads)
+        if clean_path.startswith("uploads/"):
+            fname = clean_path.replace("uploads/", "")
+            for udir in [os.path.join(BASE_DIR, "uploads"), os.path.join(DATA_DIR, "uploads")]:
+                full_up = os.path.join(udir, fname)
+                if os.path.isfile(full_up):
+                    self.serve_file(full_up, "application/pdf")
+                    return
+
         # Default fallback to index.html for SPA routes
         self.serve_file(os.path.join(PUBLIC_DIR, "index.html"), "text/html; charset=utf-8")
 
@@ -113,6 +122,12 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path == "/api/sync":
             self.handle_sync_trigger()
+            return
+        if parsed.path in ("/api/admin/upload-paper", "/api/admin/papers"):
+            self.handle_admin_upload()
+            return
+        if parsed.path in ("/api/admin/delete-paper", "/api/admin/papers/delete"):
+            self.handle_admin_delete()
             return
         self.send_json_response({"error": "Endpoint not found"}, status=404)
 
@@ -242,6 +257,159 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             "status": "started",
             "message": "Background sync with https://assist.mgu.ac.in/schema/ initiated."
         })
+
+    def handle_admin_upload(self):
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            data = json.loads(body)
+
+            import time
+            import base64
+
+            course_code = data.get("course_code", "").strip().upper()
+            title = data.get("title", "").strip()
+            semester = int(data.get("semester", 1))
+            dept_code = data.get("dept_code", "").strip().upper()
+            parent_dept = data.get("parent_dept", dept_code).strip().upper()
+            dept_name = data.get("dept_name", dept_code).strip()
+            parent_dept_name = data.get("parent_dept_name", dept_name).strip()
+            course_type = data.get("course_type", "DSC").strip().upper()
+            is_minor = bool(data.get("is_minor", False))
+            minor_name = data.get("minor_name", "").strip()
+            exam_name = data.get("exam_name", "MGU-UGP (Honours) 2024 Admission Regular Examination").strip()
+            qp_code = data.get("qp_code", "").strip()
+            qp_url = data.get("qp_url", "").strip()
+            scheme_url = data.get("scheme_url", "").strip()
+            qp_file_b64 = data.get("qp_file_b64", "")
+            scheme_file_b64 = data.get("scheme_file_b64", "")
+
+            uploads_dir = os.path.join(BASE_DIR, "uploads")
+            os.makedirs(uploads_dir, exist_ok=True)
+            public_uploads_dir = os.path.join(BASE_DIR, "public", "uploads")
+            os.makedirs(public_uploads_dir, exist_ok=True)
+
+            ts = int(time.time())
+            if qp_file_b64:
+                qp_fname = f"QP_{course_code or 'CUSTOM'}_{qp_code or 'paper'}_{ts}.pdf"
+                qp_data_bytes = base64.b64decode(qp_file_b64.split(",")[-1])
+                for udir in [uploads_dir, public_uploads_dir]:
+                    with open(os.path.join(udir, qp_fname), "wb") as f:
+                        f.write(qp_data_bytes)
+                qp_url = f"uploads/{qp_fname}"
+
+            if scheme_file_b64:
+                sch_fname = f"SCHEME_{course_code or 'CUSTOM'}_{qp_code or 'scheme'}_{ts}.pdf"
+                sch_data_bytes = base64.b64decode(scheme_file_b64.split(",")[-1])
+                for udir in [uploads_dir, public_uploads_dir]:
+                    with open(os.path.join(udir, sch_fname), "wb") as f:
+                        f.write(sch_data_bytes)
+                scheme_url = f"uploads/{sch_fname}"
+
+            files = []
+            if qp_url:
+                files.append({"type": "QP", "label": "QUESTION PAPER", "url": qp_url})
+            if scheme_url:
+                files.append({"type": "SCHEME", "label": "SCHEME", "url": scheme_url})
+
+            paper_id = f"custom_{course_code or 'qp'}_{ts}"
+
+            new_paper = {
+                "id": paper_id,
+                "qp_code": qp_code,
+                "course_code": course_code,
+                "title": title or f"Course {course_code}",
+                "raw_header": f"{qp_code} - {course_code} {title}".strip(" -"),
+                "semester": semester,
+                "semester_label": f"Semester {semester}",
+                "course_type": course_type,
+                "course_type_name": data.get("course_type_name", course_type),
+                "dept_code": dept_code,
+                "dept_name": dept_name,
+                "parent_dept": parent_dept,
+                "parent_dept_name": parent_dept_name,
+                "is_minor": is_minor,
+                "minor_name": minor_name,
+                "exam_id": "custom",
+                "exam_name": exam_name,
+                "batch": "2024 Admission",
+                "is_fyugp": True,
+                "has_qp": bool(qp_url),
+                "qp_url": qp_url,
+                "has_scheme": bool(scheme_url),
+                "scheme_url": scheme_url,
+                "files": files,
+                "has_files": len(files) > 0,
+                "is_custom_upload": True
+            }
+
+            papers = CACHE.get("papers") or []
+            papers.insert(0, new_paper)
+            CACHE["papers"] = papers
+
+            for fpath in [os.path.join(DATA_DIR, "papers.json"), os.path.join(BASE_DIR, "public", "data", "papers.json")]:
+                if os.path.exists(os.path.dirname(fpath)):
+                    with open(fpath, "w", encoding="utf-8") as f:
+                        json.dump(papers, f, indent=2)
+
+            self.update_stats()
+            self.send_json_response({"success": True, "message": "Paper uploaded and published successfully!", "paper": new_paper})
+        except Exception as e:
+            self.send_json_response({"success": False, "error": str(e)}, status=500)
+
+    def handle_admin_delete(self):
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            data = json.loads(body)
+            paper_id = data.get("id")
+
+            if not paper_id:
+                self.send_json_response({"success": False, "error": "Missing paper ID"}, status=400)
+                return
+
+            papers = CACHE.get("papers") or []
+            initial_len = len(papers)
+            papers = [p for p in papers if p.get("id") != paper_id]
+
+            if len(papers) == initial_len:
+                self.send_json_response({"success": False, "error": "Paper not found"}, status=404)
+                return
+
+            CACHE["papers"] = papers
+
+            for fpath in [os.path.join(DATA_DIR, "papers.json"), os.path.join(BASE_DIR, "public", "data", "papers.json")]:
+                if os.path.exists(os.path.dirname(fpath)):
+                    with open(fpath, "w", encoding="utf-8") as f:
+                        json.dump(papers, f, indent=2)
+
+            self.update_stats()
+            self.send_json_response({"success": True, "message": f"Paper deleted successfully!", "deleted_id": paper_id})
+        except Exception as e:
+            self.send_json_response({"success": False, "error": str(e)}, status=500)
+
+    def update_stats(self):
+        import time
+        papers = CACHE.get("papers") or []
+        with_files = [p for p in papers if p.get("has_files")]
+        qps = [p for p in papers if p.get("has_qp")]
+        schemes = [p for p in papers if p.get("has_scheme")]
+        minor_count = sum(1 for p in papers if p.get("is_minor"))
+        stats = {
+            "total_records": len(papers),
+            "records_with_files": len(with_files),
+            "total_question_papers": len(qps),
+            "total_schemes": len(schemes),
+            "departments_count": len(CACHE.get("departments") or []),
+            "minor_papers_count": minor_count,
+            "batch_scope": "FYUGP (MGU-UGP Honours) Only",
+            "last_sync": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
+        }
+        CACHE["stats"] = stats
+        for fpath in [os.path.join(DATA_DIR, "stats.json"), os.path.join(BASE_DIR, "public", "data", "stats.json")]:
+            if os.path.exists(os.path.dirname(fpath)):
+                with open(fpath, "w", encoding="utf-8") as f:
+                    json.dump(stats, f, indent=2)
 
     def serve_file(self, full_path, content_type):
         if not os.path.exists(full_path):

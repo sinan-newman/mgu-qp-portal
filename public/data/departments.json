@@ -1,238 +1,1023 @@
 [
   {
+    "code": "AGD",
+    "name": "Animation & Graphic Design",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Animation & Graphic Design.",
+    "majors": [
+      {
+        "code": "AGD",
+        "name": "Animation & Graphic Design"
+      },
+      {
+        "code": "AVE",
+        "name": "Animation & VFX"
+      },
+      {
+        "code": "IAA",
+        "name": "Interior Architecture and Artistry"
+      }
+    ],
+    "minors": [
+      {
+        "code": "DMD",
+        "name": "Digital Media"
+      },
+      {
+        "code": "GRA",
+        "name": "Graphic Art"
+      },
+      {
+        "code": "SAT",
+        "name": "Sequential Art"
+      },
+      {
+        "code": "VID",
+        "name": "Visual Design"
+      }
+    ]
+  },
+  {
+    "code": "AQC",
+    "name": "Aquaculture",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Aquaculture.",
+    "majors": [
+      {
+        "code": "AQC",
+        "name": "Aquaculture"
+      }
+    ],
+    "minors": []
+  },
+  {
     "code": "ARB",
     "name": "Arabic",
-    "category": "Humanities & Languages",
     "icon": "bi-globe2",
-    "description": "Arabic Heritage, Literature and Communication.",
+    "description": "Curriculum and question papers for Arabic.",
+    "majors": [
+      {
+        "code": "ARB",
+        "name": "Arabic"
+      }
+    ],
+    "minors": [
+      {
+        "code": "LSC",
+        "name": "Language Science"
+      },
+      {
+        "code": "LST",
+        "name": "Language Studies"
+      }
+    ]
+  },
+  {
+    "code": "ADS",
+    "name": "Artificial Intelligence & Data Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Artificial Intelligence & Data Science.",
+    "majors": [
+      {
+        "code": "ADS",
+        "name": "Artificial Intelligence & Data Science"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "BHN",
+    "name": "Bharatanatyam",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Bharatanatyam.",
+    "majors": [
+      {
+        "code": "BHN",
+        "name": "Bharatanatyam"
+      }
+    ],
     "minors": []
   },
   {
     "code": "BCH",
     "name": "Biochemistry",
-    "category": "Science",
     "icon": "bi-virus",
-    "description": "Molecular Biochemistry, Metabolism, Nutrition and Forensic Science.",
+    "description": "Curriculum and question papers for Biochemistry.",
+    "majors": [
+      {
+        "code": "BCH",
+        "name": "Biochemistry"
+      }
+    ],
     "minors": []
   },
   {
     "code": "BIF",
     "name": "Bioinformatics",
-    "category": "Science",
-    "icon": "bi-diagram-3",
-    "description": "Sequence Informatics, Computational Biology, Biological Databases.",
+    "icon": "bi-cpu",
+    "description": "Curriculum and question papers for Bioinformatics.",
+    "majors": [
+      {
+        "code": "BIF",
+        "name": "Bioinformatics"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "BTS",
+    "name": "Biological Techniques and Specimen Preparation",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Biological Techniques and Specimen Preparation.",
+    "majors": [
+      {
+        "code": "BTS",
+        "name": "Biological Techniques and Specimen Preparation"
+      }
+    ],
     "minors": []
   },
   {
     "code": "BTG",
     "name": "Biotechnology",
-    "category": "Science",
     "icon": "bi-dna",
-    "description": "Applied Biotechnology, Molecular Biology, Tissue Culture.",
-    "minors": [
+    "description": "Curriculum and question papers for Biotechnology.",
+    "majors": [
       {
-        "code": "BTS",
-        "name": "Biological Techniques & Services"
+        "code": "BTG",
+        "name": "Biotechnology"
       }
-    ]
+    ],
+    "minors": []
   },
   {
     "code": "BOT",
     "name": "Botany",
-    "category": "Science",
     "icon": "bi-flower1",
-    "description": "Plant Sciences, Systematics, Molecular Biology and Ecology.",
+    "description": "Curriculum and question papers for Botany.",
+    "majors": [
+      {
+        "code": "BOT",
+        "name": "Botany"
+      }
+    ],
+    "minors": [
+      {
+        "code": "EVS",
+        "name": "Environmental Studies"
+      },
+      {
+        "code": "HTC",
+        "name": "Horticulture"
+      }
+    ]
+  },
+  {
+    "code": "BBT",
+    "name": "Botany & Biotechnology",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Botany & Biotechnology.",
+    "majors": [
+      {
+        "code": "BBT",
+        "name": "Botany & Biotechnology"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "BBA",
+    "name": "Business Administration",
+    "icon": "bi-building",
+    "description": "Curriculum and question papers for Business Administration.",
+    "majors": [
+      {
+        "code": "BBA",
+        "name": "Business Administration"
+      }
+    ],
     "minors": []
   },
   {
     "code": "CHE",
     "name": "Chemistry",
-    "category": "Science",
     "icon": "bi-eyedropper",
-    "description": "Organic, Inorganic, Physical, Food and Environmental Chemistry.",
-    "minors": []
+    "description": "Curriculum and question papers for Chemistry.",
+    "majors": [
+      {
+        "code": "CHE",
+        "name": "Chemistry"
+      }
+    ],
+    "minors": [
+      {
+        "code": "ICH",
+        "name": "Industrial Chemistry"
+      },
+      {
+        "code": "PEG",
+        "name": "Petroleum Engineering"
+      }
+    ]
+  },
+  {
+    "code": "CND",
+    "name": "Clinical Nutrition & Dietetics",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Clinical Nutrition & Dietetics.",
+    "majors": [
+      {
+        "code": "CND",
+        "name": "Clinical Nutrition & Dietetics"
+      }
+    ],
+    "minors": [
+      {
+        "code": "HPY",
+        "name": "Human Physiology"
+      },
+      {
+        "code": "NBC",
+        "name": "Nutritional Biochemistry"
+      }
+    ]
   },
   {
     "code": "COM",
     "name": "Commerce",
-    "category": "Commerce & Management",
     "icon": "bi-briefcase",
-    "description": "Commerce, Corporate Accounting, Finance, Marketing, Business Law & Studies.",
+    "description": "Curriculum and question papers for Commerce.",
+    "majors": [
+      {
+        "code": "COM",
+        "name": "Commerce"
+      }
+    ],
     "minors": [
       {
-        "code": "BST",
-        "name": "Business Studies & Sustainable Development"
+        "code": "BLW",
+        "name": "Business Laws"
       },
       {
-        "code": "BLW",
-        "name": "Business Law & Corporate Regulations"
+        "code": "BST",
+        "name": "Business Studies"
+      }
+    ]
+  },
+  {
+    "code": "BCA",
+    "name": "Computer Applications",
+    "icon": "bi-pc-display",
+    "description": "Curriculum and question papers for Computer Applications.",
+    "majors": [
+      {
+        "code": "BCA",
+        "name": "Computer Applications"
+      }
+    ],
+    "minors": [
+      {
+        "code": "CMA",
+        "name": "Computer Applications"
       }
     ]
   },
   {
     "code": "CSC",
-    "name": "Computer Science & IT",
-    "category": "Computer Science & Tech",
+    "name": "Computer Science",
     "icon": "bi-laptop",
-    "description": "Programming, Web Tech, Green Computing, Security and Software Systems.",
-    "minors": [
+    "description": "Curriculum and question papers for Computer Science.",
+    "majors": [
       {
-        "code": "BCA",
-        "name": "Computer Applications"
-      },
-      {
-        "code": "DAT",
-        "name": "Data Analytics"
+        "code": "CSC",
+        "name": "Computer Science"
       }
-    ]
+    ],
+    "minors": []
+  },
+  {
+    "code": "CFS",
+    "name": "Cyber Forensics",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Cyber Forensics.",
+    "majors": [
+      {
+        "code": "CFS",
+        "name": "Cyber Forensics"
+      }
+    ],
+    "minors": []
   },
   {
     "code": "ECO",
     "name": "Economics",
-    "category": "Social Sciences",
-    "icon": "bi-graph-up",
-    "description": "Micro & Macro Economics, Econometrics, Quantitative Economics and Fintech.",
+    "icon": "bi-graph-up-arrow",
+    "description": "Curriculum and question papers for Economics.",
+    "majors": [
+      {
+        "code": "ECO",
+        "name": "Economics"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "ECT",
+    "name": "Electronics",
+    "icon": "bi-broadcast",
+    "description": "Curriculum and question papers for Electronics.",
+    "majors": [
+      {
+        "code": "ECT",
+        "name": "Electronics with Computer Technology"
+      }
+    ],
+    "minors": [
+      {
+        "code": "IAM",
+        "name": "Industrial Automation"
+      },
+      {
+        "code": "MOS",
+        "name": "Mobile System"
+      }
+    ]
+  },
+  {
+    "code": "ECC",
+    "name": "Electronics with Computer Technology & Computer Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Electronics with Computer Technology & Computer Science.",
+    "majors": [
+      {
+        "code": "ECC",
+        "name": "Electronics with Computer Technology & Computer Science"
+      }
+    ],
     "minors": []
   },
   {
     "code": "ENG",
     "name": "English",
-    "category": "Humanities & Languages",
     "icon": "bi-book",
-    "description": "English Language, Literature, Translation Studies and Historical Literary Studies.",
+    "description": "Curriculum and question papers for English.",
+    "majors": [
+      {
+        "code": "ENG",
+        "name": "English"
+      }
+    ],
     "minors": [
       {
         "code": "LIH",
-        "name": "Literature in History (English)"
+        "name": "English Literary History"
       },
       {
         "code": "TRS",
-        "name": "Translation Studies (English)"
+        "name": "Translation Studies"
       }
     ]
   },
   {
+    "code": "FDG",
+    "name": "Fashion Technology",
+    "icon": "bi-scissors",
+    "description": "Curriculum and question papers for Fashion Technology.",
+    "majors": [
+      {
+        "code": "FDG",
+        "name": "Fashion Design"
+      }
+    ],
+    "minors": [
+      {
+        "code": "GMF",
+        "name": "Garment Manufacturing"
+      },
+      {
+        "code": "TXL",
+        "name": "Textiles"
+      }
+    ]
+  },
+  {
+    "code": "AAS",
+    "name": "Fine Arts",
+    "icon": "bi-palette",
+    "description": "Curriculum and question papers for Fine Arts.",
+    "majors": [
+      {
+        "code": "AAS",
+        "name": "Applied Arts"
+      },
+      {
+        "code": "PAI",
+        "name": "Painting"
+      },
+      {
+        "code": "SCL",
+        "name": "Sculpture"
+      }
+    ],
+    "minors": [
+      {
+        "code": "ADN",
+        "name": "Art & Design"
+      },
+      {
+        "code": "AHY",
+        "name": "Art History"
+      },
+      {
+        "code": "CDG",
+        "name": "Communication Design"
+      }
+    ]
+  },
+  {
+    "code": "FSQ",
+    "name": "Food Science & Quality Control",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Food Science & Quality Control.",
+    "majors": [
+      {
+        "code": "FSQ",
+        "name": "Food Science & Quality Control"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "FTQ",
+    "name": "Food Technology & Quality Assurance",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Food Technology & Quality Assurance.",
+    "majors": [
+      {
+        "code": "FTQ",
+        "name": "Food Technology & Quality Assurance"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "FSC",
+    "name": "Forensic Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Forensic Science.",
+    "majors": [
+      {
+        "code": "FSC",
+        "name": "Forensic Science"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "FRH",
+    "name": "French",
+    "icon": "bi-translate",
+    "description": "Curriculum and question papers for French.",
+    "majors": [
+      {
+        "code": "FRH",
+        "name": "French"
+      }
+    ],
+    "minors": []
+  },
+  {
     "code": "GEO",
     "name": "Geology",
-    "category": "Science",
     "icon": "bi-compass",
-    "description": "Earth Sciences, Petrology, Field Training and Mineralogy.",
+    "description": "Curriculum and question papers for Geology.",
+    "majors": [
+      {
+        "code": "GEO",
+        "name": "Geology"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "GER",
+    "name": "German",
+    "icon": "bi-translate",
+    "description": "Curriculum and question papers for German.",
+    "majors": [
+      {
+        "code": "GER",
+        "name": "German"
+      }
+    ],
     "minors": []
   },
   {
     "code": "HIN",
     "name": "Hindi",
-    "category": "Humanities & Languages",
-    "icon": "bi-chat-quote",
-    "description": "Hindi Literature, Communicative Hindi, Cinema and Translation.",
-    "minors": []
+    "icon": "bi-quote",
+    "description": "Curriculum and question papers for Hindi.",
+    "majors": [
+      {
+        "code": "HIN",
+        "name": "Hindi"
+      }
+    ],
+    "minors": [
+      {
+        "code": "FHI",
+        "name": "Functional Hindi"
+      },
+      {
+        "code": "LGS",
+        "name": "Linguistics"
+      }
+    ]
   },
   {
     "code": "HIS",
     "name": "History",
-    "category": "Social Sciences",
     "icon": "bi-hourglass-split",
-    "description": "Indian History, Global History, Historiography and Archaeology.",
+    "description": "Curriculum and question papers for History.",
+    "majors": [
+      {
+        "code": "HIS",
+        "name": "History"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "HSC",
+    "name": "Home Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Home Science.",
+    "majors": [
+      {
+        "code": "HSC",
+        "name": "Home Science"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "HMC",
+    "name": "Hotel Management & Culinary Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Hotel Management & Culinary Science.",
+    "majors": [
+      {
+        "code": "HMC",
+        "name": "Hotel Management & Culinary Science"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "ISH",
+    "name": "Islamic History",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Islamic History.",
+    "majors": [
+      {
+        "code": "ISH",
+        "name": "Islamic History"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "JMC",
+    "name": "Journalism & Mass Communication",
+    "icon": "bi-newspaper",
+    "description": "Curriculum and question papers for Journalism & Mass Communication.",
+    "majors": [
+      {
+        "code": "JMC",
+        "name": "Journalism & Mass Communication"
+      }
+    ],
     "minors": [
       {
-        "code": "AHY",
-        "name": "Art History"
+        "code": "DMP",
+        "name": "Digital Media Production"
+      },
+      {
+        "code": "PEJ",
+        "name": "Print & Electronic Journalism"
+      }
+    ]
+  },
+  {
+    "code": "LIS",
+    "name": "Library & Information Science",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Library & Information Science.",
+    "majors": [],
+    "minors": [
+      {
+        "code": "LIS",
+        "name": "Library & Information Science"
       }
     ]
   },
   {
     "code": "MAL",
     "name": "Malayalam",
-    "category": "Humanities & Languages",
     "icon": "bi-translate",
-    "description": "Malayalam Language, Literature, Culture and Kerala Heritage Studies.",
+    "description": "Curriculum and question papers for Malayalam.",
+    "majors": [
+      {
+        "code": "MAL",
+        "name": "Malayalam"
+      }
+    ],
     "minors": [
       {
+        "code": "CVM",
+        "name": "Computer Knowledge"
+      },
+      {
         "code": "PTP",
-        "name": "Kerala Samskaram & Heritage (PTP)"
+        "name": "Heritage Studies"
+      },
+      {
+        "code": "SHP",
+        "name": "Literature Studies"
+      },
+      {
+        "code": "TTP",
+        "name": "Comparative Study"
       }
     ]
   },
   {
     "code": "MAT",
     "name": "Mathematics",
-    "category": "Science",
     "icon": "bi-calculator",
-    "description": "Calculus, Linear Algebra, Real Analysis, Number Theory & Applied Mathematics.",
+    "description": "Curriculum and question papers for Mathematics.",
+    "majors": [
+      {
+        "code": "MAT",
+        "name": "Mathematics"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "MBG",
+    "name": "Microbiology",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Microbiology.",
+    "majors": [
+      {
+        "code": "MBG",
+        "name": "Microbiology"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "MLM",
+    "name": "Multimedia",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Multimedia.",
+    "majors": [
+      {
+        "code": "MLM",
+        "name": "Multimedia"
+      },
+      {
+        "code": "SDV",
+        "name": "Sound Design & Visual Editing"
+      },
+      {
+        "code": "VCN",
+        "name": "Visual Communication"
+      }
+    ],
     "minors": []
   },
   {
     "code": "MUS",
-    "name": "Music & Performing Arts",
-    "category": "Fine Arts",
+    "name": "Music",
     "icon": "bi-music-note-beamed",
-    "description": "Musicology, Bharathanatyam and Performing Arts.",
-    "minors": [
+    "description": "Curriculum and question papers for Music.",
+    "majors": [
       {
-        "code": "BHN",
-        "name": "Bharathanatyam"
+        "code": "MMD",
+        "name": "Mridangam"
+      },
+      {
+        "code": "MVL",
+        "name": "Violin"
+      },
+      {
+        "code": "MVN",
+        "name": "Veena"
+      },
+      {
+        "code": "MVO",
+        "name": "Vocal"
       }
-    ]
+    ],
+    "minors": []
+  },
+  {
+    "code": "PFA",
+    "name": "Performing Arts",
+    "icon": "bi-mask",
+    "description": "Curriculum and question papers for Performing Arts.",
+    "majors": [
+      {
+        "code": "KCN",
+        "name": "Kathakali Chenda"
+      },
+      {
+        "code": "KMD",
+        "name": "Kathakali Maddalam"
+      },
+      {
+        "code": "KSN",
+        "name": "Kathakali Sangeetham"
+      },
+      {
+        "code": "KVS",
+        "name": "Kathakali Vesham"
+      },
+      {
+        "code": "MHN",
+        "name": "Mohiniyattam"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "PHL",
+    "name": "Philosophy",
+    "icon": "bi-lightbulb",
+    "description": "Curriculum and question papers for Philosophy.",
+    "majors": [
+      {
+        "code": "PHL",
+        "name": "Philosophy"
+      }
+    ],
+    "minors": []
   },
   {
     "code": "PES",
     "name": "Physical Education",
-    "category": "Health & Sports",
     "icon": "bi-activity",
-    "description": "Physical Fitness, Health, Sports Science and Weight Management.",
-    "minors": []
+    "description": "Curriculum and question papers for Physical Education.",
+    "majors": [
+      {
+        "code": "PES",
+        "name": "Physical Education"
+      }
+    ],
+    "minors": [
+      {
+        "code": "FIM",
+        "name": "Fitness Management"
+      },
+      {
+        "code": "SAC",
+        "name": "Strength & Conditioning"
+      }
+    ]
   },
   {
     "code": "PHY",
     "name": "Physics",
-    "category": "Science",
     "icon": "bi-lightning-charge",
-    "description": "Classical & Modern Physics, Quantum Mechanics, Electronics and Optics.",
+    "description": "Curriculum and question papers for Physics.",
+    "majors": [
+      {
+        "code": "PHY",
+        "name": "Physics"
+      }
+    ],
     "minors": []
   },
   {
     "code": "POL",
     "name": "Political Science",
-    "category": "Social Sciences",
-    "icon": "bi-shield-shaded",
-    "description": "Indian Constitution, Everyday Politics, International Relations & Human Rights.",
+    "icon": "bi-bank",
+    "description": "Curriculum and question papers for Political Science.",
+    "majors": [
+      {
+        "code": "POL",
+        "name": "Political Science"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "PJM",
+    "name": "Political Science, Journalism & Mass Communication",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Political Science, Journalism & Mass Communication.",
+    "majors": [
+      {
+        "code": "PJM",
+        "name": "Political Science, Journalism & Mass Communication"
+      }
+    ],
     "minors": []
   },
   {
     "code": "PSY",
     "name": "Psychology",
-    "category": "Social Sciences",
     "icon": "bi-heart-pulse",
-    "description": "Foundations of Psychology, Child Development, Cognitive Operations & Health.",
+    "description": "Curriculum and question papers for Psychology.",
+    "majors": [
+      {
+        "code": "PSY",
+        "name": "Psychology"
+      }
+    ],
     "minors": []
   },
   {
     "code": "SAN",
     "name": "Sanskrit",
-    "category": "Humanities & Languages",
     "icon": "bi-feather",
-    "description": "Sanskrit Literature, Grammar and Indian Philosophy.",
-    "minors": [
+    "description": "Curriculum and question papers for Sanskrit.",
+    "majors": [
       {
-        "code": "SKT",
+        "code": "SAN",
         "name": "Sanskrit"
       }
-    ]
+    ],
+    "minors": []
+  },
+  {
+    "code": "SSP",
+    "name": "Sanskrit (Special)",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Sanskrit (Special).",
+    "majors": [
+      {
+        "code": "SSD",
+        "name": "Sanskrit (Vedanta)"
+      },
+      {
+        "code": "SSJ",
+        "name": "Sanskrit (Jyotisha)"
+      },
+      {
+        "code": "SSN",
+        "name": "Sanskrit (Nyaya)"
+      },
+      {
+        "code": "SSS",
+        "name": "Sanskrit (Sahitya)"
+      },
+      {
+        "code": "SSV",
+        "name": "Sanskrit (Vyakarana)"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "SWK",
+    "name": "Social Work",
+    "icon": "bi-people",
+    "description": "Curriculum and question papers for Social Work.",
+    "majors": [
+      {
+        "code": "SWK",
+        "name": "Social Work"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "SOC",
+    "name": "Sociology",
+    "icon": "bi-diagram-3",
+    "description": "Curriculum and question papers for Sociology.",
+    "majors": [
+      {
+        "code": "SOC",
+        "name": "Sociology"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "SMG",
+    "name": "Sports Management",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Sports Management.",
+    "majors": [
+      {
+        "code": "BSM",
+        "name": "Sports Management"
+      },
+      {
+        "code": "SMG",
+        "name": "Sports Management"
+      }
+    ],
+    "minors": []
   },
   {
     "code": "STA",
     "name": "Statistics",
-    "category": "Science",
     "icon": "bi-bar-chart",
-    "description": "Fundamentals of Statistics, Data Visualization, Statistical Modelling & R.",
+    "description": "Curriculum and question papers for Statistics.",
+    "majors": [
+      {
+        "code": "STA",
+        "name": "Statistics"
+      }
+    ],
     "minors": []
+  },
+  {
+    "code": "SYR",
+    "name": "Syriac",
+    "icon": "bi-book-half",
+    "description": "Curriculum and question papers for Syriac.",
+    "majors": [
+      {
+        "code": "SYR",
+        "name": "Syriac"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "TAM",
+    "name": "Tamil",
+    "icon": "bi-card-text",
+    "description": "Curriculum and question papers for Tamil.",
+    "majors": [
+      {
+        "code": "TAM",
+        "name": "Tamil"
+      }
+    ],
+    "minors": [
+      {
+        "code": "CST",
+        "name": "Cultural Studies in Tamil"
+      },
+      {
+        "code": "DVC",
+        "name": "Devolopment Communication"
+      }
+    ]
+  },
+  {
+    "code": "TTM",
+    "name": "Tourism & Travel Management",
+    "icon": "bi-airplane",
+    "description": "Curriculum and question papers for Tourism & Travel Management.",
+    "majors": [
+      {
+        "code": "TTM",
+        "name": "Travel & Tourism Management"
+      }
+    ],
+    "minors": [
+      {
+        "code": "FNN",
+        "name": "Food Nutrition"
+      },
+      {
+        "code": "HBM",
+        "name": "Hospitality Business Management"
+      }
+    ]
   },
   {
     "code": "ZGY",
     "name": "Zoology",
-    "category": "Science",
     "icon": "bi-bug",
-    "description": "Animal Diversity, Genetics, Cell Biology and Wildlife Management.",
+    "description": "Curriculum and question papers for Zoology.",
+    "majors": [
+      {
+        "code": "ZGY",
+        "name": "Zoology"
+      }
+    ],
+    "minors": []
+  },
+  {
+    "code": "ZIM",
+    "name": "Zoology & Industrial Microbiology",
+    "icon": "bi-mortarboard",
+    "description": "Curriculum and question papers for Zoology & Industrial Microbiology.",
+    "majors": [
+      {
+        "code": "ZIM",
+        "name": "Zoology & Industrial Microbiology"
+      }
+    ],
     "minors": []
   }
 ]

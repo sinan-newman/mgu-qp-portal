@@ -118,6 +118,11 @@ const App = {
         // Ensure By Department is default active view
         this.switchTab('departments');
 
+        if (sessionStorage.getItem('mgu_admin_auth') === 'true') {
+            document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+            this.populateAdminDeptDropdown();
+        }
+
         if (window.location.hash === '#admin') {
             this.openAdminModal();
         }
@@ -614,6 +619,7 @@ const App = {
 
     renderPaperCard(p) {
         const isBookmarked = this.bookmarks.has(p.id);
+        const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
         const ctypeClass = `badge-${(p.course_type || 'dsc').toLowerCase()}`;
 
         return `
@@ -635,21 +641,32 @@ const App = {
                             ` : ''}
                         </div>
 
-                        <!-- Save Button with Star Icon & Text -->
-                        <button 
-                            id="bm-btn-${p.id}" 
-                            data-bm-id="${p.id}"
-                            onclick="App.toggleBookmark('${p.id}')" 
-                            title="Save for revision" 
-                            class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
-                                isBookmarked 
-                                    ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
-                                    : 'bg-slate-100 dark:bg-slate-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-600 dark:text-slate-300 hover:text-amber-700 border border-slate-200 dark:border-slate-600'
-                            }"
-                        >
-                            <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
-                            <span>${isBookmarked ? 'Saved' : 'Save'}</span>
-                        </button>
+                        <!-- Right Actions: Admin Delete + Save -->
+                        <div class="flex items-center gap-1.5">
+                            ${isAdmin ? `
+                                <button 
+                                    onclick="App.handleDeletePaper('${p.id}')" 
+                                    title="Delete paper permanently (Admin)" 
+                                    class="p-1.5 text-xs font-semibold rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition"
+                                >
+                                    <i class="bi bi-trash3 text-rose-500"></i>
+                                </button>
+                            ` : ''}
+                            <button 
+                                id="bm-btn-${p.id}" 
+                                data-bm-id="${p.id}"
+                                onclick="App.toggleBookmark('${p.id}')" 
+                                title="Save for revision" 
+                                class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
+                                    isBookmarked 
+                                        ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
+                                        : 'bg-slate-100 dark:bg-slate-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-600 dark:text-slate-300 hover:text-amber-700 border border-slate-200 dark:border-slate-600'
+                                }"
+                            >
+                                <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                                <span>${isBookmarked ? 'Saved' : 'Save'}</span>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Course Code & QP Code -->
@@ -730,6 +747,7 @@ const App = {
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
                         ${items.map(p => {
                             const isBookmarked = this.bookmarks.has(p.id);
+                            const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
                             return `
                                 <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
                                     <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>
@@ -752,6 +770,11 @@ const App = {
                                             ${p.has_scheme ? `
                                                 <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500">
                                                     Scheme
+                                                </button>
+                                            ` : ''}
+                                            ${isAdmin ? `
+                                                <button onclick="App.handleDeletePaper('${p.id}')" title="Delete Paper (Admin)" class="px-2 py-1 text-xs font-semibold rounded bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950 dark:text-rose-300">
+                                                    <i class="bi bi-trash3"></i>
                                                 </button>
                                             ` : ''}
                                             <button 
@@ -1174,29 +1197,24 @@ const App = {
             return;
         }
 
-        // Group Year-Wise
-        const byYear = {};
-        semesterPapers.forEach(p => {
-            const yrMatch = p.exam_name.match(/202\d/);
-            const yr = yrMatch ? yrMatch[0] : '2025';
-            byYear[yr] = byYear[yr] || [];
-            byYear[yr].push(p);
-        });
+        // Partition into Major/Core Papers vs Minor Papers
+        const majorPapers = semesterPapers.filter(p => !p.is_minor);
+        const minorPapers = semesterPapers.filter(p => p.is_minor);
 
-        const sortedYears = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+        let sectionsHtml = '';
 
-        container.innerHTML = sortedYears.map(yr => {
-            const yearPapers = byYear[yr];
-            return `
+        // 1. Major & Core Programmes Section
+        if (majorPapers.length > 0) {
+            sectionsHtml += `
                 <div class="space-y-4">
                     <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
                         <div class="flex items-center gap-2">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
                             <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
-                                ${yr} Examination Sessions
+                                Major & Core Programmes
                             </h4>
                             <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
-                                ${yearPapers.length} Papers
+                                ${majorPapers.length} Papers
                             </span>
                         </div>
                         <span class="text-xs text-slate-400 font-medium">
@@ -1205,11 +1223,95 @@ const App = {
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        ${yearPapers.map(p => this.renderPaperCard(p)).join('')}
+                        ${majorPapers.map(p => this.renderPaperCard(p)).join('')}
                     </div>
                 </div>
             `;
-        }).join('');
+        }
+
+        // 2. Minor Headings and Minor Papers Section
+        const deptMinors = dept.minors || [];
+        const seenMinors = new Set();
+        const minorsList = [];
+
+        deptMinors.forEach(m => {
+            seenMinors.add(m.code);
+            minorsList.push({ code: m.code, name: m.name });
+        });
+
+        // Also detect minor programs from minor papers belonging to this department
+        minorPapers.forEach(p => {
+            const mCode = p.dept_code;
+            if (mCode && !seenMinors.has(mCode)) {
+                seenMinors.add(mCode);
+                minorsList.push({ code: mCode, name: p.minor_name || p.dept_name || mCode });
+            }
+        });
+
+        if (minorsList.length > 0) {
+            const minorSectionsHtml = minorsList.map(minor => {
+                const pForMinor = minorPapers.filter(p => 
+                    p.dept_code === minor.code || 
+                    (p.course_code && p.course_code.includes(minor.code))
+                );
+
+                if (pForMinor.length === 0) {
+                    return '';
+                }
+
+                return `
+                    <div class="minor-section bg-gradient-to-br from-pink-50/70 via-white to-purple-50/40 dark:from-pink-950/20 dark:via-slate-800 dark:to-purple-950/20 p-5 sm:p-6 rounded-2xl border border-pink-200/80 dark:border-pink-900/40 shadow-xs space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-200/60 dark:border-pink-900/40 pb-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-pink-100 dark:bg-pink-900/60 text-pink-700 dark:text-pink-300 flex items-center justify-center text-lg font-bold shadow-2xs">
+                                    <i class="bi bi-bookmark-star-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                                            Minor: ${minor.name}
+                                        </h4>
+                                        <span class="font-mono text-xs font-bold px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-900/70 text-pink-800 dark:text-pink-200 border border-pink-200 dark:border-pink-800">
+                                            ${minor.code}
+                                        </span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">
+                                        Official FYUGP Minor Specialization under ${dept.name}
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-800 shadow-2xs">
+                                ${pForMinor.length} ${pForMinor.length === 1 ? 'Paper' : 'Papers'}
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            ${pForMinor.map(p => this.renderPaperCard(p)).join('')}
+                        </div>
+                    </div>
+                `;
+            }).filter(Boolean).join('');
+
+            if (minorSectionsHtml) {
+                sectionsHtml += `
+                    <div class="pt-2 space-y-5">
+                        <div class="flex items-center gap-2 border-b border-pink-200 dark:border-pink-900/50 pb-2">
+                            <i class="bi bi-stars text-pink-600 dark:text-pink-400"></i>
+                            <h4 class="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs">
+                                Minor Programmes & Specializations (${minorPapers.length} Papers)
+                            </h4>
+                        </div>
+                        ${minorSectionsHtml}
+                    </div>
+                `;
+            }
+        }
+
+        container.innerHTML = sectionsHtml || `
+            <div class="py-12 text-center text-slate-400 text-xs">
+                No papers found matching the current criteria.
+            </div>
+        `;
     },
 
     backToDepartmentsList() {
@@ -1230,6 +1332,12 @@ const App = {
         const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
         document.getElementById('adminLoginView')?.classList.toggle('hidden', isAuth);
         document.getElementById('adminControlsView')?.classList.toggle('hidden', !isAuth);
+
+        if (isAuth) {
+            this.populateAdminDeptDropdown();
+            this.switchAdminTab('upload');
+            document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+        }
     },
 
     closeAdminModal() {
@@ -1246,6 +1354,13 @@ const App = {
             if (err) err.classList.add('hidden');
             document.getElementById('adminLoginView')?.classList.add('hidden');
             document.getElementById('adminControlsView')?.classList.remove('hidden');
+            document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+            this.populateAdminDeptDropdown();
+            this.switchAdminTab('upload');
+            this.renderPapers();
+            if (this.deptState.activeDept) {
+                this.renderDeptSemesterPapers();
+            }
         } else {
             if (err) err.classList.remove('hidden');
         }
@@ -1255,8 +1370,317 @@ const App = {
         sessionStorage.removeItem('mgu_admin_auth');
         document.getElementById('adminLoginView')?.classList.remove('hidden');
         document.getElementById('adminControlsView')?.classList.add('hidden');
+        document.getElementById('adminActiveBadge')?.classList.add('hidden');
         const input = document.getElementById('adminPasskeyInput');
         if (input) input.value = '';
+        this.renderPapers();
+        if (this.deptState.activeDept) {
+            this.renderDeptSemesterPapers();
+        }
+    },
+
+    switchAdminTab(tab) {
+        const uploadView = document.getElementById('adminTabUploadView');
+        const deleteView = document.getElementById('adminTabDeleteView');
+        const syncView = document.getElementById('adminTabSyncView');
+        const btnUpload = document.getElementById('adminTabBtnUpload');
+        const btnDelete = document.getElementById('adminTabBtnDelete');
+        const btnSync = document.getElementById('adminTabBtnSync');
+
+        const activeClass = 'px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition';
+        const inactiveClass = 'px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition';
+
+        if (uploadView) uploadView.classList.toggle('hidden', tab !== 'upload');
+        if (deleteView) deleteView.classList.toggle('hidden', tab !== 'delete');
+        if (syncView) syncView.classList.toggle('hidden', tab !== 'sync');
+
+        if (btnUpload) btnUpload.className = tab === 'upload' ? activeClass : inactiveClass;
+        if (btnDelete) btnDelete.className = tab === 'delete' ? activeClass : inactiveClass;
+        if (btnSync) btnSync.className = tab === 'sync' ? activeClass : inactiveClass;
+
+        if (tab === 'delete') {
+            this.renderAdminDeleteList();
+        }
+    },
+
+    toggleAdminMinorFields() {
+        const isMinor = document.getElementById('adminUploadIsMinor')?.checked;
+        const container = document.getElementById('adminMinorFieldsContainer');
+        if (container) {
+            container.classList.toggle('hidden', !isMinor);
+        }
+    },
+
+    populateAdminDeptDropdown() {
+        const select = document.getElementById('adminUploadDept');
+        if (!select) return;
+        select.innerHTML = '<option value="">-- Select Department --</option>' +
+            this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
+    },
+
+    async handleAdminUploadSubmit(e) {
+        if (e) e.preventDefault();
+
+        const statusEl = document.getElementById('adminUploadStatus');
+        const submitBtn = document.getElementById('adminUploadSubmitBtn');
+        if (statusEl) {
+            statusEl.className = 'p-3 rounded-lg text-xs bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900 flex items-center gap-2';
+            statusEl.innerHTML = '<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-blue-600 border-t-transparent"></div> Processing and uploading question paper...';
+            statusEl.classList.remove('hidden');
+        }
+        if (submitBtn) submitBtn.disabled = true;
+
+        try {
+            const courseCode = document.getElementById('adminUploadCourseCode').value.trim().toUpperCase();
+            const title = document.getElementById('adminUploadTitle').value.trim();
+            const deptCode = document.getElementById('adminUploadDept').value.trim().toUpperCase();
+            const semester = parseInt(document.getElementById('adminUploadSemester').value, 10);
+            const courseType = document.getElementById('adminUploadCourseType').value.trim().toUpperCase();
+            const isMinor = document.getElementById('adminUploadIsMinor').checked;
+            const minorName = document.getElementById('adminUploadMinorName')?.value.trim() || '';
+            const minorCode = document.getElementById('adminUploadMinorCode')?.value.trim().toUpperCase() || '';
+            const qpCode = document.getElementById('adminUploadQpCode').value.trim();
+            const examName = document.getElementById('adminUploadExamName').value.trim();
+            const qpFile = document.getElementById('adminUploadQpFile')?.files[0];
+            const qpUrl = document.getElementById('adminUploadQpUrl')?.value.trim();
+            const schemeFile = document.getElementById('adminUploadSchemeFile')?.files[0];
+            const schemeUrl = document.getElementById('adminUploadSchemeUrl')?.value.trim();
+
+            const deptObj = this.departments.find(d => d.code === deptCode);
+            const deptName = deptObj ? deptObj.name : deptCode;
+
+            const toB64 = (file) => new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+
+            let qpFileB64 = '';
+            if (qpFile) qpFileB64 = await toB64(qpFile);
+
+            let schemeFileB64 = '';
+            if (schemeFile) schemeFileB64 = await toB64(schemeFile);
+
+            const payload = {
+                course_code: courseCode,
+                title: title,
+                dept_code: isMinor && minorCode ? minorCode : deptCode,
+                dept_name: isMinor && minorName ? minorName : deptName,
+                parent_dept: deptCode,
+                parent_dept_name: deptName,
+                semester: semester,
+                course_type: courseType,
+                is_minor: isMinor,
+                minor_name: minorName,
+                qp_code: qpCode,
+                exam_name: examName,
+                qp_url: qpUrl,
+                scheme_url: schemeUrl,
+                qp_file_b64: qpFileB64,
+                scheme_file_b64: schemeFileB64
+            };
+
+            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+
+            let data;
+            if (isLocalBackend) {
+                const res = await fetch('/api/admin/upload-paper', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                data = await res.json();
+            } else {
+                const ts = Date.now();
+                const files = [];
+                if (qpUrl || qpFileB64) files.push({ type: "QP", label: "QUESTION PAPER", url: qpUrl || "#" });
+                if (schemeUrl || schemeFileB64) files.push({ type: "SCHEME", label: "SCHEME", url: schemeUrl || "#" });
+
+                const customPaper = {
+                    id: `custom_${courseCode}_${ts}`,
+                    qp_code: qpCode,
+                    course_code: courseCode,
+                    title: title,
+                    raw_header: `${qpCode} - ${courseCode} ${title}`.trim(),
+                    semester: semester,
+                    semester_label: `Semester ${semester}`,
+                    course_type: courseType,
+                    dept_code: isMinor && minorCode ? minorCode : deptCode,
+                    dept_name: isMinor && minorName ? minorName : deptName,
+                    parent_dept: deptCode,
+                    parent_dept_name: deptName,
+                    is_minor: isMinor,
+                    minor_name: minorName,
+                    exam_name: examName,
+                    batch: "2024 Admission",
+                    is_fyugp: true,
+                    has_qp: Boolean(qpUrl || qpFileB64),
+                    qp_url: qpUrl || "#",
+                    has_scheme: Boolean(schemeUrl || schemeFileB64),
+                    scheme_url: schemeUrl || "#",
+                    files: files,
+                    has_files: files.length > 0
+                };
+                data = { success: true, paper: customPaper };
+            }
+
+            if (data.success && data.paper) {
+                this.papers.unshift(data.paper);
+                this.applyFilters();
+                this.renderDepartmentsList();
+                if (this.deptState.activeDept) {
+                    this.renderDeptSemesterTabs();
+                    this.renderDeptSemesterPapers();
+                }
+                this.updateStatsUI();
+
+                if (statusEl) {
+                    statusEl.className = 'p-3 rounded-lg text-xs bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-2';
+                    statusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> Paper "${courseCode} - ${title}" published successfully!`;
+                }
+
+                document.getElementById('adminUploadCourseCode').value = '';
+                document.getElementById('adminUploadTitle').value = '';
+                document.getElementById('adminUploadQpCode').value = '';
+                if (document.getElementById('adminUploadQpFile')) document.getElementById('adminUploadQpFile').value = '';
+                if (document.getElementById('adminUploadQpUrl')) document.getElementById('adminUploadQpUrl').value = '';
+                if (document.getElementById('adminUploadSchemeFile')) document.getElementById('adminUploadSchemeFile').value = '';
+                if (document.getElementById('adminUploadSchemeUrl')) document.getElementById('adminUploadSchemeUrl').value = '';
+            } else {
+                throw new Error(data.error || 'Server rejected paper upload');
+            }
+        } catch (err) {
+            if (statusEl) {
+                statusEl.className = 'p-3 rounded-lg text-xs bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800';
+                statusEl.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-rose-600"></i> Error: ${err.message}`;
+            }
+        } finally {
+            if (submitBtn) submitBtn.disabled = false;
+        }
+    },
+
+    renderAdminDeleteList() {
+        const container = document.getElementById('adminDeleteListContainer');
+        const badge = document.getElementById('adminDeleteCountBadge');
+        const searchInput = document.getElementById('adminDeleteSearchInput');
+        if (!container) return;
+
+        const q = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        let list = this.papers;
+        if (q) {
+            list = list.filter(p => 
+                (p.course_code && p.course_code.toLowerCase().includes(q)) ||
+                (p.title && p.title.toLowerCase().includes(q)) ||
+                (p.qp_code && p.qp_code.toLowerCase().includes(q)) ||
+                (p.dept_name && p.dept_name.toLowerCase().includes(q)) ||
+                (p.parent_dept_name && p.parent_dept_name.toLowerCase().includes(q)) ||
+                (p.dept_code && p.dept_code.toLowerCase().includes(q)) ||
+                (p.course_type && p.course_type.toLowerCase().includes(q))
+            );
+        }
+
+        if (badge) {
+            badge.textContent = `${list.length} papers`;
+        }
+
+        if (list.length === 0) {
+            container.innerHTML = `
+                <div class="py-8 text-center text-slate-400">
+                    <p class="text-xs">No papers match your search.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const displayList = list.slice(0, 100);
+        container.innerHTML = displayList.map(p => `
+            <div class="p-3 hover:bg-slate-50 dark:hover:bg-slate-700/40 flex items-center justify-between gap-3 transition">
+                <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-1.5 flex-wrap">
+                        <span class="font-mono font-bold text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-1.5 py-0.5 rounded">
+                            ${p.course_code || 'CODE N/A'}
+                        </span>
+                        <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                            Sem ${p.semester}
+                        </span>
+                        <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">
+                            ${p.course_type}
+                        </span>
+                        ${p.is_minor ? `
+                            <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded badge-minor">
+                                ${p.dept_code} (Minor)
+                            </span>
+                        ` : ''}
+                        ${p.qp_code ? `
+                            <span class="font-mono text-[10px] text-slate-400">QP: ${p.qp_code}</span>
+                        ` : ''}
+                    </div>
+                    <div class="font-medium text-slate-900 dark:text-slate-100 truncate mt-0.5" title="${p.title}">
+                        ${p.title}
+                    </div>
+                    <div class="text-[11px] text-slate-400 truncate">
+                        ${p.parent_dept_name || p.dept_name}
+                    </div>
+                </div>
+                <div class="shrink-0 flex items-center gap-1.5">
+                    ${p.has_qp ? `
+                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-[11px] font-semibold rounded bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200" title="Preview Paper">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    ` : ''}
+                    <button onclick="App.handleDeletePaper('${p.id}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition flex items-center gap-1" title="Delete Paper Permanently">
+                        <i class="bi bi-trash3"></i> Delete
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    },
+
+    async handleDeletePaper(paperId) {
+        const paper = this.papers.find(p => p.id === paperId);
+        const title = paper ? `${paper.course_code} - ${paper.title}` : `Paper ID ${paperId}`;
+        if (!confirm(`Are you sure you want to delete "${title}" permanently?`)) {
+            return;
+        }
+
+        const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+
+        try {
+            if (isLocalBackend) {
+                const res = await fetch('/api/admin/delete-paper', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: paperId })
+                });
+                const data = await res.json();
+                if (!data.success) {
+                    alert(`Failed to delete paper: ${data.error || 'Unknown error'}`);
+                    return;
+                }
+            }
+
+            this.papers = this.papers.filter(p => p.id !== paperId);
+            this.applyFilters();
+            this.renderDepartmentsList();
+            if (this.deptState.activeDept) {
+                this.renderDeptSemesterTabs();
+                this.renderDeptSemesterPapers();
+            }
+            this.renderAdminDeleteList();
+            this.updateStatsUI();
+            alert(`Paper "${title}" successfully deleted!`);
+        } catch (e) {
+            this.papers = this.papers.filter(p => p.id !== paperId);
+            this.applyFilters();
+            this.renderDepartmentsList();
+            if (this.deptState.activeDept) {
+                this.renderDeptSemesterTabs();
+                this.renderDeptSemesterPapers();
+            }
+            this.renderAdminDeleteList();
+            alert(`Paper removed from session.`);
+        }
     },
 
     async triggerSync() {

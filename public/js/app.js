@@ -444,19 +444,19 @@ const App = {
 
         // 3. Matched Courses / Question Papers
         const matchedPapers = [];
-        const seenCourseCodes = new Set();
-        for (const p of this.papers) {
-            const cCode = (p.course_code || '').toLowerCase();
-            const cTitle = (p.title || '').toLowerCase();
-            const pDept = (p.dept_name || '').toLowerCase();
-            const pParent = (p.parent_dept_name || '').toLowerCase();
+        const seenKeys = new Set();
+        const tokens = q.split(/\s+/).filter(Boolean);
+        let totalPaperMatches = 0;
 
-            if (cCode.includes(q) || cTitle.includes(q) || pDept.includes(q) || pParent.includes(q)) {
-                const uniqueKey = p.course_code || p.id;
-                if (!seenCourseCodes.has(uniqueKey)) {
-                    seenCourseCodes.add(uniqueKey);
-                    matchedPapers.push(p);
-                    if (matchedPapers.length >= 6) break;
+        for (const p of this.papers) {
+            if (this.matchPaper(p, tokens, q)) {
+                totalPaperMatches++;
+                const uniqueKey = `${p.id || ''}_${p.course_code || ''}_${p.exam_name || ''}`;
+                if (!seenKeys.has(uniqueKey)) {
+                    seenKeys.add(uniqueKey);
+                    if (matchedPapers.length < 12) {
+                        matchedPapers.push(p);
+                    }
                 }
             }
         }
@@ -523,8 +523,13 @@ const App = {
         // Courses / Papers Group
         if (matchedPapers.length > 0) {
             html += `
-                <div class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-700/60 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-                    <i class="bi bi-file-earmark-text text-indigo-600"></i> Courses & Papers (${matchedPapers.length})
+                <div class="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-700/60 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center justify-between">
+                    <span class="flex items-center gap-1.5">
+                        <i class="bi bi-file-earmark-text text-indigo-600"></i> Courses & Papers (${totalPaperMatches})
+                    </span>
+                    ${totalPaperMatches > matchedPapers.length ? `
+                        <span class="text-[10px] text-slate-400 font-normal">Showing top ${matchedPapers.length} of ${totalPaperMatches}</span>
+                    ` : ''}
                 </div>
                 ${matchedPapers.map(p => `
                     <div class="p-3 hover:bg-slate-50 dark:hover:bg-slate-700/70 flex items-center justify-between gap-3 transition">
@@ -533,11 +538,11 @@ const App = {
                                 <span class="font-mono font-bold text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-1.5 py-0.5 rounded">
                                     ${p.course_code || 'CODE N/A'}
                                 </span>
-                                <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+                                <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
                                     ${this.extractMonthYear(p.exam_name)}
                                 </span>
                                 ${p.is_minor ? `
-                                    <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded badge-minor">
+                                    <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded badge-minor">
                                         ${p.minor_name || p.dept_code} (Minor)
                                     </span>
                                 ` : ''}
@@ -546,7 +551,7 @@ const App = {
                                 ${p.title}
                             </div>
                             <div class="text-[11px] text-slate-400 truncate">
-                                ${p.parent_dept_name}
+                                ${p.parent_dept_name || p.dept_name || ''}
                             </div>
                         </div>
 
@@ -556,12 +561,22 @@ const App = {
                                     <i class="bi bi-eye"></i> QP
                                 </button>
                             ` : ''}
-                            <button onclick="App.openDepartmentView('${p.parent_dept}'); App.closeSearchDropdown();" class="px-2 py-1 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Go to Department">
+                            ${p.has_scheme ? `
+                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'Scheme'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Evaluation Scheme">
+                                    <i class="bi bi-journal-check"></i> Scheme
+                                </button>
+                            ` : ''}
+                            <button onclick="App.openDepartmentView('${p.parent_dept || p.dept_code}', ${p.semester}); App.closeSearchDropdown();" class="px-2 py-1 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Go to Department">
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </div>
                     </div>
                 `).join('')}
+                ${totalPaperMatches > matchedPapers.length ? `
+                    <div onclick="App.switchToAllPapersWithQuery('${q.replace(/'/g, "\\'")}'); App.closeSearchDropdown();" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 hover:bg-blue-50 dark:hover:bg-slate-700 cursor-pointer text-center text-xs font-semibold text-blue-600 dark:text-blue-400 transition border-t border-slate-100 dark:border-slate-700">
+                        View all ${totalPaperMatches} matching papers in All Question Papers →
+                    </div>
+                ` : ''}
             `;
         }
 
@@ -586,6 +601,17 @@ const App = {
         }
         this.deptState.deptSearchQuery = '';
         this.renderDepartmentsList();
+    },
+
+    switchToAllPapersWithQuery(q) {
+        this.switchTab('papers');
+        const searchInput = document.getElementById('searchQuery');
+        if (searchInput) {
+            searchInput.value = q;
+            this.state.searchQuery = q;
+            this.applyFilters();
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     clearDeptPaperSearch() {
@@ -1240,13 +1266,21 @@ const App = {
         let deptsToRender = this.departments;
         if (this.deptState.deptSearchQuery) {
             const dq = this.deptState.deptSearchQuery.toLowerCase();
-            deptsToRender = this.departments.filter(d => 
-                d.name.toLowerCase().includes(dq) || 
-                d.code.toLowerCase().includes(dq) || 
-                (d.description && d.description.toLowerCase().includes(dq)) ||
-                (d.category && d.category.toLowerCase().includes(dq)) ||
-                (d.minors && d.minors.some(m => m.name.toLowerCase().includes(dq) || m.code.toLowerCase().includes(dq)))
-            );
+            const tokens = dq.split(/\s+/).filter(Boolean);
+            deptsToRender = this.departments.filter(d => {
+                if (d.name.toLowerCase().includes(dq) || 
+                    d.code.toLowerCase().includes(dq) || 
+                    (d.description && d.description.toLowerCase().includes(dq)) ||
+                    (d.category && d.category.toLowerCase().includes(dq)) ||
+                    (d.minors && d.minors.some(m => m.name.toLowerCase().includes(dq) || m.code.toLowerCase().includes(dq)))) {
+                    return true;
+                }
+                const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+                return this.papers.some(p => 
+                    (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) &&
+                    this.matchPaper(p, tokens, dq)
+                );
+            });
         }
 
         if (deptsToRender.length === 0) {

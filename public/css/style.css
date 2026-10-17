@@ -1,0 +1,159 @@
+/* MGU Question Paper & Scheme Portal Custom Styles */
+
+:root {
+  --primary-blue: #1e3a8a;
+  --primary-indigo: #4338ca;
+  --accent-teal: #0d9488;
+  --accent-amber: #d97706;
+  --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Glassmorphism effects */
+.glass-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .glass-header {
+  background: rgba(15, 23, 42, 0.88);
+  border-bottom: 1px solid rgba(30, 41, 59, 0.9);
+}
+
+/* Card hover animation */
+.paper-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.paper-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-hover-shadow);
+  border-color: #cbd5e1;
+}
+
+.dark .paper-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.dark .paper-card:hover {
+  border-color: #475569;
+}
+
+/* Badges */
+.badge-dsc { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+.badge-dse { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.badge-sec { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.badge-vac { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+.badge-mdc { background: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; }
+.badge-aec { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+.badge-minor { background: #fce7f3; color: #9d174d; border: 1px solid #fbcfe8; }
+.badge-cbcs { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+
+.dark .badge-dsc { background: #1e3a8a; color: #93c5fd; border-color: #1d4ed8; }
+.dark .badge-dse { background: #78350f; color: #fde68a; border-color: #92400e; }
+.dark .badge-sec { background: #14532d; color: #86efac; border-color: #166534; }
+.dark .badge-vac { background: #581c87; color: #d8b4fe; border-color: #6b21a8; }
+.dark .badge-mdc { background: #7c2d12; color: #fdba74; border-color: #9a3412; }
+.dark .badge-aec { background: #312e81; color: #a5b4fc; border-color: #3730a3; }
+.dark .badge-minor { background: #701a75; color: #f472b6; border-color: #86198f; }
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Interactive Accordion for Model QP */
+.model-accordion-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+.model-accordion-header:hover {
+  background-color: #f1f5f9;
+}
+
+.dark .model-accordion-header:hover {
+  background-color: #334155;
+}
+
+/* Question tags */
+.q-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tag-bloom {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.dark .tag-bloom {
+  background-color: #075985;
+  color: #bae6fd;
+}
+
+.tag-co {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.dark .tag-co {
+  background-color: #581c87;
+  color: #e9d5ff;
+}

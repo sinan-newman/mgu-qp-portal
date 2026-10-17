@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGU Question Papers & Evaluation Schemes Portal | MGU-UGP Archive</title>
+    <meta name="description" content="Centralized portal for Mahatma Gandhi University students to browse, preview, and download previous year question papers and evaluation schemes for FYUGP Honours and CBCS programs.">
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        mgu: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen text-slate-800 dark:text-slate-100 bg-slate-50 dark:bg-slate-900 transition-colors duration-200">
+
+    <!-- Navigation Header -->
+    <header class="glass-header sticky top-0 z-40 transition-colors duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                
+                <!-- Logo & Brand -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="App.resetFilters(); App.switchTab('papers');">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white">
+                                MGU Question Archive
+                            </span>
+                            <span class="bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                FYUGP 2024+
+                            </span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
+                            Mahatma Gandhi University • Schemes & Question Papers Portal
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Action Buttons -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Bookmarks Tab Shortcut -->
+                    <button onclick="App.switchTab('bookmarks')" class="relative px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 transition flex items-center gap-1.5">
+                        <i class="bi bi-star-fill text-amber-500"></i>
+                        <span class="hidden sm:inline">Saved</span>
+                        <span id="bookmarkCountBadge" class="hidden ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">0</span>
+                    </button>
+
+                    <!-- Theme Toggle -->
+                    <button id="themeToggleBtn" aria-label="Toggle Theme" class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                        <i id="themeIcon" class="bi bi-moon-stars"></i>
+                    </button>
+
+                    <!-- Source Portal Badge Link -->
+                    <a href="https://assist.mgu.ac.in/schema/" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 border border-slate-200 dark:border-slate-700 transition" title="Go to official MGU schema portal">
+                        <span>assist.mgu.ac.in</span>
+                        <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Search & Statistics Section -->
+    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white pt-10 pb-12 px-4 sm:px-6 lg:px-8 shadow-inner">
+        <div class="max-w-5xl mx-auto text-center">
+            
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 mb-4 backdrop-blur">
+                <i class="bi bi-shield-check"></i> Official MGU-UGP / Honours & CBCS Question Paper Repository
+            </span>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+                Download & Preview Previous Question Papers
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto mb-8 font-light">
+                Publicly categorized by department, course code, and semester. Preview PDFs instantly before downloading, complete with official evaluation schemes.
+            </p>
+
+            <!-- Main Live Search Bar -->
+            <div class="max-w-3xl mx-auto relative mb-8">
+                <div class="relative flex items-center">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 text-lg">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by Course Code (e.g. MG3DSEMAT202), QP Code (e.g. 25900513), or Subject..." 
+                        class="w-full pl-11 pr-24 py-4 rounded-2xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-700 shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-500/30 text-sm sm:text-base font-medium transition"
+                    >
+                    <button id="clearSearchBtn" class="hidden absolute right-16 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </button>
+                    <div class="absolute right-3 hidden sm:flex items-center gap-1 px-2 py-1 bg-slate-100 dark:bg-slate-700 rounded text-[11px] font-mono text-slate-500 dark:text-slate-400 pointer-events-none">
+                        Press <kbd class="font-bold text-slate-700 dark:text-slate-200">/</kbd>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
+                    <div class="text-xs text-blue-200 font-medium flex items-center gap-1.5">
+                        <i class="bi bi-file-earmark-pdf"></i> Question Papers
+                    </div>
+                    <div id="statTotalPapers" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">2,323</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
+                    <div class="text-xs text-emerald-200 font-medium flex items-center gap-1.5">
+                        <i class="bi bi-journal-check"></i> Evaluation Schemes
+                    </div>
+                    <div id="statTotalSchemes" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">2,220</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
+                    <div class="text-xs text-purple-200 font-medium flex items-center gap-1.5">
+                        <i class="bi bi-book"></i> Syllabus Courses
+                    </div>
+                    <div id="statTotalCourses" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">308</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
+                    <div class="text-xs text-amber-200 font-medium flex items-center gap-1.5">
+                        <i class="bi bi-arrow-repeat"></i> Portal Sync
+                    </div>
+                    <div id="statLastSync" class="text-xs sm:text-sm font-semibold text-white mt-2 truncate">Live Archive</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Navigation Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none">
+            <button data-tab="papers" class="nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-collection"></i> Question Papers & Schemes
+            </button>
+            <button data-tab="departments" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-diagram-3"></i> By Department
+            </button>
+            <button data-tab="model-courses" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-list-check"></i> Model Course List (308)
+            </button>
+            <button data-tab="model-papers" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-file-earmark-richtext"></i> Model Question Papers
+            </button>
+            <button data-tab="sync" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-cloud-arrow-down"></i> Portal Sync
+            </button>
+        </div>
+
+        <!-- Filter Controls Bar (for Question Papers) -->
+        <section id="filterControlsSection" class="bg-white dark:bg-slate-800 rounded-2xl p-4 sm:p-5 shadow-xs border border-slate-200 dark:border-slate-700 mb-6 space-y-4">
+            
+            <!-- Row 1: Semesters -->
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-2 flex items-center gap-1">
+                    <i class="bi bi-mortarboard"></i> Semester:
+                </span>
+                <button data-sem="ALL" class="sem-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs transition">
+                    All Semesters
+                </button>
+                <button data-sem="1" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 1
+                </button>
+                <button data-sem="2" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 2
+                </button>
+                <button data-sem="3" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 3
+                </button>
+                <button data-sem="4" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 4
+                </button>
+                <button data-sem="5" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 5
+                </button>
+                <button data-sem="6" class="sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Sem 6
+                </button>
+            </div>
+
+            <!-- Row 2: Course Type & Department Dropdown -->
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-100 dark:border-slate-700/60">
+                
+                <!-- Course Types -->
+                <div class="flex flex-wrap items-center gap-1.5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-2 flex items-center gap-1">
+                        <i class="bi bi-tag"></i> Type:
+                    </span>
+                    <button data-ctype="ALL" class="ctype-filter-btn px-3 py-1 text-xs font-semibold rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs transition">
+                        All Types
+                    </button>
+                    <button data-ctype="DSC" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Discipline Specific Core">
+                        DSC Core
+                    </button>
+                    <button data-ctype="DSE" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Discipline Specific Elective">
+                        DSE Elective
+                    </button>
+                    <button data-ctype="SEC" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Skill Enhancement Course">
+                        SEC Skill
+                    </button>
+                    <button data-ctype="VAC" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Value Added Course">
+                        VAC
+                    </button>
+                    <button data-ctype="MDC" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Multi-Disciplinary Course">
+                        MDC
+                    </button>
+                    <button data-ctype="AEC" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Ability Enhancement Course">
+                        AEC
+                    </button>
+                    <button data-ctype="MIN" class="ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Minor Courses only (LIH, TRS, PTP, BST, BLW, etc.)">
+                        ★ Minor Only
+                    </button>
+                </div>
+
+                <!-- Department Selector Dropdown & View Mode -->
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <select id="deptSelect" class="bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-800 dark:text-slate-100 text-xs rounded-lg px-3 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium">
+                            <option value="ALL">All Departments</option>
+                        </select>
+                    </div>
+
+                    <!-- Grid vs Table view toggles -->
+                    <div class="flex items-center border border-slate-200 dark:border-slate-700 rounded-lg p-0.5 bg-slate-50 dark:bg-slate-800 text-xs">
+                        <button id="gridViewBtn" title="Grid View" class="p-1.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300">
+                            <i class="bi bi-grid-fill"></i>
+                        </button>
+                        <button id="tableViewBtn" title="Table View" class="p-1.5 rounded text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">
+                            <i class="bi bi-list-ul"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Secondary Options: Files only & Reset -->
+            <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                <label class="flex items-center gap-2 cursor-pointer select-none">
+                    <input type="checkbox" id="filesOnlyCheckbox" checked class="rounded text-blue-600 focus:ring-blue-500">
+                    <span>Show only papers with direct PDF files available</span>
+                </label>
+
+                <button onclick="App.resetFilters()" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold flex items-center gap-1">
+                    <i class="bi bi-arrow-counterclockwise"></i> Reset Filters
+                </button>
+            </div>
+
+        </section>
+
+        <!-- SECTION 1: QUESTION PAPERS SECTION -->
+        <section id="papersSection">
+            <!-- Results Counter -->
+            <div class="flex items-center justify-between mb-4">
+                <h2 id="resultsCount" class="text-sm font-bold text-slate-700 dark:text-slate-300">
+                    Loading question papers...
+                </h2>
+                <div class="text-xs text-slate-400">
+                    Click Preview to view PDF inline
+                </div>
+            </div>
+
+            <!-- Grid / Table Container -->
+            <div id="papersGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Dynamic cards populated by app.js -->
+            </div>
+
+            <!-- Pagination -->
+            <div id="paginationControls" class="mt-8"></div>
+        </section>
+
+        <!-- SECTION 2: BROWSE BY DEPARTMENT -->
+        <section id="departmentsSection" class="hidden">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Academic Departments</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Browse question papers grouped by major departments. Minor departments (e.g. LIH and TRS under English, PTP under Malayalam, BST and BLW under Commerce) are listed with direct access.
+                </p>
+            </div>
+
+            <div id="deptCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Rendered by app.js -->
+            </div>
+        </section>
+
+        <!-- SECTION 3: MODEL COURSE LIST (UPLOADED SYLLABUS LIST) -->
+        <section id="modelCoursesSection" class="hidden">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 p-6 mb-6">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Model Course List / Curriculum Catalog</h2>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                            Comprehensive syllabus catalog for MGU-UGP (Honours) 2024 Admission onwards.
+                        </p>
+                    </div>
+                    <span id="modelCoursesCount" class="text-xs font-bold px-3 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200">
+                        308 Courses Uploaded
+                    </span>
+                </div>
+
+                <!-- Table Container -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider">
+                                <th class="py-3 px-4">#</th>
+                                <th class="py-3 px-4">Course Code</th>
+                                <th class="py-3 px-4">Course Title / Note</th>
+                                <th class="py-3 px-4">Semester</th>
+                                <th class="py-3 px-4">Type</th>
+                                <th class="py-3 px-4">Department Mapping</th>
+                                <th class="py-3 px-4 text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modelCoursesTableBody" class="divide-y divide-slate-100 dark:divide-slate-700/60">
+                            <!-- Populated by app.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: MODEL QUESTION PAPERS (INTERACTIVE) -->
+        <section id="modelPapersSection" class="hidden">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Curated Model Question Papers</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Official sample and model question papers with full section breakdown, Bloom's Taxonomy ratings, and Course Outcomes (COs).
+                </p>
+            </div>
+
+            <div id="modelQpContainer">
+                <!-- Populated by model-qp.js -->
+            </div>
+        </section>
+
+        <!-- SECTION 5: PORTAL SYNC STATUS -->
+        <section id="syncSection" class="hidden">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 p-6 sm:p-8 max-w-4xl mx-auto">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center text-2xl">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">MGU Schema Portal Synchronization</h2>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">
+                            Data is fetched directly from <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 font-semibold underline">https://assist.mgu.ac.in/schema/</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Total Scraped Items</div>
+                        <div class="text-2xl font-bold font-mono text-slate-900 dark:text-white mt-1">3,350</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Active Question Papers</div>
+                        <div class="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400 mt-1">2,323</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Evaluation Schemes</div>
+                        <div class="text-2xl font-bold font-mono text-emerald-600 dark:text-emerald-400 mt-1">2,220</div>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider text-xs">Included University Examination Sessions:</h4>
+                    <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1.5 list-disc list-inside">
+                        <li><strong>Option 35:</strong> V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026</li>
+                        <li><strong>Option 21:</strong> MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026 (401 QPs, 379 Schemes)</li>
+                        <li><strong>Option 6:</strong> Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025 (361 QPs, 353 Schemes)</li>
+                        <li><strong>Option 4:</strong> II Semester MGU UGP25 - March - 2025 (161 QPs, 178 Schemes)</li>
+                        <li><strong>Option 27:</strong> Second semester BA/BSc/BVocFYUGP April 2026 (258 QPs, 235 Schemes)</li>
+                        <li><strong>Option 1 & 7:</strong> First Semester MGU-UGP Honours Examinations Nov 2024 & Nov 2025 (531 QPs, 533 Schemes)</li>
+                        <li><strong>Options 2, 3, 5:</strong> CBCS Supplementary and Regular Examinations (402 QPs, 479 Schemes)</li>
+                    </ul>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
+                    <button id="triggerSyncBtn" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-sm font-semibold shadow-sm flex items-center gap-2 transition">
+                        <i class="bi bi-arrow-repeat"></i> Trigger Re-Sync Now
+                    </button>
+                    <span class="text-xs text-slate-500">
+                        Direct PDF downloads are served directly by Mahatma Gandhi University.
+                    </span>
+                </div>
+
+                <div id="syncStatusNotice" class="hidden"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PDF PREVIEW MODAL -->
+    <div id="pdfModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-2 sm:p-4 transition">
+        <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-6xl h-[92vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+            
+            <!-- Modal Header -->
+            <div class="px-4 py-3 sm:px-6 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-3 shrink-0">
+                <div class="flex-1 min-w-0">
+                    <h3 id="modalTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-white truncate">
+                        Document Preview
+                    </h3>
+                    <div id="modalMeta" class="flex flex-wrap items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                        <!-- Populated by pdf-viewer.js -->
+                    </div>
+                </div>
+
+                <!-- Modal Action Toolbar -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <!-- Tab Switcher: QP vs Scheme -->
+                    <div class="flex items-center bg-slate-200 dark:bg-slate-700 p-0.5 rounded-lg">
+                        <button id="modalQpTab" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition">
+                            <i class="bi bi-file-earmark-text"></i> Question Paper
+                        </button>
+                        <button id="modalSchemeTab" class="px-3 py-1.5 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1.5 transition">
+                            <i class="bi bi-journal-check"></i> Scheme / Key
+                        </button>
+                    </div>
+
+                    <!-- Open in New Tab Button -->
+                    <button id="modalExternalBtn" title="Open in new window" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-xs transition">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </button>
+
+                    <!-- Download Button -->
+                    <button id="modalDownloadBtn" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-xs flex items-center gap-1.5 transition">
+                        <i class="bi bi-download"></i> Download
+                    </button>
+
+                    <!-- Close Button -->
+                    <button onclick="PDFViewer.close()" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500 hover:text-slate-800 dark:hover:text-white transition">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Viewer Container -->
+            <div class="flex-1 bg-slate-100 dark:bg-slate-950 relative overflow-hidden flex flex-col">
+                <!-- Loading Spinner -->
+                <div id="modalLoading" class="hidden absolute inset-0 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xs z-10 flex flex-col items-center justify-center gap-2">
+                    <div class="animate-spin rounded-full h-8 w-8 border-3 border-blue-600 border-t-transparent"></div>
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Loading document...</span>
+                </div>
+
+                <!-- PDF iframe viewer -->
+                <iframe id="pdfIframe" src="about:blank" class="w-full h-full border-0" title="PDF Document Viewer"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <div class="flex items-center gap-2">
+                <i class="bi bi-mortarboard-fill text-blue-600"></i>
+                <span>MGU Question Paper & Scheme Portal • Built for Mahatma Gandhi University Students</span>
+            </div>
+            <div>
+                Data sourced from <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 underline">https://assist.mgu.ac.in/schema/</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/pdf-viewer.js"></script>
+    <script src="js/model-qp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

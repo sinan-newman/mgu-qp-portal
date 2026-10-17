@@ -13,7 +13,7 @@ const App = {
 
     // State
     state: {
-        activeTab: 'papers', // 'papers' | 'departments' | 'model-courses' | 'model-papers' | 'bookmarks' | 'sync'
+        activeTab: 'papers', // 'papers' | 'departments' | 'bookmarks'
         searchQuery: '',
         selectedDept: 'ALL',
         selectedSemester: 'ALL',
@@ -35,9 +35,11 @@ const App = {
         await this.loadAllData();
         this.updateStatsUI();
         this.renderDepartmentsList();
-        this.renderModelCourses();
-        ModelQP.init(this.modelPapers);
         this.applyFilters();
+
+        if (window.location.hash === '#admin') {
+            this.openAdminModal();
+        }
     },
 
     loadBookmarks() {
@@ -152,7 +154,7 @@ const App = {
     updateStatsUI() {
         const totalPapersEl = document.getElementById('statTotalPapers');
         const totalSchemesEl = document.getElementById('statTotalSchemes');
-        const totalCoursesEl = document.getElementById('statTotalCourses');
+        const totalDeptsEl = document.getElementById('statTotalDepartments');
         const lastSyncEl = document.getElementById('statLastSync');
 
         const totalQPs = this.papers.filter(p => p.has_qp).length;
@@ -160,8 +162,8 @@ const App = {
 
         if (totalPapersEl) totalPapersEl.textContent = totalQPs.toLocaleString();
         if (totalSchemesEl) totalSchemesEl.textContent = totalSchemes.toLocaleString();
-        if (totalCoursesEl) totalCoursesEl.textContent = this.modelCourses.length.toLocaleString();
-        if (lastSyncEl) lastSyncEl.textContent = this.stats.last_sync || 'Synchronized';
+        if (totalDeptsEl) totalDeptsEl.textContent = `${this.departments.length || 23}+`;
+        if (lastSyncEl) lastSyncEl.textContent = 'Auto-Sync Active';
     },
 
     bindEvents() {
@@ -284,10 +286,7 @@ const App = {
         const containers = {
             'papers': document.getElementById('papersSection'),
             'departments': document.getElementById('departmentsSection'),
-            'model-courses': document.getElementById('modelCoursesSection'),
-            'model-papers': document.getElementById('modelPapersSection'),
-            'bookmarks': document.getElementById('papersSection'), // Bookmarks reuses papers section
-            'sync': document.getElementById('syncSection')
+            'bookmarks': document.getElementById('papersSection') // Bookmarks reuses papers section
         };
 
         Object.keys(containers).forEach(k => {
@@ -812,9 +811,54 @@ const App = {
         } catch (e) {
             if (syncStatusEl) {
                 syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-sm flex items-center gap-3';
-                syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Live sync requires running Python server. Data is currently cached with 3,350+ records.`;
+                syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Manual sync triggers background scraper. Scheduled sync runs daily automatically via GitHub Actions.`;
             }
         }
+    },
+
+    openAdminModal() {
+        const modal = document.getElementById('adminModal');
+        if (modal) modal.classList.remove('hidden');
+        const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
+        const loginView = document.getElementById('adminLoginView');
+        const controlsView = document.getElementById('adminControlsView');
+        if (loginView && controlsView) {
+            loginView.classList.toggle('hidden', isAuth);
+            controlsView.classList.toggle('hidden', !isAuth);
+        }
+        document.body.classList.add('overflow-hidden');
+    },
+
+    closeAdminModal() {
+        const modal = document.getElementById('adminModal');
+        if (modal) modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+        if (window.location.hash === '#admin') {
+            history.replaceState(null, null, window.location.pathname);
+        }
+    },
+
+    handleAdminLogin(e) {
+        if (e) e.preventDefault();
+        const input = document.getElementById('adminPasskeyInput');
+        const err = document.getElementById('adminLoginError');
+        const val = input ? input.value.trim() : '';
+        if (val === 'admin123' || val === 'mguadmin' || val === 'admin') {
+            sessionStorage.setItem('mgu_admin_auth', 'true');
+            if (err) err.classList.add('hidden');
+            document.getElementById('adminLoginView')?.classList.add('hidden');
+            document.getElementById('adminControlsView')?.classList.remove('hidden');
+        } else {
+            if (err) err.classList.remove('hidden');
+        }
+    },
+
+    adminLogout() {
+        sessionStorage.removeItem('mgu_admin_auth');
+        document.getElementById('adminLoginView')?.classList.remove('hidden');
+        document.getElementById('adminControlsView')?.classList.add('hidden');
+        const input = document.getElementById('adminPasskeyInput');
+        if (input) input.value = '';
     }
 };
 

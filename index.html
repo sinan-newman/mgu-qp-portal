@@ -147,16 +147,16 @@
 
                 <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
                     <div class="text-xs text-purple-200 font-medium flex items-center gap-1.5">
-                        <i class="bi bi-book"></i> Syllabus Courses
+                        <i class="bi bi-mortarboard"></i> Academic Departments
                     </div>
-                    <div id="statTotalCourses" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">308</div>
+                    <div id="statTotalDepartments" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">23+</div>
                 </div>
 
                 <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
                     <div class="text-xs text-amber-200 font-medium flex items-center gap-1.5">
-                        <i class="bi bi-arrow-repeat"></i> Portal Sync
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Daily Auto-Sync
                     </div>
-                    <div id="statLastSync" class="text-xs sm:text-sm font-semibold text-white mt-2 truncate">Live Archive</div>
+                    <div id="statLastSync" class="text-xs sm:text-sm font-semibold text-white mt-2 truncate">Automatic Updates</div>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@
     <!-- Main Content Area -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        <!-- Navigation Tabs -->
+        <!-- Navigation Tabs (Cleaned: Public view) -->
         <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none">
             <button data-tab="papers" class="nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0">
                 <i class="bi bi-collection"></i> Question Papers & Schemes
@@ -174,14 +174,8 @@
             <button data-tab="departments" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
                 <i class="bi bi-diagram-3"></i> By Department
             </button>
-            <button data-tab="model-courses" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
-                <i class="bi bi-list-check"></i> Model Course List (308)
-            </button>
-            <button data-tab="model-papers" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
-                <i class="bi bi-file-earmark-richtext"></i> Model Question Papers
-            </button>
-            <button data-tab="sync" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
-                <i class="bi bi-cloud-arrow-down"></i> Portal Sync
+            <button data-tab="bookmarks" class="nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0">
+                <i class="bi bi-star-fill text-amber-500"></i> Saved Question Papers
             </button>
         </div>
 
@@ -320,113 +314,6 @@
             </div>
         </section>
 
-        <!-- SECTION 3: MODEL COURSE LIST (UPLOADED SYLLABUS LIST) -->
-        <section id="modelCoursesSection" class="hidden">
-            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 p-6 mb-6">
-                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Model Course List / Curriculum Catalog</h2>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                            Comprehensive syllabus catalog for MGU-UGP (Honours) 2024 Admission onwards.
-                        </p>
-                    </div>
-                    <span id="modelCoursesCount" class="text-xs font-bold px-3 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200">
-                        308 Courses Uploaded
-                    </span>
-                </div>
-
-                <!-- Table Container -->
-                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider">
-                                <th class="py-3 px-4">#</th>
-                                <th class="py-3 px-4">Course Code</th>
-                                <th class="py-3 px-4">Course Title / Note</th>
-                                <th class="py-3 px-4">Semester</th>
-                                <th class="py-3 px-4">Type</th>
-                                <th class="py-3 px-4">Department Mapping</th>
-                                <th class="py-3 px-4 text-right">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="modelCoursesTableBody" class="divide-y divide-slate-100 dark:divide-slate-700/60">
-                            <!-- Populated by app.js -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 4: MODEL QUESTION PAPERS (INTERACTIVE) -->
-        <section id="modelPapersSection" class="hidden">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Curated Model Question Papers</h2>
-                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                    Official sample and model question papers with full section breakdown, Bloom's Taxonomy ratings, and Course Outcomes (COs).
-                </p>
-            </div>
-
-            <div id="modelQpContainer">
-                <!-- Populated by model-qp.js -->
-            </div>
-        </section>
-
-        <!-- SECTION 5: PORTAL SYNC STATUS -->
-        <section id="syncSection" class="hidden">
-            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 p-6 sm:p-8 max-w-4xl mx-auto">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center text-2xl">
-                        <i class="bi bi-cloud-arrow-down-fill"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">MGU Schema Portal Synchronization</h2>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">
-                            Data is fetched directly from <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 font-semibold underline">https://assist.mgu.ac.in/schema/</a>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
-                        <div class="text-xs text-slate-500 dark:text-slate-400">Total Scraped Items</div>
-                        <div class="text-2xl font-bold font-mono text-slate-900 dark:text-white mt-1">3,350</div>
-                    </div>
-                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
-                        <div class="text-xs text-slate-500 dark:text-slate-400">Active Question Papers</div>
-                        <div class="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400 mt-1">2,323</div>
-                    </div>
-                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700">
-                        <div class="text-xs text-slate-500 dark:text-slate-400">Evaluation Schemes</div>
-                        <div class="text-2xl font-bold font-mono text-emerald-600 dark:text-emerald-400 mt-1">2,220</div>
-                    </div>
-                </div>
-
-                <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider text-xs">Included University Examination Sessions:</h4>
-                    <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1.5 list-disc list-inside">
-                        <li><strong>Option 35:</strong> V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026</li>
-                        <li><strong>Option 21:</strong> MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026 (401 QPs, 379 Schemes)</li>
-                        <li><strong>Option 6:</strong> Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025 (361 QPs, 353 Schemes)</li>
-                        <li><strong>Option 4:</strong> II Semester MGU UGP25 - March - 2025 (161 QPs, 178 Schemes)</li>
-                        <li><strong>Option 27:</strong> Second semester BA/BSc/BVocFYUGP April 2026 (258 QPs, 235 Schemes)</li>
-                        <li><strong>Option 1 & 7:</strong> First Semester MGU-UGP Honours Examinations Nov 2024 & Nov 2025 (531 QPs, 533 Schemes)</li>
-                        <li><strong>Options 2, 3, 5:</strong> CBCS Supplementary and Regular Examinations (402 QPs, 479 Schemes)</li>
-                    </ul>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
-                    <button id="triggerSyncBtn" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-sm font-semibold shadow-sm flex items-center gap-2 transition">
-                        <i class="bi bi-arrow-repeat"></i> Trigger Re-Sync Now
-                    </button>
-                    <span class="text-xs text-slate-500">
-                        Direct PDF downloads are served directly by Mahatma Gandhi University.
-                    </span>
-                </div>
-
-                <div id="syncStatusNotice" class="hidden"></div>
-            </div>
-        </section>
-
     </main>
 
     <!-- PDF PREVIEW MODAL -->
@@ -488,6 +375,96 @@
         </div>
     </div>
 
+    <!-- ADMIN SYNC MODAL (Visible for Admins only) -->
+    <div id="adminModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-4 transition">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+            
+            <div class="p-6 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 flex items-center justify-center text-lg">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white">Admin Portal & Sync Center</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Restricted administrative controls and manual scraper execution.</p>
+                    </div>
+                </div>
+                <button onclick="App.closeAdminModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!-- Login View -->
+            <div id="adminLoginView" class="p-6">
+                <form onsubmit="App.handleAdminLogin(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-1">
+                            Admin Passkey
+                        </label>
+                        <input 
+                            type="password" 
+                            id="adminPasskeyInput" 
+                            placeholder="Enter admin password (default: admin123)" 
+                            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            required
+                        >
+                    </div>
+                    <div id="adminLoginError" class="hidden text-xs text-rose-600 font-semibold">
+                        Incorrect passkey. Please try again.
+                    </div>
+                    <div class="flex justify-end gap-2 pt-2">
+                        <button type="button" onclick="App.closeAdminModal()" class="px-4 py-2 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
+                            Cancel
+                        </button>
+                        <button type="submit" class="px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-xs">
+                            Unlock Admin Controls
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Controls View (Visible when authenticated) -->
+            <div id="adminControlsView" class="hidden p-6 space-y-5">
+                <div class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-200 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="bi bi-check-circle-fill text-emerald-600"></i>
+                        <span>Admin session authenticated</span>
+                    </div>
+                    <button onclick="App.adminLogout()" class="text-xs text-emerald-700 dark:text-emerald-300 underline font-semibold">
+                        Log out
+                    </button>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Synchronization Mode:</div>
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+                        <div class="flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-100">
+                            <i class="bi bi-calendar-check text-blue-600"></i> Daily Automatic Cron Sync
+                        </div>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                            GitHub Actions automatically crawls <code class="font-mono text-blue-600">https://assist.mgu.ac.in/schema/</code> every day at 02:00 UTC (07:30 IST) and pushes any newly released question papers directly to GitHub Pages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Manual University Sync:</div>
+                    <div class="p-4 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-white">Trigger Immediate Portal Crawl</div>
+                            <div class="text-xs text-slate-500">Query all 13 examination sessions from MGU server.</div>
+                        </div>
+                        <button id="triggerSyncBtn" onclick="App.triggerSync()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-semibold shadow-xs flex items-center gap-1.5 transition">
+                            <i class="bi bi-arrow-repeat"></i> Sync Now
+                        </button>
+                    </div>
+                    <div id="syncStatusNotice" class="hidden"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
@@ -495,15 +472,18 @@
                 <i class="bi bi-mortarboard-fill text-blue-600"></i>
                 <span>MGU Question Paper & Scheme Portal • Built for Mahatma Gandhi University Students</span>
             </div>
-            <div>
-                Data sourced from <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 underline">https://assist.mgu.ac.in/schema/</a>
+            <div class="flex items-center gap-4">
+                <span>Data: <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 underline">assist.mgu.ac.in</a></span>
+                <span>•</span>
+                <button onclick="App.openAdminModal()" class="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1 transition" title="Restricted Admin Panel">
+                    <i class="bi bi-shield-lock"></i> Admin
+                </button>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/pdf-viewer.js"></script>
-    <script src="js/model-qp.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

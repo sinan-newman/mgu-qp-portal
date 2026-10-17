@@ -1,0 +1,58 @@
+name: Daily Automatic University Portal Sync
+
+on:
+  schedule:
+    # Runs every day at 02:00 UTC (07:30 IST)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions anytime
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Scraper & Sync Engine
+        run: |
+          python scripts/scraper.py --force
+          mkdir -p public/data
+          cp -r data/* public/data/ || true
+
+      - name: Commit and Push Changes if Any
+        run: |
+          git config user.name "MGU Auto-Sync Bot"
+          git config user.email "bot@mgu-portal.local"
+          git add data/ public/data/
+          if git diff --staged --quiet; then
+            echo "No new question papers found. Database is already up to date."
+          else
+            git commit -m "Automated daily sync: update question papers and schemes from assist.mgu.ac.in [skip ci]"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

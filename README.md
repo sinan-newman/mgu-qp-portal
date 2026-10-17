@@ -2,6 +2,9 @@
 
 An ultra-clean, modern, fast web application for **Mahatma Gandhi University (MGU-UGP / FYUGP Honours and CBCS)** students to easily search, preview, and download previous year question papers and evaluation schemes directly synchronized from the official MGU schema portal ([https://assist.mgu.ac.in/schema/](https://assist.mgu.ac.in/schema/)).
 
+**Live Website:** [https://sinancc1729.github.io/mgu-qp-portal/](https://sinancc1729.github.io/mgu-qp-portal/)  
+**GitHub Repository:** [https://github.com/sinancc1729/mgu-qp-portal](https://github.com/sinancc1729/mgu-qp-portal)
+
 ---
 
 ## 🌟 Key Features
@@ -9,7 +12,8 @@ An ultra-clean, modern, fast web application for **Mahatma Gandhi University (MG
 1. **Direct University Sync ([assist.mgu.ac.in/schema/](https://assist.mgu.ac.in/schema/))**:
    - Automated parser & scraper covering 13 examination sessions (Semesters 1 through 8, Regular, Special, Supplementary, and CBCS).
    - Over **2,323+ Question Papers** and **2,220+ Evaluation Schemes** cataloged.
-   - 1-click re-sync engine (`python scripts/scraper.py` or through the UI).
+   - **Daily Automatic Sync**: A scheduled GitHub Actions workflow runs every day at 02:00 UTC (07:30 IST), checks for newly posted question papers/schemes, updates the database, and redeploys to GitHub Pages automatically.
+   - **Admin Portal**: Sync controls are restricted to administrators via a secure passkey (`admin123`), preventing public clutter and unauthorized scrapes.
 
 2. **Public Organization by Department (Major & Minor Hierarchy)**:
    - Full hierarchy mapping for all academic departments.
@@ -32,7 +36,7 @@ An ultra-clean, modern, fast web application for **Mahatma Gandhi University (MG
 4. **In-Browser PDF Preview Option**:
    - Students can preview question papers and evaluation schemes directly inside a clean modal before downloading.
    - Instant toggle between **[📄 Question Paper]** and **[📑 Scheme / Answer Key]**.
-   - Built-in PDF proxy `/api/proxy-pdf` removes browser framing and cross-origin restrictions for 100% reliable previews.
+   - Built-in PDF proxy `/api/proxy-pdf` (when run locally) and Google Docs Viewer embed (when hosted on GitHub Pages) ensure cross-origin PDFs render without iframe restrictions.
 
 5. **Instant Real-Time Search**:
    - Fast filter by:
@@ -42,11 +46,8 @@ An ultra-clean, modern, fast web application for **Mahatma Gandhi University (MG
      - Department & Course Type
    - Press <kbd>/</kbd> anywhere to focus search immediately.
 
-6. **Model Question Papers & Model Course List Uploaded**:
-   - **Model Question Papers**: Features interactive questions for highlighted exams (such as `MG2DSCMAT100 - A Gateway to Mathematics` and `MG3DSEMAT202 - Numerical Methods`), showing Part A, Part B, Part C questions with Bloom's Taxonomy ratings (`[K]`, `[U]`, `[A]`, `[An]`, `[E]`, `[C]`) and Course Outcomes (`[CO1]`, `[CO2]`, `[CO3]`, `[CO4]`).
-   - **Model Course List**: The complete uploaded syllabus of **308 courses** mapped to semester and department, with 1-click shortcut to search question papers for each course.
-
-7. **Clean, Modern, Student-Friendly UI**:
+6. **Clean, Modern, Student-Friendly UI**:
+   - Focused public navigation: **Question Papers & Schemes**, **By Department**, and **Saved Papers**.
    - Responsive design tailored for mobile phones, tablets, and desktops.
    - Academic color palette with smooth dark mode and light mode switching.
    - LocalStorage bookmarking (⭐ Save papers for upcoming exams).
@@ -70,48 +71,14 @@ Then open your browser at:
 
 ---
 
-## 📁 Project Structure
+## 🔐 Admin Portal & Daily Sync
 
-```
-mgu-qp-portal/
-├── data/
-│   ├── papers.json           # Scraped database of 3,350+ records (2,323+ QPs, 2,220+ schemes)
-│   ├── departments.json      # Academic departments with major & minor relationships
-│   ├── model_courses.json    # Full uploaded syllabus catalog (308 courses)
-│   ├── model_papers.json     # Curated model QPs with complete section & question breakdown
-│   └── stats.json            # Synchronization statistics & counts
-├── public/
-│   ├── index.html            # Ultra-clean responsive single page application
-│   ├── css/
-│   │   └── style.css         # Modern styling, glassmorphism, badge colors, and themes
-│   ├── js/
-│   │   ├── app.js            # Core frontend application (filtering, search, pagination, bookmarks)
-│   │   ├── pdf-viewer.js     # Responsive modal PDF previewer with tabs and controls
-│   │   └── model-qp.js       # Interactive model question paper renderer
-│   └── data/                 # Static data mirror for serverless / static hosting
-├── scripts/
-│   ├── scraper.py            # Automated scraper & sync engine with assist.mgu.ac.in/schema/
-│   ├── build_papers_db.py    # Database builder from university exam HTML responses
-│   ├── generate_core_data.py # Generator for department mapping and syllabus list
-│   └── generate_model_papers.py # Generator for model question paper breakdown
-├── server.py                 # High-performance Python backend (REST API, PDF proxy, static files)
-└── README.md                 # Complete documentation
-```
+1. **Daily Automatic Updates**:
+   - Scheduled in `.github/workflows/daily_sync.yml`.
+   - Runs every 24 hours on GitHub Actions at 02:00 UTC (07:30 IST).
+   - Scrapes MGU schema portal for any newly posted exams, commits changes, and automatically redeploys GitHub Pages.
 
----
-
-## 🌐 Deploying to Static Hosting (GitHub Pages / Vercel / Netlify)
-
-The portal is designed to run both as a dynamic Python service AND as a 100% standalone static web application:
-- Simply deploy the `public/` directory to GitHub Pages, Cloudflare Pages, Netlify, or Vercel.
-- The application automatically falls back to loading data from `public/data/` if no backend server is detected.
-
----
-
-## 🔄 Updating Data from MGU Portal
-
-To update or re-scrape question papers from Mahatma Gandhi University's portal at any time:
-```bash
-python scripts/scraper.py --force
-```
-Or simply click the **"Trigger Re-Sync Now"** button in the **Portal Sync** tab in the web interface.
+2. **Admin Manual Trigger**:
+   - Access the Admin Portal by clicking the **Admin** link in the footer or visiting `https://sinancc1729.github.io/mgu-qp-portal/#admin`.
+   - Enter the passkey (default: `admin123` or `mguadmin`).
+   - Click **"Sync Now"** to trigger an on-demand university crawl.

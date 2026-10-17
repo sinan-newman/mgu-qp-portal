@@ -42,9 +42,6 @@ EXAM_SESSIONS = [
     {"id": "6",  "semester": 3, "label": "Semester 3", "name": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025", "batch": "2024 Admission"},
     {"id": "4",  "semester": 2, "label": "Semester 2", "name": "II Semester MGU UGP25 - March - 2025", "batch": "2024 Admission"},
     {"id": "1",  "semester": 1, "label": "Semester 1", "name": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024", "batch": "2024 Admission"},
-    {"id": "5",  "semester": 4, "label": "Semester 4 (CBCS)", "name": "IV_Sem CBCS EXAMINATION MARCH 2025", "batch": "CBCS"},
-    {"id": "3",  "semester": 5, "label": "Semester 5 (CBCS)", "name": "FIFTH SEMESTER CBCS SUPPLEMENTARY EXAMINATION FEBRUARY 2025", "batch": "CBCS"},
-    {"id": "2",  "semester": 6, "label": "Semester 6 (CBCS)", "name": "SIXTH SEMESTER CBCS EXAMINATION MARCH 2025", "batch": "CBCS"},
 ]
 
 CBCS_PREFIX_MAP = {

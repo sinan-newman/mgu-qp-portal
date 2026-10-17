@@ -1,33 +1,56 @@
 [
   {
-    "code": "ENG",
-    "name": "English",
+    "code": "ARB",
+    "name": "Arabic",
     "category": "Humanities & Languages",
-    "icon": "bi-book",
-    "description": "English Language, Literature, Translation Studies and Historical Literary Studies.",
+    "icon": "bi-globe2",
+    "description": "Arabic Heritage, Literature and Communication.",
+    "minors": []
+  },
+  {
+    "code": "BCH",
+    "name": "Biochemistry",
+    "category": "Science",
+    "icon": "bi-virus",
+    "description": "Molecular Biochemistry, Metabolism, Nutrition and Forensic Science.",
+    "minors": []
+  },
+  {
+    "code": "BIF",
+    "name": "Bioinformatics",
+    "category": "Science",
+    "icon": "bi-diagram-3",
+    "description": "Sequence Informatics, Computational Biology, Biological Databases.",
+    "minors": []
+  },
+  {
+    "code": "BTG",
+    "name": "Biotechnology",
+    "category": "Science",
+    "icon": "bi-dna",
+    "description": "Applied Biotechnology, Molecular Biology, Tissue Culture.",
     "minors": [
       {
-        "code": "LIH",
-        "name": "Literature in History (English)"
-      },
-      {
-        "code": "TRS",
-        "name": "Translation Studies (English)"
+        "code": "BTS",
+        "name": "Biological Techniques & Services"
       }
     ]
   },
   {
-    "code": "MAL",
-    "name": "Malayalam",
-    "category": "Humanities & Languages",
-    "icon": "bi-translate",
-    "description": "Malayalam Language, Literature, Culture and Kerala Heritage Studies.",
-    "minors": [
-      {
-        "code": "PTP",
-        "name": "Kerala Samskaram & Heritage (PTP)"
-      }
-    ]
+    "code": "BOT",
+    "name": "Botany",
+    "category": "Science",
+    "icon": "bi-flower1",
+    "description": "Plant Sciences, Systematics, Molecular Biology and Ecology.",
+    "minors": []
+  },
+  {
+    "code": "CHE",
+    "name": "Chemistry",
+    "category": "Science",
+    "icon": "bi-eyedropper",
+    "description": "Organic, Inorganic, Physical, Food and Environmental Chemistry.",
+    "minors": []
   },
   {
     "code": "COM",
@@ -45,75 +68,6 @@
         "name": "Business Law & Corporate Regulations"
       }
     ]
-  },
-  {
-    "code": "MAT",
-    "name": "Mathematics",
-    "category": "Science",
-    "icon": "bi-calculator",
-    "description": "Calculus, Linear Algebra, Real Analysis, Number Theory & Applied Mathematics.",
-    "minors": []
-  },
-  {
-    "code": "PHY",
-    "name": "Physics",
-    "category": "Science",
-    "icon": "bi-lightning-charge",
-    "description": "Classical & Modern Physics, Quantum Mechanics, Electronics and Optics.",
-    "minors": []
-  },
-  {
-    "code": "CHE",
-    "name": "Chemistry",
-    "category": "Science",
-    "icon": "bi-eyedropper",
-    "description": "Organic, Inorganic, Physical, Food and Environmental Chemistry.",
-    "minors": []
-  },
-  {
-    "code": "BOT",
-    "name": "Botany",
-    "category": "Science",
-    "icon": "bi-flower1",
-    "description": "Plant Sciences, Systematics, Molecular Biology and Ecology.",
-    "minors": []
-  },
-  {
-    "code": "ZGY",
-    "name": "Zoology",
-    "category": "Science",
-    "icon": "bi-bug",
-    "description": "Animal Diversity, Genetics, Cell Biology and Wildlife Management.",
-    "minors": []
-  },
-  {
-    "code": "BCH",
-    "name": "Biochemistry",
-    "category": "Science",
-    "icon": "bi-virus",
-    "description": "Molecular Biochemistry, Metabolism, Nutrition and Forensic Science.",
-    "minors": []
-  },
-  {
-    "code": "BTG",
-    "name": "Biotechnology",
-    "category": "Science",
-    "icon": "bi-dna",
-    "description": "Applied Biotechnology, Molecular Biology, Tissue Culture.",
-    "minors": [
-      {
-        "code": "BTS",
-        "name": "Biological Techniques & Services"
-      }
-    ]
-  },
-  {
-    "code": "BIF",
-    "name": "Bioinformatics",
-    "category": "Science",
-    "icon": "bi-diagram-3",
-    "description": "Sequence Informatics, Computational Biology, Biological Databases.",
-    "minors": []
   },
   {
     "code": "CSC",
@@ -141,6 +95,39 @@
     "minors": []
   },
   {
+    "code": "ENG",
+    "name": "English",
+    "category": "Humanities & Languages",
+    "icon": "bi-book",
+    "description": "English Language, Literature, Translation Studies and Historical Literary Studies.",
+    "minors": [
+      {
+        "code": "LIH",
+        "name": "Literature in History (English)"
+      },
+      {
+        "code": "TRS",
+        "name": "Translation Studies (English)"
+      }
+    ]
+  },
+  {
+    "code": "GEO",
+    "name": "Geology",
+    "category": "Science",
+    "icon": "bi-compass",
+    "description": "Earth Sciences, Petrology, Field Training and Mineralogy.",
+    "minors": []
+  },
+  {
+    "code": "HIN",
+    "name": "Hindi",
+    "category": "Humanities & Languages",
+    "icon": "bi-chat-quote",
+    "description": "Hindi Literature, Communicative Hindi, Cinema and Translation.",
+    "minors": []
+  },
+  {
     "code": "HIS",
     "name": "History",
     "category": "Social Sciences",
@@ -152,6 +139,56 @@
         "name": "Art History"
       }
     ]
+  },
+  {
+    "code": "MAL",
+    "name": "Malayalam",
+    "category": "Humanities & Languages",
+    "icon": "bi-translate",
+    "description": "Malayalam Language, Literature, Culture and Kerala Heritage Studies.",
+    "minors": [
+      {
+        "code": "PTP",
+        "name": "Kerala Samskaram & Heritage (PTP)"
+      }
+    ]
+  },
+  {
+    "code": "MAT",
+    "name": "Mathematics",
+    "category": "Science",
+    "icon": "bi-calculator",
+    "description": "Calculus, Linear Algebra, Real Analysis, Number Theory & Applied Mathematics.",
+    "minors": []
+  },
+  {
+    "code": "MUS",
+    "name": "Music & Performing Arts",
+    "category": "Fine Arts",
+    "icon": "bi-music-note-beamed",
+    "description": "Musicology, Bharathanatyam and Performing Arts.",
+    "minors": [
+      {
+        "code": "BHN",
+        "name": "Bharathanatyam"
+      }
+    ]
+  },
+  {
+    "code": "PES",
+    "name": "Physical Education",
+    "category": "Health & Sports",
+    "icon": "bi-activity",
+    "description": "Physical Fitness, Health, Sports Science and Weight Management.",
+    "minors": []
+  },
+  {
+    "code": "PHY",
+    "name": "Physics",
+    "category": "Science",
+    "icon": "bi-lightning-charge",
+    "description": "Classical & Modern Physics, Quantum Mechanics, Electronics and Optics.",
+    "minors": []
   },
   {
     "code": "POL",
@@ -170,46 +207,6 @@
     "minors": []
   },
   {
-    "code": "STA",
-    "name": "Statistics",
-    "category": "Science",
-    "icon": "bi-bar-chart",
-    "description": "Fundamentals of Statistics, Data Visualization, Statistical Modelling & R.",
-    "minors": []
-  },
-  {
-    "code": "HIN",
-    "name": "Hindi",
-    "category": "Humanities & Languages",
-    "icon": "bi-chat-quote",
-    "description": "Hindi Literature, Communicative Hindi, Cinema and Translation.",
-    "minors": []
-  },
-  {
-    "code": "PES",
-    "name": "Physical Education",
-    "category": "Health & Sports",
-    "icon": "bi-activity",
-    "description": "Physical Fitness, Health, Sports Science and Weight Management.",
-    "minors": []
-  },
-  {
-    "code": "ARB",
-    "name": "Arabic",
-    "category": "Humanities & Languages",
-    "icon": "bi-globe2",
-    "description": "Arabic Heritage, Literature and Communication.",
-    "minors": []
-  },
-  {
-    "code": "GEO",
-    "name": "Geology",
-    "category": "Science",
-    "icon": "bi-compass",
-    "description": "Earth Sciences, Petrology, Field Training and Mineralogy.",
-    "minors": []
-  },
-  {
     "code": "SAN",
     "name": "Sanskrit",
     "category": "Humanities & Languages",
@@ -223,16 +220,19 @@
     ]
   },
   {
-    "code": "MUS",
-    "name": "Music & Performing Arts",
-    "category": "Fine Arts",
-    "icon": "bi-music-note-beamed",
-    "description": "Musicology, Bharathanatyam and Performing Arts.",
-    "minors": [
-      {
-        "code": "BHN",
-        "name": "Bharathanatyam"
-      }
-    ]
+    "code": "STA",
+    "name": "Statistics",
+    "category": "Science",
+    "icon": "bi-bar-chart",
+    "description": "Fundamentals of Statistics, Data Visualization, Statistical Modelling & R.",
+    "minors": []
+  },
+  {
+    "code": "ZGY",
+    "name": "Zoology",
+    "category": "Science",
+    "icon": "bi-bug",
+    "description": "Animal Diversity, Genetics, Cell Biology and Wildlife Management.",
+    "minors": []
   }
 ]

@@ -1,7 +1,14 @@
 /**
- * Main Application Logic for MGU Question Papers Portal
- * Cleaned UI: Direct Department -> Semester 1-8 -> Year-wise Papers view
- * Robust Search by Course Name / Code, Save text button, and Admin Sync
+ * Main Application Logic for MGU Question Papers Portal (FYUGP)
+ * Features:
+ * - Department-Wise Navigation as Primary (Tab 1)
+ * - All Question Papers & Schemes (Tab 2)
+ * - Saved Question Papers (Tab 3)
+ * - Alphabetical Department Cards (A-Z) with Instant Filter
+ * - Department Detail: Semester 1-8 Tabs + All Semesters + Year-Wise Grouping
+ * - Ultra-Fast Multi-Term Tokenized Search with Code Normalization & Aliases
+ * - In-Browser PDF Preview Modal & Direct Download
+ * - Save / Bookmark with Star Icon & Text
  */
 
 const App = {
@@ -10,10 +17,73 @@ const App = {
     departments: [],
     stats: {},
     bookmarks: new Set(),
+    filteredPapers: [],
+
+    // Department & Search Aliases Dictionary
+    ALIASES: {
+        'maths': ['mat', 'mathematics', 'maths', 'math'],
+        'math': ['mat', 'mathematics', 'maths', 'math'],
+        'calculus': ['mat', 'calculus'],
+        'algebra': ['mat', 'algebra'],
+        'cs': ['csc', 'computer science', 'computer', 'bca', 'information technology'],
+        'comp': ['csc', 'computer science'],
+        'computer': ['csc', 'computer science'],
+        'it': ['csc', 'information technology'],
+        'bca': ['csc', 'bca', 'computer application'],
+        'bba': ['bba', 'business administration'],
+        'comm': ['com', 'commerce', 'bcom', 'corporate', 'finance'],
+        'commerce': ['com', 'commerce', 'bcom'],
+        'bcom': ['com', 'commerce'],
+        'accounting': ['com', 'accounting'],
+        'stats': ['sta', 'statistics'],
+        'stat': ['sta', 'statistics'],
+        'statistics': ['sta', 'statistics'],
+        'eng': ['eng', 'english', 'literature'],
+        'english': ['eng', 'english', 'literature'],
+        'mal': ['mal', 'malayalam'],
+        'malayalam': ['mal', 'malayalam'],
+        'hin': ['hin', 'hindi'],
+        'hindi': ['hin', 'hindi'],
+        'arb': ['arb', 'arabic'],
+        'arabic': ['arb', 'arabic'],
+        'san': ['san', 'sanskrit', 'skt'],
+        'sanskrit': ['san', 'sanskrit'],
+        'phy': ['phy', 'physics'],
+        'physics': ['phy', 'physics'],
+        'chem': ['che', 'chemistry'],
+        'chemistry': ['che', 'chemistry'],
+        'bot': ['bot', 'botany', 'plant'],
+        'botany': ['bot', 'botany'],
+        'zoo': ['zgy', 'zoology', 'animal'],
+        'zoology': ['zgy', 'zoology'],
+        'biotech': ['btg', 'biotechnology'],
+        'biotechnology': ['btg', 'biotechnology'],
+        'biochem': ['bch', 'biochemistry'],
+        'biochemistry': ['bch', 'biochemistry'],
+        'bioinfo': ['bif', 'bioinformatics'],
+        'bioinformatics': ['bif', 'bioinformatics'],
+        'bio': ['btg', 'bch', 'bif', 'bot', 'zgy'],
+        'eco': ['eco', 'economics'],
+        'economics': ['eco', 'economics'],
+        'hist': ['his', 'history'],
+        'history': ['his', 'history'],
+        'pol': ['pol', 'politics', 'political science'],
+        'politics': ['pol', 'political science'],
+        'political': ['pol', 'political science'],
+        'psych': ['psy', 'psychology'],
+        'psychology': ['psy', 'psychology'],
+        'pe': ['pes', 'physical education', 'sports'],
+        'sports': ['pes', 'physical education'],
+        'physical': ['pes', 'physical education'],
+        'geo': ['geo', 'geology', 'earth'],
+        'geology': ['geo', 'geology'],
+        'music': ['mus', 'music'],
+        'bsw': ['bsw', 'social work']
+    },
 
     // Main Filters State
     state: {
-        activeTab: 'papers', // 'papers' | 'departments' | 'bookmarks'
+        activeTab: 'departments', // Primary: 'departments' | 'papers' | 'bookmarks'
         searchQuery: '',
         selectedDept: 'ALL',
         selectedSemester: 'ALL',
@@ -25,10 +95,12 @@ const App = {
         isDarkMode: false
     },
 
-    // Department Detail State
+    // Department Detail & Cards State
     deptState: {
         activeDept: null,
-        selectedSemester: 1
+        selectedSemester: 'ALL', // 'ALL' | 1..8
+        searchQuery: '',         // In-department paper search
+        deptSearchQuery: ''      // Department list quick filter
     },
 
     async init() {
@@ -42,6 +114,9 @@ const App = {
         this.updateStatsUI();
         this.renderDepartmentsList();
         this.applyFilters();
+
+        // Ensure By Department is default active view
+        this.switchTab('departments');
 
         if (window.location.hash === '#admin') {
             this.openAdminModal();
@@ -156,8 +231,14 @@ const App = {
             fetchResource('/api/stats', 'data/stats.json')
         ]);
 
-        this.papers = (papersData && papersData.papers) ? papersData.papers : (Array.isArray(papersData) ? papersData : []);
-        this.departments = deptsData || [];
+        const rawPapers = (papersData && papersData.papers) ? papersData.papers : (Array.isArray(papersData) ? papersData : []);
+        
+        // Strict FYUGP restriction: filter out any CBCS records
+        this.papers = rawPapers.filter(p => p.batch !== 'CBCS' && p.course_type !== 'CBCS');
+        
+        // Sort departments strictly alphabetically (A-Z)
+        const rawDepts = deptsData || [];
+        this.departments = rawDepts.sort((a, b) => a.name.localeCompare(b.name));
         this.stats = statsData || {};
     },
 
@@ -172,12 +253,12 @@ const App = {
 
         if (totalPapersEl) totalPapersEl.textContent = `${totalQPs.toLocaleString()}+`;
         if (totalSchemesEl) totalSchemesEl.textContent = `${totalSchemes.toLocaleString()}+`;
-        if (totalDeptsEl) totalDeptsEl.textContent = `${this.departments.length || 23}+`;
-        if (lastSyncEl) lastSyncEl.textContent = 'Auto-Sync Active';
+        if (totalDeptsEl) totalDeptsEl.textContent = `${this.departments.length}`;
+        if (lastSyncEl) lastSyncEl.textContent = '2024 Admission';
     },
 
     bindEvents() {
-        // Search Input in Filter Bar
+        // 1. Search Input in Filter Bar (All Question Papers Tab)
         const searchInput = document.getElementById('searchInput');
         const clearSearchBtn = document.getElementById('clearSearchBtn');
         if (searchInput) {
@@ -192,9 +273,12 @@ const App = {
 
             // Focus on '/' key
             document.addEventListener('keydown', (e) => {
-                if (e.key === '/' && document.activeElement !== searchInput) {
+                if (e.key === '/' && document.activeElement !== searchInput && document.activeElement.tagName !== 'INPUT') {
                     e.preventDefault();
-                    searchInput.focus();
+                    if (this.state.activeTab !== 'papers') {
+                        this.switchTab('papers');
+                    }
+                    setTimeout(() => searchInput.focus(), 50);
                 }
             });
         }
@@ -209,7 +293,35 @@ const App = {
             });
         }
 
-        // Semester Buttons (Sem 1 to 8)
+        // 2. Department Cards Quick Search Input
+        const deptSearchInput = document.getElementById('deptSearchInput');
+        const clearDeptSearchBtn = document.getElementById('clearDeptSearchBtn');
+        if (deptSearchInput) {
+            deptSearchInput.addEventListener('input', (e) => {
+                this.deptState.deptSearchQuery = e.target.value.trim().toLowerCase();
+                if (clearDeptSearchBtn) {
+                    clearDeptSearchBtn.classList.toggle('hidden', !this.deptState.deptSearchQuery);
+                }
+                this.renderDepartmentsList();
+            });
+        }
+
+        if (clearDeptSearchBtn) {
+            clearDeptSearchBtn.addEventListener('click', () => {
+                this.clearDeptSearch();
+            });
+        }
+
+        // 3. In-Department Paper Search Input
+        const deptPaperSearch = document.getElementById('deptPaperSearchInput');
+        if (deptPaperSearch) {
+            deptPaperSearch.addEventListener('input', (e) => {
+                this.deptState.searchQuery = e.target.value.trim().toLowerCase();
+                this.renderDeptSemesterPapers();
+            });
+        }
+
+        // 4. Semester Buttons (Sem 1 to 8)
         document.querySelectorAll('.sem-filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const sem = btn.dataset.sem;
@@ -217,7 +329,7 @@ const App = {
             });
         });
 
-        // Course Type Buttons
+        // 5. Course Type Buttons
         document.querySelectorAll('.ctype-filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const ctype = btn.dataset.ctype;
@@ -225,7 +337,7 @@ const App = {
             });
         });
 
-        // Department Select Dropdown
+        // 6. Department Select Dropdown
         const deptSelect = document.getElementById('deptSelect');
         if (deptSelect) {
             deptSelect.addEventListener('change', (e) => {
@@ -233,14 +345,14 @@ const App = {
             });
         }
 
-        // Navigation Tabs (Papers / Departments / Bookmarks)
+        // 7. Navigation Tabs (Departments / Papers / Bookmarks)
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 this.switchTab(btn.dataset.tab);
             });
         });
 
-        // Files only toggle
+        // 8. Files only toggle
         const filesOnlyCheckbox = document.getElementById('filesOnlyCheckbox');
         if (filesOnlyCheckbox) {
             filesOnlyCheckbox.addEventListener('change', (e) => {
@@ -250,7 +362,7 @@ const App = {
             });
         }
 
-        // View Mode Toggles
+        // 9. View Mode Toggles
         const gridViewBtn = document.getElementById('gridViewBtn');
         const tableViewBtn = document.getElementById('tableViewBtn');
         if (gridViewBtn && tableViewBtn) {
@@ -268,11 +380,27 @@ const App = {
             });
         }
 
-        // Theme Toggle Button
+        // 10. Theme Toggle Button
         const themeBtn = document.getElementById('themeToggleBtn');
         if (themeBtn) {
             themeBtn.addEventListener('click', () => this.toggleTheme());
         }
+    },
+
+    clearDeptSearch() {
+        const input = document.getElementById('deptSearchInput');
+        const btn = document.getElementById('clearDeptSearchBtn');
+        if (input) input.value = '';
+        if (btn) btn.classList.add('hidden');
+        this.deptState.deptSearchQuery = '';
+        this.renderDepartmentsList();
+    },
+
+    clearDeptPaperSearch() {
+        const input = document.getElementById('deptPaperSearchInput');
+        if (input) input.value = '';
+        this.deptState.searchQuery = '';
+        this.renderDeptSemesterPapers();
     },
 
     switchTab(tab) {
@@ -293,17 +421,16 @@ const App = {
         const departmentsSection = document.getElementById('departmentsSection');
         const filterControls = document.getElementById('filterControlsSection');
 
-        if (tab === 'papers' || tab === 'bookmarks') {
+        if (tab === 'departments') {
+            if (papersSection) papersSection.classList.add('hidden');
+            if (departmentsSection) departmentsSection.classList.remove('hidden');
+            if (filterControls) filterControls.classList.add('hidden');
+        } else if (tab === 'papers' || tab === 'bookmarks') {
             if (papersSection) papersSection.classList.remove('hidden');
             if (departmentsSection) departmentsSection.classList.add('hidden');
             if (filterControls) filterControls.classList.remove('hidden');
             this.state.currentPage = 1;
             this.applyFilters();
-        } else if (tab === 'departments') {
-            if (papersSection) papersSection.classList.add('hidden');
-            if (departmentsSection) departmentsSection.classList.remove('hidden');
-            if (filterControls) filterControls.classList.add('hidden');
-            // If returning to departments, stay in list or detail
         }
     },
 
@@ -352,6 +479,52 @@ const App = {
         this.applyFilters();
     },
 
+    /**
+     * Enhanced multi-term tokenized search matching function
+     */
+    matchPaper(p, tokens, rawQuery) {
+        if (!tokens.length) return true;
+
+        const pCodeRaw = (p.course_code || '').toLowerCase();
+        const pCodeNorm = pCodeRaw.replace(/[^a-z0-9]/g, '');
+        const pQp = (p.qp_code || '').toLowerCase();
+        const pTitle = (p.title || '').toLowerCase();
+        const pRawHeader = (p.raw_header || '').toLowerCase();
+        const pDept = (p.dept_name || '').toLowerCase();
+        const pParentDept = (p.parent_dept_name || '').toLowerCase();
+        const pDeptCode = (p.dept_code || '').toLowerCase();
+        const pParentDeptCode = (p.parent_dept || '').toLowerCase();
+        const pType = (p.course_type || '').toLowerCase();
+        const pTypeName = (p.course_type_name || '').toLowerCase();
+        const pExam = (p.exam_name || '').toLowerCase();
+        const pSemStr = `sem ${p.semester} sem${p.semester} semester ${p.semester} s${p.semester}`;
+
+        const combined = `${pCodeRaw} ${pCodeNorm} ${pQp} ${pTitle} ${pRawHeader} ${pDept} ${pParentDept} ${pDeptCode} ${pParentDeptCode} ${pType} ${pTypeName} ${pExam} ${pSemStr}`;
+
+        // Every token must match
+        for (const token of tokens) {
+            const normToken = token.replace(/[^a-z0-9]/g, '');
+            
+            // 1. Direct match in combined string
+            if (combined.includes(token)) continue;
+            
+            // 2. Normalized course code match (strips spaces/dashes)
+            if (normToken && pCodeNorm.includes(normToken)) continue;
+
+            // 3. Department & keyword alias lookup
+            const aliasList = App.ALIASES[token] || (normToken ? App.ALIASES[normToken] : null);
+            if (aliasList) {
+                const matchedAlias = aliasList.some(alias => combined.includes(alias));
+                if (matchedAlias) continue;
+            }
+
+            // If token didn't match anything, paper is excluded
+            return false;
+        }
+
+        return true;
+    },
+
     applyFilters() {
         let results = this.papers;
 
@@ -387,13 +560,10 @@ const App = {
             );
         }
 
-        // Robust Search Query (Course Name, Course Code, QP Code, Dept)
+        // High-Performance Multi-Term Fuzzy Search Query
         if (this.state.searchQuery) {
-            const q = this.state.searchQuery;
-            results = results.filter(p => {
-                const searchable = `${p.course_code || ''} ${p.qp_code || ''} ${p.title || ''} ${p.raw_header || ''} ${p.dept_name || ''} ${p.dept_code || ''} ${p.parent_dept || ''} ${p.parent_dept_name || ''} ${p.course_type_name || ''}`.toLowerCase();
-                return searchable.includes(q);
-            });
+            const tokens = this.state.searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+            results = results.filter(p => this.matchPaper(p, tokens, this.state.searchQuery));
         }
 
         this.filteredPapers = results;
@@ -408,7 +578,7 @@ const App = {
 
         const total = this.filteredPapers.length;
         if (countEl) {
-            countEl.textContent = `Showing ${total.toLocaleString()} question papers & schemes`;
+            countEl.textContent = `Showing ${total.toLocaleString()} FYUGP question papers & schemes`;
         }
 
         if (total === 0) {
@@ -419,7 +589,7 @@ const App = {
                     </div>
                     <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">No question papers match your filters</h3>
                     <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-md mx-auto">
-                        Try searching by course code (e.g. <code class="text-blue-600 font-mono font-bold">MG3DSEMAT202</code>), or reset all filters.
+                        Try searching by course code (e.g. <code class="text-blue-600 font-mono font-bold">MG3DSEMAT202</code>), course name (e.g. <code class="text-blue-600 font-bold">Calculus</code>), or reset all filters.
                     </p>
                     <button onclick="App.resetFilters()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">
                         Reset All Filters
@@ -447,7 +617,7 @@ const App = {
         const ctypeClass = `badge-${(p.course_type || 'dsc').toLowerCase()}`;
 
         return `
-            <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs">
+            <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs border border-slate-200/80 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition">
                 <div>
                     <!-- Top Badge Bar -->
                     <div class="flex items-start justify-between gap-2 mb-3">
@@ -465,7 +635,7 @@ const App = {
                             ` : ''}
                         </div>
 
-                        <!-- Save Button with Text and Star Icon -->
+                        <!-- Save Button with Star Icon & Text -->
                         <button 
                             id="bm-btn-${p.id}" 
                             data-bm-id="${p.id}"
@@ -699,29 +869,69 @@ const App = {
         const deptSelect = document.getElementById('deptSelect');
         if (!container) return;
 
-        // Populate filter dropdown
+        // Ensure strictly alphabetical order (A–Z)
+        this.departments.sort((a, b) => a.name.localeCompare(b.name));
+
+        // Populate filter dropdown in All Question Papers tab
         if (deptSelect) {
-            deptSelect.innerHTML = `<option value="ALL">All Departments (100% Archive)</option>` +
+            deptSelect.innerHTML = `<option value="ALL">All Departments (${this.departments.length} Available)</option>` +
                 this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
         }
 
-        // Render Cards (Click opens Department Detail View directly!)
-        container.innerHTML = this.departments.map(d => {
-            const deptPapers = this.papers.filter(p => (p.parent_dept === d.code || p.dept_code === d.code) && p.has_files);
+        // Apply quick department search query if entered
+        let deptsToRender = this.departments;
+        if (this.deptState.deptSearchQuery) {
+            const dq = this.deptState.deptSearchQuery.toLowerCase();
+            deptsToRender = this.departments.filter(d => 
+                d.name.toLowerCase().includes(dq) || 
+                d.code.toLowerCase().includes(dq) || 
+                (d.description && d.description.toLowerCase().includes(dq)) ||
+                (d.category && d.category.toLowerCase().includes(dq)) ||
+                (d.minors && d.minors.some(m => m.name.toLowerCase().includes(dq) || m.code.toLowerCase().includes(dq)))
+            );
+        }
+
+        if (deptsToRender.length === 0) {
+            container.innerHTML = `
+                <div class="col-span-full py-12 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-xs">
+                    <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-400 mx-auto flex items-center justify-center text-lg mb-3">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <p class="text-base font-semibold text-slate-800 dark:text-slate-100">No departments match "${this.deptState.deptSearchQuery}"</p>
+                    <p class="text-xs text-slate-500 mt-1">Try searching by code like MAT, ENG, COM, or department name.</p>
+                    <button onclick="App.clearDeptSearch()" class="mt-4 px-3.5 py-1.5 text-xs font-semibold bg-blue-600 text-white rounded-lg shadow-xs transition">
+                        Show All Departments
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        // Render Cards
+        container.innerHTML = deptsToRender.map(d => {
+            const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+            const deptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
             const minors = d.minors || [];
 
+            // Detect active semesters for this department
+            const semCounts = {};
+            deptPapers.forEach(p => {
+                if (p.semester) semCounts[p.semester] = (semCounts[p.semester] || 0) + 1;
+            });
+            const activeSems = Object.keys(semCounts).sort((a,b) => a - b);
+
             return `
-                <div onclick="App.openDepartmentView('${d.code}')" data-code="${d.code}" class="dept-card bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 shadow-xs cursor-pointer transition flex flex-col justify-between">
+                <div onclick="App.openDepartmentView('${d.code}')" data-code="${d.code}" class="dept-card bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 shadow-xs cursor-pointer transition flex flex-col justify-between group">
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center text-lg">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center text-lg group-hover:scale-105 transition-transform">
                                 <i class="bi ${d.icon || 'bi-mortarboard'}"></i>
                             </div>
                             <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-mono">
                                 ${d.code}
                             </span>
                         </div>
-                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-base mb-1">
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-base mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                             ${d.name}
                         </h4>
                         <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-3">
@@ -730,6 +940,16 @@ const App = {
                     </div>
 
                     <div>
+                        <!-- Semesters Badges -->
+                        <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60 flex flex-wrap items-center gap-1">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Semesters:</span>
+                            ${activeSems.length > 0 ? activeSems.map(s => `
+                                <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40">
+                                    Sem ${s}
+                                </span>
+                            `).join('') : '<span class="text-[10px] text-slate-400 italic">Upcoming</span>'}
+                        </div>
+
                         ${minors.length > 0 ? `
                             <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
                                 <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Includes Minors:</div>
@@ -745,7 +965,9 @@ const App = {
 
                         <div class="flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400 pt-2 border-t border-slate-100 dark:border-slate-700/60">
                             <span>${deptPapers.length} Question Papers</span>
-                            <span class="flex items-center gap-1">Open Department <i class="bi bi-arrow-right"></i></span>
+                            <span class="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Explore <i class="bi bi-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -758,6 +980,7 @@ const App = {
         if (!dept) return;
 
         this.deptState.activeDept = dept;
+        this.deptState.searchQuery = '';
 
         // Switch to detail view
         document.getElementById('deptListContainer')?.classList.add('hidden');
@@ -770,12 +993,13 @@ const App = {
             breadcrumbsEl.innerHTML = `Departments <i class="bi bi-chevron-right text-[10px] mx-1"></i> <span class="text-slate-800 dark:text-slate-100 font-bold">${dept.name} (${dept.code})</span>`;
         }
 
+        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+        const minors = dept.minors || [];
+
         // Header Banner
         const headerEl = document.getElementById('deptDetailHeader');
         if (headerEl) {
-            const allDeptPapers = this.papers.filter(p => (p.parent_dept === dept.code || p.dept_code === dept.code) && p.has_files);
-            const minors = dept.minors || [];
-
             headerEl.innerHTML = `
                 <div class="flex flex-wrap items-center justify-between gap-4">
                     <div class="flex items-start gap-4">
@@ -809,27 +1033,31 @@ const App = {
                     <div class="flex items-center gap-3">
                         <div class="text-right">
                             <div class="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400">${allDeptPapers.length}</div>
-                            <div class="text-[11px] text-slate-500 uppercase tracking-wider">Available Papers</div>
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider">Available FYUGP Papers</div>
                         </div>
                     </div>
                 </div>
             `;
         }
 
-        // Determine which semester to open (Sem 1 to 8)
+        // Reset in-department paper search input
+        const deptPaperSearch = document.getElementById('deptPaperSearchInput');
+        if (deptPaperSearch) deptPaperSearch.value = '';
+
+        // Pick initial semester: if targetSem given, use it; else pick first semester with papers, or ALL
         let initialSem = targetSem;
         if (!initialSem) {
             for (let s = 1; s <= 8; s++) {
-                const count = this.papers.filter(p => (p.parent_dept === dept.code || p.dept_code === dept.code) && p.semester === s && p.has_files).length;
+                const count = allDeptPapers.filter(p => p.semester === s).length;
                 if (count > 0) {
                     initialSem = s;
                     break;
                 }
             }
         }
-        this.deptState.selectedSemester = initialSem || 1;
+        this.deptState.selectedSemester = initialSem || 'ALL';
 
-        // Render Semester 1 to 8 Tabs
+        // Render Semester Tabs and Year-Wise Papers
         this.renderDeptSemesterTabs();
         this.renderDeptSemesterPapers();
 
@@ -841,15 +1069,32 @@ const App = {
         if (!tabsContainer || !this.deptState.activeDept) return;
 
         const dept = this.deptState.activeDept;
+        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+
         let html = '';
 
-        for (let s = 1; s <= 8; s++) {
-            const count = this.papers.filter(p => 
-                (p.parent_dept === dept.code || p.dept_code === dept.code) && 
-                p.semester === s && 
-                p.has_files
-            ).length;
+        // 1. "All Semesters" Tab Button
+        const isAllSelected = this.deptState.selectedSemester === 'ALL';
+        html += `
+            <button 
+                onclick="App.selectDeptSemester('ALL')" 
+                class="px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition shrink-0 ${
+                    isAllSelected 
+                        ? 'bg-blue-600 text-white shadow-sm' 
+                        : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
+                }"
+            >
+                <span>All Semesters</span>
+                <span class="text-[10px] px-1.5 py-0.2 rounded-full ${isAllSelected ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-300'} font-bold">
+                    ${allDeptPapers.length}
+                </span>
+            </button>
+        `;
 
+        // 2. Semester 1 to 8 Buttons
+        for (let s = 1; s <= 8; s++) {
+            const count = allDeptPapers.filter(p => p.semester === s).length;
             const isSelected = this.deptState.selectedSemester === s;
             html += `
                 <button 
@@ -860,7 +1105,7 @@ const App = {
                             : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
                     }"
                 >
-                    <span>Semester ${s}</span>
+                    <span>Sem ${s}</span>
                     <span class="text-[10px] px-1.5 py-0.2 rounded-full ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-300'} font-bold">
                         ${count}
                     </span>
@@ -879,17 +1124,33 @@ const App = {
 
     renderDeptSemesterPapers() {
         const container = document.getElementById('deptYearWisePapersContainer');
+        const countBadge = document.getElementById('deptPaperCountBadge');
         if (!container || !this.deptState.activeDept) return;
 
         const dept = this.deptState.activeDept;
         const sem = this.deptState.selectedSemester;
+        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
 
-        // Filter papers for this department & semester
-        const semesterPapers = this.papers.filter(p => 
-            (p.parent_dept === dept.code || p.dept_code === dept.code) && 
-            p.semester === sem && 
+        // Filter papers for this department
+        let semesterPapers = this.papers.filter(p => 
+            (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && 
             p.has_files
         );
+
+        // Filter specific semester if not 'ALL'
+        if (sem !== 'ALL') {
+            semesterPapers = semesterPapers.filter(p => p.semester === sem);
+        }
+
+        // Apply in-department search query if active
+        if (this.deptState.searchQuery) {
+            const tokens = this.deptState.searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+            semesterPapers = semesterPapers.filter(p => this.matchPaper(p, tokens, this.deptState.searchQuery));
+        }
+
+        if (countBadge) {
+            countBadge.textContent = `Showing ${semesterPapers.length} question papers`;
+        }
 
         if (semesterPapers.length === 0) {
             container.innerHTML = `
@@ -898,11 +1159,16 @@ const App = {
                         <i class="bi bi-folder2-open"></i>
                     </div>
                     <h4 class="text-base font-bold text-slate-800 dark:text-slate-100">
-                        No Question Papers Yet for Semester ${sem}
+                        ${sem === 'ALL' ? 'No Question Papers Match Query' : `No Question Papers Found for Semester ${sem}`}
                     </h4>
                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto">
-                        Mahatma Gandhi University has not published examination schemes/papers for Semester ${sem} in ${dept.name} yet.
+                        ${this.deptState.searchQuery 
+                            ? `Try clearing your search query "${this.deptState.searchQuery}".` 
+                            : `Mahatma Gandhi University has not released examination schemes for Semester ${sem} in ${dept.name} yet.`}
                     </p>
+                    ${this.deptState.searchQuery ? `
+                        <button onclick="App.clearDeptPaperSearch()" class="mt-4 px-3.5 py-1.5 bg-blue-600 text-white rounded-lg text-xs font-semibold shadow-xs">Clear Search</button>
+                    ` : ''}
                 </div>
             `;
             return;
@@ -917,7 +1183,6 @@ const App = {
             byYear[yr].push(p);
         });
 
-        // Sort years descending (2026, 2025, 2024...)
         const sortedYears = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
 
         container.innerHTML = sortedYears.map(yr => {
@@ -934,7 +1199,9 @@ const App = {
                                 ${yearPapers.length} Papers
                             </span>
                         </div>
-                        <span class="text-xs text-slate-400">Semester ${sem}</span>
+                        <span class="text-xs text-slate-400 font-medium">
+                            ${sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`}
+                        </span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -948,34 +1215,25 @@ const App = {
     backToDepartmentsList() {
         document.getElementById('deptDetailContainer')?.classList.add('hidden');
         document.getElementById('deptListContainer')?.classList.remove('hidden');
-        this.deptState.activeDept = null;
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     // -------------------------------------------------------------
-    // ADMIN PORTAL & MANUAL SYNC
+    // ADMIN AUTH & CONTROL MODAL
     // -------------------------------------------------------------
 
     openAdminModal() {
         const modal = document.getElementById('adminModal');
-        if (modal) modal.classList.remove('hidden');
+        if (!modal) return;
+        modal.classList.remove('hidden');
+
         const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
-        const loginView = document.getElementById('adminLoginView');
-        const controlsView = document.getElementById('adminControlsView');
-        if (loginView && controlsView) {
-            loginView.classList.toggle('hidden', isAuth);
-            controlsView.classList.toggle('hidden', !isAuth);
-        }
-        document.body.classList.add('overflow-hidden');
+        document.getElementById('adminLoginView')?.classList.toggle('hidden', isAuth);
+        document.getElementById('adminControlsView')?.classList.toggle('hidden', !isAuth);
     },
 
     closeAdminModal() {
-        const modal = document.getElementById('adminModal');
-        if (modal) modal.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-        if (window.location.hash === '#admin') {
-            history.replaceState(null, null, window.location.pathname);
-        }
+        document.getElementById('adminModal')?.classList.add('hidden');
     },
 
     handleAdminLogin(e) {
@@ -1005,7 +1263,7 @@ const App = {
         const syncStatusEl = document.getElementById('syncStatusNotice');
         if (syncStatusEl) {
             syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-blue-800 dark:text-blue-200 text-sm flex items-center gap-3';
-            syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Syncing with https://assist.mgu.ac.in/schema/...`;
+            syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Syncing FYUGP question papers with https://assist.mgu.ac.in/schema/...`;
             syncStatusEl.classList.remove('hidden');
         }
 

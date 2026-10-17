@@ -1,17 +1,17 @@
 /**
  * Main Application Logic for MGU Question Papers Portal
+ * Cleaned UI: Direct Department -> Semester 1-8 -> Year-wise Papers view
+ * Robust Search by Course Name / Code, Save text button, and Admin Sync
  */
 
 const App = {
     // Data stores
     papers: [],
     departments: [],
-    modelCourses: [],
-    modelPapers: [],
     stats: {},
     bookmarks: new Set(),
 
-    // State
+    // Main Filters State
     state: {
         activeTab: 'papers', // 'papers' | 'departments' | 'bookmarks'
         searchQuery: '',
@@ -23,6 +23,12 @@ const App = {
         currentPage: 1,
         pageSize: 24,
         isDarkMode: false
+    },
+
+    // Department Detail State
+    deptState: {
+        activeDept: null,
+        selectedSemester: 1
     },
 
     async init() {
@@ -68,15 +74,24 @@ const App = {
             this.bookmarks.add(paperId);
         }
         this.saveBookmarks();
+
+        // Re-render if on bookmarks tab
         if (this.state.activeTab === 'bookmarks') {
             this.renderPapers();
         } else {
-            // Update button UI on card
-            const btn = document.getElementById(`bm-btn-${paperId}`);
-            if (btn) {
-                const isBookmarked = this.bookmarks.has(paperId);
-                btn.innerHTML = `<i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star text-slate-400'}"></i>`;
-            }
+            // Update all button instances for this paperId on screen
+            const isBookmarked = this.bookmarks.has(paperId);
+            document.querySelectorAll(`[data-bm-id="${paperId}"]`).forEach(btn => {
+                btn.className = `px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
+                    isBookmarked 
+                        ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
+                        : 'bg-slate-100 dark:bg-slate-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-600 dark:text-slate-300 hover:text-amber-700 border border-slate-200 dark:border-slate-600'
+                }`;
+                btn.innerHTML = `
+                    <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                    <span>${isBookmarked ? 'Saved' : 'Save'}</span>
+                `;
+            });
         }
     },
 
@@ -119,7 +134,6 @@ const App = {
     async loadAllData() {
         const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
 
-        // Robust fetch: try API endpoint on local backend, direct static data/ file on static hosts (e.g. GitHub Pages)
         const fetchResource = async (apiUrl, staticUrl) => {
             if (isLocalBackend) {
                 try {
@@ -136,18 +150,14 @@ const App = {
             return null;
         };
 
-        const [papersData, deptsData, coursesData, modelPapersData, statsData] = await Promise.all([
+        const [papersData, deptsData, statsData] = await Promise.all([
             fetchResource('/api/papers?limit=10000&has_files=false', 'data/papers.json'),
             fetchResource('/api/departments', 'data/departments.json'),
-            fetchResource('/api/model-courses', 'data/model_courses.json'),
-            fetchResource('/api/model-papers', 'data/model_papers.json'),
             fetchResource('/api/stats', 'data/stats.json')
         ]);
 
         this.papers = (papersData && papersData.papers) ? papersData.papers : (Array.isArray(papersData) ? papersData : []);
         this.departments = deptsData || [];
-        this.modelCourses = coursesData || [];
-        this.modelPapers = modelPapersData || [];
         this.stats = statsData || {};
     },
 
@@ -160,21 +170,23 @@ const App = {
         const totalQPs = this.papers.filter(p => p.has_qp).length;
         const totalSchemes = this.papers.filter(p => p.has_scheme).length;
 
-        if (totalPapersEl) totalPapersEl.textContent = totalQPs.toLocaleString();
-        if (totalSchemesEl) totalSchemesEl.textContent = totalSchemes.toLocaleString();
+        if (totalPapersEl) totalPapersEl.textContent = `${totalQPs.toLocaleString()}+`;
+        if (totalSchemesEl) totalSchemesEl.textContent = `${totalSchemes.toLocaleString()}+`;
         if (totalDeptsEl) totalDeptsEl.textContent = `${this.departments.length || 23}+`;
         if (lastSyncEl) lastSyncEl.textContent = 'Auto-Sync Active';
     },
 
     bindEvents() {
-        // Search Input
+        // Search Input in Filter Bar
         const searchInput = document.getElementById('searchInput');
         const clearSearchBtn = document.getElementById('clearSearchBtn');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => {
                 this.state.searchQuery = e.target.value.trim().toLowerCase();
                 this.state.currentPage = 1;
-                clearSearchBtn.classList.toggle('hidden', !this.state.searchQuery);
+                if (clearSearchBtn) {
+                    clearSearchBtn.classList.toggle('hidden', !this.state.searchQuery);
+                }
                 this.applyFilters();
             });
 
@@ -189,7 +201,7 @@ const App = {
 
         if (clearSearchBtn) {
             clearSearchBtn.addEventListener('click', () => {
-                searchInput.value = '';
+                if (searchInput) searchInput.value = '';
                 this.state.searchQuery = '';
                 clearSearchBtn.classList.add('hidden');
                 this.state.currentPage = 1;
@@ -197,7 +209,7 @@ const App = {
             });
         }
 
-        // Semester Buttons
+        // Semester Buttons (Sem 1 to 8)
         document.querySelectorAll('.sem-filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const sem = btn.dataset.sem;
@@ -221,7 +233,7 @@ const App = {
             });
         }
 
-        // Navigation Tabs
+        // Navigation Tabs (Papers / Departments / Bookmarks)
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 this.switchTab(btn.dataset.tab);
@@ -261,12 +273,6 @@ const App = {
         if (themeBtn) {
             themeBtn.addEventListener('click', () => this.toggleTheme());
         }
-
-        // Sync Portal Button
-        const syncBtn = document.getElementById('triggerSyncBtn');
-        if (syncBtn) {
-            syncBtn.addEventListener('click', () => this.triggerSync());
-        }
     },
 
     switchTab(tab) {
@@ -276,42 +282,28 @@ const App = {
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             const isActive = btn.dataset.tab === tab;
             if (isActive) {
-                btn.className = 'nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition';
+                btn.className = 'nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0';
             } else {
-                btn.className = 'nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition';
+                btn.className = 'nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0';
             }
         });
 
         // Hide/Show containers
-        const containers = {
-            'papers': document.getElementById('papersSection'),
-            'departments': document.getElementById('departmentsSection'),
-            'bookmarks': document.getElementById('papersSection') // Bookmarks reuses papers section
-        };
-
-        Object.keys(containers).forEach(k => {
-            if (containers[k]) {
-                if (k === tab || (tab === 'bookmarks' && k === 'papers')) {
-                    containers[k].classList.remove('hidden');
-                } else {
-                    containers[k].classList.add('hidden');
-                }
-            }
-        });
-
-        // Filter Controls visibility (only relevant on papers or bookmarks)
+        const papersSection = document.getElementById('papersSection');
+        const departmentsSection = document.getElementById('departmentsSection');
         const filterControls = document.getElementById('filterControlsSection');
-        if (filterControls) {
-            if (tab === 'papers' || tab === 'bookmarks') {
-                filterControls.classList.remove('hidden');
-            } else {
-                filterControls.classList.add('hidden');
-            }
-        }
 
         if (tab === 'papers' || tab === 'bookmarks') {
+            if (papersSection) papersSection.classList.remove('hidden');
+            if (departmentsSection) departmentsSection.classList.add('hidden');
+            if (filterControls) filterControls.classList.remove('hidden');
             this.state.currentPage = 1;
             this.applyFilters();
+        } else if (tab === 'departments') {
+            if (papersSection) papersSection.classList.add('hidden');
+            if (departmentsSection) departmentsSection.classList.remove('hidden');
+            if (filterControls) filterControls.classList.add('hidden');
+            // If returning to departments, stay in list or detail
         }
     },
 
@@ -351,17 +343,11 @@ const App = {
         this.state.selectedDept = deptCode;
         this.state.currentPage = 1;
 
-        // Sync dropdown value
+        // Sync dropdown
         const deptSelect = document.getElementById('deptSelect');
         if (deptSelect && deptSelect.value !== deptCode) {
             deptSelect.value = deptCode;
         }
-
-        // Highlight active dept card in departments tab
-        document.querySelectorAll('.dept-card').forEach(card => {
-            card.classList.toggle('ring-2', card.dataset.code === deptCode);
-            card.classList.toggle('ring-blue-600', card.dataset.code === deptCode);
-        });
 
         this.applyFilters();
     },
@@ -401,12 +387,12 @@ const App = {
             );
         }
 
-        // Search Query
+        // Robust Search Query (Course Name, Course Code, QP Code, Dept)
         if (this.state.searchQuery) {
             const q = this.state.searchQuery;
             results = results.filter(p => {
-                const text = `${p.course_code} ${p.qp_code} ${p.title} ${p.raw_header} ${p.dept_name} ${p.parent_dept_name} ${p.course_type_name}`.toLowerCase();
-                return text.includes(q);
+                const searchable = `${p.course_code || ''} ${p.qp_code || ''} ${p.title || ''} ${p.raw_header || ''} ${p.dept_name || ''} ${p.dept_code || ''} ${p.parent_dept || ''} ${p.parent_dept_name || ''} ${p.course_type_name || ''}`.toLowerCase();
+                return searchable.includes(q);
             });
         }
 
@@ -427,13 +413,13 @@ const App = {
 
         if (total === 0) {
             container.innerHTML = `
-                <div class="col-span-full py-16 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
+                <div class="col-span-full py-16 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-xs">
                     <div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mx-auto flex items-center justify-center text-2xl mb-4">
                         <i class="bi bi-search"></i>
                     </div>
                     <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">No question papers match your filters</h3>
                     <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-md mx-auto">
-                        Try searching by course code (e.g. <code class="text-blue-600 font-mono">MG3DSEMAT202</code>), QP code, or clear the department filter.
+                        Try searching by course code (e.g. <code class="text-blue-600 font-mono font-bold">MG3DSEMAT202</code>), or reset all filters.
                     </p>
                     <button onclick="App.resetFilters()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">
                         Reset All Filters
@@ -458,7 +444,7 @@ const App = {
 
     renderPaperCard(p) {
         const isBookmarked = this.bookmarks.has(p.id);
-        const ctypeClass = `badge-${p.course_type.toLowerCase()}`;
+        const ctypeClass = `badge-${(p.course_type || 'dsc').toLowerCase()}`;
 
         return `
             <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs">
@@ -479,9 +465,20 @@ const App = {
                             ` : ''}
                         </div>
 
-                        <!-- Bookmark Button -->
-                        <button id="bm-btn-${p.id}" onclick="App.toggleBookmark('${p.id}')" title="Save / Bookmark" class="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-400 transition">
+                        <!-- Save Button with Text and Star Icon -->
+                        <button 
+                            id="bm-btn-${p.id}" 
+                            data-bm-id="${p.id}"
+                            onclick="App.toggleBookmark('${p.id}')" 
+                            title="Save for revision" 
+                            class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
+                                isBookmarked 
+                                    ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
+                                    : 'bg-slate-100 dark:bg-slate-700 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-600 dark:text-slate-300 hover:text-amber-700 border border-slate-200 dark:border-slate-600'
+                            }"
+                        >
                             <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                            <span>${isBookmarked ? 'Saved' : 'Save'}</span>
                         </button>
                     </div>
 
@@ -517,12 +514,12 @@ const App = {
                     </div>
                 </div>
 
-                <!-- Action Buttons -->
+                <!-- Action Buttons: Preview & Download -->
                 <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2">
                     <div class="flex items-center gap-1.5">
                         ${p.has_qp ? `
                             <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition">
-                                <i class="bi bi-eye"></i> QP
+                                <i class="bi bi-eye"></i> Preview QP
                             </button>
                             <a href="${p.qp_url}" target="_blank" download class="p-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
                                 <i class="bi bi-download"></i>
@@ -535,7 +532,7 @@ const App = {
                             <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition">
                                 <i class="bi bi-journal-check"></i> Scheme
                             </button>
-                            <a href="${p.scheme_url}" target="_blank" download class="p-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Scheme">
+                            <a href="${p.scheme_url}" target="_blank" download class="p-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
                                 <i class="bi bi-download"></i>
                             </a>
                         ` : ''}
@@ -561,37 +558,49 @@ const App = {
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
-                        ${items.map(p => `
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
-                                <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>
-                                <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
-                                <td class="py-3 px-4 font-mono text-slate-500">${p.qp_code || '-'}</td>
-                                <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
-                                <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
-                                    ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.dept_code}</span>` : ''}
-                                </td>
-                                <td class="py-3 px-4">
-                                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${p.course_type.toLowerCase()}`}">${p.course_type}</span>
-                                </td>
-                                <td class="py-3 px-4 text-right">
-                                    <div class="flex items-center justify-end gap-1.5">
-                                        ${p.has_qp ? `
-                                            <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500">
-                                                QP
+                        ${items.map(p => {
+                            const isBookmarked = this.bookmarks.has(p.id);
+                            return `
+                                <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
+                                    <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>
+                                    <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
+                                    <td class="py-3 px-4 font-mono text-slate-500">${p.qp_code || '-'}</td>
+                                    <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
+                                    <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
+                                        ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.dept_code}</span>` : ''}
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">${p.course_type}</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-right">
+                                        <div class="flex items-center justify-end gap-2">
+                                            ${p.has_qp ? `
+                                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500">
+                                                    QP
+                                                </button>
+                                            ` : ''}
+                                            ${p.has_scheme ? `
+                                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500">
+                                                    Scheme
+                                                </button>
+                                            ` : ''}
+                                            <button 
+                                                data-bm-id="${p.id}"
+                                                onclick="App.toggleBookmark('${p.id}')" 
+                                                class="px-2 py-1 text-xs font-semibold rounded flex items-center gap-1 transition ${
+                                                    isBookmarked 
+                                                        ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' 
+                                                        : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
+                                                }"
+                                            >
+                                                <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                                                <span>${isBookmarked ? 'Saved' : 'Save'}</span>
                                             </button>
-                                        ` : ''}
-                                        ${p.has_scheme ? `
-                                            <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500">
-                                                Scheme
-                                            </button>
-                                        ` : ''}
-                                        <button onclick="App.toggleBookmark('${p.id}')" class="p-1 text-slate-400 hover:text-amber-500">
-                                            <i class="bi ${this.bookmarks.has(p.id) ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        `).join('')}
+                                        </div>
+                                    </td>
+                                </tr>
+                            `;
+                        }).join('')}
                     </tbody>
                 </table>
             </div>
@@ -616,7 +625,6 @@ const App = {
                 </button>
         `;
 
-        // Page buttons window
         const maxButtons = 5;
         let startPage = Math.max(1, cur - 2);
         let endPage = Math.min(totalPages, startPage + maxButtons - 1);
@@ -659,7 +667,10 @@ const App = {
         this.state.currentPage = page;
         this.renderPapers();
         this.renderPagination();
-        window.scrollTo({ top: document.getElementById('papersGrid').offsetTop - 120, behavior: 'smooth' });
+        const grid = document.getElementById('papersGrid');
+        if (grid) {
+            window.scrollTo({ top: grid.offsetTop - 120, behavior: 'smooth' });
+        }
     },
 
     resetFilters() {
@@ -679,24 +690,28 @@ const App = {
         this.setDepartment('ALL');
     },
 
+    // -------------------------------------------------------------
+    // DEPARTMENT HIERARCHY & DETAIL VIEW (Sem 1-8 -> Year-Wise)
+    // -------------------------------------------------------------
+
     renderDepartmentsList() {
         const container = document.getElementById('deptCardsGrid');
         const deptSelect = document.getElementById('deptSelect');
         if (!container) return;
 
-        // Populate dropdown
+        // Populate filter dropdown
         if (deptSelect) {
             deptSelect.innerHTML = `<option value="ALL">All Departments (100% Archive)</option>` +
                 this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
         }
 
-        // Populate visual cards
+        // Render Cards (Click opens Department Detail View directly!)
         container.innerHTML = this.departments.map(d => {
-            const paperCount = this.papers.filter(p => p.parent_dept === d.code || p.dept_code === d.code).length;
+            const deptPapers = this.papers.filter(p => (p.parent_dept === d.code || p.dept_code === d.code) && p.has_files);
             const minors = d.minors || [];
 
             return `
-                <div onclick="App.selectDeptAndBrowse('${d.code}')" data-code="${d.code}" class="dept-card bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 shadow-xs cursor-pointer transition flex flex-col justify-between">
+                <div onclick="App.openDepartmentView('${d.code}')" data-code="${d.code}" class="dept-card bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 shadow-xs cursor-pointer transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3">
                             <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center text-lg">
@@ -717,7 +732,7 @@ const App = {
                     <div>
                         ${minors.length > 0 ? `
                             <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Minor Departments:</div>
+                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Includes Minors:</div>
                                 <div class="flex flex-wrap gap-1">
                                     ${minors.map(m => `
                                         <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40" title="${m.name}">
@@ -729,8 +744,8 @@ const App = {
                         ` : ''}
 
                         <div class="flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                            <span>${paperCount} Papers Available</span>
-                            <i class="bi bi-arrow-right"></i>
+                            <span>${deptPapers.length} Question Papers</span>
+                            <span class="flex items-center gap-1">Open Department <i class="bi bi-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -738,83 +753,208 @@ const App = {
         }).join('');
     },
 
-    selectDeptAndBrowse(deptCode) {
-        this.setDepartment(deptCode);
-        this.switchTab('papers');
-    },
+    openDepartmentView(deptCode, targetSem = null) {
+        const dept = this.departments.find(d => d.code === deptCode);
+        if (!dept) return;
 
-    renderModelCourses() {
-        const container = document.getElementById('modelCoursesTableBody');
-        const countEl = document.getElementById('modelCoursesCount');
-        if (!container) return;
+        this.deptState.activeDept = dept;
 
-        if (countEl) countEl.textContent = `${this.modelCourses.length} Courses Uploaded`;
+        // Switch to detail view
+        document.getElementById('deptListContainer')?.classList.add('hidden');
+        const detailContainer = document.getElementById('deptDetailContainer');
+        if (detailContainer) detailContainer.classList.remove('hidden');
 
-        container.innerHTML = this.modelCourses.map((c, idx) => `
-            <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition text-xs sm:text-sm">
-                <td class="py-3 px-4 font-bold text-slate-500 font-mono">${idx + 1}</td>
-                <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">
-                    ${c.course_code}
-                </td>
-                <td class="py-3 px-4 font-semibold text-slate-900 dark:text-slate-100">
-                    ${c.title}
-                </td>
-                <td class="py-3 px-4">
-                    <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
-                        Sem ${c.semester}
-                    </span>
-                </td>
-                <td class="py-3 px-4">
-                    <span class="text-xs font-semibold px-2 py-0.5 rounded ${`badge-${c.course_type.toLowerCase()}`}">
-                        ${c.course_type}
-                    </span>
-                </td>
-                <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
-                    ${c.parent_dept_name}
-                    ${c.is_minor ? `<span class="ml-1 text-[10px] font-bold px-1.5 py-0.5 rounded bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-200">${c.dept_code} Minor</span>` : ''}
-                </td>
-                <td class="py-3 px-4 text-right">
-                    <button onclick="App.searchCourseInArchive('${c.course_code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 hover:bg-blue-100 transition flex items-center gap-1 ml-auto">
-                        <i class="bi bi-search"></i> Find Papers
-                    </button>
-                </td>
-            </tr>
-        `).join('');
-    },
-
-    searchCourseInArchive(courseCode) {
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) searchInput.value = courseCode;
-        this.state.searchQuery = courseCode.toLowerCase();
-        this.state.selectedDept = 'ALL';
-        this.state.selectedSemester = 'ALL';
-        this.state.selectedCourseType = 'ALL';
-        this.switchTab('papers');
-        this.applyFilters();
-    },
-
-    async triggerSync() {
-        const syncStatusEl = document.getElementById('syncStatusNotice');
-        if (syncStatusEl) {
-            syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-blue-800 dark:text-blue-200 text-sm flex items-center gap-3';
-            syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Syncing with https://assist.mgu.ac.in/schema/...`;
-            syncStatusEl.classList.remove('hidden');
+        // Breadcrumbs
+        const breadcrumbsEl = document.getElementById('deptBreadcrumbs');
+        if (breadcrumbsEl) {
+            breadcrumbsEl.innerHTML = `Departments <i class="bi bi-chevron-right text-[10px] mx-1"></i> <span class="text-slate-800 dark:text-slate-100 font-bold">${dept.name} (${dept.code})</span>`;
         }
 
-        try {
-            const res = await fetch('/api/sync', { method: 'POST' });
-            const data = await res.json();
-            if (syncStatusEl) {
-                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-200 text-sm flex items-center gap-3';
-                syncStatusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> ${data.message || 'Sync initiated successfully!'}`;
-            }
-        } catch (e) {
-            if (syncStatusEl) {
-                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-sm flex items-center gap-3';
-                syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Manual sync triggers background scraper. Scheduled sync runs daily automatically via GitHub Actions.`;
+        // Header Banner
+        const headerEl = document.getElementById('deptDetailHeader');
+        if (headerEl) {
+            const allDeptPapers = this.papers.filter(p => (p.parent_dept === dept.code || p.dept_code === dept.code) && p.has_files);
+            const minors = dept.minors || [];
+
+            headerEl.innerHTML = `
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 flex items-center justify-center text-2xl shrink-0">
+                            <i class="bi ${dept.icon || 'bi-mortarboard'}"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+                                    ${dept.name}
+                                </h3>
+                                <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40">
+                                    ${dept.code}
+                                </span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                                ${dept.description}
+                            </p>
+                            ${minors.length > 0 ? `
+                                <div class="flex flex-wrap items-center gap-1.5 mt-2">
+                                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Minor Departments:</span>
+                                    ${minors.map(m => `
+                                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-pink-50 dark:bg-pink-950/40 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-900/40">
+                                            ${m.code} - ${m.name}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-right">
+                            <div class="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400">${allDeptPapers.length}</div>
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider">Available Papers</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Determine which semester to open (Sem 1 to 8)
+        let initialSem = targetSem;
+        if (!initialSem) {
+            for (let s = 1; s <= 8; s++) {
+                const count = this.papers.filter(p => (p.parent_dept === dept.code || p.dept_code === dept.code) && p.semester === s && p.has_files).length;
+                if (count > 0) {
+                    initialSem = s;
+                    break;
+                }
             }
         }
+        this.deptState.selectedSemester = initialSem || 1;
+
+        // Render Semester 1 to 8 Tabs
+        this.renderDeptSemesterTabs();
+        this.renderDeptSemesterPapers();
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     },
+
+    renderDeptSemesterTabs() {
+        const tabsContainer = document.getElementById('deptSemesterTabs');
+        if (!tabsContainer || !this.deptState.activeDept) return;
+
+        const dept = this.deptState.activeDept;
+        let html = '';
+
+        for (let s = 1; s <= 8; s++) {
+            const count = this.papers.filter(p => 
+                (p.parent_dept === dept.code || p.dept_code === dept.code) && 
+                p.semester === s && 
+                p.has_files
+            ).length;
+
+            const isSelected = this.deptState.selectedSemester === s;
+            html += `
+                <button 
+                    onclick="App.selectDeptSemester(${s})" 
+                    class="px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition shrink-0 ${
+                        isSelected 
+                            ? 'bg-blue-600 text-white shadow-sm' 
+                            : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
+                    }"
+                >
+                    <span>Semester ${s}</span>
+                    <span class="text-[10px] px-1.5 py-0.2 rounded-full ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-300'} font-bold">
+                        ${count}
+                    </span>
+                </button>
+            `;
+        }
+
+        tabsContainer.innerHTML = html;
+    },
+
+    selectDeptSemester(sem) {
+        this.deptState.selectedSemester = sem;
+        this.renderDeptSemesterTabs();
+        this.renderDeptSemesterPapers();
+    },
+
+    renderDeptSemesterPapers() {
+        const container = document.getElementById('deptYearWisePapersContainer');
+        if (!container || !this.deptState.activeDept) return;
+
+        const dept = this.deptState.activeDept;
+        const sem = this.deptState.selectedSemester;
+
+        // Filter papers for this department & semester
+        const semesterPapers = this.papers.filter(p => 
+            (p.parent_dept === dept.code || p.dept_code === dept.code) && 
+            p.semester === sem && 
+            p.has_files
+        );
+
+        if (semesterPapers.length === 0) {
+            container.innerHTML = `
+                <div class="py-16 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-xs">
+                    <div class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-400 mx-auto flex items-center justify-center text-xl mb-3">
+                        <i class="bi bi-folder2-open"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-slate-800 dark:text-slate-100">
+                        No Question Papers Yet for Semester ${sem}
+                    </h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto">
+                        Mahatma Gandhi University has not published examination schemes/papers for Semester ${sem} in ${dept.name} yet.
+                    </p>
+                </div>
+            `;
+            return;
+        }
+
+        // Group Year-Wise
+        const byYear = {};
+        semesterPapers.forEach(p => {
+            const yrMatch = p.exam_name.match(/202\d/);
+            const yr = yrMatch ? yrMatch[0] : '2025';
+            byYear[yr] = byYear[yr] || [];
+            byYear[yr].push(p);
+        });
+
+        // Sort years descending (2026, 2025, 2024...)
+        const sortedYears = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+
+        container.innerHTML = sortedYears.map(yr => {
+            const yearPapers = byYear[yr];
+            return `
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                                ${yr} Examination Sessions
+                            </h4>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
+                                ${yearPapers.length} Papers
+                            </span>
+                        </div>
+                        <span class="text-xs text-slate-400">Semester ${sem}</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        ${yearPapers.map(p => this.renderPaperCard(p)).join('')}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    },
+
+    backToDepartmentsList() {
+        document.getElementById('deptDetailContainer')?.classList.add('hidden');
+        document.getElementById('deptListContainer')?.classList.remove('hidden');
+        this.deptState.activeDept = null;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+
+    // -------------------------------------------------------------
+    // ADMIN PORTAL & MANUAL SYNC
+    // -------------------------------------------------------------
 
     openAdminModal() {
         const modal = document.getElementById('adminModal');
@@ -859,6 +999,29 @@ const App = {
         document.getElementById('adminControlsView')?.classList.add('hidden');
         const input = document.getElementById('adminPasskeyInput');
         if (input) input.value = '';
+    },
+
+    async triggerSync() {
+        const syncStatusEl = document.getElementById('syncStatusNotice');
+        if (syncStatusEl) {
+            syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-blue-800 dark:text-blue-200 text-sm flex items-center gap-3';
+            syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Syncing with https://assist.mgu.ac.in/schema/...`;
+            syncStatusEl.classList.remove('hidden');
+        }
+
+        try {
+            const res = await fetch('/api/sync', { method: 'POST' });
+            const data = await res.json();
+            if (syncStatusEl) {
+                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-200 text-sm flex items-center gap-3';
+                syncStatusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> ${data.message || 'Sync initiated successfully!'}`;
+            }
+        } catch (e) {
+            if (syncStatusEl) {
+                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-sm flex items-center gap-3';
+                syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Manual sync triggers background scraper. Scheduled sync runs daily automatically via GitHub Actions.`;
+            }
+        }
     }
 };
 

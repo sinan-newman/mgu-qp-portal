@@ -74,7 +74,7 @@
                     <!-- Bookmarks Tab Shortcut -->
                     <button onclick="App.switchTab('bookmarks')" class="relative px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 transition flex items-center gap-1.5">
                         <i class="bi bi-star-fill text-amber-500"></i>
-                        <span class="hidden sm:inline">Saved</span>
+                        <span>Saved</span>
                         <span id="bookmarkCountBadge" class="hidden ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">0</span>
                     </button>
 
@@ -93,70 +93,49 @@
         </div>
     </header>
 
-    <!-- Hero Search & Statistics Section -->
-    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white pt-10 pb-12 px-4 sm:px-6 lg:px-8 shadow-inner">
+    <!-- Hero Header (Clean: Search removed from hero) -->
+    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white pt-8 pb-10 px-4 sm:px-6 lg:px-8 shadow-inner">
         <div class="max-w-5xl mx-auto text-center">
             
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 mb-4 backdrop-blur">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 mb-3 backdrop-blur">
                 <i class="bi bi-shield-check"></i> Official MGU-UGP / Honours & CBCS Question Paper Repository
             </span>
 
-            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
-                Download & Preview Previous Question Papers
+            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
+                Mahatma Gandhi University Question Papers & Schemes
             </h1>
-            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto mb-8 font-light">
-                Publicly categorized by department, course code, and semester. Preview PDFs instantly before downloading, complete with official evaluation schemes.
+            <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto mb-6 font-light">
+                Browse by department, explore semester-wise past papers, preview PDFs in-browser, and download official evaluation schemes.
             </p>
-
-            <!-- Main Live Search Bar -->
-            <div class="max-w-3xl mx-auto relative mb-8">
-                <div class="relative flex items-center">
-                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 text-lg">
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="Search by Course Code (e.g. MG3DSEMAT202), QP Code (e.g. 25900513), or Subject..." 
-                        class="w-full pl-11 pr-24 py-4 rounded-2xl bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-700 shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-500/30 text-sm sm:text-base font-medium transition"
-                    >
-                    <button id="clearSearchBtn" class="hidden absolute right-16 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
-                        <i class="bi bi-x-circle-fill"></i>
-                    </button>
-                    <div class="absolute right-3 hidden sm:flex items-center gap-1 px-2 py-1 bg-slate-100 dark:bg-slate-700 rounded text-[11px] font-mono text-slate-500 dark:text-slate-400 pointer-events-none">
-                        Press <kbd class="font-bold text-slate-700 dark:text-slate-200">/</kbd>
-                    </div>
-                </div>
-            </div>
 
             <!-- Stats Bar -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
-                    <div class="text-xs text-blue-200 font-medium flex items-center gap-1.5">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
+                    <div class="text-[11px] text-blue-200 font-medium flex items-center gap-1.5">
                         <i class="bi bi-file-earmark-pdf"></i> Question Papers
                     </div>
-                    <div id="statTotalPapers" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">2,323</div>
+                    <div id="statTotalPapers" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">2,323+</div>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
-                    <div class="text-xs text-emerald-200 font-medium flex items-center gap-1.5">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
+                    <div class="text-[11px] text-emerald-200 font-medium flex items-center gap-1.5">
                         <i class="bi bi-journal-check"></i> Evaluation Schemes
                     </div>
-                    <div id="statTotalSchemes" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">2,220</div>
+                    <div id="statTotalSchemes" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">2,220+</div>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
-                    <div class="text-xs text-purple-200 font-medium flex items-center gap-1.5">
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
+                    <div class="text-[11px] text-purple-200 font-medium flex items-center gap-1.5">
                         <i class="bi bi-mortarboard"></i> Academic Departments
                     </div>
-                    <div id="statTotalDepartments" class="text-xl sm:text-2xl font-bold font-mono text-white mt-1">23+</div>
+                    <div id="statTotalDepartments" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">23+</div>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3.5">
-                    <div class="text-xs text-amber-200 font-medium flex items-center gap-1.5">
-                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Daily Auto-Sync
+                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
+                    <div class="text-[11px] text-amber-200 font-medium flex items-center gap-1.5">
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Auto-Sync
                     </div>
-                    <div id="statLastSync" class="text-xs sm:text-sm font-semibold text-white mt-2 truncate">Automatic Updates</div>
+                    <div id="statLastSync" class="text-xs sm:text-sm font-semibold text-white mt-1 truncate">Daily Updates</div>
                 </div>
             </div>
 
@@ -164,10 +143,10 @@
     </section>
 
     <!-- Main Content Area -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-        <!-- Navigation Tabs (Cleaned: Public view) -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none">
+        <!-- Navigation Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none">
             <button data-tab="papers" class="nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0">
                 <i class="bi bi-collection"></i> Question Papers & Schemes
             </button>
@@ -179,11 +158,35 @@
             </button>
         </div>
 
-        <!-- Filter Controls Bar (for Question Papers) -->
+        <!-- Filter & Search Controls Bar -->
         <section id="filterControlsSection" class="bg-white dark:bg-slate-800 rounded-2xl p-4 sm:p-5 shadow-xs border border-slate-200 dark:border-slate-700 mb-6 space-y-4">
             
-            <!-- Row 1: Semesters -->
-            <div class="flex flex-wrap items-center gap-2">
+            <!-- Row 1: Search by Course Name / Code (Placed at top of filter section) -->
+            <div class="space-y-1.5">
+                <div class="flex items-center justify-between">
+                    <label for="searchInput" class="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
+                        <i class="bi bi-search text-blue-600 dark:text-blue-400"></i> Filter & Search Question Papers:
+                    </label>
+                    <span class="text-[11px] text-slate-400 hidden sm:inline">Press <kbd class="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-700 rounded font-mono font-bold text-slate-600 dark:text-slate-300">/</kbd> to search</span>
+                </div>
+                <div class="relative flex items-center">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400 text-base">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by course name (e.g. Numerical Methods, Calculus) or course code (e.g. MG3DSEMAT202, 25900513)..." 
+                        class="w-full pl-10 pr-24 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm font-medium transition"
+                    >
+                    <button id="clearSearchBtn" class="hidden absolute right-3 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1" title="Clear Search">
+                        <i class="bi bi-x-circle-fill text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Row 2: Semesters 1 to 8 -->
+            <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-700/60">
                 <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-2 flex items-center gap-1">
                     <i class="bi bi-mortarboard"></i> Semester:
                 </span>
@@ -210,7 +213,7 @@
                 </button>
             </div>
 
-            <!-- Row 2: Course Type & Department Dropdown -->
+            <!-- Row 3: Course Type & Department Dropdown -->
             <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-100 dark:border-slate-700/60">
                 
                 <!-- Course Types -->
@@ -300,18 +303,51 @@
             <div id="paginationControls" class="mt-8"></div>
         </section>
 
-        <!-- SECTION 2: BROWSE BY DEPARTMENT -->
-        <section id="departmentsSection" class="hidden">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Academic Departments</h2>
-                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                    Browse question papers grouped by major departments. Minor departments (e.g. LIH and TRS under English, PTP under Malayalam, BST and BLW under Commerce) are listed with direct access.
-                </p>
+        <!-- SECTION 2: BROWSE BY DEPARTMENT (Department -> Semester 1-8 -> Year-wise Question Papers) -->
+        <section id="departmentsSection" class="hidden space-y-6">
+            
+            <!-- View 1: Department Cards Grid (Top Level) -->
+            <div id="deptListContainer">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Academic Departments</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                        Select a department to view all semester question papers (Sem 1 to 8) grouped year-wise.
+                    </p>
+                </div>
+                <div id="deptCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- Populated by app.js -->
+                </div>
             </div>
 
-            <div id="deptCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <!-- Rendered by app.js -->
+            <!-- View 2: Department Detail View (Selected Department -> Semester 1-8 Tabs -> Year-wise Papers) -->
+            <div id="deptDetailContainer" class="hidden space-y-6">
+                <!-- Breadcrumbs & Back Bar -->
+                <div class="flex items-center justify-between gap-4">
+                    <button onclick="App.backToDepartmentsList()" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 text-blue-600 dark:text-blue-400 flex items-center gap-1.5 shadow-xs transition">
+                        <i class="bi bi-arrow-left"></i> All Departments
+                    </button>
+                    <div id="deptBreadcrumbs" class="text-xs text-slate-500 dark:text-slate-400 font-medium"></div>
+                </div>
+
+                <!-- Department Header Banner -->
+                <div id="deptDetailHeader" class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-xs">
+                    <!-- Dynamic Header Content -->
+                </div>
+
+                <!-- Semester Tabs (Sem 1 to 8) -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-3 border border-slate-200 dark:border-slate-700 shadow-xs">
+                    <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-2 mb-2">Select Semester:</div>
+                    <div id="deptSemesterTabs" class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                        <!-- Sem 1 to 8 tabs populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Year-Wise Grouped Question Papers for Selected Semester -->
+                <div id="deptYearWisePapersContainer" class="space-y-8">
+                    <!-- Populated dynamically by app.js -->
+                </div>
             </div>
+
         </section>
 
     </main>

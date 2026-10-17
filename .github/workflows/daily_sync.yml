@@ -1,10 +1,10 @@
-name: Daily Automatic University Portal Sync
+name: Automated University Portal Sync
 
 on:
   schedule:
-    # Runs every day at 02:00 UTC (07:30 IST)
-    - cron: '0 2 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions anytime
+    # Runs twice daily: 02:00 UTC (07:30 AM IST) and 14:00 UTC (07:30 PM IST)
+    - cron: '0 2,14 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions anytime with 1 click
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Portal Repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -27,9 +27,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Scraper & Sync Engine
+      - name: Install Dependencies
         run: |
-          python scripts/scraper.py --force
+          pip install pypdf
+
+      - name: Run Unified Sync Engine
+        run: |
+          python scripts/sync_engine.py
           mkdir -p public/data
           cp -r data/* public/data/ || true
 
@@ -41,7 +45,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new question papers found. Database is already up to date."
           else
-            git commit -m "Automated daily sync: update question papers and schemes from assist.mgu.ac.in [skip ci]"
+            git commit -m "Automated sync: ingest newly uploaded question papers and schemes from assist.mgu.ac.in [skip ci]"
             git push
           fi
 

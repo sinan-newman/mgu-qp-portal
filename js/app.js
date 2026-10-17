@@ -118,14 +118,37 @@ const App = {
         // Ensure By Department is default active view
         this.switchTab('departments');
 
-        if (sessionStorage.getItem('mgu_admin_auth') === 'true') {
+        const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
+        if (isAuth) {
+            document.getElementById('adminNavBtn')?.classList.remove('hidden');
             document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+            const userDisplay = document.getElementById('adminUserDisplayName');
+            if (userDisplay) {
+                userDisplay.textContent = sessionStorage.getItem('mgu_admin_user') || 'sinan_cc';
+            }
             this.populateAdminDeptDropdown();
+        } else {
+            document.getElementById('adminNavBtn')?.classList.add('hidden');
         }
 
-        if (window.location.hash === '#admin') {
-            this.openAdminModal();
-        }
+        // Secret Admin URL triggers: #admin or ?admin
+        const checkAdminHash = () => {
+            const hasAdminHash = window.location.hash.toLowerCase() === '#admin';
+            const hasAdminParam = new URLSearchParams(window.location.search).has('admin');
+            if (hasAdminHash || hasAdminParam) {
+                this.openAdminModal();
+            }
+        };
+        checkAdminHash();
+        window.addEventListener('hashchange', checkAdminHash);
+
+        // Secret Keyboard Shortcut: Ctrl + Shift + A or Alt + A
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) || (e.altKey && (e.key === 'a' || e.key === 'A'))) {
+                e.preventDefault();
+                this.openAdminModal();
+            }
+        });
     },
 
     loadBookmarks() {
@@ -1703,27 +1726,54 @@ const App = {
         document.getElementById('adminControlsView')?.classList.toggle('hidden', !isAuth);
 
         if (isAuth) {
+            const userDisplay = document.getElementById('adminUserDisplayName');
+            if (userDisplay) {
+                userDisplay.textContent = sessionStorage.getItem('mgu_admin_user') || 'sinan_cc';
+            }
             this.populateAdminDeptDropdown();
             this.switchAdminTab('upload');
+            document.getElementById('adminNavBtn')?.classList.remove('hidden');
             document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+        } else {
+            setTimeout(() => {
+                document.getElementById('adminUsernameInput')?.focus();
+            }, 100);
         }
     },
 
     closeAdminModal() {
         document.getElementById('adminModal')?.classList.add('hidden');
+        if (window.location.hash.toLowerCase() === '#admin') {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     },
 
     handleAdminLogin(e) {
         if (e) e.preventDefault();
-        const input = document.getElementById('adminPasskeyInput');
+        const userInput = document.getElementById('adminUsernameInput');
+        const passInput = document.getElementById('adminPasswordInput');
         const err = document.getElementById('adminLoginError');
-        const val = input ? input.value.trim() : '';
-        if (val === 'admin123' || val === 'mguadmin' || val === 'admin') {
+
+        const username = userInput ? userInput.value.trim() : '';
+        const password = passInput ? passInput.value : '';
+
+        if (username === 'sinan_cc' && password === 'Sinan@2001') {
             sessionStorage.setItem('mgu_admin_auth', 'true');
+            sessionStorage.setItem('mgu_admin_user', username);
             if (err) err.classList.add('hidden');
+            
             document.getElementById('adminLoginView')?.classList.add('hidden');
             document.getElementById('adminControlsView')?.classList.remove('hidden');
+            
+            // Reveal Admin Nav button when authenticated
+            document.getElementById('adminNavBtn')?.classList.remove('hidden');
             document.getElementById('adminActiveBadge')?.classList.remove('hidden');
+            
+            const userDisplay = document.getElementById('adminUserDisplayName');
+            if (userDisplay) {
+                userDisplay.textContent = username;
+            }
+
             this.populateAdminDeptDropdown();
             this.switchAdminTab('upload');
             this.renderPapers();
@@ -1732,20 +1782,31 @@ const App = {
             }
         } else {
             if (err) err.classList.remove('hidden');
+            if (passInput) passInput.value = '';
         }
     },
 
     adminLogout() {
         sessionStorage.removeItem('mgu_admin_auth');
+        sessionStorage.removeItem('mgu_admin_user');
+        
         document.getElementById('adminLoginView')?.classList.remove('hidden');
         document.getElementById('adminControlsView')?.classList.add('hidden');
+        
+        // Hide Admin Nav button when logged out
+        document.getElementById('adminNavBtn')?.classList.add('hidden');
         document.getElementById('adminActiveBadge')?.classList.add('hidden');
-        const input = document.getElementById('adminPasskeyInput');
-        if (input) input.value = '';
+        
+        const userInput = document.getElementById('adminUsernameInput');
+        const passInput = document.getElementById('adminPasswordInput');
+        if (userInput) userInput.value = '';
+        if (passInput) passInput.value = '';
+        
         this.renderPapers();
         if (this.deptState.activeDept) {
             this.renderDeptSemesterPapers();
         }
+        this.closeAdminModal();
     },
 
     switchAdminTab(tab) {

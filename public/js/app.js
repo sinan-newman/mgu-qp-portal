@@ -1682,6 +1682,26 @@ const App = {
             });
             const activeSems = Object.keys(semCounts).sort((a,b) => a - b);
 
+            const hasMultipleMajors = majors.length > 1;
+            const hasMinors = minors.length > 0;
+            const hasCollapsible = hasMultipleMajors || hasMinors;
+
+            let collapsibleLabel = '';
+            let collapsibleIcon = 'bi-layers';
+            let collapsibleBadgeColor = 'text-blue-600 dark:text-blue-400';
+
+            if (hasMultipleMajors && hasMinors) {
+                collapsibleLabel = `${majors.length} Majors & ${minors.length} Minors`;
+                collapsibleIcon = 'bi-collection';
+            } else if (hasMultipleMajors) {
+                collapsibleLabel = `${majors.length} Major Disciplines`;
+                collapsibleIcon = 'bi-layers';
+            } else if (hasMinors) {
+                collapsibleLabel = `${minors.length} ${minors.length === 1 ? 'Minor' : 'Minors'}`;
+                collapsibleIcon = 'bi-diagram-2';
+                collapsibleBadgeColor = 'text-pink-600 dark:text-pink-400';
+            }
+
             return `
                 <div onclick="App.openDepartmentView('${d.code}')" data-code="${d.code}" class="dept-card bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 shadow-xs cursor-pointer transition flex flex-col justify-between group">
                     <div>
@@ -1711,35 +1731,48 @@ const App = {
                             </div>
                         ` : ''}
 
-                        <!-- Major Disciplines (For departments with multiple majors like PFA, MUS, SSP) -->
-                        ${majors.length > 1 ? `
-                            <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">${majors.length} Major Disciplines:</div>
-                                <div class="flex flex-wrap gap-1.5">
-                                    ${majors.map(m => `
-                                        <span class="text-xs font-semibold px-2 py-0.5 rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40 shadow-2xs" title="${m.name} (${m.code})">
-                                            ${m.name} (${m.code})
-                                        </span>
-                                    `).join('')}
+                        <!-- Collapsible Majors & Minors (Hidden by default, shown on click) -->
+                        ${hasCollapsible ? `
+                            <details class="group/dept-details my-2.5 border-t border-slate-100 dark:border-slate-700/60 pt-2 [&::-webkit-details-marker]:hidden" onclick="event.stopPropagation();">
+                                <summary class="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer list-none select-none py-1 px-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700/50 transition">
+                                    <span class="flex items-center gap-1.5 ${collapsibleBadgeColor}">
+                                        <i class="bi ${collapsibleIcon}"></i>
+                                        <span>${collapsibleLabel}</span>
+                                    </span>
+                                    <i class="bi bi-chevron-down text-[10px] text-slate-400 transition-transform duration-200 group-open/dept-details:rotate-180"></i>
+                                </summary>
+
+                                <div class="space-y-2.5 pt-2 pb-1 px-1">
+                                    ${hasMultipleMajors ? `
+                                        <div>
+                                            <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">${majors.length} Major Disciplines:</div>
+                                            <div class="flex flex-wrap gap-1.5">
+                                                ${majors.map(m => `
+                                                    <span class="text-xs font-semibold px-2 py-0.5 rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40 shadow-2xs" title="${m.name} (${m.code})">
+                                                        ${m.name} (${m.code})
+                                                    </span>
+                                                `).join('')}
+                                            </div>
+                                        </div>
+                                    ` : ''}
+
+                                    ${hasMinors ? `
+                                        <div>
+                                            <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">${minors.length} ${minors.length === 1 ? 'Minor' : 'Minors'}:</div>
+                                            <div class="flex flex-wrap gap-1.5">
+                                                ${minors.map(m => `
+                                                    <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40 shadow-2xs" title="${m.name} (${m.code})">
+                                                        ${m.name} (${m.code})
+                                                    </span>
+                                                `).join('')}
+                                            </div>
+                                        </div>
+                                    ` : ''}
                                 </div>
-                            </div>
+                            </details>
                         ` : ''}
 
-                        <!-- Minors (Full Names) -->
-                        ${minors.length > 0 ? `
-                            <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Minors:</div>
-                                <div class="flex flex-wrap gap-1.5">
-                                    ${minors.map(m => `
-                                        <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-100 dark:border-pink-900/40 shadow-2xs" title="${m.name} (${m.code})">
-                                            ${m.name} (${m.code})
-                                        </span>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        ` : ''}
-
-                        <div class="flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                        <div class="flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400 pt-2.5 border-t border-slate-100 dark:border-slate-700/60">
                             <span>${deptPapers.length} Question Papers</span>
                             <span class="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                                 Explore <i class="bi bi-arrow-right"></i>

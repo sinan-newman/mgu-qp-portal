@@ -1826,7 +1826,11 @@ const App = {
         const targetHash = normalizedSem !== null ? `#/department/${dept.code}/${normalizedSem}` : `#/department/${dept.code}`;
         if (updateHash && window.location.hash !== targetHash) {
             this.currentRoute = targetHash;
-            window.location.hash = targetHash;
+            if (window.location.hash.startsWith(`#/department/${dept.code}`)) {
+                history.replaceState(null, '', targetHash);
+            } else {
+                window.location.hash = targetHash;
+            }
         } else {
             this.currentRoute = targetHash;
         }
@@ -1931,7 +1935,7 @@ const App = {
 
             if (selectorView) selectorView.classList.add('hidden');
             if (papersView) papersView.classList.remove('hidden');
-            if (backBtnText) backBtnText.textContent = 'Back to Semesters';
+            if (backBtnText) backBtnText.textContent = 'Back to Departments';
 
             if (breadcrumbsEl) {
                 breadcrumbsEl.innerHTML = `
@@ -2296,18 +2300,11 @@ const App = {
     },
 
     handleDeptBackClick() {
-        const papersView = document.getElementById('deptSemesterPapersView');
-        if (papersView && !papersView.classList.contains('hidden')) {
-            this.backToDepartmentSemesters();
-        } else {
-            this.backToDepartmentsList();
-        }
+        this.showDepartmentsList(true);
     },
 
     backToDepartmentSemesters() {
-        if (window.history.length > 1 && window.location.hash.match(/^#\/department\/[^\/]+\/.+/i)) {
-            window.history.back();
-        } else if (this.deptState.activeDept) {
+        if (this.deptState.activeDept) {
             this.openDepartmentView(this.deptState.activeDept.code, null, true);
         } else {
             this.showDepartmentsList(true);
@@ -2315,11 +2312,7 @@ const App = {
     },
 
     backToDepartmentsList() {
-        if (window.history.length > 1 && window.location.hash.startsWith('#/department/')) {
-            window.history.back();
-        } else {
-            this.showDepartmentsList(true);
-        }
+        this.showDepartmentsList(true);
     },
 
     renderDeptSemestersSelector() {

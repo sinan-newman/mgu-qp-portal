@@ -319,39 +319,92 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                 files.append({"type": "SCHEME", "label": "SCHEME", "url": scheme_url})
 
             paper_id = f"custom_{course_code or 'qp'}_{ts}"
+            is_model_paper = bool(data.get("is_model_paper", False))
 
-            new_paper = {
-                "id": paper_id,
-                "qp_code": qp_code,
-                "course_code": course_code,
-                "title": title or f"Course {course_code}",
-                "raw_header": f"{qp_code} - {course_code} {title}".strip(" -"),
-                "semester": semester,
-                "semester_label": f"Semester {semester}",
-                "course_type": course_type,
-                "course_type_name": data.get("course_type_name", course_type),
-                "dept_code": dept_code,
-                "dept_name": dept_name,
-                "parent_dept": parent_dept,
-                "parent_dept_name": parent_dept_name,
-                "is_minor": is_minor,
-                "minor_name": minor_name,
-                "exam_id": "custom",
-                "exam_name": exam_name,
-                "batch": "2024 Admission",
-                "is_fyugp": True,
-                "has_qp": bool(qp_url),
-                "qp_url": qp_url,
-                "has_scheme": bool(scheme_url),
-                "scheme_url": scheme_url,
-                "files": files,
-                "has_files": len(files) > 0,
-                "is_custom_upload": True
-            }
+            if is_model_paper:
+                model_obj = {
+                    "id": f"model_{course_code or 'qp'}_{ts}",
+                    "title": title or f"Model Question Paper - {course_code}",
+                    "paper_type": data.get("paper_type", "THEORY"),
+                    "url": qp_url,
+                    "pages": 3,
+                    "source": "Admin Ingestion"
+                }
+                papers = CACHE.get("papers") or []
+                found = False
+                new_paper = None
+                for p in papers:
+                    if p.get("course_code", "").strip().upper() == course_code:
+                        if "model_papers" not in p or not isinstance(p["model_papers"], list):
+                            p["model_papers"] = []
+                        p["model_papers"].append(model_obj)
+                        p["has_files"] = True
+                        found = True
+                        new_paper = p
+                        break
+                if not found:
+                    new_paper = {
+                        "id": f"custom_model_{course_code}_{ts}",
+                        "qp_code": qp_code,
+                        "course_code": course_code,
+                        "title": title or f"Course {course_code}",
+                        "raw_header": f"{course_code} {title}".strip(),
+                        "semester": semester,
+                        "semester_label": f"Semester {semester}",
+                        "course_type": course_type,
+                        "course_type_name": data.get("course_type_name", course_type),
+                        "dept_code": dept_code,
+                        "dept_name": dept_name,
+                        "parent_dept": parent_dept,
+                        "parent_dept_name": parent_dept_name,
+                        "is_minor": is_minor,
+                        "minor_name": minor_name,
+                        "exam_id": "model_qp",
+                        "exam_name": "FYUGP Model Question Paper",
+                        "batch": "2024 Admission",
+                        "is_fyugp": True,
+                        "has_qp": False,
+                        "has_scheme": False,
+                        "files": [],
+                        "has_files": True,
+                        "model_papers": [model_obj],
+                        "is_custom_upload": True
+                    }
+                    papers.insert(0, new_paper)
+                CACHE["papers"] = papers
+            else:
+                new_paper = {
+                    "id": paper_id,
+                    "qp_code": qp_code,
+                    "course_code": course_code,
+                    "title": title or f"Course {course_code}",
+                    "raw_header": f"{qp_code} - {course_code} {title}".strip(" -"),
+                    "semester": semester,
+                    "semester_label": f"Semester {semester}",
+                    "course_type": course_type,
+                    "course_type_name": data.get("course_type_name", course_type),
+                    "dept_code": dept_code,
+                    "dept_name": dept_name,
+                    "parent_dept": parent_dept,
+                    "parent_dept_name": parent_dept_name,
+                    "is_minor": is_minor,
+                    "minor_name": minor_name,
+                    "exam_id": "custom",
+                    "exam_name": exam_name,
+                    "batch": "2024 Admission",
+                    "is_fyugp": True,
+                    "has_qp": bool(qp_url),
+                    "qp_url": qp_url,
+                    "has_scheme": bool(scheme_url),
+                    "scheme_url": scheme_url,
+                    "files": files,
+                    "has_files": len(files) > 0,
+                    "is_custom_upload": True
+                }
 
-            papers = CACHE.get("papers") or []
-            papers.insert(0, new_paper)
-            CACHE["papers"] = papers
+                papers = CACHE.get("papers") or []
+                papers.insert(0, new_paper)
+                CACHE["papers"] = papers
 
             for fpath in [os.path.join(DATA_DIR, "papers.json"), os.path.join(BASE_DIR, "public", "data", "papers.json")]:
                 if os.path.exists(os.path.dirname(fpath)):

@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- PDF.js for client-side Question Paper & Model Paper text extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -83,7 +86,7 @@
                     </button>
 
                     <!-- Admin Shortcut Button (Hidden in public view, visible only when logged in) -->
-                    <button id="adminNavBtn" onclick="App.openAdminModal()" class="hidden px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700 transition flex items-center gap-1.5" title="Admin Control Center">
+                    <button id="adminNavBtn" onclick="App.openAdminPage()" class="hidden px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700 transition flex items-center gap-1.5" title="Admin Control Center">
                         <i class="bi bi-shield-lock-fill text-emerald-600"></i>
                         <span>Admin</span>
                         <span id="adminActiveBadge" class="px-1.5 py-0.2 bg-emerald-500 text-white rounded-full text-[10px] font-bold">Active</span>
@@ -451,6 +454,625 @@
             <div id="paginationControls" class="mt-8"></div>
         </section>
 
+        <!-- DEDICATED ADMIN PAGE SECTION (Routed view: #/admin) -->
+        <section id="adminPageSection" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+            <!-- Top Navigation & Breadcrumbs Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-3">
+                    <button type="button" onclick="App.backFromAdmin()" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-750 text-xs font-semibold shadow-2xs transition">
+                        <i class="bi bi-arrow-left"></i>
+                        <span>Back to Portal</span>
+                    </button>
+                    <div class="flex items-center gap-2 text-xs">
+                        <a href="#/departments" onclick="App.showDepartmentsList(true); return false;" class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center gap-1">
+                            <i class="bi bi-grid text-xs"></i>
+                            <span>Portal</span>
+                        </a>
+                        <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
+                        <span class="text-slate-900 dark:text-white font-bold">Admin Control Center</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40 text-xs font-semibold">
+                        <i class="bi bi-shield-lock-fill text-blue-600"></i>
+                        <span>Admin Environment</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- VIEW A: Login View (when not authenticated) -->
+            <div id="adminLoginView" class="py-8">
+                <div class="max-w-md mx-auto bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-xl space-y-6">
+                    <div class="text-center space-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 mx-auto flex items-center justify-center text-2xl shadow-xs">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Admin Authentication</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            Please sign in with administrative credentials to access paper ingestion and catalog management.
+                        </p>
+                    </div>
+
+                    <form onsubmit="App.handleAdminLogin(event)" class="space-y-4">
+                        <div class="space-y-3 text-xs">
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">User ID</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                        <i class="bi bi-person"></i>
+                                    </span>
+                                    <input 
+                                        type="text" 
+                                        id="adminUsernameInput" 
+                                        placeholder="Enter administrative User ID" 
+                                        autocomplete="username"
+                                        class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500"
+                                        required
+                                    >
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Password</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                        <i class="bi bi-key"></i>
+                                    </span>
+                                    <input 
+                                        type="password" 
+                                        id="adminPasswordInput" 
+                                        placeholder="Enter administrative password" 
+                                        autocomplete="current-password"
+                                        class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500"
+                                        required
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="adminLoginError" class="hidden text-xs text-rose-600 dark:text-rose-400 font-semibold flex items-center gap-1.5 p-3 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/40">
+                            <i class="bi bi-exclamation-triangle-fill shrink-0"></i>
+                            <span>Invalid User ID or password. Please try again.</span>
+                        </div>
+
+                        <button type="submit" id="adminLoginSubmitBtn" class="w-full py-2.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center justify-center gap-1.5 transition">
+                            <i class="bi bi-unlock-fill"></i>
+                            <span>Unlock Admin Controls</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- VIEW B: Admin Dashboard (when authenticated) -->
+            <div id="adminControlsView" class="hidden space-y-6">
+                <!-- Admin Header & Logout -->
+                <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xs flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-lg">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                <span>Logged in as: <strong id="adminUserDisplayName" class="font-extrabold text-blue-600 dark:text-blue-400">sinan_cc</strong></span>
+                                <span class="px-2 py-0.2 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300">Active Session</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Full administrative rights for question paper ingestion, catalog management, and moderation.</p>
+                        </div>
+                    </div>
+                    <button onclick="App.adminLogout()" class="px-3.5 py-1.5 text-xs rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-slate-700 dark:text-slate-200 hover:text-rose-600 dark:hover:text-rose-400 font-semibold border border-slate-200 dark:border-slate-600 transition flex items-center gap-1.5">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Log out</span>
+                    </button>
+                </div>
+
+                <!-- Admin Action Sub-Tabs -->
+                <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-3 overflow-x-auto scrollbar-none">
+                    <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-4 py-2 text-xs font-semibold rounded-xl bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-cloud-arrow-up-fill"></i> Add & Ingest Paper (Auto-Detect)
+                    </button>
+                    <button id="adminTabBtnModelQp" onclick="App.switchAdminTab('modelQp')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-file-earmark-text-fill text-indigo-500"></i> Model Question Papers
+                        <span id="adminUntaggedCountBadge" class="ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">54</span>
+                    </button>
+                    <button id="adminTabBtnDelete" onclick="App.switchAdminTab('delete')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-trash3"></i> Manage & Delete Papers
+                    </button>
+                    <button id="adminTabBtnInbox" onclick="App.switchAdminTab('inbox')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-inbox-fill"></i> Student Reports & Feedback
+                        <span id="adminInboxBadge" class="hidden ml-1 px-1.5 py-0.2 bg-rose-500 text-white rounded-full text-[10px] font-bold">0</span>
+                    </button>
+                    <button id="adminTabBtnSync" onclick="App.switchAdminTab('sync')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-arrow-repeat"></i> Auto-Sync & Scraper
+                    </button>
+                </div>
+
+                <!-- TAB 1: SMART UPLOAD & INGESTION -->
+                <div id="adminTabUploadView" class="space-y-6">
+                    <!-- Step 1: Category Selection -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 shadow-xs space-y-3">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            Step 1: Select Paper Category
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label id="catLabelQP" class="flex items-start gap-3 p-3.5 rounded-xl border-2 border-blue-600 bg-blue-50/40 dark:bg-blue-950/30 cursor-pointer transition">
+                                <input type="radio" name="adminPaperCategory" value="QP" checked onchange="App.handlePaperCategoryChange('QP')" class="mt-1 text-blue-600 focus:ring-blue-500">
+                                <div>
+                                    <div class="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
+                                        <i class="bi bi-file-earmark-pdf-fill text-blue-600"></i>
+                                        <span>University Examination Question Paper</span>
+                                    </div>
+                                    <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Regular or supplementary semester exam question paper & valuation scheme.
+                                    </div>
+                                </div>
+                            </label>
+                            <label id="catLabelModel" class="flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-400 bg-white dark:bg-slate-800 cursor-pointer transition">
+                                <input type="radio" name="adminPaperCategory" value="MODEL" onchange="App.handlePaperCategoryChange('MODEL')" class="mt-1 text-indigo-600 focus:ring-indigo-500">
+                                <div>
+                                    <div class="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
+                                        <i class="bi bi-file-earmark-text-fill text-indigo-600"></i>
+                                        <span>Model Question Paper (FYUGP Sample)</span>
+                                    </div>
+                                    <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Official sample / model question paper for courses.
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Smart Dropzone & Auto-Scanner -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 shadow-xs space-y-4">
+                        <div class="flex items-center justify-between">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                Step 2: Upload PDF File (Auto-Detect Course Code & Duplicate Check)
+                            </label>
+                            <span class="text-[11px] font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1">
+                                <i class="bi bi-magic"></i> Automatic Course Detection
+                            </span>
+                        </div>
+
+                        <!-- Dropzone -->
+                        <div id="adminPdfDropzone" onclick="document.getElementById('adminSmartPdfFile').click()" class="border-2 border-dashed border-slate-300 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-2xl p-6 sm:p-8 text-center cursor-pointer transition bg-slate-50/50 dark:bg-slate-800/50 hover:bg-blue-50/30 dark:hover:bg-blue-950/20 group">
+                            <input type="file" id="adminSmartPdfFile" accept="application/pdf" class="hidden" onchange="App.handleSmartPdfFileSelected(event)">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 mx-auto flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                            </div>
+                            <div class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">
+                                Drop Question Paper PDF here or click to browse
+                            </div>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 max-w-md mx-auto">
+                                The portal reads the PDF text in your browser, automatically detects the course code and semester, assigns it to the course, and checks for duplicates.
+                            </p>
+                            <div id="adminSelectedFileNameBadge" class="hidden mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200 text-xs font-mono font-bold">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                <span id="adminSelectedFileName">filename.pdf</span>
+                                <span id="adminSelectedFileSize" class="text-[10px] text-blue-600 dark:text-blue-300 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <!-- Scanner Spinner -->
+                        <div id="adminScanSpinner" class="hidden p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/40 text-blue-700 dark:text-blue-300 text-xs flex items-center justify-center gap-3">
+                            <div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div>
+                            <span class="font-semibold">Reading PDF text & analyzing course code against database...</span>
+                        </div>
+
+                        <!-- Live Detection Result Box -->
+                        <div id="adminScanResultContainer" class="hidden"></div>
+                    </div>
+
+                    <!-- Step 3: Verified Review Form -->
+                    <form id="adminUploadForm" onsubmit="App.handleAdminSmartUploadSubmit(event)" class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 shadow-xs space-y-4 text-xs">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                Step 3: Review Details & Publish to Website
+                            </label>
+                            <span class="text-[11px] text-slate-400">All fields below are auto-assigned and editable</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Course Code <span class="text-rose-500">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="adminUploadCourseCode" 
+                                    placeholder="e.g. MG1DSCMAT100, MAT1DSC01" 
+                                    oninput="App.handleCourseCodeManualChange()"
+                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono text-xs uppercase font-bold"
+                                    required
+                                >
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Course Title / Subject Name <span class="text-rose-500">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="adminUploadTitle" 
+                                    placeholder="e.g. Calculus and Analytical Geometry" 
+                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Department <span class="text-rose-500">*</span>
+                                </label>
+                                <select id="adminUploadDept" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs" required>
+                                    <!-- Populated dynamically -->
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Semester <span class="text-rose-500">*</span>
+                                </label>
+                                <select id="adminUploadSemester" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold" required>
+                                    <option value="1">Semester 1</option>
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                    <option value="4">Semester 4</option>
+                                    <option value="5">Semester 5</option>
+                                    <option value="6">Semester 6</option>
+                                    <option value="7">Semester 7</option>
+                                    <option value="8">Semester 8</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Course Type <span class="text-rose-500">*</span>
+                                </label>
+                                <select id="adminUploadCourseType" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold" required>
+                                    <option value="DSC">DSC - Discipline Specific Core</option>
+                                    <option value="DSE">DSE - Discipline Specific Elective</option>
+                                    <option value="SEC">SEC - Skill Enhancement Course</option>
+                                    <option value="VAC">VAC - Value Added Course</option>
+                                    <option value="MDC">MDC - Multi-Disciplinary Course</option>
+                                    <option value="AEC">AEC - Ability Enhancement Course</option>
+                                    <option value="CCR">CCR - Core Course (BBA/BCA)</option>
+                                    <option value="MDE">MDE - Multidisciplinary Elective (BBA/BCA)</option>
+                                    <option value="MIN">MIN - Minor</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Minor Classification Checkbox & Programme Name -->
+                        <div class="p-3 bg-pink-50/50 dark:bg-pink-950/20 border border-pink-200 dark:border-pink-900/40 rounded-xl space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer font-semibold text-slate-800 dark:text-slate-200">
+                                <input type="checkbox" id="adminUploadIsMinor" onchange="App.toggleAdminMinorFields()" class="rounded text-pink-600 focus:ring-pink-500">
+                                <span>This is a Minor Programme Course (e.g. Business Laws, Heritage Studies, Translation Studies)</span>
+                            </label>
+                            <div id="adminMinorFieldsContainer" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                                <div>
+                                    <label class="block text-[11px] font-medium text-slate-600 dark:text-slate-400 mb-0.5">
+                                        Minor Programme Name
+                                    </label>
+                                    <input type="text" id="adminUploadMinorName" placeholder="e.g. Business Laws, Heritage Studies" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-medium text-slate-600 dark:text-slate-400 mb-0.5">
+                                        3-Letter Minor Code
+                                    </label>
+                                    <input type="text" id="adminUploadMinorCode" placeholder="e.g. BLW, BST, LIH, TRS, PTP" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-mono uppercase">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exam & QP Details (for Exam QP) -->
+                        <div id="adminExamDetailsSection" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    QP Code (Question Paper Number)
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="adminUploadQpCode" 
+                                    placeholder="e.g. 24900123" 
+                                    oninput="App.handleCourseCodeManualChange()"
+                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono text-xs"
+                                >
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                    Examination Session Name
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="adminUploadExamName" 
+                                    value="MGU-UGP (Honours) 2024 Admission Regular Examination" 
+                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Scheme PDF Section (for Exam QP) -->
+                        <div id="adminSchemeSection" class="p-3 bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 rounded-xl space-y-2">
+                            <label class="block font-semibold text-slate-700 dark:text-slate-300">
+                                <i class="bi bi-journal-check text-emerald-600"></i> Valuation Scheme PDF (Optional):
+                            </label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block mb-0.5">Upload Scheme PDF File</span>
+                                    <input type="file" id="adminUploadSchemeFile" accept=".pdf" class="w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100">
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block mb-0.5">Scheme Direct Web URL</span>
+                                    <input type="url" id="adminUploadSchemeUrl" placeholder="https://..." class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Upload Status Message -->
+                        <div id="adminUploadStatus" class="hidden p-3 rounded-xl text-xs"></div>
+
+                        <!-- Submit Button -->
+                        <div class="flex items-center justify-between pt-2">
+                            <span id="adminDuplicateWarningHint" class="hidden text-xs font-semibold text-amber-600 flex items-center gap-1">
+                                <i class="bi bi-exclamation-triangle-fill"></i> Duplicate detected in catalog.
+                            </span>
+                            <div class="ml-auto flex items-center gap-2">
+                                <button type="submit" id="adminUploadSubmitBtn" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-xs flex items-center gap-1.5 text-xs transition">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                    <span id="adminUploadSubmitBtnText">Add into Website</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- TAB 2: MANAGE & DELETE QUESTION PAPERS -->
+                <div id="adminTabDeleteView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="relative w-full flex-1">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                                <i class="bi bi-search text-xs"></i>
+                            </div>
+                            <input 
+                                type="text" 
+                                id="adminDeleteSearchInput" 
+                                oninput="App.renderAdminDeleteList()" 
+                                placeholder="Search papers to delete by course code, title, QP code, or department..." 
+                                class="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-rose-500 text-xs"
+                            >
+                        </div>
+                        <div id="adminDeleteCountBadge" class="text-xs font-semibold text-slate-500 shrink-0"></div>
+                    </div>
+
+                    <div id="adminDeleteListContainer" class="max-h-96 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 text-xs">
+                        <!-- Populated dynamically by App.renderAdminDeleteList() -->
+                    </div>
+                </div>
+
+                <!-- TAB 3: AUTO-SYNC & UNIVERSITY SCRAPER -->
+                <div id="adminTabSyncView" class="hidden space-y-4">
+                    <div class="space-y-2">
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Synchronization Mode:</div>
+                        <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+                            <div class="flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-100">
+                                <i class="bi bi-calendar-check text-blue-600"></i> Daily Automatic Cron Sync
+                            </div>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                GitHub Actions automatically crawls <code class="font-mono text-blue-600">https://assist.mgu.ac.in/schema/</code> every day at 02:00 UTC (07:30 IST) and pushes any newly released question papers directly to GitHub Pages.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Manual University Sync:</div>
+                        <div class="p-4 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <div class="text-sm font-bold text-slate-900 dark:text-white">Trigger Immediate Portal Crawl</div>
+                                <div class="text-xs text-slate-500">Query all 10 FYUGP examination sessions from MGU server.</div>
+                            </div>
+                            <button id="triggerSyncBtn" onclick="App.triggerSync()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-semibold shadow-xs flex items-center gap-1.5 transition">
+                                <i class="bi bi-arrow-repeat"></i> Sync Now
+                            </button>
+                        </div>
+                        <div id="syncStatusNotice" class="hidden"></div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: STUDENT REPORTS & FEEDBACK INBOX -->
+                <div id="adminTabInboxView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Reports & Feedback Inbox</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Review missing paper reports and feedback submitted by students</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="App.exportReportsJson()" class="px-2.5 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-medium transition flex items-center gap-1" title="Export reports as JSON">
+                                <i class="bi bi-download"></i> Export
+                            </button>
+                            <button onclick="App.clearResolvedReports()" class="px-2.5 py-1 text-xs rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/40 font-medium transition" title="Clear resolved reports">
+                                Clear Resolved
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filter chips for Inbox -->
+                    <div class="flex items-center gap-1.5 text-xs overflow-x-auto scrollbar-none pb-1">
+                        <button id="inboxFilterAll" onclick="App.filterAdminInbox('all')" class="px-2.5 py-1 rounded-md font-semibold bg-blue-600 text-white shadow-xs">All (<span id="inboxCountAll">0</span>)</button>
+                        <button id="inboxFilterPending" onclick="App.filterAdminInbox('pending')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Pending (<span id="inboxCountPending">0</span>)</button>
+                        <button id="inboxFilterMissing" onclick="App.filterAdminInbox('missing')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Missing Papers</button>
+                        <button id="inboxFilterFeedback" onclick="App.filterAdminInbox('feedback')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Feedback</button>
+                    </div>
+
+                    <!-- Inbox List Container -->
+                    <div id="adminInboxListContainer" class="max-h-96 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 p-1 space-y-1 text-xs">
+                        <!-- Populated dynamically by App.renderAdminInbox() -->
+                    </div>
+                </div>
+
+                <!-- TAB 5: MODEL QUESTION PAPERS MANAGEMENT -->
+                <div id="adminTabModelQpView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="bi bi-file-earmark-text-fill text-indigo-500"></i>
+                                Model Question Papers Management
+                            </h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">
+                                Review extracted model question papers, assign course codes to untagged sets, and manage model papers.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                                <strong id="adminModelTotalCount">1151</strong> Total Papers
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view navigation -->
+                    <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-2 overflow-x-auto scrollbar-none text-xs">
+                        <button id="adminModelSubBtnUntagged" onclick="App.switchModelSubTab('untagged')" class="px-3 py-1.5 rounded-lg font-bold bg-amber-500 text-white shadow-xs flex items-center gap-1.5 transition">
+                            <i class="bi bi-exclamation-circle-fill"></i> Untagged / Needs Review (<span id="adminModelUntaggedCount">54</span>)
+                        </button>
+                        <button id="adminModelSubBtnAll" onclick="App.switchModelSubTab('all')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                            <i class="bi bi-collection"></i> All Model Papers (<span id="adminModelAssignedCount">1097</span>)
+                        </button>
+                        <button id="adminModelSubBtnUpload" onclick="App.switchModelSubTab('upload')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                            <i class="bi bi-cloud-arrow-up"></i> Upload Single Model QP
+                        </button>
+                    </div>
+
+                    <!-- SUBVIEW 1: UNTAGGED / REVIEW LIST -->
+                    <div id="adminModelSubViewUntagged" class="space-y-3">
+                        <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
+                            <i class="bi bi-info-circle-fill text-amber-600 mt-0.5"></i>
+                            <div>
+                                <strong>Instructions for Admin:</strong> These question papers were extracted from consolidated department PDF files (length 1–7 pages) where the course code was not automatically identified. Click <strong>Preview PDF</strong> to inspect the paper, then fill the course code below and click <strong>Save & Tag</strong> to link it immediately.
+                            </div>
+                        </div>
+
+                        <div id="adminUntaggedListContainer" class="max-h-[550px] overflow-y-auto space-y-3 p-1">
+                            <!-- Populated dynamically by App.renderAdminUntaggedModelList() -->
+                        </div>
+                    </div>
+
+                    <!-- SUBVIEW 2: ALL MODEL PAPERS LIST -->
+                    <div id="adminModelSubViewAll" class="hidden space-y-3">
+                        <div class="flex items-center gap-2">
+                            <input 
+                                type="text" 
+                                id="adminModelSearchInput" 
+                                oninput="App.renderAdminAllModelList()" 
+                                placeholder="Search by course code, title, or department..." 
+                                class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs"
+                            >
+                        </div>
+
+                        <div id="adminModelListContainer" class="max-h-[550px] overflow-y-auto space-y-2 p-1">
+                            <!-- Populated dynamically by App.renderAdminAllModelList() -->
+                        </div>
+                    </div>
+
+                    <!-- SUBVIEW 3: UPLOAD SINGLE MODEL QP -->
+                    <div id="adminModelSubViewUpload" class="hidden space-y-3">
+                        <div class="p-3 bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-900/40 rounded-xl text-xs text-indigo-900 dark:text-indigo-200 flex items-center gap-2">
+                            <i class="bi bi-info-circle-fill text-indigo-600 text-sm"></i>
+                            <span>Upload a model question paper PDF for any course. It will automatically attach to that course code in the catalog.</span>
+                        </div>
+
+                        <form onsubmit="App.handleAdminModelUploadSubmit(event)" class="space-y-3 text-xs">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Course Code <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="adminModelUpCourseCode" 
+                                        list="courseCodeDatalist"
+                                        oninput="App.handleModelUploadCourseCodeChange()"
+                                        placeholder="e.g. MAT1DSC01, COM1DSC01" 
+                                        class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white font-mono uppercase"
+                                        required
+                                    >
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Course Title / Subject Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="adminModelUpTitle" 
+                                        placeholder="Auto-filled from course code if known" 
+                                        class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
+                                    >
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Semester <span class="text-rose-500">*</span>
+                                    </label>
+                                    <select id="adminModelUpSem" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white" required>
+                                        <option value="1">Semester 1</option>
+                                        <option value="2">Semester 2</option>
+                                        <option value="3">Semester 3</option>
+                                        <option value="4">Semester 4</option>
+                                        <option value="5">Semester 5</option>
+                                        <option value="6">Semester 6</option>
+                                        <option value="7">Semester 7</option>
+                                        <option value="8">Semester 8</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Department Code <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="adminModelUpDept" 
+                                        placeholder="e.g. MAT, PHY, BCA" 
+                                        class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white font-mono uppercase"
+                                        required
+                                    >
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Course Type
+                                    </label>
+                                    <select id="adminModelUpType" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white">
+                                        <option value="DSC">DSC - Discipline Specific Core</option>
+                                        <option value="DSE">DSE - Discipline Specific Elective</option>
+                                        <option value="SEC">SEC - Skill Enhancement Course</option>
+                                        <option value="VAC">VAC - Value Added Course</option>
+                                        <option value="MDC">MDC - Multi-Disciplinary Course</option>
+                                        <option value="AEC">AEC - Ability Enhancement Course</option>
+                                    </select>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Model Question Paper PDF File <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input 
+                                        type="file" 
+                                        id="adminModelUpFile" 
+                                        accept="application/pdf"
+                                        class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <button type="submit" id="adminModelUploadSubmitBtn" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5 transition">
+                                <i class="bi bi-cloud-arrow-up"></i> Upload & Tag Model Paper
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Global Datalist for Course Code Autocomplete -->
+                <datalist id="courseCodeDatalist"></datalist>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- PDF PREVIEW MODAL -->
@@ -657,494 +1279,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
-
-    <!-- ADMIN SYNC MODAL (Visible for Admins only) -->
-    <div id="adminModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-4 transition">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
-            
-            <div class="p-6 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 flex items-center justify-center text-lg">
-                        <i class="bi bi-shield-lock-fill"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-slate-900 dark:text-white">Admin Portal & Sync Center</h3>
-                        <p class="text-xs text-slate-500 dark:text-slate-400">Restricted administrative controls and manual scraper execution.</p>
-                    </div>
-                </div>
-                <button onclick="App.closeAdminModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-
-            <!-- Login View -->
-            <div id="adminLoginView" class="p-6">
-                <form onsubmit="App.handleAdminLogin(event)" class="space-y-4">
-                    <div class="space-y-3">
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-1">
-                                User ID
-                            </label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i class="bi bi-person"></i>
-                                </span>
-                                <input 
-                                    type="text" 
-                                    id="adminUsernameInput" 
-                                    placeholder="Enter user ID" 
-                                    autocomplete="username"
-                                    class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    required
-                                >
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-1">
-                                Password
-                            </label>
-                            <div class="relative">
-                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                                    <i class="bi bi-key"></i>
-                                </span>
-                                <input 
-                                    type="password" 
-                                    id="adminPasswordInput" 
-                                    placeholder="Enter password" 
-                                    autocomplete="current-password"
-                                    class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    required
-                                >
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="adminLoginError" class="hidden text-xs text-rose-600 dark:text-rose-400 font-semibold flex items-center gap-1.5 p-2.5 rounded-lg bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/40">
-                        <i class="bi bi-exclamation-triangle-fill shrink-0"></i>
-                        <span>Invalid user ID or password. Please try again.</span>
-                    </div>
-
-                    <div class="flex justify-end gap-2 pt-2">
-                        <button type="button" onclick="App.closeAdminModal()" class="px-4 py-2 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">
-                            Cancel
-                        </button>
-                        <button type="submit" id="adminLoginSubmitBtn" class="px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1.5 transition">
-                            Unlock Admin Controls
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Controls View (Visible when authenticated) -->
-            <div id="adminControlsView" class="hidden p-6 space-y-5">
-                
-                <!-- Admin Header & Logout -->
-                <div class="p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-200 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <i class="bi bi-shield-check text-emerald-600 text-sm"></i>
-                        <span class="font-semibold">Logged in as: <strong id="adminUserDisplayName" class="font-bold">sinan_cc</strong></span>
-                        <span class="text-[11px] text-emerald-600 dark:text-emerald-300 font-normal hidden sm:inline">• Full administrative rights</span>
-                    </div>
-                    <button onclick="App.adminLogout()" class="px-2.5 py-1 text-xs rounded-lg bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200 hover:bg-emerald-200 font-semibold transition">
-                        Log out
-                    </button>
-                </div>
-
-                <!-- Admin Action Sub-Tabs -->
-                <div class="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-700 pb-2 overflow-x-auto scrollbar-none">
-                    <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0">
-                        <i class="bi bi-cloud-arrow-up"></i> Upload / Add Paper
-                    </button>
-                    <button id="adminTabBtnModelQp" onclick="App.switchAdminTab('modelQp')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
-                        <i class="bi bi-file-earmark-text-fill text-indigo-500"></i> Model Question Papers
-                        <span id="adminUntaggedCountBadge" class="ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">54</span>
-                    </button>
-                    <button id="adminTabBtnDelete" onclick="App.switchAdminTab('delete')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
-                        <i class="bi bi-trash3"></i> Manage & Delete Papers
-                    </button>
-                    <button id="adminTabBtnInbox" onclick="App.switchAdminTab('inbox')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
-                        <i class="bi bi-inbox-fill"></i> Student Reports & Feedback
-                        <span id="adminInboxBadge" class="hidden ml-1 px-1.5 py-0.2 bg-rose-500 text-white rounded-full text-[10px] font-bold">0</span>
-                    </button>
-                    <button id="adminTabBtnSync" onclick="App.switchAdminTab('sync')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
-                        <i class="bi bi-arrow-repeat"></i> Auto-Sync & Scraper
-                    </button>
-                </div>
-
-                <!-- TAB 1: UPLOAD / ADD QUESTION PAPER -->
-                <div id="adminTabUploadView" class="space-y-4">
-                    <div class="text-xs text-slate-500 dark:text-slate-400">
-                        Upload or manually add any university question paper, scheme, or supplementary exam paper to the live catalog.
-                    </div>
-
-                    <form onsubmit="App.handleAdminUploadSubmit(event)" class="space-y-3.5 text-xs">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Course Code <span class="text-rose-500">*</span>
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="adminUploadCourseCode" 
-                                    placeholder="e.g. MG1DSCMAT100, MG1DSCBST100" 
-                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono text-xs uppercase"
-                                    required
-                                >
-                            </div>
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Course Title / Subject Name <span class="text-rose-500">*</span>
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="adminUploadTitle" 
-                                    placeholder="e.g. Calculus and Analytical Geometry" 
-                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
-                                    required
-                                >
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Department <span class="text-rose-500">*</span>
-                                </label>
-                                <select id="adminUploadDept" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs" required>
-                                    <!-- Populated dynamically with all departments -->
-                                </select>
-                            </div>
-
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Semester <span class="text-rose-500">*</span>
-                                </label>
-                                <select id="adminUploadSemester" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold" required>
-                                    <option value="1">Semester 1</option>
-                                    <option value="2">Semester 2</option>
-                                    <option value="3">Semester 3</option>
-                                    <option value="4">Semester 4</option>
-                                    <option value="5">Semester 5</option>
-                                    <option value="6">Semester 6</option>
-                                    <option value="7">Semester 7</option>
-                                    <option value="8">Semester 8</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Course Type <span class="text-rose-500">*</span>
-                                </label>
-                                <select id="adminUploadCourseType" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold" required>
-                                    <option value="DSC">DSC - Discipline Specific Core</option>
-                                    <option value="DSE">DSE - Discipline Specific Elective</option>
-                                    <option value="SEC">SEC - Skill Enhancement Course</option>
-                                    <option value="VAC">VAC - Value Added Course</option>
-                                    <option value="MDC">MDC - Multi-Disciplinary Course</option>
-                                    <option value="AEC">AEC - Ability Enhancement Course</option>
-                                    <option value="CCR">CCR - Core Course (BBA/BCA)</option>
-                                    <option value="MDE">MDE - Multidisciplinary Elective (BBA/BCA)</option>
-                                    <option value="MIN">MIN - Minor</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Minor Classification Checkbox & Programme Name -->
-                        <div class="p-3 bg-pink-50/50 dark:bg-pink-950/20 border border-pink-200 dark:border-pink-900/40 rounded-xl space-y-2">
-                            <label class="flex items-center gap-2 cursor-pointer font-semibold text-slate-800 dark:text-slate-200">
-                                <input type="checkbox" id="adminUploadIsMinor" onchange="App.toggleAdminMinorFields()" class="rounded text-pink-600 focus:ring-pink-500">
-                                <span>This is a Minor Programme Course (e.g. Business Laws, Heritage Studies, Translation Studies)</span>
-                            </label>
-                            <div id="adminMinorFieldsContainer" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                                <div>
-                                    <label class="block text-[11px] font-medium text-slate-600 dark:text-slate-400 mb-0.5">
-                                        Minor Programme Name
-                                    </label>
-                                    <input type="text" id="adminUploadMinorName" placeholder="e.g. Business Laws, Heritage Studies" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] font-medium text-slate-600 dark:text-slate-400 mb-0.5">
-                                        3-Letter Minor Code
-                                    </label>
-                                    <input type="text" id="adminUploadMinorCode" placeholder="e.g. BLW, BST, LIH, TRS, PTP" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs font-mono uppercase">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Exam & QP Details -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    QP Code (Question Paper Number)
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="adminUploadQpCode" 
-                                    placeholder="e.g. 24900123" 
-                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono text-xs"
-                                >
-                            </div>
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    Examination Session Name
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="adminUploadExamName" 
-                                    value="MGU-UGP (Honours) 2024 Admission Regular Examination" 
-                                    class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
-                                >
-                            </div>
-                        </div>
-
-                        <!-- PDF Uploads (File or Direct URL) -->
-                        <div class="p-3 bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 rounded-xl space-y-3">
-                            <div>
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    <i class="bi bi-file-earmark-pdf text-blue-600"></i> Question Paper PDF Document:
-                                </label>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                    <div>
-                                        <span class="text-[10px] text-slate-400 block mb-0.5">Option A: Upload Local PDF File</span>
-                                        <input type="file" id="adminUploadQpFile" accept=".pdf" class="w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
-                                    </div>
-                                    <div>
-                                        <span class="text-[10px] text-slate-400 block mb-0.5">Option B: Direct PDF Web URL</span>
-                                        <input type="url" id="adminUploadQpUrl" placeholder="https://..." class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2 border-t border-slate-200 dark:border-slate-600/60">
-                                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                    <i class="bi bi-journal-check text-emerald-600"></i> Evaluation Scheme PDF (Optional):
-                                </label>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                    <div>
-                                        <span class="text-[10px] text-slate-400 block mb-0.5">Upload Scheme PDF</span>
-                                        <input type="file" id="adminUploadSchemeFile" accept=".pdf" class="w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100">
-                                    </div>
-                                    <div>
-                                        <span class="text-[10px] text-slate-400 block mb-0.5">Scheme Web URL</span>
-                                        <input type="url" id="adminUploadSchemeUrl" placeholder="https://..." class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-xs">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="adminUploadStatus" class="hidden p-3 rounded-lg text-xs"></div>
-
-                        <div class="flex justify-end gap-2 pt-2">
-                            <button type="submit" id="adminUploadSubmitBtn" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-semibold shadow-xs flex items-center gap-1.5 text-xs transition">
-                                <i class="bi bi-cloud-arrow-up"></i> Publish & Add to Portal
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- TAB 2: MANAGE & DELETE QUESTION PAPERS -->
-                <div id="adminTabDeleteView" class="hidden space-y-4">
-                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
-                        <div class="relative w-full flex-1">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                                <i class="bi bi-search text-xs"></i>
-                            </div>
-                            <input 
-                                type="text" 
-                                id="adminDeleteSearchInput" 
-                                oninput="App.renderAdminDeleteList()" 
-                                placeholder="Search papers to delete by course code, title, QP code, or department..." 
-                                class="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white placeholder-slate-400 border border-slate-200 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-rose-500 text-xs"
-                            >
-                        </div>
-                        <div id="adminDeleteCountBadge" class="text-xs font-semibold text-slate-500 shrink-0"></div>
-                    </div>
-
-                    <div id="adminDeleteListContainer" class="max-h-96 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 text-xs">
-                        <!-- Populated dynamically by App.renderAdminDeleteList() -->
-                    </div>
-                </div>
-
-                <!-- TAB 3: AUTO-SYNC & UNIVERSITY SCRAPER -->
-                <div id="adminTabSyncView" class="hidden space-y-4">
-                    <div class="space-y-2">
-                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Synchronization Mode:</div>
-                        <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 space-y-1">
-                            <div class="flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-100">
-                                <i class="bi bi-calendar-check text-blue-600"></i> Daily Automatic Cron Sync
-                            </div>
-                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
-                                GitHub Actions automatically crawls <code class="font-mono text-blue-600">https://assist.mgu.ac.in/schema/</code> every day at 02:00 UTC (07:30 IST) and pushes any newly released question papers directly to GitHub Pages.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Manual University Sync:</div>
-                        <div class="p-4 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
-                            <div>
-                                <div class="text-sm font-bold text-slate-900 dark:text-white">Trigger Immediate Portal Crawl</div>
-                                <div class="text-xs text-slate-500">Query all 10 FYUGP examination sessions from MGU server.</div>
-                            </div>
-                            <button id="triggerSyncBtn" onclick="App.triggerSync()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs font-semibold shadow-xs flex items-center gap-1.5 transition">
-                                <i class="bi bi-arrow-repeat"></i> Sync Now
-                            </button>
-                        </div>
-                        <div id="syncStatusNotice" class="hidden"></div>
-                    </div>
-                </div>
-
-                <!-- TAB 4: STUDENT REPORTS & FEEDBACK INBOX -->
-                <div id="adminTabInboxView" class="hidden space-y-4">
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                        <div>
-                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Reports & Feedback Inbox</h4>
-                            <p class="text-xs text-slate-500 dark:text-slate-400">Review missing paper reports and feedback submitted by students</p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <button onclick="App.exportReportsJson()" class="px-2.5 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-medium transition flex items-center gap-1" title="Export reports as JSON">
-                                <i class="bi bi-download"></i> Export
-                            </button>
-                            <button onclick="App.clearResolvedReports()" class="px-2.5 py-1 text-xs rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/40 font-medium transition" title="Clear resolved reports">
-                                Clear Resolved
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Filter chips for Inbox -->
-                    <div class="flex items-center gap-1.5 text-xs overflow-x-auto scrollbar-none pb-1">
-                        <button id="inboxFilterAll" onclick="App.filterAdminInbox('all')" class="px-2.5 py-1 rounded-md font-semibold bg-blue-600 text-white shadow-xs">All (<span id="inboxCountAll">0</span>)</button>
-                        <button id="inboxFilterPending" onclick="App.filterAdminInbox('pending')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Pending (<span id="inboxCountPending">0</span>)</button>
-                        <button id="inboxFilterMissing" onclick="App.filterAdminInbox('missing')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Missing Papers</button>
-                        <button id="inboxFilterFeedback" onclick="App.filterAdminInbox('feedback')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Feedback</button>
-                    </div>
-
-                    <!-- Inbox List Container -->
-                    <div id="adminInboxListContainer" class="max-h-96 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 p-1 space-y-1 text-xs">
-                        <!-- Populated dynamically by App.renderAdminInbox() -->
-                    </div>
-                </div>
-
-                <!-- TAB 5: MODEL QUESTION PAPERS MANAGEMENT -->
-                <div id="adminTabModelQpView" class="hidden space-y-4">
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                        <div>
-                            <h4 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-                                <i class="bi bi-file-earmark-text-fill text-indigo-500"></i>
-                                Model Question Papers Management
-                            </h4>
-                            <p class="text-xs text-slate-500 dark:text-slate-400">
-                                Review extracted model question papers, assign course codes to untagged sets (1–7 pages), and upload new papers.
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                                <strong id="adminModelTotalCount">1151</strong> Total Papers
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Sub-view navigation -->
-                    <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-2 overflow-x-auto scrollbar-none text-xs">
-                        <button id="adminModelSubBtnUntagged" onclick="App.switchModelSubTab('untagged')" class="px-3 py-1.5 rounded-lg font-bold bg-amber-500 text-white shadow-xs flex items-center gap-1.5 transition">
-                            <i class="bi bi-exclamation-circle-fill"></i> Untagged / Needs Review (<span id="adminModelUntaggedCount">54</span>)
-                        </button>
-                        <button id="adminModelSubBtnAll" onclick="App.switchModelSubTab('all')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
-                            <i class="bi bi-collection"></i> All Model Papers (<span id="adminModelAssignedCount">1097</span>)
-                        </button>
-                        <button id="adminModelSubBtnUpload" onclick="App.switchModelSubTab('upload')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
-                            <i class="bi bi-cloud-arrow-up"></i> Upload Single Model QP
-                        </button>
-                    </div>
-
-                    <!-- SUBVIEW 1: UNTAGGED / REVIEW LIST -->
-                    <div id="adminModelSubViewUntagged" class="space-y-3">
-                        <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
-                            <i class="bi bi-info-circle-fill text-amber-600 mt-0.5"></i>
-                            <div>
-                                <strong>Instructions for Admin:</strong> These question papers were extracted from consolidated department PDF files (length 1–7 pages) where the course code was not automatically identified. Click <strong>Preview PDF</strong> to inspect the paper, then fill the course code below and click <strong>Save & Tag</strong> to link it immediately.
-                            </div>
-                        </div>
-
-                        <div id="adminUntaggedListContainer" class="max-h-[550px] overflow-y-auto space-y-3 p-1">
-                            <!-- Populated dynamically by App.renderAdminUntaggedModelList() -->
-                        </div>
-                    </div>
-
-                    <!-- SUBVIEW 2: ALL MODEL PAPERS LIST -->
-                    <div id="adminModelSubViewAll" class="hidden space-y-3">
-                        <div class="flex items-center gap-2">
-                            <input 
-                                type="text" 
-                                id="adminModelSearchInput" 
-                                oninput="App.filterAdminModelList()" 
-                                placeholder="Search model papers by course code, title, or filename..." 
-                                class="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white"
-                            >
-                        </div>
-                        <div id="adminAllModelListContainer" class="max-h-[500px] overflow-y-auto space-y-2 p-1">
-                            <!-- Populated dynamically by App.renderAdminAllModelList() -->
-                        </div>
-                    </div>
-
-                    <!-- SUBVIEW 3: UPLOAD MODEL QP -->
-                    <div id="adminModelSubViewUpload" class="hidden space-y-3">
-                        <form onsubmit="App.handleAdminModelUploadSubmit(event)" class="space-y-3.5 text-xs bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Upload & Link Model Question Paper</h5>
-                            
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <div>
-                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                        Course Code <span class="text-rose-500">*</span>
-                                    </label>
-                                    <input 
-                                        type="text" 
-                                        id="adminModelUpCourseCode" 
-                                        placeholder="e.g. MG1DSCCHE100" 
-                                        list="courseCodeDatalist"
-                                        class="w-full px-3 py-2 text-xs font-mono font-bold uppercase rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
-                                        required
-                                    >
-                                </div>
-                                <div>
-                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                        Paper Type
-                                    </label>
-                                    <select id="adminModelUpType" class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white">
-                                        <option value="THEORY">Theory Model Question Paper</option>
-                                        <option value="PRACTICAL">Practical Model Question Paper</option>
-                                    </select>
-                                </div>
-                                <div class="sm:col-span-2">
-                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                        Model Question Paper PDF File <span class="text-rose-500">*</span>
-                                    </label>
-                                    <input 
-                                        type="file" 
-                                        id="adminModelUpFile" 
-                                        accept="application/pdf"
-                                        class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
-                                        required
-                                    >
-                                </div>
-                            </div>
-
-                            <button type="submit" id="adminModelUploadSubmitBtn" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5 transition">
-                                <i class="bi bi-cloud-arrow-up"></i> Upload & Tag Model Paper
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
-
-                <!-- Global Datalist for Course Code Autocomplete -->
-                <datalist id="courseCodeDatalist"></datalist>
-
-            </div>
-
         </div>
     </div>
 

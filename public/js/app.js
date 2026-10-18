@@ -114,6 +114,10 @@ const App = {
     currentRoute: null,
     lastDeptListScrollY: 0,
 
+    // Admin Smart Ingestion State
+    selectedSmartPdfFile: null,
+    currentPaperCategory: 'QP',
+
     async init() {
         this.loadBookmarks();
         this.initTheme();
@@ -159,14 +163,14 @@ const App = {
         // Secret Admin URL query trigger: ?admin
         const hasAdminParam = new URLSearchParams(window.location.search).has('admin');
         if (hasAdminParam) {
-            this.openAdminModal();
+            this.openAdminPage(true);
         }
 
         // Secret Keyboard Shortcut: Ctrl + Shift + A or Alt + A
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) || (e.altKey && (e.key === 'a' || e.key === 'A'))) {
                 e.preventDefault();
-                this.openAdminModal();
+                this.openAdminPage(true);
             }
         });
     },
@@ -498,6 +502,9 @@ const App = {
         if (themeBtn) {
             themeBtn.addEventListener('click', () => this.toggleTheme());
         }
+
+        // 11. Admin Smart PDF Dropzone
+        this.bindDropzoneEvents();
     },
 
     handleLiveSearch(query) {
@@ -758,9 +765,9 @@ const App = {
             return;
         }
 
-        // 4. Admin route: #admin
-        if (hash.toLowerCase() === '#admin') {
-            this.openAdminModal();
+        // 4. Admin route: #admin or #/admin
+        if (hash.toLowerCase() === '#admin' || hash.toLowerCase() === '#/admin') {
+            this.openAdminPage(false);
             return;
         }
 
@@ -794,6 +801,7 @@ const App = {
         document.getElementById('heroSection')?.classList.remove('hidden');
         document.getElementById('mainNavTabsContainer')?.classList.remove('hidden');
         document.getElementById('deptDetailContainer')?.classList.add('hidden');
+        document.getElementById('adminPageSection')?.classList.add('hidden');
 
         // Update nav button active classes
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
@@ -1827,6 +1835,7 @@ const App = {
         document.getElementById('deptListContainer')?.classList.add('hidden');
         document.getElementById('papersSection')?.classList.add('hidden');
         document.getElementById('filterControlsSection')?.classList.add('hidden');
+        document.getElementById('adminPageSection')?.classList.add('hidden');
 
         document.getElementById('departmentsSection')?.classList.remove('hidden');
         const detailContainer = document.getElementById('deptDetailContainer');
@@ -2395,13 +2404,31 @@ const App = {
     },
 
     // -------------------------------------------------------------
-    // ADMIN AUTH & CONTROL MODAL
+    // ADMIN AUTH & CONTROL PAGE (#/admin)
     // -------------------------------------------------------------
 
-    openAdminModal() {
-        const modal = document.getElementById('adminModal');
-        if (!modal) return;
-        modal.classList.remove('hidden');
+    openAdminPage(updateHash = true) {
+        if (updateHash && window.location.hash !== '#/admin' && window.location.hash !== '#admin') {
+            this.currentRoute = '#/admin';
+            window.location.hash = '#/admin';
+        } else {
+            this.currentRoute = '#/admin';
+        }
+
+        document.title = 'Admin Control Center - MGU FYUGP';
+
+        // Hide homepage & department sections so Admin is a dedicated full page
+        document.getElementById('heroSection')?.classList.add('hidden');
+        document.getElementById('mainNavTabsContainer')?.classList.add('hidden');
+        document.getElementById('deptListContainer')?.classList.add('hidden');
+        document.getElementById('deptDetailContainer')?.classList.add('hidden');
+        document.getElementById('departmentsSection')?.classList.add('hidden');
+        document.getElementById('papersSection')?.classList.add('hidden');
+        document.getElementById('filterControlsSection')?.classList.add('hidden');
+
+        // Show dedicated admin page section
+        const adminSection = document.getElementById('adminPageSection');
+        if (adminSection) adminSection.classList.remove('hidden');
 
         const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
         document.getElementById('adminLoginView')?.classList.toggle('hidden', isAuth);
@@ -2421,13 +2448,25 @@ const App = {
                 document.getElementById('adminUsernameInput')?.focus();
             }, 100);
         }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+
+    backFromAdmin() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            this.showDepartmentsList(true);
+        }
+    },
+
+    // Backward-compatibility aliases
+    openAdminModal() {
+        this.openAdminPage(true);
     },
 
     closeAdminModal() {
-        document.getElementById('adminModal')?.classList.add('hidden');
-        if (window.location.hash.toLowerCase() === '#admin') {
-            history.replaceState(null, '', window.location.pathname + window.location.search);
-        }
+        this.backFromAdmin();
     },
 
     handleAdminLogin(e) {
@@ -2492,7 +2531,7 @@ const App = {
         if (this.deptState.activeDept) {
             this.renderDeptSemesterPapers();
         }
-        this.closeAdminModal();
+        this.backFromAdmin();
     },
 
     switchAdminTab(tab) {
@@ -2918,18 +2957,498 @@ const App = {
             this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
     },
 
-    async handleAdminUploadSubmit(e) {
+    bindDropzoneEvents() {
+        const dropzone = document.getElementById('adminPdfDropzone');
+        if (!dropzone) return;
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropzone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                dropzone.classList.add('border-blue-500', 'bg-blue-50/50', 'dark:bg-blue-950/40');
+            }, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                dropzone.classList.remove('border-blue-500', 'bg-blue-50/50', 'dark:bg-blue-950/40');
+            }, false);
+        });
+
+        dropzone.addEventListener('drop', (e) => {
+            const dt = e.dataTransfer;
+            const files = dt?.files;
+            if (files && files.length > 0) {
+                const file = files[0];
+                if (file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf')) {
+                    this.processSmartPdfFile(file);
+                } else {
+                    alert('Please drop a valid PDF document.');
+                }
+            }
+        }, false);
+    },
+
+    handlePaperCategoryChange(category) {
+        this.currentPaperCategory = category;
+        const catLabelQP = document.getElementById('catLabelQP');
+        const catLabelModel = document.getElementById('catLabelModel');
+        const examDetails = document.getElementById('adminExamDetailsSection');
+        const schemeSection = document.getElementById('adminSchemeSection');
+
+        if (category === 'MODEL') {
+            if (catLabelModel) {
+                catLabelModel.className = 'flex items-start gap-3 p-3.5 rounded-xl border-2 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/30 cursor-pointer transition';
+            }
+            if (catLabelQP) {
+                catLabelQP.className = 'flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 bg-white dark:bg-slate-800 cursor-pointer transition';
+            }
+            if (examDetails) examDetails.classList.add('hidden');
+            if (schemeSection) schemeSection.classList.add('hidden');
+        } else {
+            if (catLabelQP) {
+                catLabelQP.className = 'flex items-start gap-3 p-3.5 rounded-xl border-2 border-blue-600 bg-blue-50/40 dark:bg-blue-950/30 cursor-pointer transition';
+            }
+            if (catLabelModel) {
+                catLabelModel.className = 'flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-400 bg-white dark:bg-slate-800 cursor-pointer transition';
+            }
+            if (examDetails) examDetails.classList.remove('hidden');
+            if (schemeSection) schemeSection.classList.remove('hidden');
+        }
+
+        this.handleCourseCodeManualChange();
+    },
+
+    async extractPdfText(file) {
+        if (typeof pdfjsLib === 'undefined') {
+            console.warn('PDF.js library is not loaded');
+            return '';
+        }
+        try {
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+            const arrayBuffer = await file.arrayBuffer();
+            const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+            const pdf = await loadingTask.promise;
+            let fullText = '';
+            const pagesToScan = Math.min(pdf.numPages, 3);
+            for (let i = 1; i <= pagesToScan; i++) {
+                const page = await pdf.getPage(i);
+                const tokenized = await page.getTextContent();
+                const pageText = tokenized.items.map(item => item.str).join(' ');
+                fullText += ' ' + pageText;
+            }
+            return fullText;
+        } catch (err) {
+            console.error('Failed to extract text from PDF via PDF.js:', err);
+            return '';
+        }
+    },
+
+    detectCourseInfo(rawText, filename = '') {
+        const combined = `${filename} ${rawText}`.toUpperCase();
+        
+        // 1. Detect if it's a Model Question Paper
+        const isModelPaper = /MODEL\s*QUESTION|MODEL\s*QP|SAMPLE\s*QUESTION|MODEL\s*EXAMINATION/i.test(combined) ||
+                             /model/i.test(filename);
+
+        // 2. Build list of all known course codes from portal catalog
+        const knownCoursesMap = new Map();
+        (this.papers || []).forEach(p => {
+            const cc = (p.course_code || '').trim().toUpperCase();
+            if (cc && !knownCoursesMap.has(cc)) {
+                knownCoursesMap.set(cc, p);
+            }
+        });
+
+        // 3. Exact matching against known course codes (sort longest first)
+        const sortedKnownCodes = Array.from(knownCoursesMap.keys()).sort((a, b) => b.length - a.length);
+        let matchedPaper = null;
+        let matchedCourseCode = '';
+
+        // Check clean filename first
+        const cleanFilename = filename.toUpperCase().replace(/\.PDF$/i, '');
+        for (const code of sortedKnownCodes) {
+            if (cleanFilename.includes(code)) {
+                matchedPaper = knownCoursesMap.get(code);
+                matchedCourseCode = code;
+                break;
+            }
+        }
+
+        // Then check extracted PDF text
+        if (!matchedCourseCode && rawText) {
+            for (const code of sortedKnownCodes) {
+                const escaped = code.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                const regex = new RegExp(`(?:^|[^A-Z0-9])${escaped}(?:[^A-Z0-9]|$)`, 'i');
+                if (regex.test(rawText)) {
+                    matchedPaper = knownCoursesMap.get(code);
+                    matchedCourseCode = code;
+                    break;
+                }
+            }
+        }
+
+        // 4. Heuristic pattern extraction if exact code not matched
+        if (!matchedCourseCode) {
+            const patterns = [
+                /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*([A-Z0-9_\-]{5,18})/i,
+                /\b(MG[1-8][A-Z]{2,5}[0-9]{1,4})\b/i,
+                /\b([A-Z]{2,4}[1-8][A-Z]{2,4}[0-9]{1,4})\b/i
+            ];
+
+            for (const pat of patterns) {
+                const m = rawText.match(pat) || filename.match(pat);
+                if (m && m[1]) {
+                    const cand = m[1].trim().toUpperCase();
+                    if (!cand.startsWith('SEMESTER') && cand.length >= 6) {
+                        matchedCourseCode = cand;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // 5. Semester detection
+        let detectedSem = null;
+        if (matchedPaper && matchedPaper.semester) {
+            detectedSem = matchedPaper.semester;
+        } else {
+            const semInCodeMatch = matchedCourseCode.match(/(?:MG|([A-Z]{2,4}))([1-8])/i);
+            if (semInCodeMatch && semInCodeMatch[2]) {
+                detectedSem = parseInt(semInCodeMatch[2], 10);
+            } else {
+                const semWords = {
+                    'FIRST': 1, 'SECOND': 2, 'THIRD': 3, 'FOURTH': 4,
+                    'FIFTH': 5, 'SIXTH': 6, 'SEVENTH': 7, 'EIGHTH': 8,
+                    'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8
+                };
+                const semMatch = rawText.match(/(?:SEMESTER|SEM\.?)\s*[:\-–]?\s*([1-8]|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|I{1,3}|IV|VI{0,3}|VIII)\b/i);
+                if (semMatch && semMatch[1]) {
+                    const val = semMatch[1].toUpperCase();
+                    if (/^[1-8]$/.test(val)) {
+                        detectedSem = parseInt(val, 10);
+                    } else if (semWords[val]) {
+                        detectedSem = semWords[val];
+                    }
+                }
+            }
+        }
+        if (!detectedSem) detectedSem = 1;
+
+        // 6. QP Code detection (standard 8-digit number, e.g. 24900123)
+        let detectedQpCode = '';
+        const qpMatch = rawText.match(/(?:QP\s*CODE|Q\.P\.\s*CODE)\s*[:\-–]?\s*([0-9]{6,10})/i) ||
+                        rawText.match(/\b(24[0-9]{6})\b/) ||
+                        filename.match(/\b(24[0-9]{6})\b/);
+        if (qpMatch && qpMatch[1]) {
+            detectedQpCode = qpMatch[1].trim();
+        } else if (matchedPaper && matchedPaper.qp_code) {
+            detectedQpCode = matchedPaper.qp_code;
+        }
+
+        // 7. Course Type detection
+        let detectedCourseType = 'DSC';
+        if (matchedPaper && matchedPaper.course_type) {
+            detectedCourseType = matchedPaper.course_type;
+        } else {
+            const types = ['DSC', 'DSE', 'SEC', 'VAC', 'MDC', 'AEC', 'CCR', 'MDE', 'MIN'];
+            for (const t of types) {
+                if (matchedCourseCode.includes(t) || new RegExp(`\\b${t}\\b`, 'i').test(rawText)) {
+                    detectedCourseType = t;
+                    break;
+                }
+            }
+        }
+
+        // 8. Department & Title detection
+        let detectedTitle = matchedPaper ? matchedPaper.title : '';
+        let detectedDeptCode = matchedPaper ? (matchedPaper.parent_dept || matchedPaper.dept_code) : '';
+        let isMinor = matchedPaper ? Boolean(matchedPaper.is_minor) : false;
+        let minorName = matchedPaper ? (matchedPaper.minor_name || '') : '';
+        let minorCode = matchedPaper ? (matchedPaper.dept_code || '') : '';
+
+        if (!detectedDeptCode && matchedCourseCode) {
+            for (const dept of this.departments) {
+                if (matchedCourseCode.includes(dept.code)) {
+                    detectedDeptCode = dept.code;
+                    break;
+                }
+            }
+        }
+
+        // Exam Session Name
+        let examName = 'MGU-UGP (Honours) 2024 Admission Regular Examination';
+        if (rawText.includes('SUPPLEMENTARY')) {
+            examName = 'MGU-UGP (Honours) 2024 Admission Supplementary Examination';
+        }
+
+        return {
+            courseCode: matchedCourseCode,
+            title: detectedTitle,
+            deptCode: detectedDeptCode || 'MAT',
+            semester: detectedSem,
+            courseType: detectedCourseType,
+            isMinor: isMinor,
+            minorName: minorName,
+            minorCode: minorCode,
+            qpCode: detectedQpCode,
+            examName: examName,
+            isModelPaper: isModelPaper,
+            confidence: matchedPaper ? 'high' : (matchedCourseCode ? 'medium' : 'low'),
+            matchedPaper: matchedPaper
+        };
+    },
+
+    checkPaperDuplicate(courseCode, qpCode, isModelPaper) {
+        if (!courseCode || !courseCode.trim()) {
+            return { isDuplicate: false, message: 'Please enter or scan a valid course code.' };
+        }
+
+        const cc = courseCode.trim().toUpperCase();
+        const existing = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === cc);
+
+        if (isModelPaper) {
+            if (existing && existing.model_papers && existing.model_papers.length > 0) {
+                return {
+                    isDuplicate: true,
+                    type: 'model_exists',
+                    paper: existing,
+                    message: `A model question paper already exists for course ${cc} ("${existing.title}"). Adding this will append to its model paper collection.`
+                };
+            }
+            return { isDuplicate: false, paper: existing, message: 'No existing model paper found for this course code.' };
+        }
+
+        // For regular University Exam QP:
+        // Check 1: QP Code duplicate across ANY paper
+        if (qpCode && qpCode.trim()) {
+            const qpClean = qpCode.trim();
+            const qpDuplicate = (this.papers || []).find(p => p.qp_code === qpClean && (p.course_code || '').trim().toUpperCase() !== cc);
+            if (qpDuplicate) {
+                return {
+                    isDuplicate: true,
+                    type: 'qp_conflict',
+                    paper: qpDuplicate,
+                    message: `QP Code "${qpClean}" is already registered to course ${qpDuplicate.course_code} ("${qpDuplicate.title}").`
+                };
+            }
+        }
+
+        // Check 2: Does this course code already have an active question paper?
+        if (existing && existing.has_qp) {
+            return {
+                isDuplicate: true,
+                type: 'qp_exists',
+                paper: existing,
+                message: `Question Paper for course ${cc} ("${existing.title}") already exists in website (QP Code: ${existing.qp_code || 'N/A'}).`
+            };
+        }
+
+        return {
+            isDuplicate: false,
+            paper: existing,
+            message: 'No duplicate found. Course code is clear for new ingestion.'
+        };
+    },
+
+    handleSmartPdfFileSelected(e) {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        this.processSmartPdfFile(file);
+    },
+
+    async processSmartPdfFile(file) {
+        this.selectedSmartPdfFile = file;
+
+        // Display selected file badge
+        const badge = document.getElementById('adminSelectedFileNameBadge');
+        const nameEl = document.getElementById('adminSelectedFileName');
+        const sizeEl = document.getElementById('adminSelectedFileSize');
+        if (nameEl) nameEl.textContent = file.name;
+        if (sizeEl) sizeEl.textContent = `(${(file.size / (1024 * 1024)).toFixed(2)} MB)`;
+        if (badge) badge.classList.remove('hidden');
+
+        // Show scanner spinner
+        const spinner = document.getElementById('adminScanSpinner');
+        if (spinner) spinner.classList.remove('hidden');
+
+        // Extract PDF text
+        let extractedText = '';
+        try {
+            extractedText = await this.extractPdfText(file);
+        } catch (err) {
+            console.warn('Text extraction encountered an issue:', err);
+        }
+
+        // Run auto-detection
+        const detected = this.detectCourseInfo(extractedText, file.name);
+
+        // Auto-switch category radio if model paper detected
+        if (detected.isModelPaper && this.currentPaperCategory !== 'MODEL') {
+            this.handlePaperCategoryChange('MODEL');
+            const radioModel = document.querySelector('input[name="adminPaperCategory"][value="MODEL"]');
+            if (radioModel) radioModel.checked = true;
+        }
+
+        // Pre-fill form fields
+        const codeInput = document.getElementById('adminUploadCourseCode');
+        const titleInput = document.getElementById('adminUploadTitle');
+        const deptSelect = document.getElementById('adminUploadDept');
+        const semSelect = document.getElementById('adminUploadSemester');
+        const ctypeSelect = document.getElementById('adminUploadCourseType');
+        const isMinorCheck = document.getElementById('adminUploadIsMinor');
+        const minorNameInput = document.getElementById('adminUploadMinorName');
+        const minorCodeInput = document.getElementById('adminUploadMinorCode');
+        const qpCodeInput = document.getElementById('adminUploadQpCode');
+        const examNameInput = document.getElementById('adminUploadExamName');
+
+        if (codeInput && detected.courseCode) codeInput.value = detected.courseCode;
+        if (titleInput && detected.title) titleInput.value = detected.title;
+        if (deptSelect && detected.deptCode) deptSelect.value = detected.deptCode;
+        if (semSelect && detected.semester) semSelect.value = String(detected.semester);
+        if (ctypeSelect && detected.courseType) ctypeSelect.value = detected.courseType;
+        if (qpCodeInput && detected.qpCode) qpCodeInput.value = detected.qpCode;
+        if (examNameInput && detected.examName) examNameInput.value = detected.examName;
+
+        if (isMinorCheck) {
+            isMinorCheck.checked = Boolean(detected.isMinor);
+            this.toggleAdminMinorFields();
+            if (minorNameInput && detected.minorName) minorNameInput.value = detected.minorName;
+            if (minorCodeInput && detected.minorCode) minorCodeInput.value = detected.minorCode;
+        }
+
+        // Check for duplicates
+        const isModel = this.currentPaperCategory === 'MODEL';
+        const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+
+        if (spinner) spinner.classList.add('hidden');
+
+        // Render live verification status card
+        this.renderScanResultUI(detected, dupResult);
+    },
+
+    renderScanResultUI(info, dupResult) {
+        const container = document.getElementById('adminScanResultContainer');
+        if (!container) return;
+
+        container.classList.remove('hidden');
+
+        const isDup = dupResult && dupResult.isDuplicate;
+        const confidenceBadge = info.confidence === 'high'
+            ? '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300 flex items-center gap-1"><i class="bi bi-check-circle-fill"></i> Matched with Portal Catalog</span>'
+            : (info.confidence === 'medium'
+                ? '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300 flex items-center gap-1"><i class="bi bi-magic"></i> Pattern Detected</span>'
+                : '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-300 flex items-center gap-1"><i class="bi bi-pencil"></i> Manual Review Needed</span>');
+
+        const categoryBadge = this.currentPaperCategory === 'MODEL'
+            ? '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800 dark:bg-indigo-900/60 dark:text-indigo-300">Model Question Paper</span>'
+            : '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300">University Exam QP</span>';
+
+        container.innerHTML = `
+            <div class="p-4 rounded-2xl border ${isDup ? 'border-amber-300 dark:border-amber-700/80 bg-amber-50/60 dark:bg-amber-950/30' : 'border-emerald-300 dark:border-emerald-700/80 bg-emerald-50/60 dark:bg-emerald-950/30'} space-y-3">
+                <div class="flex items-center justify-between gap-2 flex-wrap">
+                    <div class="flex items-center gap-2">
+                        ${confidenceBadge}
+                        ${categoryBadge}
+                    </div>
+                    <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300">
+                        Course Code: <strong class="text-slate-900 dark:text-white font-bold">${info.courseCode || 'None detected'}</strong>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 border-t ${isDup ? 'border-amber-200 dark:border-amber-800/60' : 'border-emerald-200 dark:border-emerald-800/60'}">
+                    <div>
+                        <div class="text-xs font-bold ${isDup ? 'text-amber-950 dark:text-amber-200' : 'text-emerald-950 dark:text-emerald-200'} flex items-center gap-1.5">
+                            <i class="bi ${isDup ? 'bi-exclamation-triangle-fill text-amber-600' : 'bi-check-circle-fill text-emerald-600'}"></i>
+                            <span>${isDup ? 'Duplicate Alert' : 'No Duplicate Detected — Ready to Ingest'}</span>
+                        </div>
+                        <p class="text-[11px] ${isDup ? 'text-amber-800 dark:text-amber-300' : 'text-emerald-800 dark:text-emerald-300'} mt-0.5 font-medium">
+                            ${dupResult ? dupResult.message : ''}
+                        </p>
+                    </div>
+
+                    ${isDup && dupResult.paper ? `
+                    <div class="shrink-0 flex items-center gap-2">
+                        <button type="button" onclick="App.previewPaper(this, App.findPaperById('${dupResult.paper.id}'), 'QP')" class="px-3 py-1.5 rounded-xl bg-amber-200 hover:bg-amber-300 dark:bg-amber-800 dark:hover:bg-amber-700 text-amber-950 dark:text-amber-100 font-semibold text-xs transition flex items-center gap-1 shadow-2xs">
+                            <i class="bi bi-eye"></i> View Existing Paper
+                        </button>
+                    </div>` : ''}
+                </div>
+            </div>
+        `;
+
+        // Update submit button text and styling
+        const btnText = document.getElementById('adminUploadSubmitBtnText');
+        const warnHint = document.getElementById('adminDuplicateWarningHint');
+        const submitBtn = document.getElementById('adminUploadSubmitBtn');
+
+        if (warnHint) warnHint.classList.toggle('hidden', !isDup);
+
+        if (isDup) {
+            if (btnText) btnText.textContent = 'Update / Overwrite in Website';
+            if (submitBtn) {
+                submitBtn.className = 'px-6 py-2.5 bg-amber-600 hover:bg-amber-500 text-white rounded-xl font-bold shadow-xs flex items-center gap-1.5 text-xs transition';
+            }
+        } else {
+            if (btnText) btnText.textContent = 'Add into Website';
+            if (submitBtn) {
+                submitBtn.className = 'px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-xs flex items-center gap-1.5 text-xs transition';
+            }
+        }
+    },
+
+    handleCourseCodeManualChange() {
+        const codeInput = document.getElementById('adminUploadCourseCode');
+        const qpCodeInput = document.getElementById('adminUploadQpCode');
+        const courseCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
+        const qpCode = qpCodeInput ? qpCodeInput.value.trim() : '';
+
+        // If code matches a known paper in catalog, auto-fill title, department, sem
+        if (courseCode) {
+            const match = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === courseCode);
+            if (match) {
+                const titleInput = document.getElementById('adminUploadTitle');
+                const deptSelect = document.getElementById('adminUploadDept');
+                const semSelect = document.getElementById('adminUploadSemester');
+                const ctypeSelect = document.getElementById('adminUploadCourseType');
+                if (titleInput && !titleInput.value) titleInput.value = match.title;
+                if (deptSelect && (!deptSelect.value || deptSelect.value === '')) deptSelect.value = match.parent_dept || match.dept_code;
+                if (semSelect && match.semester) semSelect.value = String(match.semester);
+                if (ctypeSelect && match.course_type) ctypeSelect.value = match.course_type;
+            }
+        }
+
+        const isModel = this.currentPaperCategory === 'MODEL';
+        const dupResult = this.checkPaperDuplicate(courseCode, qpCode, isModel);
+
+        const info = {
+            courseCode: courseCode,
+            confidence: (this.papers || []).some(p => (p.course_code || '').trim().toUpperCase() === courseCode) ? 'high' : 'medium',
+            semester: document.getElementById('adminUploadSemester')?.value || 1
+        };
+
+        this.renderScanResultUI(info, dupResult);
+    },
+
+    findPaperById(id) {
+        return (this.papers || []).find(p => p.id === id) || null;
+    },
+
+    async handleAdminSmartUploadSubmit(e) {
         if (e) e.preventDefault();
 
         const statusEl = document.getElementById('adminUploadStatus');
         if (statusEl) {
-            statusEl.className = 'p-3 rounded-lg text-xs bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900 flex items-center gap-2';
-            statusEl.innerHTML = '<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-blue-600 border-t-transparent"></div> Processing and uploading question paper...';
+            statusEl.className = 'p-3 rounded-xl text-xs bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900 flex items-center gap-2';
+            statusEl.innerHTML = '<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-blue-600 border-t-transparent"></div> Publishing paper into website...';
             statusEl.classList.remove('hidden');
         }
-        this.setButtonLoading('adminUploadSubmitBtn', true, 'Uploading & Publishing...');
+        this.setButtonLoading('adminUploadSubmitBtn', true, 'Publishing to Website...');
 
         try {
+            const isModel = this.currentPaperCategory === 'MODEL';
             const courseCode = document.getElementById('adminUploadCourseCode').value.trim().toUpperCase();
             const title = document.getElementById('adminUploadTitle').value.trim();
             const deptCode = document.getElementById('adminUploadDept').value.trim().toUpperCase();
@@ -2938,12 +3457,16 @@ const App = {
             const isMinor = document.getElementById('adminUploadIsMinor').checked;
             const minorName = document.getElementById('adminUploadMinorName')?.value.trim() || '';
             const minorCode = document.getElementById('adminUploadMinorCode')?.value.trim().toUpperCase() || '';
-            const qpCode = document.getElementById('adminUploadQpCode').value.trim();
-            const examName = document.getElementById('adminUploadExamName').value.trim();
-            const qpFile = document.getElementById('adminUploadQpFile')?.files[0];
-            const qpUrl = document.getElementById('adminUploadQpUrl')?.value.trim();
+            const qpCode = document.getElementById('adminUploadQpCode')?.value.trim() || '';
+            const examName = document.getElementById('adminUploadExamName')?.value.trim() || 'MGU-UGP (Honours) 2024 Admission Regular Examination';
+            
+            const pdfFile = this.selectedSmartPdfFile || document.getElementById('adminSmartPdfFile')?.files[0];
             const schemeFile = document.getElementById('adminUploadSchemeFile')?.files[0];
-            const schemeUrl = document.getElementById('adminUploadSchemeUrl')?.value.trim();
+            const schemeUrl = document.getElementById('adminUploadSchemeUrl')?.value.trim() || '';
+
+            if (!pdfFile && !isModel) {
+                throw new Error('Please select or drop a Question Paper PDF before publishing.');
+            }
 
             const deptObj = this.departments.find(d => d.code === deptCode);
             const deptName = deptObj ? deptObj.name : deptCode;
@@ -2956,12 +3479,13 @@ const App = {
             });
 
             let qpFileB64 = '';
-            if (qpFile) qpFileB64 = await toB64(qpFile);
+            if (pdfFile) qpFileB64 = await toB64(pdfFile);
 
             let schemeFileB64 = '';
             if (schemeFile) schemeFileB64 = await toB64(schemeFile);
 
             const payload = {
+                is_model_paper: isModel,
                 course_code: courseCode,
                 title: title,
                 dept_code: isMinor && minorCode ? minorCode : deptCode,
@@ -2974,10 +3498,9 @@ const App = {
                 minor_name: minorName,
                 qp_code: qpCode,
                 exam_name: examName,
-                qp_url: qpUrl,
-                scheme_url: schemeUrl,
                 qp_file_b64: qpFileB64,
-                scheme_file_b64: schemeFileB64
+                scheme_file_b64: schemeFileB64,
+                scheme_url: schemeUrl
             };
 
             const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
@@ -2991,41 +3514,89 @@ const App = {
                 });
                 data = await res.json();
             } else {
+                // Client-side simulation when on static host
                 const ts = Date.now();
-                const files = [];
-                if (qpUrl || qpFileB64) files.push({ type: "QP", label: "QUESTION PAPER", url: qpUrl || "#" });
-                if (schemeUrl || schemeFileB64) files.push({ type: "SCHEME", label: "SCHEME", url: schemeUrl || "#" });
+                if (isModel) {
+                    const modelObj = {
+                        url: qpFileB64 || "#",
+                        filename: pdfFile ? pdfFile.name : `Model_${courseCode}.pdf`,
+                        title: title || `Model QP - ${courseCode}`
+                    };
+                    let existing = this.papers.find(p => (p.course_code || '').toUpperCase() === courseCode);
+                    if (existing) {
+                        if (!existing.model_papers) existing.model_papers = [];
+                        existing.model_papers.push(modelObj);
+                    } else {
+                        existing = {
+                            id: `custom_model_${courseCode}_${ts}`,
+                            course_code: courseCode,
+                            title: title,
+                            raw_header: `${courseCode} ${title}`,
+                            semester: semester,
+                            semester_label: `Semester ${semester}`,
+                            course_type: courseType,
+                            dept_code: isMinor && minorCode ? minorCode : deptCode,
+                            dept_name: isMinor && minorName ? minorName : deptName,
+                            parent_dept: deptCode,
+                            parent_dept_name: deptName,
+                            is_minor: isMinor,
+                            minor_name: minorName,
+                            batch: "2024 Admission",
+                            is_fyugp: true,
+                            has_qp: false,
+                            has_scheme: false,
+                            files: [],
+                            has_files: false,
+                            model_papers: [modelObj]
+                        };
+                        this.papers.unshift(existing);
+                    }
+                    data = { success: true, paper: existing };
+                } else {
+                    const files = [];
+                    if (qpFileB64) files.push({ type: "QP", label: "QUESTION PAPER", url: qpFileB64 });
+                    if (schemeFileB64 || schemeUrl) files.push({ type: "SCHEME", label: "SCHEME", url: schemeFileB64 || schemeUrl });
 
-                const customPaper = {
-                    id: `custom_${courseCode}_${ts}`,
-                    qp_code: qpCode,
-                    course_code: courseCode,
-                    title: title,
-                    raw_header: `${qpCode} - ${courseCode} ${title}`.trim(),
-                    semester: semester,
-                    semester_label: `Semester ${semester}`,
-                    course_type: courseType,
-                    dept_code: isMinor && minorCode ? minorCode : deptCode,
-                    dept_name: isMinor && minorName ? minorName : deptName,
-                    parent_dept: deptCode,
-                    parent_dept_name: deptName,
-                    is_minor: isMinor,
-                    minor_name: minorName,
-                    exam_name: examName,
-                    batch: "2024 Admission",
-                    is_fyugp: true,
-                    has_qp: Boolean(qpUrl || qpFileB64),
-                    qp_url: qpUrl || "#",
-                    has_scheme: Boolean(schemeUrl || schemeFileB64),
-                    scheme_url: schemeUrl || "#",
-                    files: files,
-                    has_files: files.length > 0
-                };
-                data = { success: true, paper: customPaper };
+                    const customPaper = {
+                        id: `custom_${courseCode}_${ts}`,
+                        qp_code: qpCode,
+                        course_code: courseCode,
+                        title: title,
+                        raw_header: `${qpCode} - ${courseCode} ${title}`.trim(),
+                        semester: semester,
+                        semester_label: `Semester ${semester}`,
+                        course_type: courseType,
+                        dept_code: isMinor && minorCode ? minorCode : deptCode,
+                        dept_name: isMinor && minorName ? minorName : deptName,
+                        parent_dept: deptCode,
+                        parent_dept_name: deptName,
+                        is_minor: isMinor,
+                        minor_name: minorName,
+                        exam_name: examName,
+                        batch: "2024 Admission",
+                        is_fyugp: true,
+                        has_qp: Boolean(qpFileB64),
+                        qp_url: qpFileB64 || "#",
+                        has_scheme: Boolean(schemeFileB64 || schemeUrl),
+                        scheme_url: schemeFileB64 || schemeUrl || "#",
+                        files: files,
+                        has_files: files.length > 0
+                    };
+                    this.papers.unshift(customPaper);
+                    data = { success: true, paper: customPaper };
+                }
             }
 
-            if (data.success && data.paper) {
-                this.papers.unshift(data.paper);
+            if (data.success) {
+                if (data.paper) {
+                    const idx = this.papers.findIndex(p => p.id === data.paper.id || (p.course_code && p.course_code.toUpperCase() === data.paper.course_code.toUpperCase()));
+                    if (idx !== -1) {
+                        this.papers[idx] = data.paper;
+                    } else {
+                        this.papers.unshift(data.paper);
+                    }
+                }
+
                 this.applyFilters();
                 this.renderDepartmentsList();
                 if (this.deptState.activeDept) {
@@ -3035,28 +3606,60 @@ const App = {
                 this.updateStatsUI();
 
                 if (statusEl) {
-                    statusEl.className = 'p-3 rounded-lg text-xs bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-2';
-                    statusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> Paper "${courseCode} - ${title}" published successfully!`;
+                    statusEl.className = 'p-3 rounded-xl text-xs bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-2';
+                    statusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> Paper "${courseCode} - ${title}" added successfully into the website!`;
                 }
 
-                document.getElementById('adminUploadCourseCode').value = '';
-                document.getElementById('adminUploadTitle').value = '';
-                document.getElementById('adminUploadQpCode').value = '';
-                if (document.getElementById('adminUploadQpFile')) document.getElementById('adminUploadQpFile').value = '';
-                if (document.getElementById('adminUploadQpUrl')) document.getElementById('adminUploadQpUrl').value = '';
-                if (document.getElementById('adminUploadSchemeFile')) document.getElementById('adminUploadSchemeFile').value = '';
-                if (document.getElementById('adminUploadSchemeUrl')) document.getElementById('adminUploadSchemeUrl').value = '';
+                // Reset form & dropzone for next paper
+                this.resetSmartUploadForm();
             } else {
                 throw new Error(data.error || 'Server rejected paper upload');
             }
         } catch (err) {
             if (statusEl) {
-                statusEl.className = 'p-3 rounded-lg text-xs bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800';
+                statusEl.className = 'p-3 rounded-xl text-xs bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800';
                 statusEl.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-rose-600"></i> Error: ${err.message}`;
             }
         } finally {
             this.setButtonLoading('adminUploadSubmitBtn', false);
         }
+    },
+
+    // Legacy alias
+    handleAdminUploadSubmit(e) {
+        return this.handleAdminSmartUploadSubmit(e);
+    },
+
+    resetSmartUploadForm() {
+        this.selectedSmartPdfFile = null;
+        const fileInput = document.getElementById('adminSmartPdfFile');
+        if (fileInput) fileInput.value = '';
+        const badge = document.getElementById('adminSelectedFileNameBadge');
+        if (badge) badge.classList.add('hidden');
+        const scanRes = document.getElementById('adminScanResultContainer');
+        if (scanRes) {
+            scanRes.innerHTML = '';
+            scanRes.classList.add('hidden');
+        }
+        const warnHint = document.getElementById('adminDuplicateWarningHint');
+        if (warnHint) warnHint.classList.add('hidden');
+        const submitBtnText = document.getElementById('adminUploadSubmitBtnText');
+        if (submitBtnText) submitBtnText.textContent = 'Add into Website';
+        const submitBtn = document.getElementById('adminUploadSubmitBtn');
+        if (submitBtn) {
+            submitBtn.className = 'px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-xs flex items-center gap-1.5 text-xs transition';
+        }
+
+        const codeInput = document.getElementById('adminUploadCourseCode');
+        if (codeInput) codeInput.value = '';
+        const titleInput = document.getElementById('adminUploadTitle');
+        if (titleInput) titleInput.value = '';
+        const qpCodeEl = document.getElementById('adminUploadQpCode');
+        if (qpCodeEl) qpCodeEl.value = '';
+        const schemeFileEl = document.getElementById('adminUploadSchemeFile');
+        if (schemeFileEl) schemeFileEl.value = '';
+        const schemeUrlEl = document.getElementById('adminUploadSchemeUrl');
+        if (schemeUrlEl) schemeUrlEl.value = '';
     },
 
     renderAdminDeleteList() {

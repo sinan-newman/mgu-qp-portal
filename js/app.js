@@ -279,31 +279,58 @@ const App = {
     },
 
     initTheme() {
-        const savedTheme = localStorage.getItem('mgu_theme');
-        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            this.setTheme(true);
+        const isUserSet = localStorage.getItem('mgu_theme_user_set') === 'true';
+        let isDark = false;
+        
+        if (isUserSet) {
+            isDark = localStorage.getItem('mgu_theme') === 'dark';
         } else {
-            this.setTheme(false);
+            // Default to Day (Light) Mode unless mobile/system explicitly prefers dark
+            isDark = Boolean(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        }
+
+        this.applyTheme(isDark, false);
+
+        // Listen for mobile/system theme switches (e.g. phone day/night schedule)
+        if (window.matchMedia) {
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const listener = (e) => {
+                if (localStorage.getItem('mgu_theme_user_set') !== 'true') {
+                    this.applyTheme(e.matches, false);
+                }
+            };
+            if (mediaQuery.addEventListener) {
+                mediaQuery.addEventListener('change', listener);
+            } else if (mediaQuery.addListener) {
+                mediaQuery.addListener(listener);
+            }
         }
     },
 
-    setTheme(isDark) {
+    applyTheme(isDark, saveAsUserChoice = false) {
         this.state.isDarkMode = isDark;
         if (isDark) {
             document.documentElement.classList.add('dark');
-            localStorage.setItem('mgu_theme', 'dark');
             const icon = document.getElementById('themeIcon');
             if (icon) icon.className = 'bi bi-sun text-amber-400';
         } else {
             document.documentElement.classList.remove('dark');
-            localStorage.setItem('mgu_theme', 'light');
             const icon = document.getElementById('themeIcon');
             if (icon) icon.className = 'bi bi-moon-stars text-slate-600';
         }
+
+        if (saveAsUserChoice) {
+            localStorage.setItem('mgu_theme_user_set', 'true');
+            localStorage.setItem('mgu_theme', isDark ? 'dark' : 'light');
+        }
+    },
+
+    setTheme(isDark) {
+        this.applyTheme(isDark, true);
     },
 
     toggleTheme() {
-        this.setTheme(!this.state.isDarkMode);
+        this.applyTheme(!this.state.isDarkMode, true);
     },
 
     async loadAllData() {

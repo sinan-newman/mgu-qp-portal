@@ -42,6 +42,26 @@
         }
     </script>
 
+    <!-- Immediate Theme Initialization (Default Day Mode unless mobile/system prefers dark) -->
+    <script>
+        (function() {
+            try {
+                var isUserSet = localStorage.getItem('mgu_theme_user_set') === 'true';
+                var isDark = false;
+                if (isUserSet) {
+                    isDark = localStorage.getItem('mgu_theme') === 'dark';
+                } else {
+                    isDark = Boolean(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                }
+                if (isDark) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 

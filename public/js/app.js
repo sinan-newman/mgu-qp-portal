@@ -860,14 +860,15 @@ const App = {
             'may': 'May', 'jun': 'June', 'jul': 'July', 'aug': 'August',
             'sep': 'September', 'oct': 'October', 'nov': 'November', 'dec': 'December'
         };
+        const setSuffix = name.includes('(Set A)') ? ' (Set A)' : (name.includes('(Set B)') ? ' (Set B)' : '');
         const m = name.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*[,\s\-]+(20\d\d)/i);
         if (m) {
             const rawM = m[1].toLowerCase().slice(0, 3);
             const fullM = monthMap[rawM] || m[1];
-            return `${fullM} ${m[2]}`;
+            return `${fullM} ${m[2]}${setSuffix}`;
         }
         const y = name.match(/20\d\d/);
-        return y ? y[0] : name;
+        return y ? `${y[0]}${setSuffix}` : name;
     },
 
     groupPapersByCourse(paperList) {

@@ -80,7 +80,12 @@ const App = {
         'geo': ['geo', 'geology', 'earth'],
         'geology': ['geo', 'geology'],
         'music': ['mus', 'music'],
-        'bsw': ['bsw', 'social work']
+        'bsw': ['bsw', 'social work'],
+        'bhn': ['bhn', 'bharatanatyam', 'bharathanatyam', 'pfa', 'performing arts'],
+        'bharatanatyam': ['bhn', 'bharatanatyam', 'bharathanatyam', 'pfa', 'performing arts'],
+        'bharathanatyam': ['bhn', 'bharatanatyam', 'bharathanatyam', 'pfa', 'performing arts'],
+        'pfa': ['pfa', 'performing arts', 'bhn', 'kcn', 'kmd', 'ksn', 'kvs', 'mhn'],
+        'performing': ['pfa', 'performing arts', 'bhn']
     },
 
     // Main Filters State
@@ -330,7 +335,7 @@ const App = {
 
     getActiveDepartments() {
         return this.departments.filter(d => {
-            const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+            const deptCodes = new Set([d.code, ...(d.majors || []).map(m => m.code), ...(d.minors || []).map(m => m.code)]);
             return this.papers.some(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
         });
     },
@@ -1554,7 +1559,7 @@ const App = {
                     (d.minors && d.minors.some(m => m.name.toLowerCase().includes(dq) || m.code.toLowerCase().includes(dq)))) {
                     return true;
                 }
-                const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+                const deptCodes = new Set([d.code, ...(d.majors || []).map(m => m.code), ...(d.minors || []).map(m => m.code)]);
                 return this.papers.some(p => 
                     (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) &&
                     this.matchPaper(p, tokens, dq)
@@ -1582,8 +1587,9 @@ const App = {
 
         // Render Cards
         container.innerHTML = deptsToRender.map(d => {
-            const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+            const deptCodes = new Set([d.code, ...(d.majors || []).map(m => m.code), ...(d.minors || []).map(m => m.code)]);
             const deptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
+            const majors = d.majors || [];
             const minors = d.minors || [];
 
             // Detect active semesters for this department
@@ -1619,6 +1625,20 @@ const App = {
                                         Sem ${s}
                                     </span>
                                 `).join('')}
+                            </div>
+                        ` : ''}
+
+                        <!-- Major Disciplines (For departments with multiple majors like PFA, MUS, SSP) -->
+                        ${majors.length > 1 ? `
+                            <div class="mb-3 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">${majors.length} Major Disciplines:</div>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${majors.map(m => `
+                                        <span class="text-xs font-semibold px-2 py-0.5 rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-100 dark:border-blue-900/40 shadow-2xs" title="${m.name} (${m.code})">
+                                            ${m.name} (${m.code})
+                                        </span>
+                                    `).join('')}
+                                </div>
                             </div>
                         ` : ''}
 
@@ -1666,9 +1686,10 @@ const App = {
             breadcrumbsEl.innerHTML = `Departments <i class="bi bi-chevron-right text-[10px] mx-1"></i> <span class="text-slate-800 dark:text-slate-100 font-bold">${dept.name} (${dept.code})</span>`;
         }
 
-        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
-        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
+        const majors = dept.majors || [];
         const minors = dept.minors || [];
+        const deptCodes = new Set([dept.code, ...majors.map(m => m.code), ...minors.map(m => m.code)]);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
 
         // Header Banner (Without curriculum description tags)
         const headerEl = document.getElementById('deptDetailHeader');
@@ -1688,6 +1709,16 @@ const App = {
                                     ${dept.code}
                                 </span>
                             </div>
+                            ${majors.length > 1 ? `
+                                <div class="flex flex-wrap items-center gap-1.5 mt-2">
+                                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Major Disciplines:</span>
+                                    ${majors.map(m => `
+                                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40">
+                                            ${m.name} (${m.code})
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
                             ${minors.length > 0 ? `
                                 <div class="flex flex-wrap items-center gap-1.5 mt-2">
                                     <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Minor Programmes:</span>
@@ -1739,7 +1770,7 @@ const App = {
         if (!tabsContainer || !this.deptState.activeDept) return;
 
         const dept = this.deptState.activeDept;
-        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
+        const deptCodes = new Set([dept.code, ...(dept.majors || []).map(m => m.code), ...(dept.minors || []).map(m => m.code)]);
         const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
 
         let html = '';
@@ -1799,7 +1830,7 @@ const App = {
 
         const dept = this.deptState.activeDept;
         const sem = this.deptState.selectedSemester;
-        const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
+        const deptCodes = new Set([dept.code, ...(dept.majors || []).map(m => m.code), ...(dept.minors || []).map(m => m.code)]);
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
 
         // Filter papers for this department
@@ -1856,31 +1887,118 @@ const App = {
 
         let sectionsHtml = '';
 
-        // 1. Major & Core Programmes Section (Grouped by course)
+        // 1. Major & Core Programmes Section (Grouped by course and partitioned by dept_code if multi-major)
         if (majorPapers.length > 0) {
-            const groupedMajor = this.groupPapersByCourse(majorPapers);
-            sectionsHtml += `
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
-                        <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
-                                Major & Core Programmes
-                            </h4>
-                            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
-                                ${groupedMajor.length} Courses (${majorPapers.length} Papers)
+            // Build map of major code -> major name from dept.majors
+            const majorInfoMap = new Map();
+            (dept.majors || []).forEach(m => {
+                majorInfoMap.set(m.code, m.name);
+            });
+
+            // Group major papers by dept_code (fallback to dept.code)
+            const papersByMajorCode = new Map();
+            majorPapers.forEach(p => {
+                const mCode = p.dept_code || dept.code;
+                if (!papersByMajorCode.has(mCode)) {
+                    papersByMajorCode.set(mCode, []);
+                }
+                papersByMajorCode.get(mCode).push(p);
+            });
+
+            const distinctMajorCodes = Array.from(papersByMajorCode.keys());
+            const isMultiMajor = (dept.majors && dept.majors.length > 1) || distinctMajorCodes.length > 1;
+
+            if (isMultiMajor && distinctMajorCodes.length > 1) {
+                // Multi-Major Department (e.g. Performing Arts, Music, Sanskrit (Special)): separate each dept code with dividers
+                sectionsHtml += `
+                    <div class="space-y-8">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                                    Major Programmes (${distinctMajorCodes.length} Disciplines)
+                                </h4>
+                                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
+                                    ${majorPapers.length} Papers
+                                </span>
+                            </div>
+                            <span class="text-xs text-slate-400 font-medium">
+                                ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
                             </span>
                         </div>
-                        <span class="text-xs text-slate-400 font-medium">
-                            ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
-                        </span>
-                    </div>
+                `;
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-                        ${groupedMajor.map(course => this.renderGroupedCourseCard(course)).join('')}
+                // Order major codes by order in dept.majors, then alphabetically
+                const definedCodes = (dept.majors || []).map(m => m.code);
+                distinctMajorCodes.sort((a, b) => {
+                    const idxA = definedCodes.indexOf(a);
+                    const idxB = definedCodes.indexOf(b);
+                    if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+                    if (idxA !== -1) return -1;
+                    if (idxB !== -1) return 1;
+                    return a.localeCompare(b);
+                }).forEach((mCode, index) => {
+                    const pList = papersByMajorCode.get(mCode);
+                    const grouped = this.groupPapersByCourse(pList);
+                    const mName = majorInfoMap.get(mCode) || (pList[0] && pList[0].dept_name) || mCode;
+
+                    sectionsHtml += `
+                        <div class="major-code-block space-y-4 ${index > 0 ? 'pt-6 border-t-2 border-slate-200 dark:border-slate-700' : ''}">
+                            <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 dark:bg-slate-700/40 p-3.5 rounded-2xl border border-slate-200/80 dark:border-slate-600/60 shadow-2xs">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-bold font-mono shadow-xs">
+                                        ${mCode}
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <h5 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                                                ${mName}
+                                            </h5>
+                                            <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40">
+                                                ${mCode}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-2xs">
+                                    ${grouped.length} ${grouped.length === 1 ? 'Course' : 'Courses'} (${pList.length} ${pList.length === 1 ? 'Paper' : 'Papers'})
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                                ${grouped.map(course => this.renderGroupedCourseCard(course)).join('')}
+                            </div>
+                        </div>
+                    `;
+                });
+
+                sectionsHtml += `</div>`;
+            } else {
+                // Single Major Department
+                const groupedMajor = this.groupPapersByCourse(majorPapers);
+                sectionsHtml += `
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                                    Major & Core Programmes
+                                </h4>
+                                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300">
+                                    ${groupedMajor.length} Courses (${majorPapers.length} Papers)
+                                </span>
+                            </div>
+                            <span class="text-xs text-slate-400 font-medium">
+                                ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                            ${groupedMajor.map(course => this.renderGroupedCourseCard(course)).join('')}
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
+            }
         }
 
         // 2. Minor Headings and Minor Papers Section (Grouped by course)

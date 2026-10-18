@@ -86,19 +86,6 @@
     "minors": []
   },
   {
-    "code": "BHN",
-    "name": "Bharatanatyam",
-    "icon": "bi-mortarboard",
-    "description": "Curriculum and question papers for Bharatanatyam.",
-    "majors": [
-      {
-        "code": "BHN",
-        "name": "Bharatanatyam"
-      }
-    ],
-    "minors": []
-  },
-  {
     "code": "BCH",
     "name": "Biochemistry",
     "icon": "bi-virus",
@@ -729,6 +716,10 @@
     "icon": "bi-mask",
     "description": "Curriculum and question papers for Performing Arts.",
     "majors": [
+      {
+        "code": "BHN",
+        "name": "Bharatanatyam"
+      },
       {
         "code": "KCN",
         "name": "Kathakali Chenda"

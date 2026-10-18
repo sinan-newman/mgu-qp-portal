@@ -721,6 +721,10 @@
                     <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-cloud-arrow-up"></i> Upload / Add Paper
                     </button>
+                    <button id="adminTabBtnModelQp" onclick="App.switchAdminTab('modelQp')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-file-earmark-text-fill text-indigo-500"></i> Model Question Papers
+                        <span id="adminUntaggedCountBadge" class="ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">54</span>
+                    </button>
                     <button id="adminTabBtnDelete" onclick="App.switchAdminTab('delete')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-trash3"></i> Manage & Delete Papers
                     </button>
@@ -986,6 +990,121 @@
                         <!-- Populated dynamically by App.renderAdminInbox() -->
                     </div>
                 </div>
+
+                <!-- TAB 5: MODEL QUESTION PAPERS MANAGEMENT -->
+                <div id="adminTabModelQpView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="bi bi-file-earmark-text-fill text-indigo-500"></i>
+                                Model Question Papers Management
+                            </h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">
+                                Review extracted model question papers, assign course codes to untagged sets (1–7 pages), and upload new papers.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                                <strong id="adminModelTotalCount">1151</strong> Total Papers
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view navigation -->
+                    <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-700 pb-2 overflow-x-auto scrollbar-none text-xs">
+                        <button id="adminModelSubBtnUntagged" onclick="App.switchModelSubTab('untagged')" class="px-3 py-1.5 rounded-lg font-bold bg-amber-500 text-white shadow-xs flex items-center gap-1.5 transition">
+                            <i class="bi bi-exclamation-circle-fill"></i> Untagged / Needs Review (<span id="adminModelUntaggedCount">54</span>)
+                        </button>
+                        <button id="adminModelSubBtnAll" onclick="App.switchModelSubTab('all')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                            <i class="bi bi-collection"></i> All Model Papers (<span id="adminModelAssignedCount">1097</span>)
+                        </button>
+                        <button id="adminModelSubBtnUpload" onclick="App.switchModelSubTab('upload')" class="px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                            <i class="bi bi-cloud-arrow-up"></i> Upload Single Model QP
+                        </button>
+                    </div>
+
+                    <!-- SUBVIEW 1: UNTAGGED / REVIEW LIST -->
+                    <div id="adminModelSubViewUntagged" class="space-y-3">
+                        <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
+                            <i class="bi bi-info-circle-fill text-amber-600 mt-0.5"></i>
+                            <div>
+                                <strong>Instructions for Admin:</strong> These question papers were extracted from consolidated department PDF files (length 1–7 pages) where the course code was not automatically identified. Click <strong>Preview PDF</strong> to inspect the paper, then fill the course code below and click <strong>Save & Tag</strong> to link it immediately.
+                            </div>
+                        </div>
+
+                        <div id="adminUntaggedListContainer" class="max-h-[550px] overflow-y-auto space-y-3 p-1">
+                            <!-- Populated dynamically by App.renderAdminUntaggedModelList() -->
+                        </div>
+                    </div>
+
+                    <!-- SUBVIEW 2: ALL MODEL PAPERS LIST -->
+                    <div id="adminModelSubViewAll" class="hidden space-y-3">
+                        <div class="flex items-center gap-2">
+                            <input 
+                                type="text" 
+                                id="adminModelSearchInput" 
+                                oninput="App.filterAdminModelList()" 
+                                placeholder="Search model papers by course code, title, or filename..." 
+                                class="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white"
+                            >
+                        </div>
+                        <div id="adminAllModelListContainer" class="max-h-[500px] overflow-y-auto space-y-2 p-1">
+                            <!-- Populated dynamically by App.renderAdminAllModelList() -->
+                        </div>
+                    </div>
+
+                    <!-- SUBVIEW 3: UPLOAD MODEL QP -->
+                    <div id="adminModelSubViewUpload" class="hidden space-y-3">
+                        <form onsubmit="App.handleAdminModelUploadSubmit(event)" class="space-y-3.5 text-xs bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Upload & Link Model Question Paper</h5>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Course Code <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="adminModelUpCourseCode" 
+                                        placeholder="e.g. MG1DSCCHE100" 
+                                        list="courseCodeDatalist"
+                                        class="w-full px-3 py-2 text-xs font-mono font-bold uppercase rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
+                                        required
+                                    >
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Paper Type
+                                    </label>
+                                    <select id="adminModelUpType" class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white">
+                                        <option value="THEORY">Theory Model Question Paper</option>
+                                        <option value="PRACTICAL">Practical Model Question Paper</option>
+                                    </select>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                        Model Question Paper PDF File <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input 
+                                        type="file" 
+                                        id="adminModelUpFile" 
+                                        accept="application/pdf"
+                                        class="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <button type="submit" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5 transition">
+                                <i class="bi bi-cloud-arrow-up"></i> Upload & Tag Model Paper
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Global Datalist for Course Code Autocomplete -->
+                <datalist id="courseCodeDatalist"></datalist>
 
             </div>
 

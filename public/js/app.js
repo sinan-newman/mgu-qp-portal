@@ -1911,10 +1911,12 @@ const App = {
         const deleteView = document.getElementById('adminTabDeleteView');
         const syncView = document.getElementById('adminTabSyncView');
         const inboxView = document.getElementById('adminTabInboxView');
+        const modelQpView = document.getElementById('adminTabModelQpView');
         const btnUpload = document.getElementById('adminTabBtnUpload');
         const btnDelete = document.getElementById('adminTabBtnDelete');
         const btnSync = document.getElementById('adminTabBtnSync');
         const btnInbox = document.getElementById('adminTabBtnInbox');
+        const btnModelQp = document.getElementById('adminTabBtnModelQp');
 
         const activeClass = 'px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0';
         const inactiveClass = 'px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0';
@@ -1923,17 +1925,382 @@ const App = {
         if (deleteView) deleteView.classList.toggle('hidden', tab !== 'delete');
         if (syncView) syncView.classList.toggle('hidden', tab !== 'sync');
         if (inboxView) inboxView.classList.toggle('hidden', tab !== 'inbox');
+        if (modelQpView) modelQpView.classList.toggle('hidden', tab !== 'modelQp');
 
         if (btnUpload) btnUpload.className = tab === 'upload' ? activeClass : inactiveClass;
         if (btnDelete) btnDelete.className = tab === 'delete' ? activeClass : inactiveClass;
         if (btnSync) btnSync.className = tab === 'sync' ? activeClass : inactiveClass;
         if (btnInbox) btnInbox.className = tab === 'inbox' ? activeClass : inactiveClass;
+        if (btnModelQp) btnModelQp.className = tab === 'modelQp' ? activeClass : inactiveClass;
 
         if (tab === 'delete') {
             this.renderAdminDeleteList();
         } else if (tab === 'inbox') {
             this.renderAdminInbox();
+        } else if (tab === 'modelQp') {
+            this.renderAdminModelQp();
         }
+    },
+
+    async loadUntaggedModelPapers() {
+        if (this.untaggedModels && this.untaggedModels.length > 0) return this.untaggedModels;
+        try {
+            const resp = await fetch('data/untagged_model_papers.json');
+            if (resp.ok) {
+                this.untaggedModels = await resp.json();
+            } else {
+                this.untaggedModels = [];
+            }
+        } catch (e) {
+            console.error('Failed to load untagged model papers:', e);
+            this.untaggedModels = [];
+        }
+        return this.untaggedModels;
+    },
+
+    populateCourseCodeDatalist() {
+        const datalist = document.getElementById('courseCodeDatalist');
+        if (!datalist || datalist.children.length > 0) return;
+        const seen = new Set();
+        const options = [];
+        for (const p of this.papers) {
+            const cc = (p.course_code || '').trim().toUpperCase();
+            if (cc && !seen.has(cc)) {
+                seen.add(cc);
+                options.push(`<option value="${cc}">${p.title} (${p.dept_name || p.dept_code})</option>`);
+            }
+        }
+        datalist.innerHTML = options.join('');
+    },
+
+    switchModelSubTab(subTab) {
+        const viewUntagged = document.getElementById('adminModelSubViewUntagged');
+        const viewAll = document.getElementById('adminModelSubViewAll');
+        const viewUpload = document.getElementById('adminModelSubViewUpload');
+        const btnUntagged = document.getElementById('adminModelSubBtnUntagged');
+        const btnAll = document.getElementById('adminModelSubBtnAll');
+        const btnUpload = document.getElementById('adminModelSubBtnUpload');
+
+        const activeSubClass = 'px-3 py-1.5 rounded-lg font-bold bg-indigo-600 text-white shadow-xs flex items-center gap-1.5 transition';
+        const inactiveSubClass = 'px-3 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition';
+
+        if (viewUntagged) viewUntagged.classList.toggle('hidden', subTab !== 'untagged');
+        if (viewAll) viewAll.classList.toggle('hidden', subTab !== 'all');
+        if (viewUpload) viewUpload.classList.toggle('hidden', subTab !== 'upload');
+
+        if (btnUntagged) btnUntagged.className = subTab === 'untagged' ? 'px-3 py-1.5 rounded-lg font-bold bg-amber-500 text-white shadow-xs flex items-center gap-1.5 transition' : inactiveSubClass;
+        if (btnAll) btnAll.className = subTab === 'all' ? activeSubClass : inactiveSubClass;
+        if (btnUpload) btnUpload.className = subTab === 'upload' ? activeSubClass : inactiveSubClass;
+
+        if (subTab === 'all') {
+            this.renderAdminAllModelList();
+        } else if (subTab === 'untagged') {
+            this.renderAdminUntaggedModelList();
+        }
+    },
+
+    async renderAdminModelQp() {
+        this.populateCourseCodeDatalist();
+        await this.loadUntaggedModelPapers();
+        
+        const badge = document.getElementById('adminUntaggedCountBadge');
+        const countSpan = document.getElementById('adminModelUntaggedCount');
+        const totalSpan = document.getElementById('adminModelTotalCount');
+        const assignedSpan = document.getElementById('adminModelAssignedCount');
+
+        const untaggedCount = this.untaggedModels ? this.untaggedModels.length : 0;
+        if (badge) {
+            badge.textContent = untaggedCount;
+            badge.classList.toggle('hidden', untaggedCount === 0);
+        }
+        if (countSpan) countSpan.textContent = untaggedCount;
+        if (totalSpan) totalSpan.textContent = 1151;
+        if (assignedSpan) assignedSpan.textContent = Math.max(0, 1151 - untaggedCount);
+
+        this.renderAdminUntaggedModelList();
+    },
+
+    renderAdminUntaggedModelList() {
+        const container = document.getElementById('adminUntaggedListContainer');
+        if (!container) return;
+
+        if (!this.untaggedModels || this.untaggedModels.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-8 text-slate-500 dark:text-slate-400">
+                    <i class="bi bi-check-circle-fill text-emerald-500 text-2xl block mb-2"></i>
+                    <p class="font-bold">All model question papers are tagged!</p>
+                    <p class="text-xs">No pending untagged papers require course codes.</p>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = this.untaggedModels.map(item => `
+            <div class="p-3.5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 flex flex-col gap-2.5 transition hover:shadow-xs">
+                <div class="flex items-center justify-between gap-2 flex-wrap">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-200 dark:bg-amber-900 text-amber-900 dark:text-amber-200 shrink-0">
+                            NEEDS COURSE CODE
+                        </span>
+                        <span class="text-xs font-mono font-bold text-slate-800 dark:text-slate-200 truncate" title="${item.filename}">
+                            ${item.filename}
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                            <i class="bi bi-file-earmark"></i> ${item.pages} ${item.pages === 1 ? 'page' : 'pages'} (QP Length: 1–7 pgs)
+                        </span>
+                        <button onclick="PDFViewer.openDirect('${item.url}', '${item.filename}', 'UNTAGGED')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition">
+                            <i class="bi bi-eye"></i> Preview PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-[11px] font-mono text-slate-600 dark:text-slate-400 bg-white/80 dark:bg-slate-800/80 p-2 rounded-lg border border-slate-200 dark:border-slate-700 line-clamp-2">
+                    ${item.snippet || 'No text extracted. Click Preview PDF to inspect paper.'}
+                </div>
+
+                <!-- Form to tag course code -->
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 items-center pt-1">
+                    <div class="sm:col-span-5">
+                        <input 
+                            type="text" 
+                            id="tagCode_${item.model_id}" 
+                            value="${item.suggested_code || ''}" 
+                            placeholder="Course Code (e.g. MG1DSCCHE100)" 
+                            list="courseCodeDatalist"
+                            class="w-full px-2.5 py-1.5 text-xs font-mono font-bold uppercase rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500"
+                        >
+                    </div>
+                    <div class="sm:col-span-4">
+                        <select id="tagType_${item.model_id}" class="w-full px-2 py-1.5 text-xs rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+                            <option value="THEORY" ${!item.is_practical ? 'selected' : ''}>Theory Model QP</option>
+                            <option value="PRACTICAL" ${item.is_practical ? 'selected' : ''}>Practical Model QP</option>
+                        </select>
+                    </div>
+                    <div class="sm:col-span-3">
+                        <button onclick="App.handleTagModelPaper('${item.model_id}')" class="w-full px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center justify-center gap-1 transition">
+                            <i class="bi bi-check2-circle"></i> Save & Tag
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    },
+
+    handleTagModelPaper(modelId) {
+        const item = this.untaggedModels.find(u => u.model_id === modelId);
+        if (!item) return;
+
+        const codeInput = document.getElementById(`tagCode_${modelId}`);
+        const typeSelect = document.getElementById(`tagType_${modelId}`);
+
+        let courseCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
+        const paperType = typeSelect ? typeSelect.value : 'THEORY';
+
+        if (!courseCode) {
+            alert('Please enter or select a Course Code for this question paper.');
+            codeInput?.focus();
+            return;
+        }
+
+        courseCode = courseCode.replace(/\s+/g, '');
+
+        const newModelObj = {
+            id: modelId,
+            title: paperType === 'PRACTICAL' ? 'Official Practical Model Paper' : 'Official Theory Model Paper',
+            paper_type: paperType,
+            pages: item.pages,
+            url: item.url,
+            raw_url: item.url,
+            filename: item.filename
+        };
+
+        let attachedCount = 0;
+        for (const p of this.papers) {
+            if ((p.course_code || '').trim().toUpperCase() === courseCode) {
+                if (!p.model_papers) p.model_papers = [];
+                p.model_papers = p.model_papers.filter(m => m.id !== modelId);
+                p.model_papers.push(newModelObj);
+                attachedCount++;
+            }
+        }
+
+        if (attachedCount === 0) {
+            const newCourse = {
+                id: `model_only_${courseCode}`,
+                qp_code: 'AWAITED',
+                course_code: courseCode,
+                title: `${courseCode} Course`,
+                raw_header: `${courseCode}`,
+                semester: item.semester || 1,
+                semester_label: `Semester ${item.semester || 1}`,
+                course_type: 'DSC',
+                course_type_name: 'Discipline Specific Core',
+                dept_code: 'GEN',
+                dept_name: 'General',
+                parent_dept: 'GEN',
+                parent_dept_name: 'General',
+                is_minor: false,
+                exam_id: 'model_catalog',
+                exam_name: 'FYUGP 2024 (Exam Question Paper Awaited)',
+                batch: '2024 Admission',
+                is_fyugp: true,
+                has_qp: false,
+                qp_url: '',
+                has_scheme: false,
+                scheme_url: '',
+                files: [],
+                has_files: false,
+                minor_name: '',
+                model_papers: [newModelObj]
+            };
+            this.papers.push(newCourse);
+        }
+
+        this.untaggedModels = this.untaggedModels.filter(u => u.model_id !== modelId);
+        this.renderAdminModelQp();
+        this.applyFilters();
+
+        try {
+            localStorage.setItem('mgu_untagged_models', JSON.stringify(this.untaggedModels));
+        } catch (e) {}
+
+        alert(`Model Question Paper successfully tagged to ${courseCode}!`);
+    },
+
+    renderAdminAllModelList() {
+        const container = document.getElementById('adminAllModelListContainer');
+        if (!container) return;
+
+        const coursesWithModels = [];
+        const seen = new Set();
+        for (const p of this.papers) {
+            if (p.model_papers && p.model_papers.length > 0) {
+                const cc = p.course_code;
+                if (!seen.has(cc)) {
+                    seen.add(cc);
+                    coursesWithModels.push({
+                        code: cc,
+                        title: p.title,
+                        dept: p.dept_name || p.dept_code,
+                        sem: p.semester,
+                        models: p.model_papers
+                    });
+                }
+            }
+        }
+
+        const q = (document.getElementById('adminModelSearchInput')?.value || '').toLowerCase().trim();
+        const filtered = q 
+            ? coursesWithModels.filter(c => c.code.toLowerCase().includes(q) || c.title.toLowerCase().includes(q) || c.dept.toLowerCase().includes(q))
+            : coursesWithModels;
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<div class="text-center py-6 text-slate-400">No matching model question papers found.</div>';
+            return;
+        }
+
+        container.innerHTML = filtered.slice(0, 50).map(c => `
+            <div class="p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 flex items-center justify-between gap-3 text-xs">
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="font-mono font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 px-2 py-0.5 rounded">
+                            ${c.code}
+                        </span>
+                        <span class="text-slate-400">Sem ${c.sem} • ${c.dept}</span>
+                    </div>
+                    <div class="font-semibold text-slate-800 dark:text-slate-200 truncate max-w-md">
+                        ${c.title}
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                    <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 font-semibold text-slate-600 dark:text-slate-300">
+                        ${c.models.length} ${c.models.length === 1 ? 'Model QP' : 'Model QPs'}
+                    </span>
+                    <button onclick="PDFViewer.openDirect('${c.models[0].url}', '${c.models[0].title}', '${c.code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1">
+                        <i class="bi bi-eye"></i> View
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    },
+
+    filterAdminModelList() {
+        this.renderAdminAllModelList();
+    },
+
+    handleAdminModelUploadSubmit(e) {
+        if (e) e.preventDefault();
+        const codeInput = document.getElementById('adminModelUpCourseCode');
+        const typeSelect = document.getElementById('adminModelUpType');
+        const fileInput = document.getElementById('adminModelUpFile');
+
+        const courseCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
+        const paperType = typeSelect ? typeSelect.value : 'THEORY';
+        const file = fileInput?.files?.[0];
+
+        if (!courseCode || !file) {
+            alert('Please select a PDF file and specify the Course Code.');
+            return;
+        }
+
+        const objectUrl = URL.createObjectURL(file);
+        const newModelObj = {
+            id: `model_custom_${Date.now()}`,
+            title: paperType === 'PRACTICAL' ? 'Official Practical Model Paper' : 'Official Theory Model Paper',
+            paper_type: paperType,
+            pages: 2,
+            url: objectUrl,
+            raw_url: objectUrl,
+            filename: file.name
+        };
+
+        let attached = false;
+        for (const p of this.papers) {
+            if ((p.course_code || '').trim().toUpperCase() === courseCode) {
+                if (!p.model_papers) p.model_papers = [];
+                p.model_papers.push(newModelObj);
+                attached = true;
+            }
+        }
+
+        if (!attached) {
+            this.papers.push({
+                id: `model_only_${courseCode}`,
+                qp_code: 'AWAITED',
+                course_code: courseCode,
+                title: `${courseCode} Course`,
+                raw_header: courseCode,
+                semester: 1,
+                semester_label: 'Semester 1',
+                course_type: 'DSC',
+                course_type_name: 'Discipline Specific Core',
+                dept_code: 'GEN',
+                dept_name: 'General',
+                parent_dept: 'GEN',
+                parent_dept_name: 'General',
+                is_minor: false,
+                exam_id: 'model_catalog',
+                exam_name: 'FYUGP 2024 (Exam Question Paper Awaited)',
+                batch: '2024 Admission',
+                is_fyugp: true,
+                has_qp: false,
+                qp_url: '',
+                has_scheme: false,
+                scheme_url: '',
+                files: [],
+                has_files: false,
+                minor_name: '',
+                model_papers: [newModelObj]
+            });
+        }
+
+        this.applyFilters();
+        alert(`Model Question Paper for ${courseCode} uploaded and linked successfully!`);
+        codeInput.value = '';
+        fileInput.value = '';
+        this.switchModelSubTab('all');
     },
 
     toggleAdminMinorFields() {

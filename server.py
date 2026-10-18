@@ -129,9 +129,15 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if parsed.path in ("/api/admin/delete-paper", "/api/admin/papers/delete"):
             self.handle_admin_delete()
             return
+        if parsed.path == "/api/feedback":
+            self.handle_feedback_post()
+            return
         self.send_json_response({"error": "Endpoint not found"}, status=404)
 
     def handle_api_get(self, path, params):
+        if path == "/api/feedback":
+            self.handle_feedback_get()
+            return
         if path == "/api/stats":
             self.send_json_response(CACHE["stats"] or {})
             return
@@ -385,6 +391,56 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
 
             self.update_stats()
             self.send_json_response({"success": True, "message": f"Paper deleted successfully!", "deleted_id": paper_id})
+        except Exception as e:
+            self.send_json_response({"success": False, "error": str(e)}, status=500)
+
+    def handle_feedback_get(self):
+        reports_file = os.path.join(DATA_DIR, "reports.json")
+        reports = []
+        if os.path.exists(reports_file):
+            try:
+                with open(reports_file, "r", encoding="utf-8") as f:
+                    reports = json.load(f)
+            except Exception:
+                reports = []
+        self.send_json_response(reports)
+
+    def handle_feedback_post(self):
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            data = json.loads(body)
+            reports_file = os.path.join(DATA_DIR, "reports.json")
+            reports = []
+            if os.path.exists(reports_file):
+                try:
+                    with open(reports_file, "r", encoding="utf-8") as f:
+                        reports = json.load(f)
+                except Exception:
+                    reports = []
+
+            action = data.get("action")
+            if action == "update_status":
+                rep_id = data.get("id")
+                new_status = data.get("status")
+                for r in reports:
+                    if r.get("id") == rep_id:
+                        r["status"] = new_status
+            elif action == "delete":
+                rep_id = data.get("id")
+                reports = [r for r in reports if r.get("id") != rep_id]
+            elif action == "clear_resolved":
+                reports = [r for r in reports if r.get("status") != "resolved"]
+            elif action == "sync_all":
+                reports = data.get("reports", reports)
+            else:
+                reports.insert(0, data)
+
+            for fpath in [reports_file, os.path.join(BASE_DIR, "public", "data", "reports.json")]:
+                if os.path.exists(os.path.dirname(fpath)):
+                    with open(fpath, "w", encoding="utf-8") as f:
+                        json.dump(reports, f, indent=2, ensure_ascii=False)
+            self.send_json_response({"success": True, "message": "Feedback operation successful", "reports_count": len(reports)})
         except Exception as e:
             self.send_json_response({"success": False, "error": str(e)}, status=500)
 

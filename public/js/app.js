@@ -18,6 +18,8 @@ const App = {
     stats: {},
     bookmarks: new Set(),
     filteredPapers: [],
+    feedbackReports: [],
+    inboxFilter: 'all',
 
     // Department & Search Aliases Dictionary
     ALIASES: {
@@ -118,6 +120,9 @@ const App = {
         // Ensure By Department is default active view
         this.switchTab('departments');
 
+        // Load reports & feedback
+        await this.loadFeedbackReports();
+
         const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
         if (isAuth) {
             document.getElementById('adminNavBtn')?.classList.remove('hidden');
@@ -130,6 +135,13 @@ const App = {
         } else {
             document.getElementById('adminNavBtn')?.classList.add('hidden');
         }
+
+        // Close feedback modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeFeedbackModal();
+            }
+        });
 
         // Secret Admin URL triggers: #admin or ?admin
         const checkAdminHash = () => {
@@ -270,6 +282,13 @@ const App = {
         this.stats = statsData || {};
     },
 
+    getActiveDepartments() {
+        return this.departments.filter(d => {
+            const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
+            return this.papers.some(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+        });
+    },
+
     updateStatsUI() {
         const totalPapersEl = document.getElementById('statTotalPapers');
         const totalSchemesEl = document.getElementById('statTotalSchemes');
@@ -278,10 +297,11 @@ const App = {
 
         const totalQPs = this.papers.filter(p => p.has_qp).length;
         const totalSchemes = this.papers.filter(p => p.has_scheme).length;
+        const activeDepts = this.getActiveDepartments();
 
         if (totalPapersEl) totalPapersEl.textContent = `${totalQPs.toLocaleString()}+`;
         if (totalSchemesEl) totalSchemesEl.textContent = `${totalSchemes.toLocaleString()}+`;
-        if (totalDeptsEl) totalDeptsEl.textContent = `${this.departments.length}`;
+        if (totalDeptsEl) totalDeptsEl.textContent = `${activeDepts.length}`;
         if (lastSyncEl) lastSyncEl.textContent = '2024 Admission';
     },
 
@@ -1280,18 +1300,21 @@ const App = {
         // Ensure strictly alphabetical order (A–Z)
         this.departments.sort((a, b) => a.name.localeCompare(b.name));
 
-        // Populate filter dropdown in All Question Papers tab
+        // Filter out departments with zero papers available
+        const activeDepts = this.getActiveDepartments();
+
+        // Populate filter dropdown in All Question Papers tab with only departments that have papers
         if (deptSelect) {
-            deptSelect.innerHTML = `<option value="ALL">All Departments (${this.departments.length} Available)</option>` +
-                this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
+            deptSelect.innerHTML = `<option value="ALL">All Departments (${activeDepts.length} Available)</option>` +
+                activeDepts.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
         }
 
         // Apply quick department search query if entered
-        let deptsToRender = this.departments;
+        let deptsToRender = activeDepts;
         if (this.deptState.deptSearchQuery) {
             const dq = this.deptState.deptSearchQuery.toLowerCase();
             const tokens = dq.split(/\s+/).filter(Boolean);
-            deptsToRender = this.departments.filter(d => {
+            deptsToRender = activeDepts.filter(d => {
                 if (d.name.toLowerCase().includes(dq) || 
                     d.code.toLowerCase().includes(dq) || 
                     (d.description && d.description.toLowerCase().includes(dq)) ||
@@ -1582,9 +1605,14 @@ const App = {
                             ? `Try clearing your search query "${this.deptState.searchQuery}".` 
                             : `Mahatma Gandhi University has not released examination schemes for Semester ${sem} in ${dept.name} yet.`}
                     </p>
-                    ${this.deptState.searchQuery ? `
-                        <button onclick="App.clearDeptPaperSearch()" class="mt-4 px-3.5 py-1.5 bg-blue-600 text-white rounded-lg text-xs font-semibold shadow-xs">Clear Search</button>
-                    ` : ''}
+                    <div class="mt-4 flex flex-wrap items-center justify-center gap-2">
+                        ${this.deptState.searchQuery ? `
+                            <button onclick="App.clearDeptPaperSearch()" class="px-3.5 py-1.5 bg-slate-600 hover:bg-slate-500 text-white rounded-lg text-xs font-semibold shadow-xs">Clear Search</button>
+                        ` : ''}
+                        <button onclick="App.openFeedbackModal('report', '${dept.code}', '${sem === 'ALL' ? '1' : sem}')" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-semibold shadow-xs flex items-center gap-1.5">
+                            <i class="bi bi-flag-fill"></i> Report Missing Paper for ${dept.code}
+                        </button>
+                    </div>
                 </div>
             `;
             return;
@@ -1700,7 +1728,24 @@ const App = {
             }
         }
 
-        container.innerHTML = sectionsHtml || `
+        const reportPromptBanner = `
+            <div class="mt-8 p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800/80 border border-blue-200/80 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 flex items-center justify-center text-lg shrink-0">
+                        <i class="bi bi-flag-fill"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-900 dark:text-white">Exam already conducted but paper or scheme missing?</div>
+                        <div class="text-slate-500 dark:text-slate-400">Report missing papers or schemes for ${dept.name} and the admin will source and upload them.</div>
+                    </div>
+                </div>
+                <button onclick="App.openFeedbackModal('report', '${dept.code}', '${sem === 'ALL' ? '' : sem}')" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-semibold shadow-xs shrink-0 flex items-center gap-1.5 transition">
+                    <i class="bi bi-send-plus"></i> Report Missing Paper
+                </button>
+            </div>
+        `;
+
+        container.innerHTML = (sectionsHtml ? sectionsHtml + reportPromptBanner : '') || `
             <div class="py-12 text-center text-slate-400 text-xs">
                 No papers found matching the current criteria.
             </div>
@@ -1758,7 +1803,7 @@ const App = {
         const username = userInput ? userInput.value.trim() : '';
         const password = passInput ? passInput.value : '';
 
-        if (username === 'sinan_cc' && password === 'Sinan@2001') {
+        if ((username === 'sinan_cc' || username === 'sinan-maths') && password === 'Sinan@2001') {
             sessionStorage.setItem('mgu_admin_auth', 'true');
             sessionStorage.setItem('mgu_admin_user', username);
             if (err) err.classList.add('hidden');
@@ -1814,23 +1859,29 @@ const App = {
         const uploadView = document.getElementById('adminTabUploadView');
         const deleteView = document.getElementById('adminTabDeleteView');
         const syncView = document.getElementById('adminTabSyncView');
+        const inboxView = document.getElementById('adminTabInboxView');
         const btnUpload = document.getElementById('adminTabBtnUpload');
         const btnDelete = document.getElementById('adminTabBtnDelete');
         const btnSync = document.getElementById('adminTabBtnSync');
+        const btnInbox = document.getElementById('adminTabBtnInbox');
 
-        const activeClass = 'px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition';
-        const inactiveClass = 'px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition';
+        const activeClass = 'px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0';
+        const inactiveClass = 'px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0';
 
         if (uploadView) uploadView.classList.toggle('hidden', tab !== 'upload');
         if (deleteView) deleteView.classList.toggle('hidden', tab !== 'delete');
         if (syncView) syncView.classList.toggle('hidden', tab !== 'sync');
+        if (inboxView) inboxView.classList.toggle('hidden', tab !== 'inbox');
 
         if (btnUpload) btnUpload.className = tab === 'upload' ? activeClass : inactiveClass;
         if (btnDelete) btnDelete.className = tab === 'delete' ? activeClass : inactiveClass;
         if (btnSync) btnSync.className = tab === 'sync' ? activeClass : inactiveClass;
+        if (btnInbox) btnInbox.className = tab === 'inbox' ? activeClass : inactiveClass;
 
         if (tab === 'delete') {
             this.renderAdminDeleteList();
+        } else if (tab === 'inbox') {
+            this.renderAdminInbox();
         }
     },
 
@@ -2135,6 +2186,494 @@ const App = {
                 syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Manual sync triggers background scraper. Scheduled sync runs daily automatically via GitHub Actions.`;
             }
         }
+    },
+
+    // -------------------------------------------------------------
+    // STUDENT REPORTS & FEEDBACK CONTROLLERS
+    // -------------------------------------------------------------
+
+    populateFeedbackDeptDropdown(selectedDept = '') {
+        const select = document.getElementById('reportDeptSelect');
+        if (!select) return;
+        select.innerHTML = '<option value="">Select Department...</option>' +
+            this.departments.map(d => `<option value="${d.code}">${d.name} (${d.code})</option>`).join('');
+        if (selectedDept) {
+            select.value = selectedDept;
+        }
+    },
+
+    openFeedbackModal(initialTab = 'report', deptCode = '', sem = '', courseCode = '', courseTitle = '') {
+        const modal = document.getElementById('feedbackModal');
+        if (!modal) return;
+        modal.classList.remove('hidden');
+
+        this.populateFeedbackDeptDropdown(deptCode);
+        if (deptCode) {
+            const dSelect = document.getElementById('reportDeptSelect');
+            if (dSelect) dSelect.value = deptCode;
+        }
+        if (sem) {
+            const sSelect = document.getElementById('reportSemesterSelect');
+            if (sSelect) sSelect.value = sem;
+        }
+        if (courseCode) {
+            const cInput = document.getElementById('reportCourseCode');
+            if (cInput) cInput.value = courseCode;
+        }
+        if (courseTitle) {
+            const tInput = document.getElementById('reportCourseTitle');
+            if (tInput) tInput.value = courseTitle;
+        }
+
+        document.getElementById('reportSuccessAlert')?.classList.add('hidden');
+        document.getElementById('feedbackSuccessAlert')?.classList.add('hidden');
+
+        this.switchFeedbackTab(initialTab);
+    },
+
+    closeFeedbackModal() {
+        document.getElementById('feedbackModal')?.classList.add('hidden');
+    },
+
+    switchFeedbackTab(tab) {
+        const reportForm = document.getElementById('missingPaperForm');
+        const generalForm = document.getElementById('generalFeedbackForm');
+        const btnReport = document.getElementById('feedbackTabBtnReport');
+        const btnGeneral = document.getElementById('feedbackTabBtnGeneral');
+
+        const activeClass = 'pb-2.5 text-xs font-semibold border-b-2 border-blue-600 text-blue-600 dark:text-blue-400 flex items-center gap-1.5 transition';
+        const inactiveClass = 'pb-2.5 text-xs font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 flex items-center gap-1.5 transition';
+
+        if (reportForm) reportForm.classList.toggle('hidden', tab !== 'report');
+        if (generalForm) generalForm.classList.toggle('hidden', tab !== 'general');
+
+        if (btnReport) btnReport.className = tab === 'report' ? activeClass : inactiveClass;
+        if (btnGeneral) btnGeneral.className = tab === 'general' ? activeClass : inactiveClass;
+    },
+
+    async loadFeedbackReports() {
+        try {
+            let serverReports = [];
+            try {
+                const res = await fetch('/api/feedback');
+                if (res.ok) {
+                    serverReports = await res.json();
+                } else {
+                    const staticRes = await fetch('data/reports.json');
+                    if (staticRes.ok) serverReports = await staticRes.json();
+                }
+            } catch (e) {
+                try {
+                    const staticRes = await fetch('data/reports.json');
+                    if (staticRes.ok) serverReports = await staticRes.json();
+                } catch (err) {}
+            }
+
+            let localReports = [];
+            try {
+                const localStr = localStorage.getItem('mgu_feedback_reports');
+                if (localStr) localReports = JSON.parse(localStr);
+            } catch (e) {}
+
+            const map = new Map();
+            (Array.isArray(serverReports) ? serverReports : []).forEach(r => { if (r && r.id) map.set(r.id, r); });
+            (Array.isArray(localReports) ? localReports : []).forEach(r => { if (r && r.id) map.set(r.id, r); });
+
+            this.feedbackReports = Array.from(map.values()).sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+        } catch (e) {
+            this.feedbackReports = [];
+        }
+        this.updateAdminInboxBadge();
+    },
+
+    async saveReport(report) {
+        if (!this.feedbackReports) this.feedbackReports = [];
+        this.feedbackReports.unshift(report);
+        try {
+            localStorage.setItem('mgu_feedback_reports', JSON.stringify(this.feedbackReports));
+        } catch (e) {}
+        try {
+            await fetch('/api/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(report)
+            });
+        } catch (e) {}
+        this.updateAdminInboxBadge();
+    },
+
+    async handleMissingPaperSubmit(e) {
+        e.preventDefault();
+        const dept = document.getElementById('reportDeptSelect')?.value;
+        const semester = document.getElementById('reportSemesterSelect')?.value;
+        const courseCode = (document.getElementById('reportCourseCode')?.value || '').trim().toUpperCase();
+        const title = (document.getElementById('reportCourseTitle')?.value || '').trim();
+        const examDate = (document.getElementById('reportExamDate')?.value || '').trim();
+        const missingType = document.getElementById('reportMissingType')?.value || 'Both QP & Scheme';
+        const driveLink = (document.getElementById('reportDriveLink')?.value || '').trim();
+        const contact = (document.getElementById('reportContact')?.value || '').trim();
+
+        if (!dept || !semester || !title || !examDate) {
+            alert('Please fill in all required fields (Department, Semester, Course Title, Exam Month & Year).');
+            return;
+        }
+
+        const submitBtn = document.getElementById('reportSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-white border-t-transparent"></div> Submitting...`;
+        }
+
+        const report = {
+            id: 'rep_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
+            type: 'missing_paper',
+            status: 'pending',
+            createdAt: new Date().toISOString(),
+            dept,
+            semester,
+            courseCode,
+            title,
+            examDate,
+            missingType,
+            driveLink,
+            contact
+        };
+
+        await this.saveReport(report);
+
+        const successAlert = document.getElementById('reportSuccessAlert');
+        if (successAlert) successAlert.classList.remove('hidden');
+
+        const codeEl = document.getElementById('reportCourseCode');
+        const titleEl = document.getElementById('reportCourseTitle');
+        const dateEl = document.getElementById('reportExamDate');
+        const linkEl = document.getElementById('reportDriveLink');
+        const contEl = document.getElementById('reportContact');
+        if (codeEl) codeEl.value = '';
+        if (titleEl) titleEl.value = '';
+        if (dateEl) dateEl.value = '';
+        if (linkEl) linkEl.value = '';
+        if (contEl) contEl.value = '';
+
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `<i class="bi bi-send-fill"></i> Submit Missing Paper Report`;
+        }
+
+        setTimeout(() => {
+            this.closeFeedbackModal();
+        }, 1800);
+    },
+
+    async handleGeneralFeedbackSubmit(e) {
+        e.preventDefault();
+        const category = document.getElementById('feedbackCategory')?.value || 'Suggestion';
+        const message = (document.getElementById('feedbackMessage')?.value || '').trim();
+        const contact = (document.getElementById('feedbackContact')?.value || '').trim();
+
+        if (!message) {
+            alert('Please enter your feedback message.');
+            return;
+        }
+
+        const submitBtn = document.getElementById('feedbackSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-white border-t-transparent"></div> Sending...`;
+        }
+
+        const feedback = {
+            id: 'fb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
+            type: 'general_feedback',
+            status: 'pending',
+            createdAt: new Date().toISOString(),
+            category,
+            message,
+            contact
+        };
+
+        await this.saveReport(feedback);
+
+        const successAlert = document.getElementById('feedbackSuccessAlert');
+        if (successAlert) successAlert.classList.remove('hidden');
+
+        const msgEl = document.getElementById('feedbackMessage');
+        const contEl = document.getElementById('feedbackContact');
+        if (msgEl) msgEl.value = '';
+        if (contEl) contEl.value = '';
+
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `<i class="bi bi-send-fill"></i> Send Feedback`;
+        }
+
+        setTimeout(() => {
+            this.closeFeedbackModal();
+        }, 1800);
+    },
+
+    updateAdminInboxBadge() {
+        const badge = document.getElementById('adminInboxBadge');
+        const countAll = document.getElementById('inboxCountAll');
+        const countPending = document.getElementById('inboxCountPending');
+
+        const total = (this.feedbackReports || []).length;
+        const pending = (this.feedbackReports || []).filter(r => r.status === 'pending').length;
+
+        if (badge) {
+            badge.textContent = pending;
+            badge.classList.toggle('hidden', pending === 0);
+        }
+        if (countAll) countAll.textContent = total;
+        if (countPending) countPending.textContent = pending;
+    },
+
+    filterAdminInbox(filter) {
+        this.inboxFilter = filter;
+        const btnAll = document.getElementById('inboxFilterAll');
+        const btnPending = document.getElementById('inboxFilterPending');
+        const btnMissing = document.getElementById('inboxFilterMissing');
+        const btnFeedback = document.getElementById('inboxFilterFeedback');
+
+        const activeClass = 'px-2.5 py-1 rounded-md font-semibold bg-blue-600 text-white shadow-xs';
+        const inactiveClass = 'px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200';
+
+        if (btnAll) btnAll.className = filter === 'all' ? activeClass : inactiveClass;
+        if (btnPending) btnPending.className = filter === 'pending' ? activeClass : inactiveClass;
+        if (btnMissing) btnMissing.className = filter === 'missing' ? activeClass : inactiveClass;
+        if (btnFeedback) btnFeedback.className = filter === 'feedback' ? activeClass : inactiveClass;
+
+        this.renderAdminInbox();
+    },
+
+    renderAdminInbox() {
+        const container = document.getElementById('adminInboxListContainer');
+        if (!container) return;
+
+        this.updateAdminInboxBadge();
+
+        let list = this.feedbackReports || [];
+        if (this.inboxFilter === 'pending') {
+            list = list.filter(r => r.status === 'pending');
+        } else if (this.inboxFilter === 'missing') {
+            list = list.filter(r => r.type === 'missing_paper');
+        } else if (this.inboxFilter === 'feedback') {
+            list = list.filter(r => r.type === 'general_feedback');
+        }
+
+        if (list.length === 0) {
+            container.innerHTML = `
+                <div class="py-12 text-center text-slate-400">
+                    <div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mx-auto text-lg mb-2 text-slate-400">
+                        <i class="bi bi-inbox"></i>
+                    </div>
+                    <div class="font-bold text-slate-700 dark:text-slate-300">No reports found</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">There are no reports matching the "${this.inboxFilter}" filter.</div>
+                </div>
+            `;
+            return;
+        }
+
+        const escapeHtml = (str) => {
+            if (!str) return '';
+            return String(str).replace(/[&<>"']/g, m => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+            }[m]));
+        };
+
+        container.innerHTML = list.map(r => {
+            const isMissing = r.type === 'missing_paper';
+            const isPending = r.status === 'pending';
+            const dateStr = r.createdAt ? new Date(r.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Recently';
+
+            return `
+                <div class="p-3 bg-white dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/70 hover:border-slate-300 dark:hover:border-slate-600 transition space-y-2.5">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            ${isMissing ? `
+                                <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800 flex items-center gap-1">
+                                    <i class="bi bi-flag-fill"></i> Missing Paper
+                                </span>
+                            ` : `
+                                <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 flex items-center gap-1">
+                                    <i class="bi bi-chat-left-text-fill"></i> ${escapeHtml(r.category || 'Feedback')}
+                                </span>
+                            `}
+
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${isPending ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-300 dark:border-rose-800 animate-pulse' : 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'} flex items-center gap-1">
+                                <i class="bi ${isPending ? 'bi-clock-history' : 'bi-check-lg'}"></i> ${isPending ? 'Pending' : 'Resolved'}
+                            </span>
+                        </div>
+                        <span class="text-[11px] text-slate-400 font-mono">${dateStr}</span>
+                    </div>
+
+                    ${isMissing ? `
+                        <div>
+                            <div class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">
+                                ${escapeHtml(r.title)}
+                                ${r.courseCode ? `<span class="font-mono text-blue-600 dark:text-blue-400 font-semibold ml-1">(${escapeHtml(r.courseCode)})</span>` : ''}
+                            </div>
+                            <div class="text-[11px] text-slate-600 dark:text-slate-300 mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+                                <span><strong class="text-slate-800 dark:text-slate-200">Dept:</strong> ${escapeHtml(r.dept)}</span>
+                                <span>•</span>
+                                <span><strong class="text-slate-800 dark:text-slate-200">Semester:</strong> ${escapeHtml(r.semester)}</span>
+                                <span>•</span>
+                                <span><strong class="text-slate-800 dark:text-slate-200">Exam:</strong> ${escapeHtml(r.examDate || 'N/A')}</span>
+                                <span>•</span>
+                                <span><strong class="text-slate-800 dark:text-slate-200">Missing:</strong> ${escapeHtml(r.missingType || 'Both')}</span>
+                            </div>
+                            ${r.driveLink ? `
+                                <div class="mt-1.5">
+                                    <a href="${escapeHtml(r.driveLink)}" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-medium text-[11px] inline-flex items-center gap-1 bg-blue-50 dark:bg-blue-950/50 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-900/60">
+                                        <i class="bi bi-box-arrow-up-right"></i> Open Attached Drive/PDF Link
+                                    </a>
+                                </div>
+                            ` : ''}
+                            ${r.contact ? `
+                                <div class="text-slate-400 text-[10px] mt-1">
+                                    <i class="bi bi-person"></i> Student contact: ${escapeHtml(r.contact)}
+                                </div>
+                            ` : ''}
+                        </div>
+                    ` : `
+                        <div>
+                            <div class="text-slate-800 dark:text-slate-200 text-xs whitespace-pre-wrap leading-relaxed">
+                                ${escapeHtml(r.message)}
+                            </div>
+                            ${r.contact ? `
+                                <div class="text-slate-400 text-[10px] mt-1.5">
+                                    <i class="bi bi-person"></i> Contact: ${escapeHtml(r.contact)}
+                                </div>
+                            ` : ''}
+                        </div>
+                    `}
+
+                    <div class="flex items-center justify-end gap-2 pt-1 border-t border-slate-100 dark:border-slate-700/50">
+                        ${isMissing ? `
+                            <button onclick="App.prefillUploadFromReport('${r.id}')" class="px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 hover:bg-blue-100 font-semibold text-[11px] transition flex items-center gap-1 border border-blue-200 dark:border-blue-800">
+                                <i class="bi bi-pencil-square"></i> Upload Paper
+                            </button>
+                        ` : ''}
+                        <button onclick="App.toggleReportStatus('${r.id}')" class="px-2.5 py-1 rounded-lg ${isPending ? 'bg-emerald-600 hover:bg-emerald-500 text-white font-semibold' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200'} text-[11px] transition flex items-center gap-1">
+                            <i class="bi ${isPending ? 'bi-check2' : 'bi-arrow-counterclockwise'}"></i> ${isPending ? 'Mark Resolved' : 'Re-open'}
+                        </button>
+                        <button onclick="App.deleteReport('${r.id}')" class="p-1 text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition" title="Delete Report">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    },
+
+    async toggleReportStatus(id) {
+        const rep = (this.feedbackReports || []).find(r => r.id === id);
+        if (!rep) return;
+        rep.status = rep.status === 'resolved' ? 'pending' : 'resolved';
+        try {
+            localStorage.setItem('mgu_feedback_reports', JSON.stringify(this.feedbackReports));
+            await fetch('/api/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'update_status', id, status: rep.status })
+            });
+        } catch (e) {}
+        this.updateAdminInboxBadge();
+        this.renderAdminInbox();
+    },
+
+    async deleteReport(id) {
+        if (!confirm('Are you sure you want to delete this report?')) return;
+        this.feedbackReports = (this.feedbackReports || []).filter(r => r.id !== id);
+        try {
+            localStorage.setItem('mgu_feedback_reports', JSON.stringify(this.feedbackReports));
+            await fetch('/api/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'delete', id })
+            });
+        } catch (e) {}
+        this.updateAdminInboxBadge();
+        this.renderAdminInbox();
+    },
+
+    async clearResolvedReports() {
+        const resolvedCount = (this.feedbackReports || []).filter(r => r.status === 'resolved').length;
+        if (resolvedCount === 0) {
+            alert('No resolved reports to clear.');
+            return;
+        }
+        if (!confirm(`Are you sure you want to clear ${resolvedCount} resolved report(s)?`)) return;
+        this.feedbackReports = (this.feedbackReports || []).filter(r => r.status !== 'resolved');
+        try {
+            localStorage.setItem('mgu_feedback_reports', JSON.stringify(this.feedbackReports));
+            await fetch('/api/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'clear_resolved' })
+            });
+        } catch (e) {}
+        this.updateAdminInboxBadge();
+        this.renderAdminInbox();
+    },
+
+    exportReportsJson() {
+        const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.feedbackReports || [], null, 2));
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.setAttribute('href', dataStr);
+        downloadAnchor.setAttribute('download', `mgu_reports_feedback_${new Date().toISOString().slice(0, 10)}.json`);
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+    },
+
+    prefillUploadFromReport(id) {
+        const report = (this.feedbackReports || []).find(r => r.id === id);
+        if (!report) return;
+
+        this.switchAdminTab('upload');
+
+        if (report.dept) {
+            const deptSelect = document.getElementById('adminUploadDept');
+            if (deptSelect) deptSelect.value = report.dept;
+        }
+        if (report.semester) {
+            const semSelect = document.getElementById('adminUploadSemester');
+            if (semSelect) semSelect.value = report.semester;
+        }
+        if (report.courseCode) {
+            const codeInput = document.getElementById('adminUploadCourseCode');
+            if (codeInput) codeInput.value = report.courseCode;
+        }
+        if (report.title) {
+            const titleInput = document.getElementById('adminUploadTitle');
+            if (titleInput) titleInput.value = report.title;
+        }
+        if (report.examDate) {
+            const examInput = document.getElementById('adminUploadExamName');
+            if (examInput) examInput.value = report.examDate;
+        }
+        if (report.driveLink) {
+            const qpUrlInput = document.getElementById('adminUploadQpUrl');
+            if (qpUrlInput) qpUrlInput.value = report.driveLink;
+        }
+
+        const statusEl = document.getElementById('adminUploadStatus');
+        if (statusEl) {
+            statusEl.className = 'p-3 rounded-lg text-xs bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 flex items-center justify-between gap-2';
+            statusEl.innerHTML = `
+                <div class="flex items-center gap-1.5">
+                    <i class="bi bi-info-circle-fill text-blue-600"></i>
+                    <span>Pre-filled from student report for <strong>${report.courseCode || report.title}</strong></span>
+                </div>
+                <button type="button" onclick="App.toggleReportStatus('${report.id}')" class="underline font-semibold hover:text-blue-900 dark:hover:text-blue-100">
+                    Mark Report Resolved
+                </button>
+            `;
+            statusEl.classList.remove('hidden');
+        }
+
+        document.getElementById('adminUploadTitle')?.focus();
     }
 };
 

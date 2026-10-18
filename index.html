@@ -71,6 +71,13 @@
 
                 <!-- Right Action Buttons -->
                 <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Report Missing Paper / Feedback Button -->
+                    <button onclick="App.openFeedbackModal('report')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition flex items-center gap-1.5" title="Report a missing exam paper or send feedback to admin">
+                        <i class="bi bi-flag-fill text-blue-600 dark:text-blue-400"></i>
+                        <span class="hidden sm:inline">Report Paper / Feedback</span>
+                        <span class="sm:hidden">Report</span>
+                    </button>
+
                     <!-- Bookmarks Tab Shortcut -->
                     <button onclick="App.switchTab('bookmarks')" class="relative px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 transition flex items-center gap-1.5">
                         <i class="bi bi-star-fill text-amber-500"></i>
@@ -468,6 +475,154 @@
         </div>
     </div>
 
+    <!-- FEEDBACK & MISSING PAPER REPORT MODAL -->
+    <div id="feedbackModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-4 transition">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+            
+            <!-- Modal Header -->
+            <div class="p-5 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 flex items-center justify-center text-lg">
+                        <i class="bi bi-megaphone-fill"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-900 dark:text-white">Report Missing Paper or Send Feedback</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Help us improve the Mahatma Gandhi University FYUGP portal</p>
+                    </div>
+                </div>
+                <button onclick="App.closeFeedbackModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!-- Tab Switcher inside Modal -->
+            <div class="px-6 pt-3 border-b border-slate-200 dark:border-slate-700 flex items-center gap-4">
+                <button id="feedbackTabBtnReport" onclick="App.switchFeedbackTab('report')" class="pb-2.5 text-xs font-semibold border-b-2 border-blue-600 text-blue-600 dark:text-blue-400 flex items-center gap-1.5 transition">
+                    <i class="bi bi-flag-fill"></i> Report Missing Paper
+                </button>
+                <button id="feedbackTabBtnGeneral" onclick="App.switchFeedbackTab('general')" class="pb-2.5 text-xs font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 flex items-center gap-1.5 transition">
+                    <i class="bi bi-chat-left-text"></i> General Feedback / Suggestion
+                </button>
+            </div>
+
+            <!-- Form Content -->
+            <div class="p-6">
+                <!-- VIEW 1: MISSING PAPER REPORT -->
+                <form id="missingPaperForm" onsubmit="App.handleMissingPaperSubmit(event)" class="space-y-4 text-xs">
+                    <div class="p-3 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/50 text-blue-800 dark:text-blue-200 text-xs">
+                        <i class="bi bi-info-circle-fill mr-1"></i>
+                        If an exam has already been conducted by MGU but its question paper or scheme is missing from our portal, submit the details below and the admin will source it.
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Department *</label>
+                            <select id="reportDeptSelect" required class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select Department...</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Semester *</label>
+                            <select id="reportSemesterSelect" required class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5">Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Course Code (if known)</label>
+                            <input type="text" id="reportCourseCode" placeholder="e.g. MG2DSCHIS100" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs uppercase focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Course Title / Subject Name *</label>
+                            <input type="text" id="reportCourseTitle" required placeholder="e.g. Themes in Global History" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Exam Month & Year *</label>
+                            <input type="text" id="reportExamDate" required placeholder="e.g. March 2025 or Nov 2024" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">What is missing? *</label>
+                            <select id="reportMissingType" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                                <option value="Both QP & Scheme">Both Question Paper & Scheme</option>
+                                <option value="Question Paper Only">Question Paper Only</option>
+                                <option value="Scheme Only">Evaluation Scheme Only</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Do you have a PDF link or Google Drive link? (Optional)</label>
+                        <input type="url" id="reportDriveLink" placeholder="https://drive.google.com/... or link to PDF" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Your Name / Email (Optional, to get notified when added)</label>
+                        <input type="text" id="reportContact" placeholder="e.g. student@gmail.com" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div id="reportSuccessAlert" class="hidden p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 text-xs flex items-center gap-2">
+                        <i class="bi bi-check-circle-fill text-emerald-600 text-sm"></i>
+                        <span>Thank you! Your missing paper report has been logged and sent to the administrator.</span>
+                    </div>
+
+                    <div class="flex justify-end gap-2 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                        <button type="button" onclick="App.closeFeedbackModal()" class="px-4 py-2 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">Cancel</button>
+                        <button type="submit" id="reportSubmitBtn" class="px-5 py-2.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1.5">
+                            <i class="bi bi-send-fill"></i> Submit Missing Paper Report
+                        </button>
+                    </div>
+                </form>
+
+                <!-- VIEW 2: GENERAL FEEDBACK -->
+                <form id="generalFeedbackForm" onsubmit="App.handleGeneralFeedbackSubmit(event)" class="hidden space-y-4 text-xs">
+                    <div>
+                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Feedback Category *</label>
+                        <select id="feedbackCategory" required class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                            <option value="Suggestion">General Suggestion</option>
+                            <option value="Incorrect Paper / Scheme">Incorrect Question Paper or Scheme</option>
+                            <option value="Portal Bug">Website Bug / Display Issue</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Your Message / Feedback *</label>
+                        <textarea id="feedbackMessage" rows="4" required placeholder="Describe your feedback or suggestion in detail..." class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Your Name / Email (Optional)</label>
+                        <input type="text" id="feedbackContact" placeholder="e.g. rahul@gmail.com" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div id="feedbackSuccessAlert" class="hidden p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 text-xs flex items-center gap-2">
+                        <i class="bi bi-check-circle-fill text-emerald-600 text-sm"></i>
+                        <span>Thank you! Your feedback has been submitted to the admin.</span>
+                    </div>
+
+                    <div class="flex justify-end gap-2 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                        <button type="button" onclick="App.closeFeedbackModal()" class="px-4 py-2 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">Cancel</button>
+                        <button type="submit" id="feedbackSubmitBtn" class="px-5 py-2.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1.5">
+                            <i class="bi bi-send-fill"></i> Send Feedback
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- ADMIN SYNC MODAL (Visible for Admins only) -->
     <div id="adminModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-4 transition">
         <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
@@ -563,13 +718,17 @@
 
                 <!-- Admin Action Sub-Tabs -->
                 <div class="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-700 pb-2 overflow-x-auto scrollbar-none">
-                    <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition">
+                    <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-cloud-arrow-up"></i> Upload / Add Paper
                     </button>
-                    <button id="adminTabBtnDelete" onclick="App.switchAdminTab('delete')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                    <button id="adminTabBtnDelete" onclick="App.switchAdminTab('delete')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-trash3"></i> Manage & Delete Papers
                     </button>
-                    <button id="adminTabBtnSync" onclick="App.switchAdminTab('sync')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition">
+                    <button id="adminTabBtnInbox" onclick="App.switchAdminTab('inbox')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-inbox-fill"></i> Student Reports & Feedback
+                        <span id="adminInboxBadge" class="hidden ml-1 px-1.5 py-0.2 bg-rose-500 text-white rounded-full text-[10px] font-bold">0</span>
+                    </button>
+                    <button id="adminTabBtnSync" onclick="App.switchAdminTab('sync')" class="px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-arrow-repeat"></i> Auto-Sync & Scraper
                     </button>
                 </div>
@@ -797,6 +956,37 @@
                     </div>
                 </div>
 
+                <!-- TAB 4: STUDENT REPORTS & FEEDBACK INBOX -->
+                <div id="adminTabInboxView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Reports & Feedback Inbox</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Review missing paper reports and feedback submitted by students</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="App.exportReportsJson()" class="px-2.5 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 font-medium transition flex items-center gap-1" title="Export reports as JSON">
+                                <i class="bi bi-download"></i> Export
+                            </button>
+                            <button onclick="App.clearResolvedReports()" class="px-2.5 py-1 text-xs rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/40 font-medium transition" title="Clear resolved reports">
+                                Clear Resolved
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filter chips for Inbox -->
+                    <div class="flex items-center gap-1.5 text-xs overflow-x-auto scrollbar-none pb-1">
+                        <button id="inboxFilterAll" onclick="App.filterAdminInbox('all')" class="px-2.5 py-1 rounded-md font-semibold bg-blue-600 text-white shadow-xs">All (<span id="inboxCountAll">0</span>)</button>
+                        <button id="inboxFilterPending" onclick="App.filterAdminInbox('pending')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Pending (<span id="inboxCountPending">0</span>)</button>
+                        <button id="inboxFilterMissing" onclick="App.filterAdminInbox('missing')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Missing Papers</button>
+                        <button id="inboxFilterFeedback" onclick="App.filterAdminInbox('feedback')" class="px-2.5 py-1 rounded-md font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200">Feedback</button>
+                    </div>
+
+                    <!-- Inbox List Container -->
+                    <div id="adminInboxListContainer" class="max-h-96 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 p-1 space-y-1 text-xs">
+                        <!-- Populated dynamically by App.renderAdminInbox() -->
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -809,8 +999,16 @@
                 <i class="bi bi-mortarboard-fill text-blue-600"></i>
                 <span>MGU Question Paper & Scheme Portal • Built for Mahatma Gandhi University Students</span>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3">
                 <span>Data: <a href="https://assist.mgu.ac.in/schema/" target="_blank" class="text-blue-600 underline">assist.mgu.ac.in</a></span>
+                <span>•</span>
+                <button onclick="App.openFeedbackModal('report')" class="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1 transition">
+                    <i class="bi bi-flag"></i> Report Missing Paper
+                </button>
+                <span>•</span>
+                <button onclick="App.openFeedbackModal('general')" class="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1 transition">
+                    <i class="bi bi-chat-dots"></i> Feedback
+                </button>
             </div>
         </div>
     </footer>

@@ -110,6 +110,10 @@ const App = {
         deptSearchQuery: ''      // Department list quick filter
     },
 
+    // Routing & Navigation History State
+    currentRoute: null,
+    lastDeptListScrollY: 0,
+
     async init() {
         this.loadBookmarks();
         this.initTheme();
@@ -121,9 +125,6 @@ const App = {
         this.updateStatsUI();
         this.renderDepartmentsList();
         this.applyFilters();
-
-        // Ensure By Department is default active view
-        this.switchTab('departments');
 
         // Load reports & feedback
         await this.loadFeedbackReports();
@@ -148,16 +149,18 @@ const App = {
             }
         });
 
-        // Secret Admin URL triggers: #admin or ?admin
-        const checkAdminHash = () => {
-            const hasAdminHash = window.location.hash.toLowerCase() === '#admin';
-            const hasAdminParam = new URLSearchParams(window.location.search).has('admin');
-            if (hasAdminHash || hasAdminParam) {
-                this.openAdminModal();
-            }
-        };
-        checkAdminHash();
-        window.addEventListener('hashchange', checkAdminHash);
+        // Initialize Client-Side URL Routing
+        this.handleRouting(window.location.hash);
+
+        // Listen for browser navigation (Back, Forward, hash changes)
+        window.addEventListener('hashchange', () => this.handleRouting(window.location.hash));
+        window.addEventListener('popstate', () => this.handleRouting(window.location.hash));
+
+        // Secret Admin URL query trigger: ?admin
+        const hasAdminParam = new URLSearchParams(window.location.search).has('admin');
+        if (hasAdminParam) {
+            this.openAdminModal();
+        }
 
         // Secret Keyboard Shortcut: Ctrl + Shift + A or Alt + A
         document.addEventListener('keydown', (e) => {
@@ -458,7 +461,7 @@ const App = {
         // 7. Navigation Tabs (Departments / Papers / Bookmarks)
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                this.switchTab(btn.dataset.tab);
+                this.switchTab(btn.dataset.tab, true);
             });
         });
 
@@ -724,16 +727,73 @@ const App = {
         this.renderDeptSemesterPapers();
     },
 
-    switchTab(tab) {
+    handleRouting(rawHash) {
+        const hash = (rawHash || window.location.hash || '').trim();
+
+        // 1. Department route: #/department/CODE or #/department/CODE/SEM or #dept=CODE
+        const deptMatch = hash.match(/^#(?:dept=|department\/)([A-Za-z0-9_]+)(?:[\/?](?:sem=)?([0-9]+|ALL))?$/i);
+        if (deptMatch) {
+            const deptCode = deptMatch[1].toUpperCase();
+            const semParam = deptMatch[2] ? (deptMatch[2].toUpperCase() === 'ALL' ? 'ALL' : parseInt(deptMatch[2], 10)) : null;
+            if (this.deptState.activeDept && this.deptState.activeDept.code.toUpperCase() === deptCode && (semParam === null || this.deptState.selectedSemester === semParam) && !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+                return;
+            }
+            this.openDepartmentView(deptCode, semParam, false);
+            return;
+        }
+
+        // 2. Papers route: #/papers or #/all-papers or #papers
+        if (hash === '#/papers' || hash === '#/all-papers' || hash === '#papers') {
+            if (this.state.activeTab !== 'papers' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+                this.switchTab('papers', false);
+            }
+            return;
+        }
+
+        // 3. Bookmarks / Saved route: #/bookmarks or #/saved or #saved
+        if (hash === '#/bookmarks' || hash === '#/saved' || hash === '#saved') {
+            if (this.state.activeTab !== 'bookmarks' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+                this.switchTab('bookmarks', false);
+            }
+            return;
+        }
+
+        // 4. Admin route: #admin
+        if (hash.toLowerCase() === '#admin') {
+            this.openAdminModal();
+            return;
+        }
+
+        // 5. Default: Departments list (#/departments, #/, or empty)
+        if (this.state.activeTab !== 'departments' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+            this.showDepartmentsList(false);
+        }
+    },
+
+    showDepartmentsList(updateHash = true) {
+        this.switchTab('departments', updateHash);
+        if (this.lastDeptListScrollY !== undefined && this.lastDeptListScrollY > 0) {
+            window.scrollTo({ top: this.lastDeptListScrollY, behavior: 'instant' });
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    },
+
+    switchTab(tab, updateHash = true) {
         this.state.activeTab = tab;
+
+        // Ensure hero and main nav tabs are visible on top-level tabs
+        document.getElementById('heroSection')?.classList.remove('hidden');
+        document.getElementById('mainNavTabsContainer')?.classList.remove('hidden');
+        document.getElementById('deptDetailContainer')?.classList.add('hidden');
 
         // Update nav button active classes
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             const isActive = btn.dataset.tab === tab;
             if (isActive) {
-                btn.className = 'nav-tab-btn px-4 py-2 font-semibold text-sm rounded-lg bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0';
+                btn.className = 'nav-tab-btn px-4 py-2 font-semibold text-xs sm:text-sm rounded-xl bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0 min-h-[38px]';
             } else {
-                btn.className = 'nav-tab-btn px-4 py-2 font-medium text-sm rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0';
+                btn.className = 'nav-tab-btn px-4 py-2 font-medium text-xs sm:text-sm rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0 min-h-[38px]';
             }
         });
 
@@ -743,10 +803,33 @@ const App = {
         const filterControls = document.getElementById('filterControlsSection');
 
         if (tab === 'departments') {
+            document.title = 'Mahatma Gandhi University • FYUGP Question Papers and Schemes';
+            if (updateHash && window.location.hash !== '#/departments' && window.location.hash !== '') {
+                this.currentRoute = '#/departments';
+                window.location.hash = '#/departments';
+            }
             if (papersSection) papersSection.classList.add('hidden');
             if (departmentsSection) departmentsSection.classList.remove('hidden');
             if (filterControls) filterControls.classList.add('hidden');
-        } else if (tab === 'papers' || tab === 'bookmarks') {
+            document.getElementById('deptListContainer')?.classList.remove('hidden');
+            this.deptState.activeDept = null;
+        } else if (tab === 'papers') {
+            document.title = 'All Question Papers & Schemes - MGU FYUGP';
+            if (updateHash && window.location.hash !== '#/papers') {
+                this.currentRoute = '#/papers';
+                window.location.hash = '#/papers';
+            }
+            if (papersSection) papersSection.classList.remove('hidden');
+            if (departmentsSection) departmentsSection.classList.add('hidden');
+            if (filterControls) filterControls.classList.remove('hidden');
+            this.state.currentPage = 1;
+            this.applyFilters();
+        } else if (tab === 'bookmarks') {
+            document.title = 'Saved Question Papers - MGU FYUGP';
+            if (updateHash && window.location.hash !== '#/bookmarks' && window.location.hash !== '#/saved') {
+                this.currentRoute = '#/bookmarks';
+                window.location.hash = '#/bookmarks';
+            }
             if (papersSection) papersSection.classList.remove('hidden');
             if (departmentsSection) departmentsSection.classList.add('hidden');
             if (filterControls) filterControls.classList.remove('hidden');
@@ -1668,22 +1751,56 @@ const App = {
         }).join('');
     },
 
-    openDepartmentView(deptCode, targetSem = null) {
-        const dept = this.departments.find(d => d.code === deptCode);
-        if (!dept) return;
+    openDepartmentView(deptCode, targetSem = null, updateHash = true) {
+        const dept = this.departments.find(d => d.code.toUpperCase() === deptCode.toUpperCase());
+        if (!dept) {
+            this.showDepartmentsList(false);
+            return;
+        }
+
+        // Save scroll position of the departments list before opening
+        const deptList = document.getElementById('deptListContainer');
+        if (deptList && !deptList.classList.contains('hidden')) {
+            this.lastDeptListScrollY = window.scrollY;
+        }
+
+        const targetHash = targetSem ? `#/department/${dept.code}/${targetSem}` : `#/department/${dept.code}`;
+        if (updateHash && window.location.hash !== targetHash) {
+            this.currentRoute = targetHash;
+            window.location.hash = targetHash;
+        } else {
+            this.currentRoute = targetHash;
+        }
 
         this.deptState.activeDept = dept;
         this.deptState.searchQuery = '';
 
-        // Switch to detail view
+        // Update document title for this department page
+        document.title = `${dept.name} (${dept.code}) - MGU FYUGP Question Papers`;
+
+        // Switch to detail view and hide hero & homepage tabs so it acts as a dedicated page
+        document.getElementById('heroSection')?.classList.add('hidden');
+        document.getElementById('mainNavTabsContainer')?.classList.add('hidden');
         document.getElementById('deptListContainer')?.classList.add('hidden');
+        document.getElementById('papersSection')?.classList.add('hidden');
+        document.getElementById('filterControlsSection')?.classList.add('hidden');
+
+        document.getElementById('departmentsSection')?.classList.remove('hidden');
         const detailContainer = document.getElementById('deptDetailContainer');
         if (detailContainer) detailContainer.classList.remove('hidden');
 
         // Breadcrumbs
         const breadcrumbsEl = document.getElementById('deptBreadcrumbs');
         if (breadcrumbsEl) {
-            breadcrumbsEl.innerHTML = `Departments <i class="bi bi-chevron-right text-[10px] mx-1"></i> <span class="text-slate-800 dark:text-slate-100 font-bold">${dept.name} (${dept.code})</span>`;
+            breadcrumbsEl.innerHTML = `
+                <a href="#/departments" onclick="App.backToDepartmentsList(); return false;" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-medium">
+                    <i class="bi bi-grid text-xs"></i>
+                    <span>Departments</span>
+                </a>
+                <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
+                <span class="text-slate-900 dark:text-white font-bold truncate max-w-[160px] sm:max-w-none">${dept.name}</span>
+                <span class="font-mono text-[11px] font-bold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">${dept.code}</span>
+            `;
         }
 
         const majors = dept.majors || [];
@@ -1762,7 +1879,7 @@ const App = {
         this.renderDeptSemesterTabs();
         this.renderDeptSemesterPapers();
 
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'instant' });
     },
 
     renderDeptSemesterTabs() {
@@ -1821,6 +1938,12 @@ const App = {
         this.deptState.selectedSemester = sem;
         this.renderDeptSemesterTabs();
         this.renderDeptSemesterPapers();
+
+        if (this.deptState.activeDept) {
+            const newHash = `#/department/${this.deptState.activeDept.code}/${sem}`;
+            this.currentRoute = newHash;
+            history.replaceState(null, '', newHash);
+        }
     },
 
     renderDeptSemesterPapers() {
@@ -2103,9 +2226,11 @@ const App = {
     },
 
     backToDepartmentsList() {
-        document.getElementById('deptDetailContainer')?.classList.add('hidden');
-        document.getElementById('deptListContainer')?.classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (window.history.length > 1 && window.location.hash.startsWith('#/department/')) {
+            window.history.back();
+        } else {
+            this.showDepartmentsList(true);
+        }
     },
 
     // -------------------------------------------------------------

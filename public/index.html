@@ -105,7 +105,7 @@
     </header>
 
     <!-- Hero Header -->
-    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white py-6 sm:py-8 px-4 sm:px-6 lg:px-8 shadow-inner border-b border-indigo-950/60">
+    <section id="heroSection" class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white py-6 sm:py-8 px-4 sm:px-6 lg:px-8 shadow-inner border-b border-indigo-950/60 transition-all">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
                 <!-- Left: Badge + Heading + Subtitle -->
@@ -152,7 +152,7 @@
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
         <!-- Navigation Tabs: 1. Department Wise (Primary), 2. All Question Papers, 3. Saved -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none touch-scroll-x">
+        <div id="mainNavTabsContainer" class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 border-b border-slate-200 dark:border-slate-800 scrollbar-none touch-scroll-x transition-all">
             <button data-tab="departments" class="nav-tab-btn px-4 py-2 font-semibold text-xs sm:text-sm rounded-xl bg-blue-600 text-white shadow-sm flex items-center gap-2 transition shrink-0 min-h-[38px]">
                 <i class="bi bi-diagram-3"></i> Department Wise
             </button>
@@ -355,14 +355,15 @@
                 </div>
             </div>
 
-            <!-- View 2: Department Detail View (Selected Department -> Semester 1-8 Tabs -> Year-wise Papers) -->
+            <!-- View 2: Department Detail View (Dedicated Department Page) -->
             <div id="deptDetailContainer" class="hidden space-y-6">
-                <!-- Breadcrumbs & Back Bar -->
-                <div class="flex items-center justify-between gap-4">
-                    <button onclick="App.backToDepartmentsList()" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 text-blue-600 dark:text-blue-400 flex items-center gap-1.5 shadow-xs transition">
-                        <i class="bi bi-arrow-left"></i> All Departments
+                <!-- Top Navigation & Breadcrumbs Bar -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200 dark:border-slate-700/80">
+                    <button onclick="App.backToDepartmentsList()" class="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/80 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-xs transition group">
+                        <i class="bi bi-arrow-left transition-transform group-hover:-translate-x-1 text-blue-600 dark:text-blue-400 font-bold"></i>
+                        <span>Back to Departments</span>
                     </button>
-                    <div id="deptBreadcrumbs" class="text-xs text-slate-500 dark:text-slate-400 font-medium"></div>
+                    <div id="deptBreadcrumbs" class="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium"></div>
                 </div>
 
                 <!-- Department Header Banner -->

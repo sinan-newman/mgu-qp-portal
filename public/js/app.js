@@ -3096,8 +3096,8 @@ const App = {
         if (!matchedCourseCode) {
             const patterns = [
                 /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*([A-Z0-9_\-]{5,18})/i,
-                /\b(MG[1-8][A-Z]{2,5}[0-9]{1,4})\b/i,
-                /\b([A-Z]{2,4}[1-8][A-Z]{2,4}[0-9]{1,4})\b/i
+                /\b(MG[1-8][A-Z]{2,8}[0-9]{1,4})\b/i,
+                /\b([A-Z]{2,6}[1-8][A-Z]{2,8}[0-9]{1,4})\b/i
             ];
 
             for (const pat of patterns) {
@@ -3171,12 +3171,40 @@ const App = {
         let minorName = matchedPaper ? (matchedPaper.minor_name || '') : '';
         let minorCode = matchedPaper ? (matchedPaper.dept_code || '') : '';
 
+        // Extract Title from text if not in portal catalog
+        if (!detectedTitle && matchedCourseCode && rawText) {
+            const cleanText = rawText.replace(/\s+/g, ' ');
+            const escapedCode = matchedCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+
+            // Pattern 1: CODE [-:–] Title (until Duration, Max Marks, Part, etc.)
+            const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|$))', 'i'));
+            if (p1 && p1[1]) {
+                detectedTitle = p1[1].trim();
+            } else {
+                // Pattern 2: Title [-:–] CODE
+                const p2 = cleanText.match(new RegExp('(?:ONWARDS|EXAMINATION|\\))\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                if (p2 && p2[1]) {
+                    detectedTitle = p2[1].trim();
+                }
+            }
+            if (detectedTitle) {
+                detectedTitle = detectedTitle.replace(/\s*MODEL\s*QUESTION\s*PAPER.*$/i, '').trim();
+            }
+        }
+
         if (!detectedDeptCode && matchedCourseCode) {
             for (const dept of this.departments) {
                 if (matchedCourseCode.includes(dept.code)) {
                     detectedDeptCode = dept.code;
                     break;
                 }
+            }
+        }
+        if (!detectedDeptCode && matchedCourseCode) {
+            const m = matchedCourseCode.match(/(?:MG[1-8][A-Z]{3}|[A-Z]{3,4}[1-8])([A-Z]{3})/);
+            if (m && m[1]) {
+                const candDept = this.departments.find(d => d.code === m[1]);
+                if (candDept) detectedDeptCode = candDept.code;
             }
         }
 
@@ -3309,40 +3337,38 @@ const App = {
         const startPages = [0]; // 0-indexed; Page 1 always starts Paper 1
 
         for (let i = 1; i < numPages; i++) {
-            const text = (pagesText[i] || '').toUpperCase();
+            const raw = pagesText[i] || '';
+            const text = raw.replace(/\s+/g, ' ').toUpperCase();
 
-            // 1. University Header
-            const hasUniv = /MAHATMA\s*GANDHI\s*UNIVERSITY/i.test(text) || 
-                            /MGU-UGP/i.test(text) || 
-                            /UGP\s*\(HONOURS\)/i.test(text) || 
-                            /FYUGP/i.test(text) ||
-                            /FOUR\s*YEAR\s*UNDERGRADUATE/i.test(text);
+            // 1. University Header / Degree
+            const hasUniv = /(?:MAHA\s*TMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|HONOURS|SEMESTER\s*EXAMINATION|DEGREE\s*EXAMINATION|UNDERGRADUATE|FYUGP)/i.test(text);
 
             // 2. Model Question Paper / Sample Paper Header
-            const hasModel = /MODEL\s*QUESTION\s*PAPER/i.test(text) || 
-                             /SAMPLE\s*QUESTION\s*PAPER/i.test(text) || 
-                             /MODEL\s*QP/i.test(text) ||
-                             /MODEL\s*EXAMINATION/i.test(text);
+            const hasModel = /MODEL\s*(?:QUESTION|QP|EXAMINATION)|SAMPLE\s*QUESTION/i.test(text);
 
-            // 3. Course Code Pattern on this page
-            const hasCode = /(?:MG[1-8][A-Z]{2,5}[0-9]{1,4}|[A-Z]{2,4}[1-8][A-Z]{2,4}[0-9]{1,4})/i.test(text) ||
-                            /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*[A-Z0-9]/i.test(text);
+            // 3. Course Code Pattern on this page (matches MG1CCRBBA101, MG1MDEBCA100, etc.)
+            const hasCode = /\b(?:MG[1-8][A-Z]{2,8}[0-9]{1,4}|[A-Z]{2,6}[1-8][A-Z]{2,8}[0-9]{1,4})\b/i.test(text) ||
+                            /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*[A-Z0-9]/i.test(text) ||
+                            (this.papers && this.papers.some(p => p.course_code && text.includes(p.course_code.toUpperCase())));
 
             // 4. Duration or Max Marks
             const hasMarksTime = /(?:DURATION|TIME)\s*[:\-–]?\s*[0-9]/i.test(text) ||
-                                 /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\s*[:\-–]?\s*[0-9]/i.test(text);
+                                 /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\s*[:\-–]?\s*[0-9]/i.test(text) ||
+                                 /\b(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\b/i.test(text);
 
-            // 5. Part / Section A indicator
+            // 5. Semester / Admission session indicator
+            const hasExam = /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER|2024\s*ADMI/i.test(text);
+
+            // 6. Part / Section A indicator
             const hasPartA = /PART\s*[-–]?\s*A\b/i.test(text) || /SECTION\s*[-–]?\s*A\b/i.test(text);
 
             // A new paper starts on page i if:
-            const isNewStart = ((hasUniv || hasModel) && (hasCode || hasMarksTime)) ||
-                               (hasCode && hasMarksTime) ||
+            const isNewStart = ((hasUniv || hasModel) && (hasCode || hasMarksTime || hasExam)) ||
+                               (hasCode && (hasMarksTime || hasExam || hasPartA)) ||
                                (hasModel && (hasUniv || hasPartA));
 
             if (isNewStart) {
                 const lastStart = startPages[startPages.length - 1];
-                // Prevent duplicate starts on same or immediately adjacent page unless distinct code
                 if (i - lastStart >= 1) {
                     startPages.push(i);
                 }
@@ -3362,6 +3388,155 @@ const App = {
         }
 
         return segments;
+    },
+
+    async buildSplitPapersFromSegments(segments) {
+        if (!this.adminPdfSourceDoc || !segments || segments.length === 0) return;
+
+        const spinner = document.getElementById('adminScanSpinner');
+        const spinnerText = document.getElementById('adminScanSpinnerText');
+        if (spinner) spinner.classList.remove('hidden');
+
+        this.adminSplitPapers = [];
+
+        for (let s = 0; s < segments.length; s++) {
+            const seg = segments[s];
+            if (spinnerText) spinnerText.textContent = `Splitting paper ${s + 1} of ${segments.length} (Pages ${seg.startPage}–${seg.endPage})...`;
+
+            // Slice pages into independent PDF
+            const sliced = await this.slicePdfPages(this.adminPdfSourceDoc, seg.startPage, seg.endPage);
+
+            // Combine text of this segment's pages
+            const segText = (this.adminPagesText || []).slice(seg.startPage - 1, seg.endPage).join(' ');
+
+            // Detect course info
+            const detected = this.detectCourseInfo(segText, this.selectedSmartPdfFile ? this.selectedSmartPdfFile.name : '');
+
+            // Duplicate check
+            const isModel = this.currentPaperCategory === 'MODEL';
+            const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+
+            this.adminSplitPapers.push({
+                idx: s,
+                startPage: seg.startPage,
+                endPage: seg.endPage,
+                pageCount: seg.pageCount,
+                courseCode: detected.courseCode,
+                title: detected.title,
+                deptCode: detected.deptCode,
+                semester: detected.semester,
+                courseType: detected.courseType,
+                isMinor: detected.isMinor,
+                minorName: detected.minorName,
+                minorCode: detected.minorCode,
+                qpCode: detected.qpCode,
+                examName: detected.examName,
+                confidence: detected.confidence,
+                isDuplicate: dupResult.isDuplicate,
+                dupMessage: dupResult.message,
+                existingPaper: dupResult.paper,
+                blob: sliced ? sliced.blob : null,
+                blobUrl: sliced ? sliced.blobUrl : this.masterPdfUrl,
+                base64: sliced ? sliced.base64 : '',
+                published: false
+            });
+        }
+
+        if (spinner) spinner.classList.add('hidden');
+
+        // Hide single form, show multi split view
+        document.getElementById('adminUploadForm')?.classList.add('hidden');
+        document.getElementById('adminScanResultContainer')?.classList.add('hidden');
+        document.getElementById('adminMultiSplitContainer')?.classList.remove('hidden');
+
+        this.renderSplitCardsUI();
+    },
+
+    parseCustomPageRanges(rangeStr, maxPages) {
+        if (!rangeStr || !rangeStr.trim()) return null;
+        const parts = rangeStr.split(/[,;\n]+/).map(s => s.trim()).filter(Boolean);
+        if (parts.length === 0) return null;
+
+        const segments = [];
+        for (const part of parts) {
+            if (part.includes('-')) {
+                const [sStr, eStr] = part.split('-');
+                const start = parseInt(sStr.trim(), 10);
+                const end = parseInt(eStr.trim(), 10);
+                if (!isNaN(start) && !isNaN(end) && start >= 1 && end >= start && start <= maxPages) {
+                    const boundedEnd = Math.min(end, maxPages);
+                    segments.push({
+                        startPage: start,
+                        endPage: boundedEnd,
+                        pageCount: boundedEnd - start + 1
+                    });
+                }
+            } else {
+                const page = parseInt(part.trim(), 10);
+                if (!isNaN(page) && page >= 1 && page <= maxPages) {
+                    segments.push({
+                        startPage: page,
+                        endPage: page,
+                        pageCount: 1
+                    });
+                }
+            }
+        }
+        return segments.length > 0 ? segments : null;
+    },
+
+    applySplitPreset(pageSize) {
+        if (!this.adminNumPages || !this.adminPdfSourceDoc) {
+            alert('Please upload a PDF document first.');
+            return;
+        }
+        const maxPages = this.adminNumPages;
+        const segments = [];
+        for (let p = 1; p <= maxPages; p += pageSize) {
+            const end = Math.min(p + pageSize - 1, maxPages);
+            segments.push({
+                startPage: p,
+                endPage: end,
+                pageCount: end - p + 1
+            });
+        }
+        const rangeInput = document.getElementById('adminCustomSplitInput');
+        if (rangeInput) {
+            rangeInput.value = segments.map(s => s.startPage === s.endPage ? `${s.startPage}` : `${s.startPage}-${s.endPage}`).join(', ');
+        }
+        this.buildSplitPapersFromSegments(segments);
+    },
+
+    applyCustomSplitInput() {
+        if (!this.adminNumPages || !this.adminPdfSourceDoc) {
+            alert('Please upload a PDF document first.');
+            return;
+        }
+        const input = document.getElementById('adminCustomSplitInput');
+        const val = input ? input.value.trim() : '';
+        if (!val) {
+            alert('Please enter page ranges, e.g. 1-2, 3-4, 5-7 or 1, 2-3, 4-5');
+            return;
+        }
+        const segments = this.parseCustomPageRanges(val, this.adminNumPages);
+        if (!segments) {
+            alert(`Invalid page ranges. Please enter valid pages between 1 and ${this.adminNumPages} (e.g. 1-2, 3-4)`);
+            return;
+        }
+        this.buildSplitPapersFromSegments(segments);
+    },
+
+    reRunAutoBoundaryDetection() {
+        if (!this.adminNumPages || !this.adminPdfSourceDoc || !this.adminPagesText) {
+            alert('Please upload a PDF document first.');
+            return;
+        }
+        const segments = this.detectPaperBoundaries(this.adminPagesText, this.adminNumPages);
+        const rangeInput = document.getElementById('adminCustomSplitInput');
+        if (rangeInput) {
+            rangeInput.value = segments.map(s => s.startPage === s.endPage ? `${s.startPage}` : `${s.startPage}-${s.endPage}`).join(', ');
+        }
+        this.buildSplitPapersFromSegments(segments);
     },
 
     handleSmartPdfFileSelected(e) {
@@ -3417,9 +3592,24 @@ const App = {
                 pagesText.push(pageText);
             }
 
+            // Store references on instance for instantaneous re-splitting / custom presets
+            this.adminPdfSourceDoc = srcDoc;
+            this.adminPagesText = pagesText;
+            this.adminNumPages = numPages;
+
             // Detect boundaries
             if (spinnerText) spinnerText.textContent = 'Analyzing course boundaries and checking catalog...';
             const segments = this.detectPaperBoundaries(pagesText, numPages);
+
+            // Populate total pages badge
+            const totalPagesBadge = document.getElementById('adminTotalPagesCountBadge');
+            if (totalPagesBadge) totalPagesBadge.textContent = `${numPages} pages`;
+
+            // Pre-fill custom split input with detected ranges
+            const customSplitInput = document.getElementById('adminCustomSplitInput');
+            if (customSplitInput) {
+                customSplitInput.value = segments.map(s => s.startPage === s.endPage ? `${s.startPage}` : `${s.startPage}-${s.endPage}`).join(', ');
+            }
 
             // Check if overall document is Model Paper
             const combinedAllText = pagesText.join(' ');
@@ -3430,61 +3620,12 @@ const App = {
                 if (radioModel) radioModel.checked = true;
             }
 
-            if (segments.length > 1 && srcDoc) {
-                // MULTI-PAPER SPLIT MODE
-                this.adminSplitPapers = [];
-
-                for (let s = 0; s < segments.length; s++) {
-                    const seg = segments[s];
-                    if (spinnerText) spinnerText.textContent = `Splitting paper ${s + 1} of ${segments.length} (Pages ${seg.startPage}–${seg.endPage})...`;
-
-                    // Slice pages into independent PDF
-                    const sliced = await this.slicePdfPages(srcDoc, seg.startPage, seg.endPage);
-
-                    // Combine text of this segment's pages
-                    const segText = pagesText.slice(seg.startPage - 1, seg.endPage).join(' ');
-
-                    // Detect course info
-                    const detected = this.detectCourseInfo(segText, file.name);
-
-                    // Duplicate check
-                    const isModel = this.currentPaperCategory === 'MODEL';
-                    const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
-
-                    this.adminSplitPapers.push({
-                        idx: s,
-                        startPage: seg.startPage,
-                        endPage: seg.endPage,
-                        pageCount: seg.pageCount,
-                        courseCode: detected.courseCode,
-                        title: detected.title,
-                        deptCode: detected.deptCode,
-                        semester: detected.semester,
-                        courseType: detected.courseType,
-                        isMinor: detected.isMinor,
-                        minorName: detected.minorName,
-                        minorCode: detected.minorCode,
-                        qpCode: detected.qpCode,
-                        examName: detected.examName,
-                        confidence: detected.confidence,
-                        isDuplicate: dupResult.isDuplicate,
-                        dupMessage: dupResult.message,
-                        existingPaper: dupResult.paper,
-                        blob: sliced ? sliced.blob : null,
-                        blobUrl: sliced ? sliced.blobUrl : this.masterPdfUrl,
-                        base64: sliced ? sliced.base64 : '',
-                        published: false
-                    });
-                }
-
-                // Hide single form, show multi split view
-                document.getElementById('adminUploadForm')?.classList.add('hidden');
-                document.getElementById('adminScanResultContainer')?.classList.add('hidden');
-                document.getElementById('adminMultiSplitContainer')?.classList.remove('hidden');
-
-                this.renderSplitCardsUI();
+            if (numPages > 1 && srcDoc) {
+                // MULTI-PAGE DOCUMENT: Always use multi-split mode so admin sees all individual papers,
+                // previews each split PDF, and can adjust split boundaries with 1 click
+                await this.buildSplitPapersFromSegments(segments);
             } else {
-                // SINGLE PAPER MODE
+                // SINGLE PAPER MODE (numPages === 1)
                 this.adminSplitPapers = [];
                 document.getElementById('adminMultiSplitContainer')?.classList.add('hidden');
                 document.getElementById('adminUploadForm')?.classList.remove('hidden');
@@ -4171,6 +4312,9 @@ const App = {
     resetSmartUploadForm() {
         this.selectedSmartPdfFile = null;
         this.adminSplitPapers = [];
+        this.adminPdfSourceDoc = null;
+        this.adminPagesText = null;
+        this.adminNumPages = 0;
         if (this.masterPdfUrl) {
             URL.revokeObjectURL(this.masterPdfUrl);
             this.masterPdfUrl = null;
@@ -4191,6 +4335,10 @@ const App = {
         if (multiContainer) multiContainer.classList.add('hidden');
         const splitCards = document.getElementById('adminSplitCardsContainer');
         if (splitCards) splitCards.innerHTML = '';
+        const customSplitInput = document.getElementById('adminCustomSplitInput');
+        if (customSplitInput) customSplitInput.value = '';
+        const totalPagesBadge = document.getElementById('adminTotalPagesCountBadge');
+        if (totalPagesBadge) totalPagesBadge.textContent = '--';
 
         // Form reset
         const uploadForm = document.getElementById('adminUploadForm');

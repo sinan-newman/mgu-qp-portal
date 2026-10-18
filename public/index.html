@@ -694,6 +694,59 @@
                             </div>
                         </div>
 
+                        <!-- Split Adjustment / Preset Toolbar -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xs space-y-3">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-700/80 pb-2.5">
+                                <div class="flex items-center gap-2 text-xs font-bold text-slate-800 dark:text-slate-200">
+                                    <i class="bi bi-scissors text-indigo-600 dark:text-indigo-400"></i>
+                                    <span>Adjust Split Boundaries / Presets</span>
+                                    <span class="text-[11px] font-normal text-slate-500 dark:text-slate-400">(Model papers are typically 1–4 pages)</span>
+                                </div>
+                                <div class="text-[11px] text-slate-500 dark:text-slate-400">
+                                    Total Pages: <span id="adminTotalPagesCountBadge" class="font-bold font-mono text-slate-800 dark:text-slate-200">--</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-3">
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-400 mr-1">Quick Split:</span>
+                                    <button type="button" onclick="App.applySplitPreset(1)" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-slate-700 dark:text-slate-200 hover:text-indigo-600 border border-slate-200 dark:border-slate-600 transition">
+                                        Every 1 Page
+                                    </button>
+                                    <button type="button" onclick="App.applySplitPreset(2)" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-slate-700 dark:text-slate-200 hover:text-indigo-600 border border-slate-200 dark:border-slate-600 transition">
+                                        Every 2 Pages
+                                    </button>
+                                    <button type="button" onclick="App.applySplitPreset(3)" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-slate-700 dark:text-slate-200 hover:text-indigo-600 border border-slate-200 dark:border-slate-600 transition">
+                                        Every 3 Pages
+                                    </button>
+                                    <button type="button" onclick="App.applySplitPreset(4)" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-slate-700 dark:text-slate-200 hover:text-indigo-600 border border-slate-200 dark:border-slate-600 transition">
+                                        Every 4 Pages
+                                    </button>
+                                    <button type="button" onclick="App.reRunAutoBoundaryDetection()" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 transition flex items-center gap-1">
+                                        <i class="bi bi-magic"></i> Auto-Detect
+                                    </button>
+                                </div>
+
+                                <div class="h-4 w-px bg-slate-200 dark:bg-slate-700 hidden md:block"></div>
+
+                                <div class="flex items-center gap-2 flex-1 min-w-[260px]">
+                                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-400 shrink-0">Custom Ranges:</span>
+                                    <div class="relative flex-1">
+                                        <input 
+                                            type="text" 
+                                            id="adminCustomSplitInput" 
+                                            placeholder="e.g. 1-2, 3-4, 5-7 or 1, 2-3, 4-5" 
+                                            onkeydown="if(event.key==='Enter'){event.preventDefault();App.applyCustomSplitInput();}"
+                                            class="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono text-xs"
+                                        >
+                                    </div>
+                                    <button type="button" onclick="App.applyCustomSplitInput()" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs transition shrink-0 flex items-center gap-1">
+                                        <i class="bi bi-check-lg"></i> Apply
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Split Cards Container -->
                         <div id="adminSplitCardsContainer" class="space-y-4">
                             <!-- Populated dynamically by app.js -->

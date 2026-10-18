@@ -168,197 +168,148 @@
         </div>
 
         <!-- Filter & Search Controls Bar (Active when All Question Papers tab is selected) -->
-        <section id="filterControlsSection" class="hidden filter-card-awwwards rounded-3xl p-5 sm:p-7 mb-8 transition-all duration-300 space-y-5">
+        <section id="filterControlsSection" class="hidden bg-white dark:bg-slate-800/90 rounded-2xl border border-slate-200/90 dark:border-slate-700/80 p-4 sm:p-5 mb-8 shadow-xs space-y-4 transition-all">
             
-            <!-- Top glowing accent bar -->
-            <div class="filter-gradient-accent"></div>
-
-            <!-- Header bar with Title, Live Badge, and Keyboard shortcut -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-1">
-                <div class="flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center text-sm shadow-xs">
-                        <i class="bi bi-sliders2-vertical"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-800 dark:text-slate-100 flex items-center gap-2">
-                            Filter & Discover Papers
-                        </h3>
-                    </div>
+            <!-- Row 1: Minimalist Search Bar with Integrated Result Pill & Clear -->
+            <div class="relative flex items-center">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
+                    <i id="searchIcon" class="bi bi-search text-sm"></i>
                 </div>
-
-                <div class="flex items-center gap-2.5">
-                    <!-- Live Results Pill -->
-                    <div id="filterResultsPill" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800/50 shadow-2xs">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search courses, codes (e.g. MG3DSEMAT202), or QP numbers..." 
+                    class="w-full pl-10 pr-28 sm:pr-36 py-2.5 sm:py-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-sm font-medium transition"
+                >
+                <div class="absolute right-3 flex items-center gap-2">
+                    <button id="clearSearchBtn" class="hidden text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1 rounded transition" title="Clear Search">
+                        <i class="bi bi-x-circle-fill text-sm"></i>
+                    </button>
+                    <!-- Minimalist Live Results Pill -->
+                    <div id="filterResultsPill" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                         <span id="filterActiveCount">2,127 Papers</span>
                     </div>
-
-                    <span class="text-xs text-slate-400 hidden md:inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/60 font-mono text-[11px]">
-                        Press <kbd class="px-1.5 py-0.5 bg-white dark:bg-slate-900 rounded font-bold text-blue-600 dark:text-blue-400 border border-slate-200 dark:border-slate-700 shadow-2xs">/</kbd> to search
-                    </span>
+                    <kbd class="hidden sm:inline-flex text-[10px] font-mono px-1.5 py-0.5 rounded bg-white dark:bg-slate-800 text-slate-400 border border-slate-200 dark:border-slate-700 shadow-2xs">/</kbd>
                 </div>
             </div>
 
-            <!-- Row 1: Spotlight Command Search Bar -->
-            <div class="space-y-2">
-                <div class="command-search-box relative flex items-center rounded-2xl">
-                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                        <div id="searchIconBox" class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center text-sm shadow-xs shadow-blue-500/25">
-                            <i id="searchIcon" class="bi bi-search"></i>
-                        </div>
-                    </div>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="Search by course name (e.g. Calculus, Data Structures), course code (e.g. MG3DSEMAT202), or QP code (e.g. 25900513)..." 
-                        class="w-full pl-14 pr-24 py-3.5 sm:py-4 rounded-2xl bg-slate-50/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 border border-slate-200/90 dark:border-slate-700/80 focus:outline-none focus:ring-4 focus:ring-blue-500/15 focus:border-blue-500 focus:bg-white dark:focus:bg-slate-800 text-sm sm:text-base font-medium shadow-inner transition-all duration-300"
-                    >
-                    <div class="absolute right-3 flex items-center gap-1.5">
-                        <button id="clearSearchBtn" class="hidden text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-700/60 transition" title="Clear Search">
-                            <i class="bi bi-x-circle-fill text-base"></i>
+            <!-- Row 2: Clean Filter Strip (Semester & Category Controls) -->
+            <div class="space-y-3 pt-1">
+                <!-- Semester Filter -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none touch-scroll-x text-xs">
+                    <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider shrink-0 mr-1">Semester:</span>
+                    <div class="flex items-center gap-1 shrink-0 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200/70 dark:border-slate-700/60">
+                        <button data-sem="ALL" class="sem-filter-btn px-3 py-1 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs transition shrink-0">
+                            All
+                        </button>
+                        <button data-sem="1" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 1
+                        </button>
+                        <button data-sem="2" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 2
+                        </button>
+                        <button data-sem="3" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 3
+                        </button>
+                        <button data-sem="4" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 4
+                        </button>
+                        <button data-sem="5" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 5
+                        </button>
+                        <button data-sem="6" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 6
+                        </button>
+                        <button data-sem="7" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 7
+                        </button>
+                        <button data-sem="8" class="sem-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition shrink-0">
+                            Sem 8
                         </button>
                     </div>
                 </div>
 
-                <!-- Quick search suggestions chips -->
-                <div class="flex flex-wrap items-center gap-1.5 px-1 text-xs text-slate-400">
-                    <span class="font-semibold uppercase text-[10px] tracking-wider text-slate-400 mr-1">Quick:</span>
-                    <button type="button" onclick="App.setQuickSearch('Calculus')" class="hover:text-blue-600 dark:hover:text-blue-400 font-medium px-2.5 py-0.5 rounded-lg bg-slate-100/80 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 border border-slate-200/50 dark:border-slate-700/50 transition">Calculus</button>
-                    <button type="button" onclick="App.setQuickSearch('Data Structures')" class="hover:text-blue-600 dark:hover:text-blue-400 font-medium px-2.5 py-0.5 rounded-lg bg-slate-100/80 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 border border-slate-200/50 dark:border-slate-700/50 transition">Data Structures</button>
-                    <button type="button" onclick="App.setQuickSearch('Chemistry')" class="hover:text-blue-600 dark:hover:text-blue-400 font-medium px-2.5 py-0.5 rounded-lg bg-slate-100/80 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 border border-slate-200/50 dark:border-slate-700/50 transition">Chemistry</button>
-                    <button type="button" onclick="App.setQuickSearch('Accounting')" class="hover:text-blue-600 dark:hover:text-blue-400 font-medium px-2.5 py-0.5 rounded-lg bg-slate-100/80 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 border border-slate-200/50 dark:border-slate-700/50 transition">Accounting</button>
-                    <button type="button" onclick="App.setQuickSearch('Economics')" class="hover:text-blue-600 dark:hover:text-blue-400 font-medium px-2.5 py-0.5 rounded-lg bg-slate-100/80 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 border border-slate-200/50 dark:border-slate-700/50 transition">Economics</button>
-                </div>
-            </div>
-
-            <!-- Row 2: Segmented Semester Rail (Linear style) -->
-            <div class="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-                        <i class="bi bi-calendar3 text-blue-600 dark:text-blue-400"></i> Semester Selection:
-                    </span>
-                </div>
-                <div class="segmented-rail bg-slate-100/90 dark:bg-slate-800/90 p-1.5 rounded-2xl border border-slate-200/70 dark:border-slate-700/60 shadow-inner flex flex-wrap sm:flex-nowrap items-center gap-1 overflow-x-auto touch-scroll-x">
-                    <button data-sem="ALL" class="sem-filter-btn px-4 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/25 transition-all duration-200 shrink-0 transform scale-[1.02] min-h-[36px] flex items-center justify-center">
-                        All Semesters
+                <!-- Course Category Filter -->
+                <div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none touch-scroll-x text-xs">
+                    <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider shrink-0 mr-1.5">Type:</span>
+                    <button data-ctype="ALL" class="ctype-filter-btn px-3 py-1 text-xs font-semibold rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs transition shrink-0">
+                        All
                     </button>
-                    <button data-sem="1" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 1
+                    <button data-ctype="DSC" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Discipline Specific Core">
+                        DSC Core
                     </button>
-                    <button data-sem="2" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 2
+                    <button data-ctype="DSE" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Discipline Specific Elective">
+                        DSE Elective
                     </button>
-                    <button data-sem="3" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 3
+                    <button data-ctype="SEC" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Skill Enhancement Course">
+                        SEC Skill
                     </button>
-                    <button data-sem="4" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 4
+                    <button data-ctype="VAC" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Value Added Course">
+                        VAC
                     </button>
-                    <button data-sem="5" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 5
+                    <button data-ctype="MDC" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Multi-Disciplinary Course">
+                        MDC
                     </button>
-                    <button data-sem="6" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 6
+                    <button data-ctype="AEC" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Ability Enhancement Course">
+                        AEC
                     </button>
-                    <button data-sem="7" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 7
+                    <button data-ctype="CCR" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Core Course (BBA/BCA)">
+                        CCR
                     </button>
-                    <button data-sem="8" class="sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0">
-                        Sem 8
+                    <button data-ctype="MDE" class="ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0" title="Multidisciplinary Elective (BBA/BCA)">
+                        MDE
+                    </button>
+                    <button data-ctype="MIN" class="ctype-filter-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-200 dark:border-pink-800/60 hover:bg-pink-100 transition shrink-0" title="Minor Courses only">
+                        Minor Only
                     </button>
                 </div>
             </div>
 
-            <!-- Row 3: Curated Course Type Pills -->
-            <div class="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-                        <i class="bi bi-tags text-indigo-600 dark:text-indigo-400"></i> Course Category / Type:
-                    </span>
-                </div>
-                <div class="flex flex-wrap items-center gap-2">
-                    <button data-ctype="ALL" class="ctype-filter-btn px-3.5 py-1.5 text-xs font-bold rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-md shadow-slate-900/20 dark:shadow-white/20 transition-all duration-200 shrink-0 transform scale-[1.02]">
-                        All Types
-                    </button>
-                    <button data-ctype="DSC" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 hover:text-blue-700 dark:hover:text-blue-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Discipline Specific Core">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-blue-500 mr-1.5"></span>DSC Core
-                    </button>
-                    <button data-ctype="DSE" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-amber-50 dark:hover:bg-amber-950/40 hover:text-amber-700 dark:hover:text-amber-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Discipline Specific Elective">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500 mr-1.5"></span>DSE Elective
-                    </button>
-                    <button data-ctype="SEC" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 dark:hover:text-emerald-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Skill Enhancement Course">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>SEC Skill
-                    </button>
-                    <button data-ctype="VAC" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-purple-50 dark:hover:bg-purple-950/40 hover:text-purple-700 dark:hover:text-purple-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Value Added Course">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-purple-500 mr-1.5"></span>VAC
-                    </button>
-                    <button data-ctype="MDC" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-orange-50 dark:hover:bg-orange-950/40 hover:text-orange-700 dark:hover:text-orange-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Multi-Disciplinary Course">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-orange-500 mr-1.5"></span>MDC
-                    </button>
-                    <button data-ctype="AEC" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-700 dark:hover:text-indigo-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Ability Enhancement Course">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-indigo-500 mr-1.5"></span>AEC
-                    </button>
-                    <button data-ctype="CCR" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-cyan-50 dark:hover:bg-cyan-950/40 hover:text-cyan-700 dark:hover:text-cyan-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Core Course (BBA/BCA)">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500 mr-1.5"></span>CCR Core (BBA/BCA)
-                    </button>
-                    <button data-ctype="MDE" class="ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-teal-50 dark:hover:bg-teal-950/40 hover:text-teal-700 dark:hover:text-teal-300 border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0" title="Multidisciplinary Elective (BBA/BCA)">
-                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-teal-500 mr-1.5"></span>MDE Elective (BBA/BCA)
-                    </button>
-                    <button data-ctype="MIN" class="ctype-filter-btn px-3.5 py-1.5 text-xs font-bold rounded-xl bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-200 dark:border-pink-800/60 hover:bg-pink-100 dark:hover:bg-pink-900/50 transition-all duration-200 shrink-0 shadow-xs" title="Minor Courses only (BLW, BST, LIH, TRS, PTP, etc.)">
-                        <i class="bi bi-star-fill text-pink-500 mr-1 text-[10px]"></i> Minor Only
-                    </button>
-                </div>
-            </div>
-
-            <!-- Row 4: Department Dropdown, View Toggle, Direct PDF & Reset Controls -->
-            <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                
-                <!-- Department Selector with Icon Box -->
-                <div class="flex items-center gap-2.5 flex-1 min-w-[260px] sm:min-w-[320px]">
-                    <div class="relative flex-1 max-w-sm">
-                        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-blue-600 dark:text-blue-400">
-                            <i class="bi bi-mortarboard-fill text-xs"></i>
-                        </div>
-                        <select id="deptSelect" class="w-full bg-slate-50/90 dark:bg-slate-800/90 border border-slate-200/90 dark:border-slate-700 text-slate-800 dark:text-slate-100 text-xs font-semibold rounded-xl pl-9 pr-8 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs">
-                            <option value="ALL">All Departments (Loading...)</option>
-                        </select>
-                    </div>
-
-                    <!-- Grid vs Table view toggles -->
-                    <div class="flex items-center border border-slate-200/80 dark:border-slate-700 rounded-xl p-0.5 bg-slate-100/90 dark:bg-slate-800 text-xs shadow-inner shrink-0">
-                        <button id="gridViewBtn" title="Grid View" class="p-1.5 rounded-lg bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-xs transition">
-                            <i class="bi bi-grid-fill"></i>
-                        </button>
-                        <button id="tableViewBtn" title="Table View" class="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition">
-                            <i class="bi bi-list-ul"></i>
-                        </button>
-                    </div>
+            <!-- Row 3: Department Select, Direct PDF Toggle, View Mode & Reset -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs">
+                <!-- Department Selector -->
+                <div class="flex items-center gap-2 flex-1 min-w-[220px] max-w-sm">
+                    <select id="deptSelect" class="w-full bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 text-xs font-medium rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
+                        <option value="ALL">All Departments (Loading...)</option>
+                    </select>
                 </div>
 
-                <!-- Right Side: Checkbox & Reset -->
-                <div class="flex items-center gap-3.5 text-xs shrink-0">
-                    <!-- Modern Checkbox -->
-                    <label class="flex items-center gap-2 cursor-pointer select-none group">
-                        <input type="checkbox" id="filesOnlyCheckbox" checked class="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 cursor-pointer">
-                        <span class="font-semibold text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
-                            Direct PDF files only
-                        </span>
+                <!-- Right Controls: Files Checkbox, Grid/Table, Reset -->
+                <div class="flex items-center gap-3 shrink-0">
+                    <!-- Files Only Checkbox -->
+                    <label class="flex items-center gap-1.5 cursor-pointer select-none text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition">
+                        <input type="checkbox" id="filesOnlyCheckbox" checked class="w-3.5 h-3.5 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 cursor-pointer">
+                        <span class="text-xs font-medium">With Files Only</span>
                     </label>
 
+                    <div class="h-4 w-px bg-slate-200 dark:bg-slate-700"></div>
+
+                    <!-- View Switcher -->
+                    <div class="flex items-center border border-slate-200 dark:border-slate-700 rounded-lg p-0.5 bg-slate-50 dark:bg-slate-900/60">
+                        <button id="gridViewBtn" title="Grid View" class="p-1 rounded text-blue-600 dark:text-blue-400 bg-white dark:bg-slate-800 shadow-2xs transition">
+                            <i class="bi bi-grid-fill text-xs"></i>
+                        </button>
+                        <button id="tableViewBtn" title="Table View" class="p-1 rounded text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">
+                            <i class="bi bi-list-ul text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="h-4 w-px bg-slate-200 dark:bg-slate-700"></div>
+
                     <!-- Reset Filters -->
-                    <button id="resetFiltersBtn" onclick="App.resetFilters()" class="group inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition border border-transparent hover:border-rose-200 dark:hover:border-rose-900/50 min-h-[36px]">
-                        <i class="bi bi-arrow-counterclockwise group-hover:-rotate-90 transition-transform duration-300"></i>
-                        <span>Reset Filters</span>
+                    <button id="resetFiltersBtn" onclick="App.resetFilters()" class="text-xs text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition font-medium flex items-center gap-1">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                        <span>Reset</span>
                     </button>
                 </div>
-
             </div>
 
-            <!-- Active Filter Tags Tray (Dynamically rendered by App.renderActiveFilterChips()) -->
-            <div id="activeFiltersTray" class="hidden flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-xs">
-                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Active Filters:</span>
+            <!-- Active Filter Chips Tray -->
+            <div id="activeFiltersTray" class="hidden flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-800 text-xs">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Active:</span>
                 <div id="activeFilterChipsContainer" class="flex flex-wrap items-center gap-1.5"></div>
-                <button onclick="App.resetFilters()" class="text-[11px] text-blue-600 dark:text-blue-400 hover:underline font-semibold ml-1">
+                <button onclick="App.resetFilters()" class="text-[11px] text-blue-600 dark:text-blue-400 hover:underline font-medium ml-1">
                     Clear all
                 </button>
             </div>

@@ -1024,25 +1024,17 @@ const App = {
 
                     ${course.model_papers && course.model_papers.length > 0 ? `
                         <!-- SEPARATE MODEL QUESTION PAPERS SECTION (BELOW ACTUAL PAPERS) -->
-                        <div class="mt-3.5 pt-3 border-t border-indigo-100 dark:border-indigo-900/60 space-y-2">
-                            <div class="flex items-center justify-between">
-                                <div class="text-[11px] font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-400 flex items-center gap-1.5">
-                                    <i class="bi bi-file-earmark-text-fill"></i> Model Question Paper:
-                                </div>
-                                <span class="text-[10px] font-bold px-2 py-0.2 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                                    MGU Official (2024)
-                                </span>
-                            </div>
+                        <div class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700/60 space-y-1.5">
                             ${course.model_papers.map(m => `
-                                <div class="p-2.5 rounded-xl bg-gradient-to-r from-indigo-50/80 via-purple-50/30 to-white dark:from-indigo-950/40 dark:via-purple-950/20 dark:to-slate-800 border border-indigo-200/80 dark:border-indigo-900/60 flex items-center justify-between gap-2">
+                                <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
                                     <div class="flex items-center gap-1.5 min-w-0">
-                                        <i class="bi bi-mortarboard-fill text-indigo-600 dark:text-indigo-400 text-xs"></i>
-                                        <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 truncate" title="${m.title}">
-                                            ${m.title}
+                                        <i class="bi bi-file-earmark-text text-indigo-600 dark:text-indigo-400 text-xs"></i>
+                                        <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
+                                            Model Question Paper:
                                         </span>
                                     </div>
                                     <div class="flex items-center gap-1.5 shrink-0">
-                                        <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Official Model Question Paper">
+                                        <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
                                             <i class="bi bi-eye"></i> Model QP
                                         </button>
                                         <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
@@ -1166,21 +1158,25 @@ const App = {
                 </div>
 
                 ${p.model_papers && p.model_papers.length > 0 ? `
-                    <div class="mt-2.5 pt-2.5 border-t border-indigo-100 dark:border-indigo-900/60 flex items-center justify-between gap-2">
-                        <div class="flex items-center gap-1.5 min-w-0">
-                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                            <span class="text-[11px] font-semibold text-indigo-700 dark:text-indigo-400 truncate">
-                                Official Model Paper
-                            </span>
-                        </div>
-                        <div class="flex items-center gap-1 shrink-0">
-                            <button onclick="PDFViewer.openDirect('${p.model_papers[0].url}', '${p.model_papers[0].title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Official Model QP">
-                                <i class="bi bi-eye"></i> Model QP
-                            </button>
-                            <a href="${p.model_papers[0].url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
-                                <i class="bi bi-download"></i>
-                            </a>
-                        </div>
+                    <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 space-y-1.5">
+                        ${p.model_papers.map(m => `
+                            <div class="p-2 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-1.5 min-w-0">
+                                    <i class="bi bi-file-earmark-text text-indigo-600 dark:text-indigo-400 text-xs"></i>
+                                    <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
+                                        Model Question Paper:
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1 shrink-0">
+                                    <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
+                                        <i class="bi bi-eye"></i> Model QP
+                                    </button>
+                                    <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        `).join('')}
                     </div>
                 ` : ''}
             </div>

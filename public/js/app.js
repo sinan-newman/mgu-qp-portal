@@ -218,6 +218,52 @@ const App = {
         }
     },
 
+    setButtonLoading(btn, isLoading, loadingText = 'Processing...') {
+        const el = typeof btn === 'string' ? document.getElementById(btn) : btn;
+        if (!el) return;
+
+        if (isLoading) {
+            if (el.dataset.originalHtml) return;
+            el.dataset.originalHtml = el.innerHTML;
+            el.dataset.originalDisabled = el.disabled ? 'true' : 'false';
+            el.disabled = true;
+            el.classList.add('btn-loading');
+            el.innerHTML = `<span class="spinner-icon mr-1.5 inline-block w-3 h-3 border-2 border-current border-t-transparent rounded-full animate-spin"></span><span>${loadingText}</span>`;
+        } else {
+            if (el.dataset.originalHtml !== undefined) {
+                el.innerHTML = el.dataset.originalHtml;
+                delete el.dataset.originalHtml;
+            }
+            if (el.dataset.originalDisabled === 'false') {
+                el.disabled = false;
+            }
+            delete el.dataset.originalDisabled;
+            el.classList.remove('btn-loading');
+        }
+    },
+
+    previewPaper(btn, doc, type = 'QP') {
+        if (btn) this.setButtonLoading(btn, true, 'Opening...');
+        try {
+            PDFViewer.open(doc, type);
+        } finally {
+            if (btn) {
+                setTimeout(() => this.setButtonLoading(btn, false), 450);
+            }
+        }
+    },
+
+    previewDirect(btn, url, title, code) {
+        if (btn) this.setButtonLoading(btn, true, 'Opening...');
+        try {
+            PDFViewer.openDirect(url, title, code);
+        } finally {
+            if (btn) {
+                setTimeout(() => this.setButtonLoading(btn, false), 450);
+            }
+        }
+    },
+
     initTheme() {
         const savedTheme = localStorage.getItem('mgu_theme');
         if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -449,6 +495,15 @@ const App = {
     handleLiveSearch(query) {
         const dropdown = document.getElementById('deptSearchDropdown');
         const clearBtn = document.getElementById('clearDeptSearchBtn');
+        const deptSearchIcon = document.getElementById('deptSearchIcon');
+        if (deptSearchIcon) {
+            deptSearchIcon.classList.remove('bi-search');
+            deptSearchIcon.classList.add('bi-arrow-repeat', 'spinner-icon');
+            setTimeout(() => {
+                deptSearchIcon.classList.remove('bi-arrow-repeat', 'spinner-icon');
+                deptSearchIcon.classList.add('bi-search');
+            }, 250);
+        }
         if (!dropdown) return;
 
         this.deptState.deptSearchQuery = query.toLowerCase();
@@ -600,12 +655,12 @@ const App = {
 
                         <div class="shrink-0 flex items-center gap-1.5">
                             ${p.has_qp ? `
-                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
+                                <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
                                     <i class="bi bi-eye"></i> QP
                                 </button>
                             ` : ''}
                             ${p.has_scheme ? `
-                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'Scheme'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Evaluation Scheme">
+                                <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME'); App.closeSearchDropdown();" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Evaluation Scheme">
                                     <i class="bi bi-journal-check"></i> Scheme
                                 </button>
                             ` : ''}
@@ -879,6 +934,16 @@ const App = {
     },
 
     applyFilters() {
+        const searchIcon = document.getElementById('searchIcon');
+        if (searchIcon) {
+            searchIcon.classList.remove('bi-search');
+            searchIcon.classList.add('bi-arrow-repeat', 'spinner-icon');
+            setTimeout(() => {
+                searchIcon.classList.remove('bi-arrow-repeat', 'spinner-icon');
+                searchIcon.classList.add('bi-search');
+            }, 250);
+        }
+
         let results = this.papers;
 
         // If on bookmarks tab, filter only bookmarks
@@ -1088,7 +1153,7 @@ const App = {
 
                                 <div class="flex items-center gap-1.5 shrink-0">
                                     ${p.has_qp ? `
-                                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
+                                        <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
                                             <i class="bi bi-eye"></i> QP
                                         </button>
                                         <a href="${p.qp_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
@@ -1097,7 +1162,7 @@ const App = {
                                     ` : ''}
 
                                     ${p.has_scheme ? `
-                                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
+                                        <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
                                             <i class="bi bi-journal-check"></i> Scheme
                                         </button>
                                         <a href="${p.scheme_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
@@ -1106,7 +1171,7 @@ const App = {
                                     ` : ''}
 
                                     ${isAdmin ? `
-                                        <button onclick="App.handleDeletePaper('${p.id}')" title="Delete Paper (Admin)" class="p-1 text-xs rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition">
+                                        <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="p-1 text-xs rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition">
                                             <i class="bi bi-trash3 text-rose-500"></i>
                                         </button>
                                     ` : ''}
@@ -1127,7 +1192,7 @@ const App = {
                                         </span>
                                     </div>
                                     <div class="flex items-center gap-1.5 shrink-0">
-                                        <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
+                                        <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
                                             <i class="bi bi-eye"></i> View
                                         </button>
                                         <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
@@ -1174,7 +1239,7 @@ const App = {
                         <div class="flex items-center gap-1.5">
                             ${isAdmin ? `
                                 <button 
-                                    onclick="App.handleDeletePaper('${p.id}')" 
+                                    onclick="App.handleDeletePaper('${p.id}', this)" 
                                     title="Delete paper permanently (Admin)" 
                                     class="p-1.5 text-xs font-semibold rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition"
                                 >
@@ -1229,7 +1294,7 @@ const App = {
                 <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2">
                     <div class="flex items-center gap-1.5">
                         ${p.has_qp ? `
-                            <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition">
+                            <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition">
                                 <i class="bi bi-eye"></i> Preview QP
                             </button>
                             <a href="${p.qp_url}" target="_blank" download class="p-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
@@ -1240,7 +1305,7 @@ const App = {
 
                     <div class="flex items-center gap-1.5">
                         ${p.has_scheme ? `
-                            <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition">
+                            <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition">
                                 <i class="bi bi-journal-check"></i> Scheme
                             </button>
                             <a href="${p.scheme_url}" target="_blank" download class="p-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
@@ -1261,7 +1326,7 @@ const App = {
                                     </span>
                                 </div>
                                 <div class="flex items-center gap-1 shrink-0">
-                                    <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
+                                    <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
                                         <i class="bi bi-eye"></i> View
                                     </button>
                                     <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
@@ -1280,76 +1345,83 @@ const App = {
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
 
         return `
-            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 overflow-x-auto">
-                <table class="w-full text-left border-collapse text-xs sm:text-sm">
-                    <thead>
-                        <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-semibold">
-                            ${isAdmin ? '<th class="py-3 px-4">Sem</th>' : ''}
-                            <th class="py-3 px-4">Course Code</th>
-                            <th class="py-3 px-4">Exam Session</th>
-                            <th class="py-3 px-4">Course Title</th>
-                            <th class="py-3 px-4">Department</th>
-                            <th class="py-3 px-4">Type</th>
-                            <th class="py-3 px-4 text-right">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
-                        ${items.map(p => {
-                            const isBookmarked = this.bookmarks.has(p.id);
-                            const monthYear = this.extractMonthYear(p.exam_name);
-                            return `
-                                <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
-                                    ${isAdmin ? `<td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>` : ''}
-                                    <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
-                                    <td class="py-3 px-4 font-medium text-slate-600 dark:text-slate-300 whitespace-nowrap">${monthYear}</td>
-                                    <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
-                                    <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
-                                        ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.minor_name || p.dept_code}</span>` : ''}
-                                    </td>
-                                    <td class="py-3 px-4">
-                                        <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">${p.course_type}</span>
-                                    </td>
-                                    <td class="py-3 px-4 text-right">
-                                        <div class="flex items-center justify-end gap-2">
-                                            ${p.has_qp ? `
-                                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500">
-                                                    QP
+            <div class="space-y-2">
+                <!-- Mobile Horizontal Scroll Guidance -->
+                <div class="sm:hidden flex items-center gap-1.5 px-3 py-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200/70 dark:border-slate-700/60 shadow-xs">
+                    <i class="bi bi-arrow-left-right text-blue-500"></i>
+                    <span>Swipe horizontally to view full table details</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 overflow-x-auto touch-scroll-x">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm min-w-[700px]">
+                        <thead>
+                            <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-semibold">
+                                ${isAdmin ? '<th class="py-3 px-4">Sem</th>' : ''}
+                                <th class="py-3 px-4">Course Code</th>
+                                <th class="py-3 px-4">Exam Session</th>
+                                <th class="py-3 px-4">Course Title</th>
+                                <th class="py-3 px-4">Department</th>
+                                <th class="py-3 px-4">Type</th>
+                                <th class="py-3 px-4 text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
+                            ${items.map(p => {
+                                const isBookmarked = this.bookmarks.has(p.id);
+                                const monthYear = this.extractMonthYear(p.exam_name);
+                                return `
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
+                                        ${isAdmin ? `<td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>` : ''}
+                                        <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
+                                        <td class="py-3 px-4 font-medium text-slate-600 dark:text-slate-300 whitespace-nowrap">${monthYear}</td>
+                                        <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
+                                        <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
+                                            ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.minor_name || p.dept_code}</span>` : ''}
+                                        </td>
+                                        <td class="py-3 px-4">
+                                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">${p.course_type}</span>
+                                        </td>
+                                        <td class="py-3 px-4 text-right">
+                                            <div class="flex items-center justify-end gap-2">
+                                                ${p.has_qp ? `
+                                                    <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500 shadow-xs transition">
+                                                        QP
+                                                    </button>
+                                                ` : ''}
+                                                ${p.has_scheme ? `
+                                                    <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500 shadow-xs transition">
+                                                        Scheme
+                                                    </button>
+                                                ` : ''}
+                                                ${p.model_papers && p.model_papers.length > 0 ? p.model_papers.map(m => `
+                                                    <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1 transition" title="${m.title}">
+                                                        <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
+                                                    </button>
+                                                `).join('') : ''}
+                                                ${isAdmin ? `
+                                                    <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="px-2 py-1 text-xs font-semibold rounded bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950 dark:text-rose-300 transition">
+                                                        <i class="bi bi-trash3"></i>
+                                                    </button>
+                                                ` : ''}
+                                                <button 
+                                                    data-bm-id="${p.id}"
+                                                    onclick="App.toggleBookmark('${p.id}')" 
+                                                    class="px-2 py-1 text-xs font-semibold rounded flex items-center gap-1 transition ${
+                                                        isBookmarked 
+                                                            ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' 
+                                                            : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
+                                                    }"
+                                                >
+                                                    <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                                                    <span>${isBookmarked ? 'Saved' : 'Save'}</span>
                                                 </button>
-                                            ` : ''}
-                                            ${p.has_scheme ? `
-                                                <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500">
-                                                    Scheme
-                                                </button>
-                                            ` : ''}
-                                            ${p.model_papers && p.model_papers.length > 0 ? p.model_papers.map(m => `
-                                                <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1" title="${m.title}">
-                                                    <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
-                                                </button>
-                                            `).join('') : ''}
-                                            ${isAdmin ? `
-                                                <button onclick="App.handleDeletePaper('${p.id}')" title="Delete Paper (Admin)" class="px-2 py-1 text-xs font-semibold rounded bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950 dark:text-rose-300">
-                                                    <i class="bi bi-trash3"></i>
-                                                </button>
-                                            ` : ''}
-                                            <button 
-                                                data-bm-id="${p.id}"
-                                                onclick="App.toggleBookmark('${p.id}')" 
-                                                class="px-2 py-1 text-xs font-semibold rounded flex items-center gap-1 transition ${
-                                                    isBookmarked 
-                                                        ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' 
-                                                        : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
-                                                }"
-                                            >
-                                                <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
-                                                <span>${isBookmarked ? 'Saved' : 'Save'}</span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            `;
-                        }).join('')}
-                    </tbody>
-                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         `;
     },
@@ -1365,9 +1437,26 @@ const App = {
         }
 
         const cur = this.state.currentPage;
-        let html = `
-            <div class="flex items-center justify-center gap-1 sm:gap-2">
-                <button onclick="App.goToPage(${cur - 1})" ${cur === 1 ? 'disabled' : ''} class="px-3 py-1.5 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition">
+
+        // Mobile compact pagination (< Prev | Page X of Y | Next >)
+        let mobileHtml = `
+            <div class="flex items-center justify-between sm:hidden w-full px-1 gap-2">
+                <button onclick="App.goToPage(${cur - 1})" ${cur === 1 ? 'disabled' : ''} class="flex-1 py-2 text-xs font-semibold rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition flex items-center justify-center gap-1 shadow-xs min-h-[38px]">
+                    <i class="bi bi-chevron-left"></i> Prev
+                </button>
+                <div class="px-3 py-2 text-xs font-bold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shrink-0 shadow-xs min-h-[38px] flex items-center justify-center">
+                    Page ${cur} of ${totalPages}
+                </div>
+                <button onclick="App.goToPage(${cur + 1})" ${cur === totalPages ? 'disabled' : ''} class="flex-1 py-2 text-xs font-semibold rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition flex items-center justify-center gap-1 shadow-xs min-h-[38px]">
+                    Next <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        `;
+
+        // Desktop full pagination
+        let desktopHtml = `
+            <div class="hidden sm:flex items-center justify-center gap-1 sm:gap-2">
+                <button onclick="App.goToPage(${cur - 1})" ${cur === 1 ? 'disabled' : ''} class="px-3 py-1.5 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition min-h-[38px] flex items-center gap-1">
                     <i class="bi bi-chevron-left"></i> Prev
                 </button>
         `;
@@ -1380,32 +1469,32 @@ const App = {
         }
 
         if (startPage > 1) {
-            html += `<button onclick="App.goToPage(1)" class="w-8 h-8 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200">1</button>`;
-            if (startPage > 2) html += `<span class="px-1 text-slate-400">...</span>`;
+            desktopHtml += `<button onclick="App.goToPage(1)" class="w-8 h-8 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 min-h-[38px]">1</button>`;
+            if (startPage > 2) desktopHtml += `<span class="px-1 text-slate-400">...</span>`;
         }
 
         for (let p = startPage; p <= endPage; p++) {
             const isActive = p === cur;
-            html += `
-                <button onclick="App.goToPage(${p})" class="w-8 h-8 text-xs font-semibold rounded-lg ${isActive ? 'bg-blue-600 text-white shadow-xs' : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50'} transition">
+            desktopHtml += `
+                <button onclick="App.goToPage(${p})" class="w-8 h-8 text-xs font-semibold rounded-lg ${isActive ? 'bg-blue-600 text-white shadow-xs' : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50'} transition min-h-[38px]">
                     ${p}
                 </button>
             `;
         }
 
         if (endPage < totalPages) {
-            if (endPage < totalPages - 1) html += `<span class="px-1 text-slate-400">...</span>`;
-            html += `<button onclick="App.goToPage(${totalPages})" class="w-8 h-8 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200">${totalPages}</button>`;
+            if (endPage < totalPages - 1) desktopHtml += `<span class="px-1 text-slate-400">...</span>`;
+            desktopHtml += `<button onclick="App.goToPage(${totalPages})" class="w-8 h-8 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 min-h-[38px]">${totalPages}</button>`;
         }
 
-        html += `
-                <button onclick="App.goToPage(${cur + 1})" ${cur === totalPages ? 'disabled' : ''} class="px-3 py-1.5 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition">
+        desktopHtml += `
+                <button onclick="App.goToPage(${cur + 1})" ${cur === totalPages ? 'disabled' : ''} class="px-3 py-1.5 text-xs font-medium rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 transition min-h-[38px] flex items-center gap-1">
                     Next <i class="bi bi-chevron-right"></i>
                 </button>
             </div>
         `;
 
-        container.innerHTML = html;
+        container.innerHTML = mobileHtml + desktopHtml;
     },
 
     goToPage(page) {
@@ -1421,6 +1510,9 @@ const App = {
     },
 
     resetFilters() {
+        this.setButtonLoading('resetFiltersBtn', true, 'Resetting...');
+        setTimeout(() => this.setButtonLoading('resetFiltersBtn', false), 350);
+
         this.state.searchQuery = '';
         this.state.selectedDept = 'ALL';
         this.state.selectedSemester = 'ALL';
@@ -1949,6 +2041,8 @@ const App = {
         const passInput = document.getElementById('adminPasswordInput');
         const err = document.getElementById('adminLoginError');
 
+        this.setButtonLoading('adminLoginSubmitBtn', true, 'Logging in...');
+
         const username = userInput ? userInput.value.trim() : '';
         const password = passInput ? passInput.value : '';
 
@@ -1975,7 +2069,9 @@ const App = {
             if (this.deptState.activeDept) {
                 this.renderDeptSemesterPapers();
             }
+            this.setButtonLoading('adminLoginSubmitBtn', false);
         } else {
+            this.setButtonLoading('adminLoginSubmitBtn', false);
             if (err) err.classList.remove('hidden');
             if (passInput) passInput.value = '';
         }
@@ -2148,7 +2244,7 @@ const App = {
                         <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">
                             <i class="bi bi-file-earmark"></i> ${item.pages} ${item.pages === 1 ? 'page' : 'pages'} (QP Length: 1–7 pgs)
                         </span>
-                        <button onclick="PDFViewer.openDirect('${item.url}', '${item.filename}', 'UNTAGGED')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition">
+                        <button onclick="App.previewDirect(this, '${item.url}', '${item.filename}', 'UNTAGGED')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition">
                             <i class="bi bi-eye"></i> Preview PDF
                         </button>
                     </div>
@@ -2177,7 +2273,7 @@ const App = {
                         </select>
                     </div>
                     <div class="sm:col-span-3">
-                        <button onclick="App.handleTagModelPaper('${item.model_id}')" class="w-full px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center justify-center gap-1 transition">
+                        <button onclick="App.handleTagModelPaper('${item.model_id}', this)" class="w-full px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center justify-center gap-1 transition min-h-[34px]">
                             <i class="bi bi-check2-circle"></i> Save & Tag
                         </button>
                     </div>
@@ -2186,7 +2282,7 @@ const App = {
         `).join('');
     },
 
-    handleTagModelPaper(modelId) {
+    handleTagModelPaper(modelId, btn = null) {
         const item = this.untaggedModels.find(u => u.model_id === modelId);
         if (!item) return;
 
@@ -2201,6 +2297,8 @@ const App = {
             codeInput?.focus();
             return;
         }
+
+        if (btn) this.setButtonLoading(btn, true, 'Tagging...');
 
         courseCode = courseCode.replace(/\s+/g, '');
 
@@ -2220,6 +2318,7 @@ const App = {
                 if (!p.model_papers) p.model_papers = [];
                 p.model_papers = p.model_papers.filter(m => m.id !== modelId);
                 p.model_papers.push(newModelObj);
+                p.has_files = true;
                 attachedCount++;
             }
         }
@@ -2249,7 +2348,7 @@ const App = {
                 has_scheme: false,
                 scheme_url: '',
                 files: [],
-                has_files: false,
+                has_files: true,
                 minor_name: '',
                 model_papers: [newModelObj]
             };
@@ -2264,6 +2363,7 @@ const App = {
             localStorage.setItem('mgu_untagged_models', JSON.stringify(this.untaggedModels));
         } catch (e) {}
 
+        if (btn) this.setButtonLoading(btn, false);
         alert(`Model Question Paper successfully tagged to ${courseCode}!`);
     },
 
@@ -2316,7 +2416,7 @@ const App = {
                     <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 font-semibold text-slate-600 dark:text-slate-300">
                         ${c.models.length} ${c.models.length === 1 ? 'Model QP' : 'Model QPs'}
                     </span>
-                    <button onclick="PDFViewer.openDirect('${c.models[0].url}', '${c.models[0].title}', '${c.code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1">
+                    <button onclick="App.previewDirect(this, '${c.models[0].url}', '${(c.models[0].title || 'Model QP').replace(/'/g, "\\'")}', '${c.code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition">
                         <i class="bi bi-eye"></i> View
                     </button>
                 </div>
@@ -2343,62 +2443,69 @@ const App = {
             return;
         }
 
-        const objectUrl = URL.createObjectURL(file);
-        const newModelObj = {
-            id: `model_custom_${Date.now()}`,
-            title: paperType === 'PRACTICAL' ? 'Official Practical Model Paper' : 'Official Theory Model Paper',
-            paper_type: paperType,
-            pages: 2,
-            url: objectUrl,
-            raw_url: objectUrl,
-            filename: file.name
-        };
+        this.setButtonLoading('adminModelUploadSubmitBtn', true, 'Uploading Model QP...');
 
-        let attached = false;
-        for (const p of this.papers) {
-            if ((p.course_code || '').trim().toUpperCase() === courseCode) {
-                if (!p.model_papers) p.model_papers = [];
-                p.model_papers.push(newModelObj);
-                attached = true;
+        try {
+            const objectUrl = URL.createObjectURL(file);
+            const newModelObj = {
+                id: `model_custom_${Date.now()}`,
+                title: paperType === 'PRACTICAL' ? 'Official Practical Model Paper' : 'Official Theory Model Paper',
+                paper_type: paperType,
+                pages: 2,
+                url: objectUrl,
+                raw_url: objectUrl,
+                filename: file.name
+            };
+
+            let attached = false;
+            for (const p of this.papers) {
+                if ((p.course_code || '').trim().toUpperCase() === courseCode) {
+                    if (!p.model_papers) p.model_papers = [];
+                    p.model_papers.push(newModelObj);
+                    p.has_files = true;
+                    attached = true;
+                }
             }
-        }
 
-        if (!attached) {
-            this.papers.push({
-                id: `model_only_${courseCode}`,
-                qp_code: 'AWAITED',
-                course_code: courseCode,
-                title: `${courseCode} Course`,
-                raw_header: courseCode,
-                semester: 1,
-                semester_label: 'Semester 1',
-                course_type: 'DSC',
-                course_type_name: 'Discipline Specific Core',
-                dept_code: 'GEN',
-                dept_name: 'General',
-                parent_dept: 'GEN',
-                parent_dept_name: 'General',
-                is_minor: false,
-                exam_id: 'model_catalog',
-                exam_name: 'FYUGP 2024 (Exam Question Paper Awaited)',
-                batch: '2024 Admission',
-                is_fyugp: true,
-                has_qp: false,
-                qp_url: '',
-                has_scheme: false,
-                scheme_url: '',
-                files: [],
-                has_files: false,
-                minor_name: '',
-                model_papers: [newModelObj]
-            });
-        }
+            if (!attached) {
+                this.papers.push({
+                    id: `model_only_${courseCode}`,
+                    qp_code: 'AWAITED',
+                    course_code: courseCode,
+                    title: `${courseCode} Course`,
+                    raw_header: courseCode,
+                    semester: 1,
+                    semester_label: 'Semester 1',
+                    course_type: 'DSC',
+                    course_type_name: 'Discipline Specific Core',
+                    dept_code: 'GEN',
+                    dept_name: 'General',
+                    parent_dept: 'GEN',
+                    parent_dept_name: 'General',
+                    is_minor: false,
+                    exam_id: 'model_catalog',
+                    exam_name: 'FYUGP 2024 (Exam Question Paper Awaited)',
+                    batch: '2024 Admission',
+                    is_fyugp: true,
+                    has_qp: false,
+                    qp_url: '',
+                    has_scheme: false,
+                    scheme_url: '',
+                    files: [],
+                    has_files: true,
+                    minor_name: '',
+                    model_papers: [newModelObj]
+                });
+            }
 
-        this.applyFilters();
-        alert(`Model Question Paper for ${courseCode} uploaded and linked successfully!`);
-        codeInput.value = '';
-        fileInput.value = '';
-        this.switchModelSubTab('all');
+            this.applyFilters();
+            alert(`Model Question Paper for ${courseCode} uploaded and linked successfully!`);
+            codeInput.value = '';
+            fileInput.value = '';
+            this.switchModelSubTab('all');
+        } finally {
+            this.setButtonLoading('adminModelUploadSubmitBtn', false);
+        }
     },
 
     toggleAdminMinorFields() {
@@ -2420,13 +2527,12 @@ const App = {
         if (e) e.preventDefault();
 
         const statusEl = document.getElementById('adminUploadStatus');
-        const submitBtn = document.getElementById('adminUploadSubmitBtn');
         if (statusEl) {
             statusEl.className = 'p-3 rounded-lg text-xs bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900 flex items-center gap-2';
             statusEl.innerHTML = '<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-blue-600 border-t-transparent"></div> Processing and uploading question paper...';
             statusEl.classList.remove('hidden');
         }
-        if (submitBtn) submitBtn.disabled = true;
+        this.setButtonLoading('adminUploadSubmitBtn', true, 'Uploading & Publishing...');
 
         try {
             const courseCode = document.getElementById('adminUploadCourseCode').value.trim().toUpperCase();
@@ -2554,7 +2660,7 @@ const App = {
                 statusEl.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-rose-600"></i> Error: ${err.message}`;
             }
         } finally {
-            if (submitBtn) submitBtn.disabled = false;
+            this.setButtonLoading('adminUploadSubmitBtn', false);
         }
     },
 
@@ -2623,11 +2729,11 @@ const App = {
                 </div>
                 <div class="shrink-0 flex items-center gap-1.5">
                     ${p.has_qp ? `
-                        <button onclick="PDFViewer.open(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-[11px] font-semibold rounded bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200" title="Preview Paper">
+                        <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-[11px] font-semibold rounded bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Preview Paper">
                             <i class="bi bi-eye"></i>
                         </button>
                     ` : ''}
-                    <button onclick="App.handleDeletePaper('${p.id}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition flex items-center gap-1" title="Delete Paper Permanently">
+                    <button onclick="App.handleDeletePaper('${p.id}', this)" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition flex items-center gap-1" title="Delete Paper Permanently">
                         <i class="bi bi-trash3"></i> Delete
                     </button>
                 </div>
@@ -2635,12 +2741,14 @@ const App = {
         `).join('');
     },
 
-    async handleDeletePaper(paperId) {
+    async handleDeletePaper(paperId, btn = null) {
         const paper = this.papers.find(p => p.id === paperId);
         const title = paper ? `${paper.course_code} - ${paper.title}` : `Paper ID ${paperId}`;
         if (!confirm(`Are you sure you want to delete "${title}" permanently?`)) {
             return;
         }
+
+        if (btn) this.setButtonLoading(btn, true, 'Deleting...');
 
         const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
 
@@ -2653,6 +2761,7 @@ const App = {
                 });
                 const data = await res.json();
                 if (!data.success) {
+                    if (btn) this.setButtonLoading(btn, false);
                     alert(`Failed to delete paper: ${data.error || 'Unknown error'}`);
                     return;
                 }
@@ -2667,6 +2776,7 @@ const App = {
             }
             this.renderAdminDeleteList();
             this.updateStatsUI();
+            if (btn) this.setButtonLoading(btn, false);
             alert(`Paper "${title}" successfully deleted!`);
         } catch (e) {
             this.papers = this.papers.filter(p => p.id !== paperId);
@@ -2677,6 +2787,7 @@ const App = {
                 this.renderDeptSemesterPapers();
             }
             this.renderAdminDeleteList();
+            if (btn) this.setButtonLoading(btn, false);
             alert(`Paper removed from session.`);
         }
     },
@@ -2688,6 +2799,8 @@ const App = {
             syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Syncing FYUGP question papers with https://assist.mgu.ac.in/schema/...`;
             syncStatusEl.classList.remove('hidden');
         }
+
+        this.setButtonLoading('triggerSyncBtn', true, 'Syncing...');
 
         try {
             const res = await fetch('/api/sync', { method: 'POST' });
@@ -2701,6 +2814,8 @@ const App = {
                 syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-sm flex items-center gap-3';
                 syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Manual sync triggers background scraper. Scheduled sync runs daily automatically via GitHub Actions.`;
             }
+        } finally {
+            this.setButtonLoading('triggerSyncBtn', false);
         }
     },
 
@@ -2834,11 +2949,7 @@ const App = {
             return;
         }
 
-        const submitBtn = document.getElementById('reportSubmitBtn');
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-white border-t-transparent"></div> Submitting...`;
-        }
+        this.setButtonLoading('reportSubmitBtn', true, 'Submitting Report...');
 
         const report = {
             id: 'rep_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
@@ -2871,10 +2982,7 @@ const App = {
         if (linkEl) linkEl.value = '';
         if (contEl) contEl.value = '';
 
-        if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = `<i class="bi bi-send-fill"></i> Submit Missing Paper Report`;
-        }
+        this.setButtonLoading('reportSubmitBtn', false);
 
         setTimeout(() => {
             this.closeFeedbackModal();
@@ -2892,11 +3000,7 @@ const App = {
             return;
         }
 
-        const submitBtn = document.getElementById('feedbackSubmitBtn');
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<div class="animate-spin rounded-full h-3.5 w-3.5 border-2 border-white border-t-transparent"></div> Sending...`;
-        }
+        this.setButtonLoading('feedbackSubmitBtn', true, 'Sending Feedback...');
 
         const feedback = {
             id: 'fb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
@@ -2918,10 +3022,7 @@ const App = {
         if (msgEl) msgEl.value = '';
         if (contEl) contEl.value = '';
 
-        if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = `<i class="bi bi-send-fill"></i> Send Feedback`;
-        }
+        this.setButtonLoading('feedbackSubmitBtn', false);
 
         setTimeout(() => {
             this.closeFeedbackModal();

@@ -118,14 +118,24 @@ const PDFViewer = {
             viewerSrc = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
         }
 
+        if (this._spinnerTimeout) clearTimeout(this._spinnerTimeout);
         this.frame.onload = () => {
             this.loadingSpinner.classList.add('hidden');
+            if (this._spinnerTimeout) clearTimeout(this._spinnerTimeout);
         };
+        // 3-second safety fallback if iframe onload does not fire
+        this._spinnerTimeout = setTimeout(() => {
+            this.loadingSpinner.classList.add('hidden');
+        }, 3000);
 
         this.frame.src = viewerSrc;
 
-        // Update Download & External open buttons
+        // Update Download & External open buttons with visual feedback
         this.downloadBtn.onclick = () => {
+            const origHtml = this.downloadBtn.innerHTML;
+            this.downloadBtn.innerHTML = '<i class="bi bi-arrow-repeat spinner-icon text-xs"></i> <span>Downloading...</span>';
+            this.downloadBtn.classList.add('opacity-75');
+            
             const a = document.createElement('a');
             a.href = url;
             a.target = '_blank';
@@ -133,6 +143,11 @@ const PDFViewer = {
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
+
+            setTimeout(() => {
+                this.downloadBtn.innerHTML = origHtml;
+                this.downloadBtn.classList.remove('opacity-75');
+            }, 1000);
         };
 
         this.openExternalBtn.onclick = () => {

@@ -1023,7 +1023,7 @@ const App = {
         const pageItems = this.filteredPapers.slice(start, start + this.state.pageSize);
 
         if (this.state.viewMode === 'grid') {
-            container.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5';
+            container.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5';
             container.innerHTML = pageItems.map(p => this.renderPaperCard(p)).join('');
         } else {
             container.className = 'col-span-full';
@@ -1143,7 +1143,7 @@ const App = {
                     ${course.papers.map(p => {
                         const monthYear = this.extractMonthYear(p.exam_name);
                         return `
-                            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200/70 dark:border-slate-600/50 flex items-center justify-between gap-2">
+                            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200/70 dark:border-slate-600/50 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
                                 <div class="flex items-center gap-1.5 min-w-0">
                                     <i class="bi bi-calendar-event text-blue-600 dark:text-blue-400 text-xs"></i>
                                     <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 truncate">
@@ -1184,7 +1184,7 @@ const App = {
                         <!-- SEPARATE MODEL QUESTION PAPERS SECTION (BELOW ACTUAL PAPERS) -->
                         <div class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700/60 space-y-1.5">
                             ${course.model_papers.map(m => `
-                                <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
+                                <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
                                     <div class="flex items-center gap-1.5 min-w-0">
                                         <i class="${m.paper_type === 'PRACTICAL' ? 'bi bi-flask' : 'bi bi-file-earmark-text'} text-indigo-600 dark:text-indigo-400 text-xs"></i>
                                         <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
@@ -1291,7 +1291,7 @@ const App = {
                 </div>
 
                 <!-- Action Buttons: Preview & Download -->
-                <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2">
+                <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
                     <div class="flex items-center gap-1.5">
                         ${p.has_qp ? `
                             <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition">
@@ -1318,7 +1318,7 @@ const App = {
                 ${p.model_papers && p.model_papers.length > 0 ? `
                     <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 space-y-1.5">
                         ${p.model_papers.map(m => `
-                            <div class="p-2 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
+                            <div class="p-2 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
                                 <div class="flex items-center gap-1.5 min-w-0">
                                     <i class="${m.paper_type === 'PRACTICAL' ? 'bi bi-flask' : 'bi bi-file-earmark-text'} text-indigo-600 dark:text-indigo-400 text-xs"></i>
                                     <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
@@ -1885,7 +1885,7 @@ const App = {
                         </span>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                         ${groupedMajor.map(course => this.renderGroupedCourseCard(course)).join('')}
                     </div>
                 </div>
@@ -1947,7 +1947,7 @@ const App = {
                             </span>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                             ${groupedMinor.map(course => this.renderGroupedCourseCard(course)).join('')}
                         </div>
                     </div>

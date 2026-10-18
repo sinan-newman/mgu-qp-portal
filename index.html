@@ -108,41 +108,46 @@
     </header>
 
     <!-- Hero Header -->
-    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white pt-8 pb-10 px-4 sm:px-6 lg:px-8 shadow-inner">
-        <div class="max-w-5xl mx-auto text-center">
-            
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 mb-3 backdrop-blur">
-                <i class="bi bi-shield-check"></i> Official MGU-UGP / Honours (FYUGP 2024+) Question Paper Repository
-            </span>
-
-            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-6">
-                Mahatma Gandhi University FYUGP Question Papers & Schemes
-            </h1>
-
-            <!-- Stats Bar -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto text-left">
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
-                    <div class="text-[11px] text-blue-200 font-medium flex items-center gap-1.5">
-                        <i class="bi bi-file-earmark-pdf"></i> Question Papers
+    <section class="bg-gradient-to-b from-blue-900 via-indigo-950 to-slate-900 text-white py-6 sm:py-8 px-4 sm:px-6 lg:px-8 shadow-inner border-b border-indigo-950/60">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+                <!-- Left: Badge + Heading + Subtitle -->
+                <div class="text-left max-w-2xl">
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 mb-2 backdrop-blur">
+                        <i class="bi bi-shield-check"></i> Official MGU-UGP / Honours (FYUGP 2024+)
                     </div>
-                    <div id="statTotalPapers" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">1,873+</div>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight text-white leading-tight">
+                        Mahatma Gandhi University Question Papers & Schemes
+                    </h1>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1 font-medium">
+                        Instant access to FYUGP Semester 1–8 Question Papers, Answer Keys & Model Question Papers
+                    </p>
                 </div>
 
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
-                    <div class="text-[11px] text-emerald-200 font-medium flex items-center gap-1.5">
-                        <i class="bi bi-journal-check"></i> Evaluation Schemes
+                <!-- Right: Sleek Stats Strip -->
+                <div class="grid grid-cols-3 gap-2.5 sm:gap-3 lg:w-[480px] shrink-0">
+                    <div class="bg-white/10 backdrop-blur border border-white/15 rounded-xl p-2.5 sm:p-3 text-left">
+                        <div class="text-[10px] sm:text-[11px] text-blue-200 font-semibold flex items-center gap-1">
+                            <i class="bi bi-file-earmark-pdf"></i> Question Papers
+                        </div>
+                        <div id="statTotalPapers" class="text-base sm:text-xl font-bold font-mono text-white mt-0.5">1,873+</div>
                     </div>
-                    <div id="statTotalSchemes" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">1,741+</div>
-                </div>
 
-                <div class="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-3">
-                    <div class="text-[11px] text-purple-200 font-medium flex items-center gap-1.5">
-                        <i class="bi bi-mortarboard"></i> Academic Departments
+                    <div class="bg-white/10 backdrop-blur border border-white/15 rounded-xl p-2.5 sm:p-3 text-left">
+                        <div class="text-[10px] sm:text-[11px] text-emerald-200 font-semibold flex items-center gap-1">
+                            <i class="bi bi-journal-check"></i> Schemes
+                        </div>
+                        <div id="statTotalSchemes" class="text-base sm:text-xl font-bold font-mono text-white mt-0.5">1,741+</div>
                     </div>
-                    <div id="statTotalDepartments" class="text-lg sm:text-2xl font-bold font-mono text-white mt-0.5">23</div>
+
+                    <div class="bg-white/10 backdrop-blur border border-white/15 rounded-xl p-2.5 sm:p-3 text-left">
+                        <div class="text-[10px] sm:text-[11px] text-purple-200 font-semibold flex items-center gap-1">
+                            <i class="bi bi-mortarboard"></i> Departments
+                        </div>
+                        <div id="statTotalDepartments" class="text-base sm:text-xl font-bold font-mono text-white mt-0.5">23</div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -306,21 +311,21 @@
             </div>
 
             <!-- Row 4: Department Dropdown, View Toggle, Direct PDF & Reset Controls -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
                 
                 <!-- Department Selector with Icon Box -->
-                <div class="flex items-center gap-3">
-                    <div class="relative w-full sm:w-80">
+                <div class="flex items-center gap-2.5 flex-1 min-w-[260px] sm:min-w-[320px]">
+                    <div class="relative flex-1 max-w-sm">
                         <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-blue-600 dark:text-blue-400">
-                            <i class="bi bi-mortarboard-fill"></i>
+                            <i class="bi bi-mortarboard-fill text-xs"></i>
                         </div>
-                        <select id="deptSelect" class="w-full bg-slate-50/90 dark:bg-slate-800/90 border border-slate-200/90 dark:border-slate-700 text-slate-800 dark:text-slate-100 text-xs font-semibold rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs">
+                        <select id="deptSelect" class="w-full bg-slate-50/90 dark:bg-slate-800/90 border border-slate-200/90 dark:border-slate-700 text-slate-800 dark:text-slate-100 text-xs font-semibold rounded-xl pl-9 pr-8 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs">
                             <option value="ALL">All Departments (Loading...)</option>
                         </select>
                     </div>
 
                     <!-- Grid vs Table view toggles -->
-                    <div class="flex items-center border border-slate-200/80 dark:border-slate-700 rounded-xl p-1 bg-slate-100/90 dark:bg-slate-800 text-xs shadow-inner">
+                    <div class="flex items-center border border-slate-200/80 dark:border-slate-700 rounded-xl p-0.5 bg-slate-100/90 dark:bg-slate-800 text-xs shadow-inner shrink-0">
                         <button id="gridViewBtn" title="Grid View" class="p-1.5 rounded-lg bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-xs transition">
                             <i class="bi bi-grid-fill"></i>
                         </button>
@@ -331,7 +336,7 @@
                 </div>
 
                 <!-- Right Side: Checkbox & Reset -->
-                <div class="flex items-center gap-4 text-xs">
+                <div class="flex items-center gap-3.5 text-xs shrink-0">
                     <!-- Modern Checkbox -->
                     <label class="flex items-center gap-2 cursor-pointer select-none group">
                         <input type="checkbox" id="filesOnlyCheckbox" checked class="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 cursor-pointer">
@@ -341,7 +346,7 @@
                     </label>
 
                     <!-- Reset Filters -->
-                    <button id="resetFiltersBtn" onclick="App.resetFilters()" class="group inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition border border-transparent hover:border-rose-200 dark:hover:border-rose-900/50 min-h-[38px]">
+                    <button id="resetFiltersBtn" onclick="App.resetFilters()" class="group inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition border border-transparent hover:border-rose-200 dark:hover:border-rose-900/50 min-h-[36px]">
                         <i class="bi bi-arrow-counterclockwise group-hover:-rotate-90 transition-transform duration-300"></i>
                         <span>Reset Filters</span>
                     </button>
@@ -400,7 +405,7 @@
                     </div>
                 </div>
 
-                <div id="deptCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div id="deptCardsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                     <!-- Populated dynamically by app.js in alphabetical order -->
                 </div>
             </div>
@@ -468,7 +473,7 @@
             </div>
 
             <!-- Grid / Table Container -->
-            <div id="papersGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div id="papersGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 <!-- Dynamic cards populated by app.js -->
             </div>
 

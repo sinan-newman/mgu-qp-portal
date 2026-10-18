@@ -266,3 +266,21 @@ button:active:not(:disabled) {
     padding: 1rem !important;
   }
 }
+
+/* Laptop & Browser Zoom Scaling Optimizations (641px to 1279px) */
+@media (min-width: 641px) and (max-width: 1279px) {
+  .paper-card, .dept-card {
+    padding: 1.15rem !important;
+  }
+}
+
+/* Prevent layout breaking or clipped text on zoomed displays */
+.paper-card {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.paper-card button, .paper-card a {
+  white-space: nowrap;
+}
+

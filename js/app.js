@@ -1028,9 +1028,9 @@ const App = {
                             ${course.model_papers.map(m => `
                                 <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
                                     <div class="flex items-center gap-1.5 min-w-0">
-                                        <i class="bi bi-file-earmark-text text-indigo-600 dark:text-indigo-400 text-xs"></i>
+                                        <i class="${m.paper_type === 'PRACTICAL' ? 'bi bi-flask' : 'bi bi-file-earmark-text'} text-indigo-600 dark:text-indigo-400 text-xs"></i>
                                         <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
-                                            Model Question Paper:
+                                            ${m.paper_type === 'PRACTICAL' ? '🔬 Practical Model Paper:' : '📑 Model Question Paper:'}
                                         </span>
                                     </div>
                                     <div class="flex items-center gap-1.5 shrink-0">
@@ -1162,9 +1162,9 @@ const App = {
                         ${p.model_papers.map(m => `
                             <div class="p-2 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-1.5 min-w-0">
-                                    <i class="bi bi-file-earmark-text text-indigo-600 dark:text-indigo-400 text-xs"></i>
+                                    <i class="${m.paper_type === 'PRACTICAL' ? 'bi bi-flask' : 'bi bi-file-earmark-text'} text-indigo-600 dark:text-indigo-400 text-xs"></i>
                                     <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 truncate">
-                                        Model Question Paper:
+                                        ${m.paper_type === 'PRACTICAL' ? '🔬 Practical Model Paper:' : '📑 Model Question Paper:'}
                                     </span>
                                 </div>
                                 <div class="flex items-center gap-1 shrink-0">

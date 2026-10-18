@@ -2307,29 +2307,17 @@ const App = {
         const deptCodes = new Set([dept.code, ...(dept.majors || []).map(m => m.code), ...(dept.minors || []).map(m => m.code)]);
         const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
 
-        const semLabels = {
-            1: 'First Year • Foundation',
-            2: 'First Year • Foundation',
-            3: 'Second Year • Intermediate',
-            4: 'Second Year • Intermediate',
-            5: 'Third Year • Major Core',
-            6: 'Third Year • Major Core',
-            7: 'Fourth Year • Honours / Research',
-            8: 'Fourth Year • Honours / Research'
-        };
-
         let html = '';
 
         for (let s = 1; s <= 8; s++) {
             const semPapers = allDeptPapers.filter(p => p.semester === s);
             const semCourses = this.groupPapersByCourse(semPapers);
-            const academicLabel = semLabels[s] || `Semester ${s}`;
 
             html += `
                 <div onclick="App.selectDeptSemester(${s})" class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3">
-                            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center font-extrabold text-base font-mono group-hover:scale-105 transition-transform">
+                            <div class="w-11 h-11 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center font-extrabold text-base font-mono group-hover:scale-105 transition-transform">
                                 S${s}
                             </div>
                             ${semPapers.length > 0 ? `
@@ -2342,17 +2330,18 @@ const App = {
                                 </span>
                             `}
                         </div>
-                        <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        <h4 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                             Semester ${s}
                         </h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
-                            ${academicLabel}
-                        </p>
                         ${semCourses.length > 0 ? `
-                            <div class="text-[11px] text-slate-400 dark:text-slate-500 mt-2 font-medium">
-                                ${semCourses.length} ${semCourses.length === 1 ? 'Course' : 'Courses'} available
-                            </div>
-                        ` : ''}
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                                ${semCourses.length} ${semCourses.length === 1 ? 'course' : 'courses'} available
+                            </p>
+                        ` : `
+                            <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">
+                                No courses available
+                            </p>
+                        `}
                     </div>
 
                     <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs font-semibold ${semPapers.length > 0 ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}">
@@ -2365,25 +2354,25 @@ const App = {
 
         // 9th Card: All Semesters (1–8)
         html += `
-            <div onclick="App.selectDeptSemester('ALL')" class="bg-gradient-to-br from-blue-50 to-indigo-50/50 dark:from-slate-800 dark:to-slate-800/80 rounded-2xl p-5 border border-blue-200/80 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
+            <div onclick="App.selectDeptSemester('ALL')" class="bg-slate-50/70 dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between gap-2 mb-3">
-                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg shadow-xs group-hover:scale-105 transition-transform">
+                        <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-base shadow-xs group-hover:scale-105 transition-transform">
                             <i class="bi bi-collection-fill"></i>
                         </div>
-                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-blue-600 text-white font-mono shadow-2xs">
-                            ${allDeptPapers.length} Total
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40 font-mono">
+                            ${allDeptPapers.length} Papers
                         </span>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h4 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         All Semesters (1–8)
                     </h4>
                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
-                        View, search & filter across all semester papers in this department.
+                        All question papers & schemes
                     </p>
                 </div>
 
-                <div class="mt-5 pt-3 border-t border-blue-200/60 dark:border-slate-700/60 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
+                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
                     <span>Proceed to All Papers</span>
                     <i class="bi bi-arrow-right transition-transform group-hover:translate-x-1"></i>
                 </div>

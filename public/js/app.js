@@ -427,14 +427,14 @@ const App = {
         if (gridViewBtn && tableViewBtn) {
             gridViewBtn.addEventListener('click', () => {
                 this.state.viewMode = 'grid';
-                gridViewBtn.className = 'p-1.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300';
-                tableViewBtn.className = 'p-1.5 rounded text-slate-500 hover:text-slate-800 dark:hover:text-slate-200';
+                gridViewBtn.className = 'p-1.5 rounded-lg bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-xs transition';
+                tableViewBtn.className = 'p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition';
                 this.renderPapers();
             });
             tableViewBtn.addEventListener('click', () => {
                 this.state.viewMode = 'table';
-                tableViewBtn.className = 'p-1.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300';
-                gridViewBtn.className = 'p-1.5 rounded text-slate-500 hover:text-slate-800 dark:hover:text-slate-200';
+                tableViewBtn.className = 'p-1.5 rounded-lg bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-xs transition';
+                gridViewBtn.className = 'p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition';
                 this.renderPapers();
             });
         }
@@ -702,9 +702,9 @@ const App = {
         document.querySelectorAll('.sem-filter-btn').forEach(btn => {
             const isActive = btn.dataset.sem === sem;
             if (isActive) {
-                btn.className = 'sem-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs transition';
+                btn.className = 'sem-filter-btn px-4 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/25 transition-all duration-200 shrink-0 transform scale-[1.02]';
             } else {
-                btn.className = 'sem-filter-btn px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition';
+                btn.className = 'sem-filter-btn px-3.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/80 dark:hover:bg-slate-700/80 transition-all duration-200 shrink-0';
             }
         });
 
@@ -717,14 +717,106 @@ const App = {
 
         document.querySelectorAll('.ctype-filter-btn').forEach(btn => {
             const isActive = btn.dataset.ctype === ctype;
+            const isMinor = btn.dataset.ctype === 'MIN';
             if (isActive) {
-                btn.className = 'ctype-filter-btn px-3 py-1 text-xs font-semibold rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs transition';
+                if (isMinor) {
+                    btn.className = 'ctype-filter-btn px-3.5 py-1.5 text-xs font-bold rounded-xl bg-pink-600 text-white shadow-md shadow-pink-500/25 transition-all duration-200 shrink-0 transform scale-[1.02]';
+                } else {
+                    btn.className = 'ctype-filter-btn px-3.5 py-1.5 text-xs font-bold rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-md shadow-slate-900/20 dark:shadow-white/20 transition-all duration-200 shrink-0 transform scale-[1.02]';
+                }
             } else {
-                btn.className = 'ctype-filter-btn px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition';
+                if (isMinor) {
+                    btn.className = 'ctype-filter-btn px-3.5 py-1.5 text-xs font-bold rounded-xl bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-200 dark:border-pink-800/60 hover:bg-pink-100 dark:hover:bg-pink-900/50 transition-all duration-200 shrink-0 shadow-xs';
+                } else {
+                    btn.className = 'ctype-filter-btn px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-300 hover:bg-slate-200/90 dark:hover:bg-slate-700/90 hover:text-slate-900 dark:hover:text-white border border-slate-200/50 dark:border-slate-700/50 transition-all duration-200 shrink-0';
+                }
             }
         });
 
         this.applyFilters();
+    },
+
+    setQuickSearch(term) {
+        const input = document.getElementById('searchInput');
+        if (input) {
+            input.value = term;
+            this.state.searchQuery = term;
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (clearBtn) clearBtn.classList.remove('hidden');
+            this.state.currentPage = 1;
+            this.applyFilters();
+        }
+    },
+
+    clearSearchQuery() {
+        const input = document.getElementById('searchInput');
+        if (input) input.value = '';
+        const clearBtn = document.getElementById('clearSearchBtn');
+        if (clearBtn) clearBtn.classList.add('hidden');
+        this.state.searchQuery = '';
+        this.state.currentPage = 1;
+        this.applyFilters();
+    },
+
+    renderActiveFilterChips() {
+        const tray = document.getElementById('activeFiltersTray');
+        const container = document.getElementById('activeFilterChipsContainer');
+        const countEl = document.getElementById('filterActiveCount');
+        
+        if (countEl && this.filteredPapers) {
+            countEl.textContent = `${this.filteredPapers.length.toLocaleString()} Papers`;
+        }
+
+        if (!tray || !container) return;
+
+        const chips = [];
+
+        if (this.state.searchQuery) {
+            chips.push(`
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border border-blue-200 dark:border-blue-900/50 shadow-2xs">
+                    <i class="bi bi-search text-[10px]"></i> "${this.state.searchQuery}"
+                    <button type="button" onclick="App.clearSearchQuery()" class="hover:text-blue-900 dark:hover:text-white ml-0.5 p-0.5 rounded hover:bg-blue-200/60 transition"><i class="bi bi-x"></i></button>
+                </span>
+            `);
+        }
+
+        if (this.state.selectedSemester !== 'ALL') {
+            chips.push(`
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-900/50 shadow-2xs">
+                    <i class="bi bi-calendar3 text-[10px]"></i> Sem ${this.state.selectedSemester}
+                    <button type="button" onclick="App.setSemester('ALL')" class="hover:text-indigo-900 dark:hover:text-white ml-0.5 p-0.5 rounded hover:bg-indigo-200/60 transition"><i class="bi bi-x"></i></button>
+                </span>
+            `);
+        }
+
+        if (this.state.selectedCourseType !== 'ALL') {
+            const label = this.state.selectedCourseType === 'MIN' ? 'Minor Only' : this.state.selectedCourseType;
+            chips.push(`
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold bg-purple-50 text-purple-700 dark:bg-purple-950/60 dark:text-purple-300 border border-purple-200 dark:border-purple-900/50 shadow-2xs">
+                    <i class="bi bi-tag text-[10px]"></i> ${label}
+                    <button type="button" onclick="App.setCourseType('ALL')" class="hover:text-purple-900 dark:hover:text-white ml-0.5 p-0.5 rounded hover:bg-purple-200/60 transition"><i class="bi bi-x"></i></button>
+                </span>
+            `);
+        }
+
+        if (this.state.selectedDept !== 'ALL') {
+            const deptObj = this.departments.find(d => d.code === this.state.selectedDept);
+            const dName = deptObj ? deptObj.name : this.state.selectedDept;
+            chips.push(`
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold bg-teal-50 text-teal-700 dark:bg-teal-950/60 dark:text-teal-300 border border-teal-200 dark:border-teal-900/50 shadow-2xs">
+                    <i class="bi bi-mortarboard text-[10px]"></i> ${dName}
+                    <button type="button" onclick="App.setDepartment('ALL')" class="hover:text-teal-900 dark:hover:text-white ml-0.5 p-0.5 rounded hover:bg-teal-200/60 transition"><i class="bi bi-x"></i></button>
+                </span>
+            `);
+        }
+
+        if (chips.length > 0) {
+            container.innerHTML = chips.join('');
+            tray.classList.remove('hidden');
+        } else {
+            container.innerHTML = '';
+            tray.classList.add('hidden');
+        }
     },
 
     setDepartment(deptCode) {
@@ -828,6 +920,7 @@ const App = {
         }
 
         this.filteredPapers = results;
+        this.renderActiveFilterChips();
         this.renderPapers();
         this.renderPagination();
     },

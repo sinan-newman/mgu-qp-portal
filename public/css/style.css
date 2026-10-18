@@ -161,3 +161,58 @@ body {
   background-color: #581c87;
   color: #e9d5ff;
 }
+
+/* ============================================================
+   AWWWARDS-INSPIRED FILTER & DISCOVERY COMPONENT STYLING
+   ============================================================ */
+.filter-card-awwwards {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.07), 0 1px 3px 0 rgba(15, 23, 42, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+.dark .filter-card-awwwards {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.filter-gradient-accent {
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 35%, #8b5cf6 70%, #ec4899 100%);
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.command-search-box {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.command-search-box:focus-within {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15), 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.segmented-rail {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.segmented-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.pill-glow-active {
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
+}
+
+.dark .pill-glow-active {
+  box-shadow: 0 4px 16px 0 rgba(59, 130, 246, 0.4);
+}
+

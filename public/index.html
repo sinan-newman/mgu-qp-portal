@@ -14,6 +14,9 @@
     <!-- PDF.js for client-side Question Paper & Model Paper text extraction -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
+    <!-- PDF-Lib for client-side multi-paper PDF splitting & document compilation -->
+    <script src="js/pdf-lib.min.js"></script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -647,17 +650,54 @@
                                 <i class="bi bi-file-earmark-pdf"></i>
                                 <span id="adminSelectedFileName">filename.pdf</span>
                                 <span id="adminSelectedFileSize" class="text-[10px] text-blue-600 dark:text-blue-300 font-normal"></span>
+                                <button type="button" id="adminPreviewMasterPdfBtn" onclick="App.previewMasterPdf(event)" class="ml-1.5 px-2.5 py-0.5 rounded-md bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-sans font-semibold flex items-center gap-1 transition">
+                                    <i class="bi bi-eye"></i> Preview Master
+                                </button>
                             </div>
                         </div>
 
                         <!-- Scanner Spinner -->
                         <div id="adminScanSpinner" class="hidden p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/40 text-blue-700 dark:text-blue-300 text-xs flex items-center justify-center gap-3">
                             <div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div>
-                            <span class="font-semibold">Reading PDF text & analyzing course code against database...</span>
+                            <span id="adminScanSpinnerText" class="font-semibold">Reading PDF text & analyzing course boundaries across all pages...</span>
                         </div>
 
-                        <!-- Live Detection Result Box -->
+                        <!-- Live Detection Result Box (Single Paper) -->
                         <div id="adminScanResultContainer" class="hidden"></div>
+                    </div>
+
+                    <!-- MULTI-PAPER SPLIT SECTION (Shown when a compilation or multi-paper PDF is uploaded) -->
+                    <div id="adminMultiSplitContainer" class="hidden space-y-5">
+                        <!-- Compilation Summary Bar -->
+                        <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-800 dark:via-indigo-950/40 dark:to-slate-800 border border-indigo-200 dark:border-indigo-900/60 shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white flex items-center gap-1.5 shadow-2xs">
+                                        <i class="bi bi-collection-play-fill"></i> Multi-Paper PDF Splitting
+                                    </span>
+                                    <span id="adminSplitTotalBadge" class="text-xs font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-700 px-2.5 py-0.5 rounded-lg border border-slate-200 dark:border-slate-600">
+                                    </span>
+                                </div>
+                                <p class="text-xs text-slate-600 dark:text-slate-400">
+                                    The portal has read all pages, detected course boundaries, and split each model question paper into an individual 1–4 page document with auto-assigned course codes. Preview each split PDF below to confirm pages.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2 shrink-0 flex-wrap">
+                                <button type="button" id="adminPublishAllBtn" onclick="App.publishAllSplitPapers()" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1.5 transition">
+                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                    <span id="adminPublishAllBtnText">Publish All Verified Papers</span>
+                                </button>
+                                <button type="button" onclick="App.resetSmartUploadForm()" class="px-3 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-700 hover:bg-slate-100 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 transition">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Split Cards Container -->
+                        <div id="adminSplitCardsContainer" class="space-y-4">
+                            <!-- Populated dynamically by app.js -->
+                        </div>
                     </div>
 
                     <!-- Step 3: Verified Review Form -->

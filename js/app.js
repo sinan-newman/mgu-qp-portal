@@ -114,9 +114,11 @@ const App = {
     currentRoute: null,
     lastDeptListScrollY: 0,
 
-    // Admin Smart Ingestion State
+    // Admin Smart Ingestion & Splitting State
     selectedSmartPdfFile: null,
     currentPaperCategory: 'QP',
+    adminSplitPapers: [],
+    masterPdfUrl: null,
 
     async init() {
         this.loadBookmarks();
@@ -3253,6 +3255,115 @@ const App = {
         };
     },
 
+    previewMasterPdf(e) {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        if (this.masterPdfUrl) {
+            PDFViewer.openDirect(this.masterPdfUrl, this.selectedSmartPdfFile?.name || 'Master Upload', 'MASTER');
+        }
+    },
+
+    previewSplitPdf(idx) {
+        const item = this.adminSplitPapers[idx];
+        if (!item || !item.blobUrl) return;
+        PDFViewer.openDirect(item.blobUrl, `${item.courseCode || 'SPLIT'} - ${item.title || 'Model QP'} (Pages ${item.startPage}–${item.endPage})`, item.courseCode || 'MODEL');
+    },
+
+    async slicePdfPages(srcDoc, startPage, endPage) {
+        if (!srcDoc || typeof PDFLib === 'undefined') {
+            return null;
+        }
+        try {
+            const subDoc = await PDFLib.PDFDocument.create();
+            const indices = [];
+            for (let p = startPage - 1; p <= endPage - 1; p++) {
+                indices.push(p);
+            }
+            const copied = await subDoc.copyPages(srcDoc, indices);
+            copied.forEach(p => subDoc.addPage(p));
+            const subBytes = await subDoc.save();
+            const blob = new Blob([subBytes], { type: 'application/pdf' });
+            const blobUrl = URL.createObjectURL(blob);
+
+            const base64 = await new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+
+            return { blob, blobUrl, base64, bytes: subBytes };
+        } catch (err) {
+            console.error('Error slicing PDF pages with pdf-lib:', err);
+            return null;
+        }
+    },
+
+    detectPaperBoundaries(pagesText, numPages) {
+        if (numPages <= 1) {
+            return [{ startPage: 1, endPage: 1, pageCount: 1 }];
+        }
+
+        const startPages = [0]; // 0-indexed; Page 1 always starts Paper 1
+
+        for (let i = 1; i < numPages; i++) {
+            const text = (pagesText[i] || '').toUpperCase();
+
+            // 1. University Header
+            const hasUniv = /MAHATMA\s*GANDHI\s*UNIVERSITY/i.test(text) || 
+                            /MGU-UGP/i.test(text) || 
+                            /UGP\s*\(HONOURS\)/i.test(text) || 
+                            /FYUGP/i.test(text) ||
+                            /FOUR\s*YEAR\s*UNDERGRADUATE/i.test(text);
+
+            // 2. Model Question Paper / Sample Paper Header
+            const hasModel = /MODEL\s*QUESTION\s*PAPER/i.test(text) || 
+                             /SAMPLE\s*QUESTION\s*PAPER/i.test(text) || 
+                             /MODEL\s*QP/i.test(text) ||
+                             /MODEL\s*EXAMINATION/i.test(text);
+
+            // 3. Course Code Pattern on this page
+            const hasCode = /(?:MG[1-8][A-Z]{2,5}[0-9]{1,4}|[A-Z]{2,4}[1-8][A-Z]{2,4}[0-9]{1,4})/i.test(text) ||
+                            /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*[A-Z0-9]/i.test(text);
+
+            // 4. Duration or Max Marks
+            const hasMarksTime = /(?:DURATION|TIME)\s*[:\-–]?\s*[0-9]/i.test(text) ||
+                                 /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\s*[:\-–]?\s*[0-9]/i.test(text);
+
+            // 5. Part / Section A indicator
+            const hasPartA = /PART\s*[-–]?\s*A\b/i.test(text) || /SECTION\s*[-–]?\s*A\b/i.test(text);
+
+            // A new paper starts on page i if:
+            const isNewStart = ((hasUniv || hasModel) && (hasCode || hasMarksTime)) ||
+                               (hasCode && hasMarksTime) ||
+                               (hasModel && (hasUniv || hasPartA));
+
+            if (isNewStart) {
+                const lastStart = startPages[startPages.length - 1];
+                // Prevent duplicate starts on same or immediately adjacent page unless distinct code
+                if (i - lastStart >= 1) {
+                    startPages.push(i);
+                }
+            }
+        }
+
+        // Build segments
+        const segments = [];
+        for (let s = 0; s < startPages.length; s++) {
+            const start = startPages[s];
+            const end = (s + 1 < startPages.length) ? (startPages[s + 1] - 1) : (numPages - 1);
+            segments.push({
+                startPage: start + 1,
+                endPage: end + 1,
+                pageCount: end - start + 1
+            });
+        }
+
+        return segments;
+    },
+
     handleSmartPdfFileSelected(e) {
         const file = e.target.files && e.target.files[0];
         if (!file) return;
@@ -3261,6 +3372,7 @@ const App = {
 
     async processSmartPdfFile(file) {
         this.selectedSmartPdfFile = file;
+        this.masterPdfUrl = URL.createObjectURL(file);
 
         // Display selected file badge
         const badge = document.getElementById('adminSelectedFileNameBadge');
@@ -3272,61 +3384,491 @@ const App = {
 
         // Show scanner spinner
         const spinner = document.getElementById('adminScanSpinner');
+        const spinnerText = document.getElementById('adminScanSpinnerText');
         if (spinner) spinner.classList.remove('hidden');
+        if (spinnerText) spinnerText.textContent = 'Parsing PDF document...';
 
-        // Extract PDF text
-        let extractedText = '';
         try {
-            extractedText = await this.extractPdfText(file);
+            const arrayBuffer = await file.arrayBuffer();
+
+            // Load via PDF.js for text extraction
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+            const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+            const pdf = await loadingTask.promise;
+            const numPages = pdf.numPages;
+
+            // Load via PDFLib for page slicing
+            let srcDoc = null;
+            if (typeof PDFLib !== 'undefined') {
+                try {
+                    srcDoc = await PDFLib.PDFDocument.load(arrayBuffer);
+                } catch (err) {
+                    console.warn('PDFLib failed to load document:', err);
+                }
+            }
+
+            // Extract all pages text
+            const pagesText = [];
+            for (let i = 1; i <= numPages; i++) {
+                if (spinnerText) spinnerText.textContent = `Reading PDF page ${i} of ${numPages}...`;
+                const page = await pdf.getPage(i);
+                const tokenized = await page.getTextContent();
+                const pageText = tokenized.items.map(it => it.str).join(' ');
+                pagesText.push(pageText);
+            }
+
+            // Detect boundaries
+            if (spinnerText) spinnerText.textContent = 'Analyzing course boundaries and checking catalog...';
+            const segments = this.detectPaperBoundaries(pagesText, numPages);
+
+            // Check if overall document is Model Paper
+            const combinedAllText = pagesText.join(' ');
+            const isDocModel = /MODEL\s*QUESTION|MODEL\s*QP|SAMPLE\s*QUESTION/i.test(combinedAllText) || /model/i.test(file.name);
+            if (isDocModel && this.currentPaperCategory !== 'MODEL') {
+                this.handlePaperCategoryChange('MODEL');
+                const radioModel = document.querySelector('input[name="adminPaperCategory"][value="MODEL"]');
+                if (radioModel) radioModel.checked = true;
+            }
+
+            if (segments.length > 1 && srcDoc) {
+                // MULTI-PAPER SPLIT MODE
+                this.adminSplitPapers = [];
+
+                for (let s = 0; s < segments.length; s++) {
+                    const seg = segments[s];
+                    if (spinnerText) spinnerText.textContent = `Splitting paper ${s + 1} of ${segments.length} (Pages ${seg.startPage}–${seg.endPage})...`;
+
+                    // Slice pages into independent PDF
+                    const sliced = await this.slicePdfPages(srcDoc, seg.startPage, seg.endPage);
+
+                    // Combine text of this segment's pages
+                    const segText = pagesText.slice(seg.startPage - 1, seg.endPage).join(' ');
+
+                    // Detect course info
+                    const detected = this.detectCourseInfo(segText, file.name);
+
+                    // Duplicate check
+                    const isModel = this.currentPaperCategory === 'MODEL';
+                    const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+
+                    this.adminSplitPapers.push({
+                        idx: s,
+                        startPage: seg.startPage,
+                        endPage: seg.endPage,
+                        pageCount: seg.pageCount,
+                        courseCode: detected.courseCode,
+                        title: detected.title,
+                        deptCode: detected.deptCode,
+                        semester: detected.semester,
+                        courseType: detected.courseType,
+                        isMinor: detected.isMinor,
+                        minorName: detected.minorName,
+                        minorCode: detected.minorCode,
+                        qpCode: detected.qpCode,
+                        examName: detected.examName,
+                        confidence: detected.confidence,
+                        isDuplicate: dupResult.isDuplicate,
+                        dupMessage: dupResult.message,
+                        existingPaper: dupResult.paper,
+                        blob: sliced ? sliced.blob : null,
+                        blobUrl: sliced ? sliced.blobUrl : this.masterPdfUrl,
+                        base64: sliced ? sliced.base64 : '',
+                        published: false
+                    });
+                }
+
+                // Hide single form, show multi split view
+                document.getElementById('adminUploadForm')?.classList.add('hidden');
+                document.getElementById('adminScanResultContainer')?.classList.add('hidden');
+                document.getElementById('adminMultiSplitContainer')?.classList.remove('hidden');
+
+                this.renderSplitCardsUI();
+            } else {
+                // SINGLE PAPER MODE
+                this.adminSplitPapers = [];
+                document.getElementById('adminMultiSplitContainer')?.classList.add('hidden');
+                document.getElementById('adminUploadForm')?.classList.remove('hidden');
+
+                const detected = this.detectCourseInfo(combinedAllText, file.name);
+
+                if (detected.isModelPaper && this.currentPaperCategory !== 'MODEL') {
+                    this.handlePaperCategoryChange('MODEL');
+                    const radioModel = document.querySelector('input[name="adminPaperCategory"][value="MODEL"]');
+                    if (radioModel) radioModel.checked = true;
+                }
+
+                // Fill form fields
+                const codeInput = document.getElementById('adminUploadCourseCode');
+                const titleInput = document.getElementById('adminUploadTitle');
+                const deptSelect = document.getElementById('adminUploadDept');
+                const semSelect = document.getElementById('adminUploadSemester');
+                const ctypeSelect = document.getElementById('adminUploadCourseType');
+                const isMinorCheck = document.getElementById('adminUploadIsMinor');
+                const minorNameInput = document.getElementById('adminUploadMinorName');
+                const minorCodeInput = document.getElementById('adminUploadMinorCode');
+                const qpCodeInput = document.getElementById('adminUploadQpCode');
+                const examNameInput = document.getElementById('adminUploadExamName');
+
+                if (codeInput && detected.courseCode) codeInput.value = detected.courseCode;
+                if (titleInput && detected.title) titleInput.value = detected.title;
+                if (deptSelect && detected.deptCode) deptSelect.value = detected.deptCode;
+                if (semSelect && detected.semester) semSelect.value = String(detected.semester);
+                if (ctypeSelect && detected.courseType) ctypeSelect.value = detected.courseType;
+                if (qpCodeInput && detected.qpCode) qpCodeInput.value = detected.qpCode;
+                if (examNameInput && detected.examName) examNameInput.value = detected.examName;
+
+                if (isMinorCheck) {
+                    isMinorCheck.checked = Boolean(detected.isMinor);
+                    this.toggleAdminMinorFields();
+                    if (minorNameInput && detected.minorName) minorNameInput.value = detected.minorName;
+                    if (minorCodeInput && detected.minorCode) minorCodeInput.value = detected.minorCode;
+                }
+
+                const isModel = this.currentPaperCategory === 'MODEL';
+                const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+
+                this.renderScanResultUI(detected, dupResult);
+            }
         } catch (err) {
-            console.warn('Text extraction encountered an issue:', err);
+            console.error('Error processing PDF:', err);
+            alert(`Failed to process PDF: ${err.message}`);
+        } finally {
+            if (spinner) spinner.classList.add('hidden');
+        }
+    },
+
+    renderSplitCardsUI() {
+        const container = document.getElementById('adminSplitCardsContainer');
+        const totalBadge = document.getElementById('adminSplitTotalBadge');
+        if (!container) return;
+
+        const totalPapers = this.adminSplitPapers.length;
+        const totalPages = this.adminSplitPapers.reduce((sum, p) => sum + p.pageCount, 0);
+        const dupCount = this.adminSplitPapers.filter(p => p.isDuplicate).length;
+        const verifiedCount = totalPapers - dupCount;
+
+        if (totalBadge) {
+            totalBadge.textContent = `${totalPapers} Papers • ${totalPages} Pages Total (${verifiedCount} Ready, ${dupCount} Existing)`;
         }
 
-        // Run auto-detection
-        const detected = this.detectCourseInfo(extractedText, file.name);
+        const deptOptionsHtml = (selectedCode) => {
+            return '<option value="">-- Select Department --</option>' +
+                this.departments.map(d => `<option value="${d.code}" ${d.code === selectedCode ? 'selected' : ''}>${d.name} (${d.code})</option>`).join('');
+        };
 
-        // Auto-switch category radio if model paper detected
-        if (detected.isModelPaper && this.currentPaperCategory !== 'MODEL') {
-            this.handlePaperCategoryChange('MODEL');
-            const radioModel = document.querySelector('input[name="adminPaperCategory"][value="MODEL"]');
-            if (radioModel) radioModel.checked = true;
+        const semOptionsHtml = (selectedSem) => {
+            let html = '';
+            for (let s = 1; s <= 8; s++) {
+                html += `<option value="${s}" ${s === Number(selectedSem) ? 'selected' : ''}>Semester ${s}</option>`;
+            }
+            return html;
+        };
+
+        container.innerHTML = this.adminSplitPapers.map((item, idx) => {
+            const isDup = item.isDuplicate;
+            const isPublished = item.published;
+
+            const confidenceBadge = item.confidence === 'high'
+                ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300 flex items-center gap-1"><i class="bi bi-check-circle-fill"></i> Catalog Match</span>'
+                : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300 flex items-center gap-1"><i class="bi bi-magic"></i> Auto-Detected</span>';
+
+            const dupBadge = isDup
+                ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 dark:bg-amber-900/60 dark:text-amber-200 flex items-center gap-1"><i class="bi bi-exclamation-triangle-fill text-amber-600"></i> In Catalog</span>'
+                : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200 flex items-center gap-1"><i class="bi bi-check2-circle text-emerald-600"></i> Ready</span>';
+
+            const dupAlert = isDup ? `
+                <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200 flex items-center justify-between gap-2 flex-wrap">
+                    <div class="flex items-center gap-1.5 font-medium">
+                        <i class="bi bi-exclamation-triangle-fill text-amber-600 shrink-0"></i>
+                        <span>${item.dupMessage}</span>
+                    </div>
+                    ${item.existingPaper ? `
+                    <button type="button" onclick="App.previewPaper(this, App.findPaperById('${item.existingPaper.id}'), 'QP')" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-200 hover:bg-amber-300 dark:bg-amber-800 dark:hover:bg-amber-700 text-amber-950 dark:text-amber-100 flex items-center gap-1 transition shrink-0">
+                        <i class="bi bi-eye"></i> View Existing
+                    </button>` : ''}
+                </div>
+            ` : '';
+
+            return `
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-800 border ${isPublished ? 'border-emerald-500 dark:border-emerald-500/80 bg-emerald-50/10' : (isDup ? 'border-amber-300 dark:border-amber-700/80' : 'border-slate-200 dark:border-slate-700')} shadow-xs space-y-4 transition" id="splitCard_${idx}">
+                    <!-- Card Top Header -->
+                    <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-700/80">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-2xs">
+                                PAPER #${idx + 1}
+                            </span>
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/50 flex items-center gap-1">
+                                <i class="bi bi-file-earmark-break"></i> Pages ${item.startPage} – ${item.endPage} (${item.pageCount} ${item.pageCount === 1 ? 'page' : 'pages'})
+                            </span>
+                            ${confidenceBadge}
+                            ${dupBadge}
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <!-- PREVIEW BUTTON: Opens this exact split 1-4 page PDF -->
+                            <button type="button" onclick="App.previewSplitPdf(${idx})" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1.5 transition">
+                                <i class="bi bi-eye-fill"></i>
+                                <span>Preview Split PDF</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    ${dupAlert}
+
+                    <!-- Editable Fields for This Split Paper -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                Course Code <span class="text-rose-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="splitCourseCode_${idx}" 
+                                value="${item.courseCode || ''}" 
+                                oninput="App.handleSplitCourseCodeChange(${idx})" 
+                                placeholder="e.g. MG1DSCMAT100" 
+                                class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 font-mono font-bold uppercase text-xs"
+                                ${isPublished ? 'disabled' : ''}
+                            >
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                Course Title <span class="text-rose-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="splitTitle_${idx}" 
+                                value="${item.title || ''}" 
+                                placeholder="Course Title" 
+                                class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
+                                ${isPublished ? 'disabled' : ''}
+                            >
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                Department <span class="text-rose-500">*</span>
+                            </label>
+                            <select 
+                                id="splitDept_${idx}" 
+                                class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
+                                ${isPublished ? 'disabled' : ''}
+                            >
+                                ${deptOptionsHtml(item.deptCode)}
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                                Semester <span class="text-rose-500">*</span>
+                            </label>
+                            <select 
+                                id="splitSem_${idx}" 
+                                class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold"
+                                ${isPublished ? 'disabled' : ''}
+                            >
+                                ${semOptionsHtml(item.semester)}
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Actions for this card -->
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-700/80">
+                        <div id="splitStatus_${idx}" class="text-xs font-semibold">
+                            ${isPublished ? '<span class="text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5"><i class="bi bi-check-circle-fill"></i> Successfully Added into Website</span>' : ''}
+                        </div>
+
+                        ${!isPublished ? `
+                        <button type="button" id="splitPublishBtn_${idx}" onclick="App.publishSingleSplitPaper(${idx})" class="px-4 py-2 rounded-xl text-xs font-bold ${isDup ? 'bg-amber-600 hover:bg-amber-500' : 'bg-blue-600 hover:bg-blue-500'} text-white shadow-xs flex items-center gap-1.5 transition ml-auto">
+                            <i class="bi ${isDup ? 'bi-arrow-repeat' : 'bi-plus-circle-fill'}"></i>
+                            <span>${isDup ? 'Update / Overwrite in Website' : 'Add into Website'}</span>
+                        </button>` : ''}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    },
+
+    handleSplitCourseCodeChange(idx) {
+        const item = this.adminSplitPapers[idx];
+        if (!item) return;
+
+        const codeInput = document.getElementById(`splitCourseCode_${idx}`);
+        const titleInput = document.getElementById(`splitTitle_${idx}`);
+        const deptSelect = document.getElementById(`splitDept_${idx}`);
+        const semSelect = document.getElementById(`splitSem_${idx}`);
+
+        const newCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
+        item.courseCode = newCode;
+
+        if (newCode) {
+            const match = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === newCode);
+            if (match) {
+                if (titleInput && (!titleInput.value || titleInput.value === item.title)) {
+                    titleInput.value = match.title;
+                    item.title = match.title;
+                }
+                if (deptSelect && (!deptSelect.value || deptSelect.value === item.deptCode)) {
+                    deptSelect.value = match.parent_dept || match.dept_code;
+                    item.deptCode = deptSelect.value;
+                }
+                if (semSelect && match.semester) {
+                    semSelect.value = String(match.semester);
+                    item.semester = match.semester;
+                }
+                item.confidence = 'high';
+            }
         }
 
-        // Pre-fill form fields
-        const codeInput = document.getElementById('adminUploadCourseCode');
-        const titleInput = document.getElementById('adminUploadTitle');
-        const deptSelect = document.getElementById('adminUploadDept');
-        const semSelect = document.getElementById('adminUploadSemester');
-        const ctypeSelect = document.getElementById('adminUploadCourseType');
-        const isMinorCheck = document.getElementById('adminUploadIsMinor');
-        const minorNameInput = document.getElementById('adminUploadMinorName');
-        const minorCodeInput = document.getElementById('adminUploadMinorCode');
-        const qpCodeInput = document.getElementById('adminUploadQpCode');
-        const examNameInput = document.getElementById('adminUploadExamName');
-
-        if (codeInput && detected.courseCode) codeInput.value = detected.courseCode;
-        if (titleInput && detected.title) titleInput.value = detected.title;
-        if (deptSelect && detected.deptCode) deptSelect.value = detected.deptCode;
-        if (semSelect && detected.semester) semSelect.value = String(detected.semester);
-        if (ctypeSelect && detected.courseType) ctypeSelect.value = detected.courseType;
-        if (qpCodeInput && detected.qpCode) qpCodeInput.value = detected.qpCode;
-        if (examNameInput && detected.examName) examNameInput.value = detected.examName;
-
-        if (isMinorCheck) {
-            isMinorCheck.checked = Boolean(detected.isMinor);
-            this.toggleAdminMinorFields();
-            if (minorNameInput && detected.minorName) minorNameInput.value = detected.minorName;
-            if (minorCodeInput && detected.minorCode) minorCodeInput.value = detected.minorCode;
-        }
-
-        // Check for duplicates
         const isModel = this.currentPaperCategory === 'MODEL';
-        const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+        const dupResult = this.checkPaperDuplicate(newCode, item.qpCode, isModel);
+        item.isDuplicate = dupResult.isDuplicate;
+        item.dupMessage = dupResult.message;
+        item.existingPaper = dupResult.paper;
 
-        if (spinner) spinner.classList.add('hidden');
+        this.renderSplitCardsUI();
+    },
 
-        // Render live verification status card
-        this.renderScanResultUI(detected, dupResult);
+    async publishSingleSplitPaper(idx) {
+        const item = this.adminSplitPapers[idx];
+        if (!item || item.published) return;
+
+        const btn = document.getElementById(`splitPublishBtn_${idx}`);
+        const courseCode = document.getElementById(`splitCourseCode_${idx}`)?.value.trim().toUpperCase() || item.courseCode;
+        const title = document.getElementById(`splitTitle_${idx}`)?.value.trim() || item.title;
+        const deptCode = document.getElementById(`splitDept_${idx}`)?.value.trim().toUpperCase() || item.deptCode;
+        const semester = parseInt(document.getElementById(`splitSem_${idx}`)?.value || item.semester, 10);
+
+        if (!courseCode) {
+            alert('Please specify a Course Code for this paper.');
+            return;
+        }
+
+        if (btn) this.setButtonLoading(btn, true, 'Publishing...');
+
+        try {
+            const isModel = this.currentPaperCategory === 'MODEL';
+            const deptObj = this.departments.find(d => d.code === deptCode);
+            const deptName = deptObj ? deptObj.name : deptCode;
+
+            const payload = {
+                is_model_paper: isModel,
+                course_code: courseCode,
+                title: title || `Model QP - ${courseCode}`,
+                dept_code: deptCode,
+                dept_name: deptName,
+                parent_dept: deptCode,
+                parent_dept_name: deptName,
+                semester: semester,
+                course_type: item.courseType || 'DSC',
+                is_minor: Boolean(item.isMinor),
+                minor_name: item.minorName || '',
+                qp_code: item.qpCode || '',
+                exam_name: isModel ? 'Model Question Paper (FYUGP 2024)' : item.examName,
+                qp_file_b64: item.base64,
+                scheme_file_b64: '',
+                scheme_url: ''
+            };
+
+            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+
+            let data;
+            if (isLocalBackend) {
+                const res = await fetch('/api/admin/upload-paper', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                data = await res.json();
+            } else {
+                const ts = Date.now();
+                const modelObj = {
+                    url: item.blobUrl || "#",
+                    filename: `Model_${courseCode}_Pages_${item.startPage}-${item.endPage}.pdf`,
+                    title: title || `Model QP - ${courseCode}`
+                };
+                let existing = this.papers.find(p => (p.course_code || '').toUpperCase() === courseCode);
+                if (existing) {
+                    if (!existing.model_papers) existing.model_papers = [];
+                    existing.model_papers.push(modelObj);
+                } else {
+                    existing = {
+                        id: `custom_split_${courseCode}_${ts}`,
+                        course_code: courseCode,
+                        title: title || `Model QP - ${courseCode}`,
+                        raw_header: `${courseCode} ${title}`,
+                        semester: semester,
+                        semester_label: `Semester ${semester}`,
+                        course_type: item.courseType || 'DSC',
+                        dept_code: deptCode,
+                        dept_name: deptName,
+                        parent_dept: deptCode,
+                        parent_dept_name: deptName,
+                        batch: "2024 Admission",
+                        is_fyugp: true,
+                        has_qp: false,
+                        has_scheme: false,
+                        files: [],
+                        has_files: false,
+                        model_papers: [modelObj]
+                    };
+                    this.papers.unshift(existing);
+                }
+                data = { success: true, paper: existing };
+            }
+
+            if (data.success) {
+                if (data.paper) {
+                    const existingIdx = this.papers.findIndex(p => p.id === data.paper.id || (p.course_code && p.course_code.toUpperCase() === data.paper.course_code.toUpperCase()));
+                    if (existingIdx !== -1) {
+                        this.papers[existingIdx] = data.paper;
+                    } else {
+                        this.papers.unshift(data.paper);
+                    }
+                }
+
+                item.published = true;
+                this.applyFilters();
+                this.renderDepartmentsList();
+                if (this.deptState.activeDept) {
+                    this.renderDeptSemesterTabs();
+                    this.renderDeptSemesterPapers();
+                }
+                this.updateStatsUI();
+
+                this.renderSplitCardsUI();
+            } else {
+                throw new Error(data.error || 'Server rejected paper upload');
+            }
+        } catch (err) {
+            alert(`Error publishing paper: ${err.message}`);
+        } finally {
+            if (btn) this.setButtonLoading(btn, false);
+        }
+    },
+
+    async publishAllSplitPapers() {
+        const pending = this.adminSplitPapers.filter(p => !p.published);
+        if (pending.length === 0) {
+            alert('All split papers have already been published!');
+            return;
+        }
+
+        const btn = document.getElementById('adminPublishAllBtn');
+        const origText = document.getElementById('adminPublishAllBtnText');
+
+        if (btn) this.setButtonLoading(btn, true, `Publishing (0/${pending.length})...`);
+
+        let count = 0;
+        for (let i = 0; i < this.adminSplitPapers.length; i++) {
+            const paper = this.adminSplitPapers[i];
+            if (!paper.published) {
+                count++;
+                if (origText) origText.textContent = `Publishing (${count}/${pending.length})...`;
+                await this.publishSingleSplitPaper(i);
+            }
+        }
+
+        if (btn) this.setButtonLoading(btn, false);
+        alert(`Successfully published all ${count} split model question papers into the website!`);
     },
 
     renderScanResultUI(info, dupResult) {
@@ -3379,7 +3921,6 @@ const App = {
             </div>
         `;
 
-        // Update submit button text and styling
         const btnText = document.getElementById('adminUploadSubmitBtnText');
         const warnHint = document.getElementById('adminDuplicateWarningHint');
         const submitBtn = document.getElementById('adminUploadSubmitBtn');
@@ -3405,7 +3946,6 @@ const App = {
         const courseCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
         const qpCode = qpCodeInput ? qpCodeInput.value.trim() : '';
 
-        // If code matches a known paper in catalog, auto-fill title, department, sem
         if (courseCode) {
             const match = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === courseCode);
             if (match) {
@@ -3514,7 +4054,6 @@ const App = {
                 });
                 data = await res.json();
             } else {
-                // Client-side simulation when on static host
                 const ts = Date.now();
                 if (isModel) {
                     const modelObj = {
@@ -3610,7 +4149,6 @@ const App = {
                     statusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> Paper "${courseCode} - ${title}" added successfully into the website!`;
                 }
 
-                // Reset form & dropzone for next paper
                 this.resetSmartUploadForm();
             } else {
                 throw new Error(data.error || 'Server rejected paper upload');
@@ -3632,6 +4170,12 @@ const App = {
 
     resetSmartUploadForm() {
         this.selectedSmartPdfFile = null;
+        this.adminSplitPapers = [];
+        if (this.masterPdfUrl) {
+            URL.revokeObjectURL(this.masterPdfUrl);
+            this.masterPdfUrl = null;
+        }
+
         const fileInput = document.getElementById('adminSmartPdfFile');
         if (fileInput) fileInput.value = '';
         const badge = document.getElementById('adminSelectedFileNameBadge');
@@ -3641,6 +4185,17 @@ const App = {
             scanRes.innerHTML = '';
             scanRes.classList.add('hidden');
         }
+
+        // Multi split container reset
+        const multiContainer = document.getElementById('adminMultiSplitContainer');
+        if (multiContainer) multiContainer.classList.add('hidden');
+        const splitCards = document.getElementById('adminSplitCardsContainer');
+        if (splitCards) splitCards.innerHTML = '';
+
+        // Form reset
+        const uploadForm = document.getElementById('adminUploadForm');
+        if (uploadForm) uploadForm.classList.remove('hidden');
+
         const warnHint = document.getElementById('adminDuplicateWarningHint');
         if (warnHint) warnHint.classList.add('hidden');
         const submitBtnText = document.getElementById('adminUploadSubmitBtnText');

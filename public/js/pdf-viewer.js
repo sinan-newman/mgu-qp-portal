@@ -111,7 +111,9 @@ const PDFViewer = {
         let viewerSrc = url;
         const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
         
-        if (isLocalBackend) {
+        if (url.startsWith('blob:') || url.startsWith('data:')) {
+            viewerSrc = url;
+        } else if (isLocalBackend) {
             viewerSrc = `/api/proxy-pdf?url=${encodeURIComponent(url)}`;
         } else {
             // For GitHub Pages / static hosting, Google Docs Viewer ensures cross-origin PDF renders seamlessly

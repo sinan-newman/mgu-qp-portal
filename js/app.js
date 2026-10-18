@@ -772,19 +772,10 @@ const App = {
 
         document.querySelectorAll('.ctype-filter-btn').forEach(btn => {
             const isActive = btn.dataset.ctype === ctype;
-            const isMinor = btn.dataset.ctype === 'MIN';
             if (isActive) {
-                if (isMinor) {
-                    btn.className = 'ctype-filter-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-pink-600 text-white shadow-xs transition shrink-0';
-                } else {
-                    btn.className = 'ctype-filter-btn px-3 py-1 text-xs font-semibold rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs transition shrink-0';
-                }
+                btn.className = 'ctype-filter-btn px-3 py-1 text-xs font-semibold rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs transition shrink-0';
             } else {
-                if (isMinor) {
-                    btn.className = 'ctype-filter-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300 border border-pink-200 dark:border-pink-800/60 hover:bg-pink-100 transition shrink-0';
-                } else {
-                    btn.className = 'ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0';
-                }
+                btn.className = 'ctype-filter-btn px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100/80 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/60 dark:border-slate-700/50 transition shrink-0';
             }
         });
 

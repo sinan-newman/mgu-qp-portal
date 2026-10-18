@@ -731,11 +731,11 @@ const App = {
         const hash = (rawHash || window.location.hash || '').trim();
 
         // 1. Department route: #/department/CODE or #/department/CODE/SEM or #dept=CODE
-        const deptMatch = hash.match(/^#(?:dept=|department\/)([A-Za-z0-9_]+)(?:[\/?](?:sem=)?([0-9]+|ALL))?$/i);
+        const deptMatch = hash.match(/^#(?:dept=|department\/)([A-Za-z0-9_]+)(?:[\/?](?:sem[\/=])?([0-9]+|ALL))?$/i);
         if (deptMatch) {
             const deptCode = deptMatch[1].toUpperCase();
             const semParam = deptMatch[2] ? (deptMatch[2].toUpperCase() === 'ALL' ? 'ALL' : parseInt(deptMatch[2], 10)) : null;
-            if (this.deptState.activeDept && this.deptState.activeDept.code.toUpperCase() === deptCode && (semParam === null || this.deptState.selectedSemester === semParam) && !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+            if (this.deptState.activeDept && this.deptState.activeDept.code.toUpperCase() === deptCode && (this.deptState.selectedSemester === semParam) && !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
                 return;
             }
             this.openDepartmentView(deptCode, semParam, false);
@@ -1806,10 +1806,8 @@ const App = {
         }
 
         this.deptState.activeDept = dept;
+        this.deptState.selectedSemester = targetSem;
         this.deptState.searchQuery = '';
-
-        // Update document title for this department page
-        document.title = `${dept.name} (${dept.code}) - MGU FYUGP Question Papers`;
 
         // Switch to detail view and hide hero & homepage tabs so it acts as a dedicated page
         document.getElementById('heroSection')?.classList.add('hidden');
@@ -1821,20 +1819,6 @@ const App = {
         document.getElementById('departmentsSection')?.classList.remove('hidden');
         const detailContainer = document.getElementById('deptDetailContainer');
         if (detailContainer) detailContainer.classList.remove('hidden');
-
-        // Breadcrumbs
-        const breadcrumbsEl = document.getElementById('deptBreadcrumbs');
-        if (breadcrumbsEl) {
-            breadcrumbsEl.innerHTML = `
-                <a href="#/departments" onclick="App.backToDepartmentsList(); return false;" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-medium">
-                    <i class="bi bi-grid text-xs"></i>
-                    <span>Departments</span>
-                </a>
-                <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
-                <span class="text-slate-900 dark:text-white font-bold truncate max-w-[160px] sm:max-w-none">${dept.name}</span>
-                <span class="font-mono text-[11px] font-bold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">${dept.code}</span>
-            `;
-        }
 
         const majors = dept.majors || [];
         const minors = dept.minors || [];
@@ -1891,26 +1875,63 @@ const App = {
             `;
         }
 
-        // Reset in-department paper search input
-        const deptPaperSearch = document.getElementById('deptPaperSearchInput');
-        if (deptPaperSearch) deptPaperSearch.value = '';
+        const breadcrumbsEl = document.getElementById('deptBreadcrumbs');
+        const backBtnText = document.getElementById('deptBackBtnText');
+        const selectorView = document.getElementById('deptSemestersSelectorView');
+        const papersView = document.getElementById('deptSemesterPapersView');
 
-        // Pick initial semester: if targetSem given, use it; else pick first semester with papers, or ALL
-        let initialSem = targetSem;
-        if (!initialSem) {
-            for (let s = 1; s <= 8; s++) {
-                const count = allDeptPapers.filter(p => p.semester === s).length;
-                if (count > 0) {
-                    initialSem = s;
-                    break;
-                }
+        if (targetSem === null) {
+            // Mode 1: Landing on Department -> Ask which semester to proceed
+            document.title = `${dept.name} (${dept.code}) - Select Semester | MGU FYUGP`;
+
+            if (selectorView) selectorView.classList.remove('hidden');
+            if (papersView) papersView.classList.add('hidden');
+            if (backBtnText) backBtnText.textContent = 'Back to Departments';
+
+            if (breadcrumbsEl) {
+                breadcrumbsEl.innerHTML = `
+                    <a href="#/departments" onclick="App.showDepartmentsList(true); return false;" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-medium">
+                        <i class="bi bi-grid text-xs"></i>
+                        <span>Departments</span>
+                    </a>
+                    <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
+                    <span class="text-slate-900 dark:text-white font-bold truncate max-w-[160px] sm:max-w-none">${dept.name}</span>
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">${dept.code}</span>
+                `;
             }
-        }
-        this.deptState.selectedSemester = initialSem || 'ALL';
 
-        // Render Semester Tabs and Year-Wise Papers
-        this.renderDeptSemesterTabs();
-        this.renderDeptSemesterPapers();
+            this.renderDeptSemestersSelector();
+        } else {
+            // Mode 2: Dedicated Semester Page
+            const semDisplay = targetSem === 'ALL' ? 'All Semesters' : `Semester ${targetSem}`;
+            document.title = `${dept.name} - ${semDisplay} Papers | MGU FYUGP`;
+
+            if (selectorView) selectorView.classList.add('hidden');
+            if (papersView) papersView.classList.remove('hidden');
+            if (backBtnText) backBtnText.textContent = 'Back to Semesters';
+
+            if (breadcrumbsEl) {
+                breadcrumbsEl.innerHTML = `
+                    <a href="#/departments" onclick="App.showDepartmentsList(true); return false;" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-medium">
+                        <i class="bi bi-grid text-xs"></i>
+                        <span>Departments</span>
+                    </a>
+                    <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
+                    <a href="#/department/${dept.code}" onclick="App.openDepartmentView('${dept.code}', null, true); return false;" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                        ${dept.name} (${dept.code})
+                    </a>
+                    <i class="bi bi-chevron-right text-[10px] text-slate-400"></i>
+                    <span class="text-slate-900 dark:text-white font-bold">${semDisplay}</span>
+                `;
+            }
+
+            // Reset in-department paper search input
+            const deptPaperSearch = document.getElementById('deptPaperSearchInput');
+            if (deptPaperSearch) deptPaperSearch.value = '';
+
+            this.renderDeptSemesterTabs();
+            this.renderDeptSemesterPapers();
+        }
 
         window.scrollTo({ top: 0, behavior: 'instant' });
     },
@@ -1968,15 +1989,8 @@ const App = {
     },
 
     selectDeptSemester(sem) {
-        this.deptState.selectedSemester = sem;
-        this.renderDeptSemesterTabs();
-        this.renderDeptSemesterPapers();
-
-        if (this.deptState.activeDept) {
-            const newHash = `#/department/${this.deptState.activeDept.code}/${sem}`;
-            this.currentRoute = newHash;
-            history.replaceState(null, '', newHash);
-        }
+        if (!this.deptState.activeDept) return;
+        this.openDepartmentView(this.deptState.activeDept.code, sem, true);
     },
 
     renderDeptSemesterPapers() {
@@ -2258,12 +2272,125 @@ const App = {
         `;
     },
 
+    handleDeptBackClick() {
+        const papersView = document.getElementById('deptSemesterPapersView');
+        if (papersView && !papersView.classList.contains('hidden')) {
+            this.backToDepartmentSemesters();
+        } else {
+            this.backToDepartmentsList();
+        }
+    },
+
+    backToDepartmentSemesters() {
+        if (window.history.length > 1 && window.location.hash.match(/^#\/department\/[^\/]+\/.+/i)) {
+            window.history.back();
+        } else if (this.deptState.activeDept) {
+            this.openDepartmentView(this.deptState.activeDept.code, null, true);
+        } else {
+            this.showDepartmentsList(true);
+        }
+    },
+
     backToDepartmentsList() {
         if (window.history.length > 1 && window.location.hash.startsWith('#/department/')) {
             window.history.back();
         } else {
             this.showDepartmentsList(true);
         }
+    },
+
+    renderDeptSemestersSelector() {
+        const grid = document.getElementById('deptSemestersGrid');
+        if (!grid || !this.deptState.activeDept) return;
+
+        const dept = this.deptState.activeDept;
+        const deptCodes = new Set([dept.code, ...(dept.majors || []).map(m => m.code), ...(dept.minors || []).map(m => m.code)]);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
+
+        const semLabels = {
+            1: 'First Year • Foundation',
+            2: 'First Year • Foundation',
+            3: 'Second Year • Intermediate',
+            4: 'Second Year • Intermediate',
+            5: 'Third Year • Major Core',
+            6: 'Third Year • Major Core',
+            7: 'Fourth Year • Honours / Research',
+            8: 'Fourth Year • Honours / Research'
+        };
+
+        let html = '';
+
+        for (let s = 1; s <= 8; s++) {
+            const semPapers = allDeptPapers.filter(p => p.semester === s);
+            const semCourses = this.groupPapersByCourse(semPapers);
+            const academicLabel = semLabels[s] || `Semester ${s}`;
+
+            html += `
+                <div onclick="App.selectDeptSemester(${s})" class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center font-extrabold text-base font-mono group-hover:scale-105 transition-transform">
+                                S${s}
+                            </div>
+                            ${semPapers.length > 0 ? `
+                                <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/40 font-mono">
+                                    ${semPapers.length} Papers
+                                </span>
+                            ` : `
+                                <span class="px-2 py-0.5 text-[10px] font-medium rounded-full bg-slate-100 dark:bg-slate-700 text-slate-400">
+                                    No Papers
+                                </span>
+                            `}
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            Semester ${s}
+                        </h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                            ${academicLabel}
+                        </p>
+                        ${semCourses.length > 0 ? `
+                            <div class="text-[11px] text-slate-400 dark:text-slate-500 mt-2 font-medium">
+                                ${semCourses.length} ${semCourses.length === 1 ? 'Course' : 'Courses'} available
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs font-semibold ${semPapers.length > 0 ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}">
+                        <span>${semPapers.length > 0 ? 'Proceed to Papers' : 'Explore Semester'}</span>
+                        <i class="bi bi-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 9th Card: All Semesters (1–8)
+        html += `
+            <div onclick="App.selectDeptSemester('ALL')" class="bg-gradient-to-br from-blue-50 to-indigo-50/50 dark:from-slate-800 dark:to-slate-800/80 rounded-2xl p-5 border border-blue-200/80 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg shadow-xs group-hover:scale-105 transition-transform">
+                            <i class="bi bi-collection-fill"></i>
+                        </div>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-blue-600 text-white font-mono shadow-2xs">
+                            ${allDeptPapers.length} Total
+                        </span>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        All Semesters (1–8)
+                    </h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                        View, search & filter across all semester papers in this department.
+                    </p>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-blue-200/60 dark:border-slate-700/60 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
+                    <span>Proceed to All Papers</span>
+                    <i class="bi bi-arrow-right transition-transform group-hover:translate-x-1"></i>
+                </div>
+            </div>
+        `;
+
+        grid.innerHTML = html;
     },
 
     // -------------------------------------------------------------

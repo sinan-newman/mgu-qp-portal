@@ -31,8 +31,8 @@ STORAGE_DIR = os.path.abspath(os.path.join(PROJECT_DIR, "..", "mgu-qp-storage"))
 PDF_DIR = os.path.join(STORAGE_DIR, "pdf")
 
 BASE_URL = "https://assist.mgu.ac.in/schema/"
-CDN_BASE = "https://cdn.jsdelivr.net/gh/sinancc1729/mgu-qp-storage@main/pdf"
-RAW_BASE = "https://raw.githubusercontent.com/sinancc1729/mgu-qp-storage/main/pdf"
+CDN_BASE = "https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf"
+RAW_BASE = "https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf"
 
 FYUGP_EXAMS = [
     {"id": "35", "semester": 5, "label": "Semester 5", "exam_name": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026"},

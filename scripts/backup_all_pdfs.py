@@ -2,7 +2,7 @@
 backup_all_pdfs.py
 ==================
 Downloads all valid FYUGP question paper and scheme PDFs from MGU server,
-mirrors them to the dedicated repository 'sinancc1729/mgu-qp-storage',
+mirrors them to the dedicated repository 'sinan-newman/mgu-qp-storage',
 and updates papers.json with permanent high-speed CDN URLs.
 """
 
@@ -17,10 +17,10 @@ STORAGE_DIR = os.path.abspath("../mgu-qp-storage")
 PDF_DIR = os.path.join(STORAGE_DIR, "pdf")
 GIT_EXE = os.path.abspath("../mingit/cmd/git.exe")
 PAT = os.environ.get("GITHUB_PAT", "")
-REMOTE_REPO = "sinancc1729/mgu-qp-storage"
+REMOTE_REPO = "sinan-newman/mgu-qp-storage"
 
-CDN_BASE = "https://cdn.jsdelivr.net/gh/sinancc1729/mgu-qp-storage@main/pdf"
-RAW_BASE = "https://raw.githubusercontent.com/sinancc1729/mgu-qp-storage/main/pdf"
+CDN_BASE = "https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf"
+RAW_BASE = "https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf"
 
 
 def get_all_pdf_urls():
@@ -75,7 +75,7 @@ def push_batch(batch_num, total_batches, batch_files):
         subprocess.run([GIT_EXE, "-C", STORAGE_DIR, "commit", "-m", msg], check=True)
 
         # Set authenticated remote
-        auth_url = f"https://sinancc1729:{PAT}@github.com/{REMOTE_REPO}.git"
+        auth_url = f"https://sinan-newman:{PAT}@github.com/{REMOTE_REPO}.git"
         subprocess.run([GIT_EXE, "-C", STORAGE_DIR, "remote", "set-url", "origin", auth_url], check=True)
 
         # Push with retry

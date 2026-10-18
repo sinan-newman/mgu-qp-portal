@@ -2,8 +2,8 @@
 
 An ultra-clean, modern, fast web application for **Mahatma Gandhi University (MGU-UGP / FYUGP Honours and CBCS)** students to easily search, preview, and download previous year question papers and evaluation schemes directly synchronized from the official MGU schema portal ([https://assist.mgu.ac.in/schema/](https://assist.mgu.ac.in/schema/)).
 
-**Live Website:** [https://sinancc1729.github.io/mgu-qp-portal/](https://sinancc1729.github.io/mgu-qp-portal/)  
-**GitHub Repository:** [https://github.com/sinancc1729/mgu-qp-portal](https://github.com/sinancc1729/mgu-qp-portal)
+**Live Website:** [https://sinan-newman.github.io/mgu-qp-portal/](https://sinan-newman.github.io/mgu-qp-portal/)  
+**GitHub Repository:** [https://github.com/sinan-newman/mgu-qp-portal](https://github.com/sinan-newman/mgu-qp-portal)
 
 ---
 
@@ -79,6 +79,6 @@ Then open your browser at:
    - Scrapes MGU schema portal for any newly posted exams, commits changes, and automatically redeploys GitHub Pages.
 
 2. **Admin Manual Trigger**:
-   - Access the Admin Portal by clicking the **Admin** link in the footer or visiting `https://sinancc1729.github.io/mgu-qp-portal/#admin`.
+   - Access the Admin Portal by clicking the **Admin** link in the footer or visiting `https://sinan-newman.github.io/mgu-qp-portal/#admin`.
    - Enter the passkey (default: `admin123` or `mguadmin`).
    - Click **"Sync Now"** to trigger an on-demand university crawl.

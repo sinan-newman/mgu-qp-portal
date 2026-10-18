@@ -140,6 +140,19 @@ const PDFViewer = {
         };
     },
 
+    openDirect(url, title = 'Model Question Paper', code = '') {
+        const dummyDoc = {
+            title: title,
+            course_code: code,
+            dept_name: 'Official MGU Model Question Paper (FYUGP 2024)',
+            semester_label: 'Model Paper',
+            qp_url: url,
+            has_qp: true,
+            has_scheme: false
+        };
+        this.open(dummyDoc, 'QP');
+    },
+
     close() {
         this.modal.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');

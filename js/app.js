@@ -3176,8 +3176,8 @@ const App = {
             const cleanText = rawText.replace(/\s+/g, ' ');
             const escapedCode = matchedCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 
-            // Pattern 1: CODE [-:–] Title (until Duration, Max Marks, Part, etc.)
-            const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|$))', 'i'));
+            // Pattern 1: CODE [-:–] Title (until Duration, Max Marks, Part, Admission, etc.)
+            const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|\\d{4}\\s*Admi|Admission|$))', 'i'));
             if (p1 && p1[1]) {
                 detectedTitle = p1[1].trim();
             } else {

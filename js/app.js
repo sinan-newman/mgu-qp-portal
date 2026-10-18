@@ -285,7 +285,7 @@ const App = {
     getActiveDepartments() {
         return this.departments.filter(d => {
             const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
-            return this.papers.some(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+            return this.papers.some(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
         });
     },
 
@@ -888,7 +888,7 @@ const App = {
 
         // Filter files only
         if (this.state.onlyWithFiles) {
-            results = results.filter(p => p.has_files);
+            results = results.filter(p => p.has_files || (p.model_papers && p.model_papers.length > 0));
         }
 
         // Filter Semester
@@ -1321,6 +1321,11 @@ const App = {
                                                     Scheme
                                                 </button>
                                             ` : ''}
+                                            ${p.model_papers && p.model_papers.length > 0 ? p.model_papers.map(m => `
+                                                <button onclick="PDFViewer.openDirect('${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1" title="${m.title}">
+                                                    <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
+                                                </button>
+                                            `).join('') : ''}
                                             ${isAdmin ? `
                                                 <button onclick="App.handleDeletePaper('${p.id}')" title="Delete Paper (Admin)" class="px-2 py-1 text-xs font-semibold rounded bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950 dark:text-rose-300">
                                                     <i class="bi bi-trash3"></i>
@@ -1495,7 +1500,7 @@ const App = {
         // Render Cards
         container.innerHTML = deptsToRender.map(d => {
             const deptCodes = new Set([d.code, ...(d.minors || []).map(m => m.code)]);
-            const deptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+            const deptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
             const minors = d.minors || [];
 
             // Detect active semesters for this department
@@ -1579,7 +1584,7 @@ const App = {
         }
 
         const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
-        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
         const minors = dept.minors || [];
 
         // Header Banner (Without curriculum description tags)
@@ -1652,7 +1657,7 @@ const App = {
 
         const dept = this.deptState.activeDept;
         const deptCodes = new Set([dept.code, ...(dept.minors || []).map(m => m.code)]);
-        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && p.has_files);
+        const allDeptPapers = this.papers.filter(p => (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && (p.has_files || (p.model_papers && p.model_papers.length > 0)));
 
         let html = '';
 
@@ -1717,7 +1722,7 @@ const App = {
         // Filter papers for this department
         let semesterPapers = this.papers.filter(p => 
             (deptCodes.has(p.parent_dept) || deptCodes.has(p.dept_code)) && 
-            p.has_files
+            (p.has_files || (p.model_papers && p.model_papers.length > 0))
         );
 
         // Filter specific semester if not 'ALL'

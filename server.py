@@ -179,7 +179,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             # Filter papers
             filtered = []
             for p in papers:
-                if only_with_files and not p["has_files"]:
+                if only_with_files and not (p.get("has_files") or (p.get("model_papers") and len(p.get("model_papers")) > 0)):
                     continue
 
                 if sem and sem.isdigit() and p["semester"] != int(sem):

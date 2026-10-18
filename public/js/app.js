@@ -731,7 +731,7 @@ const App = {
         const hash = (rawHash || window.location.hash || '').trim();
 
         // 1. Department route: #/department/CODE or #/department/CODE/SEM or #dept=CODE
-        const deptMatch = hash.match(/^#(?:dept=|department\/)([A-Za-z0-9_]+)(?:[\/?](?:sem[\/=])?([0-9]+|ALL))?$/i);
+        const deptMatch = hash.match(/^#\/?(?:dept=|department\/)([A-Za-z0-9_]+)\/?(?:[\/?&](?:sem[\/=])?([0-9]+|ALL))?\/?$/i);
         if (deptMatch) {
             const deptCode = deptMatch[1].toUpperCase();
             const semParam = deptMatch[2] ? (deptMatch[2].toUpperCase() === 'ALL' ? 'ALL' : parseInt(deptMatch[2], 10)) : null;
@@ -764,7 +764,15 @@ const App = {
             return;
         }
 
-        // 5. Default: Departments list (#/departments, #/, or empty)
+        // 5. Explicit Departments route: #/departments or #departments
+        if (hash === '#/departments' || hash === '#departments') {
+            if (this.state.activeTab !== 'departments' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
+                this.showDepartmentsList(false);
+            }
+            return;
+        }
+
+        // 6. Default fallback (e.g. empty hash or #/ or unrecognized)
         if (this.state.activeTab !== 'departments' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
             this.showDepartmentsList(false);
         }
@@ -1797,17 +1805,21 @@ const App = {
             this.lastDeptListScrollY = window.scrollY;
         }
 
-        const targetHash = targetSem ? `#/department/${dept.code}/${targetSem}` : `#/department/${dept.code}`;
+        const normalizedSem = targetSem !== null && targetSem !== undefined 
+            ? (String(targetSem).toUpperCase() === 'ALL' ? 'ALL' : parseInt(targetSem, 10)) 
+            : null;
+
+        this.deptState.activeDept = dept;
+        this.deptState.selectedSemester = normalizedSem;
+        this.deptState.searchQuery = '';
+
+        const targetHash = normalizedSem !== null ? `#/department/${dept.code}/${normalizedSem}` : `#/department/${dept.code}`;
         if (updateHash && window.location.hash !== targetHash) {
             this.currentRoute = targetHash;
             window.location.hash = targetHash;
         } else {
             this.currentRoute = targetHash;
         }
-
-        this.deptState.activeDept = dept;
-        this.deptState.selectedSemester = targetSem;
-        this.deptState.searchQuery = '';
 
         // Switch to detail view and hide hero & homepage tabs so it acts as a dedicated page
         document.getElementById('heroSection')?.classList.add('hidden');
@@ -1880,7 +1892,7 @@ const App = {
         const selectorView = document.getElementById('deptSemestersSelectorView');
         const papersView = document.getElementById('deptSemesterPapersView');
 
-        if (targetSem === null) {
+        if (normalizedSem === null) {
             // Mode 1: Landing on Department -> Ask which semester to proceed
             document.title = `${dept.name} (${dept.code}) - Select Semester | MGU FYUGP`;
 
@@ -1903,7 +1915,7 @@ const App = {
             this.renderDeptSemestersSelector();
         } else {
             // Mode 2: Dedicated Semester Page
-            const semDisplay = targetSem === 'ALL' ? 'All Semesters' : `Semester ${targetSem}`;
+            const semDisplay = normalizedSem === 'ALL' ? 'All Semesters' : `Semester ${normalizedSem}`;
             document.title = `${dept.name} - ${semDisplay} Papers | MGU FYUGP`;
 
             if (selectorView) selectorView.classList.add('hidden');
@@ -2314,7 +2326,7 @@ const App = {
             const semCourses = this.groupPapersByCourse(semPapers);
 
             html += `
-                <div onclick="App.selectDeptSemester(${s})" class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
+                <div onclick="App.openDepartmentView('${dept.code}', ${s}, true)" class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3">
                             <div class="w-11 h-11 rounded-xl bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center font-extrabold text-base font-mono group-hover:scale-105 transition-transform">
@@ -2354,7 +2366,7 @@ const App = {
 
         // 9th Card: All Semesters (1–8)
         html += `
-            <div onclick="App.selectDeptSemester('ALL')" class="bg-slate-50/70 dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
+            <div onclick="App.openDepartmentView('${dept.code}', 'ALL', true)" class="bg-slate-50/70 dark:bg-slate-800/80 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 shadow-xs hover:shadow-md cursor-pointer transition flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between gap-2 mb-3">
                         <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-base shadow-xs group-hover:scale-105 transition-transform">

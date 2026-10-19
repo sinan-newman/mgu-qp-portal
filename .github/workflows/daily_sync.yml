@@ -31,9 +31,15 @@ jobs:
         run: |
           pip install pypdf
 
-      - name: Run Unified Sync Engine
+      - name: Run Assist QP & Scheme Sync
         run: |
           python scripts/sync_engine.py
+
+      - name: Run MGU FYUGP Model Question Papers Scraper & Splitter
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/scrape_mgu_model_papers.py
           mkdir -p public/data
           cp -r data/* public/data/ || true
 
@@ -45,7 +51,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new question papers found. Database is already up to date."
           else
-            git commit -m "Automated sync: ingest newly uploaded question papers and schemes from assist.mgu.ac.in [skip ci]"
+            git commit -m "Automated sync: ingest latest QP, schemes, and FYUGP model papers [skip ci]"
             git push
           fi
 

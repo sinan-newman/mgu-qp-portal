@@ -171,6 +171,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if parsed.path == "/api/sync":
             self.handle_sync_trigger()
             return
+        if parsed.path == "/api/sync-model":
+            self.handle_model_sync_trigger()
+            return
         if parsed.path in ("/api/admin/upload-paper", "/api/admin/papers"):
             self.handle_admin_upload()
             return
@@ -273,13 +276,25 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if path == "/api/proxy-pdf":
             # Proxy PDF to allow seamless inline iframe preview
             pdf_url = params.get("url", [""])[0]
-            if not pdf_url or not pdf_url.startswith("https://assist.mgu.ac.in/"):
+            is_valid_source = pdf_url and (
+                pdf_url.startswith("https://assist.mgu.ac.in/") or
+                "mgu.ac.in" in pdf_url or
+                "cdn.jsdelivr.net" in pdf_url or
+                "raw.githubusercontent.com" in pdf_url
+            )
+            if not is_valid_source:
                 self.send_json_response({"error": "Invalid or unauthorized URL"}, status=400)
                 return
 
             try:
+                # Safely encode URL for external request
+                import urllib.parse
+                parts = urllib.parse.urlsplit(pdf_url)
+                encoded_path = urllib.parse.quote(parts.path, safe='/@:')
+                safe_pdf_url = urllib.parse.urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
+
                 req = urllib.request.Request(
-                    pdf_url,
+                    safe_pdf_url,
                     headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MGU-Portal-Proxy/1.0"}
                 )
                 with urllib.request.urlopen(req, timeout=30) as resp:
@@ -305,7 +320,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                 import scripts.scraper as scraper
                 scraper.run_sync(use_cache=False)
                 load_data()
-                print("Background resync completed.")
+                print("Background assist.mgu.ac.in resync completed.")
             except Exception as e:
                 print(f"Background resync error: {e}")
 
@@ -313,6 +328,22 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_json_response({
             "status": "started",
             "message": "Background sync with https://assist.mgu.ac.in/schema/ initiated."
+        })
+
+    def handle_model_sync_trigger(self):
+        def model_sync_worker():
+            try:
+                import scripts.scrape_mgu_model_papers as model_scraper
+                model_scraper.run_scraper(force=False)
+                load_data()
+                print("Background MGU Model Question Papers resync completed.")
+            except Exception as e:
+                print(f"Background model resync error: {e}")
+
+        threading.Thread(target=model_sync_worker, daemon=True).start()
+        self.send_json_response({
+            "status": "started",
+            "message": "Background sync for MGU FYUGP Model Question Papers initiated."
         })
 
     def handle_admin_upload(self):

@@ -1,0 +1,64 @@
+name: Daily MGU FYUGP Model Question Papers Runner
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC (08:30 AM IST)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allows 1-click manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  scrape-split-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Portal Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install pypdf
+
+      - name: Run MGU Model Question Papers Scraper & Splitter
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/scrape_mgu_model_papers.py
+          mkdir -p public/data
+          cp -r data/* public/data/ || true
+
+      - name: Commit and Push Database Updates if Any
+        run: |
+          git config user.name "MGU Model-Sync Bot"
+          git config user.email "bot@mgu-portal.local"
+          git add data/ public/data/
+          if git diff --staged --quiet; then
+            echo "No new model papers found. Database is already up to date."
+          else
+            git commit -m "Automated daily runner: ingested new FYUGP model question papers from mgu.ac.in [skip ci]"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

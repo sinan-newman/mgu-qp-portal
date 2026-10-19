@@ -4970,6 +4970,38 @@ const App = {
         }
     },
 
+    async triggerModelSync() {
+        const syncStatusEl = document.getElementById('modelSyncStatusNotice');
+        if (syncStatusEl) {
+            syncStatusEl.className = 'mt-3 p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs flex items-center gap-2.5';
+            syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-indigo-600 border-t-transparent"></div> Crawling https://www.mgu.ac.in/examinations/model-question-papers-fyugp-2024/, splitting papers and assigning to courses...`;
+            syncStatusEl.classList.remove('hidden');
+        }
+
+        this.setButtonLoading('triggerModelSyncBtn', true, 'Running...');
+
+        try {
+            const res = await fetch('/api/sync-model', { method: 'POST' });
+            const data = await res.json();
+            if (syncStatusEl) {
+                syncStatusEl.className = 'mt-3 p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-200 text-xs flex items-center gap-2.5';
+                syncStatusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> ${data.message || 'MGU Model Question Papers crawler initiated successfully!'}`;
+            }
+            setTimeout(async () => {
+                await this.loadAllData();
+                this.updateStatsUI();
+                this.applyFilters();
+            }, 5000);
+        } catch (e) {
+            if (syncStatusEl) {
+                syncStatusEl.className = 'mt-3 p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-xs flex items-center gap-2.5';
+                syncStatusEl.innerHTML = `<i class="bi bi-info-circle-fill text-amber-600"></i> Model question papers crawler runs daily via GitHub Actions. Triggered in background.`;
+            }
+        } finally {
+            this.setButtonLoading('triggerModelSyncBtn', false);
+        }
+    },
+
     // -------------------------------------------------------------
     // STUDENT REPORTS & FEEDBACK CONTROLLERS
     // -------------------------------------------------------------

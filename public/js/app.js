@@ -4882,7 +4882,7 @@ const App = {
         }
     },
 
-    openFeedbackModal(initialTab = 'report', deptCode = '', sem = '', courseCode = '', courseTitle = '') {
+    openFeedbackModal(initialTab = 'general', deptCode = '', sem = '', courseCode = '', courseTitle = '') {
         const modal = document.getElementById('feedbackModal');
         if (!modal) return;
         modal.classList.remove('hidden');

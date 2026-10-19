@@ -107,7 +107,8 @@ const App = {
         activeDept: null,
         selectedSemester: 'ALL', // 'ALL' | 1..8
         searchQuery: '',         // In-department paper search
-        deptSearchQuery: ''      // Department list quick filter
+        deptSearchQuery: '',     // Department list quick filter
+        signatureExpanded: false // Collapsible signature courses dropdown
     },
 
     // Routing & Navigation History State
@@ -2056,6 +2057,7 @@ const App = {
         this.deptState.activeDept = dept;
         this.deptState.selectedSemester = normalizedSem;
         this.deptState.searchQuery = '';
+        this.deptState.signatureExpanded = false;
 
         const targetHash = normalizedSem !== null ? `#/department/${dept.code}/${normalizedSem}` : `#/department/${dept.code}`;
         if (updateHash && window.location.hash !== targetHash) {
@@ -2281,8 +2283,16 @@ const App = {
             semesterPapers = semesterPapers.filter(p => this.matchPaper(p, tokens, this.deptState.searchQuery));
         }
 
+        // Separate signature courses from standard (core/major/minor) papers
+        const signaturePapers = semesterPapers.filter(p => this.isSignatureCourse(p));
+        const standardPapers = semesterPapers.filter(p => !this.isSignatureCourse(p));
+
         if (countBadge) {
-            countBadge.textContent = `Showing ${semesterPapers.length} question papers`;
+            if (signaturePapers.length > 0) {
+                countBadge.textContent = `Showing ${standardPapers.length} core/minor papers + ${signaturePapers.length} signature`;
+            } else {
+                countBadge.textContent = `Showing ${semesterPapers.length} question papers`;
+            }
         }
 
         if (semesterPapers.length === 0) {
@@ -2312,9 +2322,10 @@ const App = {
             return;
         }
 
-        // Partition into Major/Core Papers vs Minor Papers
-        const majorPapers = semesterPapers.filter(p => !p.is_minor);
-        const minorPapers = semesterPapers.filter(p => p.is_minor);
+        // Partition standard papers into Major/Core Papers vs Minor Papers
+        // Note: Signature courses are strictly excluded from major and minor sections!
+        const majorPapers = standardPapers.filter(p => !p.is_minor);
+        const minorPapers = standardPapers.filter(p => p.is_minor);
 
         let sectionsHtml = '';
 
@@ -2509,6 +2520,67 @@ const App = {
             }
         }
 
+        // 3. Signature Courses Section (College-specific autonomous signature courses ending in A01, A02, A03, etc.)
+        if (signaturePapers.length > 0) {
+            const groupedSignature = this.groupPapersByCourse(signaturePapers);
+            const isExpanded = Boolean(this.deptState.signatureExpanded);
+
+            if (!sectionsHtml) {
+                sectionsHtml = `
+                    <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center mb-6">
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            No common university core/major examination papers released for ${sem === 'ALL' ? 'this department' : `Semester ${sem}`} yet. College signature courses are available below.
+                        </p>
+                    </div>
+                `;
+            }
+
+            sectionsHtml += `
+                <div class="signature-courses-section mt-8 pt-6 border-t-2 border-dashed border-amber-300/80 dark:border-amber-900/60">
+                    <div class="bg-gradient-to-r from-amber-50/80 via-white to-amber-50/40 dark:from-amber-950/20 dark:via-slate-800 dark:to-amber-950/10 rounded-2xl border border-amber-200/90 dark:border-amber-900/50 p-4 sm:p-5 shadow-xs transition">
+                        <button type="button" 
+                                onclick="App.toggleDeptSignatureDropdown()" 
+                                id="signatureDropdownBtn"
+                                class="w-full flex items-center justify-between gap-3 text-left focus:outline-hidden group cursor-pointer"
+                                aria-expanded="${isExpanded ? 'true' : 'false'}">
+                            <div class="flex items-center gap-3 min-w-0">
+                                <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/60 text-amber-700 dark:text-amber-300 flex items-center justify-center text-lg shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
+                                    <i class="bi bi-pen-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <h4 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                                            Show Signature Courses
+                                        </h4>
+                                        <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/70 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800 font-mono">
+                                            ${groupedSignature.length} ${groupedSignature.length === 1 ? 'Course' : 'Courses'} (${signaturePapers.length} ${signaturePapers.length === 1 ? 'Paper' : 'Papers'})
+                                        </span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        College-specific autonomous signature courses (Code ending in A01, A02, A03, etc.)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <span id="signatureDropdownLabel" class="text-xs font-semibold text-amber-700 dark:text-amber-400 hidden sm:inline">
+                                    ${isExpanded ? 'Click to hide' : 'Click to show'}
+                                </span>
+                                <div id="signatureDropdownChevron" class="w-8 h-8 rounded-lg bg-amber-100/90 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 flex items-center justify-center text-sm transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}">
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                            </div>
+                        </button>
+
+                        <div id="signatureDropdownContent" class="${isExpanded ? '' : 'hidden'} mt-5 pt-5 border-t border-amber-200/70 dark:border-amber-900/40 space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                                ${groupedSignature.map(course => this.renderGroupedCourseCard(course)).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         const reportPromptBanner = `
             <div class="mt-8 p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800/80 border border-blue-200/80 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                 <div class="flex items-center gap-3">
@@ -2531,6 +2603,29 @@ const App = {
                 No papers found matching the current criteria.
             </div>
         `;
+    },
+
+    toggleDeptSignatureDropdown() {
+        const content = document.getElementById('signatureDropdownContent');
+        const chevron = document.getElementById('signatureDropdownChevron');
+        const label = document.getElementById('signatureDropdownLabel');
+        const btn = document.getElementById('signatureDropdownBtn');
+        if (!content) return;
+
+        const isHidden = content.classList.contains('hidden');
+        if (isHidden) {
+            content.classList.remove('hidden');
+            if (chevron) chevron.classList.add('rotate-180');
+            if (label) label.textContent = 'Click to hide';
+            if (btn) btn.setAttribute('aria-expanded', 'true');
+            this.deptState.signatureExpanded = true;
+        } else {
+            content.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+            if (label) label.textContent = 'Click to show';
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            this.deptState.signatureExpanded = false;
+        }
     },
 
     handleDeptBackClick() {
@@ -3574,37 +3669,19 @@ const App = {
     parseCourseCode(rawStr) {
         if (!rawStr) return null;
         const clean = String(rawStr).trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
-        // Format: MG + [1-8] + [Type: DSC,DSE,SEC,MDC,VAC,CCR,AEC,MDE,SDC,MPC,HON,MIN] + [Dept] + optional [A for signature] + [3-digit level 100-499]
-        // Examples: MG4DSEMAT201 (regular), MG4DSEMATA201 (signature code)
-        const m = clean.match(/^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})([1-4][0-9]{2})$/);
+        // Format: MG + [1-8] + [Type: DSC,DSE,SEC,MDC,VAC,CCR,AEC,MDE,SDC,MPC,HON,MIN] + [Dept] + [optional A + 2 digits for signature | 3-digit level 100-499]
+        // Examples: MG4DSEMAT201 (regular), MG3DSEBOTA03 (signature code)
+        const m = clean.match(/^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})(A\d{2}|[1-4][0-9]{2})$/);
         if (!m) return null;
 
         const semester = parseInt(m[1], 10);
         const courseType = m[2];
-        const deptPart = m[3];
-        const courseLevel = parseInt(m[4], 10);
+        const deptCode = m[3];
+        const isSignature = m[4].startsWith('A');
+        const courseLevel = isSignature ? parseInt(m[4].slice(1), 10) : parseInt(m[4], 10);
 
-        let deptCode = deptPart;
-        let isSignature = false;
-
-        // Check if there is an 'A' after department code (Signature Code)
-        // e.g. MAT + A -> MATA, PHY + A -> PHYA, BBA + A -> BBAA
-        const knownDeptSet = new Set((this.departments || []).map(d => d.code.toUpperCase()));
-        if (deptPart.length >= 3 && deptPart.endsWith('A')) {
-            const baseDept = deptPart.slice(0, -1);
-            if (knownDeptSet.has(baseDept) || baseDept.length === 3 || (!knownDeptSet.has(deptPart) && knownDeptSet.has(baseDept))) {
-                deptCode = baseDept;
-                isSignature = true;
-            }
-        }
-
-        // Validate course level correlation with year:
-        // 100-199: 1st year (Semesters 1 & 2)
-        // 200-299: 2nd year (Semesters 3 & 4)
-        // 300-399: 3rd year (Semesters 5 & 6)
-        // 400-499: 4th year (Semesters 7 & 8)
         const expectedYear = Math.ceil(semester / 2);
-        const actualYear = Math.floor(courseLevel / 100);
+        const actualYear = isSignature ? expectedYear : Math.floor(courseLevel / 100);
         const yearMatches = (expectedYear === actualYear);
 
         return {
@@ -3621,8 +3698,13 @@ const App = {
 
     isSignatureCourse(rawCode) {
         if (!rawCode) return false;
-        const parsed = this.parseCourseCode(rawCode);
-        return parsed ? parsed.isSignature : false;
+        if (typeof rawCode === 'object') {
+            if (rawCode.is_signature === true) return true;
+            rawCode = rawCode.course_code || '';
+        }
+        const clean = String(rawCode).trim().toUpperCase();
+        // Signature courses strictly end in A followed by 2 digits (e.g. A01, A02, A03, A00)
+        return /A\d{2}$/.test(clean);
     },
 
     extractPageHeaderCourseInfo(pageText, defaultSem = 1) {

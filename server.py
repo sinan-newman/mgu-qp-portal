@@ -389,7 +389,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
 
             is_signature = bool(data.get("is_signature", False))
             if not is_signature and course_code:
-                if re.match(r"^MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,4}A[1-4][0-9]{2}$", course_code):
+                if re.search(r'A\d{2}$', course_code):
                     is_signature = True
 
             uploads_dir = os.path.join(BASE_DIR, "uploads")

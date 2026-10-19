@@ -138,21 +138,17 @@ def parse_fyugp_course_code(raw_str):
     m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', clean)
     if m_strip:
         clean = m_strip.group(1)
-    # Match pattern: MG + [1-8] + Type + DeptPart + Level (100-499)
-    # e.g., MG4DSEMAT201 (regular), MG4DSEMATA201 (signature)
-    m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})([1-4][0-9]{2})$', clean)
+    # Match pattern: MG + [1-8] + Type + DeptPart + Level (A00-A08 or 100-499)
+    # e.g., MG4DSEMAT201 (regular), MG3DSEBOTA03 (signature)
+    m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})(A\d{2}|[1-4][0-9]{2})$', clean)
     if not m:
         return None
     sem = int(m.group(1))
     ctype = m.group(2)
-    dept_part = m.group(3)
-    level = int(m.group(4))
-
-    is_sig = False
-    dept_code = dept_part
-    if len(dept_part) >= 3 and dept_part.endswith('A'):
-        dept_code = dept_part[:-1]
-        is_sig = True
+    dept_code = m.group(3)
+    lvl_str = m.group(4)
+    is_sig = lvl_str.startswith('A')
+    level = int(lvl_str[1:]) if is_sig else int(lvl_str)
 
     return {
         "valid": True,
@@ -165,8 +161,9 @@ def parse_fyugp_course_code(raw_str):
     }
 
 def is_signature_code(raw_str):
-    p = parse_fyugp_course_code(raw_str)
-    return p["is_signature"] if p else False
+    if not raw_str:
+        return False
+    return bool(re.search(r'A\d{2}$', str(raw_str).strip().upper()))
 
 def extract_title_from_text(txt, course_code):
     if not txt or not course_code:

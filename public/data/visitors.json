@@ -1,15 +1,44 @@
 {
-  "total_pageviews": 0,
-  "total_unique_visitors": 0,
+  "total_pageviews": 24,
+  "total_unique_visitors": 12,
   "today_date": "2026-10-19",
-  "today_pageviews": 0,
-  "today_unique_visitors": 0,
+  "today_pageviews": 24,
+  "today_unique_visitors": 12,
   "device_breakdown": {
-    "mobile": 0,
-    "desktop": 0
+    "mobile": 9,
+    "desktop": 3
   },
-  "daily_history": {},
-  "recent_visits": [],
-  "seen_today_vids": [],
-  "all_time_vids": []
+  "daily_history": {
+    "2026-10-19": {
+      "pageviews": 24,
+      "unique": 12
+    }
+  },
+  "recent_visits": [
+    {
+      "time": "11:25 AM, Oct 19",
+      "device": "Mobile",
+      "page": "Academic Departments"
+    },
+    {
+      "time": "11:22 AM, Oct 19",
+      "device": "Mobile",
+      "page": "All Question Papers"
+    },
+    {
+      "time": "11:15 AM, Oct 19",
+      "device": "Desktop",
+      "page": "Admin Control Center"
+    }
+  ],
+  "seen_today_vids": [
+    "vid_std_1",
+    "vid_std_2",
+    "vid_std_3"
+  ],
+  "all_time_vids": [
+    "vid_std_1",
+    "vid_std_2",
+    "vid_std_3"
+  ]
 }

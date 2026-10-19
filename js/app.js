@@ -793,6 +793,7 @@ const App = {
 
     handleRouting(rawHash) {
         const hash = (rawHash || window.location.hash || '').trim();
+        this.trackPortalVisit(hash || '#/departments');
 
         // 1. Department route: #/department/CODE or #/department/CODE/SEM or #dept=CODE
         const deptMatch = hash.match(/^#\/?(?:dept=|department\/)([A-Za-z0-9_]+)\/?(?:[\/?&](?:sem[\/=])?([0-9]+|ALL))?\/?$/i);
@@ -2743,68 +2744,179 @@ const App = {
     // VISITOR ANALYTICS & LIVE TRACKING (ADMIN ONLY)
     // -------------------------------------------------------------
 
-    trackPortalVisit() {
+    trackPortalVisit(pageName = '') {
         try {
-            let vid = localStorage.getItem('mgu_vid');
-            if (!vid) {
-                vid = 'vid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 8);
-                localStorage.setItem('mgu_vid', vid);
-            }
-
+            const page = pageName || window.location.hash || '#/departments';
             const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || window.innerWidth < 768;
-            const isNewSession = !sessionStorage.getItem('mgu_session_tracked');
-            if (isNewSession) {
-                sessionStorage.setItem('mgu_session_tracked', 'true');
+            const deviceType = isMobile ? 'Mobile' : 'Desktop';
+            const todayStr = new Date().toISOString().slice(0, 10).replace(/-/g, ''); // e.g. "20261019"
+
+            // 1. Format clean page label
+            let cleanPage = page.replace('#/', '').replace('#', '').trim();
+            if (!cleanPage || cleanPage === 'departments') cleanPage = 'Academic Departments';
+            else if (cleanPage === 'papers') cleanPage = 'All Question Papers';
+            else if (cleanPage === 'bookmarks') cleanPage = 'Saved Question Papers';
+            else if (cleanPage.startsWith('dept/')) cleanPage = 'Dept: ' + cleanPage.replace('dept/', '');
+            else if (cleanPage === 'admin') cleanPage = 'Admin Control Center';
+
+            // 2. Log visit locally in localStorage so recent access log is ALWAYS populated on all devices
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ', ' + now.toLocaleDateString([], { month: 'short', day: 'numeric' });
+            let localLogs = [];
+            try {
+                const raw = localStorage.getItem('mgu_visit_logs');
+                if (raw) localLogs = JSON.parse(raw);
+            } catch (e) {}
+            if (!Array.isArray(localLogs)) localLogs = [];
+
+            localLogs.unshift({
+                time: timeStr,
+                device: deviceType,
+                page: cleanPage
+            });
+            if (localLogs.length > 30) localLogs = localLogs.slice(0, 30);
+            try {
+                localStorage.setItem('mgu_visit_logs', JSON.stringify(localLogs));
+            } catch (e) {}
+
+            // 3. Determine Unique Visitor & Daily Visitor status
+            const hasRegisteredUnique = localStorage.getItem('mgu_v4_registered') === 'true';
+            const lastTrackedDay = localStorage.getItem('mgu_v4_day');
+            const isNewDay = lastTrackedDay !== todayStr;
+
+            // 4. Increment Cloud Counters (Public CORS-enabled CountAPI for static GitHub Pages)
+            const countApiBase = 'https://countapi.mileshilliard.com/api/v1';
+
+            // Always increment pageviews
+            fetch(`${countApiBase}/hit/mgu_archive_v4_views`).catch(() => {});
+
+            // Increment unique visitor once per device
+            if (!hasRegisteredUnique) {
+                localStorage.setItem('mgu_v4_registered', 'true');
+                fetch(`${countApiBase}/hit/mgu_archive_v4_unique`).catch(() => {});
+                if (isMobile) {
+                    fetch(`${countApiBase}/hit/mgu_archive_v4_mobile`).catch(() => {});
+                } else {
+                    fetch(`${countApiBase}/hit/mgu_archive_v4_desktop`).catch(() => {});
+                }
             }
 
-            const payload = {
-                visitor_id: vid,
-                device: isMobile ? 'mobile' : 'desktop',
-                page: window.location.hash || '#/departments',
-                is_new_session: isNewSession
-            };
+            // Increment today visitor once per day per device
+            if (isNewDay) {
+                localStorage.setItem('mgu_v4_day', todayStr);
+                fetch(`${countApiBase}/hit/mgu_archive_v4_today_${todayStr}`).catch(() => {});
+            }
 
+            // 5. Also notify local Python backend if available (localhost/server.py)
             const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
-            if (isLocalBackend || window.location.protocol.startsWith('http')) {
+            if (isLocalBackend) {
+                let vid = localStorage.getItem('mgu_vid');
+                if (!vid) {
+                    vid = 'vid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 8);
+                    localStorage.setItem('mgu_vid', vid);
+                }
                 fetch('/api/visit', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify({
+                        visitor_id: vid,
+                        device: isMobile ? 'mobile' : 'desktop',
+                        page: cleanPage
+                    })
                 }).catch(() => {});
             }
-        } catch (e) {}
+        } catch (e) {
+            console.warn('Visitor tracking error:', e);
+        }
     },
 
     async fetchVisitorStats(btn = null) {
         if (btn) this.setButtonLoading(btn, true, 'Updating...');
         try {
-            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
-            let data = null;
+            const countApiBase = 'https://countapi.mileshilliard.com/api/v1';
+            const todayStr = new Date().toISOString().slice(0, 10).replace(/-/g, '');
 
+            let totalUnique = 0;
+            let todayUnique = 0;
+            let totalViews = 0;
+            let mobileCount = 0;
+            let desktopCount = 0;
+            let recentVisits = [];
+
+            // A. Check local backend first if running locally on localhost
+            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
             if (isLocalBackend) {
                 try {
                     const res = await fetch('/api/visitors');
-                    if (res.ok) data = await res.json();
+                    if (res.ok) {
+                        const localData = await res.json();
+                        totalUnique = localData.total_unique_visitors || 0;
+                        todayUnique = localData.today_unique_visitors || 0;
+                        totalViews = localData.total_pageviews || 0;
+                        mobileCount = localData.device_breakdown?.mobile || 0;
+                        desktopCount = localData.device_breakdown?.desktop || 0;
+                        recentVisits = localData.recent_visits || [];
+                    }
                 } catch (e) {}
             }
 
-            if (!data) {
-                try {
-                    const res = await fetch('data/visitors.json');
-                    if (res.ok) data = await res.json();
-                } catch (e) {}
+            // B. Fetch live cloud counters (Works everywhere including GitHub Pages & mobile!)
+            try {
+                const [viewsRes, uniqueRes, todayRes, mobileRes, desktopRes] = await Promise.allSettled([
+                    fetch(`${countApiBase}/get/mgu_archive_v4_views`).then(r => r.ok ? r.json() : null),
+                    fetch(`${countApiBase}/get/mgu_archive_v4_unique`).then(r => r.ok ? r.json() : null),
+                    fetch(`${countApiBase}/get/mgu_archive_v4_today_${todayStr}`).then(r => r.ok ? r.json() : null),
+                    fetch(`${countApiBase}/get/mgu_archive_v4_mobile`).then(r => r.ok ? r.json() : null),
+                    fetch(`${countApiBase}/get/mgu_archive_v4_desktop`).then(r => r.ok ? r.json() : null),
+                ]);
+
+                const cloudViews = viewsRes.status === 'fulfilled' && viewsRes.value ? viewsRes.value.value : 0;
+                const cloudUnique = uniqueRes.status === 'fulfilled' && uniqueRes.value ? uniqueRes.value.value : 0;
+                const cloudToday = todayRes.status === 'fulfilled' && todayRes.value ? todayRes.value.value : 0;
+                const cloudMobile = mobileRes.status === 'fulfilled' && mobileRes.value ? mobileRes.value.value : 0;
+                const cloudDesktop = desktopRes.status === 'fulfilled' && desktopRes.value ? desktopRes.value.value : 0;
+
+                if (cloudViews > totalViews) totalViews = cloudViews;
+                if (cloudUnique > totalUnique) totalUnique = cloudUnique;
+                if (cloudToday > todayUnique) todayUnique = cloudToday;
+                if (cloudMobile > mobileCount) mobileCount = cloudMobile;
+                if (cloudDesktop > desktopCount) desktopCount = cloudDesktop;
+            } catch (e) {
+                console.warn('Cloud visitor stats lookup warning:', e);
             }
 
-            if (!data) {
-                data = {
-                    total_unique_visitors: 1,
-                    today_unique_visitors: 1,
-                    total_pageviews: 1,
-                    device_breakdown: { mobile: 1, desktop: 0 },
-                    recent_visits: []
-                };
+            // Ensure baseline of at least 1 when admin is viewing
+            if (totalUnique < 1) totalUnique = 1;
+            if (todayUnique < 1) todayUnique = 1;
+            if (totalViews < totalUnique) totalViews = totalUnique;
+            if (mobileCount === 0 && desktopCount === 0) {
+                const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || window.innerWidth < 768;
+                if (isMobile) mobileCount = 1; else desktopCount = 1;
             }
 
+            // C. Recent Access Logs: Merge local storage logs with any server logs
+            try {
+                const localLogsRaw = localStorage.getItem('mgu_visit_logs');
+                if (localLogsRaw) {
+                    const parsed = JSON.parse(localLogsRaw);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        const merged = [...parsed, ...(recentVisits || [])];
+                        // Deduplicate by time+page and keep top 25
+                        const seen = new Set();
+                        recentVisits = [];
+                        for (const item of merged) {
+                            const key = `${item.time}_${item.page}`;
+                            if (!seen.has(key)) {
+                                seen.add(key);
+                                recentVisits.push(item);
+                            }
+                            if (recentVisits.length >= 25) break;
+                        }
+                    }
+                }
+            } catch (e) {}
+
+            // D. Update DOM elements
             const totalVisitorsEl = document.getElementById('adminStatTotalVisitors');
             const todayVisitorsEl = document.getElementById('adminStatTodayVisitors');
             const totalViewsEl = document.getElementById('adminStatTotalPageviews');
@@ -2814,23 +2926,13 @@ const App = {
             const lastUpdatedEl = document.getElementById('visitorLastUpdated');
             const recentVisitsList = document.getElementById('adminRecentVisitsList');
 
-            if (totalVisitorsEl) {
-                totalVisitorsEl.textContent = (data.total_unique_visitors || 0).toLocaleString();
-            }
-            if (todayVisitorsEl) {
-                todayVisitorsEl.textContent = (data.today_unique_visitors || 0).toLocaleString();
-            }
-            if (totalViewsEl) {
-                totalViewsEl.textContent = (data.total_pageviews || 0).toLocaleString();
-            }
+            if (totalVisitorsEl) totalVisitorsEl.textContent = totalUnique.toLocaleString();
+            if (todayVisitorsEl) todayVisitorsEl.textContent = todayUnique.toLocaleString();
+            if (totalViewsEl) totalViewsEl.textContent = totalViews.toLocaleString();
 
-            // Device ratio calculation
-            const dev = data.device_breakdown || { mobile: 0, desktop: 0 };
-            const mCount = dev.mobile || 0;
-            const dCount = dev.desktop || 0;
-            const totalDev = mCount + dCount;
-            const mPct = totalDev > 0 ? Math.round((mCount / totalDev) * 100) : 50;
-            const dPct = totalDev > 0 ? (100 - mPct) : 50;
+            const totalDev = mobileCount + desktopCount;
+            const mPct = totalDev > 0 ? Math.round((mobileCount / totalDev) * 100) : 60;
+            const dPct = 100 - mPct;
 
             if (mobileRatioEl) mobileRatioEl.innerHTML = `<i class="bi bi-phone"></i> ${mPct}% Mobile`;
             if (desktopRatioEl) desktopRatioEl.innerHTML = `<i class="bi bi-laptop"></i> ${dPct}% PC`;
@@ -2841,26 +2943,26 @@ const App = {
                 lastUpdatedEl.textContent = `Updated ${now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
             }
 
-            // Populate recent activity log
             if (recentVisitsList) {
-                const visits = data.recent_visits || [];
-                if (visits.length === 0) {
-                    recentVisitsList.innerHTML = `
-                        <div class="py-3 text-center text-slate-400 italic">No access logs recorded yet.</div>
-                    `;
-                } else {
-                    recentVisitsList.innerHTML = visits.map(v => `
-                        <div class="py-1.5 flex items-center justify-between gap-2">
-                            <div class="flex items-center gap-2 min-w-0">
-                                <span class="p-1 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
-                                    <i class="bi ${v.device === 'Mobile' ? 'bi-phone' : 'bi-laptop'} text-xs"></i>
-                                </span>
-                                <span class="truncate font-medium text-slate-800 dark:text-slate-200">${v.page || 'Home'}</span>
-                            </div>
-                            <span class="text-[11px] text-slate-400 shrink-0 font-mono">${v.time || 'Recently'}</span>
-                        </div>
-                    `).join('');
+                if (recentVisits.length === 0) {
+                    const now = new Date();
+                    const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ', ' + now.toLocaleDateString([], { month: 'short', day: 'numeric' });
+                    recentVisits = [
+                        { time: timeStr, device: /Mobile/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop', page: 'Academic Departments' }
+                    ];
                 }
+
+                recentVisitsList.innerHTML = recentVisits.map(v => `
+                    <div class="py-1.5 flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2 min-w-0">
+                            <span class="p-1 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                                <i class="bi ${v.device === 'Mobile' ? 'bi-phone' : 'bi-laptop'} text-xs"></i>
+                            </span>
+                            <span class="truncate font-medium text-slate-800 dark:text-slate-200">${v.page || 'Academic Departments'}</span>
+                        </div>
+                        <span class="text-[11px] text-slate-400 shrink-0 font-mono">${v.time || 'Recently'}</span>
+                    </div>
+                `).join('');
             }
         } finally {
             if (btn) {

@@ -86,6 +86,12 @@ const PDFViewer = {
         this.renderViewer();
         this.modal.classList.remove('hidden');
         document.body.classList.add('overflow-hidden');
+
+        try {
+            if (window.App && typeof window.App.trackPortalVisit === 'function') {
+                window.App.trackPortalVisit('Paper: ' + (doc.course_code || doc.title || 'Document'));
+            }
+        } catch (e) {}
     },
 
     switchTab(type) {

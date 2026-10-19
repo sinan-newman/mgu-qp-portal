@@ -26,6 +26,15 @@ const PDFViewer = {
             }
         });
 
+        // Close on backdrop click (clicking outside the modal dialog)
+        if (this.modal) {
+            this.modal.addEventListener('click', (e) => {
+                if (e.target === this.modal) {
+                    this.close();
+                }
+            });
+        }
+
         // Tab click listeners
         if (this.qpTabBtn) {
             this.qpTabBtn.addEventListener('click', () => this.switchTab('QP'));
@@ -90,11 +99,11 @@ const PDFViewer = {
 
         // Update active tab styles
         if (isQP) {
-            this.qpTabBtn.className = 'px-3 py-1.5 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-sm flex items-center gap-1.5 transition';
-            this.schemeTabBtn.className = 'px-3 py-1.5 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600 flex items-center gap-1.5 transition';
+            this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
+            this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
         } else {
-            this.schemeTabBtn.className = 'px-3 py-1.5 text-xs font-semibold rounded-md bg-emerald-600 text-white shadow-sm flex items-center gap-1.5 transition';
-            this.qpTabBtn.className = 'px-3 py-1.5 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600 flex items-center gap-1.5 transition';
+            this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-emerald-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
+            this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
         }
 
         if (!url) {

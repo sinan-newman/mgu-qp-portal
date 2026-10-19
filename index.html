@@ -1328,46 +1328,64 @@
     </main>
 
     <!-- PDF PREVIEW MODAL -->
-    <div id="pdfModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-2 sm:p-4 transition">
-        <div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 w-full max-w-6xl h-[92vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+    <div id="pdfModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-backdrop flex items-center justify-center p-0 sm:p-4 transition">
+        <div class="relative bg-white dark:bg-slate-900 rounded-none sm:rounded-2xl shadow-2xl border-0 sm:border border-slate-200 dark:border-slate-700 w-full max-w-6xl h-full sm:h-[92vh] max-h-[100dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
             
-            <!-- Modal Header -->
-            <div class="px-4 py-3 sm:px-6 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-3 shrink-0">
-                <div class="flex-1 min-w-0">
-                    <h3 id="modalTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-white truncate">
-                        Document Preview
-                    </h3>
-                    <div id="modalMeta" class="flex flex-wrap items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                        <!-- Populated by pdf-viewer.js -->
+            <!-- Modal Header: Two Clean Rows for Perfect Mobile & Desktop Fit -->
+            <div class="px-3 py-2 sm:px-6 sm:py-3 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shrink-0">
+                <!-- Row 1: Document Title & Unmissable Close Button -->
+                <div class="flex items-center justify-between gap-2.5">
+                    <div class="min-w-0 flex-1 pr-1">
+                        <h3 id="modalTitle" class="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
+                            Document Preview
+                        </h3>
+                        <div id="modalMeta" class="flex flex-wrap items-center gap-1.5 text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                            <!-- Populated by pdf-viewer.js -->
+                        </div>
                     </div>
+
+                    <!-- Close Button: ALWAYS locked to top-right corner, 100% visible & comfortable to tap -->
+                    <button 
+                        type="button" 
+                        onclick="PDFViewer.close()" 
+                        aria-label="Close Preview" 
+                        class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-slate-200/90 dark:bg-slate-700 hover:bg-rose-100 hover:text-rose-600 dark:hover:bg-rose-950/60 dark:hover:text-rose-300 text-slate-600 dark:text-slate-300 transition shrink-0 shadow-2xs"
+                        title="Close Preview (Esc)"
+                    >
+                        <i class="bi bi-x-lg text-sm sm:text-base font-bold"></i>
+                    </button>
                 </div>
 
-                <!-- Modal Action Toolbar -->
-                <div class="flex items-center gap-2 shrink-0">
+                <!-- Row 2: Tab Switcher (QP vs Scheme) & Actions (Download + Open External) -->
+                <div class="mt-2 pt-2 border-t border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-2">
                     <!-- Tab Switcher: QP vs Scheme -->
-                    <div class="flex items-center bg-slate-200 dark:bg-slate-700 p-0.5 rounded-lg">
-                        <button id="modalQpTab" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition">
-                            <i class="bi bi-file-earmark-text"></i> Question Paper
+                    <div class="flex items-center bg-slate-200/90 dark:bg-slate-700/90 p-0.5 rounded-lg shrink-0">
+                        <button id="modalQpTab" class="px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <span class="hidden sm:inline">Question Paper</span>
+                            <span class="sm:hidden">QP</span>
                         </button>
-                        <button id="modalSchemeTab" class="px-3 py-1.5 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1.5 transition">
-                            <i class="bi bi-journal-check"></i> Scheme / Key
+                        <button id="modalSchemeTab" class="px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition">
+                            <i class="bi bi-journal-check"></i>
+                            <span class="hidden sm:inline">Scheme / Key</span>
+                            <span class="sm:hidden">Scheme</span>
                         </button>
                     </div>
 
-                    <!-- Open in New Tab Button -->
-                    <button id="modalExternalBtn" title="Open in new window" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-xs transition">
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </button>
+                    <!-- Right Actions: External Link + Download Button -->
+                    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                        <!-- Open in New Tab Button -->
+                        <button id="modalExternalBtn" title="Open in new window" class="p-1.5 sm:px-2.5 sm:py-1 rounded-lg bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-xs border border-slate-200 dark:border-slate-600 flex items-center gap-1 transition shadow-2xs">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                            <span class="hidden md:inline text-[11px]">New Tab</span>
+                        </button>
 
-                    <!-- Download Button -->
-                    <button id="modalDownloadBtn" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-xs flex items-center gap-1.5 transition">
-                        <i class="bi bi-download"></i> Download
-                    </button>
-
-                    <!-- Close Button -->
-                    <button onclick="PDFViewer.close()" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500 hover:text-slate-800 dark:hover:text-white transition">
-                        <i class="bi bi-x-lg"></i>
-                    </button>
+                        <!-- Download Button: Fully visible on all mobile screen sizes -->
+                        <button id="modalDownloadBtn" class="px-3 sm:px-3.5 py-1 sm:py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-bold shadow-xs flex items-center gap-1.5 transition shrink-0">
+                            <i class="bi bi-download"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 

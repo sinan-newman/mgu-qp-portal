@@ -372,6 +372,12 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             qp_file_b64 = data.get("qp_file_b64", "")
             scheme_file_b64 = data.get("scheme_file_b64", "")
 
+            is_signature = bool(data.get("is_signature", False))
+            if not is_signature and course_code:
+                import re
+                if re.match(r"^MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,4}A[1-4][0-9]{2}$", course_code):
+                    is_signature = True
+
             uploads_dir = os.path.join(BASE_DIR, "uploads")
             os.makedirs(uploads_dir, exist_ok=True)
             public_uploads_dir = os.path.join(BASE_DIR, "public", "uploads")
@@ -421,6 +427,8 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                             p["model_papers"] = []
                         p["model_papers"].append(model_obj)
                         p["has_files"] = True
+                        if is_signature:
+                            p["is_signature"] = True
                         found = True
                         new_paper = p
                         break
@@ -441,6 +449,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                         "parent_dept_name": parent_dept_name,
                         "is_minor": is_minor,
                         "minor_name": minor_name,
+                        "is_signature": is_signature,
                         "exam_id": "model_qp",
                         "exam_name": "FYUGP Model Question Paper",
                         "batch": "2024 Admission",
@@ -471,6 +480,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                     "parent_dept_name": parent_dept_name,
                     "is_minor": is_minor,
                     "minor_name": minor_name,
+                    "is_signature": is_signature,
                     "exam_id": "custom",
                     "exam_name": exam_name,
                     "batch": "2024 Admission",

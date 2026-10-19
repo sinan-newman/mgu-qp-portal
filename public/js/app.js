@@ -1329,7 +1329,16 @@ const App = {
             course.papers.sort((a, b) => (b.exam_name || '').localeCompare(a.exam_name || ''));
         });
 
-        return Array.from(groups.values());
+        const courseList = Array.from(groups.values());
+        // Sort courses: Keep signature courses (college-specific syllabus) at the bottom
+        courseList.sort((a, b) => {
+            const aSig = this.isSignatureCourse(a.course_code) || a.is_signature;
+            const bSig = this.isSignatureCourse(b.course_code) || b.is_signature;
+            if (aSig !== bSig) return aSig ? 1 : -1;
+            return (a.course_code || '').localeCompare(b.course_code || '');
+        });
+
+        return courseList;
     },
 
     renderGroupedCourseCard(course) {
@@ -1354,6 +1363,11 @@ const App = {
                             ${course.is_minor ? `
                                 <span class="text-xs font-semibold px-2 py-0.5 rounded-md badge-minor">
                                     ${course.minor_name || course.dept_code} (Minor)
+                                </span>
+                            ` : ''}
+                            ${(this.isSignatureCourse(course.course_code) || course.is_signature) ? `
+                                <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700 flex items-center gap-1" title="Signature Course (College specific syllabus)">
+                                    <i class="bi bi-pen-fill text-[10px]"></i> Signature
                                 </span>
                             ` : ''}
                         </div>
@@ -1650,7 +1664,16 @@ const App = {
                                 return `
                                     <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
                                         <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${course.semester}</td>
-                                        <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">${course.course_code || 'N/A'}</td>
+                                        <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">
+                                            <div class="flex items-center gap-1.5 flex-wrap">
+                                                <span>${course.course_code || 'N/A'}</span>
+                                                ${(this.isSignatureCourse(course.course_code) || course.is_signature) ? `
+                                                    <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300 border border-amber-300 dark:border-amber-700" title="Signature Course (College specific syllabus)">
+                                                        Signature
+                                                    </span>
+                                                ` : ''}
+                                            </div>
+                                        </td>
                                         <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate" title="${course.title}">${course.title}</td>
                                         <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
                                             ${course.parent_dept_name || course.dept_name || ''} ${course.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${course.minor_name || course.dept_code}</span>` : ''}
@@ -3520,6 +3543,60 @@ const App = {
         return c;
     },
 
+    parseCourseCode(rawStr) {
+        if (!rawStr) return null;
+        const clean = String(rawStr).trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+        // Format: MG + [1-8] + [Type: DSC,DSE,SEC,MDC,VAC,CCR,AEC,MDE,SDC,MPC,HON,MIN] + [Dept] + optional [A for signature] + [3-digit level 100-499]
+        // Examples: MG4DSEMAT201 (regular), MG4DSEMATA201 (signature code)
+        const m = clean.match(/^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})([1-4][0-9]{2})$/);
+        if (!m) return null;
+
+        const semester = parseInt(m[1], 10);
+        const courseType = m[2];
+        const deptPart = m[3];
+        const courseLevel = parseInt(m[4], 10);
+
+        let deptCode = deptPart;
+        let isSignature = false;
+
+        // Check if there is an 'A' after department code (Signature Code)
+        // e.g. MAT + A -> MATA, PHY + A -> PHYA, BBA + A -> BBAA
+        const knownDeptSet = new Set((this.departments || []).map(d => d.code.toUpperCase()));
+        if (deptPart.length >= 3 && deptPart.endsWith('A')) {
+            const baseDept = deptPart.slice(0, -1);
+            if (knownDeptSet.has(baseDept) || baseDept.length === 3 || (!knownDeptSet.has(deptPart) && knownDeptSet.has(baseDept))) {
+                deptCode = baseDept;
+                isSignature = true;
+            }
+        }
+
+        // Validate course level correlation with year:
+        // 100-199: 1st year (Semesters 1 & 2)
+        // 200-299: 2nd year (Semesters 3 & 4)
+        // 300-399: 3rd year (Semesters 5 & 6)
+        // 400-499: 4th year (Semesters 7 & 8)
+        const expectedYear = Math.ceil(semester / 2);
+        const actualYear = Math.floor(courseLevel / 100);
+        const yearMatches = (expectedYear === actualYear);
+
+        return {
+            isValid: true,
+            fullCode: clean,
+            semester: semester,
+            courseType: courseType,
+            deptCode: deptCode,
+            isSignature: isSignature,
+            courseLevel: courseLevel,
+            yearMatches: yearMatches
+        };
+    },
+
+    isSignatureCourse(rawCode) {
+        if (!rawCode) return false;
+        const parsed = this.parseCourseCode(rawCode);
+        return parsed ? parsed.isSignature : false;
+    },
+
     extractPageHeaderCourseInfo(pageText, defaultSem = 1) {
         if (!pageText) {
             return {
@@ -3529,13 +3606,14 @@ const App = {
                 deptCode: 'MAT',
                 semester: defaultSem || 1,
                 paperType: 'THEORY',
+                isSignature: false,
                 confidence: 'low',
                 matchedPaper: null
             };
         }
 
-        // Take top 1500 characters of the page for header inspection
-        const headerSlice = pageText.slice(0, 1500);
+        // Take top 1800 characters of the page for header inspection
+        const headerSlice = pageText.slice(0, 1800);
         const cleanHeader = headerSlice.replace(/\s+/g, ' ');
         const upperHeader = cleanHeader.toUpperCase();
         const fullUpper = pageText.toUpperCase();
@@ -3568,23 +3646,24 @@ const App = {
             }
         });
 
-        // 4. Extract Candidate Course Codes from this page's header
+        // 4. Extract Candidate Course Codes from this page's header adhering to FYUGP structure:
+        // MG + [1-8] + [Type] + [Dept] + optional [A] + [Level 100-499]
         const rawCodeMatches = [];
 
         // Pattern A: Explicit "COURSE CODE: [code]"
-        const explicitMatches = cleanHeader.matchAll(/(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-\s]{5,25})/gi);
+        const explicitMatches = cleanHeader.matchAll(/(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-\s]{6,25})/gi);
         for (const m of explicitMatches) {
             if (m && m[1]) rawCodeMatches.push(m[1]);
         }
 
-        // Pattern B: FYUGP MGU Code pattern (e.g. MG1DSCMAT100, MGU1DSCPHY100, 24MG1CCRBBA101, etc.)
-        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*[A-Z0-9\s]{4,15}\d{0,4}/gi);
+        // Pattern B: FYUGP MGU Code pattern matching MG[1-8](Type)(Dept)A?(Level)
+        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN)\s*[A-Z]{2,4}\s*A?\s*[1-4][0-9]{2}/gi);
         for (const m of mgMatches) {
             if (m && m[0]) rawCodeMatches.push(m[0]);
         }
 
         // Pattern C: Standard boundary code
-        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z0-9_]{5,15})\b/gi);
+        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z0-9_]{5,16})\b/gi);
         for (const m of standardMatches) {
             if (m && m[1]) rawCodeMatches.push(m[1]);
         }
@@ -3600,21 +3679,48 @@ const App = {
             }
         }
 
-        // Check catalog match first
+        // Validate candidates with parseCourseCode and catalog
+        const parsedCandidates = normalizedCandidates.map(cand => ({
+            code: cand,
+            parsed: this.parseCourseCode(cand),
+            inCatalog: knownCoursesMap.has(cand)
+        }));
+
         let matchedCatalogPaper = null;
         let bestCourseCode = '';
+        let parsedInfo = null;
 
-        for (const cand of normalizedCandidates) {
-            if (knownCoursesMap.has(cand)) {
-                matchedCatalogPaper = knownCoursesMap.get(cand);
-                bestCourseCode = cand;
-                break;
+        // Preference 1: Valid parsed code that is also in catalog
+        const catParsed = parsedCandidates.find(c => c.parsed && c.parsed.isValid && c.inCatalog);
+        if (catParsed) {
+            matchedCatalogPaper = knownCoursesMap.get(catParsed.code);
+            bestCourseCode = catParsed.code;
+            parsedInfo = catParsed.parsed;
+        }
+
+        // Preference 2: Any candidate in catalog
+        if (!bestCourseCode) {
+            const catAny = parsedCandidates.find(c => c.inCatalog);
+            if (catAny) {
+                matchedCatalogPaper = knownCoursesMap.get(catAny.code);
+                bestCourseCode = catAny.code;
+                parsedInfo = catAny.parsed || this.parseCourseCode(catAny.code);
             }
         }
 
-        // If not matched directly in catalog, pick the first valid normalized candidate
+        // Preference 3: Valid parsed code according to FYUGP QP pattern
+        if (!bestCourseCode) {
+            const validPattern = parsedCandidates.find(c => c.parsed && c.parsed.isValid);
+            if (validPattern) {
+                bestCourseCode = validPattern.code;
+                parsedInfo = validPattern.parsed;
+            }
+        }
+
+        // Preference 4: First normalized candidate starting with MG
         if (!bestCourseCode && normalizedCandidates.length > 0) {
             bestCourseCode = normalizedCandidates[0];
+            parsedInfo = this.parseCourseCode(bestCourseCode);
         }
 
         // If still no code, check if any catalog course code is contained inside this header
@@ -3624,6 +3730,7 @@ const App = {
                 if (knownCode.length >= 10 && upperHeader.includes(knownCode)) {
                     matchedCatalogPaper = knownCoursesMap.get(knownCode);
                     bestCourseCode = knownCode;
+                    parsedInfo = this.parseCourseCode(knownCode);
                     break;
                 }
             }
@@ -3631,7 +3738,9 @@ const App = {
 
         // 5. Semester Detection
         let detectedSem = null;
-        if (matchedCatalogPaper && matchedCatalogPaper.semester) {
+        if (parsedInfo && parsedInfo.semester) {
+            detectedSem = parsedInfo.semester;
+        } else if (matchedCatalogPaper && matchedCatalogPaper.semester) {
             detectedSem = matchedCatalogPaper.semester;
         } else if (bestCourseCode) {
             const semMatch = bestCourseCode.match(/^MG([1-8])/);
@@ -3651,27 +3760,36 @@ const App = {
         }
         if (!detectedSem) detectedSem = defaultSem || 1;
 
-        // 6. Title Detection
+        // 6. Title Detection: Look for course name after course code (often separated by hyphen -)
+        // Course name is usually 5 to 15 words in size
         let detectedTitle = matchedCatalogPaper ? matchedCatalogPaper.title : '';
 
         if (!detectedTitle && bestCourseCode) {
             const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-            // Pattern 1: CODE [-:–] Title (until Duration, Time, Max Marks, Part, Total)
-            const p1 = cleanHeader.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,75}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|\\d{4}\\s*Admi|Admission|$))', 'i'));
-            if (p1 && p1[1]) {
-                detectedTitle = p1[1].trim();
+
+            // Pattern 1: Look for hyphen (or en-dash/em-dash/colon) after course code:
+            // [Code] [-–—:] [Course Name]
+            const hyphenMatch = cleanHeader.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
+            if (hyphenMatch && hyphenMatch[1]) {
+                detectedTitle = hyphenMatch[1].trim();
             } else {
-                // Pattern 2: Title before CODE
-                const p2 = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,75}?)\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
-                if (p2 && p2[1]) {
-                    detectedTitle = p2[1].trim();
+                // Pattern 2: Course title directly following course code with spaces
+                const spaceMatch = cleanHeader.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
+                if (spaceMatch && spaceMatch[1]) {
+                    detectedTitle = spaceMatch[1].trim();
+                } else {
+                    // Pattern 3: Title right before CODE
+                    const beforeMatch = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                    if (beforeMatch && beforeMatch[1]) {
+                        detectedTitle = beforeMatch[1].trim();
+                    }
                 }
             }
         }
 
-        // Pattern 3: Explicit COURSE TITLE: ...
+        // Pattern 4: Explicit COURSE TITLE: ...
         if (!detectedTitle) {
-            const explicitTitleMatch = cleanHeader.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–\s]+([A-Za-z0-9\s,&/'-]{3,80})(?=\s*(?:Duration|Time|Max|Part|$))/i);
+            const explicitTitleMatch = cleanHeader.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–—\s]+([A-Za-z0-9\s,&'\/-]{3,140})(?=\s*(?:\n|\r|\(|\bDuration\b|\bTime\b|\bMax\b|\bPart\b|$))/i);
             if (explicitTitleMatch && explicitTitleMatch[1]) {
                 detectedTitle = explicitTitleMatch[1].trim();
             }
@@ -3682,7 +3800,7 @@ const App = {
             detectedTitle = detectedTitle
                 .replace(/\s*MODEL\s*QUESTION\s*PAPER.*$/i, '')
                 .replace(/\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$/i, '')
-                .replace(/\s*-\s*$/, '')
+                .replace(/[:\-–—\s]+$/, '')
                 .trim();
         }
 
@@ -3696,6 +3814,7 @@ const App = {
                         matchedCatalogPaper = paper;
                         if (!bestCourseCode) {
                             bestCourseCode = knownCode;
+                            parsedInfo = this.parseCourseCode(knownCode);
                         }
                         detectedTitle = paper.title;
                         break;
@@ -3705,9 +3824,8 @@ const App = {
         }
 
         // 7. Department Detection
-        let detectedDeptCode = matchedCatalogPaper ? (matchedCatalogPaper.parent_dept || matchedCatalogPaper.dept_code) : '';
+        let detectedDeptCode = (parsedInfo && parsedInfo.deptCode) || (matchedCatalogPaper ? (matchedCatalogPaper.parent_dept || matchedCatalogPaper.dept_code) : '');
         if (!detectedDeptCode && bestCourseCode) {
-            // Check dept code inside course code (e.g. MG1DSCMAT100 -> MAT)
             const deptInCodeMatch = bestCourseCode.match(/(?:MG[1-8][A-Z]{3}|[A-Z]{3,4}[1-8])([A-Z]{3})/);
             if (deptInCodeMatch && deptInCodeMatch[1]) {
                 const candDept = (this.departments || []).find(d => d.code === deptInCodeMatch[1]);
@@ -3723,6 +3841,8 @@ const App = {
             }
         }
 
+        const isSignature = Boolean(parsedInfo && parsedInfo.isSignature);
+
         return {
             isStart: isStart,
             courseCode: bestCourseCode,
@@ -3730,6 +3850,7 @@ const App = {
             deptCode: detectedDeptCode || 'MAT',
             semester: detectedSem,
             paperType: paperType,
+            isSignature: isSignature,
             confidence: matchedCatalogPaper ? 'high' : (bestCourseCode ? 'medium' : 'low'),
             matchedPaper: matchedCatalogPaper
         };
@@ -3847,22 +3968,34 @@ const App = {
         let minorName = matchedPaper ? (matchedPaper.minor_name || '') : '';
         let minorCode = matchedPaper ? (matchedPaper.dept_code || '') : '';
 
-        // Extract Title from text if not yet identified
+        // Extract Title from text if not yet identified: Look for course name after course code
+        // Most probably separated by a hyphen '-' followed by course name (usually 5 to 15 words)
         if (!detectedTitle && matchedCourseCode && rawText) {
             const cleanText = rawText.replace(/\s+/g, ' ');
             const escapedCode = matchedCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 
-            const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|\\d{4}\\s*Admi|Admission|$))', 'i'));
+            // Pattern 1: [Code] [-–—:] [Course Name] (up to 140 chars / 5-15 words)
+            const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
             if (p1 && p1[1]) {
                 detectedTitle = p1[1].trim();
             } else {
-                const p2 = cleanText.match(new RegExp('(?:ONWARDS|EXAMINATION|\\))\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                // Pattern 2: [Code] [Course Name] with whitespace
+                const p2 = cleanText.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
                 if (p2 && p2[1]) {
                     detectedTitle = p2[1].trim();
+                } else {
+                    const p3 = cleanText.match(new RegExp('(?:ONWARDS|EXAMINATION|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                    if (p3 && p3[1]) {
+                        detectedTitle = p3[1].trim();
+                    }
                 }
             }
             if (detectedTitle) {
-                detectedTitle = detectedTitle.replace(/\s*MODEL\s*QUESTION\s*PAPER.*$/i, '').trim();
+                detectedTitle = detectedTitle
+                    .replace(/\s*MODEL\s*QUESTION\s*PAPER.*$/i, '')
+                    .replace(/\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$/i, '')
+                    .replace(/[:\-–—\s]+$/, '')
+                    .trim();
             }
         }
 
@@ -3888,6 +4021,8 @@ const App = {
             examName = 'MGU-UGP (Honours) 2024 Admission Supplementary Examination';
         }
 
+        const isSignature = Boolean(headerInfo.isSignature || this.isSignatureCourse(matchedCourseCode));
+
         return {
             courseCode: matchedCourseCode,
             title: detectedTitle,
@@ -3901,6 +4036,7 @@ const App = {
             qpCode: detectedQpCode,
             examName: examName,
             isModelPaper: isModelPaper,
+            isSignature: isSignature,
             confidence: matchedPaper ? 'high' : (matchedCourseCode ? 'medium' : 'low'),
             matchedPaper: matchedPaper
         };
@@ -4117,6 +4253,7 @@ const App = {
 
             // Duplicate check against existing papers in portal
             const dupResult = this.checkPaperDuplicate(finalCode, detected.qpCode, true);
+            const isSignature = Boolean(headerInfo.isSignature || this.isSignatureCourse(finalCode));
 
             this.adminSplitPapers.push({
                 idx: s,
@@ -4128,6 +4265,7 @@ const App = {
                 deptCode: finalDept,
                 semester: finalSem,
                 paperType: finalPaperType,
+                isSignature: isSignature,
                 courseType: detected.courseType || 'DSC',
                 isMinor: detected.isMinor,
                 minorName: detected.minorName,
@@ -4473,6 +4611,14 @@ const App = {
             });
         }
 
+        // Sort split cards: keep signature courses (college-specific syllabus) at the bottom
+        filteredItems.sort((a, b) => {
+            const aSig = Boolean(a.isSignature || this.isSignatureCourse(a.courseCode));
+            const bSig = Boolean(b.isSignature || this.isSignatureCourse(b.courseCode));
+            if (aSig !== bSig) return aSig ? 1 : -1;
+            return a.idx - b.idx;
+        });
+
         if (filteredItems.length === 0) {
             container.innerHTML = `
                 <div class="p-8 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs space-y-2">
@@ -4490,6 +4636,7 @@ const App = {
             const idx = item.idx;
             const isDup = item.isDuplicate;
             const isPublished = item.published;
+            const isSig = Boolean(item.isSignature || this.isSignatureCourse(item.courseCode));
 
             const confidenceBadge = item.confidence === 'high'
                 ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300 flex items-center gap-1"><i class="bi bi-check-circle-fill"></i> Catalog Match</span>'
@@ -4502,6 +4649,10 @@ const App = {
             const typeBadge = item.paperType === 'PRACTICAL'
                 ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 dark:bg-purple-900/60 dark:text-purple-300 flex items-center gap-1"><i class="bi bi-gear-fill"></i> Practical</span>'
                 : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-sky-300 flex items-center gap-1"><i class="bi bi-book-fill"></i> Theory</span>';
+
+            const sigBadge = isSig
+                ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300 border border-amber-300 dark:border-amber-700 flex items-center gap-1" title="Signature Course (College specific syllabus)"><i class="bi bi-pen-fill text-[9px]"></i> Signature</span>'
+                : '';
 
             const dupAlert = isDup ? `
                 <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200 flex items-center justify-between gap-2 flex-wrap">
@@ -4528,6 +4679,7 @@ const App = {
                                 <i class="bi bi-file-earmark-break"></i> Pages ${item.startPage} – ${item.endPage} (${item.pageCount} ${item.pageCount === 1 ? 'page' : 'pages'})
                             </span>
                             ${typeBadge}
+                            ${sigBadge}
                             ${confidenceBadge}
                             ${dupBadge}
                         </div>
@@ -4692,11 +4844,13 @@ const App = {
             const isModel = true;
             const deptObj = this.departments.find(d => d.code === deptCode);
             const deptName = deptObj ? deptObj.name : deptCode;
+            const isSignature = Boolean(item.isSignature || this.isSignatureCourse(courseCode));
 
             const payload = {
                 is_model_paper: isModel,
                 paper_type: paperType,
                 course_code: courseCode,
+                is_signature: isSignature,
                 title: title || `Model QP - ${courseCode} (${paperType})`,
                 dept_code: deptCode,
                 dept_name: deptName,
@@ -4739,10 +4893,14 @@ const App = {
                     if (!existing.model_papers) existing.model_papers = [];
                     existing.model_papers.push(modelObj);
                     existing.has_files = true;
+                    if (isSignature) {
+                        existing.is_signature = true;
+                    }
                 } else {
                     existing = {
                         id: `custom_split_${courseCode}_${ts}`,
                         course_code: courseCode,
+                        is_signature: isSignature,
                         title: title || `Model QP - ${courseCode}`,
                         raw_header: `${courseCode} ${title}`,
                         semester: semester,
@@ -4974,9 +5132,12 @@ const App = {
             let schemeFileB64 = '';
             if (schemeFile) schemeFileB64 = await toB64(schemeFile);
 
+            const isSignature = this.isSignatureCourse(courseCode);
+
             const payload = {
                 is_model_paper: isModel,
                 course_code: courseCode,
+                is_signature: isSignature,
                 title: title,
                 dept_code: isMinor && minorCode ? minorCode : deptCode,
                 dept_name: isMinor && minorName ? minorName : deptName,
@@ -5015,10 +5176,12 @@ const App = {
                     if (existing) {
                         if (!existing.model_papers) existing.model_papers = [];
                         existing.model_papers.push(modelObj);
+                        if (isSignature) existing.is_signature = true;
                     } else {
                         existing = {
                             id: `custom_model_${courseCode}_${ts}`,
                             course_code: courseCode,
+                            is_signature: isSignature,
                             title: title,
                             raw_header: `${courseCode} ${title}`,
                             semester: semester,
@@ -5064,6 +5227,7 @@ const App = {
                         exam_name: examName,
                         batch: "2024 Admission",
                         is_fyugp: true,
+                        is_signature: isSignature,
                         has_qp: Boolean(qpFileB64),
                         qp_url: qpFileB64 || "#",
                         has_scheme: Boolean(schemeFileB64 || schemeUrl),

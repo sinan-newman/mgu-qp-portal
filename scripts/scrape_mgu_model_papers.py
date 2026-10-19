@@ -98,6 +98,56 @@ def normalize_course_code(raw_str, default_sem=1):
         c = f"MG{default_sem}" + c
     return c
 
+def parse_fyugp_course_code(raw_str):
+    if not raw_str:
+        return None
+    clean = re.sub(r'[^A-Z0-9]', '', str(raw_str).strip().upper())
+    # Match pattern: MG + [1-8] + Type + DeptPart + Level (100-499)
+    # e.g., MG4DSEMAT201 (regular), MG4DSEMATA201 (signature)
+    m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})([1-4][0-9]{2})$', clean)
+    if not m:
+        return None
+    sem = int(m.group(1))
+    ctype = m.group(2)
+    dept_part = m.group(3)
+    level = int(m.group(4))
+
+    is_sig = False
+    dept_code = dept_part
+    if len(dept_part) >= 3 and dept_part.endswith('A'):
+        dept_code = dept_part[:-1]
+        is_sig = True
+
+    return {
+        "valid": True,
+        "full_code": clean,
+        "semester": sem,
+        "course_type": ctype,
+        "dept_code": dept_code,
+        "is_signature": is_sig,
+        "level": level
+    }
+
+def is_signature_code(raw_str):
+    p = parse_fyugp_course_code(raw_str)
+    return p["is_signature"] if p else False
+
+def extract_title_from_text(txt, course_code):
+    if not txt or not course_code:
+        return ""
+    clean = re.sub(r'\s+', ' ', txt)
+    escaped = re.escape(course_code)
+    # Pattern 1: Look for hyphen (or en-dash/em-dash/colon) after course code:
+    # [Code] [-–—:] [Course Name] (usually 5 to 15 words)
+    m1 = re.search(escaped + r'\s*[:\-–—\u2013\u2014\ufb01]+\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\b)([A-Za-z0-9][A-Za-z0-9\s,\/&\':\-–]{2,140}?)(?=\s*(?:\n|\r|\(|\bDuration\b|\bTime\b|\bMax(?:imum)?\b|\bTotal\b|\bPart\b|\bSection\b|\bAnswer\b|\d+\s*hrs|\d+\s*hours|\bMarks\b|\d{4}\s*Admi|\bAdmission\b|$))', clean, re.IGNORECASE)
+    if m1 and m1.group(1):
+        t = m1.group(1).strip()
+        t = re.sub(r'\s*MODEL\s*QUESTION\s*PAPER.*$', '', t, flags=re.IGNORECASE)
+        t = re.sub(r'\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$', '', t, flags=re.IGNORECASE)
+        t = re.sub(r'[:\-–—\s]+$', '', t).strip()
+        return t
+    return ""
+
 def fetch_page_html():
     print(f"[Scraper] Fetching live page: {PAGE_URL} ...")
     req = urllib.request.Request(
@@ -695,23 +745,31 @@ def run_scraper(force=False):
 
     for cc in sorted(orphan_codes):
         mps = models_by_course[cc]
-        m_parse = re.match(r'^MG([1-8])([A-Z]{3})([A-Z]{3})?', cc)
-        sem = 1
-        ctype = "DSC"
-        dept_code = "GEN"
-        if m_parse:
-            sem = int(m_parse.group(1))
-            ctype = m_parse.group(2)
-            dept_code = m_parse.group(3) or "GEN"
-            
+        parsed_fyugp = parse_fyugp_course_code(cc)
+        if parsed_fyugp:
+            sem = parsed_fyugp["semester"]
+            ctype = parsed_fyugp["course_type"]
+            dept_code = parsed_fyugp["dept_code"]
+            is_signature = parsed_fyugp["is_signature"]
+        else:
+            m_parse = re.match(r'^MG([1-8])([A-Z]{3})([A-Z]{3})?', cc)
+            sem = int(m_parse.group(1)) if m_parse else 1
+            ctype = m_parse.group(2) if m_parse else "DSC"
+            dept_code = (m_parse.group(3) if m_parse else None) or "GEN"
+            is_signature = False
+
         dept_name = dept_name_map.get(dept_code, dept_code)
-        
+
         t_obj = theory_by_course.get(cc) or practical_by_course.get(cc)
-        raw_title = t_obj["source_item"]["name"] if t_obj else cc
-        raw_title = re.sub(r'\s*-\s*Theory.*|\s*-\s*Practical.*', '', raw_title, flags=re.IGNORECASE)
-        raw_title = re.sub(r'MG[1-8][A-Z0-9_]{5,14}', '', raw_title).strip(" -–")
-        final_title = raw_title if raw_title else f"{dept_name} {COURSE_TYPE_NAMES.get(ctype, ctype)}"
-        
+        extracted_t = extract_title_from_text(t_obj.get("full_text", ""), cc) if t_obj else ""
+        if extracted_t:
+            final_title = extracted_t
+        else:
+            raw_title = t_obj["source_item"]["name"] if t_obj else cc
+            raw_title = re.sub(r'\s*-\s*Theory.*|\s*-\s*Practical.*', '', raw_title, flags=re.IGNORECASE)
+            raw_title = re.sub(r'MG[1-8][A-Z0-9_]{5,14}', '', raw_title).strip(" -–")
+            final_title = raw_title if raw_title else f"{dept_name} {COURSE_TYPE_NAMES.get(ctype, ctype)}"
+
         new_course = {
             "id": f"orphan_{cc.lower()}",
             "qp_code": "",
@@ -727,6 +785,7 @@ def run_scraper(force=False):
             "parent_dept": dept_code,
             "parent_dept_name": dept_name,
             "is_minor": False,
+            "is_signature": is_signature,
             "exam_id": f"fyugp_sem{sem}_model",
             "exam_name": f"Semester {sem} FYUGP (Model Question Paper)",
             "batch": "2024",

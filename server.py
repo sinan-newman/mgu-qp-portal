@@ -439,6 +439,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                     if p.get("course_code", "").strip().upper() == course_code:
                         if "model_papers" not in p or not isinstance(p["model_papers"], list):
                             p["model_papers"] = []
+                        # Enforce rule: course can have at most 1 Theory and at most 1 Practical
+                        m_ptype = model_obj.get("paper_type", "THEORY").upper()
+                        p["model_papers"] = [m for m in p["model_papers"] if m.get("paper_type", "THEORY").upper() != m_ptype]
                         p["model_papers"].append(model_obj)
                         p["has_files"] = True
                         if is_signature:

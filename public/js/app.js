@@ -3227,7 +3227,8 @@ const App = {
         for (const p of this.papers) {
             if ((p.course_code || '').trim().toUpperCase() === courseCode) {
                 if (!p.model_papers) p.model_papers = [];
-                p.model_papers = p.model_papers.filter(m => m.id !== modelId);
+                const ptype = (newModelObj.paper_type || 'THEORY').toUpperCase();
+                p.model_papers = p.model_papers.filter(m => m.id !== modelId && (m.paper_type || 'THEORY').toUpperCase() !== ptype);
                 p.model_papers.push(newModelObj);
                 p.has_files = true;
                 attachedCount++;
@@ -3372,6 +3373,8 @@ const App = {
             for (const p of this.papers) {
                 if ((p.course_code || '').trim().toUpperCase() === courseCode) {
                     if (!p.model_papers) p.model_papers = [];
+                    const ptype = (newModelObj.paper_type || 'THEORY').toUpperCase();
+                    p.model_papers = p.model_papers.filter(m => (m.paper_type || 'THEORY').toUpperCase() !== ptype);
                     p.model_papers.push(newModelObj);
                     p.has_files = true;
                     attached = true;
@@ -4983,6 +4986,8 @@ const App = {
                 let existing = this.papers.find(p => (p.course_code || '').toUpperCase() === courseCode);
                 if (existing) {
                     if (!existing.model_papers) existing.model_papers = [];
+                    const ptype = (modelObj.paper_type || 'THEORY').toUpperCase();
+                    existing.model_papers = existing.model_papers.filter(m => (m.paper_type || 'THEORY').toUpperCase() !== ptype);
                     existing.model_papers.push(modelObj);
                     existing.has_files = true;
                     if (isSignature) {
@@ -5267,6 +5272,8 @@ const App = {
                     let existing = this.papers.find(p => (p.course_code || '').toUpperCase() === courseCode);
                     if (existing) {
                         if (!existing.model_papers) existing.model_papers = [];
+                        const ptype = (modelObj.paper_type || 'THEORY').toUpperCase();
+                        existing.model_papers = existing.model_papers.filter(m => (m.paper_type || 'THEORY').toUpperCase() !== ptype);
                         existing.model_papers.push(modelObj);
                         if (isSignature) existing.is_signature = true;
                     } else {

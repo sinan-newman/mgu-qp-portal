@@ -755,26 +755,24 @@ def run_scraper(force=False):
             clean_c = normalize_course_code(cc)
             existing_codes.add(clean_c)
             if clean_c in models_by_course:
-                # Merge model papers preserving any custom ones, ensuring at most 1 Theory and 1 Practical
-                current_models = p.get("model_papers", [])
-                has_theory = any(m.get("paper_type") == "THEORY" for m in current_models)
-                has_prac = any(m.get("paper_type") == "PRACTICAL" for m in current_models)
+                # Merge model papers preserving any custom ones, ensuring strictly AT MOST 1 Theory and 1 Practical
+                current_models = p.get("model_papers", []) or []
+                theory_model = next((m for m in current_models if m.get("paper_type") == "THEORY"), None)
+                prac_model = next((m for m in current_models if m.get("paper_type") == "PRACTICAL"), None)
                 
-                new_models = []
                 for m in models_by_course[clean_c]:
-                    if m["paper_type"] == "THEORY" and not has_theory:
-                        new_models.append(m)
-                        has_theory = True
-                    elif m["paper_type"] == "PRACTICAL" and not has_prac:
-                        new_models.append(m)
-                        has_prac = True
-                    elif m["paper_type"] == "THEORY" and has_theory:
-                        # Keep existing or update
-                        new_models.append(m)
-                    elif m["paper_type"] == "PRACTICAL" and has_prac:
-                        new_models.append(m)
+                    if m["paper_type"] == "THEORY" and not theory_model:
+                        theory_model = m
+                    elif m["paper_type"] == "PRACTICAL" and not prac_model:
+                        prac_model = m
                         
-                p["model_papers"] = new_models
+                final_models = []
+                if theory_model:
+                    final_models.append(theory_model)
+                if prac_model:
+                    final_models.append(prac_model)
+                    
+                p["model_papers"] = final_models
                 assigned_count += 1
 
     # 9. Orphan courses: Courses discovered on MGU model papers page but not yet in papers.json

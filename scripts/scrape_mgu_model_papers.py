@@ -83,13 +83,19 @@ COURSE_TYPE_NAMES = {
     "HON": "Honours Course"
 }
 
-def normalize_course_code(raw_str):
+def normalize_course_code(raw_str, default_sem=1):
     if not raw_str:
         return ""
     c = raw_str.strip().upper()
     c = re.sub(r'[^A-Z0-9]', '', c)
     if c.startswith("24MG"):
         c = c[2:]
+    if c.startswith("MGU") and len(c) >= 4 and c[3].isdigit():
+        c = "MG" + c[3:]
+    if c.startswith("MGI") or c.startswith("MGL"):
+        c = "MG1" + c[3:]
+    if not c.startswith("MG") and len(c) >= 8:
+        c = f"MG{default_sem}" + c
     return c
 
 def fetch_page_html():
@@ -238,7 +244,7 @@ def download_file(url, target_path):
                     pass
     return False
 
-def process_single_pdf(item, known_courses):
+def process_single_pdf(item, known_courses, title_to_code=None):
     local_p = item["local_path"]
     if not os.path.exists(local_p) or os.path.getsize(local_p) < 100:
         return []
@@ -270,14 +276,17 @@ def process_single_pdf(item, known_courses):
         
         is_start = (has_univ and (has_marks or has_time or has_parts)) or (has_marks and has_time)
         
-        # Course code regex: MG followed by semester digit and alphanumeric tokens
-        raw_codes = re.findall(r'(?:24)?\s*(MG\s*[1-8]\s*[A-Z0-9]{3,4}\s*[A-Z0-9]{2,5}\s*\d{0,4})', txt, re.IGNORECASE)
-        norm_codes = [normalize_course_code(c) for c in raw_codes]
+        # Enhanced course code regex: matches standard, MGU, MGI, spaced codes, and COURSE CODE headers
+        raw_codes = re.findall(r'(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*[A-Z0-9\s]{5,15}\d{0,4}', txt, re.IGNORECASE)
+        raw_cc_headers = re.findall(r'COURSE\s*CODE\s*[-–:\s]+\s*([A-Z0-9_\-\s]{6,20})', txt, re.IGNORECASE)
+        raw_codes.extend(raw_cc_headers)
+
+        norm_codes = [normalize_course_code(c, sem) for c in raw_codes]
         norm_codes = [c for c in norm_codes if len(c) >= 10 and c.startswith("MG")]
         matched_known = [c for c in norm_codes if c in known_courses]
         
         fallback_codes = re.findall(r'(?:24)?\s*(MG[1-8][A-Z0-9_]{5,14})', item["name"] + " " + item["raw_fn"], re.IGNORECASE)
-        fallback_norm = [normalize_course_code(c) for c in fallback_codes]
+        fallback_norm = [normalize_course_code(c, sem) for c in fallback_codes]
         fallback_norm = [c for c in fallback_norm if len(c) >= 10 and c.startswith("MG")]
         
         page_data.append({
@@ -335,6 +344,14 @@ def process_single_pdf(item, known_courses):
         best_code = group_codes[0] if group_codes else code
         if not best_code and page_data[0]["fallback_codes"]:
             best_code = page_data[0]["fallback_codes"][0]
+            
+        # Title matching fallback if code still not found
+        if not best_code and title_to_code:
+            txt_lower = full_text.lower()
+            for (t_sem, t_str), t_code in title_to_code.items():
+                if t_sem == sem and len(t_str) >= 10 and t_str in txt_lower:
+                    best_code = t_code
+                    break
             
         is_practical = file_is_prac or bool(re.search(r'practical\s+examination|practical\s+model|experiment\s+no|conduct\s+one\s+experiment', full_text, re.IGNORECASE))
         if ("theory" in full_text.lower() or "theory examination" in full_text.lower()) and not file_is_prac:
@@ -468,20 +485,25 @@ def run_scraper(force=False):
 
     known_courses = {}
     papers_by_code = {}
+    title_to_code = {}
     for p in papers_db:
         cc = p.get("course_code")
         if cc:
             clean_c = normalize_course_code(cc)
             known_courses[clean_c] = p
             papers_by_code[clean_c] = p
+            t = p.get("title", "").strip().lower()
+            if t and len(t) > 6:
+                s_num = p.get("semester", 1)
+                title_to_code[(s_num, t)] = clean_c
 
-    print(f"[Scraper] Loaded {len(known_courses)} existing known courses from portal database.")
+    print(f"[Scraper] Loaded {len(known_courses)} existing known courses and {len(title_to_code)} course titles from portal database.")
 
     # 5. Extract & Split PDFs
     print("[Splitter] Splitting compilation PDFs into individual course papers...")
     all_extracted = []
     with ThreadPoolExecutor(max_workers=8) as executor:
-        results = list(executor.map(lambda it: process_single_pdf(it, known_courses), all_items))
+        results = list(executor.map(lambda it: process_single_pdf(it, known_courses, title_to_code), all_items))
         for r in results:
             all_extracted.extend(r)
 

@@ -18,6 +18,8 @@ PORT = 8080
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = BASE_DIR if os.path.exists(os.path.join(BASE_DIR, "index.html")) else os.path.join(BASE_DIR, "public")
 DATA_DIR = os.path.join(BASE_DIR, "data")
+VISITORS_FILE = os.path.join(DATA_DIR, "visitors.json")
+VISITORS_LOCK = threading.Lock()
 
 # In-memory cache for fast search
 CACHE = {
@@ -25,8 +27,49 @@ CACHE = {
     "departments": None,
     "model_courses": None,
     "model_papers": None,
-    "stats": None
+    "stats": None,
+    "visitors": None
 }
+
+def get_initial_visitors():
+    import time
+    today_str = time.strftime("%Y-%m-%d")
+    return {
+        "total_pageviews": 0,
+        "total_unique_visitors": 0,
+        "today_date": today_str,
+        "today_pageviews": 0,
+        "today_unique_visitors": 0,
+        "device_breakdown": {
+            "mobile": 0,
+            "desktop": 0
+        },
+        "daily_history": {},
+        "recent_visits": [],
+        "seen_today_vids": [],
+        "all_time_vids": []
+    }
+
+def load_visitors():
+    if os.path.exists(VISITORS_FILE):
+        try:
+            with open(VISITORS_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading visitors.json: {e}")
+    return get_initial_visitors()
+
+def save_visitors():
+    import copy
+    with VISITORS_LOCK:
+        data = copy.deepcopy(CACHE.get("visitors") or get_initial_visitors())
+    for fpath in [VISITORS_FILE, os.path.join(BASE_DIR, "public", "data", "visitors.json")]:
+        try:
+            os.makedirs(os.path.dirname(fpath), exist_ok=True)
+            with open(fpath, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error saving visitors to {fpath}: {e}")
 
 def load_data():
     try:
@@ -63,6 +106,8 @@ def load_data():
     except Exception as e:
         print(f"Error loading stats.json: {e}")
         CACHE["stats"] = {}
+
+    CACHE["visitors"] = load_visitors()
 
 load_data()
 
@@ -120,6 +165,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urllib.parse.urlparse(self.path)
+        if parsed.path == "/api/visit":
+            self.handle_visit_post()
+            return
         if parsed.path == "/api/sync":
             self.handle_sync_trigger()
             return
@@ -135,6 +183,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_json_response({"error": "Endpoint not found"}, status=404)
 
     def handle_api_get(self, path, params):
+        if path == "/api/visitors":
+            self.handle_visitors_get()
+            return
         if path == "/api/feedback":
             self.handle_feedback_get()
             return
@@ -496,6 +547,113 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_json_response({"success": True, "message": "Feedback operation successful", "reports_count": len(reports)})
         except Exception as e:
             self.send_json_response({"success": False, "error": str(e)}, status=500)
+
+    def handle_visit_post(self):
+        import time
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+            payload = json.loads(body) if body else {}
+
+            visitor_id = str(payload.get("visitor_id") or "").strip()
+            device = str(payload.get("device") or "desktop").strip().lower()
+            page = str(payload.get("page") or "/").strip()
+            dev_key = "mobile" if "mobile" in device else "desktop"
+
+            today_str = time.strftime("%Y-%m-%d")
+            now_time_str = time.strftime("%I:%M %p, %b %d")
+
+            with VISITORS_LOCK:
+                vdata = CACHE.get("visitors") or get_initial_visitors()
+
+                # Daily rollover check
+                if vdata.get("today_date") != today_str:
+                    prev_date = vdata.get("today_date")
+                    if prev_date:
+                        if "daily_history" not in vdata:
+                            vdata["daily_history"] = {}
+                        vdata["daily_history"][prev_date] = {
+                            "pageviews": vdata.get("today_pageviews", 0),
+                            "unique": vdata.get("today_unique_visitors", 0)
+                        }
+                    vdata["today_date"] = today_str
+                    vdata["today_pageviews"] = 0
+                    vdata["today_unique_visitors"] = 0
+                    vdata["seen_today_vids"] = []
+
+                # Increment pageviews
+                vdata["total_pageviews"] = vdata.get("total_pageviews", 0) + 1
+                vdata["today_pageviews"] = vdata.get("today_pageviews", 0) + 1
+
+                # Unique today check
+                if "seen_today_vids" not in vdata:
+                    vdata["seen_today_vids"] = []
+                if visitor_id and visitor_id not in vdata["seen_today_vids"]:
+                    vdata["seen_today_vids"].append(visitor_id)
+                    vdata["today_unique_visitors"] = vdata.get("today_unique_visitors", 0) + 1
+                elif not visitor_id:
+                    vdata["today_unique_visitors"] = vdata.get("today_unique_visitors", 0) + 1
+
+                # All-time unique check
+                if "all_time_vids" not in vdata:
+                    vdata["all_time_vids"] = []
+                if visitor_id and visitor_id not in vdata["all_time_vids"]:
+                    vdata["all_time_vids"].append(visitor_id)
+                    vdata["total_unique_visitors"] = vdata.get("total_unique_visitors", 0) + 1
+                elif not visitor_id:
+                    vdata["total_unique_visitors"] = vdata.get("total_unique_visitors", 0) + 1
+
+                # Device breakdown
+                if "device_breakdown" not in vdata:
+                    vdata["device_breakdown"] = {"mobile": 0, "desktop": 0}
+                vdata["device_breakdown"][dev_key] = vdata["device_breakdown"].get(dev_key, 0) + 1
+
+                # Recent visits log
+                if "recent_visits" not in vdata:
+                    vdata["recent_visits"] = []
+
+                friendly_page = page
+                if friendly_page.startswith("#/department/"):
+                    friendly_page = "Dept " + friendly_page.replace("#/department/", "")
+                elif friendly_page.startswith("#/papers"):
+                    friendly_page = "All Question Papers"
+                elif friendly_page.startswith("#/bookmarks"):
+                    friendly_page = "Saved Papers"
+                elif friendly_page == "#/departments" or friendly_page == "#/":
+                    friendly_page = "Academic Departments"
+
+                vdata["recent_visits"].insert(0, {
+                    "time": now_time_str,
+                    "device": "Mobile" if dev_key == "mobile" else "Desktop",
+                    "page": friendly_page[:60]
+                })
+                vdata["recent_visits"] = vdata["recent_visits"][:25]
+                CACHE["visitors"] = vdata
+
+            save_visitors()
+
+            self.send_json_response({
+                "success": True,
+                "total_unique": vdata.get("total_unique_visitors", 0),
+                "today_unique": vdata.get("today_unique_visitors", 0)
+            })
+        except Exception as e:
+            self.send_json_response({"success": False, "error": str(e)}, status=500)
+
+    def handle_visitors_get(self):
+        with VISITORS_LOCK:
+            vdata = CACHE.get("visitors") or get_initial_visitors()
+            summary = {
+                "total_pageviews": vdata.get("total_pageviews", 0),
+                "total_unique_visitors": vdata.get("total_unique_visitors", 0),
+                "today_date": vdata.get("today_date", ""),
+                "today_pageviews": vdata.get("today_pageviews", 0),
+                "today_unique_visitors": vdata.get("today_unique_visitors", 0),
+                "device_breakdown": vdata.get("device_breakdown", {"mobile": 0, "desktop": 0}),
+                "daily_history": vdata.get("daily_history", {}),
+                "recent_visits": vdata.get("recent_visits", [])
+            }
+        self.send_json_response(summary)
 
     def update_stats(self):
         import time

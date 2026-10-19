@@ -135,6 +135,9 @@ const App = {
         // Load reports & feedback
         await this.loadFeedbackReports();
 
+        // Track portal visitor session
+        this.trackPortalVisit();
+
         const isAuth = sessionStorage.getItem('mgu_admin_auth') === 'true';
         if (isAuth) {
             document.getElementById('adminNavBtn')?.classList.remove('hidden');
@@ -144,6 +147,7 @@ const App = {
                 userDisplay.textContent = sessionStorage.getItem('mgu_admin_user') || 'sinan_cc';
             }
             this.populateAdminDeptDropdown();
+            this.fetchVisitorStats();
         } else {
             document.getElementById('adminNavBtn')?.classList.add('hidden');
         }
@@ -2640,6 +2644,7 @@ const App = {
             }
             this.populateAdminDeptDropdown();
             this.switchAdminTab('upload');
+            this.fetchVisitorStats();
             document.getElementById('adminNavBtn')?.classList.remove('hidden');
             document.getElementById('adminActiveBadge')?.classList.remove('hidden');
         } else {
@@ -2698,6 +2703,7 @@ const App = {
 
             this.populateAdminDeptDropdown();
             this.switchAdminTab('upload');
+            this.fetchVisitorStats();
             this.renderPapers();
             if (this.deptState.activeDept) {
                 this.renderDeptSemesterPapers();
@@ -2731,6 +2737,151 @@ const App = {
             this.renderDeptSemesterPapers();
         }
         this.backFromAdmin();
+    },
+
+    // -------------------------------------------------------------
+    // VISITOR ANALYTICS & LIVE TRACKING (ADMIN ONLY)
+    // -------------------------------------------------------------
+
+    trackPortalVisit() {
+        try {
+            let vid = localStorage.getItem('mgu_vid');
+            if (!vid) {
+                vid = 'vid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 8);
+                localStorage.setItem('mgu_vid', vid);
+            }
+
+            const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || window.innerWidth < 768;
+            const isNewSession = !sessionStorage.getItem('mgu_session_tracked');
+            if (isNewSession) {
+                sessionStorage.setItem('mgu_session_tracked', 'true');
+            }
+
+            const payload = {
+                visitor_id: vid,
+                device: isMobile ? 'mobile' : 'desktop',
+                page: window.location.hash || '#/departments',
+                is_new_session: isNewSession
+            };
+
+            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+            if (isLocalBackend || window.location.protocol.startsWith('http')) {
+                fetch('/api/visit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).catch(() => {});
+            }
+        } catch (e) {}
+    },
+
+    async fetchVisitorStats(btn = null) {
+        if (btn) this.setButtonLoading(btn, true, 'Updating...');
+        try {
+            const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+            let data = null;
+
+            if (isLocalBackend) {
+                try {
+                    const res = await fetch('/api/visitors');
+                    if (res.ok) data = await res.json();
+                } catch (e) {}
+            }
+
+            if (!data) {
+                try {
+                    const res = await fetch('data/visitors.json');
+                    if (res.ok) data = await res.json();
+                } catch (e) {}
+            }
+
+            if (!data) {
+                data = {
+                    total_unique_visitors: 1,
+                    today_unique_visitors: 1,
+                    total_pageviews: 1,
+                    device_breakdown: { mobile: 1, desktop: 0 },
+                    recent_visits: []
+                };
+            }
+
+            const totalVisitorsEl = document.getElementById('adminStatTotalVisitors');
+            const todayVisitorsEl = document.getElementById('adminStatTodayVisitors');
+            const totalViewsEl = document.getElementById('adminStatTotalPageviews');
+            const mobileRatioEl = document.getElementById('adminStatMobileRatio');
+            const desktopRatioEl = document.getElementById('adminStatDesktopRatio');
+            const deviceBarEl = document.getElementById('adminStatDeviceBar');
+            const lastUpdatedEl = document.getElementById('visitorLastUpdated');
+            const recentVisitsList = document.getElementById('adminRecentVisitsList');
+
+            if (totalVisitorsEl) {
+                totalVisitorsEl.textContent = (data.total_unique_visitors || 0).toLocaleString();
+            }
+            if (todayVisitorsEl) {
+                todayVisitorsEl.textContent = (data.today_unique_visitors || 0).toLocaleString();
+            }
+            if (totalViewsEl) {
+                totalViewsEl.textContent = (data.total_pageviews || 0).toLocaleString();
+            }
+
+            // Device ratio calculation
+            const dev = data.device_breakdown || { mobile: 0, desktop: 0 };
+            const mCount = dev.mobile || 0;
+            const dCount = dev.desktop || 0;
+            const totalDev = mCount + dCount;
+            const mPct = totalDev > 0 ? Math.round((mCount / totalDev) * 100) : 50;
+            const dPct = totalDev > 0 ? (100 - mPct) : 50;
+
+            if (mobileRatioEl) mobileRatioEl.innerHTML = `<i class="bi bi-phone"></i> ${mPct}% Mobile`;
+            if (desktopRatioEl) desktopRatioEl.innerHTML = `<i class="bi bi-laptop"></i> ${dPct}% PC`;
+            if (deviceBarEl) deviceBarEl.style.width = `${mPct}%`;
+
+            if (lastUpdatedEl) {
+                const now = new Date();
+                lastUpdatedEl.textContent = `Updated ${now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
+            }
+
+            // Populate recent activity log
+            if (recentVisitsList) {
+                const visits = data.recent_visits || [];
+                if (visits.length === 0) {
+                    recentVisitsList.innerHTML = `
+                        <div class="py-3 text-center text-slate-400 italic">No access logs recorded yet.</div>
+                    `;
+                } else {
+                    recentVisitsList.innerHTML = visits.map(v => `
+                        <div class="py-1.5 flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2 min-w-0">
+                                <span class="p-1 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                                    <i class="bi ${v.device === 'Mobile' ? 'bi-phone' : 'bi-laptop'} text-xs"></i>
+                                </span>
+                                <span class="truncate font-medium text-slate-800 dark:text-slate-200">${v.page || 'Home'}</span>
+                            </div>
+                            <span class="text-[11px] text-slate-400 shrink-0 font-mono">${v.time || 'Recently'}</span>
+                        </div>
+                    `).join('');
+                }
+            }
+        } finally {
+            if (btn) {
+                setTimeout(() => this.setButtonLoading(btn, false), 350);
+            }
+        }
+    },
+
+    refreshVisitorStats(btn) {
+        this.fetchVisitorStats(btn);
+    },
+
+    toggleVisitorActivityDrawer() {
+        const drawer = document.getElementById('visitorActivityDrawer');
+        const icon = document.getElementById('visitorDrawerIcon');
+        if (!drawer) return;
+        const isHidden = drawer.classList.contains('hidden');
+        drawer.classList.toggle('hidden', !isHidden);
+        if (icon) {
+            icon.className = isHidden ? 'bi bi-chevron-up' : 'bi bi-chevron-down';
+        }
     },
 
     switchAdminTab(tab) {

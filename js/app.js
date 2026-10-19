@@ -362,11 +362,35 @@ const App = {
         
         // Strict FYUGP restriction: filter out any CBCS records
         this.papers = rawPapers.filter(p => p.batch !== 'CBCS' && p.course_type !== 'CBCS');
+        this.buildCourseCatalogIndex();
         
         // Sort departments strictly alphabetically (A-Z)
         const rawDepts = deptsData || [];
         this.departments = rawDepts.sort((a, b) => a.name.localeCompare(b.name));
         this.stats = statsData || {};
+    },
+
+    buildCourseCatalogIndex() {
+        this._courseCatalogMap = {
+            byCode: new Map(),
+            byTitle: new Map()
+        };
+        (this.papers || []).forEach(p => {
+            if (p.course_code) {
+                const c = p.course_code.trim().toUpperCase();
+                if (!this._courseCatalogMap.byCode.has(c)) {
+                    this._courseCatalogMap.byCode.set(c, []);
+                }
+                this._courseCatalogMap.byCode.get(c).push(p);
+            }
+            if (p.title) {
+                const t = p.title.trim().toUpperCase();
+                if (!this._courseCatalogMap.byTitle.has(t)) {
+                    this._courseCatalogMap.byTitle.set(t, []);
+                }
+                this._courseCatalogMap.byTitle.get(t).push(p);
+            }
+        });
     },
 
     getActiveDepartments() {
@@ -942,8 +966,9 @@ const App = {
         const container = document.getElementById('activeFilterChipsContainer');
         const countEl = document.getElementById('filterActiveCount');
         
-        if (countEl && this.filteredPapers) {
-            countEl.textContent = `${this.filteredPapers.length.toLocaleString()} Papers`;
+        if (countEl) {
+            const count = this.groupedCourses ? this.groupedCourses.length : (this.filteredPapers ? this.filteredPapers.length : 0);
+            countEl.textContent = `${count.toLocaleString()} Courses`;
         }
 
         if (!tray || !container) return;
@@ -1119,39 +1144,63 @@ const App = {
         const countEl = document.getElementById('resultsCount');
         if (!container) return;
 
-        const total = this.filteredPapers.length;
+        // Group filtered papers by course, enriching from catalog so every course card consolidates
+        // ALL of its examination question papers and ALL of its model question papers
+        const groupedCourses = this.groupPapersByCourse(this.filteredPapers, true);
+        this.groupedCourses = groupedCourses;
+
+        const totalCourses = groupedCourses.length;
+        const totalPapers = this.filteredPapers.length;
+
         if (countEl) {
-            countEl.textContent = `Showing ${total.toLocaleString()} FYUGP question papers & schemes`;
+            if (totalCourses === 0) {
+                countEl.textContent = 'No matching question papers';
+            } else {
+                countEl.textContent = `Showing ${totalCourses.toLocaleString()} ${totalCourses === 1 ? 'Course' : 'Courses'} (${totalPapers.toLocaleString()} question papers & model schemes)`;
+            }
         }
 
-        if (total === 0) {
+        const pillCountEl = document.getElementById('filterActiveCount');
+        if (pillCountEl) {
+            pillCountEl.textContent = `${totalCourses.toLocaleString()} Courses`;
+        }
+
+        if (totalCourses === 0) {
             container.innerHTML = `
                 <div class="col-span-full py-16 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8 shadow-xs">
                     <div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mx-auto flex items-center justify-center text-2xl mb-4">
                         <i class="bi bi-search"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">No question papers match your filters</h3>
+                    <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">
+                        ${this.state.activeTab === 'bookmarks' ? 'No saved question papers yet' : 'No courses match your filters'}
+                    </h3>
                     <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-md mx-auto">
-                        Try searching by course code (e.g. <code class="text-blue-600 font-mono font-bold">MG3DSEMAT202</code>), course name (e.g. <code class="text-blue-600 font-bold">Calculus</code>), or reset all filters.
+                        ${this.state.activeTab === 'bookmarks' ? 'Click "Save" on any question paper or course card to keep it here for quick revision.' : 'Try searching by course code (e.g. <code class="text-blue-600 font-mono font-bold">MG3DSEMAT202</code>), course name (e.g. <code class="text-blue-600 font-bold">Calculus</code>), or reset all filters.'}
                     </p>
-                    <button onclick="App.resetFilters()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">
-                        Reset All Filters
-                    </button>
+                    ${this.state.activeTab === 'bookmarks' ? `
+                        <button onclick="App.selectTab('departments')" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">
+                            Browse Departments
+                        </button>
+                    ` : `
+                        <button onclick="App.resetFilters()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">
+                            Reset All Filters
+                        </button>
+                    `}
                 </div>
             `;
             return;
         }
 
-        // Paginate
+        // Paginate grouped courses
         const start = (this.state.currentPage - 1) * this.state.pageSize;
-        const pageItems = this.filteredPapers.slice(start, start + this.state.pageSize);
+        const pageItems = groupedCourses.slice(start, start + this.state.pageSize);
 
         if (this.state.viewMode === 'grid') {
             container.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5';
-            container.innerHTML = pageItems.map(p => this.renderPaperCard(p)).join('');
+            container.innerHTML = pageItems.map(course => this.renderGroupedCourseCard(course)).join('');
         } else {
             container.className = 'col-span-full';
-            container.innerHTML = this.renderPaperTable(pageItems);
+            container.innerHTML = this.renderGroupedCourseTable(pageItems);
         }
     },
 
@@ -1173,10 +1222,13 @@ const App = {
         return y ? `${y[0]}${setSuffix}` : name;
     },
 
-    groupPapersByCourse(paperList) {
+    groupPapersByCourse(paperList, enrichFromCatalog = false) {
         const groups = new Map();
         paperList.forEach(p => {
-            const key = (p.course_code || p.title || 'UNKNOWN').trim().toUpperCase();
+            const codeKey = (p.course_code || '').trim().toUpperCase();
+            const titleKey = (p.title || '').trim().toUpperCase();
+            const key = codeKey || titleKey || 'UNKNOWN';
+
             if (!groups.has(key)) {
                 groups.set(key, {
                     course_code: p.course_code,
@@ -1186,25 +1238,99 @@ const App = {
                     parent_dept_name: p.parent_dept_name,
                     dept_name: p.dept_name,
                     dept_code: p.dept_code,
+                    parent_dept: p.parent_dept,
                     is_minor: p.is_minor,
                     minor_name: p.minor_name,
-                    model_papers: p.model_papers || [],
+                    model_papers: [],
                     papers: []
                 });
             }
-            if (p.model_papers && p.model_papers.length > 0 && groups.get(key).model_papers.length === 0) {
-                groups.get(key).model_papers = p.model_papers;
+
+            const course = groups.get(key);
+
+            // Merge metadata if missing
+            if (!course.course_code && p.course_code) course.course_code = p.course_code;
+            if (!course.title && p.title) course.title = p.title;
+            if (!course.parent_dept_name && p.parent_dept_name) course.parent_dept_name = p.parent_dept_name;
+
+            // Merge model papers
+            if (p.model_papers && Array.isArray(p.model_papers)) {
+                p.model_papers.forEach(m => {
+                    const mKey = m.id || m.url || m.title;
+                    if (!course.model_papers.some(em => (em.id || em.url || em.title) === mKey)) {
+                        course.model_papers.push(m);
+                    }
+                });
             }
-            groups.get(key).papers.push(p);
+
+            // Merge papers
+            const pKey = p.id || `${p.exam_id}_${p.exam_name}_${p.course_code}`;
+            if (!course.papers.some(ep => (ep.id || `${ep.exam_id}_${ep.exam_name}_${ep.course_code}`) === pKey)) {
+                course.papers.push(p);
+            }
         });
+
+        // If enrichFromCatalog is true, pull in all question papers and model papers for these courses from this.papers
+        if (enrichFromCatalog && this.papers && this.papers.length > 0) {
+            if (!this._courseCatalogMap) {
+                this.buildCourseCatalogIndex();
+            }
+
+            groups.forEach(course => {
+                const codeKey = (course.course_code || '').trim().toUpperCase();
+                const titleKey = (course.title || '').trim().toUpperCase();
+
+                const matchingCatalog = [];
+                if (codeKey && this._courseCatalogMap.byCode.has(codeKey)) {
+                    matchingCatalog.push(...this._courseCatalogMap.byCode.get(codeKey));
+                } else if (titleKey && this._courseCatalogMap.byTitle.has(titleKey)) {
+                    matchingCatalog.push(...this._courseCatalogMap.byTitle.get(titleKey));
+                }
+
+                const seenCatIds = new Set();
+                matchingCatalog.forEach(cp => {
+                    if (seenCatIds.has(cp.id)) return;
+                    seenCatIds.add(cp.id);
+
+                    // Merge model papers
+                    if (cp.model_papers && Array.isArray(cp.model_papers)) {
+                        cp.model_papers.forEach(m => {
+                            const mKey = m.id || m.url || m.title;
+                            if (!course.model_papers.some(em => (em.id || em.url || em.title) === mKey)) {
+                                course.model_papers.push(m);
+                            }
+                        });
+                    }
+
+                    // Merge papers
+                    const pKey = cp.id || `${cp.exam_id}_${cp.exam_name}_${cp.course_code}`;
+                    if (!course.papers.some(ep => (ep.id || `${ep.exam_id}_${ep.exam_name}_${ep.course_code}`) === pKey)) {
+                        course.papers.push(cp);
+                    }
+                });
+            });
+        }
+
+        // Clean up course papers:
+        // If course has real exam papers (has_qp || has_scheme), remove any placeholder records
+        groups.forEach(course => {
+            const realExamPapers = course.papers.filter(p => p.has_qp || p.has_scheme);
+            if (realExamPapers.length > 0) {
+                course.papers = realExamPapers;
+            }
+            // Sort chronologically by exam session
+            course.papers.sort((a, b) => (b.exam_name || '').localeCompare(a.exam_name || ''));
+        });
+
         return Array.from(groups.values());
     },
 
     renderGroupedCourseCard(course) {
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
         const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;
-        const firstPaper = course.papers[0];
-        const isBookmarked = course.papers.some(p => this.bookmarks.has(p.id));
+        const firstPaper = (course.papers && course.papers[0]) || { id: course.course_code || 'paper' };
+        const isBookmarked = (course.papers || []).some(p => this.bookmarks.has(p.id));
+        const examPapers = (course.papers || []).filter(p => p.has_qp || p.has_scheme);
 
         return `
             <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs border border-slate-200/80 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition">
@@ -1212,11 +1338,9 @@ const App = {
                     <!-- Top Badge Bar -->
                     <div class="flex items-start justify-between gap-2 mb-3">
                         <div class="flex flex-wrap items-center gap-1.5">
-                            ${isAdmin ? `
-                                <span class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
-                                    Sem ${course.semester}
-                                </span>
-                            ` : ''}
+                            <span class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+                                Sem ${course.semester}
+                            </span>
                             <span class="text-xs font-semibold px-2 py-0.5 rounded-md ${ctypeClass}">
                                 ${course.course_type}
                             </span>
@@ -1243,70 +1367,91 @@ const App = {
                         </button>
                     </div>
 
-                    <!-- Course Code (NO QP Code on card) -->
+                    <!-- Course Code -->
                     <div class="flex items-center gap-2 mb-1.5">
                         <span class="font-mono font-bold text-sm text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded border border-blue-100 dark:border-blue-900/40">
                             ${course.course_code || 'CODE N/A'}
                         </span>
                         <span class="text-[11px] font-semibold text-slate-400">
-                            ${course.papers.length} ${course.papers.length === 1 ? 'Exam Paper' : 'Exam Papers'}
+                            ${examPapers.length > 0 ? `${examPapers.length} ${examPapers.length === 1 ? 'Exam Paper' : 'Exam Papers'}` : 'Exam Paper Awaited'}
+                            ${course.model_papers && course.model_papers.length > 0 ? ` · ${course.model_papers.length} Model` : ''}
                         </span>
                     </div>
 
                     <!-- Course Title -->
-                    <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base leading-snug line-clamp-2 mb-3" title="${course.title}">
+                    <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base leading-snug line-clamp-2 mb-2" title="${course.title}">
                         ${course.title}
                     </h3>
+
+                    <!-- Department info -->
+                    ${course.parent_dept_name || course.dept_name ? `
+                        <div class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5 truncate mb-3">
+                            <i class="bi bi-mortarboard text-slate-400"></i>
+                            <span class="truncate font-medium text-slate-600 dark:text-slate-300">
+                                ${course.parent_dept_name || course.dept_name} ${course.is_minor ? `(${course.minor_name || course.dept_code})` : ''}
+                            </span>
+                        </div>
+                    ` : ''}
                 </div>
 
                 <!-- Grouped Question Papers for this course -->
                 <div class="pt-3 border-t border-slate-100 dark:border-slate-700/60 space-y-2">
-                    <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">
-                        Question Papers:
-                    </div>
-                    ${course.papers.map(p => {
-                        const monthYear = this.extractMonthYear(p.exam_name);
-                        return `
-                            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200/70 dark:border-slate-600/50 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
-                                <div class="flex items-center gap-1.5 min-w-0">
-                                    <i class="bi bi-calendar-event text-blue-600 dark:text-blue-400 text-xs"></i>
-                                    <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 truncate">
-                                        ${monthYear}
-                                    </span>
+                    ${examPapers.length > 0 ? `
+                        <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">
+                            Question Papers:
+                        </div>
+                        ${examPapers.map(p => {
+                            const monthYear = this.extractMonthYear(p.exam_name);
+                            return `
+                                <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/40 border border-slate-200/70 dark:border-slate-600/50 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
+                                    <div class="flex items-center gap-1.5 min-w-0">
+                                        <i class="bi bi-calendar-event text-blue-600 dark:text-blue-400 text-xs"></i>
+                                        <span class="text-xs font-semibold text-slate-800 dark:text-slate-200 truncate">
+                                            ${monthYear}
+                                        </span>
+                                    </div>
+
+                                    <div class="flex items-center gap-1.5 shrink-0">
+                                        ${p.has_qp ? `
+                                            <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
+                                                <i class="bi bi-eye"></i> QP
+                                            </button>
+                                            <a href="${p.qp_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
+                                                <i class="bi bi-download"></i>
+                                            </a>
+                                        ` : ''}
+
+                                        ${p.has_scheme ? `
+                                            <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
+                                                <i class="bi bi-journal-check"></i> Scheme
+                                            </button>
+                                            <a href="${p.scheme_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
+                                                <i class="bi bi-download"></i>
+                                            </a>
+                                        ` : ''}
+
+                                        ${isAdmin ? `
+                                            <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="p-1 text-xs rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition">
+                                                <i class="bi bi-trash3 text-rose-500"></i>
+                                            </button>
+                                        ` : ''}
+                                    </div>
                                 </div>
-
-                                <div class="flex items-center gap-1.5 shrink-0">
-                                    ${p.has_qp ? `
-                                        <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
-                                            <i class="bi bi-eye"></i> QP
-                                        </button>
-                                        <a href="${p.qp_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
-                                            <i class="bi bi-download"></i>
-                                        </a>
-                                    ` : ''}
-
-                                    ${p.has_scheme ? `
-                                        <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
-                                            <i class="bi bi-journal-check"></i> Scheme
-                                        </button>
-                                        <a href="${p.scheme_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
-                                            <i class="bi bi-download"></i>
-                                        </a>
-                                    ` : ''}
-
-                                    ${isAdmin ? `
-                                        <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="p-1 text-xs rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-800 transition">
-                                            <i class="bi bi-trash3 text-rose-500"></i>
-                                        </button>
-                                    ` : ''}
-                                </div>
-                            </div>
-                        `;
-                    }).join('')}
+                            `;
+                        }).join('')}
+                    ` : `
+                        <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-700/30 border border-dashed border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                            <i class="bi bi-clock-history text-slate-400"></i>
+                            <span>University exam papers not conducted/released yet</span>
+                        </div>
+                    `}
 
                     ${course.model_papers && course.model_papers.length > 0 ? `
                         <!-- SEPARATE MODEL QUESTION PAPERS SECTION (BELOW ACTUAL PAPERS) -->
                         <div class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700/60 space-y-1.5">
+                            <div class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
+                                Model Question Papers:
+                            </div>
                             ${course.model_papers.map(m => `
                                 <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
                                     <div class="flex items-center gap-1.5 min-w-0">
@@ -1465,7 +1610,7 @@ const App = {
         `;
     },
 
-    renderPaperTable(items) {
+    renderGroupedCourseTable(courses) {
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
 
         return `
@@ -1476,69 +1621,95 @@ const App = {
                     <span>Swipe horizontally to view full table details</span>
                 </div>
                 <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-700 overflow-x-auto touch-scroll-x">
-                    <table class="w-full text-left border-collapse text-xs sm:text-sm min-w-[700px]">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm min-w-[760px]">
                         <thead>
                             <tr class="bg-slate-50 dark:bg-slate-700/50 border-b border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-semibold">
-                                ${isAdmin ? '<th class="py-3 px-4">Sem</th>' : ''}
+                                <th class="py-3 px-4">Sem</th>
                                 <th class="py-3 px-4">Course Code</th>
-                                <th class="py-3 px-4">Exam Session</th>
                                 <th class="py-3 px-4">Course Title</th>
                                 <th class="py-3 px-4">Department</th>
                                 <th class="py-3 px-4">Type</th>
-                                <th class="py-3 px-4 text-right">Actions</th>
+                                <th class="py-3 px-4">Question Papers & Schemes</th>
+                                <th class="py-3 px-4 text-right">Save</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
-                            ${items.map(p => {
-                                const isBookmarked = this.bookmarks.has(p.id);
-                                const monthYear = this.extractMonthYear(p.exam_name);
+                            ${courses.map(course => {
+                                const examPapers = (course.papers || []).filter(p => p.has_qp || p.has_scheme);
+                                const firstPaper = (course.papers && course.papers[0]) || { id: course.course_code || 'paper' };
+                                const isBookmarked = (course.papers || []).some(p => this.bookmarks.has(p.id));
+                                const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;
+
                                 return `
                                     <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition">
-                                        ${isAdmin ? `<td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${p.semester}</td>` : ''}
-                                        <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400">${p.course_code}</td>
-                                        <td class="py-3 px-4 font-medium text-slate-600 dark:text-slate-300 whitespace-nowrap">${monthYear}</td>
-                                        <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate">${p.title}</td>
+                                        <td class="py-3 px-4 font-bold text-slate-700 dark:text-slate-300">Sem ${course.semester}</td>
+                                        <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">${course.course_code || 'N/A'}</td>
+                                        <td class="py-3 px-4 font-medium text-slate-900 dark:text-slate-100 max-w-xs truncate" title="${course.title}">${course.title}</td>
                                         <td class="py-3 px-4 text-slate-600 dark:text-slate-300">
-                                            ${p.parent_dept_name} ${p.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${p.minor_name || p.dept_code}</span>` : ''}
+                                            ${course.parent_dept_name || course.dept_name || ''} ${course.is_minor ? `<span class="text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded font-semibold ml-1">${course.minor_name || course.dept_code}</span>` : ''}
                                         </td>
                                         <td class="py-3 px-4">
-                                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${`badge-${(p.course_type || 'dsc').toLowerCase()}`}">${p.course_type}</span>
+                                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${ctypeClass}">${course.course_type}</span>
+                                        </td>
+                                        <td class="py-3 px-4">
+                                            <div class="space-y-1.5">
+                                                ${examPapers.length > 0 ? examPapers.map(p => {
+                                                    const monthYear = this.extractMonthYear(p.exam_name);
+                                                    return `
+                                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                                            <span class="text-[11px] font-semibold text-slate-600 dark:text-slate-300 whitespace-nowrap">${monthYear}:</span>
+                                                            ${p.has_qp ? `
+                                                                <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-0.5 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500 shadow-2xs transition" title="Preview QP">
+                                                                    QP
+                                                                </button>
+                                                                <a href="${p.qp_url}" target="_blank" download class="p-0.5 text-xs text-slate-500 hover:text-blue-600" title="Download QP">
+                                                                    <i class="bi bi-download"></i>
+                                                                </a>
+                                                            ` : ''}
+                                                            ${p.has_scheme ? `
+                                                                <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500 shadow-2xs transition" title="Preview Scheme">
+                                                                    Scheme
+                                                                </button>
+                                                                <a href="${p.scheme_url}" target="_blank" download class="p-0.5 text-xs text-slate-500 hover:text-emerald-600" title="Download Scheme">
+                                                                    <i class="bi bi-download"></i>
+                                                                </a>
+                                                            ` : ''}
+                                                            ${isAdmin ? `
+                                                                <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="p-0.5 text-xs text-rose-500 hover:text-rose-700">
+                                                                    <i class="bi bi-trash3"></i>
+                                                                </button>
+                                                            ` : ''}
+                                                        </div>
+                                                    `;
+                                                }).join('') : '<span class="text-xs text-slate-400 italic">Exam papers awaited</span>'}
+
+                                                ${course.model_papers && course.model_papers.length > 0 ? `
+                                                    <div class="flex items-center gap-1.5 flex-wrap pt-1 border-t border-slate-100 dark:border-slate-700/50">
+                                                        ${course.model_papers.map(m => `
+                                                            <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1 transition" title="${m.title}">
+                                                                <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
+                                                            </button>
+                                                            <a href="${m.url}" target="_blank" download class="p-0.5 text-xs text-slate-500 hover:text-indigo-600" title="Download Model QP">
+                                                                <i class="bi bi-download"></i>
+                                                            </a>
+                                                        `).join('')}
+                                                    </div>
+                                                ` : ''}
+                                            </div>
                                         </td>
                                         <td class="py-3 px-4 text-right">
-                                            <div class="flex items-center justify-end gap-2">
-                                                ${p.has_qp ? `
-                                                    <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2 py-1 text-xs font-semibold rounded bg-blue-600 text-white hover:bg-blue-500 shadow-xs transition">
-                                                        QP
-                                                    </button>
-                                                ` : ''}
-                                                ${p.has_scheme ? `
-                                                    <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-500 shadow-xs transition">
-                                                        Scheme
-                                                    </button>
-                                                ` : ''}
-                                                ${p.model_papers && p.model_papers.length > 0 ? p.model_papers.map(m => `
-                                                    <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1 transition" title="${m.title}">
-                                                        <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
-                                                    </button>
-                                                `).join('') : ''}
-                                                ${isAdmin ? `
-                                                    <button onclick="App.handleDeletePaper('${p.id}', this)" title="Delete Paper (Admin)" class="px-2 py-1 text-xs font-semibold rounded bg-rose-100 text-rose-700 hover:bg-rose-200 dark:bg-rose-950 dark:text-rose-300 transition">
-                                                        <i class="bi bi-trash3"></i>
-                                                    </button>
-                                                ` : ''}
-                                                <button 
-                                                    data-bm-id="${p.id}"
-                                                    onclick="App.toggleBookmark('${p.id}')" 
-                                                    class="px-2 py-1 text-xs font-semibold rounded flex items-center gap-1 transition ${
-                                                        isBookmarked 
-                                                            ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' 
-                                                            : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
-                                                    }"
-                                                >
-                                                    <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
-                                                    <span>${isBookmarked ? 'Saved' : 'Save'}</span>
-                                                </button>
-                                            </div>
+                                            <button 
+                                                data-bm-id="${firstPaper.id}"
+                                                onclick="App.toggleBookmark('${firstPaper.id}')" 
+                                                class="px-2.5 py-1 text-xs font-semibold rounded flex items-center gap-1 transition ${
+                                                    isBookmarked 
+                                                        ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' 
+                                                        : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300'
+                                                }"
+                                            >
+                                                <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
+                                                <span>${isBookmarked ? 'Saved' : 'Save'}</span>
+                                            </button>
                                         </td>
                                     </tr>
                                 `;
@@ -1550,11 +1721,16 @@ const App = {
         `;
     },
 
+    renderPaperTable(items) {
+        return this.renderGroupedCourseTable(items);
+    },
+
     renderPagination() {
         const container = document.getElementById('paginationControls');
         if (!container) return;
 
-        const totalPages = Math.ceil(this.filteredPapers.length / this.state.pageSize);
+        const totalItems = this.groupedCourses ? this.groupedCourses.length : (this.filteredPapers ? this.filteredPapers.length : 0);
+        const totalPages = Math.ceil(totalItems / this.state.pageSize);
         if (totalPages <= 1) {
             container.innerHTML = '';
             return;
@@ -1622,7 +1798,8 @@ const App = {
     },
 
     goToPage(page) {
-        const totalPages = Math.ceil(this.filteredPapers.length / this.state.pageSize);
+        const totalItems = this.groupedCourses ? this.groupedCourses.length : (this.filteredPapers ? this.filteredPapers.length : 0);
+        const totalPages = Math.ceil(totalItems / this.state.pageSize);
         if (page < 1 || page > totalPages) return;
         this.state.currentPage = page;
         this.renderPapers();

@@ -906,6 +906,28 @@
                             </div>
                         </div>
 
+                        <!-- Filter & Search Toolbar (Handles large sets of 50+ papers smoothly) -->
+                        <div class="p-3 sm:p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-3">
+                            <div class="relative flex-1 min-w-[240px]">
+                                <i class="bi bi-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                                <input 
+                                    type="text" 
+                                    id="adminSplitSearchInput" 
+                                    placeholder="Filter detected papers by course code, title, or department..." 
+                                    oninput="App.handleSplitCardsSearch(this.value)" 
+                                    class="w-full pl-8 pr-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs"
+                                >
+                            </div>
+                            <div class="flex items-center gap-1.5 flex-wrap text-xs">
+                                <span class="text-slate-500 font-medium mr-1 text-[11px]">Filter:</span>
+                                <button type="button" onclick="App.setSplitCardsFilter('ALL')" id="splitFilter_ALL" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-2xs transition">All</button>
+                                <button type="button" onclick="App.setSplitCardsFilter('THEORY')" id="splitFilter_THEORY" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 transition">Theory</button>
+                                <button type="button" onclick="App.setSplitCardsFilter('PRACTICAL')" id="splitFilter_PRACTICAL" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 transition">Practical</button>
+                                <button type="button" onclick="App.setSplitCardsFilter('READY')" id="splitFilter_READY" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 transition">Ready</button>
+                                <button type="button" onclick="App.setSplitCardsFilter('DUP')" id="splitFilter_DUP" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 transition">In Catalog</button>
+                            </div>
+                        </div>
+
                         <!-- Split Cards Container -->
                         <div id="adminSplitCardsContainer" class="space-y-4">
                             <!-- Populated dynamically by app.js -->

@@ -118,6 +118,8 @@ const App = {
     selectedSmartPdfFile: null,
     currentPaperCategory: 'QP',
     adminSplitPapers: [],
+    splitCardsFilter: 'ALL',
+    splitCardsSearchQuery: '',
     masterPdfUrl: null,
 
     async init() {
@@ -3498,12 +3500,248 @@ const App = {
         }
     },
 
-    detectCourseInfo(rawText, filename = '') {
-        const combined = `${filename} ${rawText}`.toUpperCase();
-        
+    normalizeCourseCode(rawStr, defaultSem = 1) {
+        if (!rawStr) return '';
+        let c = String(rawStr).trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+        if (c.startsWith('24MG')) {
+            c = c.slice(2);
+        }
+        if (/^MGU[1-8]/.test(c)) {
+            c = 'MG' + c.slice(3);
+        } else if (c.startsWith('MGU') && c.length >= 4) {
+            c = 'MG' + c.slice(3);
+        }
+        if (/^MG[IL]/i.test(c)) {
+            c = 'MG1' + c.slice(3);
+        }
+        if (/^[1-8][A-Z]{2,}/.test(c)) {
+            c = 'MG' + c;
+        }
+        return c;
+    },
+
+    extractPageHeaderCourseInfo(pageText, defaultSem = 1) {
+        if (!pageText) {
+            return {
+                isStart: false,
+                courseCode: '',
+                title: '',
+                deptCode: 'MAT',
+                semester: defaultSem || 1,
+                paperType: 'THEORY',
+                confidence: 'low',
+                matchedPaper: null
+            };
+        }
+
+        // Take top 1500 characters of the page for header inspection
+        const headerSlice = pageText.slice(0, 1500);
+        const cleanHeader = headerSlice.replace(/\s+/g, ' ');
+        const upperHeader = cleanHeader.toUpperCase();
+        const fullUpper = pageText.toUpperCase();
+
+        // 1. Start Header Detection (exam start header vs question continuation)
+        const hasUniv = /(?:MAHATMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|MODEL\s*QUESTION\s*PAPER|DEGREE\s*EXAMINATION|SEMESTER\s*EXAMINATION|FYUGP|HONOURS|UNDERGRADUATE|HONOURS\s*EXAMINATION)/i.test(upperHeader);
+        const hasMarks = /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS|MARKS\s*[:\-–]|\bMARKS\b)/i.test(upperHeader);
+        const hasTime = /(?:TIME\s*[:\-–]|DURATION\s*[:\-–]|\b\d+\s*HOURS\b|\b\d+\s*HRS\b)/i.test(upperHeader);
+        const hasParts = /(?:PART\s*[-–]?\s*[A-C]|SECTION\s*[-–]?\s*[A-C])/i.test(upperHeader);
+        const hasSemWord = /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER/i.test(upperHeader);
+
+        const isStart = (hasUniv && (hasMarks || hasTime || hasParts || hasSemWord)) ||
+                        (hasMarks && (hasTime || hasParts)) ||
+                        (hasUniv && /MODEL\s*(?:QUESTION|QP)/i.test(upperHeader));
+
+        // 2. Paper Type Detection (Theory vs Practical)
+        const isPractical = /(?:PRACTICAL\s*(?:EXAMINATION|MODEL|QP|EXAM)|EXPERIMENT\s*NO|CONDUCT\s*ONE\s*EXPERIMENT|LAB\s*EXAMINATION)/i.test(fullUpper);
+        const paperType = isPractical ? 'PRACTICAL' : 'THEORY';
+
+        // 3. Known Catalog Map from portal papers (2,659 courses)
+        const knownCoursesMap = new Map();
+        (this.papers || []).forEach(p => {
+            const cc = (p.course_code || '').trim().toUpperCase();
+            if (cc && !knownCoursesMap.has(cc)) {
+                knownCoursesMap.set(cc, p);
+            }
+            const norm = this.normalizeCourseCode(cc);
+            if (norm && !knownCoursesMap.has(norm)) {
+                knownCoursesMap.set(norm, p);
+            }
+        });
+
+        // 4. Extract Candidate Course Codes from this page's header
+        const rawCodeMatches = [];
+
+        // Pattern A: Explicit "COURSE CODE: [code]"
+        const explicitMatches = cleanHeader.matchAll(/(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-\s]{5,25})/gi);
+        for (const m of explicitMatches) {
+            if (m && m[1]) rawCodeMatches.push(m[1]);
+        }
+
+        // Pattern B: FYUGP MGU Code pattern (e.g. MG1DSCMAT100, MGU1DSCPHY100, 24MG1CCRBBA101, etc.)
+        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*[A-Z0-9\s]{4,15}\d{0,4}/gi);
+        for (const m of mgMatches) {
+            if (m && m[0]) rawCodeMatches.push(m[0]);
+        }
+
+        // Pattern C: Standard boundary code
+        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z0-9_]{5,15})\b/gi);
+        for (const m of standardMatches) {
+            if (m && m[1]) rawCodeMatches.push(m[1]);
+        }
+
+        // Normalize all extracted code candidates
+        const normalizedCandidates = [];
+        for (const raw of rawCodeMatches) {
+            const norm = this.normalizeCourseCode(raw, defaultSem);
+            if (norm && norm.length >= 8 && norm.startsWith('MG')) {
+                if (!normalizedCandidates.includes(norm)) {
+                    normalizedCandidates.push(norm);
+                }
+            }
+        }
+
+        // Check catalog match first
+        let matchedCatalogPaper = null;
+        let bestCourseCode = '';
+
+        for (const cand of normalizedCandidates) {
+            if (knownCoursesMap.has(cand)) {
+                matchedCatalogPaper = knownCoursesMap.get(cand);
+                bestCourseCode = cand;
+                break;
+            }
+        }
+
+        // If not matched directly in catalog, pick the first valid normalized candidate
+        if (!bestCourseCode && normalizedCandidates.length > 0) {
+            bestCourseCode = normalizedCandidates[0];
+        }
+
+        // If still no code, check if any catalog course code is contained inside this header
+        if (!bestCourseCode) {
+            const sortedKnown = Array.from(knownCoursesMap.keys()).sort((a, b) => b.length - a.length);
+            for (const knownCode of sortedKnown) {
+                if (knownCode.length >= 10 && upperHeader.includes(knownCode)) {
+                    matchedCatalogPaper = knownCoursesMap.get(knownCode);
+                    bestCourseCode = knownCode;
+                    break;
+                }
+            }
+        }
+
+        // 5. Semester Detection
+        let detectedSem = null;
+        if (matchedCatalogPaper && matchedCatalogPaper.semester) {
+            detectedSem = matchedCatalogPaper.semester;
+        } else if (bestCourseCode) {
+            const semMatch = bestCourseCode.match(/^MG([1-8])/);
+            if (semMatch) detectedSem = parseInt(semMatch[1], 10);
+        }
+        if (!detectedSem) {
+            const semWords = {
+                'FIRST': 1, 'SECOND': 2, 'THIRD': 3, 'FOURTH': 4,
+                'FIFTH': 5, 'SIXTH': 6, 'SEVENTH': 7, 'EIGHTH': 8,
+                'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8
+            };
+            const sm = upperHeader.match(/(?:SEMESTER|SEM\.?)\s*[:\-–]?\s*([1-8]|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|I{1,3}|IV|VI{0,3}|VIII)\b/i);
+            if (sm && sm[1]) {
+                const val = sm[1].toUpperCase();
+                detectedSem = /^[1-8]$/.test(val) ? parseInt(val, 10) : (semWords[val] || defaultSem);
+            }
+        }
+        if (!detectedSem) detectedSem = defaultSem || 1;
+
+        // 6. Title Detection
+        let detectedTitle = matchedCatalogPaper ? matchedCatalogPaper.title : '';
+
+        if (!detectedTitle && bestCourseCode) {
+            const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            // Pattern 1: CODE [-:–] Title (until Duration, Time, Max Marks, Part, Total)
+            const p1 = cleanHeader.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,75}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|\\d{4}\\s*Admi|Admission|$))', 'i'));
+            if (p1 && p1[1]) {
+                detectedTitle = p1[1].trim();
+            } else {
+                // Pattern 2: Title before CODE
+                const p2 = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,75}?)\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                if (p2 && p2[1]) {
+                    detectedTitle = p2[1].trim();
+                }
+            }
+        }
+
+        // Pattern 3: Explicit COURSE TITLE: ...
+        if (!detectedTitle) {
+            const explicitTitleMatch = cleanHeader.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–\s]+([A-Za-z0-9\s,&/'-]{3,80})(?=\s*(?:Duration|Time|Max|Part|$))/i);
+            if (explicitTitleMatch && explicitTitleMatch[1]) {
+                detectedTitle = explicitTitleMatch[1].trim();
+            }
+        }
+
+        // Clean extracted title
+        if (detectedTitle) {
+            detectedTitle = detectedTitle
+                .replace(/\s*MODEL\s*QUESTION\s*PAPER.*$/i, '')
+                .replace(/\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$/i, '')
+                .replace(/\s*-\s*$/, '')
+                .trim();
+        }
+
+        // Title-based Catalog Lookup (if code was missing or not in catalog, search catalog by title!)
+        if (!matchedCatalogPaper && detectedTitle && detectedTitle.length >= 6) {
+            const titleUpper = detectedTitle.toUpperCase();
+            for (const [knownCode, paper] of knownCoursesMap.entries()) {
+                if (paper.semester === detectedSem && paper.title) {
+                    const pTitleUpper = paper.title.toUpperCase();
+                    if (pTitleUpper === titleUpper || (pTitleUpper.length >= 10 && (pTitleUpper.includes(titleUpper) || titleUpper.includes(pTitleUpper)))) {
+                        matchedCatalogPaper = paper;
+                        if (!bestCourseCode) {
+                            bestCourseCode = knownCode;
+                        }
+                        detectedTitle = paper.title;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // 7. Department Detection
+        let detectedDeptCode = matchedCatalogPaper ? (matchedCatalogPaper.parent_dept || matchedCatalogPaper.dept_code) : '';
+        if (!detectedDeptCode && bestCourseCode) {
+            // Check dept code inside course code (e.g. MG1DSCMAT100 -> MAT)
+            const deptInCodeMatch = bestCourseCode.match(/(?:MG[1-8][A-Z]{3}|[A-Z]{3,4}[1-8])([A-Z]{3})/);
+            if (deptInCodeMatch && deptInCodeMatch[1]) {
+                const candDept = (this.departments || []).find(d => d.code === deptInCodeMatch[1]);
+                if (candDept) detectedDeptCode = candDept.code;
+            }
+        }
+        if (!detectedDeptCode && bestCourseCode) {
+            for (const dept of (this.departments || [])) {
+                if (bestCourseCode.includes(dept.code)) {
+                    detectedDeptCode = dept.code;
+                    break;
+                }
+            }
+        }
+
+        return {
+            isStart: isStart,
+            courseCode: bestCourseCode,
+            title: detectedTitle,
+            deptCode: detectedDeptCode || 'MAT',
+            semester: detectedSem,
+            paperType: paperType,
+            confidence: matchedCatalogPaper ? 'high' : (bestCourseCode ? 'medium' : 'low'),
+            matchedPaper: matchedCatalogPaper
+        };
+    },
+
+    detectCourseInfo(rawText, filename = '', ignoreFilename = false) {
+        const headerInfo = this.extractPageHeaderCourseInfo(rawText);
+        const combined = `${ignoreFilename ? '' : filename} ${rawText}`.toUpperCase();
+
         // 1. Detect if it's a Model Question Paper
         const isModelPaper = /MODEL\s*QUESTION|MODEL\s*QP|SAMPLE\s*QUESTION|MODEL\s*EXAMINATION/i.test(combined) ||
-                             /model/i.test(filename);
+                             (!ignoreFilename && /model/i.test(filename));
 
         // 2. Build list of all known course codes from portal catalog
         const knownCoursesMap = new Map();
@@ -3512,24 +3750,29 @@ const App = {
             if (cc && !knownCoursesMap.has(cc)) {
                 knownCoursesMap.set(cc, p);
             }
+            const norm = this.normalizeCourseCode(cc);
+            if (norm && !knownCoursesMap.has(norm)) {
+                knownCoursesMap.set(norm, p);
+            }
         });
 
-        // 3. Exact matching against known course codes (sort longest first)
         const sortedKnownCodes = Array.from(knownCoursesMap.keys()).sort((a, b) => b.length - a.length);
-        let matchedPaper = null;
-        let matchedCourseCode = '';
+        let matchedPaper = headerInfo.matchedPaper || null;
+        let matchedCourseCode = headerInfo.courseCode || '';
 
-        // Check clean filename first
-        const cleanFilename = filename.toUpperCase().replace(/\.PDF$/i, '');
-        for (const code of sortedKnownCodes) {
-            if (cleanFilename.includes(code)) {
-                matchedPaper = knownCoursesMap.get(code);
-                matchedCourseCode = code;
-                break;
+        // Check filename only if NOT ignored (e.g. single upload)
+        if (!ignoreFilename && !matchedCourseCode && filename) {
+            const cleanFilename = filename.toUpperCase().replace(/\.PDF$/i, '');
+            for (const code of sortedKnownCodes) {
+                if (cleanFilename.includes(code)) {
+                    matchedPaper = knownCoursesMap.get(code);
+                    matchedCourseCode = code;
+                    break;
+                }
             }
         }
 
-        // Then check extracted PDF text
+        // Check extracted PDF text if header check did not find known code
         if (!matchedCourseCode && rawText) {
             for (const code of sortedKnownCodes) {
                 const escaped = code.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
@@ -3542,7 +3785,7 @@ const App = {
             }
         }
 
-        // 4. Heuristic pattern extraction if exact code not matched
+        // Heuristic pattern extraction if exact code not matched
         if (!matchedCourseCode) {
             const patterns = [
                 /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*([A-Z0-9_\-]{5,18})/i,
@@ -3551,9 +3794,9 @@ const App = {
             ];
 
             for (const pat of patterns) {
-                const m = rawText.match(pat) || filename.match(pat);
+                const m = rawText.match(pat) || (!ignoreFilename && filename ? filename.match(pat) : null);
                 if (m && m[1]) {
-                    const cand = m[1].trim().toUpperCase();
+                    const cand = this.normalizeCourseCode(m[1].trim().toUpperCase());
                     if (!cand.startsWith('SEMESTER') && cand.length >= 6) {
                         matchedCourseCode = cand;
                         break;
@@ -3562,45 +3805,28 @@ const App = {
             }
         }
 
-        // 5. Semester detection
-        let detectedSem = null;
-        if (matchedPaper && matchedPaper.semester) {
-            detectedSem = matchedPaper.semester;
-        } else {
+        // Semester detection
+        let detectedSem = headerInfo.semester || (matchedPaper ? matchedPaper.semester : null);
+        if (!detectedSem) {
             const semInCodeMatch = matchedCourseCode.match(/(?:MG|([A-Z]{2,4}))([1-8])/i);
             if (semInCodeMatch && semInCodeMatch[2]) {
                 detectedSem = parseInt(semInCodeMatch[2], 10);
-            } else {
-                const semWords = {
-                    'FIRST': 1, 'SECOND': 2, 'THIRD': 3, 'FOURTH': 4,
-                    'FIFTH': 5, 'SIXTH': 6, 'SEVENTH': 7, 'EIGHTH': 8,
-                    'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8
-                };
-                const semMatch = rawText.match(/(?:SEMESTER|SEM\.?)\s*[:\-–]?\s*([1-8]|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|I{1,3}|IV|VI{0,3}|VIII)\b/i);
-                if (semMatch && semMatch[1]) {
-                    const val = semMatch[1].toUpperCase();
-                    if (/^[1-8]$/.test(val)) {
-                        detectedSem = parseInt(val, 10);
-                    } else if (semWords[val]) {
-                        detectedSem = semWords[val];
-                    }
-                }
             }
         }
         if (!detectedSem) detectedSem = 1;
 
-        // 6. QP Code detection (standard 8-digit number, e.g. 24900123)
+        // QP Code detection
         let detectedQpCode = '';
         const qpMatch = rawText.match(/(?:QP\s*CODE|Q\.P\.\s*CODE)\s*[:\-–]?\s*([0-9]{6,10})/i) ||
                         rawText.match(/\b(24[0-9]{6})\b/) ||
-                        filename.match(/\b(24[0-9]{6})\b/);
+                        (!ignoreFilename && filename ? filename.match(/\b(24[0-9]{6})\b/) : null);
         if (qpMatch && qpMatch[1]) {
             detectedQpCode = qpMatch[1].trim();
         } else if (matchedPaper && matchedPaper.qp_code) {
             detectedQpCode = matchedPaper.qp_code;
         }
 
-        // 7. Course Type detection
+        // Course Type detection
         let detectedCourseType = 'DSC';
         if (matchedPaper && matchedPaper.course_type) {
             detectedCourseType = matchedPaper.course_type;
@@ -3614,24 +3840,22 @@ const App = {
             }
         }
 
-        // 8. Department & Title detection
-        let detectedTitle = matchedPaper ? matchedPaper.title : '';
-        let detectedDeptCode = matchedPaper ? (matchedPaper.parent_dept || matchedPaper.dept_code) : '';
+        // Department & Title detection
+        let detectedTitle = headerInfo.title || (matchedPaper ? matchedPaper.title : '');
+        let detectedDeptCode = headerInfo.deptCode || (matchedPaper ? (matchedPaper.parent_dept || matchedPaper.dept_code) : '');
         let isMinor = matchedPaper ? Boolean(matchedPaper.is_minor) : false;
         let minorName = matchedPaper ? (matchedPaper.minor_name || '') : '';
         let minorCode = matchedPaper ? (matchedPaper.dept_code || '') : '';
 
-        // Extract Title from text if not in portal catalog
+        // Extract Title from text if not yet identified
         if (!detectedTitle && matchedCourseCode && rawText) {
             const cleanText = rawText.replace(/\s+/g, ' ');
             const escapedCode = matchedCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 
-            // Pattern 1: CODE [-:–] Title (until Duration, Max Marks, Part, Admission, etc.)
             const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill)\\b)([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)(?=\\s*(?:Duration|Time|Max(?:imum)?|Total|Part|Section|Answer|\\d+\\s*hrs|\\d+\\s*hours|Marks|\\d{4}\\s*Admi|Admission|$))', 'i'));
             if (p1 && p1[1]) {
                 detectedTitle = p1[1].trim();
             } else {
-                // Pattern 2: Title [-:–] CODE
                 const p2 = cleanText.match(new RegExp('(?:ONWARDS|EXAMINATION|\\))\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,70}?)\\s*[:\\-–\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
                 if (p2 && p2[1]) {
                     detectedTitle = p2[1].trim();
@@ -3643,7 +3867,7 @@ const App = {
         }
 
         if (!detectedDeptCode && matchedCourseCode) {
-            for (const dept of this.departments) {
+            for (const dept of (this.departments || [])) {
                 if (matchedCourseCode.includes(dept.code)) {
                     detectedDeptCode = dept.code;
                     break;
@@ -3653,7 +3877,7 @@ const App = {
         if (!detectedDeptCode && matchedCourseCode) {
             const m = matchedCourseCode.match(/(?:MG[1-8][A-Z]{3}|[A-Z]{3,4}[1-8])([A-Z]{3})/);
             if (m && m[1]) {
-                const candDept = this.departments.find(d => d.code === m[1]);
+                const candDept = (this.departments || []).find(d => d.code === m[1]);
                 if (candDept) detectedDeptCode = candDept.code;
             }
         }
@@ -3670,6 +3894,7 @@ const App = {
             deptCode: detectedDeptCode || 'MAT',
             semester: detectedSem,
             courseType: detectedCourseType,
+            paperType: headerInfo.paperType || 'THEORY',
             isMinor: isMinor,
             minorName: minorName,
             minorCode: minorCode,
@@ -3781,61 +4006,76 @@ const App = {
 
     detectPaperBoundaries(pagesText, numPages) {
         if (numPages <= 1) {
-            return [{ startPage: 1, endPage: 1, pageCount: 1 }];
+            return [{ startPage: 1, endPage: 1, pageCount: 1, detectedCode: '', detectedTitle: '' }];
         }
 
-        const startPages = [0]; // 0-indexed; Page 1 always starts Paper 1
+        // Step 1: Analyze header of EVERY single page individually
+        const pageData = [];
+        for (let i = 0; i < numPages; i++) {
+            const raw = pagesText[i] || '';
+            const info = this.extractPageHeaderCourseInfo(raw);
+            pageData.push({
+                idx: i,
+                pageNumber: i + 1,
+                info: info
+            });
+        }
+
+        // Step 2: Track boundaries. Page 0 (Page 1) always starts the first paper.
+        const segments = [];
+        let currentStart = 0;
+        let currentCode = pageData[0].info.courseCode || '';
 
         for (let i = 1; i < numPages; i++) {
-            const raw = pagesText[i] || '';
-            const text = raw.replace(/\s+/g, ' ').toUpperCase();
+            const pd = pageData[i];
+            const candCode = pd.info.courseCode || '';
+            const isStart = pd.info.isStart;
+            const pagesElapsed = i - currentStart;
 
-            // 1. University Header / Degree
-            const hasUniv = /(?:MAHA\s*TMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|HONOURS|SEMESTER\s*EXAMINATION|DEGREE\s*EXAMINATION|UNDERGRADUATE|FYUGP)/i.test(text);
+            let isNewPaper = false;
 
-            // 2. Model Question Paper / Sample Paper Header
-            const hasModel = /MODEL\s*(?:QUESTION|QP|EXAMINATION)|SAMPLE\s*QUESTION/i.test(text);
+            // Trigger 1: Page has a new course code different from the current paper's code
+            if (candCode && currentCode && (candCode !== currentCode) && pagesElapsed >= 1) {
+                isNewPaper = true;
+            }
+            // Trigger 2: Explicit exam start header encountered after at least 1 page
+            else if (isStart && pagesElapsed >= 1) {
+                isNewPaper = true;
+            }
+            // Trigger 3: Course code found on page where previously no code was known, plus start header
+            else if (candCode && !currentCode && isStart && pagesElapsed >= 1) {
+                isNewPaper = true;
+            }
+            // Trigger 4: Safety maximum cap (no model question paper is > 7 pages)
+            else if (pagesElapsed >= 7) {
+                isNewPaper = true;
+            }
 
-            // 3. Course Code Pattern on this page (matches MG1CCRBBA101, MG1MDEBCA100, etc.)
-            const hasCode = /\b(?:MG[1-8][A-Z]{2,8}[0-9]{1,4}|[A-Z]{2,6}[1-8][A-Z]{2,8}[0-9]{1,4})\b/i.test(text) ||
-                            /(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–]?\s*[A-Z0-9]/i.test(text) ||
-                            (this.papers && this.papers.some(p => p.course_code && text.includes(p.course_code.toUpperCase())));
-
-            // 4. Duration or Max Marks
-            const hasMarksTime = /(?:DURATION|TIME)\s*[:\-–]?\s*[0-9]/i.test(text) ||
-                                 /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\s*[:\-–]?\s*[0-9]/i.test(text) ||
-                                 /\b(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS)\b/i.test(text);
-
-            // 5. Semester / Admission session indicator
-            const hasExam = /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER|2024\s*ADMI/i.test(text);
-
-            // 6. Part / Section A indicator
-            const hasPartA = /PART\s*[-–]?\s*A\b/i.test(text) || /SECTION\s*[-–]?\s*A\b/i.test(text);
-
-            // A new paper starts on page i if:
-            const isNewStart = ((hasUniv || hasModel) && (hasCode || hasMarksTime || hasExam)) ||
-                               (hasCode && (hasMarksTime || hasExam || hasPartA)) ||
-                               (hasModel && (hasUniv || hasPartA));
-
-            if (isNewStart) {
-                const lastStart = startPages[startPages.length - 1];
-                if (i - lastStart >= 1) {
-                    startPages.push(i);
+            if (isNewPaper) {
+                segments.push({
+                    startPage: currentStart + 1,
+                    endPage: i,
+                    pageCount: pagesElapsed,
+                    detectedCode: currentCode,
+                    startInfo: pageData[currentStart].info
+                });
+                currentStart = i;
+                currentCode = candCode;
+            } else {
+                if (!currentCode && candCode) {
+                    currentCode = candCode;
                 }
             }
         }
 
-        // Build segments
-        const segments = [];
-        for (let s = 0; s < startPages.length; s++) {
-            const start = startPages[s];
-            const end = (s + 1 < startPages.length) ? (startPages[s + 1] - 1) : (numPages - 1);
-            segments.push({
-                startPage: start + 1,
-                endPage: end + 1,
-                pageCount: end - start + 1
-            });
-        }
+        // Push the final segment to the end of the document
+        segments.push({
+            startPage: currentStart + 1,
+            endPage: numPages,
+            pageCount: numPages - currentStart,
+            detectedCode: currentCode,
+            startInfo: pageData[currentStart].info
+        });
 
         return segments;
     },
@@ -3857,31 +4097,44 @@ const App = {
             const sliced = await this.slicePdfPages(this.adminPdfSourceDoc, seg.startPage, seg.endPage);
 
             // Combine text of this segment's pages
-            const segText = (this.adminPagesText || []).slice(seg.startPage - 1, seg.endPage).join(' ');
+            const segPages = (this.adminPagesText || []).slice(seg.startPage - 1, seg.endPage);
+            const firstPageText = segPages[0] || '';
+            const segText = segPages.join(' ');
 
-            // Detect course info
-            const detected = this.detectCourseInfo(segText, this.selectedSmartPdfFile ? this.selectedSmartPdfFile.name : '');
+            // Header info from first page of this paper (where course code & title reside!)
+            const headerInfo = this.extractPageHeaderCourseInfo(firstPageText);
 
-            // Duplicate check
-            const isModel = this.currentPaperCategory === 'MODEL';
-            const dupResult = this.checkPaperDuplicate(detected.courseCode, detected.qpCode, isModel);
+            // Detect course info from full segment text, strictly ignoring outer filename!
+            const detected = this.detectCourseInfo(segText, '', true);
+
+            // Merge detected info
+            const finalCode = headerInfo.courseCode || detected.courseCode || seg.detectedCode || '';
+            const finalTitle = headerInfo.title || detected.title || (finalCode ? `Model QP - ${finalCode}` : '');
+            const finalDept = headerInfo.deptCode || detected.deptCode || 'MAT';
+            const finalSem = headerInfo.semester || detected.semester || 1;
+            const finalPaperType = headerInfo.paperType || 'THEORY';
+            const confidence = headerInfo.confidence || detected.confidence || (finalCode ? 'medium' : 'low');
+
+            // Duplicate check against existing papers in portal
+            const dupResult = this.checkPaperDuplicate(finalCode, detected.qpCode, true);
 
             this.adminSplitPapers.push({
                 idx: s,
                 startPage: seg.startPage,
                 endPage: seg.endPage,
                 pageCount: seg.pageCount,
-                courseCode: detected.courseCode,
-                title: detected.title,
-                deptCode: detected.deptCode,
-                semester: detected.semester,
-                courseType: detected.courseType,
+                courseCode: finalCode,
+                title: finalTitle,
+                deptCode: finalDept,
+                semester: finalSem,
+                paperType: finalPaperType,
+                courseType: detected.courseType || 'DSC',
                 isMinor: detected.isMinor,
                 minorName: detected.minorName,
                 minorCode: detected.minorCode,
                 qpCode: detected.qpCode,
                 examName: detected.examName,
-                confidence: detected.confidence,
+                confidence: confidence,
                 isDuplicate: dupResult.isDuplicate,
                 dupMessage: dupResult.message,
                 existingPaper: dupResult.paper,
@@ -4128,6 +4381,33 @@ const App = {
         }
     },
 
+    setSplitCardsFilter(filter) {
+        this.splitCardsFilter = filter;
+        ['ALL', 'THEORY', 'PRACTICAL', 'READY', 'DUP'].forEach(f => {
+            const btn = document.getElementById(`splitFilter_${f}`);
+            if (btn) {
+                if (f === filter) {
+                    btn.className = 'px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-2xs transition';
+                } else {
+                    btn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 transition';
+                }
+            }
+        });
+        this.renderSplitCardsUI();
+    },
+
+    handleSplitCardsSearch(q) {
+        this.splitCardsSearchQuery = (q || '').trim().toLowerCase();
+        this.renderSplitCardsUI();
+    },
+
+    handleSplitPaperTypeChange(idx, val) {
+        const item = this.adminSplitPapers[idx];
+        if (item) {
+            item.paperType = val;
+        }
+    },
+
     renderSplitCardsUI() {
         const container = document.getElementById('adminSplitCardsContainer');
         const totalBadge = document.getElementById('adminSplitTotalBadge');
@@ -4137,10 +4417,24 @@ const App = {
         const totalPages = this.adminSplitPapers.reduce((sum, p) => sum + p.pageCount, 0);
         const dupCount = this.adminSplitPapers.filter(p => p.isDuplicate).length;
         const verifiedCount = totalPapers - dupCount;
+        const theoryCount = this.adminSplitPapers.filter(p => (p.paperType || 'THEORY') === 'THEORY').length;
+        const practicalCount = this.adminSplitPapers.filter(p => (p.paperType || 'THEORY') === 'PRACTICAL').length;
 
         if (totalBadge) {
-            totalBadge.textContent = `${totalPapers} Papers • ${totalPages} Pages Total (${verifiedCount} Ready, ${dupCount} Existing)`;
+            totalBadge.textContent = `${totalPapers} Papers (${theoryCount} Theory, ${practicalCount} Practical) • ${totalPages} Pages Total (${verifiedCount} Ready, ${dupCount} Existing)`;
         }
+
+        // Update pill counts if badges exist
+        const allBtn = document.getElementById('splitFilter_ALL');
+        const theoryBtn = document.getElementById('splitFilter_THEORY');
+        const practicalBtn = document.getElementById('splitFilter_PRACTICAL');
+        const readyBtn = document.getElementById('splitFilter_READY');
+        const dupBtn = document.getElementById('splitFilter_DUP');
+        if (allBtn) allBtn.textContent = `All (${totalPapers})`;
+        if (theoryBtn) theoryBtn.textContent = `Theory (${theoryCount})`;
+        if (practicalBtn) practicalBtn.textContent = `Practical (${practicalCount})`;
+        if (readyBtn) readyBtn.textContent = `Ready (${verifiedCount})`;
+        if (dupBtn) dupBtn.textContent = `In Catalog (${dupCount})`;
 
         const deptOptionsHtml = (selectedCode) => {
             return '<option value="">-- Select Department --</option>' +
@@ -4155,7 +4449,45 @@ const App = {
             return html;
         };
 
-        container.innerHTML = this.adminSplitPapers.map((item, idx) => {
+        // Filter items according to current filter & search query
+        let filteredItems = this.adminSplitPapers.slice();
+
+        if (this.splitCardsFilter === 'THEORY') {
+            filteredItems = filteredItems.filter(p => (p.paperType || 'THEORY') === 'THEORY');
+        } else if (this.splitCardsFilter === 'PRACTICAL') {
+            filteredItems = filteredItems.filter(p => (p.paperType || 'THEORY') === 'PRACTICAL');
+        } else if (this.splitCardsFilter === 'READY') {
+            filteredItems = filteredItems.filter(p => !p.isDuplicate);
+        } else if (this.splitCardsFilter === 'DUP') {
+            filteredItems = filteredItems.filter(p => p.isDuplicate);
+        }
+
+        if (this.splitCardsSearchQuery) {
+            const q = this.splitCardsSearchQuery;
+            filteredItems = filteredItems.filter(p => {
+                return (p.courseCode && p.courseCode.toLowerCase().includes(q)) ||
+                       (p.title && p.title.toLowerCase().includes(q)) ||
+                       (p.deptCode && p.deptCode.toLowerCase().includes(q)) ||
+                       String(p.startPage).includes(q) ||
+                       String(p.endPage).includes(q);
+            });
+        }
+
+        if (filteredItems.length === 0) {
+            container.innerHTML = `
+                <div class="p-8 text-center bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs space-y-2">
+                    <i class="bi bi-funnel text-2xl text-slate-400"></i>
+                    <p class="text-xs font-semibold text-slate-600 dark:text-slate-300">No split papers match the current filter or search query.</p>
+                    <button type="button" onclick="App.setSplitCardsFilter('ALL'); document.getElementById('adminSplitSearchInput').value='';" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-300">
+                        Reset Filters
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = filteredItems.map(item => {
+            const idx = item.idx;
             const isDup = item.isDuplicate;
             const isPublished = item.published;
 
@@ -4166,6 +4498,10 @@ const App = {
             const dupBadge = isDup
                 ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 dark:bg-amber-900/60 dark:text-amber-200 flex items-center gap-1"><i class="bi bi-exclamation-triangle-fill text-amber-600"></i> In Catalog</span>'
                 : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200 flex items-center gap-1"><i class="bi bi-check2-circle text-emerald-600"></i> Ready</span>';
+
+            const typeBadge = item.paperType === 'PRACTICAL'
+                ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 dark:bg-purple-900/60 dark:text-purple-300 flex items-center gap-1"><i class="bi bi-gear-fill"></i> Practical</span>'
+                : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-100 text-sky-800 dark:bg-sky-900/60 dark:text-sky-300 flex items-center gap-1"><i class="bi bi-book-fill"></i> Theory</span>';
 
             const dupAlert = isDup ? `
                 <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200 flex items-center justify-between gap-2 flex-wrap">
@@ -4191,6 +4527,7 @@ const App = {
                             <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900/50 flex items-center gap-1">
                                 <i class="bi bi-file-earmark-break"></i> Pages ${item.startPage} – ${item.endPage} (${item.pageCount} ${item.pageCount === 1 ? 'page' : 'pages'})
                             </span>
+                            ${typeBadge}
                             ${confidenceBadge}
                             ${dupBadge}
                         </div>
@@ -4207,7 +4544,7 @@ const App = {
                     ${dupAlert}
 
                     <!-- Editable Fields for This Split Paper -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
                         <div>
                             <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
                                 Course Code <span class="text-rose-500">*</span>
@@ -4222,7 +4559,7 @@ const App = {
                                 ${isPublished ? 'disabled' : ''}
                             >
                         </div>
-                        <div>
+                        <div class="lg:col-span-2">
                             <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
                                 Course Title <span class="text-rose-500">*</span>
                             </label>
@@ -4249,15 +4586,26 @@ const App = {
                         </div>
                         <div>
                             <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                                Semester <span class="text-rose-500">*</span>
+                                Semester & Type <span class="text-rose-500">*</span>
                             </label>
-                            <select 
-                                id="splitSem_${idx}" 
-                                class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold"
-                                ${isPublished ? 'disabled' : ''}
-                            >
-                                ${semOptionsHtml(item.semester)}
-                            </select>
+                            <div class="grid grid-cols-2 gap-1.5">
+                                <select 
+                                    id="splitSem_${idx}" 
+                                    class="w-full px-2 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold"
+                                    ${isPublished ? 'disabled' : ''}
+                                >
+                                    ${semOptionsHtml(item.semester)}
+                                </select>
+                                <select 
+                                    id="splitPaperType_${idx}" 
+                                    onchange="App.handleSplitPaperTypeChange(${idx}, this.value)"
+                                    class="w-full px-2 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-xs font-semibold"
+                                    ${isPublished ? 'disabled' : ''}
+                                >
+                                    <option value="THEORY" ${item.paperType !== 'PRACTICAL' ? 'selected' : ''}>Theory</option>
+                                    <option value="PRACTICAL" ${item.paperType === 'PRACTICAL' ? 'selected' : ''}>Practical</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -4287,7 +4635,11 @@ const App = {
         const deptSelect = document.getElementById(`splitDept_${idx}`);
         const semSelect = document.getElementById(`splitSem_${idx}`);
 
-        const newCode = codeInput ? codeInput.value.trim().toUpperCase() : '';
+        const rawCode = codeInput ? codeInput.value : '';
+        const newCode = this.normalizeCourseCode(rawCode);
+        if (codeInput && newCode && newCode !== rawCode) {
+            codeInput.value = newCode;
+        }
         item.courseCode = newCode;
 
         if (newCode) {
@@ -4309,7 +4661,7 @@ const App = {
             }
         }
 
-        const isModel = this.currentPaperCategory === 'MODEL';
+        const isModel = true;
         const dupResult = this.checkPaperDuplicate(newCode, item.qpCode, isModel);
         item.isDuplicate = dupResult.isDuplicate;
         item.dupMessage = dupResult.message;
@@ -4327,6 +4679,7 @@ const App = {
         const title = document.getElementById(`splitTitle_${idx}`)?.value.trim() || item.title;
         const deptCode = document.getElementById(`splitDept_${idx}`)?.value.trim().toUpperCase() || item.deptCode;
         const semester = parseInt(document.getElementById(`splitSem_${idx}`)?.value || item.semester, 10);
+        const paperType = document.getElementById(`splitPaperType_${idx}`)?.value || item.paperType || 'THEORY';
 
         if (!courseCode) {
             alert('Please specify a Course Code for this paper.');
@@ -4336,14 +4689,15 @@ const App = {
         if (btn) this.setButtonLoading(btn, true, 'Publishing...');
 
         try {
-            const isModel = this.currentPaperCategory === 'MODEL';
+            const isModel = true;
             const deptObj = this.departments.find(d => d.code === deptCode);
             const deptName = deptObj ? deptObj.name : deptCode;
 
             const payload = {
                 is_model_paper: isModel,
+                paper_type: paperType,
                 course_code: courseCode,
-                title: title || `Model QP - ${courseCode}`,
+                title: title || `Model QP - ${courseCode} (${paperType})`,
                 dept_code: deptCode,
                 dept_name: deptName,
                 parent_dept: deptCode,
@@ -4353,7 +4707,7 @@ const App = {
                 is_minor: Boolean(item.isMinor),
                 minor_name: item.minorName || '',
                 qp_code: item.qpCode || '',
-                exam_name: isModel ? 'Model Question Paper (FYUGP 2024)' : item.examName,
+                exam_name: `Model Question Paper - FYUGP 2024 (${paperType})`,
                 qp_file_b64: item.base64,
                 scheme_file_b64: '',
                 scheme_url: ''
@@ -4372,14 +4726,19 @@ const App = {
             } else {
                 const ts = Date.now();
                 const modelObj = {
+                    id: `model_${courseCode}_${paperType.toLowerCase()}_${ts}`,
                     url: item.blobUrl || "#",
-                    filename: `Model_${courseCode}_Pages_${item.startPage}-${item.endPage}.pdf`,
-                    title: title || `Model QP - ${courseCode}`
+                    filename: `Model_${courseCode}_${paperType}_Pages_${item.startPage}-${item.endPage}.pdf`,
+                    title: title || `Model QP - ${courseCode} (${paperType})`,
+                    paper_type: paperType,
+                    pages: item.pageCount,
+                    source: "Admin Ingestion"
                 };
                 let existing = this.papers.find(p => (p.course_code || '').toUpperCase() === courseCode);
                 if (existing) {
                     if (!existing.model_papers) existing.model_papers = [];
                     existing.model_papers.push(modelObj);
+                    existing.has_files = true;
                 } else {
                     existing = {
                         id: `custom_split_${courseCode}_${ts}`,
@@ -4398,7 +4757,7 @@ const App = {
                         has_qp: false,
                         has_scheme: false,
                         files: [],
-                        has_files: false,
+                        has_files: true,
                         model_papers: [modelObj]
                     };
                     this.papers.unshift(existing);
@@ -4787,6 +5146,10 @@ const App = {
         if (splitCards) splitCards.innerHTML = '';
         const customSplitInput = document.getElementById('adminCustomSplitInput');
         if (customSplitInput) customSplitInput.value = '';
+        const splitSearchInput = document.getElementById('adminSplitSearchInput');
+        if (splitSearchInput) splitSearchInput.value = '';
+        this.splitCardsFilter = 'ALL';
+        this.splitCardsSearchQuery = '';
         const totalPagesBadge = document.getElementById('adminTotalPagesCountBadge');
         if (totalPagesBadge) totalPagesBadge.textContent = '--';
 

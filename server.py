@@ -355,6 +355,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             import time
             import base64
 
+            import re
             course_code = data.get("course_code", "").strip().upper()
             title = data.get("title", "").strip()
             semester = int(data.get("semester", 1))
@@ -372,9 +373,22 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             qp_file_b64 = data.get("qp_file_b64", "")
             scheme_file_b64 = data.get("scheme_file_b64", "")
 
+            # Sanitize course code: strip trailing letters that bled into course code (e.g. MG4DSEMAT201TRANS -> MG4DSEMAT201)
+            if course_code:
+                m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', course_code)
+                if m_strip:
+                    course_code = m_strip.group(1)
+
+                if not course_code[-1].isdigit():
+                    self.send_json_response({"success": False, "error": f"Invalid course code '{course_code}': Course codes must always end with a number."}, status=400)
+                    return
+
+            # Strict rule: Title of paper must never be the same as department name or department code
+            if title and dept_name and title.strip().lower() in (dept_name.strip().lower(), parent_dept_name.strip().lower(), dept_code.strip().lower(), parent_dept.strip().lower()):
+                title = f"Course {course_code}" if course_code else ""
+
             is_signature = bool(data.get("is_signature", False))
             if not is_signature and course_code:
-                import re
                 if re.match(r"^MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,4}A[1-4][0-9]{2}$", course_code):
                     is_signature = True
 

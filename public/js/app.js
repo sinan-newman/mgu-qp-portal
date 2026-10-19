@@ -3540,7 +3540,32 @@ const App = {
         if (/^[1-8][A-Z]{2,}/.test(c)) {
             c = 'MG' + c;
         }
+
+        // Rule: "Names of Course code will always have number at end."
+        // Strip trailing letters attached after the 3-digit level (e.g. MG4DSEMAT201TRANS -> MG4DSEMAT201)
+        const trailingJunkMatch = c.match(/^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$/);
+        if (trailingJunkMatch) {
+            c = trailingJunkMatch[1];
+        }
+
         return c;
+    },
+
+    isDepartmentNameOrCode(str) {
+        if (!str) return false;
+        const clean = String(str).trim().toLowerCase();
+        if (clean.length <= 2) return true;
+        for (const d of (this.departments || [])) {
+            if (d.name && d.name.trim().toLowerCase() === clean) return true;
+            if (d.code && d.code.trim().toLowerCase() === clean) return true;
+            if (d.majors && Array.isArray(d.majors)) {
+                for (const m of d.majors) {
+                    if (m.name && m.name.trim().toLowerCase() === clean) return true;
+                    if (m.code && m.code.trim().toLowerCase() === clean) return true;
+                }
+            }
+        }
+        return false;
     },
 
     parseCourseCode(rawStr) {
@@ -3648,6 +3673,7 @@ const App = {
 
         // 4. Extract Candidate Course Codes from this page's header adhering to FYUGP structure:
         // MG + [1-8] + [Type] + [Dept] + optional [A] + [Level 100-499]
+        // Rule: "Names of Course code will always have number at end."
         const rawCodeMatches = [];
 
         // Pattern A: Explicit "COURSE CODE: [code]"
@@ -3657,22 +3683,24 @@ const App = {
         }
 
         // Pattern B: FYUGP MGU Code pattern matching MG[1-8](Type)(Dept)A?(Level)
-        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN)\s*[A-Z]{2,4}\s*A?\s*[1-4][0-9]{2}/gi);
+        // Must end at the digits - do not bleed into letters!
+        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)\s*[A-Z]{2,4}\s*A?\s*[1-4][0-9]{2}(?![0-9A-Z])/gi);
         for (const m of mgMatches) {
             if (m && m[0]) rawCodeMatches.push(m[0]);
         }
 
-        // Pattern C: Standard boundary code
-        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z0-9_]{5,16})\b/gi);
+        // Pattern C: Standard boundary code - strictly ending in digits
+        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z]{2,8}A?[1-4][0-9]{2})\b/gi);
         for (const m of standardMatches) {
             if (m && m[1]) rawCodeMatches.push(m[1]);
         }
 
         // Normalize all extracted code candidates
+        // Rule: "Names of Course code will always have number at end."
         const normalizedCandidates = [];
         for (const raw of rawCodeMatches) {
             const norm = this.normalizeCourseCode(raw, defaultSem);
-            if (norm && norm.length >= 8 && norm.startsWith('MG')) {
+            if (norm && norm.length >= 8 && norm.startsWith('MG') && /\d$/.test(norm)) {
                 if (!normalizedCandidates.includes(norm)) {
                     normalizedCandidates.push(norm);
                 }
@@ -3717,17 +3745,20 @@ const App = {
             }
         }
 
-        // Preference 4: First normalized candidate starting with MG
+        // Preference 4: First normalized candidate ending with a number
         if (!bestCourseCode && normalizedCandidates.length > 0) {
-            bestCourseCode = normalizedCandidates[0];
-            parsedInfo = this.parseCourseCode(bestCourseCode);
+            const numEndCand = normalizedCandidates.find(c => /\d$/.test(c));
+            if (numEndCand) {
+                bestCourseCode = numEndCand;
+                parsedInfo = this.parseCourseCode(bestCourseCode);
+            }
         }
 
         // If still no code, check if any catalog course code is contained inside this header
         if (!bestCourseCode) {
             const sortedKnown = Array.from(knownCoursesMap.keys()).sort((a, b) => b.length - a.length);
             for (const knownCode of sortedKnown) {
-                if (knownCode.length >= 10 && upperHeader.includes(knownCode)) {
+                if (knownCode.length >= 8 && /\d$/.test(knownCode) && upperHeader.includes(knownCode)) {
                     matchedCatalogPaper = knownCoursesMap.get(knownCode);
                     bestCourseCode = knownCode;
                     parsedInfo = this.parseCourseCode(knownCode);
@@ -3761,8 +3792,11 @@ const App = {
         if (!detectedSem) detectedSem = defaultSem || 1;
 
         // 6. Title Detection: Look for course name after course code (often separated by hyphen -)
+        // Rule: "name of paper will never be same as department name"
         // Course name is usually 5 to 15 words in size
-        let detectedTitle = matchedCatalogPaper ? matchedCatalogPaper.title : '';
+        let detectedTitle = (matchedCatalogPaper && matchedCatalogPaper.title && !this.isDepartmentNameOrCode(matchedCatalogPaper.title))
+            ? matchedCatalogPaper.title
+            : '';
 
         if (!detectedTitle && bestCourseCode) {
             const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
@@ -3771,17 +3805,28 @@ const App = {
             // [Code] [-–—:] [Course Name]
             const hyphenMatch = cleanHeader.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
             if (hyphenMatch && hyphenMatch[1]) {
-                detectedTitle = hyphenMatch[1].trim();
-            } else {
+                const cand = hyphenMatch[1].trim();
+                if (!this.isDepartmentNameOrCode(cand)) {
+                    detectedTitle = cand;
+                }
+            }
+            if (!detectedTitle) {
                 // Pattern 2: Course title directly following course code with spaces
                 const spaceMatch = cleanHeader.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
                 if (spaceMatch && spaceMatch[1]) {
-                    detectedTitle = spaceMatch[1].trim();
-                } else {
-                    // Pattern 3: Title right before CODE
-                    const beforeMatch = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
-                    if (beforeMatch && beforeMatch[1]) {
-                        detectedTitle = beforeMatch[1].trim();
+                    const cand = spaceMatch[1].trim();
+                    if (!this.isDepartmentNameOrCode(cand)) {
+                        detectedTitle = cand;
+                    }
+                }
+            }
+            if (!detectedTitle) {
+                // Pattern 3: Title right before CODE
+                const beforeMatch = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
+                if (beforeMatch && beforeMatch[1]) {
+                    const cand = beforeMatch[1].trim();
+                    if (!this.isDepartmentNameOrCode(cand)) {
+                        detectedTitle = cand;
                     }
                 }
             }
@@ -3791,7 +3836,10 @@ const App = {
         if (!detectedTitle) {
             const explicitTitleMatch = cleanHeader.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–—\s]+([A-Za-z0-9\s,&'\/-]{3,140})(?=\s*(?:\n|\r|\(|\bDuration\b|\bTime\b|\bMax\b|\bPart\b|$))/i);
             if (explicitTitleMatch && explicitTitleMatch[1]) {
-                detectedTitle = explicitTitleMatch[1].trim();
+                const cand = explicitTitleMatch[1].trim();
+                if (!this.isDepartmentNameOrCode(cand)) {
+                    detectedTitle = cand;
+                }
             }
         }
 
@@ -3804,11 +3852,16 @@ const App = {
                 .trim();
         }
 
+        // Rule: "name of paper will never be same as department name"
+        if (this.isDepartmentNameOrCode(detectedTitle)) {
+            detectedTitle = '';
+        }
+
         // Title-based Catalog Lookup (if code was missing or not in catalog, search catalog by title!)
-        if (!matchedCatalogPaper && detectedTitle && detectedTitle.length >= 6) {
+        if (!matchedCatalogPaper && detectedTitle && detectedTitle.length >= 6 && !this.isDepartmentNameOrCode(detectedTitle)) {
             const titleUpper = detectedTitle.toUpperCase();
             for (const [knownCode, paper] of knownCoursesMap.entries()) {
-                if (paper.semester === detectedSem && paper.title) {
+                if (paper.semester === detectedSem && paper.title && !this.isDepartmentNameOrCode(paper.title)) {
                     const pTitleUpper = paper.title.toUpperCase();
                     if (pTitleUpper === titleUpper || (pTitleUpper.length >= 10 && (pTitleUpper.includes(titleUpper) || titleUpper.includes(pTitleUpper)))) {
                         matchedCatalogPaper = paper;
@@ -3820,6 +3873,15 @@ const App = {
                         break;
                     }
                 }
+            }
+        }
+
+        // Fallback title: Never allow title to be department name
+        if (!detectedTitle || this.isDepartmentNameOrCode(detectedTitle)) {
+            if (matchedCatalogPaper && matchedCatalogPaper.title && !this.isDepartmentNameOrCode(matchedCatalogPaper.title)) {
+                detectedTitle = matchedCatalogPaper.title;
+            } else if (bestCourseCode) {
+                detectedTitle = `Course ${bestCourseCode}`;
             }
         }
 
@@ -3962,7 +4024,10 @@ const App = {
         }
 
         // Department & Title detection
-        let detectedTitle = headerInfo.title || (matchedPaper ? matchedPaper.title : '');
+        // Rule: "name of paper will never be same as department name"
+        let detectedTitle = (headerInfo.title && !this.isDepartmentNameOrCode(headerInfo.title))
+            ? headerInfo.title
+            : ((matchedPaper && matchedPaper.title && !this.isDepartmentNameOrCode(matchedPaper.title)) ? matchedPaper.title : '');
         let detectedDeptCode = headerInfo.deptCode || (matchedPaper ? (matchedPaper.parent_dept || matchedPaper.dept_code) : '');
         let isMinor = matchedPaper ? Boolean(matchedPaper.is_minor) : false;
         let minorName = matchedPaper ? (matchedPaper.minor_name || '') : '';
@@ -3977,16 +4042,26 @@ const App = {
             // Pattern 1: [Code] [-–—:] [Course Name] (up to 140 chars / 5-15 words)
             const p1 = cleanText.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
             if (p1 && p1[1]) {
-                detectedTitle = p1[1].trim();
-            } else {
+                const cand = p1[1].trim();
+                if (!this.isDepartmentNameOrCode(cand)) {
+                    detectedTitle = cand;
+                }
+            }
+            if (!detectedTitle) {
                 // Pattern 2: [Code] [Course Name] with whitespace
                 const p2 = cleanText.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
                 if (p2 && p2[1]) {
-                    detectedTitle = p2[1].trim();
+                    const cand = p2[1].trim();
+                    if (!this.isDepartmentNameOrCode(cand)) {
+                        detectedTitle = cand;
+                    }
                 } else {
                     const p3 = cleanText.match(new RegExp('(?:ONWARDS|EXAMINATION|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
                     if (p3 && p3[1]) {
-                        detectedTitle = p3[1].trim();
+                        const cand = p3[1].trim();
+                        if (!this.isDepartmentNameOrCode(cand)) {
+                            detectedTitle = cand;
+                        }
                     }
                 }
             }
@@ -3997,6 +4072,23 @@ const App = {
                     .replace(/[:\-–—\s]+$/, '')
                     .trim();
             }
+        }
+
+        // Rule: "name of paper will never be same as department name"
+        if (this.isDepartmentNameOrCode(detectedTitle)) {
+            detectedTitle = '';
+        }
+        if (!detectedTitle) {
+            if (matchedPaper && matchedPaper.title && !this.isDepartmentNameOrCode(matchedPaper.title)) {
+                detectedTitle = matchedPaper.title;
+            } else if (matchedCourseCode) {
+                detectedTitle = `Course ${matchedCourseCode}`;
+            }
+        }
+
+        // Rule: "Names of Course code will always have number at end."
+        if (matchedCourseCode && !/\d$/.test(matchedCourseCode)) {
+            matchedCourseCode = '';
         }
 
         if (!detectedDeptCode && matchedCourseCode) {

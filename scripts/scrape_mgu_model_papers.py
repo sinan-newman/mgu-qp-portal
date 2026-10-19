@@ -83,6 +83,34 @@ COURSE_TYPE_NAMES = {
     "HON": "Honours Course"
 }
 
+DEPT_NAME_SET = set()
+DEPT_CODE_SET = set()
+depts_path = os.path.join(DATA_DIR, "departments.json")
+if os.path.exists(depts_path):
+    try:
+        with open(depts_path, "r", encoding="utf-8") as f:
+            _depts = json.load(f)
+            for d in _depts:
+                if d.get("name"):
+                    DEPT_NAME_SET.add(d["name"].strip().lower())
+                if d.get("code"):
+                    DEPT_CODE_SET.add(d["code"].strip().lower())
+                for m in d.get("majors", []):
+                    if m.get("name"):
+                        DEPT_NAME_SET.add(m["name"].strip().lower())
+                    if m.get("code"):
+                        DEPT_CODE_SET.add(m["code"].strip().lower())
+    except Exception as e:
+        print(f"[Warning] Failed to pre-load departments: {e}")
+
+def is_dept_name_or_code(val):
+    if not val:
+        return True
+    v = val.strip().lower()
+    if len(v) <= 2:
+        return True
+    return (v in DEPT_NAME_SET) or (v in DEPT_CODE_SET)
+
 def normalize_course_code(raw_str, default_sem=1):
     if not raw_str:
         return ""
@@ -96,12 +124,20 @@ def normalize_course_code(raw_str, default_sem=1):
         c = "MG1" + c[3:]
     if not c.startswith("MG") and len(c) >= 8:
         c = f"MG{default_sem}" + c
+    # Strip trailing letters that bled into course code from adjacent title text (e.g. MG4DSEMAT201TRANS -> MG4DSEMAT201)
+    m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', c)
+    if m_strip:
+        c = m_strip.group(1)
     return c
 
 def parse_fyugp_course_code(raw_str):
     if not raw_str:
         return None
     clean = re.sub(r'[^A-Z0-9]', '', str(raw_str).strip().upper())
+    # Strip trailing letters if present
+    m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', clean)
+    if m_strip:
+        clean = m_strip.group(1)
     # Match pattern: MG + [1-8] + Type + DeptPart + Level (100-499)
     # e.g., MG4DSEMAT201 (regular), MG4DSEMATA201 (signature)
     m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})([1-4][0-9]{2})$', clean)
@@ -145,7 +181,8 @@ def extract_title_from_text(txt, course_code):
         t = re.sub(r'\s*MODEL\s*QUESTION\s*PAPER.*$', '', t, flags=re.IGNORECASE)
         t = re.sub(r'\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$', '', t, flags=re.IGNORECASE)
         t = re.sub(r'[:\-–—\s]+$', '', t).strip()
-        return t
+        if not is_dept_name_or_code(t) and len(t) >= 4:
+            return t
     return ""
 
 def fetch_page_html():
@@ -332,12 +369,12 @@ def process_single_pdf(item, known_courses, title_to_code=None):
         raw_codes.extend(raw_cc_headers)
 
         norm_codes = [normalize_course_code(c, sem) for c in raw_codes]
-        norm_codes = [c for c in norm_codes if len(c) >= 10 and c.startswith("MG")]
+        norm_codes = [c for c in norm_codes if len(c) >= 10 and c.startswith("MG") and c[-1].isdigit()]
         matched_known = [c for c in norm_codes if c in known_courses]
         
         fallback_codes = re.findall(r'(?:24)?\s*(MG[1-8][A-Z0-9_]{5,14})', item["name"] + " " + item["raw_fn"], re.IGNORECASE)
         fallback_norm = [normalize_course_code(c, sem) for c in fallback_codes]
-        fallback_norm = [c for c in fallback_norm if len(c) >= 10 and c.startswith("MG")]
+        fallback_norm = [c for c in fallback_norm if len(c) >= 10 and c.startswith("MG") and c[-1].isdigit()]
         
         page_data.append({
             "idx": idx,
@@ -657,9 +694,10 @@ def run_scraper(force=False):
         write_paper_pdf(paper, fname)
         
         cdn_url = f"{CDN_BASE}/{fname}"
-        clean_snippet = " ".join(paper["full_text"][:400].split())
         code_cand = re.search(r'(?:24)?(MG[1-8][A-Z0-9_]{4,14})', paper["full_text"])
         sug_code = normalize_course_code(code_cand.group(1)) if code_cand else ""
+        if sug_code and not sug_code[-1].isdigit():
+            sug_code = ""
         
         untagged_json_data.append({
             "model_id": f"untagged_{paper['semester']}_{idx+1}",
@@ -744,6 +782,10 @@ def run_scraper(force=False):
     print(f"[Orphan Integration] Creating portal entries for {len(orphan_codes)} newly discovered courses...")
 
     for cc in sorted(orphan_codes):
+        if not cc or not cc[-1].isdigit():
+            print(f"[Orphan Filter] Skipping invalid course code not ending in digit: {cc}")
+            continue
+
         mps = models_by_course[cc]
         parsed_fyugp = parse_fyugp_course_code(cc)
         if parsed_fyugp:
@@ -762,13 +804,16 @@ def run_scraper(force=False):
 
         t_obj = theory_by_course.get(cc) or practical_by_course.get(cc)
         extracted_t = extract_title_from_text(t_obj.get("full_text", ""), cc) if t_obj else ""
-        if extracted_t:
+        if extracted_t and not is_dept_name_or_code(extracted_t):
             final_title = extracted_t
         else:
             raw_title = t_obj["source_item"]["name"] if t_obj else cc
             raw_title = re.sub(r'\s*-\s*Theory.*|\s*-\s*Practical.*', '', raw_title, flags=re.IGNORECASE)
             raw_title = re.sub(r'MG[1-8][A-Z0-9_]{5,14}', '', raw_title).strip(" -–")
-            final_title = raw_title if raw_title else f"{dept_name} {COURSE_TYPE_NAMES.get(ctype, ctype)}"
+            if raw_title and not is_dept_name_or_code(raw_title):
+                final_title = raw_title
+            else:
+                final_title = f"Course {cc} ({COURSE_TYPE_NAMES.get(ctype, ctype)})"
 
         new_course = {
             "id": f"orphan_{cc.lower()}",

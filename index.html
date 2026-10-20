@@ -795,7 +795,7 @@
 
                         <!-- Dropzone -->
                         <div id="adminPdfDropzone" onclick="document.getElementById('adminSmartPdfFile').click()" class="border-2 border-dashed border-slate-300 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-2xl p-6 sm:p-8 text-center cursor-pointer transition bg-slate-50/50 dark:bg-slate-800/50 hover:bg-blue-50/30 dark:hover:bg-blue-950/20 group">
-                            <input type="file" id="adminSmartPdfFile" accept="application/pdf" class="hidden" onchange="App.handleSmartPdfFileSelected(event)">
+                            <input type="file" id="adminSmartPdfFile" accept="application/pdf" multiple class="hidden" onchange="App.handleSmartPdfFileSelected(event)">
                             <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 mx-auto flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
                                 <i class="bi bi-cloud-arrow-up-fill"></i>
                             </div>

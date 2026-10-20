@@ -375,7 +375,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
 
             # Sanitize course code: strip trailing letters that bled into course code (e.g. MG4DSEMAT201TRANS -> MG4DSEMAT201)
             if course_code:
-                m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', course_code)
+                m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|[1-5][0-9]{2}))[A-Z]+$', course_code)
                 if m_strip:
                     course_code = m_strip.group(1)
 

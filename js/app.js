@@ -3668,14 +3668,15 @@ const App = {
 
     parseCourseCode(rawStr) {
         if (!rawStr) return null;
-        const clean = String(rawStr).trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
-        // Format: MG + [1-8] + [Type: DSC,DSE,SEC,MDC,VAC,CCR,AEC,MDE,SDC,MPC,HON,MIN] + [Dept] + [optional A + 2 digits for signature | 3-digit level 100-499]
-        // Examples: MG4DSEMAT201 (regular), MG3DSEBOTA03 (signature code)
-        const m = clean.match(/^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})(A\d{2}|[1-4][0-9]{2})$/);
+        let clean = String(rawStr).trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+        clean = clean.replace('MGS5', 'MG5').replace('DEC', 'DSE');
+        // Format: MG + [1-8] + [Type: DSC,DSE,SEC,MDC,VAC,CCR,AEC,MDE,SDC,MPC,HON,MIN,DEC] + [Dept] + [optional A + 2 digits for signature | 3-digit level 100-599]
+        // Examples: MG4DSEMAT201 (regular), MG3DSEBOTA03 (signature code), MG5DSECHEA01
+        const m = clean.match(/^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE|DEC)([A-Z]{2,5})(A\d{2}|[1-5][0-9]{2})$/);
         if (!m) return null;
 
         const semester = parseInt(m[1], 10);
-        const courseType = m[2];
+        const courseType = m[2] === 'DEC' ? 'DSE' : m[2];
         const deptCode = m[3];
         const isSignature = m[4].startsWith('A');
         const courseLevel = isSignature ? parseInt(m[4].slice(1), 10) : parseInt(m[4], 10);
@@ -3712,6 +3713,7 @@ const App = {
             return {
                 isStart: false,
                 courseCode: '',
+                allCodes: [],
                 title: '',
                 deptCode: 'MAT',
                 semester: defaultSem || 1,
@@ -3722,28 +3724,19 @@ const App = {
             };
         }
 
-        // Take top 1800 characters of the page for header inspection
-        const headerSlice = pageText.slice(0, 1800);
+        // Take top 2200 characters of the page for header inspection
+        const headerSlice = pageText.slice(0, 2200);
         const cleanHeader = headerSlice.replace(/\s+/g, ' ');
+        const collapsedHeader = cleanHeader.replace(/(?<=\b[A-Za-z0-9])\s+(?=[A-Za-z0-9]\b)/g, '');
         const upperHeader = cleanHeader.toUpperCase();
+        const collapsedUpper = collapsedHeader.toUpperCase();
         const fullUpper = pageText.toUpperCase();
 
-        // 1. Start Header Detection (exam start header vs question continuation)
-        const hasUniv = /(?:MAHATMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|MODEL\s*QUESTION\s*PAPER|DEGREE\s*EXAMINATION|SEMESTER\s*EXAMINATION|FYUGP|HONOURS|UNDERGRADUATE|HONOURS\s*EXAMINATION)/i.test(upperHeader);
-        const hasMarks = /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS|MARKS\s*[:\-–]|\bMARKS\b)/i.test(upperHeader);
-        const hasTime = /(?:TIME\s*[:\-–]|DURATION\s*[:\-–]|\b\d+\s*HOURS\b|\b\d+\s*HRS\b)/i.test(upperHeader);
-        const hasParts = /(?:PART\s*[-–]?\s*[A-C]|SECTION\s*[-–]?\s*[A-C])/i.test(upperHeader);
-        const hasSemWord = /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER/i.test(upperHeader);
-
-        const isStart = (hasUniv && (hasMarks || hasTime || hasParts || hasSemWord)) ||
-                        (hasMarks && (hasTime || hasParts)) ||
-                        (hasUniv && /MODEL\s*(?:QUESTION|QP)/i.test(upperHeader));
-
-        // 2. Paper Type Detection (Theory vs Practical)
+        // 1. Paper Type Detection (Theory vs Practical)
         const isPractical = /(?:PRACTICAL\s*(?:EXAMINATION|MODEL|QP|EXAM)|EXPERIMENT\s*NO|CONDUCT\s*ONE\s*EXPERIMENT|LAB\s*EXAMINATION)/i.test(fullUpper);
         const paperType = isPractical ? 'PRACTICAL' : 'THEORY';
 
-        // 3. Known Catalog Map from portal papers (2,659 courses)
+        // 2. Known Catalog Map from portal papers
         const knownCoursesMap = new Map();
         (this.papers || []).forEach(p => {
             const cc = (p.course_code || '').trim().toUpperCase();
@@ -3756,41 +3749,73 @@ const App = {
             }
         });
 
-        // 4. Extract Candidate Course Codes from this page's header adhering to FYUGP structure:
-        // MG + [1-8] + [Type] + [Dept] + optional [A] + [Level 100-499]
+        // 3. Extract Candidate Course Codes from this page's header adhering to FYUGP structure:
+        // MG + [1-8] + [Type] + [Dept] + optional [A] + [Level 100-599]
         // Rule: "Names of Course code will always have number at end."
         const rawCodeMatches = [];
 
-        // Pattern A: Explicit "COURSE CODE: [code]"
-        const explicitMatches = cleanHeader.matchAll(/(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-\s]{6,25})/gi);
-        for (const m of explicitMatches) {
-            if (m && m[1]) rawCodeMatches.push(m[1]);
-        }
+        for (const txt of [cleanHeader, collapsedHeader]) {
+            // Pattern A: Explicit "COURSE CODE: [code]" - split comma/slash separated codes
+            const explicitMatches = txt.matchAll(/(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-\s,]{6,60})/gi);
+            for (const m of explicitMatches) {
+                if (m && m[1]) {
+                    m[1].split(/[,;\/]+/).forEach(p => {
+                        const trimmed = p.trim();
+                        if (trimmed) rawCodeMatches.push(trimmed);
+                    });
+                }
+            }
 
-        // Pattern B: FYUGP MGU Code pattern matching MG[1-8](Type)(Dept)A?(Level)
-        // Must end at the digits - do not bleed into letters!
-        const mgMatches = cleanHeader.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)\s*[A-Z]{2,4}\s*A?\s*[1-4][0-9]{2}(?![0-9A-Z])/gi);
-        for (const m of mgMatches) {
-            if (m && m[0]) rawCodeMatches.push(m[0]);
-        }
+            // Pattern B: FYUGP MGU Code pattern matching MG[1-8](Type)(Dept)A?(Level)
+            const mgMatches = txt.matchAll(/(?:24)?\s*(?:MG|MGU)\s*[1-8Il]?\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE|DEC)\s*[A-Z]{2,5}\s*(?:A\d{2}|[1-5][0-9]{2})(?![0-9A-Z])/gi);
+            for (const m of mgMatches) {
+                if (m && m[0]) rawCodeMatches.push(m[0]);
+            }
 
-        // Pattern C: Standard boundary code - strictly ending in digits
-        const standardMatches = cleanHeader.matchAll(/\b(MG[1-8][A-Z]{2,8}A?[1-4][0-9]{2})\b/gi);
-        for (const m of standardMatches) {
-            if (m && m[1]) rawCodeMatches.push(m[1]);
+            // Pattern C: Standard boundary code - strictly ending in digits
+            const standardMatches = txt.matchAll(/\b(MG[1-8][A-Z]{2,8}(?:A\d{2}|[1-5][0-9]{2}))\b/gi);
+            for (const m of standardMatches) {
+                if (m && m[1]) rawCodeMatches.push(m[1]);
+            }
         }
 
         // Normalize all extracted code candidates
-        // Rule: "Names of Course code will always have number at end."
         const normalizedCandidates = [];
         for (const raw of rawCodeMatches) {
-            const norm = this.normalizeCourseCode(raw, defaultSem);
-            if (norm && norm.length >= 8 && norm.startsWith('MG') && /\d$/.test(norm)) {
+            let norm = this.normalizeCourseCode(raw, defaultSem);
+            if (!norm) continue;
+            norm = norm.replace('MGS5', 'MG5').replace('DEC', 'DSE');
+            if (norm.startsWith('MGDSE') || norm.startsWith('MGDSC') || norm.startsWith('MGSEC')) {
+                norm = 'MG5' + norm.slice(2);
+            }
+            if (/^MG[1-46-8]/.test(norm) && (upperHeader.includes('FIFTH') || defaultSem === 5)) {
+                norm = 'MG5' + norm.slice(3);
+            }
+            // Strip trailing letters e.g. TRANS
+            const mStrip = norm.match(/^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|[1-5][0-9]{2}))[A-Z]+$/);
+            if (mStrip) norm = mStrip[1];
+
+            if (norm.length >= 8 && norm.startsWith('MG') && /\d$/.test(norm)) {
                 if (!normalizedCandidates.includes(norm)) {
                     normalizedCandidates.push(norm);
                 }
             }
         }
+
+        // 4. Start Header Detection (University header + Exam Title + Marks/Time/Sem)
+        // Rule: A continuation page with questions (Part B/C and marks) is NEVER an exam start!
+        const hasUniv = /(?:MAHATMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|MODEL\s*QUESTION\s*PAPER|MGU-UGP|MGU\s*UGP)/i.test(upperHeader) ||
+                        /(?:MAHATMA\s*GANDHI\s*UNIVERSITY|MGU|M\.?\s*G\.?\s*UNIVERSITY|MODEL\s*QUESTION\s*PAPER|MGU-UGP|MGU\s*UGP)/i.test(collapsedUpper);
+        const hasExamTitle = /(?:EXAMINATION|EXAM\b|MODEL\s*QUESTION\s*PAPER|MODEL\s*EXAM|MODEL\s*QP)/i.test(upperHeader) ||
+                             /(?:EXAMINATION|EXAM\b|MODEL\s*QUESTION\s*PAPER|MODEL\s*EXAM|MODEL\s*QP)/i.test(collapsedUpper);
+        const hasMarks = /(?:MAX(?:IMUM)?\.?\s*MARKS|TOTAL\s*MARKS|MARKS\s*[:\-–]|\bMARKS\b)/i.test(upperHeader);
+        const hasTime = /(?:TIME\s*[:\-–]|DURATION\s*[:\-–]|\b\d+\s*HOURS\b|\b\d+\s*HRS\b)/i.test(upperHeader);
+        const hasSemWord = /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER/i.test(upperHeader) ||
+                           /(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|[1-8](?:ST|ND|RD|TH)?)\s*SEMESTER/i.test(collapsedUpper);
+
+        const isStart = (hasUniv && hasExamTitle && (hasMarks || hasTime || hasSemWord)) ||
+                        (normalizedCandidates.length > 0 && hasExamTitle && (hasMarks || hasTime)) ||
+                        (hasUniv && /MODEL\s*(?:QUESTION|QP)/i.test(upperHeader));
 
         // Validate candidates with parseCourseCode and catalog
         const parsedCandidates = normalizedCandidates.map(cand => ({
@@ -3843,7 +3868,7 @@ const App = {
         if (!bestCourseCode) {
             const sortedKnown = Array.from(knownCoursesMap.keys()).sort((a, b) => b.length - a.length);
             for (const knownCode of sortedKnown) {
-                if (knownCode.length >= 8 && /\d$/.test(knownCode) && upperHeader.includes(knownCode)) {
+                if (knownCode.length >= 8 && /\d$/.test(knownCode) && (upperHeader.includes(knownCode) || collapsedUpper.includes(knownCode))) {
                     matchedCatalogPaper = knownCoursesMap.get(knownCode);
                     bestCourseCode = knownCode;
                     parsedInfo = this.parseCourseCode(knownCode);
@@ -3876,54 +3901,62 @@ const App = {
         }
         if (!detectedSem) detectedSem = defaultSem || 1;
 
-        // 6. Title Detection: Look for course name after course code (often separated by hyphen -)
+        // 6. Title Detection: Look for course name after course code
         // Rule: "name of paper will never be same as department name"
-        // Course name is usually 5 to 15 words in size
-        let detectedTitle = (matchedCatalogPaper && matchedCatalogPaper.title && !this.isDepartmentNameOrCode(matchedCatalogPaper.title))
-            ? matchedCatalogPaper.title
-            : '';
+        let detectedTitle = '';
 
-        if (!detectedTitle && bestCourseCode) {
-            const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-
-            // Pattern 1: Look for hyphen (or en-dash/em-dash/colon) after course code:
-            // [Code] [-–—:] [Course Name]
-            const hyphenMatch = cleanHeader.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
-            if (hyphenMatch && hyphenMatch[1]) {
-                const cand = hyphenMatch[1].trim();
-                if (!this.isDepartmentNameOrCode(cand)) {
+        // Priority 1: Explicit COURSE TITLE: ...
+        for (const txt of [cleanHeader, collapsedHeader]) {
+            const explicitTitleMatch = txt.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–—\s]+([A-Za-z0-9\s,&'\/-]{3,90})/i);
+            if (explicitTitleMatch && explicitTitleMatch[1]) {
+                let cand = explicitTitleMatch[1].trim();
+                cand = cand.replace(/\s*(?:Time|Duration|Max|Part|Section|Marks|MGU|Admission).*$/i, '').trim();
+                if (cand && !this.isDepartmentNameOrCode(cand)) {
                     detectedTitle = cand;
+                    break;
                 }
             }
-            if (!detectedTitle) {
-                // Pattern 2: Course title directly following course code with spaces
-                const spaceMatch = cleanHeader.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,140}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
+        }
+
+        // Priority 2: Catalog Paper Match
+        if (!detectedTitle && matchedCatalogPaper && matchedCatalogPaper.title && !this.isDepartmentNameOrCode(matchedCatalogPaper.title)) {
+            detectedTitle = matchedCatalogPaper.title;
+        }
+
+        // Priority 3: Title after code (hyphen or space)
+        if (!detectedTitle && bestCourseCode) {
+            const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            for (const txt of [cleanHeader, collapsedHeader]) {
+                const hyphenMatch = txt.match(new RegExp(escapedCode + '\\s*[:\\-–—\\u2013\\u2014\\ufb01]+\\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\':\\-–]{2,90}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
+                if (hyphenMatch && hyphenMatch[1]) {
+                    const cand = hyphenMatch[1].trim();
+                    if (!this.isDepartmentNameOrCode(cand)) {
+                        detectedTitle = cand;
+                        break;
+                    }
+                }
+                const spaceMatch = txt.match(new RegExp(escapedCode + '\\s+(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\\b)([A-Za-z0-9][A-Za-z0-9\\s,\\/&\'-]{3,90}?)(?=\\s*(?:\\n|\\r|\\(|\\bDuration\\b|\\bTime\\b|\\bMax(?:imum)?\\b|\\bTotal\\b|\\bPart\\b|\\bSection\\b|\\bAnswer\\b|\\d+\\s*hrs|\\d+\\s*hours|\\bMarks\\b|\\d{4}\\s*Admi|\\bAdmission\\b|$))', 'i'));
                 if (spaceMatch && spaceMatch[1]) {
                     const cand = spaceMatch[1].trim();
                     if (!this.isDepartmentNameOrCode(cand)) {
                         detectedTitle = cand;
-                    }
-                }
-            }
-            if (!detectedTitle) {
-                // Pattern 3: Title right before CODE
-                const beforeMatch = cleanHeader.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\))\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,140}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]+' + escapedCode, 'i'));
-                if (beforeMatch && beforeMatch[1]) {
-                    const cand = beforeMatch[1].trim();
-                    if (!this.isDepartmentNameOrCode(cand)) {
-                        detectedTitle = cand;
+                        break;
                     }
                 }
             }
         }
 
-        // Pattern 4: Explicit COURSE TITLE: ...
-        if (!detectedTitle) {
-            const explicitTitleMatch = cleanHeader.match(/(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME)\s*[:\-–—\s]+([A-Za-z0-9\s,&'\/-]{3,140})(?=\s*(?:\n|\r|\(|\bDuration\b|\bTime\b|\bMax\b|\bPart\b|$))/i);
-            if (explicitTitleMatch && explicitTitleMatch[1]) {
-                const cand = explicitTitleMatch[1].trim();
-                if (!this.isDepartmentNameOrCode(cand)) {
-                    detectedTitle = cand;
+        // Priority 4: Title before code
+        if (!detectedTitle && bestCourseCode) {
+            const escapedCode = bestCourseCode.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            for (const txt of [cleanHeader, collapsedHeader]) {
+                const beforeMatch = txt.match(new RegExp('(?:EXAMINATION|ONWARDS|DEGREE|HONOURS|\\)|PAPER)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s]*([A-Za-z][A-Za-z0-9\\s,\\/&\'-]{2,90}?)\\s*[:\\-–—\\u2013\\u2014\\ufb01\\s(]+' + escapedCode, 'i'));
+                if (beforeMatch && beforeMatch[1]) {
+                    const cand = beforeMatch[1].trim();
+                    if (!this.isDepartmentNameOrCode(cand)) {
+                        detectedTitle = cand;
+                        break;
+                    }
                 }
             }
         }
@@ -3940,25 +3973,6 @@ const App = {
         // Rule: "name of paper will never be same as department name"
         if (this.isDepartmentNameOrCode(detectedTitle)) {
             detectedTitle = '';
-        }
-
-        // Title-based Catalog Lookup (if code was missing or not in catalog, search catalog by title!)
-        if (!matchedCatalogPaper && detectedTitle && detectedTitle.length >= 6 && !this.isDepartmentNameOrCode(detectedTitle)) {
-            const titleUpper = detectedTitle.toUpperCase();
-            for (const [knownCode, paper] of knownCoursesMap.entries()) {
-                if (paper.semester === detectedSem && paper.title && !this.isDepartmentNameOrCode(paper.title)) {
-                    const pTitleUpper = paper.title.toUpperCase();
-                    if (pTitleUpper === titleUpper || (pTitleUpper.length >= 10 && (pTitleUpper.includes(titleUpper) || titleUpper.includes(pTitleUpper)))) {
-                        matchedCatalogPaper = paper;
-                        if (!bestCourseCode) {
-                            bestCourseCode = knownCode;
-                            parsedInfo = this.parseCourseCode(knownCode);
-                        }
-                        detectedTitle = paper.title;
-                        break;
-                    }
-                }
-            }
         }
 
         // Fallback title: Never allow title to be department name
@@ -3988,11 +4002,12 @@ const App = {
             }
         }
 
-        const isSignature = Boolean(parsedInfo && parsedInfo.isSignature);
+        const isSignature = Boolean(parsedInfo && parsedInfo.isSignature || this.isSignatureCourse(bestCourseCode));
 
         return {
             isStart: isStart,
             courseCode: bestCourseCode,
+            allCodes: normalizedCandidates,
             title: detectedTitle,
             deptCode: detectedDeptCode || 'MAT',
             semester: detectedSem,
@@ -4219,7 +4234,7 @@ const App = {
         };
     },
 
-    checkPaperDuplicate(courseCode, qpCode, isModelPaper) {
+    checkPaperDuplicate(courseCode, qpCode, isModelPaper, paperType = 'THEORY') {
         if (!courseCode || !courseCode.trim()) {
             return { isDuplicate: false, message: 'Please enter or scan a valid course code.' };
         }
@@ -4229,12 +4244,16 @@ const App = {
 
         if (isModelPaper) {
             if (existing && existing.model_papers && existing.model_papers.length > 0) {
-                return {
-                    isDuplicate: true,
-                    type: 'model_exists',
-                    paper: existing,
-                    message: `A model question paper already exists for course ${cc} ("${existing.title}"). Adding this will append to its model paper collection.`
-                };
+                const pt = (paperType || 'THEORY').toUpperCase();
+                const hasSameType = existing.model_papers.some(m => (m.paper_type || 'THEORY').toUpperCase() === pt);
+                if (hasSameType) {
+                    return {
+                        isDuplicate: true,
+                        type: 'model_exists',
+                        paper: existing,
+                        message: `A ${pt.toLowerCase()} model question paper already exists for course ${cc} ("${existing.title}"). Adding this will replace it.`
+                    };
+                }
             }
             return { isDuplicate: false, paper: existing, message: 'No existing model paper found for this course code.' };
         }
@@ -4359,8 +4378,8 @@ const App = {
             else if (candCode && !currentCode && isStart && pagesElapsed >= 1) {
                 isNewPaper = true;
             }
-            // Trigger 4: Safety maximum cap (no model question paper is > 7 pages)
-            else if (pagesElapsed >= 7) {
+            // Trigger 4: Safety maximum cap for extraordinarily long compilation chunks
+            else if (pagesElapsed >= 25) {
                 isNewPaper = true;
             }
 
@@ -4422,42 +4441,57 @@ const App = {
 
             // Merge detected info
             const finalCode = headerInfo.courseCode || detected.courseCode || seg.detectedCode || '';
-            const finalTitle = headerInfo.title || detected.title || (finalCode ? `Model QP - ${finalCode}` : '');
-            const finalDept = headerInfo.deptCode || detected.deptCode || 'MAT';
-            const finalSem = headerInfo.semester || detected.semester || 1;
             const finalPaperType = headerInfo.paperType || 'THEORY';
+            const finalSem = headerInfo.semester || detected.semester || 1;
             const confidence = headerInfo.confidence || detected.confidence || (finalCode ? 'medium' : 'low');
 
-            // Duplicate check against existing papers in portal
-            const dupResult = this.checkPaperDuplicate(finalCode, detected.qpCode, true);
-            const isSignature = Boolean(headerInfo.isSignature || this.isSignatureCourse(finalCode));
+            // Support multiple codes per segment (e.g. Botany P.1-2 for both BOT and BBT)
+            const codesToProcess = (headerInfo.allCodes && headerInfo.allCodes.length > 0)
+                ? headerInfo.allCodes
+                : [finalCode];
 
-            this.adminSplitPapers.push({
-                idx: s,
-                startPage: seg.startPage,
-                endPage: seg.endPage,
-                pageCount: seg.pageCount,
-                courseCode: finalCode,
-                title: finalTitle,
-                deptCode: finalDept,
-                semester: finalSem,
-                paperType: finalPaperType,
-                isSignature: isSignature,
-                courseType: detected.courseType || 'DSC',
-                isMinor: detected.isMinor,
-                minorName: detected.minorName,
-                minorCode: detected.minorCode,
-                qpCode: detected.qpCode,
-                examName: detected.examName,
-                confidence: confidence,
-                isDuplicate: dupResult.isDuplicate,
-                dupMessage: dupResult.message,
-                existingPaper: dupResult.paper,
-                blob: sliced ? sliced.blob : null,
-                blobUrl: sliced ? sliced.blobUrl : this.masterPdfUrl,
-                base64: sliced ? sliced.base64 : '',
-                published: false
-            });
+            for (const cCode of codesToProcess) {
+                if (!cCode) continue;
+                const dupResult = this.checkPaperDuplicate(cCode, detected.qpCode, true, finalPaperType);
+                const isSignature = Boolean(this.isSignatureCourse(cCode));
+                let cTitle = headerInfo.title || detected.title;
+                if (this.isDepartmentNameOrCode(cTitle)) cTitle = '';
+                const catCourse = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === cCode);
+                if (catCourse && catCourse.title && !this.isDepartmentNameOrCode(catCourse.title)) {
+                    cTitle = catCourse.title;
+                }
+                if (!cTitle) {
+                    cTitle = cCode ? `Model QP - ${cCode}` : '';
+                }
+                const cDept = (catCourse && (catCourse.parent_dept || catCourse.dept_code)) || headerInfo.deptCode || detected.deptCode || 'MAT';
+
+                this.adminSplitPapers.push({
+                    idx: this.adminSplitPapers.length,
+                    startPage: seg.startPage,
+                    endPage: seg.endPage,
+                    pageCount: seg.pageCount,
+                    courseCode: cCode,
+                    title: cTitle,
+                    deptCode: cDept,
+                    semester: (catCourse && catCourse.semester) || finalSem,
+                    paperType: finalPaperType,
+                    isSignature: isSignature,
+                    courseType: (catCourse && catCourse.course_type) || detected.courseType || 'DSC',
+                    isMinor: detected.isMinor,
+                    minorName: detected.minorName,
+                    minorCode: detected.minorCode,
+                    qpCode: detected.qpCode,
+                    examName: detected.examName,
+                    confidence: confidence,
+                    isDuplicate: dupResult.isDuplicate,
+                    dupMessage: dupResult.message,
+                    existingPaper: dupResult.paper,
+                    blob: sliced ? sliced.blob : null,
+                    blobUrl: sliced ? sliced.blobUrl : this.masterPdfUrl,
+                    base64: sliced ? sliced.base64 : '',
+                    published: false
+                });
+            }
         }
 
         if (spinner) spinner.classList.add('hidden');
@@ -4557,10 +4591,134 @@ const App = {
         this.buildSplitPapersFromSegments(segments);
     },
 
-    handleSmartPdfFileSelected(e) {
-        const file = e.target.files && e.target.files[0];
-        if (!file) return;
-        this.processSmartPdfFile(file);
+    async handleSmartPdfFileSelected(e) {
+        const files = e.target.files;
+        if (!files || files.length === 0) return;
+        if (files.length === 1) {
+            this.processSmartPdfFile(files[0]);
+        } else {
+            await this.processMultipleSmartPdfFiles(Array.from(files));
+        }
+    },
+
+    async processMultipleSmartPdfFiles(files) {
+        const spinner = document.getElementById('adminScanSpinner');
+        const spinnerText = document.getElementById('adminScanSpinnerText');
+        if (spinner) spinner.classList.remove('hidden');
+
+        this.adminSplitPapers = [];
+        let totalDocsPages = 0;
+
+        for (let fIdx = 0; fIdx < files.length; fIdx++) {
+            const file = files[fIdx];
+            if (spinnerText) spinnerText.textContent = `Processing PDF ${fIdx + 1} of ${files.length}: ${file.name}...`;
+
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+                const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+                const pdf = await loadingTask.promise;
+                const numPages = pdf.numPages;
+                totalDocsPages += numPages;
+
+                let srcDoc = null;
+                if (typeof PDFLib !== 'undefined') {
+                    try {
+                        srcDoc = await PDFLib.PDFDocument.load(arrayBuffer);
+                    } catch (err) {
+                        console.warn('PDFLib error:', err);
+                    }
+                }
+
+                const pagesText = [];
+                for (let i = 1; i <= numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const tokenized = await page.getTextContent();
+                    pagesText.push(tokenized.items.map(it => it.str).join(' '));
+                }
+
+                const segments = this.detectPaperBoundaries(pagesText, numPages);
+
+                for (let s = 0; s < segments.length; s++) {
+                    const seg = segments[s];
+                    const sliced = srcDoc ? await this.slicePdfPages(srcDoc, seg.startPage, seg.endPage) : null;
+                    const segPages = pagesText.slice(seg.startPage - 1, seg.endPage);
+                    const firstPageText = segPages[0] || '';
+                    const segText = segPages.join(' ');
+                    const headerInfo = this.extractPageHeaderCourseInfo(firstPageText);
+                    const detected = this.detectCourseInfo(segText, '', true);
+
+                    const finalCode = headerInfo.courseCode || detected.courseCode || seg.detectedCode || '';
+                    const finalPaperType = headerInfo.paperType || 'THEORY';
+                    const codesToProcess = (headerInfo.allCodes && headerInfo.allCodes.length > 0)
+                        ? headerInfo.allCodes
+                        : [finalCode];
+
+                    for (const cCode of codesToProcess) {
+                        if (!cCode) continue;
+                        const dupResult = this.checkPaperDuplicate(cCode, detected.qpCode, true, finalPaperType);
+                        const isSignature = Boolean(this.isSignatureCourse(cCode));
+                        let cTitle = headerInfo.title || detected.title;
+                        if (this.isDepartmentNameOrCode(cTitle)) cTitle = '';
+                        const catCourse = (this.papers || []).find(p => (p.course_code || '').trim().toUpperCase() === cCode);
+                        if (catCourse && catCourse.title && !this.isDepartmentNameOrCode(catCourse.title)) {
+                            cTitle = catCourse.title;
+                        }
+                        if (!cTitle) {
+                            cTitle = cCode ? `Model QP - ${cCode}` : '';
+                        }
+                        const cDept = (catCourse && (catCourse.parent_dept || catCourse.dept_code)) || headerInfo.deptCode || detected.deptCode || 'MAT';
+
+                        this.adminSplitPapers.push({
+                            idx: this.adminSplitPapers.length,
+                            startPage: seg.startPage,
+                            endPage: seg.endPage,
+                            pageCount: seg.pageCount,
+                            courseCode: cCode,
+                            title: cTitle,
+                            deptCode: cDept,
+                            semester: (catCourse && catCourse.semester) || headerInfo.semester || 1,
+                            paperType: finalPaperType,
+                            isSignature: isSignature,
+                            courseType: (catCourse && catCourse.course_type) || detected.courseType || 'DSC',
+                            isMinor: detected.isMinor,
+                            minorName: detected.minorName,
+                            minorCode: detected.minorCode,
+                            qpCode: detected.qpCode,
+                            examName: detected.examName,
+                            confidence: headerInfo.confidence || 'medium',
+                            isDuplicate: dupResult.isDuplicate,
+                            dupMessage: dupResult.message,
+                            existingPaper: dupResult.paper,
+                            blob: sliced ? sliced.blob : null,
+                            blobUrl: sliced ? sliced.blobUrl : '',
+                            base64: sliced ? sliced.base64 : '',
+                            published: false
+                        });
+                    }
+                }
+            } catch (fileErr) {
+                console.error(`Error processing ${file.name}:`, fileErr);
+            }
+        }
+
+        if (spinner) spinner.classList.add('hidden');
+
+        const badge = document.getElementById('adminSelectedFileNameBadge');
+        const nameEl = document.getElementById('adminSelectedFileName');
+        const sizeEl = document.getElementById('adminSelectedFileSize');
+        if (nameEl) nameEl.textContent = `${files.length} Compilation PDFs`;
+        if (sizeEl) sizeEl.textContent = `(${this.adminSplitPapers.length} Papers Detected)`;
+        if (badge) badge.classList.remove('hidden');
+
+        const totalPagesBadge = document.getElementById('adminTotalPagesCountBadge');
+        if (totalPagesBadge) totalPagesBadge.textContent = `${totalDocsPages} pages total`;
+
+        document.getElementById('adminUploadForm')?.classList.add('hidden');
+        document.getElementById('adminScanResultContainer')?.classList.add('hidden');
+        document.getElementById('adminMultiSplitContainer')?.classList.remove('hidden');
+
+        this.renderSplitCardsUI();
     },
 
     async processSmartPdfFile(file) {

@@ -433,9 +433,13 @@ const App = {
         if (totalSchemesEl) totalSchemesEl.textContent = `${totalSchemes.toLocaleString()}+`;
         if (totalDeptsEl) totalDeptsEl.textContent = `${activeDepts.length}`;
         if (lastSyncEl) lastSyncEl.textContent = '2024 Admission';
-        const totalModels = (this.modelCatalog && this.modelCatalog.length > 0) ? this.modelCatalog.length : 2176;
+        const totalModels = (this.modelCatalog && this.modelCatalog.length > 0) ? this.modelCatalog.length : 1649;
         const modelBadge = document.getElementById('modelNavCountBadge');
         if (modelBadge) modelBadge.textContent = totalModels.toLocaleString();
+        const statTotalModelEl = document.getElementById('statTotalModelPapers');
+        if (statTotalModelEl) statTotalModelEl.textContent = `${totalModels.toLocaleString()}+`;
+        const headerModelCountEl = document.getElementById('headerModelCount');
+        if (headerModelCountEl) headerModelCountEl.textContent = totalModels.toLocaleString();
     },
 
     bindEvents() {

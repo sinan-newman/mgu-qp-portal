@@ -5,23 +5,25 @@ Autonomous Daily Scraper & PDF Splitter for MGU FYUGP Model Question Papers.
 Target: https://www.mgu.ac.in/examinations/model-question-papers-fyugp-2024/
 
 Workflow:
-1. Live-scrapes MGU model papers page for all semesters (1 through 5+).
+1. Live-scrapes MGU model papers page for all semesters (1 through 8).
 2. Resolves all direct PDF URLs and WordPress attachment pages concurrently.
-3. Caches/tracks links in data/mgu_official_model_links.json and cache file.
-4. Concurrently downloads newly uploaded or modified compilation PDFs.
-5. Uses pypdf to accurately detect page boundaries and split compilation PDFs
-   into individual course model question papers (1-4 pages each).
-6. Classifies papers into THEORY vs PRACTICAL:
-   - Usually all courses have at least 1 Theory model paper.
-   - Some courses have 2 (1 Theory + 1 Practical).
-   - Enforces MAX 2 model papers per course (at most 1 Theory and at most 1 Practical).
-7. Deduplication against existing database:
-   - Automatically assigns split papers to courses if not already available in the website.
-   - Never duplicates the same paper type for a course.
-   - Automatically creates orphan course entries in papers.json if not already present.
-8. Saves split PDFs to uploads/model_papers/ and ../mgu-qp-storage/pdf/.
-9. Routes unidentifiable papers to data/untagged_model_papers.json for Admin UI review.
-10. Mirrors all updated datasets to public/data/ and updates stats.json.
+3. Downloads newly uploaded or updated compilation PDFs.
+4. Uses pypdf to inspect page headers, collapse spaced letters, and detect FYUGP course codes:
+   - Pattern: MG[1-8][CourseType][DeptCode][Level 100-499 or Signature A00-A99]
+   - Strips trailing characters (e.g. TRANS).
+   - Detects course titles after hyphen (5 to 15 words); never allows title to equal department name.
+   - Detects Theory vs Practical model papers.
+   - Accurately segments multi-paper compilations without artificial page cuts.
+5. Slices each question paper into individual PDFs and saves to:
+   - uploads/model_papers/
+   - public/uploads/model_papers/
+   - ../mgu-qp-storage/pdf/
+6. Strict Deduplication:
+   - Enforces AT MOST 1 Theory and AT MOST 1 Practical model question paper per course code.
+   - Signature courses (ending in A00, A01, A02, A03, etc.) tagged is_signature: True.
+   - Updates catalog papers.json and model_papers.json.
+7. Automated Git Push to mgu-qp-storage repo for jsDelivr CDN delivery.
+8. Mirrors updated databases to public/data/ and updates stats.json.
 """
 
 import os
@@ -47,7 +49,7 @@ def safe_url_quote(url):
     except Exception:
         return url
 
-# Paths
+# Directory paths
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 PUB_DATA_DIR = os.path.join(BASE_DIR, "public", "data")
@@ -80,67 +82,64 @@ COURSE_TYPE_NAMES = {
     "SDC": "Skill Development Course",
     "MPC": "Minor Pathway Course",
     "MDE": "Multidisciplinary Elective",
-    "HON": "Honours Course"
+    "HON": "Honours Course",
+    "MIN": "Minor Course"
 }
 
+# Pre-load Department Taxonomy
+DEPT_DICT = {}
 DEPT_NAME_SET = set()
-DEPT_CODE_SET = set()
 depts_path = os.path.join(DATA_DIR, "departments.json")
 if os.path.exists(depts_path):
     try:
         with open(depts_path, "r", encoding="utf-8") as f:
             _depts = json.load(f)
             for d in _depts:
-                if d.get("name"):
-                    DEPT_NAME_SET.add(d["name"].strip().lower())
-                if d.get("code"):
-                    DEPT_CODE_SET.add(d["code"].strip().lower())
+                c = (d.get("code") or "").strip().upper()
+                n = (d.get("name") or "").strip()
+                if c:
+                    DEPT_DICT[c] = n
+                    DEPT_NAME_SET.add(c.lower())
+                if n:
+                    DEPT_NAME_SET.add(n.lower())
                 for m in d.get("majors", []):
+                    if m.get("code"):
+                        DEPT_DICT[m["code"].strip().upper()] = m.get("name") or n
+                        DEPT_NAME_SET.add(m["code"].strip().lower())
                     if m.get("name"):
                         DEPT_NAME_SET.add(m["name"].strip().lower())
-                    if m.get("code"):
-                        DEPT_CODE_SET.add(m["code"].strip().lower())
     except Exception as e:
-        print(f"[Warning] Failed to pre-load departments: {e}")
+        print(f"[Warning] Failed to load departments.json: {e}")
 
-def is_dept_name_or_code(val):
-    if not val:
+def is_department_name(title):
+    if not title:
         return True
-    v = val.strip().lower()
-    if len(v) <= 2:
-        return True
-    return (v in DEPT_NAME_SET) or (v in DEPT_CODE_SET)
+    t = title.strip().lower()
+    return t in DEPT_NAME_SET or t in [d.lower() for d in DEPT_DICT.keys()]
 
-def normalize_course_code(raw_str, default_sem=1):
-    if not raw_str:
+def collapse_spaced_words(text):
+    return re.sub(r'(?<=\b[A-Za-z0-9])\s+(?=[A-Za-z0-9]\b)', '', text)
+
+def clean_extracted_title(cand):
+    if not cand:
         return ""
-    c = raw_str.strip().upper()
-    c = re.sub(r'[^A-Z0-9]', '', c)
-    if c.startswith("24MG"):
-        c = c[2:]
-    if c.startswith("MGU") and len(c) >= 4 and c[3].isdigit():
-        c = "MG" + c[3:]
-    if c.startswith("MGI") or c.startswith("MGL"):
-        c = "MG1" + c[3:]
-    if not c.startswith("MG") and len(c) >= 8:
-        c = f"MG{default_sem}" + c
-    # Strip trailing letters that bled into course code from adjacent title text (e.g. MG4DSEMAT201TRANS -> MG4DSEMAT201)
-    m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', c)
-    if m_strip:
-        c = m_strip.group(1)
-    return c
+    cand = cand.strip()
+    cand = re.sub(r'^\d+[\.\)]\s*', '', cand)
+    cand = re.sub(r'\s*(?:Time\s*:|Duration\s*:|Max\s*\.?\s*Marks|Part\s+[A-Z]|Section\s+[A-Z]|Total\s*Marks|Marks\s*:|MGU\b|Admission\b|Semester\b).*$', '', cand, flags=re.IGNORECASE).strip()
+    cand = re.sub(r'[\s\-–—:]+$', '', cand).strip()
+    cand = re.sub(r'^["\'\(\[]+|["\'\)\]]+$', '', cand).strip()
+    return cand
 
-def parse_fyugp_course_code(raw_str):
-    if not raw_str:
+def parse_fyugp_course_code(code_str):
+    if not code_str:
         return None
-    clean = re.sub(r'[^A-Z0-9]', '', str(raw_str).strip().upper())
-    # Strip trailing letters if present
-    m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}[1-4][0-9]{2})[A-Z]+$', clean)
+    clean = re.sub(r'[^A-Z0-9]', '', str(code_str).strip().upper())
+    # Strip trailing letters (e.g. TRANS)
+    m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|[1-5][0-9]{2}))[A-Z]+$', clean)
     if m_strip:
         clean = m_strip.group(1)
-    # Match pattern: MG + [1-8] + Type + DeptPart + Level (A00-A08 or 100-499)
-    # e.g., MG4DSEMAT201 (regular), MG3DSEBOTA03 (signature)
-    m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})(A\d{2}|[1-4][0-9]{2})$', clean)
+        
+    m = re.match(r'^MG([1-8])(DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)([A-Z]{2,5})(A\d{2}|\d{3})$', clean)
     if not m:
         return None
     sem = int(m.group(1))
@@ -148,8 +147,7 @@ def parse_fyugp_course_code(raw_str):
     dept_code = m.group(3)
     lvl_str = m.group(4)
     is_sig = lvl_str.startswith('A')
-    level = int(lvl_str[1:]) if is_sig else int(lvl_str)
-
+    
     return {
         "valid": True,
         "full_code": clean,
@@ -157,33 +155,125 @@ def parse_fyugp_course_code(raw_str):
         "course_type": ctype,
         "dept_code": dept_code,
         "is_signature": is_sig,
-        "level": level
+        "level_str": lvl_str
     }
 
-def is_signature_code(raw_str):
-    if not raw_str:
-        return False
-    return bool(re.search(r'A\d{2}$', str(raw_str).strip().upper()))
+def extract_page_info(page_text, sem_default=1, catalog_by_code=None):
+    if not page_text or len(page_text.strip()) == 0:
+        return {'is_blank': True, 'is_start': False, 'codes': [], 'title': '', 'is_practical': False}
+    clean = ' '.join(page_text.split())
+    collapsed = collapse_spaced_words(clean)
+    upper = clean.upper()
+    collapsed_upper = collapsed.upper()
+    
+    # 1. Course Code Detection
+    raw_codes = []
+    for txt in [clean, collapsed]:
+        m_explicit = re.findall(r'(?:COURSE\s*(?:CODE|NO\.?)|PAPER\s*CODE)\s*[:\-–\s]+\s*([A-Z0-9_\-,\s]{6,60})', txt, re.IGNORECASE)
+        for m in m_explicit:
+            parts = re.split(r'[,;\/]+', m)
+            for p in parts:
+                p_clean = re.sub(r'\s+', '', p).upper()
+                if p_clean: raw_codes.append(p_clean)
+                
+    for txt in [clean, collapsed]:
+        pat = r'(?:MG\s*[1-8Il]?\s*(?:DSC|DSE|SEC|MDC|VAC|CCR|DEC|MDE|SDC|MPC|HON|MIN|AEC)\s*[A-Z]{2,5}\s*(?:A\d{2}|\d{3}))'
+        for m in re.findall(pat, txt, re.IGNORECASE):
+            raw_codes.append(re.sub(r'\s+', '', m).upper())
+        for m in re.findall(r'\b(MG[1-8][A-Z]{3,8}(?:A\d{2}|\d{3}))\b', txt, re.IGNORECASE):
+            raw_codes.append(re.sub(r'\s+', '', m).upper())
+            
+    valid_codes = []
+    for c in raw_codes:
+        c = c.replace('MGS5', 'MG5').replace('DEC', 'DSE')
+        m_strip = re.match(r'^(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|[1-5][0-9]{2}))[A-Z]+$', c)
+        if m_strip:
+            c = m_strip.group(1)
+        if c.startswith('MGDSE') or c.startswith('MGDSC') or c.startswith('MGSEC') or c.startswith('MGMDC') or c.startswith('MGVAC') or c.startswith('MGCCR') or c.startswith('MGAEC'):
+            c = f'MG{sem_default}' + c[2:]
+        c = re.sub(r'(?<=\d)[A-Za-z]+$', '', c)
+        
+        if re.search(r'\d$', c) and len(c) >= 8 and c.startswith('MG'):
+            if c not in valid_codes:
+                valid_codes.append(c)
 
-def extract_title_from_text(txt, course_code):
-    if not txt or not course_code:
-        return ""
-    clean = re.sub(r'\s+', ' ', txt)
-    escaped = re.escape(course_code)
-    # Pattern 1: Look for hyphen (or en-dash/em-dash/colon) after course code:
-    # [Code] [-–—:] [Course Name] (usually 5 to 15 words)
-    m1 = re.search(escaped + r'\s*[:\-–—\u2013\u2014\ufb01]+\s*(?!(?:Part|Section|Answer|Max|Duration|Total|Skill|Time|Marks|Hours|Reg|Roll|No|Semester)\b)([A-Za-z0-9][A-Za-z0-9\s,\/&\':\-–]{2,140}?)(?=\s*(?:\n|\r|\(|\bDuration\b|\bTime\b|\bMax(?:imum)?\b|\bTotal\b|\bPart\b|\bSection\b|\bAnswer\b|\d+\s*hrs|\d+\s*hours|\bMarks\b|\d{4}\s*Admi|\bAdmission\b|$))', clean, re.IGNORECASE)
-    if m1 and m1.group(1):
-        t = m1.group(1).strip()
-        t = re.sub(r'\s*MODEL\s*QUESTION\s*PAPER.*$', '', t, flags=re.IGNORECASE)
-        t = re.sub(r'\s*(?:TIME|DURATION|MAXIMUM\s*MARKS|TOTAL\s*MARKS).*$', '', t, flags=re.IGNORECASE)
-        t = re.sub(r'[:\-–—\s]+$', '', t).strip()
-        if not is_dept_name_or_code(t) and len(t) >= 4:
-            return t
-    return ""
+    # 2. Check if page is Exam Start
+    hasUniv = any(k in upper or k in collapsed_upper for k in ['MAHATMA GANDHI UNIVERSITY', 'MGU-UGP', 'MGU UGP', 'M.G. UNIVERSITY', 'MAHATMA GANDHI'])
+    hasExam = any(k in upper or k in collapsed_upper for k in ['EXAMINATION', 'EXAM', 'MODEL QUESTION PAPER', 'MODEL QP', 'MODEL EXAMINATION'])
+    hasMarks = any(k in upper or k in collapsed_upper for k in ['MAXIMUM MARKS', 'MAX. MARKS', 'TOTAL MARKS', 'MARKS:', 'TIME: 2 HOURS', 'TIME: 3 HOURS', 'TIME : 2 HOURS'])
+    hasTime = any(k in upper or k in collapsed_upper for k in ['TIME:', 'DURATION:', 'TIME :', 'DURATION :'])
+    
+    is_start = (hasUniv and hasExam and (hasTime or hasMarks)) or (len(valid_codes) > 0 and (hasTime or hasMarks or hasExam))
+    
+    # 3. Practical vs Theory
+    is_practical = bool(re.search(r'(?:PRACTICAL\s*(?:EXAMINATION|MODEL|QP|EXAM)|EXPERIMENT\s*NO|CONDUCT\s*ONE\s*EXPERIMENT|LAB\s*EXAMINATION)', upper))
+    
+    # 4. Title Extraction
+    title = ''
+    # Pattern A: Explicit Course Title:
+    for txt in [clean, collapsed]:
+        m_title = re.search(r'(?:COURSE\s*TITLE|TITLE\s*OF\s*(?:THE\s*)?COURSE|PAPER\s*NAME|COURSE\s*NAME)\s*[:\-–—\s]+([A-Za-z0-9\s,&\'\/\(\)\-]{3,90})', txt, re.IGNORECASE)
+        if m_title:
+            cand = clean_extracted_title(m_title.group(1))
+            if cand and not is_department_name(cand) and len(cand) >= 3:
+                title = cand
+                break
+                
+    # Pattern B: Code followed by hyphen or colon (5 to 15 words)
+    if not title:
+        for c in valid_codes:
+            esc = re.escape(c)
+            for txt in [clean, collapsed]:
+                m_hyphen = re.search(esc + r'\s*[:\-–—]+\s*([A-Za-z0-9\s,&\'\/\(\)\-]{3,90})', txt, re.IGNORECASE)
+                if m_hyphen:
+                    cand = clean_extracted_title(m_hyphen.group(1))
+                    if cand and not is_department_name(cand) and len(cand) >= 3 and not cand.lower().startswith(('part', 'section', 'time', 'max', 'total')):
+                        title = cand
+                        break
+                m_space = re.search(esc + r'\s+([A-Za-z][A-Za-z0-9\s,&\'\/\(\)\-]{3,80})', txt, re.IGNORECASE)
+                if m_space:
+                    cand = clean_extracted_title(m_space.group(1))
+                    if cand and not is_department_name(cand) and len(cand) >= 4 and not cand.lower().startswith(('part', 'section', 'time', 'max', 'total', 'marks', 'model')):
+                        title = cand
+                        break
+            if title: break
+            
+    # Pattern C: Title right before code
+    if not title:
+        for c in valid_codes:
+            esc = re.escape(c)
+            for txt in [clean, collapsed]:
+                m_before = re.search(r'(?:EXAMINATION|PAPER|ONWARDS|\))\s*[:\-–—\s]+([A-Za-z][A-Za-z0-9\s,&\'\/\(\)\-]{2,80}?)\s*[:\-–—\s(]+' + esc, txt, re.IGNORECASE)
+                if m_before:
+                    cand = clean_extracted_title(m_before.group(1))
+                    if cand and not is_department_name(cand) and len(cand) >= 4:
+                        title = cand
+                        break
+            if title: break
+
+    # Catalog Lookup for clean title
+    if catalog_by_code:
+        for c in valid_codes:
+            if c in catalog_by_code and catalog_by_code[c].get('title'):
+                cat_t = catalog_by_code[c]['title'].strip()
+                if not is_department_name(cat_t):
+                    if not title or title.isupper() or len(title) < 5 or is_department_name(title):
+                        title = cat_t
+                        break
+
+    if not title and valid_codes:
+        title = f'Course {valid_codes[0]}'
+        
+    return {
+        'is_blank': False,
+        'is_start': is_start,
+        'codes': valid_codes,
+        'title': title,
+        'is_practical': is_practical
+    }
 
 def fetch_page_html():
-    print(f"[Scraper] Fetching live page: {PAGE_URL} ...")
+    print(f"[Crawler] Fetching live page: {PAGE_URL} ...", flush=True)
     req = urllib.request.Request(
         PAGE_URL,
         headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MGU-Portal-Sync/1.0"}
@@ -192,11 +282,11 @@ def fetch_page_html():
         with urllib.request.urlopen(req, timeout=35) as resp:
             return resp.read().decode("utf-8", errors="ignore")
     except Exception as e:
-        print(f"[Scraper] Error fetching MGU page: {e}")
+        print(f"[Crawler] Error fetching MGU page: {e}", flush=True)
         return ""
 
 def parse_model_page_html(html):
-    print("[Scraper] Parsing HTML sections and semester tables...")
+    print("[Crawler] Parsing HTML semester sections and PDF links...", flush=True)
     sem_markers = list(re.finditer(r'([1-8](?:st|nd|rd|th)?\s+Semester)', html, re.IGNORECASE))
     
     real_sem_sections = []
@@ -259,7 +349,8 @@ def parse_model_page_html(html):
                 is_att = "model-question-papers-fyugp-2024/" in clean_href and clean_href != PAGE_URL
                 if not (is_pdf or is_att):
                     continue
-                if any(skip in clean_href for skip in ["UGC-approval", "Development-Plan", "Fee-Refund", "AD_A3"]):
+                # Skip non-academic circulars
+                if any(skip in clean_href for skip in ["UGC-approval", "Development-Plan", "Fee-Refund", "AD_A3", "5805-AC_A"]):
                     continue
                     
                 extracted_by_sem[sem_key][c_label].append({
@@ -271,7 +362,7 @@ def parse_model_page_html(html):
     return extracted_by_sem
 
 def resolve_attachment_pages(extracted_by_sem):
-    print("[Scraper] Resolving WordPress attachment pages to direct PDF download URLs...")
+    print("[Crawler] Resolving WordPress attachment links...", flush=True)
     items_to_resolve = []
     for sem, cats in extracted_by_sem.items():
         for cat, items in cats.items():
@@ -279,7 +370,7 @@ def resolve_attachment_pages(extracted_by_sem):
                 if it.get("is_attachment"):
                     items_to_resolve.append(it)
 
-    print(f"[Scraper] Found {len(items_to_resolve)} attachment pages to resolve.")
+    print(f"[Crawler] Found {len(items_to_resolve)} attachment pages to resolve.", flush=True)
 
     def _resolve_one(it):
         try:
@@ -288,7 +379,7 @@ def resolve_attachment_pages(extracted_by_sem):
             with urllib.request.urlopen(req, timeout=15) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
                 pdfs = re.findall(r'<a[^>]+href=[\"\']([^\"\']+\.pdf[^\'\"]*)[\"\']', html, re.IGNORECASE)
-                valid = [p.split('?')[0] for p in pdfs if not any(skip in p for skip in ['UGC', 'Development-Plan', 'Fee-Refund', 'AD_A3'])]
+                valid = [p.split('?')[0] for p in pdfs if not any(skip in p for skip in ['UGC', 'Development-Plan', 'Fee-Refund', 'AD_A3', '5805'])]
                 if valid:
                     it["resolved_url"] = valid[-1]
                     return True
@@ -300,7 +391,7 @@ def resolve_attachment_pages(extracted_by_sem):
         results = list(executor.map(_resolve_one, items_to_resolve))
 
     resolved_count = sum(1 for r in results if r)
-    print(f"[Scraper] Successfully resolved {resolved_count}/{len(items_to_resolve)} attachment pages.")
+    print(f"[Crawler] Successfully resolved {resolved_count}/{len(items_to_resolve)} attachment pages.", flush=True)
     return extracted_by_sem
 
 def download_file(url, target_path):
@@ -318,7 +409,7 @@ def download_file(url, target_path):
                 return True
         except Exception as e:
             if attempt == 2:
-                print(f"[Scraper] Failed to download {url}: {e}")
+                print(f"[Crawler] Download failed for {url}: {e}", flush=True)
             time.sleep(1.5)
         finally:
             if os.path.exists(tmp_path):
@@ -328,191 +419,25 @@ def download_file(url, target_path):
                     pass
     return False
 
-def process_single_pdf(item, known_courses, title_to_code=None):
-    local_p = item["local_path"]
-    if not os.path.exists(local_p) or os.path.getsize(local_p) < 100:
-        return []
-    
-    try:
-        reader = pypdf.PdfReader(local_p)
-    except Exception:
-        return []
-        
-    num_pages = len(reader.pages)
-    if num_pages == 0:
-        return []
-        
-    file_is_prac = item["is_default_prac"] or ("practical" in item["name"].lower()) or ("practical" in item["raw_fn"].lower())
-    sem = item["semester"]
-    
-    page_data = []
-    for idx, page in enumerate(reader.pages):
-        try:
-            txt = page.extract_text() or ""
-        except Exception:
-            txt = ""
-        txt_upper = txt.upper()
-        
-        has_univ = any(k in txt_upper for k in ["MAHATMA GANDHI UNIVERSITY", "MGU", "MODEL QUESTION PAPER", "DEGREE EXAMINATION", "SEMESTER EXAMINATION"])
-        has_marks = any(k in txt_upper for k in ["MAXIMUM MARKS", "MAX. MARKS", "TOTAL MARKS", "MAX MARKS", "MARKS:"])
-        has_time = any(k in txt_upper for k in ["TIME :", "TIME:", "DURATION:", "HOURS", "HRS"])
-        has_parts = any(k in txt_upper for k in ["PART A", "PART - A", "PART-A", "SECTION A", "SECTION - A"])
-        
-        is_start = (has_univ and (has_marks or has_time or has_parts)) or (has_marks and has_time)
-        
-        # Enhanced course code regex: matches standard, MGU, MGI, spaced codes, and COURSE CODE headers
-        raw_codes = re.findall(r'(?:24)?\s*(?:MG|MGU)\s*[1-8Il]\s*[A-Z0-9\s]{5,15}\d{0,4}', txt, re.IGNORECASE)
-        raw_cc_headers = re.findall(r'COURSE\s*CODE\s*[-–:\s]+\s*([A-Z0-9_\-\s]{6,20})', txt, re.IGNORECASE)
-        raw_codes.extend(raw_cc_headers)
-
-        norm_codes = [normalize_course_code(c, sem) for c in raw_codes]
-        norm_codes = [c for c in norm_codes if len(c) >= 10 and c.startswith("MG") and c[-1].isdigit()]
-        matched_known = [c for c in norm_codes if c in known_courses]
-        
-        fallback_codes = re.findall(r'(?:24)?\s*(MG[1-8][A-Z0-9_]{5,14})', item["name"] + " " + item["raw_fn"], re.IGNORECASE)
-        fallback_norm = [normalize_course_code(c, sem) for c in fallback_codes]
-        fallback_norm = [c for c in fallback_norm if len(c) >= 10 and c.startswith("MG") and c[-1].isdigit()]
-        
-        page_data.append({
-            "idx": idx,
-            "txt": txt,
-            "is_start": is_start,
-            "norm_codes": norm_codes,
-            "matched_known": matched_known,
-            "fallback_codes": fallback_norm
-        })
-        
-    paper_groups = []
-    current_start = 0
-    current_code = None
-    
-    for idx in range(num_pages):
-        pd = page_data[idx]
-        is_new = False
-        
-        cand_code = pd["matched_known"][0] if pd["matched_known"] else (pd["norm_codes"][0] if pd["norm_codes"] else None)
-        
-        if idx == 0:
-            is_new = True
-        elif pd["is_start"] and idx > current_start:
-            is_new = True
-        elif cand_code and current_code and (cand_code != current_code) and (idx - current_start >= 1):
-            is_new = True
-        elif (idx - current_start >= 7):
-            is_new = True
-            
-        if is_new and idx > 0:
-            paper_groups.append((current_start, idx - 1, current_code))
-            current_start = idx
-            current_code = cand_code
-        elif is_new and idx == 0:
-            current_code = cand_code
-        else:
-            if not current_code and cand_code:
-                current_code = cand_code
-                
-    paper_groups.append((current_start, num_pages - 1, current_code))
-    
-    extracted_papers = []
-    for g_idx, (s_p, e_p, code) in enumerate(paper_groups):
-        group_codes = []
-        full_text = ""
-        for pno in range(s_p, e_p + 1):
-            group_codes.extend(page_data[pno]["matched_known"])
-            if not group_codes:
-                group_codes.extend(page_data[pno]["norm_codes"])
-            if not group_codes:
-                group_codes.extend(page_data[pno]["fallback_codes"])
-            full_text += page_data[pno]["txt"] + "\n"
-            
-        best_code = group_codes[0] if group_codes else code
-        if not best_code and page_data[0]["fallback_codes"]:
-            best_code = page_data[0]["fallback_codes"][0]
-            
-        # Title matching fallback if code still not found
-        if not best_code and title_to_code:
-            txt_lower = full_text.lower()
-            for (t_sem, t_str), t_code in title_to_code.items():
-                if t_sem == sem and len(t_str) >= 10 and t_str in txt_lower:
-                    best_code = t_code
-                    break
-            
-        is_practical = file_is_prac or bool(re.search(r'practical\s+examination|practical\s+model|experiment\s+no|conduct\s+one\s+experiment', full_text, re.IGNORECASE))
-        if ("theory" in full_text.lower() or "theory examination" in full_text.lower()) and not file_is_prac:
-            is_practical = False
-            
-        paper_type = "PRACTICAL" if is_practical else "THEORY"
-        page_count = (e_p - s_p + 1)
-        
-        extracted_papers.append({
-            "semester": sem,
-            "source_item": item,
-            "start_page": s_p,
-            "end_page": e_p,
-            "page_count": page_count,
-            "course_code": best_code,
-            "paper_type": paper_type,
-            "full_text": full_text
-        })
-        
-    return extracted_papers
-
-def write_paper_pdf(paper, target_filename):
-    dest_paths = [
-        os.path.join(STORAGE_PDF_DIR, target_filename),
-        os.path.join(LOCAL_UPLOADS_MODEL_DIR, target_filename),
-        os.path.join(PUB_UPLOADS_MODEL_DIR, target_filename)
-    ]
-    
-    # Check if primary destination exists and has content
-    if all(os.path.exists(p) and os.path.getsize(p) > 500 for p in dest_paths[:2]):
-        return dest_paths[0]
-        
-    item = paper["source_item"]
-    try:
-        reader = pypdf.PdfReader(item["local_path"])
-        writer = pypdf.PdfWriter()
-        for pno in range(paper["start_page"], paper["end_page"] + 1):
-            if pno < len(reader.pages):
-                writer.add_page(reader.pages[pno])
-                
-        # Write to memory first
-        import io
-        buf = io.BytesIO()
-        writer.write(buf)
-        pdf_bytes = buf.getvalue()
-        
-        for dest in dest_paths:
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
-            with open(dest, "wb") as f_out:
-                f_out.write(pdf_bytes)
-                
-    except Exception as e:
-        print(f"[Splitter] Error writing {target_filename}: {e}")
-        
-    return dest_paths[0]
-
 def run_scraper(force=False):
     print("=" * 70)
-    print("  MGU FYUGP MODEL QUESTION PAPERS - DAILY AUTONOMOUS RUNNER")
+    print("  MGU MODEL PAPERS DAILY CRAWLER, SPLITTER & INTEGRITY RUNNER")
     print("  Target: https://www.mgu.ac.in/examinations/model-question-papers-fyugp-2024/")
-    print("=" * 70)
+    print("=" * 70, flush=True)
     
     # 1. Fetch & parse live HTML
     html = fetch_page_html()
     if not html:
-        print("[Scraper] Aborting: Failed to fetch MGU page.")
+        print("[Crawler] Aborting: Failed to fetch MGU page.", flush=True)
         return False
         
     extracted_by_sem = parse_model_page_html(html)
     extracted_by_sem = resolve_attachment_pages(extracted_by_sem)
     
-    # Save updated links structure
-    links_file = os.path.join(DATA_DIR, "mgu_official_model_links.json")
-    with open(links_file, "w", encoding="utf-8") as f:
+    # Save links cache
+    with open(os.path.join(DATA_DIR, "mgu_official_model_links.json"), "w", encoding="utf-8") as f:
         json.dump(extracted_by_sem, f, indent=2, ensure_ascii=False)
-    pub_links_file = os.path.join(PUB_DATA_DIR, "mgu_official_model_links.json")
-    with open(pub_links_file, "w", encoding="utf-8") as f:
+    with open(os.path.join(PUB_DATA_DIR, "mgu_official_model_links.json"), "w", encoding="utf-8") as f:
         json.dump(extracted_by_sem, f, indent=2, ensure_ascii=False)
 
     # 2. Flatten items to process
@@ -531,6 +456,7 @@ def run_scraper(force=False):
                 if not os.path.exists(local_p):
                     local_p = os.path.join(DOWNLOAD_CACHE_DIR, dec_fn)
                 
+                clean_u = url.split('?')[0].strip()
                 all_items.append({
                     "semester": sem_num,
                     "semester_label": sem_str,
@@ -538,397 +464,437 @@ def run_scraper(force=False):
                     "is_default_prac": is_default_prac,
                     "name": name,
                     "url": url,
+                    "clean_url": clean_u,
                     "local_path": local_p,
                     "raw_fn": raw_fn
                 })
 
-    print(f"[Scraper] Discovered {len(all_items)} total official compilation PDFs from MGU.")
+    print(f"[Crawler] Discovered {len(all_items)} total official compilation PDFs from MGU.", flush=True)
 
-    # 3. Concurrently download any missing/new PDFs
-    items_to_download = [it for it in all_items if not (os.path.exists(it["local_path"]) and os.path.getsize(it["local_path"]) > 500)]
-    print(f"[Scraper] {len(all_items) - len(items_to_download)} PDFs cached. Downloading {len(items_to_download)} new PDFs...")
+    # Load cache of previously processed URLs
+    cache_data = {}
+    processed_urls = set()
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                cache_data = json.load(f)
+                processed_urls = set(u.split('?')[0].strip() for u in cache_data.get("processed_urls", []))
+        except Exception as e:
+            print(f"[Warning] Failed to read {CACHE_FILE}: {e}")
+
+    if force:
+        items_to_process = all_items
+        print(f"[Crawler] Force flag enabled: processing all {len(all_items)} compilation PDFs.", flush=True)
+    else:
+        items_to_process = [it for it in all_items if it["clean_url"] not in processed_urls]
+        print(f"[Crawler] Found {len(items_to_process)} newly uploaded/unprocessed compilation PDFs (out of {len(all_items)} total on MGU site).", flush=True)
+
+    if not items_to_process and not force:
+        print("[Crawler] Everything is up to date! No newly uploaded model question papers found on mgu.ac.in.", flush=True)
+        cache_data["last_run"] = datetime.now(timezone.utc).isoformat()
+        cache_data["total_source_items"] = len(all_items)
+        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache_data, f, indent=2)
+        with open(os.path.join(PUB_DATA_DIR, "model_scrape_cache.json"), "w", encoding="utf-8") as f:
+            json.dump(cache_data, f, indent=2)
+        return True
+
+    # 3. Download new PDFs
+    items_to_download = [it for it in items_to_process if not (os.path.exists(it["local_path"]) and os.path.getsize(it["local_path"]) > 500)]
+    print(f"[Crawler] {len(items_to_process) - len(items_to_download)} cached. Downloading {len(items_to_download)} new PDFs...", flush=True)
     
     if items_to_download:
         def _dl_worker(it):
             return download_file(it["url"], it["local_path"])
         with ThreadPoolExecutor(max_workers=8) as executor:
             dl_res = list(executor.map(_dl_worker, items_to_download))
-        print(f"[Scraper] Downloaded {sum(1 for r in dl_res if r)}/{len(items_to_download)} files successfully.")
+        print(f"[Crawler] Downloaded {sum(1 for r in dl_res if r)}/{len(items_to_download)} files.", flush=True)
 
-    # 4. Load current database for deduplication and course lookup
+    # 4. Load catalog database
     papers_file = os.path.join(DATA_DIR, "papers.json")
     with open(papers_file, "r", encoding="utf-8") as f:
         papers_db = json.load(f)
 
-    depts_file = os.path.join(DATA_DIR, "departments.json")
-    departments = []
-    if os.path.exists(depts_file):
-        with open(depts_file, "r", encoding="utf-8") as f:
-            departments = json.load(f)
-    dept_name_map = {d.get("code"): d.get("name") for d in departments if d.get("code")}
-
-    known_courses = {}
-    papers_by_code = {}
-    title_to_code = {}
+    catalog_by_code = {}
     for p in papers_db:
-        cc = p.get("course_code")
+        cc = (p.get("course_code") or "").strip().upper()
         if cc:
-            clean_c = normalize_course_code(cc)
-            known_courses[clean_c] = p
-            papers_by_code[clean_c] = p
-            t = p.get("title", "").strip().lower()
-            if t and len(t) > 6:
-                s_num = p.get("semester", 1)
-                title_to_code[(s_num, t)] = clean_c
+            catalog_by_code[cc] = p
 
-    print(f"[Scraper] Loaded {len(known_courses)} existing known courses and {len(title_to_code)} course titles from portal database.")
+    # 5. Process each PDF with robust header detection and slicing
+    print("[Splitter] Inspecting pages, extracting codes & slicing PDFs...", flush=True)
+    new_sliced_count = 0
+    seen_paper_signatures = set()
 
-    # 5. Extract & Split PDFs
-    print("[Splitter] Splitting compilation PDFs into individual course papers...")
-    all_extracted = []
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        results = list(executor.map(lambda it: process_single_pdf(it, known_courses, title_to_code), all_items))
-        for r in results:
-            all_extracted.extend(r)
-
-    print(f"[Splitter] Extracted {len(all_extracted)} total individual course paper segments.")
-
-    # 6. Categorize into Theory, Practical, and Untagged
-    # Enforce: MAX 2 model QPs per course (at most 1 Theory, at most 1 Practical)
-    theory_by_course = {}
-    practical_by_course = {}
-    untagged_list = []
-
-    for paper in all_extracted:
-        cc = paper["course_code"]
-        ptype = paper["paper_type"]
-        
-        if cc:
-            if ptype == "THEORY":
-                if cc not in theory_by_course:
-                    theory_by_course[cc] = paper
-                elif paper["page_count"] > theory_by_course[cc]["page_count"] and theory_by_course[cc]["page_count"] == 1:
-                    theory_by_course[cc] = paper
-            else:
-                if cc not in practical_by_course:
-                    practical_by_course[cc] = paper
-                elif paper["page_count"] > practical_by_course[cc]["page_count"] and practical_by_course[cc]["page_count"] == 1:
-                    practical_by_course[cc] = paper
-        else:
-            untagged_list.append(paper)
-
-    print(f"[Classifier] Unique courses with THEORY model QP: {len(theory_by_course)}")
-    print(f"[Classifier] Unique courses with PRACTICAL model QP: {len(practical_by_course)}")
-    both_count = len(set(theory_by_course.keys()) & set(practical_by_course.keys()))
-    print(f"[Classifier] Courses with BOTH Theory and Practical model QPs: {both_count}")
-    print(f"[Classifier] Untagged papers needing admin review: {len(untagged_list)}")
-
-    # 7. Write split PDF files to storage and uploads/model_papers/
-    print("[Storage] Writing split PDF files to storage and local uploads...")
-    all_model_records = []
-
-    # Write Theory PDFs
-    for cc, paper in theory_by_course.items():
-        fname = f"MODEL_{cc}.pdf"
-        write_paper_pdf(paper, fname)
-        
-        cdn_url = f"{CDN_BASE}/{fname}"
-        raw_url = f"{RAW_BASE}/{fname}"
-        
-        course_info = known_courses.get(cc, {})
-        title = course_info.get("title") or paper["source_item"]["name"]
-        dept = course_info.get("parent_dept") or course_info.get("dept_code") or "GEN"
-        
-        rec = {
-            "model_id": f"model_{cc}_theory",
-            "course_code": cc,
-            "title": title,
-            "department": dept,
-            "semester": paper["semester"],
-            "pages": paper["page_count"],
-            "filename": fname,
-            "cdn_url": cdn_url,
-            "raw_url": raw_url,
-            "paper_type": "THEORY",
-            "source_pdf": paper["source_item"]["raw_fn"]
-        }
-        all_model_records.append(rec)
-        paper["record"] = rec
-
-    # Write Practical PDFs
-    for cc, paper in practical_by_course.items():
-        fname = f"MODEL_{cc}_PRACTICAL.pdf"
-        write_paper_pdf(paper, fname)
-        
-        cdn_url = f"{CDN_BASE}/{fname}"
-        raw_url = f"{RAW_BASE}/{fname}"
-        
-        course_info = known_courses.get(cc, {})
-        title = (course_info.get("title") or paper["source_item"]["name"]) + " (Practical)"
-        dept = course_info.get("parent_dept") or course_info.get("dept_code") or "GEN"
-        
-        rec = {
-            "model_id": f"model_{cc}_practical",
-            "course_code": cc,
-            "title": title,
-            "department": dept,
-            "semester": paper["semester"],
-            "pages": paper["page_count"],
-            "filename": fname,
-            "cdn_url": cdn_url,
-            "raw_url": raw_url,
-            "paper_type": "PRACTICAL",
-            "source_pdf": paper["source_item"]["raw_fn"]
-        }
-        all_model_records.append(rec)
-        paper["record"] = rec
-
-    # Write Untagged PDFs
-    untagged_json_data = []
-    for idx, paper in enumerate(untagged_list):
-        src_name = re.sub(r'[^A-Za-z0-9]', '_', paper["source_item"]["name"])[:20]
-        fname = f"MODEL_UNTAGGED_SEM{paper['semester']}_{src_name}_{idx+1}.pdf"
-        write_paper_pdf(paper, fname)
-        
-        cdn_url = f"{CDN_BASE}/{fname}"
-        code_cand = re.search(r'(?:24)?(MG[1-8][A-Z0-9_]{4,14})', paper["full_text"])
-        sug_code = normalize_course_code(code_cand.group(1)) if code_cand else ""
-        if sug_code and not sug_code[-1].isdigit():
-            sug_code = ""
-        
-        untagged_json_data.append({
-            "model_id": f"untagged_{paper['semester']}_{idx+1}",
-            "filename": fname,
-            "url": cdn_url,
-            "pages": paper["page_count"],
-            "source_pdf": paper["source_item"]["raw_fn"],
-            "snippet": clean_snippet,
-            "suggested_code": sug_code,
-            "suggested_title": paper["source_item"]["name"],
-            "is_practical": paper["paper_type"] == "PRACTICAL",
-            "semester": paper["semester"],
-            "status": "needs_admin_code"
-        })
-
-    # 8. Deduplication & Assignment in papers.json
-    # Rule: Check if same question paper is not available in website.
-    # Usually all courses have at least 1 Theory model paper, some have 2 (1 Theory + 1 Practical).
-    print("[Deduplication] Checking existing courses and assigning model papers...")
-    models_by_course = {}
-
-    for cc, paper in theory_by_course.items():
-        if cc not in models_by_course:
-            models_by_course[cc] = []
-        rec = paper["record"]
-        models_by_course[cc].append({
-            "id": rec["model_id"],
-            "title": "Official Model Question Paper (FYUGP 2024)",
-            "paper_type": "THEORY",
-            "pages": rec["pages"],
-            "url": rec["cdn_url"],
-            "raw_url": rec["raw_url"],
-            "filename": rec["filename"]
-        })
-
-    for cc, paper in practical_by_course.items():
-        if cc not in models_by_course:
-            models_by_course[cc] = []
-        rec = paper["record"]
-        models_by_course[cc].append({
-            "id": rec["model_id"],
-            "title": "Official Practical Model Paper",
-            "paper_type": "PRACTICAL",
-            "pages": rec["pages"],
-            "url": rec["cdn_url"],
-            "raw_url": rec["raw_url"],
-            "filename": rec["filename"]
-        })
-
-    assigned_count = 0
-    existing_codes = set()
-    for p in papers_db:
-        cc = p.get("course_code")
-        if cc:
-            clean_c = normalize_course_code(cc)
-            existing_codes.add(clean_c)
-            if clean_c in models_by_course:
-                # Merge model papers preserving any custom ones, ensuring strictly AT MOST 1 Theory and 1 Practical
-                current_models = p.get("model_papers", []) or []
-                theory_model = next((m for m in current_models if m.get("paper_type") == "THEORY"), None)
-                prac_model = next((m for m in current_models if m.get("paper_type") == "PRACTICAL"), None)
-                
-                for m in models_by_course[clean_c]:
-                    if m["paper_type"] == "THEORY" and not theory_model:
-                        theory_model = m
-                    elif m["paper_type"] == "PRACTICAL" and not prac_model:
-                        prac_model = m
-                        
-                final_models = []
-                if theory_model:
-                    final_models.append(theory_model)
-                if prac_model:
-                    final_models.append(prac_model)
-                    
-                p["model_papers"] = final_models
-                assigned_count += 1
-
-    # 9. Orphan courses: Courses discovered on MGU model papers page but not yet in papers.json
-    orphan_codes = set(models_by_course.keys()) - existing_codes
-    print(f"[Orphan Integration] Creating portal entries for {len(orphan_codes)} newly discovered courses...")
-
-    for cc in sorted(orphan_codes):
-        if not cc or not cc[-1].isdigit():
-            print(f"[Orphan Filter] Skipping invalid course code not ending in digit: {cc}")
+    for it in items_to_process:
+        local_p = it["local_path"]
+        if not os.path.exists(local_p) or os.path.getsize(local_p) < 100:
             continue
-
-        mps = models_by_course[cc]
-        parsed_fyugp = parse_fyugp_course_code(cc)
-        if parsed_fyugp:
-            sem = parsed_fyugp["semester"]
-            ctype = parsed_fyugp["course_type"]
-            dept_code = parsed_fyugp["dept_code"]
-            is_signature = parsed_fyugp["is_signature"]
-        else:
-            m_parse = re.match(r'^MG([1-8])([A-Z]{3})([A-Z]{3})?', cc)
-            sem = int(m_parse.group(1)) if m_parse else 1
-            ctype = m_parse.group(2) if m_parse else "DSC"
-            dept_code = (m_parse.group(3) if m_parse else None) or "GEN"
-            is_signature = False
-
-        dept_name = dept_name_map.get(dept_code, dept_code)
-
-        t_obj = theory_by_course.get(cc) or practical_by_course.get(cc)
-        extracted_t = extract_title_from_text(t_obj.get("full_text", ""), cc) if t_obj else ""
-        if extracted_t and not is_dept_name_or_code(extracted_t):
-            final_title = extracted_t
-        else:
-            raw_title = t_obj["source_item"]["name"] if t_obj else cc
-            raw_title = re.sub(r'\s*-\s*Theory.*|\s*-\s*Practical.*', '', raw_title, flags=re.IGNORECASE)
-            raw_title = re.sub(r'MG[1-8][A-Z0-9_]{5,14}', '', raw_title).strip(" -–")
-            if raw_title and not is_dept_name_or_code(raw_title):
-                final_title = raw_title
-            else:
-                final_title = f"Course {cc} ({COURSE_TYPE_NAMES.get(ctype, ctype)})"
-
-        new_course = {
-            "id": f"orphan_{cc.lower()}",
-            "qp_code": "",
-            "course_code": cc,
-            "title": final_title,
-            "raw_header": f"MG UNIVERSITY FYUGP MODEL PAPER - {final_title}",
-            "semester": sem,
-            "semester_label": f"Semester {sem}",
-            "course_type": ctype,
-            "course_type_name": COURSE_TYPE_NAMES.get(ctype, ctype),
-            "dept_code": dept_code,
-            "dept_name": dept_name,
-            "parent_dept": dept_code,
-            "parent_dept_name": dept_name,
-            "is_minor": False,
-            "is_signature": is_signature,
-            "exam_id": f"fyugp_sem{sem}_model",
-            "exam_name": f"Semester {sem} FYUGP (Model Question Paper)",
-            "batch": "2024",
-            "is_fyugp": True,
-            "has_qp": False,
-            "qp_url": "",
-            "has_scheme": False,
-            "scheme_url": "",
-            "files": [],
-            "has_files": False,
-            "minor_name": "",
-            "mgu_qp_url": "",
-            "raw_qp_url": "",
-            "model_papers": mps
-        }
-        papers_db.append(new_course)
-        assigned_count += 1
-
-    # 10. Update stats.json
-    stats_file = os.path.join(DATA_DIR, "stats.json")
-    stats = {}
-    if os.path.exists(stats_file):
-        with open(stats_file, "r", encoding="utf-8") as f:
-            stats = json.load(f)
             
-    stats["total_courses"] = len(papers_db)
-    stats["total_model_papers"] = len(all_model_records)
-    stats["courses_with_model_papers"] = sum(1 for p in papers_db if p.get("model_papers"))
-    stats["last_model_sync"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+        try:
+            reader = pypdf.PdfReader(local_p)
+        except Exception:
+            continue
+            
+        num_pages = len(reader.pages)
+        if num_pages == 0:
+            continue
+            
+        sem_num = it["semester"]
+        is_default_prac = it["is_default_prac"]
+        
+        page_infos = []
+        for p in reader.pages:
+            try:
+                txt = p.extract_text() or ''
+            except Exception:
+                txt = ''
+            pi = extract_page_info(txt, sem_default=sem_num, catalog_by_code=catalog_by_code)
+            if is_default_prac:
+                pi['is_practical'] = True
+            page_infos.append(pi)
+            
+        segments = []
+        cur_start = -1
+        cur_codes = []
+        
+        for i in range(num_pages):
+            pi = page_infos[i]
+            if pi['is_blank'] and cur_start == -1:
+                continue
+            if cur_start == -1:
+                cur_start = i
+                cur_codes = pi['codes']
+                continue
+                
+            c_codes = pi['codes']
+            is_s = pi['is_start']
+            elapsed = i - cur_start
+            
+            is_new = False
+            if c_codes and cur_codes and (c_codes[0] != cur_codes[0]) and elapsed >= 1:
+                is_new = True
+            elif is_s and elapsed >= 1:
+                is_new = True
+                
+            if is_new:
+                segments.append({
+                    'start': cur_start + 1,
+                    'end': i,
+                    'codes': cur_codes,
+                    'title': page_infos[cur_start]['title'],
+                    'is_practical': page_infos[cur_start]['is_practical']
+                })
+                cur_start = i
+                cur_codes = c_codes
+            else:
+                if not cur_codes and c_codes:
+                    cur_codes = c_codes
+                    
+        if cur_start != -1:
+            segments.append({
+                'start': cur_start + 1,
+                'end': num_pages,
+                'codes': cur_codes,
+                'title': page_infos[cur_start]['title'],
+                'is_practical': page_infos[cur_start]['is_practical']
+            })
+            
+        for seg in segments:
+            s_start = seg['start']
+            s_end = seg['end']
+            scodes = seg['codes']
+            stitle = seg['title']
+            is_prac = seg['is_practical']
+            ptype = 'PRACTICAL' if is_prac else 'THEORY'
+            page_count = s_end - s_start + 1
+            
+            if not scodes:
+                m_fn = re.search(r'\b(MG[1-8][A-Z]{3,8}(?:A\d{2}|\d{3}))\b', it["raw_fn"], re.IGNORECASE)
+                if m_fn:
+                    scodes = [m_fn.group(1).upper()]
+                    
+            if not scodes:
+                continue
+                
+            first_code = scodes[0]
+            sig_key = f"{first_code}_{ptype}"
+            if sig_key in seen_paper_signatures:
+                continue
+            seen_paper_signatures.add(sig_key)
+            
+            # Slice PDF
+            writer = pypdf.PdfWriter()
+            for p_no in range(s_start - 1, s_end):
+                writer.add_page(reader.pages[p_no])
+                
+            for code in scodes:
+                out_filename = f"MODEL_{code}_{ptype}.pdf" if ptype == 'PRACTICAL' else f"MODEL_{code}.pdf"
+                
+                # Check if file already exists with same or larger size
+                local_target = os.path.join(LOCAL_UPLOADS_MODEL_DIR, out_filename)
+                pub_target = os.path.join(PUB_UPLOADS_MODEL_DIR, out_filename)
+                storage_target = os.path.join(STORAGE_PDF_DIR, out_filename) if os.path.exists(STORAGE_PDF_DIR) else None
+                
+                # Write sliced file
+                with open(local_target, "wb") as f_out:
+                    writer.write(f_out)
+                shutil.copy2(local_target, pub_target)
+                if storage_target:
+                    shutil.copy2(local_target, storage_target)
+                new_sliced_count += 1
+                
+                # Metadata extraction
+                parsed = parse_fyugp_course_code(code)
+                sem = parsed["semester"] if parsed else sem_num
+                ctype = parsed["course_type"] if parsed else "DSC"
+                dept_c = parsed["dept_code"] if parsed else "GEN"
+                is_signature = parsed["is_signature"] if parsed else bool(re.search(r'A\d{2}$', code))
+                
+                dept_name_val = DEPT_DICT.get(dept_c, dept_c)
+                
+                clean_t = stitle
+                if is_department_name(clean_t):
+                    if code in catalog_by_code and catalog_by_code[code].get('title') and not is_department_name(catalog_by_code[code]['title']):
+                        clean_t = catalog_by_code[code]['title']
+                    else:
+                        clean_t = f"Course {code}"
+                        
+                model_entry = {
+                    "id": f"model_{code}_{ptype.lower()}_{int(time.time())}",
+                    "title": clean_t,
+                    "paper_type": ptype,
+                    "url": f"uploads/model_papers/{out_filename}",
+                    "cdn_url": f"{CDN_BASE}/{out_filename}",
+                    "pages": page_count,
+                    "source": f"MGU Official FYUGP Model Question Paper (Semester {sem})"
+                }
+                
+                if code in catalog_by_code:
+                    cat_p = catalog_by_code[code]
+                    if "model_papers" not in cat_p or not isinstance(cat_p["model_papers"], list):
+                        cat_p["model_papers"] = []
+                    # Keep at most 1 Theory and 1 Practical
+                    cat_p["model_papers"] = [m for m in cat_p["model_papers"] if m.get("paper_type", "THEORY").upper() != ptype]
+                    cat_p["model_papers"].append(model_entry)
+                    cat_p["has_files"] = True
+                    if is_department_name(cat_p.get("title")):
+                        cat_p["title"] = clean_t
+                    if is_signature:
+                        cat_p["is_signature"] = True
+                else:
+                    ts = int(time.time())
+                    new_course = {
+                        "id": f"custom_model_{code}_{ts}",
+                        "qp_code": "",
+                        "course_code": code,
+                        "title": clean_t,
+                        "raw_header": f"{code} {clean_t}",
+                        "semester": sem,
+                        "semester_label": f"Semester {sem}",
+                        "course_type": ctype,
+                        "course_type_name": COURSE_TYPE_NAMES.get(ctype, ctype),
+                        "dept_code": dept_c,
+                        "dept_name": dept_name_val,
+                        "parent_dept": dept_c,
+                        "parent_dept_name": dept_name_val,
+                        "is_minor": False,
+                        "minor_name": "",
+                        "is_signature": is_signature,
+                        "exam_id": "model_qp",
+                        "exam_name": "FYUGP Model Question Paper",
+                        "batch": "2024 Admission",
+                        "is_fyugp": True,
+                        "has_qp": False,
+                        "has_scheme": False,
+                        "files": [],
+                        "has_files": True,
+                        "model_papers": [model_entry],
+                        "is_custom_upload": True
+                    }
+                    papers_db.append(new_course)
+                    catalog_by_code[code] = new_course
 
-    # 11. Write out all JSON files (data/ and public/data/)
-    print("[Persist] Saving updated JSON databases...")
+    # 6. Global Deduplication & Canonical Enforcement
+    print("[Deduplication] Enforcing canonical single Theory & Practical model paper per course...", flush=True)
+    all_candidates = {}
+    for p in papers_db:
+        cc = (p.get("course_code") or "").strip().upper()
+        if not cc: continue
+        if p.get("model_papers") and isinstance(p["model_papers"], list):
+            for m in p["model_papers"]:
+                pt = (m.get("paper_type") or "THEORY").upper()
+                key = (cc, pt)
+                title = (m.get("title") or "").strip()
+                url = m.get("url") or ""
+                local_path = os.path.join(BASE_DIR, url.replace("/", os.sep))
+                exists = os.path.exists(local_path)
+                
+                score = 0
+                if exists: score += 40
+                if not title.startswith("Official Model"): score += 30
+                if not is_department_name(title) and len(title) >= 4: score += 20
+                if m.get("pages", 0) > 0: score += 10
+                score += min(len(title), 20)
+                
+                cand_item = {
+                    "course_code": cc,
+                    "course_title": p.get("title") or title,
+                    "semester": p.get("semester"),
+                    "dept_code": p.get("dept_code"),
+                    "dept_name": p.get("dept_name"),
+                    "course_type": p.get("course_type"),
+                    "is_signature": p.get("is_signature", False) or bool(re.search(r'A\d{2}$', cc)),
+                    "model_id": m.get("id"),
+                    "title": title if not is_department_name(title) else (p.get("title") or f"Course {cc}"),
+                    "paper_type": pt,
+                    "url": url,
+                    "cdn_url": m.get("cdn_url") or f"{CDN_BASE}/{os.path.basename(url)}",
+                    "pages": m.get("pages") or 2,
+                    "_score": score
+                }
+                if key not in all_candidates or score > all_candidates[key]["_score"]:
+                    all_candidates[key] = cand_item
+
+    canonical_by_code = {}
+    for (cc, pt), item in all_candidates.items():
+        if cc not in canonical_by_code:
+            canonical_by_code[cc] = []
+        clean_item = dict(item)
+        clean_item.pop("_score", None)
+        canonical_by_code[cc].append(clean_item)
+
+    # Sync to all records in papers_db
+    for p in papers_db:
+        cc = (p.get("course_code") or "").strip().upper()
+        if cc in canonical_by_code:
+            best_models = canonical_by_code[cc]
+            p["model_papers"] = [
+                {
+                    "id": m["model_id"],
+                    "title": m["title"],
+                    "paper_type": m["paper_type"],
+                    "url": m["url"],
+                    "cdn_url": m["cdn_url"],
+                    "pages": m["pages"],
+                    "source": "MGU Official FYUGP Model Question Paper"
+                }
+                for m in best_models
+            ]
+            p["has_files"] = True
+            if re.search(r'A\d{2}$', cc) or 'A0' in cc or 'A1' in cc:
+                p["is_signature"] = True
+            if is_department_name(p.get("title")):
+                non_dept = [m["title"] for m in best_models if not is_department_name(m["title"])]
+                p["title"] = non_dept[0] if non_dept else f"Course {cc}"
+        else:
+            p["model_papers"] = []
+
+    # Build unique model_papers.json
+    final_model_catalog = []
+    for (cc, pt), item in sorted(all_candidates.items(), key=lambda x: (x[1].get('semester') or 1, x[0][0])):
+        clean_entry = dict(item)
+        clean_entry.pop("_score", None)
+        final_model_catalog.append(clean_entry)
+
+    # 7. Persist to disk
+    print("[Persist] Saving catalog databases...", flush=True)
     with open(os.path.join(DATA_DIR, "papers.json"), "w", encoding="utf-8") as f:
         json.dump(papers_db, f, indent=2, ensure_ascii=False)
     with open(os.path.join(PUB_DATA_DIR, "papers.json"), "w", encoding="utf-8") as f:
         json.dump(papers_db, f, indent=2, ensure_ascii=False)
 
     with open(os.path.join(DATA_DIR, "model_papers.json"), "w", encoding="utf-8") as f:
-        json.dump(all_model_records, f, indent=2, ensure_ascii=False)
+        json.dump(final_model_catalog, f, indent=2, ensure_ascii=False)
     with open(os.path.join(PUB_DATA_DIR, "model_papers.json"), "w", encoding="utf-8") as f:
-        json.dump(all_model_records, f, indent=2, ensure_ascii=False)
+        json.dump(final_model_catalog, f, indent=2, ensure_ascii=False)
 
-    with open(os.path.join(DATA_DIR, "untagged_model_papers.json"), "w", encoding="utf-8") as f:
-        json.dump(untagged_json_data, f, indent=2, ensure_ascii=False)
-    with open(os.path.join(PUB_DATA_DIR, "untagged_model_papers.json"), "w", encoding="utf-8") as f:
-        json.dump(untagged_json_data, f, indent=2, ensure_ascii=False)
+    # Update stats.json
+    stats_file = os.path.join(DATA_DIR, "stats.json")
+    stats = {}
+    if os.path.exists(stats_file):
+        try:
+            with open(stats_file, "r", encoding="utf-8") as f:
+                stats = json.load(f)
+        except Exception:
+            pass
+    stats["total_courses"] = len(papers_db)
+    stats["total_model_papers"] = len(final_model_catalog)
+    stats["courses_with_model_papers"] = len(canonical_by_code)
+    stats["last_model_sync"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
     with open(stats_file, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
     with open(os.path.join(PUB_DATA_DIR, "stats.json"), "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
 
-    # 12. Save scrape cache
-    scrape_cache = {
-        "last_run": datetime.now(timezone.utc).isoformat(),
-        "page_url": PAGE_URL,
-        "total_source_items": len(all_items),
-        "total_split_model_records": len(all_model_records),
-        "total_courses_assigned": assigned_count
-    }
-    with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(scrape_cache, f, indent=2)
+    # Update cache_data with processed URLs
+    for it in items_to_process:
+        processed_urls.add(it["clean_url"])
+    cache_data["last_run"] = datetime.now(timezone.utc).isoformat()
+    cache_data["page_url"] = PAGE_URL
+    cache_data["total_source_items"] = len(all_items)
+    cache_data["total_split_model_records"] = len(final_model_catalog)
+    cache_data["total_courses_assigned"] = len(canonical_by_code)
+    cache_data["processed_urls"] = sorted(list(processed_urls))
 
-    # 13. Sync storage repository if available
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache_data, f, indent=2)
+    with open(os.path.join(PUB_DATA_DIR, "model_scrape_cache.json"), "w", encoding="utf-8") as f:
+        json.dump(cache_data, f, indent=2)
+
+    # 8. Sync remote storage repo
     sync_storage_repo()
 
     print("\n" + "=" * 70)
-    print("  MGU MODEL QUESTION PAPERS SYNC SUMMARY")
+    print("  MGU MODEL QUESTION PAPERS DAILY RUN COMPLETE")
     print("=" * 70)
-    print(f"  Total official source PDFs: {len(all_items)}")
-    print(f"  Total individual model papers generated: {len(all_model_records)}")
-    print(f"  Courses assigned model papers: {assigned_count}")
-    print(f"  Untagged queue for Admin: {len(untagged_json_data)}")
-    print(f"  Total database courses now: {len(papers_db)}")
-    print("=" * 70)
+    print(f"  Source compilation PDFs checked: {len(all_items)}")
+    print(f"  Total canonical model papers: {len(final_model_catalog)}")
+    print(f"  Total portal courses now: {len(papers_db)}")
+    print("=" * 70, flush=True)
     return True
 
 def sync_storage_repo():
     git_exe = os.path.abspath(os.path.join(BASE_DIR, "..", "mingit", "cmd", "git.exe"))
     if not os.path.exists(git_exe):
         git_exe = shutil.which("git") or "git"
+
+    token = os.environ.get("STORAGE_PAT") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+
     if not os.path.exists(STORAGE_DIR):
-        return
+        if token:
+            try:
+                import subprocess
+                clone_url = f"https://{token}@github.com/sinan-newman/mgu-qp-storage.git"
+                print(f"[Storage Push] Cloning storage repository...", flush=True)
+                subprocess.run([git_exe, "clone", "--depth", "1", clone_url, STORAGE_DIR], check=True)
+            except Exception as e:
+                print(f"[Storage Push] Note: Could not clone storage repo: {e}", flush=True)
+                return
+        else:
+            return
+
     try:
         import subprocess
+        # Check if any PDFs in LOCAL_UPLOADS_MODEL_DIR need copying to STORAGE_PDF_DIR
+        if os.path.exists(LOCAL_UPLOADS_MODEL_DIR) and os.path.exists(STORAGE_PDF_DIR):
+            for fname in os.listdir(LOCAL_UPLOADS_MODEL_DIR):
+                if fname.endswith(".pdf"):
+                    src = os.path.join(LOCAL_UPLOADS_MODEL_DIR, fname)
+                    dst = os.path.join(STORAGE_PDF_DIR, fname)
+                    if not os.path.exists(dst) or os.path.getsize(dst) != os.path.getsize(src):
+                        shutil.copy2(src, dst)
+
         status = subprocess.check_output([git_exe, "-C", STORAGE_DIR, "status", "-s"], text=True)
-        untracked = [line.strip().replace("?? ", "").strip() for line in status.splitlines() if line.startswith("?? pdf/MODEL_")]
+        untracked = [line.strip().replace("?? ", "").replace("M ", "").strip() for line in status.splitlines() if "pdf/MODEL_" in line]
         if not untracked:
-            print("[Storage Push] All storage PDFs are already up to date.")
+            print("[Storage Push] Storage repository is up to date.", flush=True)
             return
-        print(f"[Storage Push] Staging and pushing {len(untracked)} new split PDFs to mgu-qp-storage...")
+        print(f"[Storage Push] Staging and pushing {len(untracked)} updated PDFs to mgu-qp-storage...", flush=True)
         batch_size = 50
         batches = [untracked[i:i + batch_size] for i in range(0, len(untracked), batch_size)]
         
-        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
-        if not token:
-            try:
-                log_p = r"C:\Users\Navirex\.gemini\antigravity\brain\87d52a0b-0a87-4dfd-b1bf-99a37fa42aef\.system_generated\logs\transcript.jsonl"
-                if os.path.exists(log_p):
-                    token = re.search(r'(ghp_[a-zA-Z0-9]+)', open(log_p, encoding='utf-8').read()).group(1)
-            except Exception:
-                pass
-                
         push_target = f"https://{token}@github.com/sinan-newman/mgu-qp-storage.git" if token else "origin"
         
         for idx, batch in enumerate(batches, 1):
@@ -940,13 +906,12 @@ def sync_storage_repo():
             for attempt in range(3):
                 p_res = subprocess.run([git_exe, "-C", STORAGE_DIR, "push", push_target, "main"], capture_output=True, text=True)
                 if p_res.returncode == 0:
-                    print(f"[Storage Push] Batch {idx}/{len(batches)} pushed successfully.")
+                    print(f"[Storage Push] Batch {idx}/{len(batches)} pushed.", flush=True)
                     break
                 else:
-                    print(f"[Storage Push] Batch {idx} push attempt {attempt+1} failed: {p_res.stderr.strip()[:100]}")
                     time.sleep(2)
     except Exception as e:
-        print(f"[Storage Push] Note: Storage repo auto-push skipped/error: {e}")
+        print(f"[Storage Push] Note: Storage push completed or skipped: {e}", flush=True)
 
 if __name__ == "__main__":
     force_run = "--force" in sys.argv

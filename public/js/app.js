@@ -434,12 +434,8 @@ const App = {
         if (totalDeptsEl) totalDeptsEl.textContent = `${activeDepts.length}`;
         if (lastSyncEl) lastSyncEl.textContent = '2024 Admission';
         const totalModels = (this.modelCatalog && this.modelCatalog.length > 0) ? this.modelCatalog.length : 1649;
-        const modelBadge = document.getElementById('modelNavCountBadge');
-        if (modelBadge) modelBadge.textContent = totalModels.toLocaleString();
         const statTotalModelEl = document.getElementById('statTotalModelPapers');
         if (statTotalModelEl) statTotalModelEl.textContent = `${totalModels.toLocaleString()}+`;
-        const headerModelCountEl = document.getElementById('headerModelCount');
-        if (headerModelCountEl) headerModelCountEl.textContent = totalModels.toLocaleString();
     },
 
     bindEvents() {
@@ -829,14 +825,6 @@ const App = {
             return;
         }
 
-        // Model Papers route: #/model-papers or #model-papers or #models
-        if (hash === '#/model-papers' || hash === '#model-papers' || hash === '#models') {
-            if (this.state.activeTab !== 'model-papers' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
-                this.switchTab('model-papers', false);
-            }
-            return;
-        }
-
         // 2. Papers route: #/papers or #/all-papers or #papers
         if (hash === '#/papers' || hash === '#/all-papers' || hash === '#papers') {
             if (this.state.activeTab !== 'papers' || !document.getElementById('deptDetailContainer')?.classList.contains('hidden')) {
@@ -905,8 +893,6 @@ const App = {
         const papersSection = document.getElementById('papersSection');
         const departmentsSection = document.getElementById('departmentsSection');
         const filterControls = document.getElementById('filterControlsSection');
-        const modelSection = document.getElementById('modelPapersSection');
-        if (tab !== 'model-papers' && modelSection) modelSection.classList.add('hidden');
 
         if (tab === 'departments') {
             document.title = 'Mahatma Gandhi University • FYUGP Question Papers and Schemes';
@@ -941,19 +927,6 @@ const App = {
             if (filterControls) filterControls.classList.remove('hidden');
             this.state.currentPage = 1;
             this.applyFilters();
-        } else if (tab === 'model-papers') {
-            document.title = 'Official Model Question Papers - MGU FYUGP';
-            if (updateHash && window.location.hash !== '#/model-papers') {
-                this.currentRoute = '#/model-papers';
-                window.location.hash = '#/model-papers';
-            }
-            if (papersSection) papersSection.classList.add('hidden');
-            if (departmentsSection) departmentsSection.classList.add('hidden');
-            if (filterControls) filterControls.classList.add('hidden');
-            if (modelSection) modelSection.classList.remove('hidden');
-            this.modelState.currentPage = 1;
-            this.populateModelDepartments();
-            this.renderModelPapers();
         }
     },
 
@@ -1525,10 +1498,10 @@ const App = {
                                         </span>
                                     </div>
                                     <div class="flex items-center gap-1.5 shrink-0">
-                                        <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
+                                        <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
                                             <i class="bi bi-eye"></i> View
                                         </button>
-                                        <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
+                                        <a href="${m.cdn_url || m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
                                             <i class="bi bi-download"></i>
                                         </a>
                                     </div>
@@ -1659,10 +1632,10 @@ const App = {
                                     </span>
                                 </div>
                                 <div class="flex items-center gap-1 shrink-0">
-                                    <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
+                                    <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
                                         <i class="bi bi-eye"></i> View
                                     </button>
-                                    <a href="${m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
+                                    <a href="${m.cdn_url || m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
                                         <i class="bi bi-download"></i>
                                     </a>
                                 </div>
@@ -1759,10 +1732,10 @@ const App = {
                                                 ${course.model_papers && course.model_papers.length > 0 ? `
                                                     <div class="flex items-center gap-1.5 flex-wrap pt-1 border-t border-slate-100 dark:border-slate-700/50">
                                                         ${course.model_papers.map(m => `
-                                                            <button onclick="App.previewDirect(this, '${m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1 transition" title="${m.title}">
+                                                            <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded ${m.paper_type === 'PRACTICAL' ? 'bg-purple-600 hover:bg-purple-500' : 'bg-indigo-600 hover:bg-indigo-500'} text-white shadow-2xs flex items-center gap-1 transition" title="${m.title}">
                                                                 <i class="bi ${m.paper_type === 'PRACTICAL' ? 'bi-flask' : 'bi-file-earmark-text'}"></i> ${m.paper_type === 'PRACTICAL' ? 'Model Prac' : 'Model QP'}
                                                             </button>
-                                                            <a href="${m.url}" target="_blank" download class="p-0.5 text-xs text-slate-500 hover:text-indigo-600" title="Download Model QP">
+                                                            <a href="${m.cdn_url || m.url}" target="_blank" download class="p-0.5 text-xs text-slate-500 hover:text-indigo-600" title="Download Model QP">
                                                                 <i class="bi bi-download"></i>
                                                             </a>
                                                         `).join('')}

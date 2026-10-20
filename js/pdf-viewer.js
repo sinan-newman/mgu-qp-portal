@@ -126,6 +126,16 @@ const PDFViewer = {
         let viewerSrc = url;
         const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
         
+        // If hosted on GitHub Pages or static host and url is a relative uploads/ path, fallback to CDN URL
+        if (!isLocalBackend && url.startsWith('uploads/')) {
+            if (this.currentDoc && this.currentDoc.cdn_url) {
+                url = this.currentDoc.cdn_url;
+            } else {
+                const filename = url.split('/').pop();
+                url = `https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/${filename}`;
+            }
+        }
+
         if (url.startsWith('blob:') || url.startsWith('data:')) {
             viewerSrc = url;
         } else if (isLocalBackend) {

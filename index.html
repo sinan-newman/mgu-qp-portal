@@ -739,6 +739,10 @@
                     <button id="adminTabBtnUpload" onclick="App.switchAdminTab('upload')" class="px-4 py-2 text-xs font-semibold rounded-xl bg-blue-600 text-white shadow-xs flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-cloud-arrow-up-fill"></i> Add & Ingest Paper (Auto-Detect)
                     </button>
+                    <button id="adminTabBtnPending" onclick="App.switchAdminTab('pending')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
+                        <i class="bi bi-shield-exclamation text-amber-500"></i> Ambiguous Review Queue
+                        <span id="adminPendingBadge" class="ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">0</span>
+                    </button>
                     <button id="adminTabBtnModelQp" onclick="App.switchAdminTab('modelQp')" class="px-4 py-2 text-xs font-medium rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center gap-1.5 transition shrink-0">
                         <i class="bi bi-file-earmark-text-fill text-indigo-500"></i> Model Question Papers
                         <span id="adminUntaggedCountBadge" class="ml-1 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">54</span>
@@ -1407,6 +1411,34 @@
 
                 </div>
 
+                
+                <!-- TAB 6: AMBIGUOUS REVIEW QUEUE (ISOLATED FROM PUBLIC PORTAL) -->
+                <div id="adminTabPendingView" class="hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs">
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="bi bi-shield-exclamation text-amber-500"></i>
+                                Ambiguous Question Papers & Schemes Review Queue
+                            </h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-3xl">
+                                Question papers and valuation schemes with missing course codes or generic categorization from MGU exam portals are quarantined here. They are <strong>strictly hidden from the public student portal</strong> until reviewed and verified. If a course record already exists, entering its course code will automatically deduplicate and merge it.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-2 shrink-0">
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                                <strong id="adminPendingCountHeader">0</strong> Pending Review
+                            </span>
+                            <button type="button" onclick="App.loadPendingPapers(true)" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 flex items-center gap-1 transition">
+                                <i class="bi bi-arrow-clockwise"></i> Refresh
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="adminPendingContainer" class="space-y-3">
+                        <!-- Populated dynamically by App.renderPendingPapers() -->
+                    </div>
+                </div>
+
                 <!-- Global Datalist for Course Code Autocomplete -->
                 <datalist id="courseCodeDatalist"></datalist>
 
@@ -1690,7 +1722,7 @@
         };
         window.fetchResource = fetchResource;
     </script>
-    <script src="js/app.js?v=20261023_0245"></script>
+    <script src="js/app.js?v=20261023_0330"></script>
         <!-- Modal: Crawl Ingested Files Details Modal -->
     <div id="crawlDetailsModal" onclick="if(event.target === this) App.closeCrawlDetailsModal()" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
         <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-3xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-3.5 max-h-[90vh] flex flex-col">

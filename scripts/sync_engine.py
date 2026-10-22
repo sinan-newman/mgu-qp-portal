@@ -141,6 +141,34 @@ def fetch_exam_html(exam_id):
             time.sleep(1.5)
     return ""
 
+def extract_metadata_from_pdf(pdf_path):
+    if not os.path.exists(pdf_path):
+        return None, None
+    try:
+        from pypdf import PdfReader
+        reader = PdfReader(pdf_path)
+        if len(reader.pages) == 0:
+            return None, None
+        page1 = reader.pages[0].extract_text() or ""
+        m_code = re.search(r'\b(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|DEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|\d{3}))\b', page1, re.IGNORECASE)
+        code = m_code.group(1).upper() if m_code else None
+
+        title = None
+        for line in page1.splitlines()[:15]:
+            l_str = line.strip()
+            if not l_str or len(l_str) < 4:
+                continue
+            if any(k in l_str.upper() for k in ["MAHATMA GANDHI", "UNIVERSITY", "EXAMINATION", "PAGES", "SECTION", "TIME", "MAXIMUM", "TOTAL"]):
+                continue
+            if code and code in l_str.upper():
+                continue
+            if re.search(r'[A-Za-z]{4,}', l_str):
+                title = l_str
+                break
+        return code, title
+    except Exception:
+        return None, None
+
 def parse_header_text(raw_header):
     header = clean_html(raw_header)
     qp_code = ""
@@ -490,6 +518,21 @@ def run_sync(trigger_type="manual"):
         qp_code, course_code, title = parse_header_text(raw_header)
         meta_course = parse_course_metadata(course_code, sem_default=sem_num)
 
+        # Fallback: check downloaded PDF if course code is missing or GEN
+        if not course_code or meta_course["dept_code"] == "GEN":
+            for furl, flabel in c_files:
+                fn = os.path.basename(furl)
+                local_p = os.path.join(LOCAL_UPLOADS_DIR, fn)
+                pdf_code, pdf_title = extract_metadata_from_pdf(local_p)
+                if pdf_code:
+                    course_code = pdf_code
+                    if pdf_title and (not title or title.startswith("Course ") or is_department_name(title)):
+                        title = pdf_title
+                    meta_course = parse_course_metadata(course_code, sem_default=sem_num)
+                    break
+
+        is_ambiguous = bool(not course_code or meta_course["dept_code"] == "GEN")
+
         key = (str(eid), course_code.upper(), qp_code.upper())
         target_paper = papers_by_key.get(key)
         
@@ -532,7 +575,10 @@ def run_sync(trigger_type="manual"):
                 "files": [],
                 "has_files": False,
                 "is_signature": meta_course["is_signature"],
-                "model_papers": []
+                "model_papers": [],
+                "needs_review": is_ambiguous,
+                "status": "pending_review" if is_ambiguous else "published",
+                "review_reason": "Ambiguous course code or General Studies categorization" if is_ambiguous else ""
             }
             papers_db.append(target_paper)
             papers_by_key[key] = target_paper

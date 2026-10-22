@@ -629,7 +629,7 @@ def run_sync(trigger_type="manual"):
         "new_schemes_added": new_schemes_added,
         "new_courses_added": new_courses_added,
         "summary": f"{total_new_files} new files added ({new_qps_added} QPs, {new_schemes_added} Schemes)" if total_new_files > 0 else "0 new files (Database up to date)",
-        "new_items": new_items_logged[:50]  # Store first 50 detailed items
+        "new_items": new_items_logged
     }
     # Prepend to history (most recent first)
     crawl_history.insert(0, crawl_record)

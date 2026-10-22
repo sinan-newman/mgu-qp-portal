@@ -20,6 +20,8 @@ const App = {
     filteredPapers: [],
     feedbackReports: [],
     inboxFilter: 'all',
+    currentCrawlModalRecord: null,
+    currentCrawlModalFilter: 'all',
 
     modelState: {
         searchQuery: '',
@@ -496,8 +498,8 @@ const App = {
                             ${added > 0 ? `+${added} files` : '0 new'}
                         </span>
                         ${hasDetails ? `
-                            <button onclick="App.showCrawlDetailsModal(${idx})" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 transition flex items-center gap-1">
-                                <i class="bi bi-list-check"></i> View Files (${rec.new_items.length})
+                            <button onclick="App.showCrawlDetailsModal(${idx})" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 transition flex items-center gap-1.5 shadow-2xs">
+                                <i class="bi bi-list-check text-sm"></i> View All Files (${rec.new_items ? rec.new_items.length : (rec.new_files_added || 0)})
                             </button>
                         ` : ''}
                     </div>
@@ -513,45 +515,208 @@ const App = {
         const rec = this.crawlHistoryCache[index];
         if (!rec || !rec.new_items) return;
 
+        this.currentCrawlModalRecord = rec;
+        this.currentCrawlModalFilter = 'all';
+
         const modal = document.getElementById('crawlDetailsModal');
         const titleEl = document.getElementById('crawlModalTitle');
         const subtitleEl = document.getElementById('crawlModalSubtitle');
-        const listEl = document.getElementById('crawlModalFilesList');
+        const searchInput = document.getElementById('crawlModalSearchInput');
+        const clearBtn = document.getElementById('crawlModalClearSearch');
 
-        if (!modal || !listEl) return;
+        if (!modal) return;
 
         const isAuto = (rec.trigger_type || '').toLowerCase() === 'automatic';
         if (titleEl) {
-            titleEl.innerHTML = `<i class="bi bi-file-earmark-check-fill text-emerald-600"></i> ${isAuto ? 'Automatic Crawl' : 'Manual Crawl'} — ${rec.new_items.length} Files Added`;
+            titleEl.innerHTML = `<i class="bi bi-file-earmark-check-fill text-emerald-600 shrink-0"></i> ${isAuto ? 'Automatic Crawl (6-hr)' : 'Manual Crawl'} — All ${rec.new_items.length} Files Added`;
         }
         if (subtitleEl) {
             subtitleEl.textContent = `Completed at ${rec.timestamp_local || rec.timestamp} across ${rec.total_exams_checked || 10} examination sessions`;
         }
 
+        if (searchInput) {
+            searchInput.value = '';
+        }
+        if (clearBtn) {
+            clearBtn.classList.add('hidden');
+        }
+
+        this.renderCrawlModalFilters();
+        this.renderCrawlModalFiles();
+
+        modal.classList.remove('hidden');
+    },
+
+    renderCrawlModalFilters() {
+        const pillsContainer = document.getElementById('crawlModalFilterPills');
+        if (!pillsContainer || !this.currentCrawlModalRecord) return;
+
+        const items = this.currentCrawlModalRecord.new_items || [];
+        const totalCount = items.length;
+        const qpCount = items.filter(x => (x.file_type || '').toUpperCase() === 'QP').length;
+        const schemeCount = items.filter(x => (x.file_type || '').toUpperCase() === 'SCHEME').length;
+
+        // Group by semester
+        const semCounts = {};
+        items.forEach(x => {
+            const s = x.semester || 5;
+            semCounts[s] = (semCounts[s] || 0) + 1;
+        });
+
+        // Sorted semesters descending: 5, 4, 3, 2, 1
+        const sems = Object.keys(semCounts).map(Number).sort((a, b) => b - a);
+
+        let pillsHtml = `
+            <button type="button" onclick="App.setCrawlModalFilter('all')" class="crawl-filter-pill px-3 py-1 rounded-lg font-semibold shrink-0 transition text-xs ${this.currentCrawlModalFilter === 'all' ? 'bg-blue-600 text-white shadow-2xs' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-600 dark:text-slate-300'}">
+                All (${totalCount})
+            </button>
+        `;
+
+        if (schemeCount > 0) {
+            pillsHtml += `
+                <button type="button" onclick="App.setCrawlModalFilter('SCHEME')" class="crawl-filter-pill px-3 py-1 rounded-lg font-semibold shrink-0 transition text-xs ${this.currentCrawlModalFilter === 'SCHEME' ? 'bg-emerald-600 text-white shadow-2xs' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-600 dark:text-slate-300'}">
+                    Schemes (${schemeCount})
+                </button>
+            `;
+        }
+
+        if (qpCount > 0) {
+            pillsHtml += `
+                <button type="button" onclick="App.setCrawlModalFilter('QP')" class="crawl-filter-pill px-3 py-1 rounded-lg font-semibold shrink-0 transition text-xs ${this.currentCrawlModalFilter === 'QP' ? 'bg-indigo-600 text-white shadow-2xs' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-600 dark:text-slate-300'}">
+                    Question Papers (${qpCount})
+                </button>
+            `;
+        }
+
+        sems.forEach(s => {
+            const count = semCounts[s];
+            const filterKey = `sem-${s}`;
+            pillsHtml += `
+                <button type="button" onclick="App.setCrawlModalFilter('${filterKey}')" class="crawl-filter-pill px-2.5 py-1 rounded-lg font-semibold shrink-0 transition text-xs ${this.currentCrawlModalFilter === filterKey ? 'bg-purple-600 text-white shadow-2xs' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-600 dark:text-slate-300'}">
+                    Sem ${s} (${count})
+                </button>
+            `;
+        });
+
+        pillsContainer.innerHTML = pillsHtml;
+    },
+
+    setCrawlModalFilter(filterKey) {
+        this.currentCrawlModalFilter = filterKey;
+        this.renderCrawlModalFilters();
+        this.renderCrawlModalFiles();
+    },
+
+    clearCrawlModalSearch() {
+        const input = document.getElementById('crawlModalSearchInput');
+        if (input) {
+            input.value = '';
+            input.focus();
+        }
+        const clearBtn = document.getElementById('crawlModalClearSearch');
+        if (clearBtn) clearBtn.classList.add('hidden');
+        this.renderCrawlModalFiles();
+    },
+
+    filterCrawlModalFiles() {
+        const input = document.getElementById('crawlModalSearchInput');
+        const clearBtn = document.getElementById('crawlModalClearSearch');
+        if (input && clearBtn) {
+            if (input.value.trim().length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+        }
+        this.renderCrawlModalFiles();
+    },
+
+    renderCrawlModalFiles() {
+        const listEl = document.getElementById('crawlModalFilesList');
+        const counterEl = document.getElementById('crawlModalFileCounter');
+        const footerSummaryEl = document.getElementById('crawlModalFooterSummary');
+        const searchInput = document.getElementById('crawlModalSearchInput');
+
+        if (!listEl || !this.currentCrawlModalRecord) return;
+
+        const allItems = this.currentCrawlModalRecord.new_items || [];
+        const query = (searchInput?.value || '').trim().toLowerCase();
+        const activeFilter = this.currentCrawlModalFilter || 'all';
+
+        const filtered = allItems.filter(item => {
+            // Apply category / semester filter
+            if (activeFilter === 'QP' && (item.file_type || '').toUpperCase() !== 'QP') return false;
+            if (activeFilter === 'SCHEME' && (item.file_type || '').toUpperCase() !== 'SCHEME') return false;
+            if (activeFilter.startsWith('sem-')) {
+                const targetSem = parseInt(activeFilter.replace('sem-', ''), 10);
+                if (parseInt(item.semester, 10) !== targetSem) return false;
+            }
+
+            // Apply search query
+            if (query) {
+                const text = `${item.course_code || ''} ${item.title || ''} ${item.qp_code || ''} ${item.filename || ''} ${item.label || ''} Sem ${item.semester || ''}`.toLowerCase();
+                const terms = query.split(/\\s+/).filter(Boolean);
+                return terms.every(t => text.includes(t));
+            }
+
+            return true;
+        });
+
+        // Update counter & summary
+        if (counterEl) {
+            counterEl.textContent = `Showing ${filtered.length} of ${allItems.length} files`;
+        }
+        if (footerSummaryEl) {
+            footerSummaryEl.textContent = `Total ${allItems.length} files added in this crawl session`;
+        }
+
+        if (filtered.length === 0) {
+            listEl.innerHTML = `
+                <div class="py-12 text-center text-slate-400 dark:text-slate-500">
+                    <i class="bi bi-search text-2xl mb-2 block"></i>
+                    <p class="font-semibold text-xs">No files matching your search or filter.</p>
+                    <p class="text-[11px] mt-1 text-slate-400">Try clearing the search or switching the filter tab.</p>
+                </div>
+            `;
+            return;
+        }
+
         let html = '';
-        rec.new_items.forEach(item => {
+        filtered.forEach((item) => {
             const isQp = (item.file_type || '').toUpperCase() === 'QP';
+            const pdfUrl = item.url || (item.filename ? `https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/${item.filename}` : '#');
+            const safeTitle = (item.title || item.course_code || 'Question Paper').replace(/'/g, "\\'");
+            const safeCode = (item.course_code || '').replace(/'/g, "\\'");
+
             html += `
-                <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600/70 flex items-center justify-between gap-3 text-xs">
-                    <div class="space-y-0.5 min-w-0">
+                <div class="p-3 bg-slate-50 dark:bg-slate-700/50 hover:bg-slate-100/70 dark:hover:bg-slate-700/80 rounded-xl border border-slate-200 dark:border-slate-600/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs transition">
+                    <div class="space-y-1 min-w-0 flex-1">
                         <div class="flex items-center gap-1.5 flex-wrap">
-                            <span class="px-1.5 py-0.5 rounded font-mono font-bold text-[10px] bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200">
+                            <span class="px-2 py-0.5 rounded font-mono font-bold text-[10px] bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200">
                                 Sem ${item.semester || 5}
                             </span>
-                            <span class="px-1.5 py-0.5 rounded font-mono font-bold text-[10px] bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
-                                ${item.course_code || ''}
+                            <span class="px-2 py-0.5 rounded font-mono font-bold text-[10px] bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
+                                ${item.course_code || 'N/A'}
                             </span>
-                            ${item.qp_code ? `<span class="px-1.5 py-0.5 rounded font-mono text-[10px] bg-slate-200/70 dark:bg-slate-600/70 text-slate-600 dark:text-slate-300">QP: ${item.qp_code}</span>` : ''}
+                            ${item.qp_code ? `<span class="px-2 py-0.5 rounded font-mono text-[10px] bg-slate-200/80 dark:bg-slate-600/80 text-slate-700 dark:text-slate-300">QP: ${item.qp_code}</span>` : ''}
                             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${isQp ? 'bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300' : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'}">
                                 ${item.file_type || 'PDF'}
                             </span>
+                            ${item.exam_id ? `<span class="text-[10px] text-slate-400 font-mono">Exam #${item.exam_id}</span>` : ''}
                         </div>
-                        <div class="font-semibold text-slate-800 dark:text-slate-100 truncate text-[11px]">${item.title || item.course_code || 'Question Paper'}</div>
-                        <div class="text-[10px] text-slate-400 font-mono truncate">${item.filename || ''}</div>
+                        <div class="font-semibold text-slate-800 dark:text-slate-100 text-xs sm:text-[13px] leading-tight">
+                            ${item.title || item.course_code || 'Question Paper'}
+                        </div>
+                        <div class="text-[10px] text-slate-400 font-mono truncate">
+                            <i class="bi bi-file-earmark-pdf mr-0.5"></i> ${item.filename || ''}
+                        </div>
                     </div>
-                    <div class="shrink-0 flex items-center gap-1.5">
-                        <a href="${item.url}" target="_blank" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1 shadow-2xs transition">
-                            <i class="bi bi-box-arrow-up-right text-[10px]"></i> View PDF
+                    <div class="shrink-0 flex items-center gap-2 self-start sm:self-center">
+                        <button type="button" onclick="App.previewDirect(this, '${pdfUrl}', '${safeTitle}', '${safeCode}')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1.5 shadow-2xs transition">
+                            <i class="bi bi-eye text-[11px]"></i> Preview
+                        </button>
+                        <a href="${pdfUrl}" target="_blank" rel="noopener noreferrer" class="p-1.5 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Open PDF in new tab">
+                            <i class="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>
                 </div>
@@ -559,7 +724,6 @@ const App = {
         });
 
         listEl.innerHTML = html;
-        modal.classList.remove('hidden');
     },
 
     closeCrawlDetailsModal() {

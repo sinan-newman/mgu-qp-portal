@@ -1661,8 +1661,8 @@ const App = {
         const courseList = Array.from(groups.values());
         // Sort courses: Keep signature courses (college-specific syllabus) at the bottom
         courseList.sort((a, b) => {
-            const aSig = this.isSignatureCourse(a.course_code) || a.is_signature;
-            const bSig = this.isSignatureCourse(b.course_code) || b.is_signature;
+            const aSig = this.isSignatureCourse(a);
+            const bSig = this.isSignatureCourse(b);
             if (aSig !== bSig) return aSig ? 1 : -1;
             return (a.course_code || '').localeCompare(b.course_code || '');
         });
@@ -1694,7 +1694,7 @@ const App = {
                                     ${course.minor_name || course.dept_code} (Minor)
                                 </span>
                             ` : ''}
-                            ${(this.isSignatureCourse(course.course_code) || course.is_signature) ? `
+                            ${this.isSignatureCourse(course) ? `
                                 <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700 flex items-center gap-1" title="Signature Course (College specific syllabus)">
                                     <i class="bi bi-pen-fill text-[10px]"></i> Signature
                                 </span>
@@ -1996,7 +1996,7 @@ const App = {
                                         <td class="py-3 px-4 font-mono font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">
                                             <div class="flex items-center gap-1.5 flex-wrap">
                                                 <span>${course.course_code || 'N/A'}</span>
-                                                ${(this.isSignatureCourse(course.course_code) || course.is_signature) ? `
+                                                ${this.isSignatureCourse(course) ? `
                                                     <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300 border border-amber-300 dark:border-amber-700" title="Signature Course (College specific syllabus)">
                                                         Signature
                                                     </span>
@@ -4027,13 +4027,22 @@ const App = {
 
     isSignatureCourse(rawCode) {
         if (!rawCode) return false;
+        let code = '';
         if (typeof rawCode === 'object') {
-            if (rawCode.is_signature === true) return true;
-            rawCode = rawCode.course_code || '';
+            code = rawCode.course_code || rawCode.code || '';
+        } else {
+            code = String(rawCode);
         }
-        const clean = String(rawCode).trim().toUpperCase();
-        // Signature courses strictly end in A followed by 2 digits (e.g. A01, A02, A03, A00)
-        return /A\d{2}$/.test(clean);
+        const clean = code.trim().toUpperCase();
+        if (!clean) return false;
+
+        // In 12-character MGU FYUGP course codes (e.g. MG1DSCSTA100 vs MG3DSEBOTA03),
+        // the last 3 values strictly determine whether it is a signature course:
+        // - Signature courses end in A followed by 2 digits: A00, A01, A02, A03, etc.
+        // - Standard courses end in 3 digits: 100, 101, 200, 201, 300, etc.
+        // Department codes ending in 'A' (e.g. STA, BBA, BCA, CMA, GRA, IAA, FTA) are regular courses.
+        const last3 = clean.slice(-3);
+        return /^A\d{2}$/.test(last3);
     },
 
     extractPageHeaderCourseInfo(pageText, defaultSem = 1) {
@@ -6814,7 +6823,7 @@ const App = {
                             dept_code: p.dept_code,
                             dept_name: p.dept_name,
                             course_type: p.course_type,
-                            is_signature: p.is_signature || false,
+                            is_signature: this.isSignatureCourse(p.course_code),
                             model_id: m.id,
                             title: m.title,
                             paper_type: m.paper_type,
@@ -6852,8 +6861,8 @@ const App = {
         });
 
         // Separate standard courses and college-specific signature courses (placed at the bottom)
-        const regular = filtered.filter(m => !m.is_signature);
-        const signature = filtered.filter(m => m.is_signature);
+        const regular = filtered.filter(m => !this.isSignatureCourse(m));
+        const signature = filtered.filter(m => this.isSignatureCourse(m));
         const sortedResults = [...regular, ...signature];
 
         if (countEl) {
@@ -6896,7 +6905,7 @@ const App = {
         const isPrac = (m.paper_type || 'THEORY').toUpperCase() === 'PRACTICAL';
         const pdfUrl = m.cdn_url || m.url;
         const safeTitle = (m.title || m.course_title || `Course ${m.course_code}`).replace(/'/g, "\\'");
-        const isSig = Boolean(m.is_signature);
+        const isSig = this.isSignatureCourse(m.course_code);
 
         return `
             <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 sm:p-5 border ${isSig ? 'border-amber-200 dark:border-amber-900/60' : 'border-slate-200 dark:border-slate-700/80'} shadow-xs hover:shadow-md transition flex flex-col justify-between">

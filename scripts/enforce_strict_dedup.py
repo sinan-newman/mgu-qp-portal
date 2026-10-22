@@ -81,7 +81,7 @@ for (cc, pt), item in all_candidates.items():
     clean_item.pop("_score", None)
     
     # Check signature course
-    if re.search(r'A\d{2}$', cc) or 'A0' in cc or 'A1' in cc:
+    if re.search(r'A\d{2}$', cc):
         clean_item['is_signature'] = True
         
     canonical_by_code[cc].append(clean_item)
@@ -104,7 +104,7 @@ for p in papers:
             for m in best_models
         ]
         p["has_files"] = True
-        if re.search(r'A\d{2}$', cc) or 'A0' in cc or 'A1' in cc:
+        if re.search(r'A\d{2}$', cc):
             p["is_signature"] = True
             
         # Clean title if it was department name

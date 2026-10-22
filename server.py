@@ -420,10 +420,7 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             if title and dept_name and title.strip().lower() in (dept_name.strip().lower(), parent_dept_name.strip().lower(), dept_code.strip().lower(), parent_dept.strip().lower()):
                 title = f"Course {course_code}" if course_code else ""
 
-            is_signature = bool(data.get("is_signature", False))
-            if not is_signature and course_code:
-                if re.search(r'A\d{2}$', course_code):
-                    is_signature = True
+            is_signature = bool(re.search(r'A\d{2}$', course_code.strip().upper())) if course_code else bool(data.get("is_signature", False))
 
             uploads_dir = os.path.join(BASE_DIR, "uploads")
             os.makedirs(uploads_dir, exist_ok=True)

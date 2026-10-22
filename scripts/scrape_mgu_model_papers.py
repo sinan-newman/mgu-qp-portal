@@ -782,7 +782,7 @@ def run_scraper(force=False):
                 for m in best_models
             ]
             p["has_files"] = True
-            if re.search(r'A\d{2}$', cc) or 'A0' in cc or 'A1' in cc:
+            if re.search(r'A\d{2}$', cc):
                 p["is_signature"] = True
             if is_department_name(p.get("title")):
                 non_dept = [m["title"] for m in best_models if not is_department_name(m["title"])]

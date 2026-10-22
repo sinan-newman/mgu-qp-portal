@@ -349,8 +349,7 @@ for sem_num, folder_path in SEMESTER_FOLDERS:
                     dept_c = m_code.group(3)
                     if m_code.group(4).startswith('A'):
                         is_signature = True
-                elif 'A0' in code or 'A1' in code:
-                    is_signature = True
+                
                     
                 dept_name_val = dept_dict.get(dept_c, dept_c)
                 
@@ -445,7 +444,7 @@ for p in papers:
 
     # 2. Check signature flag
     cc = p.get("course_code") or ""
-    if re.search(r'A\d{2}$', cc) or 'A0' in cc or 'A1' in cc:
+    if re.search(r'A\d{2}$', cc):
         p["is_signature"] = True
 
     # 3. Deduplicate model_papers: Enforce at most 1 Theory and at most 1 Practical

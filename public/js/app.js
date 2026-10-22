@@ -419,6 +419,154 @@ const App = {
         });
     },
 
+
+    crawlHistoryCache: [],
+
+    async loadCrawlHistory(force = false) {
+        const container = document.getElementById('crawlHistoryContainer');
+        if (!container) return;
+
+        if (force || !this.crawlHistoryCache || this.crawlHistoryCache.length === 0) {
+            container.innerHTML = '<div class="p-4 text-center text-xs text-slate-400"><div class="animate-spin inline-block w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full mr-2"></div>Loading crawl audit logs...</div>';
+        }
+
+        try {
+            const data = await fetchResource('/api/crawl-history', 'data/crawl_history.json');
+            this.crawlHistoryCache = Array.isArray(data) ? data : (data?.history || []);
+            this.renderCrawlHistory(this.crawlHistoryCache);
+        } catch (e) {
+            console.error("Error loading crawl history:", e);
+            if (container) {
+                container.innerHTML = `<div class="p-3 text-xs text-rose-500 rounded-xl bg-rose-50 dark:bg-rose-950/30">Failed to load crawl history: ${e.message}</div>`;
+            }
+        }
+    },
+
+    renderCrawlHistory(history) {
+        const container = document.getElementById('crawlHistoryContainer');
+        if (!container) return;
+
+        if (!history || history.length === 0) {
+            container.innerHTML = '<div class="p-6 text-center text-xs text-slate-400 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl">No crawl records available yet. Click "Sync Now" to run a crawl.</div>';
+            return;
+        }
+
+        // Update summary cards
+        const latest = history[0];
+        const lastTimeEl = document.getElementById('crawlStatLastTime');
+        const lastTriggerEl = document.getElementById('crawlStatLastTrigger');
+        const lastFilesEl = document.getElementById('crawlStatLastFiles');
+
+        if (lastTimeEl) lastTimeEl.textContent = latest.timestamp_local || latest.timestamp?.split('T')[0] || '--';
+        if (lastTriggerEl) {
+            const isAuto = (latest.trigger_type || '').toLowerCase() === 'automatic';
+            lastTriggerEl.innerHTML = isAuto
+                ? '<span class="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400"><i class="bi bi-clock-fill"></i> Automatic (6-hr)</span>'
+                : '<span class="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400"><i class="bi bi-hand-index-thumb-fill"></i> Manual Trigger</span>';
+        }
+        if (lastFilesEl) {
+            const added = latest.new_files_added || 0;
+            lastFilesEl.innerHTML = added > 0
+                ? `<span class="text-emerald-600 dark:text-emerald-400 font-bold">+${added} files (${latest.new_qps_added || 0} QPs, ${latest.new_schemes_added || 0} Schemes)</span>`
+                : '<span class="text-slate-400 font-semibold">0 (Up to date)</span>';
+        }
+
+        let html = '<div class="rounded-xl border border-slate-200 dark:border-slate-700 divide-y divide-slate-100 dark:divide-slate-700/60 overflow-hidden">';
+        history.forEach((rec, idx) => {
+            const isAuto = (rec.trigger_type || '').toLowerCase() === 'automatic';
+            const added = rec.new_files_added || 0;
+            const hasDetails = rec.new_items && rec.new_items.length > 0;
+
+            html += `
+                <div class="p-3.5 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-700/30 transition flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${isAuto ? 'bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300' : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'}">
+                                ${isAuto ? '<i class="bi bi-robot mr-1"></i>Automatic (6-hr)' : '<i class="bi bi-person-fill mr-1"></i>Manual'}
+                            </span>
+                            <span class="font-bold text-slate-800 dark:text-slate-200">${rec.timestamp_local || rec.timestamp}</span>
+                        </div>
+                        <div class="text-[11px] text-slate-500 dark:text-slate-400">
+                            ${rec.summary || (added > 0 ? `Ingested ${added} new files (${rec.new_qps_added || 0} QPs, ${rec.new_schemes_added || 0} Schemes)` : 'Database was already up to date with MGU')}
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 self-start sm:self-center shrink-0">
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-bold ${added > 0 ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800' : 'bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400'}">
+                            ${added > 0 ? `+${added} files` : '0 new'}
+                        </span>
+                        ${hasDetails ? `
+                            <button onclick="App.showCrawlDetailsModal(${idx})" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 transition flex items-center gap-1">
+                                <i class="bi bi-list-check"></i> View Files (${rec.new_items.length})
+                            </button>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        });
+        html += '</div>';
+
+        container.innerHTML = html;
+    },
+
+    showCrawlDetailsModal(index) {
+        const rec = this.crawlHistoryCache[index];
+        if (!rec || !rec.new_items) return;
+
+        const modal = document.getElementById('crawlDetailsModal');
+        const titleEl = document.getElementById('crawlModalTitle');
+        const subtitleEl = document.getElementById('crawlModalSubtitle');
+        const listEl = document.getElementById('crawlModalFilesList');
+
+        if (!modal || !listEl) return;
+
+        const isAuto = (rec.trigger_type || '').toLowerCase() === 'automatic';
+        if (titleEl) {
+            titleEl.innerHTML = `<i class="bi bi-file-earmark-check-fill text-emerald-600"></i> ${isAuto ? 'Automatic Crawl' : 'Manual Crawl'} — ${rec.new_items.length} Files Added`;
+        }
+        if (subtitleEl) {
+            subtitleEl.textContent = `Completed at ${rec.timestamp_local || rec.timestamp} across ${rec.total_exams_checked || 10} examination sessions`;
+        }
+
+        let html = '';
+        rec.new_items.forEach(item => {
+            const isQp = (item.file_type || '').toUpperCase() === 'QP';
+            html += `
+                <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600/70 flex items-center justify-between gap-3 text-xs">
+                    <div class="space-y-0.5 min-w-0">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="px-1.5 py-0.5 rounded font-mono font-bold text-[10px] bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200">
+                                Sem ${item.semester || 5}
+                            </span>
+                            <span class="px-1.5 py-0.5 rounded font-mono font-bold text-[10px] bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
+                                ${item.course_code || ''}
+                            </span>
+                            ${item.qp_code ? `<span class="px-1.5 py-0.5 rounded font-mono text-[10px] bg-slate-200/70 dark:bg-slate-600/70 text-slate-600 dark:text-slate-300">QP: ${item.qp_code}</span>` : ''}
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${isQp ? 'bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300' : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'}">
+                                ${item.file_type || 'PDF'}
+                            </span>
+                        </div>
+                        <div class="font-semibold text-slate-800 dark:text-slate-100 truncate text-[11px]">${item.title || item.course_code || 'Question Paper'}</div>
+                        <div class="text-[10px] text-slate-400 font-mono truncate">${item.filename || ''}</div>
+                    </div>
+                    <div class="shrink-0 flex items-center gap-1.5">
+                        <a href="${item.url}" target="_blank" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1 shadow-2xs transition">
+                            <i class="bi bi-box-arrow-up-right text-[10px]"></i> View PDF
+                        </a>
+                    </div>
+                </div>
+            `;
+        });
+
+        listEl.innerHTML = html;
+        modal.classList.remove('hidden');
+    },
+
+    closeCrawlDetailsModal() {
+        const modal = document.getElementById('crawlDetailsModal');
+        if (modal) modal.classList.add('hidden');
+    },
+
+
     updateStatsUI() {
         const totalPapersEl = document.getElementById('statTotalPapers');
         const totalSchemesEl = document.getElementById('statTotalSchemes');
@@ -5838,9 +5986,38 @@ const App = {
             const res = await fetch('/api/sync', { method: 'POST' });
             const data = await res.json();
             if (syncStatusEl) {
-                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-200 text-sm flex items-center gap-3';
-                syncStatusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> ${data.message || 'Sync initiated successfully!'}`;
+                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-blue-800 dark:text-blue-200 text-sm flex items-center gap-3';
+                syncStatusEl.innerHTML = `<div class="animate-spin rounded-full h-4 w-4 border-2 border-blue-600 border-t-transparent"></div> Crawl initiated in background. Polling for results...`;
             }
+
+            // Poll for sync completion and update history
+            let attempts = 0;
+            const pollInterval = setInterval(async () => {
+                attempts++;
+                try {
+                    await this.loadCrawlHistory(true);
+                    if (this.crawlHistoryCache && this.crawlHistoryCache.length > 0) {
+                        const latest = this.crawlHistoryCache[0];
+                        const diffSeconds = (Date.now() - new Date(latest.timestamp).getTime()) / 1000;
+                        if (diffSeconds < 60 || attempts >= 10) {
+                            clearInterval(pollInterval);
+                            this.setButtonLoading('triggerSyncBtn', false);
+                            if (syncStatusEl) {
+                                syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-200 text-sm flex items-center gap-3';
+                                syncStatusEl.innerHTML = `<i class="bi bi-check-circle-fill text-emerald-600"></i> Crawl Complete: ${latest.summary || 'Ingested latest files!'}`;
+                            }
+                            this.init(); // Refresh catalog in memory
+                        }
+                    }
+                } catch (pollErr) {
+                    if (attempts >= 10) {
+                        clearInterval(pollInterval);
+                        this.setButtonLoading('triggerSyncBtn', false);
+                    }
+                }
+            }, 2500);
+
+            return;
         } catch (e) {
             if (syncStatusEl) {
                 syncStatusEl.className = 'mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-200 text-sm flex items-center gap-3';

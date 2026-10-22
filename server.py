@@ -192,6 +192,17 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if path == "/api/feedback":
             self.handle_feedback_get()
             return
+        if path == "/api/crawl-history":
+            history_file = os.path.join(DATA_DIR, "crawl_history.json")
+            if os.path.exists(history_file):
+                try:
+                    with open(history_file, "r", encoding="utf-8") as f:
+                        self.send_json_response(json.load(f))
+                        return
+                except Exception:
+                    pass
+            self.send_json_response([])
+            return
         if path == "/api/stats":
             self.send_json_response(CACHE["stats"] or {})
             return
@@ -339,12 +350,12 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
     def handle_sync_trigger(self):
         def sync_worker():
             try:
-                import scripts.scraper as scraper
-                scraper.run_sync(use_cache=False)
+                import scripts.sync_engine as sync_engine
+                sync_engine.run_sync(trigger_type="manual")
                 load_data()
-                print("Background assist.mgu.ac.in resync completed.")
+                print("Background assist.mgu.ac.in manual sync completed.")
             except Exception as e:
-                print(f"Background resync error: {e}")
+                print(f"Background sync error: {e}")
 
         threading.Thread(target=sync_worker, daemon=True).start()
         self.send_json_response({
@@ -784,8 +795,26 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             self.send_error(500, f"JSON Error: {e}")
 
+def start_background_scheduler():
+    def scheduler_loop():
+        INTERVAL_SECONDS = 6 * 3600  # 6 hours
+        while True:
+            time.sleep(INTERVAL_SECONDS)
+            try:
+                print("[Scheduled 6-Hr Auto-Sync] Starting background crawl...", flush=True)
+                import scripts.sync_engine as sync_engine
+                sync_engine.run_sync(trigger_type="automatic")
+                load_data()
+                print("[Scheduled 6-Hr Auto-Sync] Completed successfully.", flush=True)
+            except Exception as e:
+                print(f"[Scheduled 6-Hr Auto-Sync] Error: {e}", flush=True)
+
+    t = threading.Thread(target=scheduler_loop, daemon=True)
+    t.start()
+
 def run_server():
     socketserver.TCPServer.allow_reuse_address = True
+    start_background_scheduler()
     with socketserver.TCPServer(("", PORT), PortalRequestHandler) as httpd:
         print(f"============================================================")
         print(f" MGU Previous Year Question Papers & Schemes Portal")

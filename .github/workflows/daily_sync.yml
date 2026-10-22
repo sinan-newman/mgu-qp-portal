@@ -2,8 +2,8 @@ name: Automated University Portal Sync
 
 on:
   schedule:
-    # Runs twice daily: 02:00 UTC (07:30 AM IST) and 14:00 UTC (07:30 PM IST)
-    - cron: '0 2,14 * * *'
+    # Runs every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
+    - cron: '0 */6 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions anytime with 1 click
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Assist QP & Scheme Sync
         run: |
-          python scripts/sync_engine.py
+          python scripts/sync_engine.py --trigger=automatic
 
       - name: Run MGU FYUGP Model Question Papers Scraper & Splitter
         env:

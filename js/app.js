@@ -350,24 +350,25 @@ const App = {
         this.applyTheme(!this.state.isDarkMode, true);
     },
 
-    async loadAllData() {
+    async fetchResource(apiUrl, staticUrl) {
         const isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
-
-        const fetchResource = async (apiUrl, staticUrl) => {
-            if (isLocalBackend) {
-                try {
-                    const res = await fetch(apiUrl);
-                    if (res.ok) return await res.json();
-                } catch (e) {}
-            }
+        if (isLocalBackend) {
             try {
-                const resStatic = await fetch(staticUrl);
-                if (resStatic.ok) return await resStatic.json();
-            } catch (e) {
-                console.error('Failed to load static resource:', staticUrl, e);
-            }
-            return null;
-        };
+                const res = await fetch(apiUrl);
+                if (res.ok) return await res.json();
+            } catch (e) {}
+        }
+        try {
+            const resStatic = await fetch(staticUrl);
+            if (resStatic.ok) return await resStatic.json();
+        } catch (e) {
+            console.error('Failed to load static resource:', staticUrl, e);
+        }
+        return null;
+    },
+
+    async loadAllData() {
+        const fetchResource = (apiUrl, staticUrl) => this.fetchResource(apiUrl, staticUrl);
 
         const [papersData, deptsData, statsData, modelData] = await Promise.all([
             fetchResource('/api/papers?limit=10000&has_files=false', 'data/papers.json'),
@@ -431,7 +432,7 @@ const App = {
         }
 
         try {
-            const data = await fetchResource('/api/crawl-history', 'data/crawl_history.json');
+            const data = await this.fetchResource('/api/crawl-history', 'data/crawl_history.json');
             this.crawlHistoryCache = Array.isArray(data) ? data : (data?.history || []);
             this.renderCrawlHistory(this.crawlHistoryCache);
         } catch (e) {
@@ -6876,3 +6877,20 @@ window.App = App;
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
 });
+
+
+// Global fetchResource helper fallback
+window.fetchResource = async (apiUrl, staticUrl) => {
+    if (window.App && typeof window.App.fetchResource === 'function') {
+        return await window.App.fetchResource(apiUrl, staticUrl);
+    }
+    try {
+        const res = await fetch(apiUrl);
+        if (res.ok) return await res.json();
+    } catch (e) {}
+    try {
+        const resStatic = await fetch(staticUrl);
+        if (resStatic.ok) return await resStatic.json();
+    } catch (e) {}
+    return null;
+};

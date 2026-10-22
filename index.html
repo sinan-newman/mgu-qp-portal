@@ -1671,7 +1671,26 @@
 
     <!-- Scripts -->
     <script src="js/pdf-viewer.js"></script>
-    <script src="js/app.js"></script>
+    <script>
+        var fetchResource = async function(apiUrl, staticUrl) {
+            var isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+            if (isLocalBackend) {
+                try {
+                    var res = await fetch(apiUrl);
+                    if (res.ok) return await res.json();
+                } catch (e) {}
+            }
+            try {
+                var resStatic = await fetch(staticUrl);
+                if (resStatic.ok) return await resStatic.json();
+            } catch (e) {
+                console.error('Failed to load static resource:', staticUrl, e);
+            }
+            return null;
+        };
+        window.fetchResource = fetchResource;
+    </script>
+    <script src="js/app.js?v=20261022_2138"></script>
     <!-- Modal: Crawl Ingested Files Details Modal -->
     <div id="crawlDetailsModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
         <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-2xl w-full p-5 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-4 max-h-[85vh] flex flex-col">

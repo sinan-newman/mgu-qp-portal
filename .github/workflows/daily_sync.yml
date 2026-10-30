@@ -32,6 +32,9 @@ jobs:
           pip install pypdf
 
       - name: Run Assist QP & Scheme Sync
+        env:
+          STORAGE_PAT: ${{ secrets.STORAGE_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/sync_engine.py --trigger=automatic
 
@@ -40,14 +43,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/scrape_mgu_model_papers.py
-          mkdir -p public/data
+          mkdir -p public/data public/uploads
           cp -r data/* public/data/ || true
+          cp -r uploads/* public/uploads/ || true
 
       - name: Commit and Push Changes if Any
         run: |
           git config user.name "MGU Auto-Sync Bot"
           git config user.email "bot@mgu-portal.local"
-          git add data/ public/data/
+          git add data/ public/data/ uploads/ public/uploads/
           if git diff --staged --quiet; then
             echo "No new question papers found. Database is already up to date."
           else

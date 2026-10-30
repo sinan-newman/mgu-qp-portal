@@ -404,6 +404,8 @@ def run_sync(trigger_type="manual"):
                 for m in openfile_pattern.finditer(panel_html):
                     furl = m.group(1).strip()
                     flabel = clean_html(m.group(2)).upper()
+                    if not furl.lower().endswith('.pdf') and '.pdf' not in furl.lower():
+                        continue
                     if not furl.startswith("http"):
                         furl = BASE_URL + furl.lstrip("/")
                     found_files.append((furl, flabel))
@@ -436,6 +438,8 @@ def run_sync(trigger_type="manual"):
                 for fm in href_pattern.finditer(body_html):
                     furl = fm.group(1).strip()
                     flabel = clean_html(fm.group(2)).upper()
+                    if not furl.lower().endswith('.pdf') and '.pdf' not in furl.lower():
+                        continue
                     if not furl.startswith("http"):
                         furl = BASE_URL + furl.lstrip("/")
                     found_files.append((furl, flabel))

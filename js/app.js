@@ -297,6 +297,12 @@ const App = {
         }
     },
 
+    openPdfPreview(url, title = 'Document Preview') {
+        if (window.PDFViewer) {
+            window.PDFViewer.openDirect(url, title);
+        }
+    },
+
     initTheme() {
         const isUserSet = localStorage.getItem('mgu_theme_user_set') === 'true';
         let isDark = false;

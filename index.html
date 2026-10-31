@@ -108,6 +108,12 @@
                         <span id="bookmarkCountBadge" class="hidden ml-0.5 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">0</span>
                     </button>
 
+                    <!-- AI Notes Shortcut Button -->
+                    <button onclick="App.switchTab('ai-notes')" class="relative px-2 sm:px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition flex items-center gap-1 sm:gap-1.5 shrink-0 min-h-[36px]" title="AI Study Notes & Question Synthesis">
+                        <i class="bi bi-stars text-indigo-600 dark:text-indigo-400"></i>
+                        <span class="hidden sm:inline">AI Notes</span>
+                    </button>
+
                     <!-- Admin Shortcut Button (Hidden in public view, visible only when logged in) -->
                     <button id="adminNavBtn" onclick="App.openAdminPage()" class="hidden px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700 transition flex items-center gap-1.5" title="Admin Control Center">
                         <i class="bi bi-shield-lock-fill text-emerald-600"></i>
@@ -204,6 +210,11 @@
             </button>
             <button data-tab="bookmarks" class="nav-tab-btn px-4 py-2 font-medium text-xs sm:text-sm rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0 min-h-[38px]">
                 <i class="bi bi-star-fill text-amber-500"></i> Saved Question Papers
+            </button>
+            <button data-tab="ai-notes" class="nav-tab-btn px-4 py-2 font-medium text-xs sm:text-sm rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2 transition shrink-0 min-h-[38px] group">
+                <i class="bi bi-stars text-indigo-500 group-hover:scale-110 transition-transform"></i>
+                <span>AI Notes</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60">New</span>
             </button>
         </div>
 
@@ -523,6 +534,11 @@
 
             <!-- Pagination -->
             <div id="paginationControls" class="mt-8"></div>
+        </section>
+
+        <!-- SECTION 3: AI NOTES STUDIO (Dedicated Tab) -->
+        <section id="aiNotesSection" class="hidden space-y-6">
+            <!-- Dynamic workspace populated by AiNotesStudio.renderSection() -->
         </section>
 
         <!-- DEDICATED ADMIN PAGE SECTION (Routed view: #/admin) -->
@@ -1825,7 +1841,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/pdf-viewer.js?v=20261031_1150"></script>
+    <script src="js/pdf-viewer.js?v=20261031_2000"></script>
+    <script src="js/marked.min.js"></script>
+    <script src="js/ai-notes.js?v=20261031_2000"></script>
     <script>
         var fetchResource = async function(apiUrl, staticUrl) {
             var isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
@@ -1846,7 +1864,90 @@
         window.fetchResource = fetchResource;
     </script>
     <script src="js/app.js?v=20261031_1150"></script>
-        <!-- Modal: Crawl Ingested Files Details Modal -->
+        <!-- Modal: Gemini AI Settings -->
+    <div id="geminiApiModal" onclick="if(event.target === this) AiNotesStudio.closeSettingsModal()" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-lg w-full p-5 sm:p-6 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-3">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold">
+                        <i class="bi bi-stars"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">AI Engine Configuration</h3>
+                        <p class="text-xs text-slate-500">Google Gemini API / Built-in Academic Synthesizer</p>
+                    </div>
+                </div>
+                <button type="button" onclick="AiNotesStudio.closeSettingsModal()" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">
+                    <i class="bi bi-x-lg text-sm"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4 text-xs text-slate-600 dark:text-slate-300">
+                <div class="p-3 bg-indigo-50/70 dark:bg-indigo-950/30 rounded-xl border border-indigo-200/70 dark:border-indigo-800/40 space-y-1">
+                    <div class="font-semibold text-indigo-900 dark:text-indigo-200 flex items-center gap-1.5">
+                        <i class="bi bi-info-circle-fill text-indigo-600 dark:text-indigo-400"></i>
+                        <span>Zero-setup ready</span>
+                    </div>
+                    <p class="text-indigo-800/90 dark:text-indigo-300/80 leading-relaxed">
+                        If you leave this empty, the portal uses its <strong>Built-in Academic Synthesis Engine</strong> which runs instantly offline without any API key. If you provide a Google Gemini API Key, live frontier AI models will generate custom dynamic deep dives.
+                    </p>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                        Google Gemini API Key <span class="text-slate-400 font-normal">(Optional)</span>
+                    </label>
+                    <div class="relative">
+                        <input 
+                            type="password" 
+                            id="geminiApiKeyInput" 
+                            placeholder="AIzaSy..." 
+                            class="w-full px-3 py-2 pr-10 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700/60 text-slate-900 dark:text-white text-xs font-mono focus:ring-2 focus:ring-indigo-500"
+                        >
+                        <button type="button" onclick="AiNotesStudio.toggleKeyVisibility()" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                            <i id="geminiKeyEye" class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between mt-1 text-[11px] text-slate-400">
+                        <span>Stored locally in your browser only.</span>
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline inline-flex items-center gap-0.5">
+                            Get free Gemini key <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                        Gemini Model
+                    </label>
+                    <select 
+                        id="geminiModelSelect" 
+                        class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs"
+                    >
+                        <option value="gemini-1.5-flash">Gemini 1.5 Flash (Recommended - Fastest & High Quality)</option>
+                        <option value="gemini-1.5-pro">Gemini 1.5 Pro (Deepest Analysis & Reasoning)</option>
+                        <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash Experimental</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                <button type="button" onclick="AiNotesStudio.clearApiKey()" class="px-3 py-2 rounded-xl text-xs text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition">
+                    Reset to Default Engine
+                </button>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="AiNotesStudio.closeSettingsModal()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition">
+                        Cancel
+                    </button>
+                    <button type="button" onclick="AiNotesStudio.saveSettingsFromModal()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs transition">
+                        Save Preferences
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Crawl Ingested Files Details Modal -->
     <div id="crawlDetailsModal" onclick="if(event.target === this) App.closeCrawlDetailsModal()" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
         <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-3xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-3.5 max-h-[90vh] flex flex-col">
             <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-3">

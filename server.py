@@ -190,6 +190,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if parsed.path == "/api/feedback":
             self.handle_feedback_post()
             return
+        if parsed.path == "/api/ai/notes":
+            self.handle_ai_notes_post()
+            return
         self.send_json_response({"error": "Endpoint not found"}, status=404)
 
     def handle_api_get(self, path, params):
@@ -202,6 +205,25 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if path == "/api/feedback":
             self.handle_feedback_get()
             return
+        if path == "/api/ai/notes":
+            code = params.get("code", [""])[0].strip().upper()
+            mode = params.get("mode", ["comprehensive"])[0].strip().lower()
+            if not code:
+                self.send_json_response({"error": "Course code required"}, status=400)
+                return
+            safe_code = "".join(c for c in code if c.isalnum() or c in ("-", "_"))
+            safe_mode = "".join(c for c in mode if c.isalnum() or c in ("-", "_"))
+            note_file = os.path.join(DATA_DIR, "ai_notes", f"{safe_code}_{safe_mode}.json")
+            if os.path.exists(note_file):
+                try:
+                    with open(note_file, "r", encoding="utf-8") as f:
+                        self.send_json_response(json.load(f))
+                        return
+                except Exception:
+                    pass
+            self.send_json_response({"status": "not_found", "message": "No cached notes found"}, status=404)
+            return
+
         if path == "/api/crawl-history":
             history_file = os.path.join(DATA_DIR, "crawl_history.json")
             if os.path.exists(history_file):
@@ -830,6 +852,35 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             except Exception:
                 reports = []
         self.send_json_response(reports)
+
+    def handle_ai_notes_post(self):
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            data = json.loads(body)
+            code = (data.get("course_code") or data.get("code") or "").strip().upper()
+            mode = (data.get("mode") or "comprehensive").strip().lower()
+            if not code or not data.get("markdown"):
+                self.send_json_response({"error": "course_code and markdown content required"}, status=400)
+                return
+            safe_code = "".join(c for c in code if c.isalnum() or c in ("-", "_"))
+            safe_mode = "".join(c for c in mode if c.isalnum() or c in ("-", "_"))
+            
+            notes_dir = os.path.join(DATA_DIR, "ai_notes")
+            os.makedirs(notes_dir, exist_ok=True)
+            note_file = os.path.join(notes_dir, f"{safe_code}_{safe_mode}.json")
+            with open(note_file, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+                
+            public_notes_dir = os.path.join(PUBLIC_DIR, "data", "ai_notes")
+            if os.path.exists(os.path.join(PUBLIC_DIR, "data")):
+                os.makedirs(public_notes_dir, exist_ok=True)
+                with open(os.path.join(public_notes_dir, f"{safe_code}_{safe_mode}.json"), "w", encoding="utf-8") as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                    
+            self.send_json_response({"success": True, "file": f"{safe_code}_{safe_mode}.json"})
+        except Exception as e:
+            self.send_json_response({"error": str(e)}, status=500)
 
     def handle_feedback_post(self):
         try:

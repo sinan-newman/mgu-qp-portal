@@ -1368,6 +1368,17 @@ const App = {
         const hash = (rawHash || window.location.hash || '').trim();
         this.trackPortalVisit(hash || '#/departments');
 
+        // 0. AI Notes route: #/ai-notes or #/ai-notes/COURSE_CODE
+        const aiMatch = hash.match(/^#\/?ai-notes(?:\/([A-Za-z0-9_\-\s%]+))?\/?$/i);
+        if (aiMatch) {
+            const rawCode = aiMatch[1] ? decodeURIComponent(aiMatch[1].trim()) : null;
+            this.switchTab('ai-notes', false);
+            if (rawCode && window.AiNotesStudio) {
+                window.AiNotesStudio.selectCourse(rawCode);
+            }
+            return;
+        }
+
         // 1. Department route: #/department/CODE or #/department/CODE/SEM or #dept=CODE
         const deptMatch = hash.match(/^#\/?(?:dept=|department\/)([A-Za-z0-9_]+)\/?(?:[\/?&](?:sem[\/=])?([0-9]+|ALL))?\/?$/i);
         if (deptMatch) {
@@ -1448,6 +1459,7 @@ const App = {
         const papersSection = document.getElementById('papersSection');
         const departmentsSection = document.getElementById('departmentsSection');
         const filterControls = document.getElementById('filterControlsSection');
+        const aiNotesSection = document.getElementById('aiNotesSection');
 
         if (tab === 'departments') {
             document.title = 'Mahatma Gandhi University • FYUGP Question Papers and Schemes';
@@ -1458,6 +1470,7 @@ const App = {
             if (papersSection) papersSection.classList.add('hidden');
             if (departmentsSection) departmentsSection.classList.remove('hidden');
             if (filterControls) filterControls.classList.add('hidden');
+            if (aiNotesSection) aiNotesSection.classList.add('hidden');
             document.getElementById('deptListContainer')?.classList.remove('hidden');
             this.deptState.activeDept = null;
         } else if (tab === 'papers') {
@@ -1469,6 +1482,7 @@ const App = {
             if (papersSection) papersSection.classList.remove('hidden');
             if (departmentsSection) departmentsSection.classList.add('hidden');
             if (filterControls) filterControls.classList.remove('hidden');
+            if (aiNotesSection) aiNotesSection.classList.add('hidden');
             this.state.currentPage = 1;
             this.applyFilters();
         } else if (tab === 'bookmarks') {
@@ -1480,9 +1494,42 @@ const App = {
             if (papersSection) papersSection.classList.remove('hidden');
             if (departmentsSection) departmentsSection.classList.add('hidden');
             if (filterControls) filterControls.classList.remove('hidden');
+            if (aiNotesSection) aiNotesSection.classList.add('hidden');
             this.state.currentPage = 1;
             this.applyFilters();
+        } else if (tab === 'ai-notes') {
+            document.title = 'AI Notes Studio • MGU FYUGP Question Papers & Revision Notes';
+            if (updateHash && !window.location.hash.startsWith('#/ai-notes')) {
+                this.currentRoute = '#/ai-notes';
+                window.location.hash = '#/ai-notes';
+            }
+            if (papersSection) papersSection.classList.add('hidden');
+            if (departmentsSection) departmentsSection.classList.add('hidden');
+            if (filterControls) filterControls.classList.add('hidden');
+            if (aiNotesSection) {
+                aiNotesSection.classList.remove('hidden');
+                if (window.AiNotesStudio) {
+                    window.AiNotesStudio.renderSection();
+                }
+            }
         }
+    },
+
+    openAiNotesForCourse(courseCode, courseTitle) {
+        this.switchTab('ai-notes', false);
+        const code = (courseCode || courseTitle || '').trim();
+        if (code) {
+            window.location.hash = `#/ai-notes/${encodeURIComponent(code)}`;
+        } else {
+            window.location.hash = '#/ai-notes';
+        }
+        if (window.AiNotesStudio) {
+            window.AiNotesStudio.renderSection();
+            if (code) {
+                window.AiNotesStudio.selectCourse(code);
+            }
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     setSemester(sem) {
@@ -1943,11 +1990,20 @@ const App = {
                             ` : ''}
                         </div>
 
-                        <!-- Bookmark Button -->
-                        <button 
-                            data-bm-id="${firstPaper.id}"
-                            onclick="App.toggleBookmark('${firstPaper.id}')" 
-                            title="Save for revision" 
+                        <!-- Action Buttons: AI Notes + Bookmark -->
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            <button 
+                                onclick="App.openAiNotesForCourse('${course.course_code || ''}', '${course.title ? course.title.replace(/'/g, "\\'") : ''}')" 
+                                title="Generate AI Study Notes & Exam Blueprint" 
+                                class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs"
+                            >
+                                <i class="bi bi-stars text-indigo-500"></i>
+                                <span class="hidden sm:inline">AI Notes</span>
+                            </button>
+                            <button 
+                                data-bm-id="${firstPaper.id}"
+                                onclick="App.toggleBookmark('${firstPaper.id}')" 
+                                title="Save for revision" 
                             class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition ${
                                 isBookmarked 
                                     ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700' 
@@ -1956,7 +2012,8 @@ const App = {
                         >
                             <i class="bi ${isBookmarked ? 'bi-star-fill text-amber-500' : 'bi-star'}"></i>
                             <span>${isBookmarked ? 'Saved' : 'Save'}</span>
-                        </button>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Course Code -->
@@ -2096,8 +2153,16 @@ const App = {
                             ` : ''}
                         </div>
 
-                        <!-- Right Actions: Admin Delete + Save -->
+                        <!-- Right Actions: AI Notes + Admin Delete + Save -->
                         <div class="flex items-center gap-1.5">
+                            <button 
+                                onclick="App.openAiNotesForCourse('${p.course_code || ''}', '${p.title ? p.title.replace(/'/g, "\\'") : ''}')" 
+                                title="Generate AI Study Notes & Exam Blueprint" 
+                                class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs"
+                            >
+                                <i class="bi bi-stars text-indigo-500"></i>
+                                <span class="hidden sm:inline">AI Notes</span>
+                            </button>
                             ${isAdmin ? `
                                 <button 
                                     onclick="App.handleDeletePaper('${p.id}', this)" 

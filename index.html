@@ -1712,9 +1712,66 @@
                         </div>
                     </div>
 
-                    <div>
-                        <label class="block font-semibold text-slate-700 dark:text-slate-200 mb-1">Do you have a PDF link or Google Drive link? (Optional)</label>
-                        <input type="url" id="reportDriveLink" placeholder="https://drive.google.com/... or link to PDF" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                    <!-- Attachment Options: Drive Link or Direct PDF Upload -->
+                    <div class="space-y-3 p-3.5 rounded-xl bg-slate-50/80 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-slate-700 dark:text-slate-200 text-xs flex items-center gap-1.5">
+                                <i class="bi bi-paperclip text-blue-600 dark:text-blue-400"></i> Attach Question Paper / Scheme (Optional)
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-medium">Link or PDF upload</span>
+                        </div>
+
+                        <!-- Option 1: Google Drive or PDF Link -->
+                        <div>
+                            <label class="block font-semibold text-slate-600 dark:text-slate-300 text-[11px] mb-1">
+                                Google Drive or Web Link
+                            </label>
+                            <div class="relative">
+                                <i class="bi bi-link-45deg absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                                <input type="url" id="reportDriveLink" placeholder="https://drive.google.com/... or link to PDF" class="w-full pl-8 pr-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+
+                        <div class="relative flex py-0.5 items-center">
+                            <div class="flex-grow border-t border-slate-200 dark:border-slate-700"></div>
+                            <span class="flex-shrink mx-2 text-[10px] text-slate-400 uppercase tracking-wider font-bold">OR</span>
+                            <div class="flex-grow border-t border-slate-200 dark:border-slate-700"></div>
+                        </div>
+
+                        <!-- Option 2: Upload PDF File directly from device -->
+                        <div>
+                            <label class="block font-semibold text-slate-600 dark:text-slate-300 text-[11px] mb-1">
+                                Upload Missing Paper PDF
+                            </label>
+                            <div id="reportDropzone" class="border-2 border-dashed border-slate-300 dark:border-slate-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl p-3 text-center cursor-pointer bg-white dark:bg-slate-700/50 transition">
+                                <input type="file" id="reportFileInput" accept=".pdf,application/pdf" class="hidden" onchange="App.handleReportFileSelect(event)">
+                                <div id="reportDropzonePrompt" onclick="document.getElementById('reportFileInput').click()">
+                                    <div class="w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 mx-auto flex items-center justify-center text-sm mb-1.5">
+                                        <i class="bi bi-cloud-arrow-up"></i>
+                                    </div>
+                                    <p class="text-xs font-semibold text-slate-700 dark:text-slate-200">
+                                        Click to browse or drag & drop missing paper PDF
+                                    </p>
+                                    <p class="text-[10px] text-slate-400 mt-0.5">
+                                        PDF format up to 25 MB
+                                    </p>
+                                </div>
+                                <div id="reportFilePreview" class="hidden flex items-center justify-between p-2 rounded-lg bg-blue-50/80 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900 text-left">
+                                    <div class="flex items-center gap-2 min-w-0">
+                                        <div class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 text-xs shadow-xs">
+                                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                                        </div>
+                                        <div class="min-w-0">
+                                            <div id="reportFileName" class="text-xs font-semibold text-slate-800 dark:text-slate-100 truncate">paper.pdf</div>
+                                            <div id="reportFileSize" class="text-[10px] text-slate-500 dark:text-slate-400">0 KB</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" onclick="App.clearReportFile(event)" class="p-1 rounded-md text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 transition" title="Remove attached file">
+                                        <i class="bi bi-x-lg text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div>
@@ -1768,7 +1825,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/pdf-viewer.js?v=20261031_1110"></script>
+    <script src="js/pdf-viewer.js?v=20261031_1150"></script>
     <script>
         var fetchResource = async function(apiUrl, staticUrl) {
             var isLocalBackend = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
@@ -1788,7 +1845,7 @@
         };
         window.fetchResource = fetchResource;
     </script>
-    <script src="js/app.js?v=20261031_1110"></script>
+    <script src="js/app.js?v=20261031_1150"></script>
         <!-- Modal: Crawl Ingested Files Details Modal -->
     <div id="crawlDetailsModal" onclick="if(event.target === this) App.closeCrawlDetailsModal()" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
         <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-3xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-3.5 max-h-[90vh] flex flex-col">

@@ -601,3 +601,35 @@ button:active:not(:disabled) {
     color: #78350f !important;
   }
 }
+
+/* Official Syllabus & QP Scheme Styling */
+.syllabus-banner {
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid #a7f3d0;
+  margin-bottom: 1.5rem;
+}
+.dark .syllabus-banner {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.4) 0%, rgba(6, 95, 70, 0.3) 100%);
+  border-color: #065f46;
+}
+.qp-paper-header-box {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.dark .qp-paper-header-box {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-color: #334155;
+}
+@media print {
+  .syllabus-banner, .qp-paper-header-box {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 1pt solid #cbd5e1 !important;
+    background: #ffffff !important;
+  }
+}

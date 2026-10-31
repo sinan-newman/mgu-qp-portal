@@ -200,12 +200,21 @@ const PDFViewer = {
 
         // Candidate 1: Direct same-origin uploads path (most reliable when deployed on GitHub Pages or local)
         if (filename && filename.endsWith('.pdf')) {
-            candidates.push(`uploads/${filename}`);
-            candidates.push(`public/uploads/${filename}`);
+            if (cleanRaw.includes('model_papers') || filename.startsWith('MODEL_')) {
+                candidates.push('uploads/model_papers/' + filename);
+                candidates.push('public/uploads/model_papers/' + filename);
+            } else {
+                candidates.push('uploads/' + filename);
+                candidates.push('public/uploads/' + filename);
+            }
             if (window.location.origin) {
                 const pathname = window.location.pathname;
                 const basePath = pathname.substring(0, pathname.lastIndexOf('/') + 1);
-                candidates.push(`${window.location.origin}${basePath}uploads/${filename}`);
+                if (cleanRaw.includes('model_papers') || filename.startsWith('MODEL_')) {
+                    candidates.push(window.location.origin + basePath + 'uploads/model_papers/' + filename);
+                } else {
+                    candidates.push(window.location.origin + basePath + 'uploads/' + filename);
+                }
             }
         }
 
@@ -214,17 +223,17 @@ const PDFViewer = {
             candidates.push(cleanRaw);
         }
 
-        // Candidate 3: jsDelivr CDN
-        if (filename && filename.endsWith('.pdf')) {
-            candidates.push(`https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/${filename}`);
-            candidates.push(`https://fastly.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/${filename}`);
-        }
-
-        // Candidate 4: GitHub Raw CDN
+        // Candidate 3: GitHub Raw CDN (direct upstream source, guaranteed immediate sync)
         if (matchingFile && matchingFile.raw_url) {
             candidates.push(matchingFile.raw_url);
         } else if (filename && filename.endsWith('.pdf')) {
-            candidates.push(`https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf/${filename}`);
+            candidates.push('https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf/' + filename);
+        }
+
+        // Candidate 4: jsDelivr CDN (fast edge distribution)
+        if (filename && filename.endsWith('.pdf')) {
+            candidates.push('https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
+            candidates.push('https://fastly.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
         }
 
         // Candidate 5: Local server proxy if running on localhost / dev server
@@ -571,6 +580,61 @@ const PDFViewer = {
 
     retry() {
         this.renderViewer();
+    },
+
+    async download(doc, activeType = 'QP') {
+        const candidates = this.getCandidateUrls(doc, activeType);
+        const code = (doc.course_code || doc.qp_code || 'Document').replace(/[^a-zA-Z0-9_-]/g, '_');
+        const filename = code + '_' + activeType + '.pdf';
+        return this._triggerDownload(candidates, filename);
+    },
+
+    async downloadDirect(url, title = 'Document', code = '') {
+        const dummyDoc = {
+            title: title,
+            course_code: code,
+            qp_url: url,
+            files: [{ type: 'QP', url: url }]
+        };
+        const candidates = this.getCandidateUrls(dummyDoc, 'QP');
+        const safeName = (code || title || 'Document').replace(/[^a-zA-Z0-9_-]/g, '_');
+        const filename = safeName.toLowerCase().endsWith('.pdf') ? safeName : (safeName + '.pdf');
+        return this._triggerDownload(candidates, filename);
+    },
+
+    async _triggerDownload(candidates, filename) {
+        if (!candidates || candidates.length === 0) return false;
+        try {
+            const res = await this.fetchPdfBuffer(candidates);
+            if (res && res.buffer) {
+                const blob = new Blob([res.buffer], { type: 'application/pdf' });
+                const blobUrl = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = blobUrl;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(blobUrl);
+                }, 200);
+                return true;
+            }
+        } catch (e) {
+            console.warn('PDF download buffer fetch failed, fallback to link:', e);
+        }
+
+        if (candidates.length > 0) {
+            const a = document.createElement('a');
+            a.href = candidates[0];
+            a.target = '_blank';
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => document.body.removeChild(a), 200);
+            return true;
+        }
+        return false;
     },
 
     openDirect(url, title = 'Document Preview', code = '') {

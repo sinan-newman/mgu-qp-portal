@@ -297,6 +297,39 @@ const App = {
         }
     },
 
+    async downloadPaper(btn, doc, type = 'QP') {
+        if (!doc) return;
+        if (btn) this.setButtonLoading(btn, true, '');
+        try {
+            if (window.PDFViewer && window.PDFViewer.download) {
+                await window.PDFViewer.download(doc, type);
+            } else {
+                const url = type === 'QP' ? doc.qp_url : doc.scheme_url;
+                if (url) window.open(url, '_blank');
+            }
+        } finally {
+            if (btn) {
+                setTimeout(() => this.setButtonLoading(btn, false), 450);
+            }
+        }
+    },
+
+    async downloadDirect(btn, url, title = 'Document', code = '') {
+        if (!url) return;
+        if (btn) this.setButtonLoading(btn, true, '');
+        try {
+            if (window.PDFViewer && window.PDFViewer.downloadDirect) {
+                await window.PDFViewer.downloadDirect(url, title, code);
+            } else {
+                window.open(url, '_blank');
+            }
+        } finally {
+            if (btn) {
+                setTimeout(() => this.setButtonLoading(btn, false), 450);
+            }
+        }
+    },
+
     openPdfPreview(url, title = 'Document Preview') {
         if (window.PDFViewer) {
             window.PDFViewer.openDirect(url, title);
@@ -1780,18 +1813,18 @@ const App = {
                                             <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Question Paper">
                                                 <i class="bi bi-eye"></i> QP
                                             </button>
-                                            <a href="${p.qp_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
+                                            <button onclick="App.downloadPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'QP')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Question Paper">
                                                 <i class="bi bi-download"></i>
-                                            </a>
+                                            </button>
                                         ` : ''}
 
                                         ${p.has_scheme ? `
                                             <button onclick="App.previewPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 flex items-center gap-1 transition" title="Preview Scheme">
                                                 <i class="bi bi-journal-check"></i> Scheme
                                             </button>
-                                            <a href="${p.scheme_url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
+                                            <button onclick="App.downloadPaper(this, ${JSON.stringify(p).replace(/"/g, '&quot;')}, 'SCHEME')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Evaluation Scheme">
                                                 <i class="bi bi-download"></i>
-                                            </a>
+                                            </button>
                                         ` : ''}
 
                                         ${isAdmin ? `
@@ -1828,9 +1861,9 @@ const App = {
                                         <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model Question Paper">
                                             <i class="bi bi-eye"></i> View
                                         </button>
-                                        <a href="${m.cdn_url || m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
+                                        <button onclick="App.downloadDirect(this, '${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model_Paper'}', '${course.course_code || ''}')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model Question Paper">
                                             <i class="bi bi-download"></i>
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             `).join('')}
@@ -1962,9 +1995,9 @@ const App = {
                                     <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
                                         <i class="bi bi-eye"></i> View
                                     </button>
-                                    <a href="${m.cdn_url || m.url}" target="_blank" download class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
+                                    <button onclick="App.downloadDirect(this, '${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model_Paper'}', '${course.course_code || ''}')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
                                         <i class="bi bi-download"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         `).join('')}

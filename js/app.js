@@ -492,6 +492,33 @@ const App = {
         }
     },
 
+    previewSyllabus(sylObj, code = '', initialTab = 'FULL') {
+        let syllabus = sylObj;
+        if (!syllabus || typeof syllabus === 'string') {
+            syllabus = this.getDeptSyllabus(code, typeof sylObj === 'string' ? sylObj : '');
+        }
+        if (!syllabus || !syllabus.main_syllabus) {
+            syllabus = {
+                program: code ? `MGU FYUGP - ${code}` : 'Mahatma Gandhi University FYUGP',
+                main_syllabus: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp',
+                links: [
+                    { title: 'Official MGU FYUGP Syllabus Portal', url: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp' },
+                    { title: 'MGU-UGP Regulations & Amendments', url: 'https://cap.mgu.ac.in/mguugpdocs/1317-ACA_16-2025-MGU.pdf' }
+                ]
+            };
+        }
+        if (window.PDFViewer && typeof window.PDFViewer.openSyllabus === 'function') {
+            window.PDFViewer.openSyllabus(syllabus, code, initialTab);
+        } else if (syllabus.main_syllabus) {
+            window.open(syllabus.main_syllabus, '_blank');
+        }
+    },
+
+    openDepartmentAmendments(deptCode, deptName) {
+        const syl = this.getDeptSyllabus(deptCode, deptName);
+        this.previewSyllabus(syl, deptCode, 'AMENDMENTS');
+    },
+
     async downloadPaper(btn, doc, type = 'QP') {
         if (!doc) return;
         if (btn) this.setButtonLoading(btn, true, '');
@@ -1972,6 +1999,8 @@ const App = {
 
         const EXACT_MAP = {
             'AGD': 'BA (Hons) Animation and Graphic Design',
+            'AVE': 'BA (Hons) Animation and Visual Effects',
+            'IAA': 'BA (Hons) Interior Architecture and Artistry',
             'AQC': 'BSc (Hons) Aquaculture',
             'ARB': 'BA (Hons) Arabic',
             'ADS': 'BSc (Hons) Artificial Intelligence and Data Science',
@@ -2001,6 +2030,8 @@ const App = {
             'FDG': 'BSc (Hons) Fashion Designing',
             'AAS': 'BFA (Hons) Applied Arts',
             'BFA': 'BFA (Hons) Applied Arts',
+            'PAI': 'BFA (Hons) Painting',
+            'SCL': 'BFA (Hons) Sculpture',
             'FSQ': 'BSc (Hons) Food Science and Quality Control',
             'FTQ': 'BSc (Hons) Food Technology and Quality Assurance',
             'FSC': 'BSc (Hons) Forensic Science',
@@ -2021,13 +2052,23 @@ const App = {
             'MBG': 'BSc (Hons) Microbiology',
             'MCB': 'BSc (Hons) Microbiology',
             'MLM': 'BA (Hons) Multimedia',
-            'MMD': 'BA (Hons) Multimedia',
+            'MMD': 'BA (Hons) Music - Mridangam',
+            'MVL': 'BA (Hons) Music - Violin',
+            'MVN': 'BA (Hons) Music - Veena',
+            'MVO': 'BA (Hons) Music - Vocal',
             'MUS': 'BA (Hons) Music - Mridangam',
+            'SDV': 'BA (Hons) Sound Design and Visual Editing',
+            'VCN': 'BA (Hons) Visual Communication',
             'PFA': 'BA (Hons) Bharathanatyam',
-            'DAN': 'BA (Hons) Bharathanatyam',
             'BHN': 'BA (Hons) Bharathanatyam',
-            'MOH': 'BA (Hons) Mohiniyattam',
+            'DAN': 'BA (Hons) Bharathanatyam',
+            'KCN': 'BA (Hons) Kathakali Chenda',
+            'KMD': 'BA (Hons) Kathakali Madhalam',
+            'KSN': 'BA (Hons) Kathakali Sangeetham',
+            'KVS': 'BA (Hons) Kathakali Vesham',
             'KAT': 'BA (Hons) Kathakali Vesham',
+            'MHN': 'BA (Hons) Mohiniyattam',
+            'MOH': 'BA (Hons) Mohiniyattam',
             'PHL': 'BA (Hons) Philosophy',
             'PES': 'BPES (Hons)',
             'PHY': 'BSc (Hons) Physics',
@@ -2036,10 +2077,16 @@ const App = {
             'PSY': 'BSc (Hons) Psychology',
             'SAN': 'BA (Hons) Sanskrit (Special) Sahithya',
             'SSP': 'BA (Hons) Sanskrit (Special) Sahithya',
+            'SSD': 'BA (Hons) Sanskrit (Special) Vedanta',
+            'SSJ': 'BA (Hons) Sanskrit (Special) Jyothisha',
+            'SSN': 'BA (Hons) Sanskrit (Special) Nyaya',
+            'SSS': 'BA (Hons) Sanskrit (Special) Sahithya',
+            'SSV': 'BA (Hons) Sanskrit (Special) Vyakarana',
             'SWK': 'BSW (Hons)',
             'BSW': 'BSW (Hons)',
             'SOC': 'BA (Hons) Sociology',
             'SMG': 'BSM (Hons)',
+            'BSM': 'BSM (Hons)',
             'STA': 'BSc (Hons) Statistics',
             'SYR': 'Syriac Minor and Other Courses',
             'TAM': 'BA (Hons) Tamil',
@@ -2293,7 +2340,7 @@ const App = {
                             const syl = this.getCourseSyllabus(course);
                             if (!syl || !syl.main_syllabus) return '';
                             return `
-                                <button onclick="App.previewDirect(this, '${syl.main_syllabus}', 'Syllabus - ${syl.program}', '${course.course_code}')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Full Discipline Syllabus (from cap.mgu.ac.in)">
+                                <button onclick="App.previewSyllabus(null, '${course.dept_code || course.parent_dept || ''}', 'FULL')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Full Discipline Syllabus (from cap.mgu.ac.in)">
                                     <i class="bi bi-book-half"></i> Programme Syllabus
                                 </button>
                             `;
@@ -2457,7 +2504,7 @@ const App = {
                                 </span>
                             </div>
                             <div class="flex items-center gap-1 shrink-0">
-                                <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus">
+                                <button onclick="App.previewSyllabus(null, '${p.dept_code || p.parent_dept || ''}', 'FULL')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus">
                                     <i class="bi bi-eye"></i> View
                                 </button>
                                 <a href="${sylUrl}" target="_blank" rel="noopener" class="p-0.5 text-xs text-slate-500 hover:text-emerald-600 transition" title="Open Syllabus Link">
@@ -2574,7 +2621,7 @@ const App = {
                                                     const sylTitle = `Syllabus - ${syl.program || course.title}`;
                                                     return `
                                                         <div class="pt-1 border-t border-slate-100 dark:border-slate-700/50">
-                                                            <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus: ${syl.program}">
+                                                            <button onclick="App.previewSyllabus(null, '${course.dept_code || course.parent_dept || ''}', 'FULL')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus: ${syl.program}">
                                                                 <i class="bi bi-book-half"></i> Syllabus
                                                             </button>
                                                         </div>
@@ -3016,12 +3063,23 @@ const App = {
                             </div>
 
                             <div class="flex flex-wrap items-center gap-2 shrink-0">
-                                <button onclick="App.previewDirect(this, '${deptSyllabus.main_syllabus}', 'Official Syllabus - ${deptSyllabus.program}', '${dept.code}')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs hover:shadow-md transition flex items-center gap-1.5 cursor-pointer" title="Preview Official MGU Programme Syllabus PDF">
-                                    <i class="bi bi-eye"></i> View Complete Syllabus
-                                </button>
-                                <a href="${deptSyllabus.main_syllabus}" target="_blank" rel="noopener" class="p-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-2xs transition flex items-center gap-1" title="Open Syllabus on MGU Portal">
-                                    <i class="bi bi-box-arrow-up-right text-xs"></i>
-                                </a>
+                                ${(() => {
+                                    const amCount = (deptSyllabus.links || []).filter(l => 
+                                        l.url && l.url !== deptSyllabus.main_syllabus && !l.url.endsWith('#') && 
+                                        (l.title || '').toLowerCase() !== 'view syllabus'
+                                    ).length;
+                                    return `
+                                        <button onclick="App.previewSyllabus(null, '${dept.code}', 'FULL')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs hover:shadow-md transition flex items-center gap-1.5 cursor-pointer" title="Preview Official MGU Programme Syllabus PDF">
+                                            <i class="bi bi-eye"></i> View Complete Syllabus
+                                        </button>
+                                        <button onclick="App.openDepartmentAmendments('${dept.code}', '${dept.name.replace(/'/g, "\\'")}')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white shadow-xs hover:shadow-md transition flex items-center gap-1.5 cursor-pointer" title="View Latest University Amendment Orders (${amCount})">
+                                            <i class="bi bi-patch-check"></i> View Amendments ${amCount > 0 ? `(${amCount})` : ''}
+                                        </button>
+                                        <a href="${deptSyllabus.main_syllabus}" target="_blank" rel="noopener" class="p-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-2xs transition flex items-center gap-1" title="Open Syllabus on MGU Portal">
+                                            <i class="bi bi-box-arrow-up-right text-xs"></i>
+                                        </a>
+                                    `;
+                                })()}
                             </div>
                         </div>
                     `;
@@ -3298,9 +3356,20 @@ const App = {
                                         const mSyllabus = this.getDeptSyllabus(mCode, mName);
                                         if (!mSyllabus || !mSyllabus.main_syllabus) return '';
                                         return `
-                                            <button onclick="App.previewDirect(this, '${mSyllabus.main_syllabus}', 'Official Syllabus - ${mSyllabus.program}', '${mCode}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="View ${mName} Discipline Syllabus">
-                                                <i class="bi bi-book-half"></i> Discipline Syllabus
-                                            </button>
+                                            ${(() => {
+                                                const amCount = (mSyllabus.links || []).filter(l => 
+                                                    l.url && l.url !== mSyllabus.main_syllabus && !l.url.endsWith('#') && 
+                                                    (l.title || '').toLowerCase() !== 'view syllabus'
+                                                ).length;
+                                                return `
+                                                    <button onclick="App.previewSyllabus(null, '${mCode}', 'FULL')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition cursor-pointer" title="View ${mName} Discipline Syllabus">
+                                                        <i class="bi bi-book-half"></i> Discipline Syllabus
+                                                    </button>
+                                                    <button onclick="App.previewSyllabus(null, '${mCode}', 'AMENDMENTS')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-purple-600 hover:bg-purple-500 text-white shadow-2xs flex items-center gap-1 transition cursor-pointer" title="View Amendments for ${mName}">
+                                                        <i class="bi bi-patch-check"></i> Amendments ${amCount > 0 ? `(${amCount})` : ''}
+                                                    </button>
+                                                `;
+                                            })()}
                                         `;
                                     })()}
                                     <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-2xs">
@@ -3337,9 +3406,20 @@ const App = {
                                     const deptSyllabus = this.getDeptSyllabus(dept.code, dept.name);
                                     if (!deptSyllabus || !deptSyllabus.main_syllabus) return '';
                                     return `
-                                        <button onclick="App.previewDirect(this, '${deptSyllabus.main_syllabus}', 'Official Syllabus - ${deptSyllabus.program}', '${dept.code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="View Major Discipline Syllabus">
-                                            <i class="bi bi-book-half"></i> Major Syllabus
-                                        </button>
+                                        ${(() => {
+                                            const amCount = (deptSyllabus.links || []).filter(l => 
+                                                l.url && l.url !== deptSyllabus.main_syllabus && !l.url.endsWith('#') && 
+                                                (l.title || '').toLowerCase() !== 'view syllabus'
+                                            ).length;
+                                            return `
+                                                <button onclick="App.previewSyllabus(null, '${dept.code}', 'FULL')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition cursor-pointer" title="View Major Discipline Syllabus">
+                                                    <i class="bi bi-book-half"></i> Major Syllabus
+                                                </button>
+                                                <button onclick="App.previewSyllabus(null, '${dept.code}', 'AMENDMENTS')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-purple-600 hover:bg-purple-500 text-white shadow-2xs flex items-center gap-1 transition cursor-pointer" title="View Latest University Amendments">
+                                                    <i class="bi bi-patch-check"></i> Amendments ${amCount > 0 ? `(${amCount})` : ''}
+                                                </button>
+                                            `;
+                                        })()}
                                     `;
                                 })()}
                                 <span class="text-xs text-slate-400 font-medium">

@@ -25,6 +25,13 @@ const PDFViewer = {
     activeWorkingUrl: null,
     isLoading: false,
 
+    // First-Class Syllabus & Amendments State
+    isSyllabusMode: false,
+    currentSyllabus: null,
+    syllabusCode: '',
+    syllabusActiveTab: 'FULL', // 'FULL', 'AMENDMENTS', or 'AMENDMENT_PREVIEW'
+    previewingAmendment: null,
+
     init() {
         this.modal = document.getElementById('pdfModal');
         this.pagesContainer = document.getElementById('pdfPagesContainer');
@@ -159,6 +166,397 @@ const PDFViewer = {
                 window.App.trackPortalVisit('Paper: ' + (doc.course_code || doc.title || 'Document'));
             }
         } catch (e) {}
+    },
+
+
+    openSyllabus(syllabusObj, code = '', initialTab = 'FULL') {
+        if (!syllabusObj) return;
+
+        // If string URL passed, construct syllabus object
+        if (typeof syllabusObj === 'string') {
+            const matched = (window.App && Array.isArray(window.App.syllabi)) 
+                ? window.App.syllabi.find(p => p.main_syllabus === syllabusObj || p.program === syllabusObj) 
+                : null;
+            if (matched) {
+                syllabusObj = matched;
+            } else {
+                syllabusObj = {
+                    program: code ? `MGU FYUGP (${code}) Syllabus` : 'Official Programme Syllabus',
+                    main_syllabus: syllabusObj,
+                    links: []
+                };
+            }
+        }
+
+        this.isSyllabusMode = true;
+        this.currentSyllabus = syllabusObj;
+        this.syllabusCode = code || '';
+        this.syllabusActiveTab = initialTab || 'FULL';
+        this.previewingAmendment = null;
+        this.activeType = 'SYLLABUS';
+
+        const mainUrl = syllabusObj.main_syllabus || '';
+        const allLinks = syllabusObj.links || [];
+        const amendments = allLinks.filter(l => 
+            l.url && 
+            l.url !== mainUrl && 
+            !l.url.endsWith('#') && 
+            (l.title || '').trim().toLowerCase() !== 'view syllabus' &&
+            (l.title || '').trim().toLowerCase() !== 'view'
+        );
+        this.currentSyllabus.amendments = amendments;
+
+        // Set Title & Meta
+        if (this.titleEl) {
+            this.titleEl.textContent = syllabusObj.program || 'Official Programme Syllabus';
+        }
+
+        if (this.metaEl) {
+            const codeTag = code ? `<span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 text-xs px-2 py-0.5 rounded font-mono font-semibold">${code}</span>` : '';
+            const statusTag = `<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Mahatma Gandhi University Official Syllabus</span>`;
+            const portalTag = `<span class="text-xs text-slate-600 dark:text-slate-300">• cap.mgu.ac.in</span>`;
+            this.metaEl.innerHTML = `${codeTag} ${statusTag} ${portalTag}`;
+        }
+
+        // Configure header tabs for Syllabus mode
+        if (this.qpTabBtn) {
+            this.qpTabBtn.classList.remove('hidden');
+            this.qpTabBtn.innerHTML = `
+                <i class="bi bi-book-half"></i>
+                <span class="hidden sm:inline">Full Syllabus</span>
+                <span class="sm:hidden">Syllabus</span>
+            `;
+            this.qpTabBtn.title = 'View Full Programme Syllabus PDF';
+        }
+
+        if (this.schemeTabBtn) {
+            this.schemeTabBtn.classList.remove('hidden');
+            this.schemeTabBtn.innerHTML = `
+                <i class="bi bi-patch-check"></i>
+                <span class="hidden sm:inline">Latest Amendments (${amendments.length})</span>
+                <span class="sm:hidden">Amendments (${amendments.length})</span>
+            `;
+            this.schemeTabBtn.title = `View University Amendment Orders (${amendments.length})`;
+        }
+
+        if (this.modal) {
+            this.modal.classList.remove('hidden');
+        }
+        document.body.classList.add('overflow-hidden');
+
+        this.renderSyllabusViewer();
+
+        try {
+            if (window.App && typeof window.App.trackPortalVisit === 'function') {
+                window.App.trackPortalVisit('Syllabus: ' + (syllabusObj.program || code || 'Curriculum'));
+            }
+        } catch (e) {}
+    },
+
+    switchSyllabusTab(tab) {
+        if (this.syllabusActiveTab === tab) return;
+        this.syllabusActiveTab = tab;
+        this.previewingAmendment = null;
+        
+        // Restore meta text when switching away from amendment preview
+        if (this.metaEl && this.currentSyllabus) {
+            const codeTag = this.syllabusCode ? `<span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 text-xs px-2 py-0.5 rounded font-mono font-semibold">${this.syllabusCode}</span>` : '';
+            this.metaEl.innerHTML = `${codeTag} <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Mahatma Gandhi University Official Syllabus</span> <span class="text-xs text-slate-600 dark:text-slate-300">• cap.mgu.ac.in</span>`;
+        }
+        if (this.titleEl && this.currentSyllabus) {
+            this.titleEl.textContent = this.currentSyllabus.program || 'Official Programme Syllabus';
+        }
+
+        this.renderSyllabusViewer();
+    },
+
+    renderSyllabusViewer() {
+        if (!this.currentSyllabus) return;
+        const isFull = this.syllabusActiveTab === 'FULL';
+        const amendments = this.currentSyllabus.amendments || [];
+        const mainUrl = this.currentSyllabus.main_syllabus || '';
+
+        // Update tab styles
+        if (this.qpTabBtn && this.schemeTabBtn) {
+            if (isFull) {
+                this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-emerald-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
+                this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
+            } else {
+                this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-purple-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
+                this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
+            }
+        }
+
+        // Hide QP error card, loading spinner, and PDF.js toolbar
+        if (this.errorCard) this.errorCard.classList.add('hidden');
+        if (this.loadingSpinner) this.loadingSpinner.classList.add('hidden');
+        if (this.toolbar) this.toolbar.classList.add('hidden');
+
+        if (isFull) {
+            // Hide pages container
+            if (this.pagesContainer) {
+                this.pagesContainer.innerHTML = '';
+                this.pagesContainer.classList.add('hidden');
+            }
+
+            // Setup download and external buttons for main syllabus
+            this.setupSyllabusActions(mainUrl, (this.currentSyllabus.program || 'MGU_Syllabus') + '.pdf');
+
+            // Render via Google Docs Viewer inside iframe
+            if (this.iframe) {
+                this.iframe.className = 'w-full flex-1 h-full min-h-[550px] sm:min-h-[700px] border-0 rounded-xl shadow-lg bg-white dark:bg-slate-900';
+                const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(mainUrl)}&embedded=true`;
+                if (this.iframe.src !== viewerUrl) {
+                    this.iframe.src = viewerUrl;
+                }
+                this.iframe.classList.remove('hidden');
+            }
+        } else if (this.syllabusActiveTab === 'AMENDMENTS') {
+            // Hide iframe
+            if (this.iframe) {
+                this.iframe.src = 'about:blank';
+                this.iframe.classList.add('hidden');
+            }
+
+            // Show pages container and render amendments list
+            if (this.pagesContainer) {
+                this.pagesContainer.classList.remove('hidden');
+                this.renderAmendmentsList(amendments);
+            }
+
+            // Setup external and download buttons for general regulations
+            this.setupSyllabusActions('https://cap.mgu.ac.in/mguugp_regulations.jsp', 'MGU_FYUGP_Regulations.pdf');
+        } else if (this.syllabusActiveTab === 'AMENDMENT_PREVIEW') {
+            // Viewing a specific amendment PDF
+            if (this.pagesContainer) {
+                this.pagesContainer.classList.add('hidden');
+            }
+
+            const item = this.previewingAmendment;
+            if (item && item.url) {
+                this.setupSyllabusActions(item.url, (item.title || 'Amendment_Order') + '.pdf');
+                if (this.iframe) {
+                    this.iframe.className = 'w-full flex-1 h-full min-h-[550px] sm:min-h-[700px] border-0 rounded-xl shadow-lg bg-white dark:bg-slate-900';
+                    const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(item.url)}&embedded=true`;
+                    if (this.iframe.src !== viewerUrl) {
+                        this.iframe.src = viewerUrl;
+                    }
+                    this.iframe.classList.remove('hidden');
+                }
+            }
+        }
+    },
+
+    renderAmendmentsList(amendments) {
+        if (!this.pagesContainer) return;
+        const progTitle = this.currentSyllabus ? this.currentSyllabus.program : 'Programme';
+        const code = this.syllabusCode || '';
+
+        let html = `
+            <div class="w-full max-w-4xl mx-auto py-4 px-2 sm:px-4 space-y-5 animate-in fade-in duration-200">
+                <!-- Header Banner -->
+                <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-purple-50 via-indigo-50/60 to-purple-50/30 dark:from-purple-950/40 dark:via-indigo-950/30 dark:to-purple-950/20 border border-purple-200/80 dark:border-purple-800/60 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center text-2xl shrink-0 shadow-xs">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-600 text-white uppercase tracking-wider">
+                                    Official Amendments
+                                </span>
+                                ${code ? `<span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900/60 text-purple-800 dark:text-purple-200 border border-purple-200 dark:border-purple-800">${code}</span>` : ''}
+                                <span class="text-xs font-bold text-slate-900 dark:text-white truncate">
+                                    ${progTitle}
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">
+                                Latest University Orders (U.O.), course substitutions, and curriculum updates issued by Mahatma Gandhi University.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="shrink-0 flex items-center gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-700/80 shadow-2xs">
+                            ${amendments.length} ${amendments.length === 1 ? 'Amendment Order' : 'Amendment Orders'}
+                        </span>
+                    </div>
+                </div>
+        `;
+
+        if (amendments.length === 0) {
+            html += `
+                <div class="p-8 text-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-3">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-400 flex items-center justify-center text-2xl">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">No Programme-Specific Amendments Published</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+                        This discipline strictly adheres to the standard Mahatma Gandhi University Four Year Undergraduate Programme (FYUGP) Regulations 2024.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://cap.mgu.ac.in/mguugp_regulations.jsp" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/50 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 transition">
+                            <i class="bi bi-box-arrow-up-right"></i> View MGU-UGP (Honours) Regulations & Amendments
+                        </a>
+                    </div>
+                </div>
+            `;
+        } else {
+            html += `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                    ${amendments.map((a, index) => {
+                        const title = a.title || 'Amendment Order';
+                        const url = a.url;
+                        let semLabel = '';
+                        const semMatch = title.match(/(\d+)(?:st|nd|rd|th)?\s*Semester|Semester\s*(\d+)|First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth/i);
+                        if (semMatch) {
+                            semLabel = semMatch[0];
+                        }
+
+                        let badgeColor = 'bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300 border-purple-200 dark:border-purple-800';
+                        let icon = 'bi-patch-check';
+                        if (title.toLowerCase().includes('substituted')) {
+                            badgeColor = 'bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 border-amber-200 dark:border-amber-800';
+                            icon = 'bi-arrow-left-right';
+                        } else if (title.toLowerCase().includes('mdc')) {
+                            badgeColor = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800';
+                            icon = 'bi-stars';
+                        }
+
+                        const safeTitle = title.replace(/'/g, "\\'");
+
+                        return `
+                            <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-400 dark:hover:border-purple-600 shadow-xs hover:shadow-md transition flex flex-col justify-between gap-3 group">
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <div class="flex items-center gap-1.5">
+                                            <span class="w-6 h-6 rounded-lg bg-purple-50 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300 flex items-center justify-center text-xs">
+                                                <i class="bi ${icon}"></i>
+                                            </span>
+                                            <span class="text-[11px] font-mono font-bold text-slate-400">Order #${index + 1}</span>
+                                        </div>
+                                        ${semLabel ? `
+                                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${badgeColor} border font-mono">
+                                                ${semLabel}
+                                            </span>
+                                        ` : `
+                                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                                                University Order
+                                            </span>
+                                        `}
+                                    </div>
+                                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                                        ${title}
+                                    </h5>
+                                </div>
+
+                                <div class="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+                                    <button onclick="PDFViewer.previewAmendmentPdf('${url}', '${safeTitle}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-purple-600 hover:bg-purple-500 text-white shadow-2xs flex items-center gap-1.5 transition cursor-pointer" title="Preview this amendment order in modal">
+                                        <i class="bi bi-eye"></i> View Order
+                                    </button>
+                                    <div class="flex items-center gap-1">
+                                        <a href="${url}" target="_blank" rel="noopener" class="p-1 text-xs text-slate-500 hover:text-purple-600 dark:hover:text-purple-400 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition" title="Open on MGU portal">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                        <button onclick="PDFViewer.downloadDirect('${url}', '${safeTitle}', '${code}')" class="p-1 text-xs text-slate-500 hover:text-emerald-600 dark:hover:text-emerald-400 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer" title="Download Order PDF">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        // Master Regulations & Links footer
+        html += `
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                    <div class="flex items-center gap-2.5">
+                        <i class="bi bi-shield-check text-blue-600 dark:text-blue-400 text-lg"></i>
+                        <span class="text-slate-600 dark:text-slate-300">
+                            Mahatma Gandhi University FYUGP Master Regulations & Attainment Manual
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <a href="https://cap.mgu.ac.in/mguugp_regulations.jsp" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 font-semibold shadow-2xs flex items-center gap-1 transition">
+                            <i class="bi bi-file-earmark-ruled"></i> Master Regulations ↗
+                        </a>
+                        <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-2xs flex items-center gap-1 transition">
+                            <i class="bi bi-box-arrow-up-right"></i> Syllabus Portal ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        this.pagesContainer.innerHTML = html;
+    },
+
+    previewAmendmentPdf(url, title) {
+        if (!url) return;
+        this.syllabusActiveTab = 'AMENDMENT_PREVIEW';
+        this.previewingAmendment = { url, title };
+
+        // Hide pages container
+        if (this.pagesContainer) {
+            this.pagesContainer.classList.add('hidden');
+        }
+
+        // Show iframe with Google Docs Viewer
+        if (this.iframe) {
+            this.iframe.className = 'w-full flex-1 h-full min-h-[550px] sm:min-h-[700px] border-0 rounded-xl shadow-lg bg-white dark:bg-slate-900';
+            this.iframe.src = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
+            this.iframe.classList.remove('hidden');
+        }
+
+        // Setup actions
+        this.setupSyllabusActions(url, (title || 'Amendment_Order') + '.pdf');
+
+        // Add back-to-amendments button in modal header
+        if (this.titleEl) {
+            this.titleEl.textContent = `${title} • ${this.currentSyllabus ? this.currentSyllabus.program : 'Curriculum'}`;
+        }
+        if (this.metaEl) {
+            const backBtn = `
+                <button type="button" onclick="PDFViewer.backToAmendmentsList()" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-purple-100 hover:bg-purple-200 dark:bg-purple-900/60 dark:hover:bg-purple-900 text-purple-800 dark:text-purple-200 font-bold text-xs transition cursor-pointer mr-2 shadow-2xs">
+                    <i class="bi bi-arrow-left"></i> Back to Amendments List
+                </button>
+            `;
+            this.metaEl.innerHTML = `${backBtn} <span class="font-medium text-slate-600 dark:text-slate-300">University Order Preview</span>`;
+        }
+    },
+
+    backToAmendmentsList() {
+        this.syllabusActiveTab = 'AMENDMENTS';
+        this.previewingAmendment = null;
+        if (this.metaEl && this.currentSyllabus) {
+            const codeTag = this.syllabusCode ? `<span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 text-xs px-2 py-0.5 rounded font-mono font-semibold">${this.syllabusCode}</span>` : '';
+            this.metaEl.innerHTML = `${codeTag} <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Mahatma Gandhi University Official Syllabus</span> <span class="text-xs text-slate-600 dark:text-slate-300">• cap.mgu.ac.in</span>`;
+        }
+        if (this.titleEl && this.currentSyllabus) {
+            this.titleEl.textContent = this.currentSyllabus.program || 'Official Programme Syllabus';
+        }
+        this.renderSyllabusViewer();
+    },
+
+    setupSyllabusActions(url, filename) {
+        if (this.downloadBtn) {
+            this.downloadBtn.onclick = () => {
+                const a = document.createElement('a');
+                a.href = url;
+                a.target = '_blank';
+                a.download = filename || 'document.pdf';
+                document.body.appendChild(a);
+                a.click();
+                setTimeout(() => document.body.removeChild(a), 200);
+            };
+        }
+        if (this.openExternalBtn) {
+            this.openExternalBtn.onclick = () => {
+                window.open(url, '_blank');
+            };
+        }
     },
 
     switchTab(type) {

@@ -1964,7 +1964,118 @@ const App = {
         return courseList;
     },
 
-        getCourseSyllabus(course) {
+        getDeptSyllabus(deptCode, deptName) {
+        if (!deptCode && !deptName) return null;
+        const code = (deptCode || '').toUpperCase().trim();
+        const name = (deptName || '').toLowerCase().trim();
+        const list = this.syllabi || [];
+
+        const EXACT_MAP = {
+            'AGD': 'BA (Hons) Animation and Graphic Design',
+            'AQC': 'BSc (Hons) Aquaculture',
+            'ARB': 'BA (Hons) Arabic',
+            'ADS': 'BSc (Hons) Artificial Intelligence and Data Science',
+            'BCH': 'BSc (Hons) Biochemistry',
+            'BIF': 'BSc (Hons) Bioinformatics',
+            'BTS': 'BSc (Hons) Biological Techniques and Specimen Preparation',
+            'BTG': 'BSc (Hons) Biotechnology',
+            'BOT': 'BSc (Hons) Botany',
+            'BBT': 'BSc (Hons) Botany and Biotechnology(Double Major Programme)',
+            'BBA': 'Bachelor in Business Administration (Honours)',
+            'CHE': 'BSc (Hons) Chemistry',
+            'CHM': 'BSc (Hons) Chemistry',
+            'CND': 'BSc (Hons) Clinical Nutrition and Dietetics',
+            'COM': 'BCom (Hons)',
+            'COA': 'BCom (Hons)',
+            'COF': 'BCom (Hons)',
+            'BCA': 'Bachelor in Computer Applications (Honours)',
+            'CSA': 'Bachelor in Computer Applications (Honours)',
+            'CSC': 'BSc (Hons) Computer Science',
+            'CFS': 'BSc (Hons) Cyber Forensics',
+            'CYB': 'BSc (Hons) Cyber Forensics',
+            'ECO': 'BA (Hons) Economics',
+            'ECT': 'BSc (Hons) Electronics with Computer Technology',
+            'ELT': 'BSc (Hons) Electronics with Computer Technology',
+            'ECC': 'BSc (Hons) Electronics with Computer Technology and Computer Science(Double Major Programme)',
+            'ENG': 'BA (Hons) English',
+            'FDG': 'BSc (Hons) Fashion Designing',
+            'AAS': 'BFA (Hons) Applied Arts',
+            'BFA': 'BFA (Hons) Applied Arts',
+            'FSQ': 'BSc (Hons) Food Science and Quality Control',
+            'FTQ': 'BSc (Hons) Food Technology and Quality Assurance',
+            'FSC': 'BSc (Hons) Forensic Science',
+            'FOR': 'BSc (Hons) Forensic Science',
+            'FRH': 'French Minor and Other Courses',
+            'GEO': 'BSc (Hons) Geology',
+            'GER': 'German Minor and Other Courses',
+            'HIN': 'BA (Hons) Hindi',
+            'HIS': 'BA (Hons) History',
+            'HSC': 'BSc (Hons) Home Science',
+            'HMS': 'BSc (Hons) Home Science',
+            'HMC': 'BSc (Hons) Hotel Management and Culinary Arts',
+            'ISH': 'BA (Hons) Islamic History',
+            'JMC': 'BA (Hons) Journalism and Mass Communication',
+            'LIS': 'Library and Information Science Courses',
+            'MAL': 'BA (Hons) Malayalam',
+            'MAT': 'BSc (Hons) Mathematics',
+            'MBG': 'BSc (Hons) Microbiology',
+            'MCB': 'BSc (Hons) Microbiology',
+            'MLM': 'BA (Hons) Multimedia',
+            'MMD': 'BA (Hons) Multimedia',
+            'MUS': 'BA (Hons) Music - Mridangam',
+            'PFA': 'BA (Hons) Bharathanatyam',
+            'DAN': 'BA (Hons) Bharathanatyam',
+            'BHN': 'BA (Hons) Bharathanatyam',
+            'MOH': 'BA (Hons) Mohiniyattam',
+            'KAT': 'BA (Hons) Kathakali Vesham',
+            'PHL': 'BA (Hons) Philosophy',
+            'PES': 'BPES (Hons)',
+            'PHY': 'BSc (Hons) Physics',
+            'POL': 'BA (Hons) Political Science',
+            'PJM': 'BA (Hons) Political Science with Journalism and Mass Communication(Double Major Programme)',
+            'PSY': 'BSc (Hons) Psychology',
+            'SAN': 'BA (Hons) Sanskrit (Special) Sahithya',
+            'SSP': 'BA (Hons) Sanskrit (Special) Sahithya',
+            'SWK': 'BSW (Hons)',
+            'BSW': 'BSW (Hons)',
+            'SOC': 'BA (Hons) Sociology',
+            'SMG': 'BSM (Hons)',
+            'STA': 'BSc (Hons) Statistics',
+            'SYR': 'Syriac Minor and Other Courses',
+            'TAM': 'BA (Hons) Tamil',
+            'TTM': 'BTTM (Hons)',
+            'BTT': 'BTTM (Hons)',
+            'ZGY': 'BSc (Hons) Zoology',
+            'ZOO': 'BSc (Hons) Zoology',
+            'ZIM': 'BSc (Hons) Zoology and Industrial Microbiology (Double Major Programme)'
+        };
+
+        const target = EXACT_MAP[code];
+        if (target) {
+            const found = list.find(p => p.program && p.program.toLowerCase().includes(target.toLowerCase()));
+            if (found) return found;
+        }
+
+        if (name) {
+            const found = list.find(p => {
+                const pn = (p.program || '').toLowerCase();
+                const regex = new RegExp('\\b' + name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+                return regex.test(pn);
+            });
+            if (found) return found;
+        }
+
+        return {
+            program: deptName ? `MGU FYUGP - ${deptName}` : 'Mahatma Gandhi University FYUGP',
+            main_syllabus: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp',
+            links: [
+                { title: 'Official MGU FYUGP Syllabus Portal', url: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp' },
+                { title: 'MGU-UGP Regulations & Amendments', url: 'https://cap.mgu.ac.in/mguugpdocs/1317-ACA_16-2025-MGU.pdf' }
+            ]
+        };
+    },
+
+    getCourseSyllabus(course) {
         if (!course) return null;
         const deptCode = (course.dept_code || course.parent_dept || '').toUpperCase();
         const deptName = (course.dept_name || course.parent_dept_name || '').toLowerCase();
@@ -2175,33 +2286,19 @@ const App = {
                         </div>
                     ` : ''}
 
-                    <!-- OFFICIAL SYLLABUS SECTION (AFTER MODEL QUESTION PAPER) -->
-                    ${(() => {
-                        const syl = this.getCourseSyllabus(course);
-                        if (!syl || !syl.main_syllabus) return '';
-                        const sylUrl = syl.main_syllabus;
-                        const sylTitle = `Syllabus - ${syl.program || course.title}`;
-                        return `
-                            <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60">
-                                <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/40 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
-                                    <div class="flex items-center gap-1.5 min-w-0">
-                                        <i class="bi bi-book-half text-emerald-600 dark:text-emerald-400 text-xs"></i>
-                                        <span class="text-[11px] sm:text-xs font-bold text-emerald-800 dark:text-emerald-300 truncate" title="${syl.program}">
-                                            📖 Official Syllabus: ${syl.program}
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center gap-1.5 shrink-0">
-                                        <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Official Syllabus PDF">
-                                            <i class="bi bi-eye"></i> View
-                                        </button>
-                                        <a href="${sylUrl}" target="_blank" rel="noopener" class="p-1 text-xs rounded-lg bg-emerald-200/80 dark:bg-emerald-800/60 hover:bg-emerald-300 text-emerald-800 dark:text-emerald-200 transition" title="Open Syllabus on MGU Portal">
-                                            <i class="bi bi-box-arrow-up-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    })()}
+                    <!-- Clean Inline Syllabus Action -->
+                    <div class="mt-2 pt-2 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between text-[11px]">
+                        <span class="text-slate-400 font-medium">${course.dept_name || 'Department'}</span>
+                        ${(() => {
+                            const syl = this.getCourseSyllabus(course);
+                            if (!syl || !syl.main_syllabus) return '';
+                            return `
+                                <button onclick="App.previewDirect(this, '${syl.main_syllabus}', 'Syllabus - ${syl.program}', '${course.course_code}')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Full Discipline Syllabus (from cap.mgu.ac.in)">
+                                    <i class="bi bi-book-half"></i> Programme Syllabus
+                                </button>
+                            `;
+                        })()}
+                    </div>
                 </div>
             </div>
         `;
@@ -2892,6 +2989,43 @@ const App = {
                         </div>
                     </div>
                 </div>
+
+                <!-- OFFICIAL DEPARTMENT & MAJOR PROGRAMME SYLLABUS BANNER -->
+                ${(() => {
+                    const deptSyllabus = this.getDeptSyllabus(dept.code, dept.name);
+                    if (!deptSyllabus || !deptSyllabus.main_syllabus) return '';
+                    return `
+                        <div class="mt-4 p-3.5 sm:p-4 rounded-2xl bg-gradient-to-r from-emerald-50 via-teal-50/70 to-emerald-50/40 dark:from-emerald-950/40 dark:via-teal-950/30 dark:to-emerald-950/20 border border-emerald-200 dark:border-emerald-800/60 shadow-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <div class="flex items-center gap-3 min-w-0">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0 shadow-xs">
+                                    <i class="bi bi-book-half"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-600 text-white uppercase tracking-wider">
+                                            Official MGU FYUGP Syllabus
+                                        </span>
+                                        <span class="text-xs font-bold text-emerald-900 dark:text-emerald-200 truncate">
+                                            ${deptSyllabus.program}
+                                        </span>
+                                    </div>
+                                    <div class="text-[11px] text-slate-600 dark:text-slate-300 mt-0.5">
+                                        Complete Department Programme Syllabus & Regulations from cap.mgu.ac.in
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2 shrink-0">
+                                <button onclick="App.previewDirect(this, '${deptSyllabus.main_syllabus}', 'Official Syllabus - ${deptSyllabus.program}', '${dept.code}')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs hover:shadow-md transition flex items-center gap-1.5 cursor-pointer" title="Preview Official MGU Programme Syllabus PDF">
+                                    <i class="bi bi-eye"></i> View Complete Syllabus
+                                </button>
+                                <a href="${deptSyllabus.main_syllabus}" target="_blank" rel="noopener" class="p-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-2xs transition flex items-center gap-1" title="Open Syllabus on MGU Portal">
+                                    <i class="bi bi-box-arrow-up-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                })()}
             `;
         }
 
@@ -3159,9 +3293,20 @@ const App = {
                                         </div>
                                     </div>
                                 </div>
-                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-2xs">
-                                    ${grouped.length} ${grouped.length === 1 ? 'Course' : 'Courses'} (${pList.length} ${pList.length === 1 ? 'Paper' : 'Papers'})
-                                </span>
+                                <div class="flex items-center gap-2">
+                                    ${(() => {
+                                        const mSyllabus = this.getDeptSyllabus(mCode, mName);
+                                        if (!mSyllabus || !mSyllabus.main_syllabus) return '';
+                                        return `
+                                            <button onclick="App.previewDirect(this, '${mSyllabus.main_syllabus}', 'Official Syllabus - ${mSyllabus.program}', '${mCode}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="View ${mName} Discipline Syllabus">
+                                                <i class="bi bi-book-half"></i> Discipline Syllabus
+                                            </button>
+                                        `;
+                                    })()}
+                                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-2xs">
+                                        ${grouped.length} ${grouped.length === 1 ? 'Course' : 'Courses'} (${pList.length} ${pList.length === 1 ? 'Paper' : 'Papers'})
+                                    </span>
+                                </div>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -3177,7 +3322,7 @@ const App = {
                 const groupedMajor = this.groupPapersByCourse(majorPapers);
                 sectionsHtml += `
                     <div class="space-y-4">
-                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2">
+                        <div class="flex flex-wrap items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2 gap-2">
                             <div class="flex items-center gap-2">
                                 <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
                                 <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
@@ -3187,9 +3332,20 @@ const App = {
                                     ${groupedMajor.length} Courses (${majorPapers.length} Papers)
                                 </span>
                             </div>
-                            <span class="text-xs text-slate-400 font-medium">
-                                ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
-                            </span>
+                            <div class="flex items-center gap-2">
+                                ${(() => {
+                                    const deptSyllabus = this.getDeptSyllabus(dept.code, dept.name);
+                                    if (!deptSyllabus || !deptSyllabus.main_syllabus) return '';
+                                    return `
+                                        <button onclick="App.previewDirect(this, '${deptSyllabus.main_syllabus}', 'Official Syllabus - ${deptSyllabus.program}', '${dept.code}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="View Major Discipline Syllabus">
+                                            <i class="bi bi-book-half"></i> Major Syllabus
+                                        </button>
+                                    `;
+                                })()}
+                                <span class="text-xs text-slate-400 font-medium">
+                                    ${isAdmin ? (sem === 'ALL' ? 'All Semesters' : `Semester ${sem}`) : ''}
+                                </span>
+                            </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">

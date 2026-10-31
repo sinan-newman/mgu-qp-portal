@@ -250,3 +250,193 @@ button:active:not(:disabled) {
   white-space: nowrap;
 }
 
+
+
+/* ============================================================
+   AI NOTES & COMPREHENSIVE STUDY BOOK PRINT / PDF ENGINE
+   Transforms notes into an authentic 15-30 page university handbook
+   ============================================================ */
+
+/* Screen preview styling for cover & chapters */
+.pdf-cover-page {
+  border: 2px solid #e2e8f0;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+  text-align: center;
+}
+
+.dark .pdf-cover-page {
+  border-color: #334155;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.pdf-toc-page {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  background: #f8fafc;
+}
+
+.dark .pdf-toc-page {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.pdf-chapter-start {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #cbd5e1;
+}
+
+.dark .pdf-chapter-start {
+  border-top-color: #475569;
+}
+
+.pdf-page-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 16mm 14mm 18mm 14mm;
+  }
+
+  /* Hide all interactive portal chrome */
+  header, footer, #heroSection, #mainNavTabsContainer, #filterControlsSection,
+  .no-print, #geminiApiModal, #crawlDetailsModal, #aiNotesToolbar,
+  .toast, #floatingFeedbackBtn, #deptDetailContainer, #adminPageSection,
+  .lg\:col-span-4, #aiCoursesListContainer, #aiNotesDocHeader,
+  .nav-tab-btn, button {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #aiNotesSection {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .lg\:col-span-8 {
+    width: 100% !important;
+    grid-column: span 12 / span 12 !important;
+  }
+
+  #aiNotesMainContainer, #aiNotesPrintArea {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  /* Academic Cover Page Styling */
+  .pdf-cover-page {
+    page-break-after: always !important;
+    break-after: page !important;
+    min-height: 92vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    text-align: center !important;
+    padding: 35mm 15mm 20mm 15mm !important;
+    box-sizing: border-box !important;
+    border: 3px double #1e3a8a !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    margin: 0 0 20mm 0 !important;
+  }
+
+  /* Table of Contents & Chapter Breaks */
+  .pdf-toc-page {
+    page-break-after: always !important;
+    break-after: page !important;
+    padding-top: 10mm !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+
+  .pdf-chapter-start, .pdf-module-break {
+    page-break-before: always !important;
+    break-before: page !important;
+    padding-top: 8mm !important;
+    border-top: none !important;
+  }
+
+  /* Prevent awkward splits inside questions, diagrams, and tables */
+  .pdf-avoid-break, .question-card, .rubric-table, table, pre, blockquote, .module-box {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    color: #0f172a !important;
+  }
+
+  h1 { font-size: 20pt !important; margin-top: 18pt !important; }
+  h2 { font-size: 15pt !important; margin-top: 14pt !important; border-bottom: 1.5pt solid #cbd5e1 !important; padding-bottom: 4pt !important; }
+  h3 { font-size: 12.5pt !important; margin-top: 10pt !important; }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 12pt 0 !important;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6pt 8pt !important;
+    font-size: 9.5pt !important;
+  }
+
+  th {
+    background-color: #f1f5f9 !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+  }
+
+  blockquote {
+    border-left: 3pt solid #3b82f6 !important;
+    padding-left: 10pt !important;
+    margin: 10pt 0 !important;
+    color: #334155 !important;
+    background: #f8fafc !important;
+    padding: 8pt 10pt !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace !important;
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+  }
+}

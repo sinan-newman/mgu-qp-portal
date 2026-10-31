@@ -1,0 +1,1440 @@
+{
+  "course_code": "MG2MDCECT101",
+  "title": "Python for Electronics",
+  "dept_name": "Electronics with Computer Technology",
+  "semester": 2,
+  "course_type": "MDC",
+  "max_marks": 70,
+  "total_questions": 102,
+  "repeating_skipped": 58,
+  "sources_used": [
+    "II Semester MGU UGP25 - March - 2025",
+    "Second semester BA/BSc/BVocFYUGP April 2026",
+    "Official Model Question Paper (FYUGP 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 102,
+    "part_b": 0,
+    "part_c": 0
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Else: print(\"Else block\") a). 0, 1, 2, Else block b). 0, 1, 2 c). Else block d). 0, 1, 2, 3, Else block / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:Guido van Rossum                    [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is correct about Python? A) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is correct about Python? A) Python is case...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[C] ",
+      "question": "Which argument in pack() aligns widgets left or right? a). side b). align c). anchor d). justify / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:TRUE()                                       [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What does `x <<= 3` do? a). Left shifts x by 3 bits and assigns b). Right shifts x by 3 bits and assigns c). Multiplies x by 3 and assigns d). Divides x by 3 and assigns / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Left shifts x by 3 bits and assigns</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is NOT a Python data type? A) int B) float C)char D) list K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is NOT a Python data type? A) int B) float...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following is a valid variable name in Python? a). my-var b). my_var c). my var d). my.var / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:my_var                                         [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of the following code? x = 1 while x < 3: print(x) x += 1 else: Print(\"Else block\") a). 1, 2, Else block b). 1, 2 c). Else block d). 1, 2, 3, Else block / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). 1, 2, Else block</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What will `print(\"I love\", \"Python\", sep=\"**\")` output? A) I love**Python B) I love Python C) I love Python D )Error A CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will `print(\"I love\", \"Python\", sep=\"**\")` output? A) I love...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "What function is used to configure a GPIO pin as an input? a). GPIO.setup(pin, GPIO.IN) b). GPIO.setmode(GPIO.IN) c). GPIO.input(pin) d). GPIO.init(pin, GPIO.IN) / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:int [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the data type of the value 10 in Python? A) int B)float C) str D) complex A CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the data type of the value 10 in Python? A) int B)float C...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of 10 / 2 + 3? / [CO1] a). 8 b). 5 c). 6 d). 2",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C:“’    [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which widget is used to display text in Tkinter? a). Label b). Button c). Entry d). Canvas / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which widget is used to display text in Tkinter? a). Label b). Bu...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following is an alternative OS for Raspberry Pi? a). Windows 10 b). Android c). Mac OS d). Linux / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:1   [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Which function is used to write a digital output to a GPIO pin in RPi.GPIO? a). GPIO.set(pin, state) b). GPIO.write(pin, state) c). GPIO.output(pin, state) d). GPIO.digital Write(pin, state) / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). GPIO.output(pin, state)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of the following code? print(\"5\" + \"5\") A) 10 B) 55 C) Error D) None of the above E CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of the following code? print(\"5\" + \"5\") A) 10 ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of False or not (True and False)? a). TRUE() b). FALSE() c). None d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:8  [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following will raise an error? A) int(\"5\") B) float(\"5.5\") C) int(\"5.5\") D)float(5) An CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following will raise an error? A) int(\"5\") B) float(...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the value of x after x = 10; x /= 2; x **= 2? a). 25 b). 10 c). 5 d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C:5V 3A USB-C     [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "How do you set the title of a Tkinter window? a). window.set_title(\"Title\") b). window.title(\"Title\") c). window.label(\"Title\") d). window.heading(\"Title\") / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). window.title(\"Title\")</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the result of print(round(3.75))? A) 3 B) 4 C) 3.7 D) 3.8 E CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the result of print(round(3.75))? A) 3 B) 4 C) 3.7 D) 3.8...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of 15 ^ 7? a). 8 b). 15 c). 7 d). 0 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>D:Error  [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which command is used to clean up GPIO settings in Python? a). GPIO.cleanup() b). GPIO.reset() c). GPIO.clear() d). GPIO.flush() / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). GPIO.cleanup()</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is the correct way to declare a multi-line string in Python? A) \"This is a multi-line string\" B) '''This is a multi-line string''' C) \"This is a multi-line string\" (split with \\) D) b\"This is a multi-line string\" U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is the correct way to declare a multi-line...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Can a tuple contain duplicate values? a). Yes b). No c). Sometimes d). Depends on elements / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:Hello World!  [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What will lst[2:5] return for lst = [100, 200, 300, 400, 500]? A)[300, 400, 500] B) [200, 300, 400] C) [300, 400] D)[200, 300] A CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will lst[2:5] return for lst = [100, 200, 300, 400, 500]? A)...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which function is used to write a HIGH signal to a GPIO pin? a). GPIO.output(pin, GPIO.HIGH) b). GPIO.set(pin, HIGH) c). GPIO.write(pin, HIGH) d). GPIO.on(pin) / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:25                [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of False or False? a). TRUE() b). FALSE() c). None d). Error / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of False or False? a). TRUE() b). FALSE() c). ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of len([1, 2, 3, 4, 5])? A) 4 B)5 C)6 D)Error U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of len([1, 2, 3, 4, 5])? A) 4 B)5 C)6 D)Error ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How many micro SD card slots does Raspberry Pi 4 have? a). 2 b). 1 c). 0 d). 3 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:8                 [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What will the following code output? `print(10, 20, 30, sep=\", \")` a). 10, 20, 30 b). 10 20 30 c). 102030 d). Error / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will the following code output? `print(10, 20, 30, sep=\", \")...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How can you create a tuple with a single element? A) (5) B) (5,) C) tuple(5) D) 5, U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How can you create a tuple with a single element? A) (5) B) (5,) ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Who developed Python programming language? a). Dennis Ritchie b). Guido van Rossum c). James Gosling d). Bjarne Stroustrup / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:TRUE()   [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What does range(7, 14, 2) generate? A) [7, 9, 11, 13] B) [7, 9, 11, 13, 15] C) [7, 8, 9, 10, 11, 12, 13] D) [7, 14] A CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What does range(7, 14, 2) generate? A) [7, 9, 11, 13] B) [7, 9, 1...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the primary purpose of the Label widget in Tkinter? a). To create buttons b). To display text or images c). To handle user input d). To manage layouts / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:TRUE()   [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of 10 ** (2 + 3) * 4? a). 400000 b). 100000 c). 40000 d). 10000 / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of 10 ** (2 + 3) * 4? a). 400000 b). 100000 c)...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of 16 % 3? A)1 B)5 C)0 D)3 E CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of 16 % 3? A)1 B)5 C)0 D)3 E CO1...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the result of list(range(0, -5, -1))? a). [0, -1, -2, -3, -4] b). [0, 1, 2, 3, 4] c). [-1, -2, -3, -4, -5] d). [0, -1, -2, -3, -4, -5] / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:10                       [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E CO1...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of 10 % (2 + 3) ** 2? a). 10 b). 0 c). 1 d). 2 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:[0, -1, -2, -3, -4]  [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the correct syntax for an if-elif-else statement? a). if-elif-else b). if-else-elif c). elif-if-else d). else-elif-if / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). if-elif-else</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a logical operator in Python? A) + B)or C)% D) & K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a logical operator in Python? A) + B)or...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What will be the output of s[1:4:-1] if s = \"Python\"? a). yt b). ht c). “’ d). hty / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:Lists are ordered and mutable [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What happens if the slice indices are out of range? a). Returns available part b). Error c). Returns None d). Returns full string / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Returns available part</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which logical operator returns True if either condition is True? A) and B) or C) not D)& A CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which logical operator returns True if either condition is True? ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of 5 > 3? a). TRUE() b). FALSE() c). None d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:2  [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a valid assignment operator in Python? A) += B) < C) != D) > K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a valid assignment operator in Python? ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of the following code? x = 0 while x < 3: print(x) x +=",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:Raspberry Pi Zero [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What does 'h El Lo Wo Rl D'.capitalize() return? a). 'Hello world' b). 'h El Lo Wo Rl D' c). 'HELLO WORLD' d). 'Hello World' / [CO2] B",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). 'HELLO WORLD'</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which operator is used to compare equality in Python? A) '= =’ B)'=’ C) != D) <> K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which operator is used to compare equality in Python? A) '= =’ B)...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What type of power supply is recommended for Raspberry Pi 4? a). 5V 2A b). 12V 1A c). 5V 3A USB-C d). 9V 2A / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:0  [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the value of x after x = 10; x *= 2; x %= 3? a). 2 b). 10 c). 20 d). Error / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the value of x after x = 10; x *= 2; x %= 3? a). 2 b). 10...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which function is used to configure a GPIO pin as an input? a). GPIO.setmode(GPIO.IN) b). GPIO.input_setup(pin) c). GPIO.setup(pin, GPIO.IN) d). GPIO.config_input(pin) / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>D:Linux [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the output of 15 & 7? A) 7 B) 8 C) 15 C) 0 E CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of 15 & 7? A) 7 B) 8 C) 15 C) 0 E CO1...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of the following code? for i in range(1, 5): print(i * 2) else: print(\"Else block\") a). 1, 2, 3, 4, Else block b). 2, 4, 6, 8 c). Else block d). 2, 4, 6, 8, Else block / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:Yes [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "II Semester MGU UGP25 - March - 2025",
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which company developed the Beagle Board? a). Raspberry Pi Foundation b). Texas Instruments c). Arduino LLC d). Intel / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). Texas Instruments</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the primary operating system for Raspberry Pi? A)Windows B)mac OS C) Raspberry Pi OS (formerly Raspbian) D) Linux Mint U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary operating system for Raspberry Pi? A)Windows ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the result of the following code? `type(100)` a). int b). flaot c). list d). string / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:Embedded system development [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the correct syntax to convert a list to a tuple? a). tuple(list) b). list(tuple) c). convert(list) d). tuple.to List() / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). tuple(list)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which Raspberry Pi model comes with an integrated keyboard? A) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which Raspberry Pi model comes with an integrated keyboard? A) Ra...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q60",
+      "number": 60,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the index of the first character in a string? a). 0 b). 1 c). -1 d). Depends on string / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:0, 1, 2, Else block [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q61",
+      "number": 61,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What type of HDMI ports does Raspberry Pi 4 have? A) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What type of HDMI ports does Raspberry Pi 4 have? A) Standard HDM...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q62",
+      "number": 62,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the value of `x` after `x = 8; x >>= 2`? a). 2 b). 4 c). 8 d). 16 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:Alice is 25 years old [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q63",
+      "number": 63,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which method is used for old-style string formatting in Python? a). format() b). f-string c). % operator d). template() / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which method is used for old-style string formatting in Python? a...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q64",
+      "number": 64,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the default username for Raspberry Pi OS? A) admin B) root C) pi D) user K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the default username for Raspberry Pi OS? A) admin B) roo...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q65",
+      "number": 65,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the primary purpose of Beagle Board? / [CO1] a). Gaming b). Embedded system development c). Office applications d). Data mining",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:4     [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q66",
+      "number": 66,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following is NOT a valid variable name in Python? a). _var b). var_ c). var-1 d). var1 / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is NOT a valid variable name in Python? a)...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q67",
+      "number": 67,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which processor is used in the original Beagle Board? A)ARM Cortex-A8 B) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which processor is used in the original Beagle Board? A)ARM Corte...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q68",
+      "number": 68,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of \"{} is {} years old\".format(\"Alice\", 25)? a). Alice is 25 years old b). {} is {} years old c). Alice 25 d). Error / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C:C [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q69",
+      "number": 69,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is Python? a). A web browser b). A high-level programming language c). A type of database d). A markup language / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). A high-level programming language</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q70",
+      "number": 70,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What will be the output of the following code? x = 5 if x > 3: print('Yes') A)Yes B) No C) Error D) None An CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will be the output of the following code? x = 5 if x > 3: pr...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q71",
+      "number": 71,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How many times will the loop run? x = 1 while x < 10: X *= 2 a). 4 b). 5 c). 3 d). 6 / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>D:2, 4, 6, 8, Else block [K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q72",
+      "number": 72,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of 10 ^ 6? a). 12 b). 4 c). 6 d). 8 / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of 10 ^ 6? a). 12 b). 4 c). 6 d). 8 / [CO1]...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q73",
+      "number": 73,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which Raspberry Pi model is designed as a compact, ultra-low-cost variant? a). Raspberry Pi 3 b). Raspberry Pi Zero c). Raspberry Pi 4 d). Raspberry Pi Compute Module / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:3, 6, 9 [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q74",
+      "number": 74,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which GPIO pin is commonly used as the default PWM output? a). GPIO 18 b). GPIO 12 c). GPIO 7 d). GPIO 22 / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:if-elif-else [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q75",
+      "number": 75,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which filesystem is recommended for Raspberry Pi’s micro SD card? a). NTFS b). FAT32 c). ext4 d). ex FAT / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which filesystem is recommended for Raspberry Pi’s micro SD card?...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q76",
+      "number": 76,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of `print(\"Hello\", end=\" \")` and `print(\"World!\")`? a). Hello World! b). Hello World! c). Hello World! d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C:'Hello World' [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q77",
+      "number": 77,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which port is used to connect a camera module? a). HDMI b). USB c). CSI d). GPIO / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which port is used to connect a camera module? a). HDMI b). USB c...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q78",
+      "number": 78,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the purpose of the while loop in Python? A) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the purpose of the while loop in Python? A) To define a f...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q79",
+      "number": 79,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the main loop function in Tkinter? a). mainloop() b). start() c). run() d). execute() / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:GPIO 18 [A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q80",
+      "number": 80,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which module is used to create GUI applications in Python? a). pygame b). tkinter c). matplotlib d). pandas / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which module is used to create GUI applications in Python? a). py...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q81",
+      "number": 81,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What does 'hello world'.title() return? a). 'hello World' b). 'Hello world' c). 'Hello World' d). 'HELLO WORLD' / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C:GPIO.setup(pin, GPIO.IN) [A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q82",
+      "number": 82,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Which tool can be used to check the GPIO pin layout on a Raspberry Pi? a). pinout b). gpio-info c). gpio-map d). pin-map / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which tool can be used to check the GPIO pin layout on a Raspberr...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q83",
+      "number": 83,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What will print(\"The number is {}\".format(5)) output? A) The number is 5 B) The number is {5} C) Error D) {The number is 5} A CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will print(\"The number is {}\".format(5)) output? A) The numb...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q84",
+      "number": 84,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What will be the output of if 10 < 5: print(\"A\") elif 5 != 5: print(\"B\") else: print(\"C\")? a). A b). B c). C d). Error / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:GPIO.setup(pin, GPIO.IN) [An] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q85",
+      "number": 85,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[C] ",
+      "question": "What type of variable is typically used with a Checkbutton widget? a). Int Var b). String Var c). Boolean Var d). Float Var / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). BooleanVar 35, a). place()</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q86",
+      "number": 86,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How many GPIO pins are available on a Raspberry Pi 4 Model B? A) 26 B) 30 C) 40 D) 50 U CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How many GPIO pins are available on a Raspberry Pi 4 Model B? A) ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q87",
+      "number": 87,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which widget is required to display a basic window? a). Tk() b). Label c). Button d). Canvas / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:mainloop()[A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q88",
+      "number": 88,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[C] ",
+      "question": "Which geometry manager positions widgets at exact coordinates? a). place() b). pack() c). grid() d). position() / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which geometry manager positions widgets at exact coordinates? a)...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q89",
+      "number": 89,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What are the two numbering systems used in Raspberry Pi GPIO programming? A) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the two numbering systems used in Raspberry Pi GPIO prog...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q90",
+      "number": 90,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[C] ",
+      "question": "Which variable type is used to store the value of a Checkbutton? a). Int Var b). String Var c). Boolean Var d). Float Var / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>B:To display text or images [A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q91",
+      "number": 91,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What will be the output of s[::-2] if s = \"abcdef\"? a). fdb b). ec c). fb d). fd / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What will be the output of s[::-2] if s = \"abcdef\"? a). fdb b). e...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q92",
+      "number": 92,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which Python library is commonly used for GPIO programming in Raspberry Pi? A) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which Python library is commonly used for GPIO programming in Ras...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q93",
+      "number": 93,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of None < None? a). TRUE() b). FALSE() c). None d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:Tk()          [A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q94",
+      "number": 94,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which function is used to read the state of a GPIO input pin? A) GPIO.input() B) GPIO.read() C) GPIO.state() D) GPIO.get() A CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which function is used to read the state of a GPIO input pin? A) ...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q95",
+      "number": 95,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the output of True and True? a). TRUE() b). FALSE() c). None d). Error / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:GPIO.output(pin, GPIO.HIGH) [A] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q96",
+      "number": 96,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What will list(range(2, 10, 2)) return? a). [2, 4, 6, 8] b). [2, 4, 6, 8, 10] / [CO1] B c). [2, 3, 4, 5, 6, 7, 8, 9] d). [2, 6, 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). [2, 4, 6, 8]</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q97",
+      "number": 97,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which widget is used to display static text or images in Tkinter? A) Entry B) Label C) Button D) Checkbutton U CO3",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which widget is used to display static text or images in Tkinter?...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q98",
+      "number": 98,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following statements is true about lists in Python? a). Lists are immutable b). Lists are ordered and mutable c). Lists store only integers d). Lists do not allow duplicates / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A:side [C] / [CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q99",
+      "number": 99,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which Raspberry Pi model is most suitable for AI and machine learning applications? a). Raspberry Pi Zero 2 W b). Raspberry Pi 3 Model B+ c). Raspberry Pi 4 d). Raspberry Pi Compute Module / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d). Raspberry Pi Compute Module</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q100",
+      "number": 100,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which geometry manager can be used to place a Label in a specific location? A) pack() B) grid() C) place() D) All of the above K CO3",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which geometry manager can be used to place a Label in a specific...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q101",
+      "number": 101,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the output of 2 ** 4? a). 16 b). 8 c). 6 d). 24 / [CO1] [1x35 = 35] B",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the output of 2 ** 4? a). 16 b). 8 c). 6 d). 24 / [CO1] [...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q102",
+      "number": 102,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which option is used to specify a function to execute when a button is clicked? A) action B) command C) onclick D) callback A CO3 1 * 35 = 35",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which option is used to specify a function to execute when a butt...</em> in the context of Python for Electronics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

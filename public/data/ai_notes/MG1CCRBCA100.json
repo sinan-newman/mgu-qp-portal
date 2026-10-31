@@ -1,0 +1,763 @@
+{
+  "course_code": "MG1CCRBCA100",
+  "title": "Digital Fundamentals",
+  "dept_name": "Computer Applications",
+  "semester": 1,
+  "course_type": "CCR",
+  "max_marks": 70,
+  "total_questions": 53,
+  "repeating_skipped": 26,
+  "sources_used": [
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+    "Official Model Question Paper (FYUGP 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 27,
+    "part_b": 19,
+    "part_c": 7
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Explain the concept of overflow in binary addition.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Overflow in binary addition occurs when the sum of two binary numbers exceeds</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the range that can be represented with the given number of bits.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the process of converting a decimal number to binary. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the process of converting a decimal number to binary.-repeatedly divide the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>number by 2 and track the remainders. The binary number is then formed by reading the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>remainders in reverse order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO1]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][1]",
+      "question": "Explain the overflow condition in binary addition with a suitable example.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain the overflow condition in binary addition with a suitable...</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][3]",
+      "question": "Define Multiplexer.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define Multiplexer....</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Describe the steps to convert a decimal number into BCD (8421) representation.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Separate the decimal number into  individual digits .Write the BCD equivalent of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>each digit and combine them .</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Convert the expression into sum-of-product (SOP) form-(A+B)(A+B+C). / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Convert the expression into sum-of-product (SOP) form-(A+B)(A+B+C).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplified sum of product form is A+B. Give upmarks to intermediate results in SOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][1]",
+      "question": "Draw the truth table for a three variable minterm representation F(x,y,z) = ∑(0,3,6).",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Draw the truth table for a three variable minterm representation ...</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] [4]",
+      "question": "Draw the truth table for an RS flip-flop and analyse the output states based on the inputs.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Truth table of RS flip-flop 1 mark. Explanation 1 mark</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplified expression is A+BD.  Give marks up to 1.5 to simplification using basic laws</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and intermediate results</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An][4]",
+      "question": "Distinguish the positive and negative edges of a clock pulse.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Distinguish the positive and negative edges of a clock pulse....</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [1]",
+      "question": "Add the following two BCD numbers: 1000 0011 and 0001 0101",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>BCD addition - 1001 1000 -   2 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the use of a de-multiplexer? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the use of a de-multiplexer?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A demultiplexer is used to route a single input signal to one of several output lines based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>on select signals. It is widely used in data routing, communication systems, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>converting serial data to parallel.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][1]",
+      "question": "Convert the binary number 11012 to its decimal equivalent.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Convert the binary number 11012 to its decimal equivalent....</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "Explain how the NAND gate acts as an OR gate.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A NAND gate can act as an OR gate by using De Morgan's Theorem and by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>combining multiple NAND gates in a specific configuration.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(a ‘ . b ‘ )’=a ‘’ + b ‘’ = a+b</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a  a ‘ a ‘’ + b’’ =a+b</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b b ‘</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Draw the block diagram of a combinational logic circuit. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Draw the block diagram of a combinational logic circuit. [U] / [CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "Write short notes on Maxterm and Minterm.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write short notes on Maxterm and Minterm....</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [2]",
+      "question": "Convert the expression into canonical form f= AB+B′C.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>f = AB+ B’C=AB(C+C’)+B’C(A+A’)=ABC+ABC’+AB’C+A’B’C</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][2]",
+      "question": "How can a NOR gate be used to implement the AND function?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How can a NOR gate be used to implement the AND function?...</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [4]",
+      "question": "Define sequential circuits and explain their significance.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sequential circuit definition or block diagram 1 mark, Explanation 1 mark</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of toggling in a JK flip-flop. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of toggling in a JK flip-flop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A JK flip-flop toggles when both inputs, J and K, are set to 1. This means that on the next</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>clock pulse, the output Q will flip to 1if it was 0, or to 0 if it was 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>. This behavior makes the JK flip-flop useful for applications like counters</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO4]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][4]",
+      "question": "Write short note on Combinational Logic Circuits and Sequential Logic Circuits.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write short note on Combinational Logic Circuits and Sequential L...</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [4]",
+      "question": "Determine the use of flip-flop.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any two use of flip flops. Data storage, counters, frequency division, shift registers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>-2 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Convert the binary number 101011 to octal. / [CO1] MGU-BCA (HONOURS) REGULAR /IMPROVEMENT/ REAPPEARANCE EXAMINATION NOVEMBER 2025",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer with steps [A] / [CO1]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][4]",
+      "question": "Draw the truth table of a JK flip-flop.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Draw the truth table of a JK flip-flop....</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [3]",
+      "question": "Draw the logic circuit for a 3-to-8 decoder. (10 × 2 = 20)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Logic circuit of 3-to-8 decoder 2 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the primary difference between a half adder and a full adder? / [CO3] [10x2 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the primary difference between a half adder and a full adder?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A half adder adds two single-bit binary numbers, while a full adder adds three</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>single-bit binary numbers, including a carry-in from a previous operation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[10x2 = 20]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][3]",
+      "question": "What are the applications of an encoder in digital systems? (10*2=20 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the applications of an encoder in digital systems? (10*2...</em> in the context of Digital Fundamentals.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [1]",
+      "question": "Perform binary subtraction on the numbers 1010 1101 - 0101 1011, and discuss overflow if any. Show each step in detail.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– binary subtraction of 10101101-01011011 Ans.01010010 : 3marks, discussion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and steps 3marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][1]",
+      "question": "Convert the decimal number 483 to its equivalent BCD using the 8421 code",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [2]",
+      "question": "Simplify the following using Boolean laws only. (i) F= AB + A(B+C) +B(B+C) (ii) F= A′B + BC′ + BC + AB′C′.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplification using Boolean laws 3 marks each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(i) F=AB+A(B+C)+B(B+C)=AB+AB+AC+BB+BC=AB+AC+B+BC=AB+AC+B(1+C)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>=AB+AC+B=AC+A(B+1)=AC+A=A(C+1)=A</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(ii) F=A’B+BC’+BC+AB’C’=A’B+B(C+C’)+AB’C’=A’B+B+AB’C’=B(A’+1)+AB’C’=B+AB’C’</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplification using K-map 3 marks, implementation using NOR gate 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][2]",
+      "question": "Draw the logic diagram using only NOR gates F=xy’z +x’yz’.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [3]",
+      "question": "Design an 8×1 multiplexer using 4×1 and 2×1 multiplexer.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Design 8x1 multiplexer using 4x1 and 2x1 multiplexer -6marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Components:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a) Two 4x1 multiplexers to handle 8 input lines.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b) One 2x1 multiplexer to select between the outputs of the two 4x1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>multiplexers.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain how a decoder is used for memory address selection in computer systems. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how a decoder is used for memory address selection in computer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>systems. - by converting a binary memory address from the CPU into a single</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>active output line that enables a particular memory chip or a specific word line</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>within a chip. It takes  𝑛 input lines representing the binary address and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>activates one of its 2 𝑛 output lines, where only the selected line is active (e.g.,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>high) at any given time. This ensures that data is read from or written to only</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the correct memory cell.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][3]",
+      "question": "Draw the circuit diagram of 1×8 De-multiplexer.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [4]",
+      "question": "Describe the working of the RS flip-flop with a truth table and diagram.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Truth table of RS flip-flop 2 marks, circuit diagram 2 marks explanation 2 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss the characteristics and use of a D flip-flop. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the characteristics and use of a D flip-flop. – characteristics table or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>discussion -4 marks. Use of D fip-flop 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO4]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][4]",
+      "question": "What are the applications of shift registers?",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [1]",
+      "question": "Convert the decimal number 256 to its BCD representation using the 8421 code. Show each step of the conversion process.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>256(Decimal)=001001010110(BCD) 3marks explanation with steps 3 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Compare and contrast the binary, octal, and hexadecimal number systems. Discuss the benefits of each in computing. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare and contrast the binary, octal, and hexadecimal number systems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the benefits of each in computing. – Comparison 4 marks benefits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>explanation 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO1]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][1]",
+      "question": "Convert the octal number 674 to hexadecimal.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [2]",
+      "question": "Apply De Morgan’s theorems to each of the following expressions (i ) [(A + B + C) D]′ (ii) (ABC + DEF)′ (iii) (AB′+ C′D + EF)′.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Application of De Morgan’s theorem 2 marks each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(i) [(A+B+C)D]′=(A+B+C)′+D′= (A′⋅B′⋅C′)+D′= A′⋅B′⋅C′+D′</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(ii) (ABC+DEF)′=(ABC)′⋅(DEF)′= (A′+B′+C′)⋅(D′+E′+F′)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(iii) [AB′+C′D+EF]′= (AB′)′⋅(C′D)′⋅(EF)′ =(A′+B)⋅(C+D′)⋅(E′+F′)</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][2]",
+      "question": "Convert to SOP (A' + B' + C ) (B + C' + D')(A'+ B + C + D').",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [4]",
+      "question": "Draw the circuit diagram graphic symbol and truth table for a D flip-flop. (5 × 6 = 30)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Circuit diagram, graphic symbol and truth table for D-fli flop – 2 marks each</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip-flops based on a timing diagram. / [CO4] [5x6 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>flops based on a timing diagram. –2 marks each for definition 2 marks for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>comparison</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[5x6 = 30]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][4]",
+      "question": "Describe T flip-flop. What is its use? (5*6=30 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] [2]",
+      "question": "State the basic laws of Boolean algebra. Simplify the expression AB + A (B + C) + B (B + C).",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Basic laws of Boolean Algebra -5 marks. Simplification Steps 5marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>F=AB+A(B+C)+B(B+C)= AB+AB+AC+BB+BC= AB+AC+B+BC=AB+AC+B(1+C)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>=AB+AC+B=B(A+1)+AC=B+AC</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13). / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13). –</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>k-map 4 marks, simplification 4 marks, Simplified expression 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A][2]",
+      "question": "Simplify using K-map, the expression F(A,B,C,D)= ∑m(0,2,7,8,14,) with Don’t care terms D= ∑m(1,6,9,13). Draw the corresponding logic diagram.",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] [4]",
+      "question": "Explain how the R-S and J-K flip-flops work.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>RS flip-flop - Working with truth table (3marks) circuit diagram(2marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>JK flip-flops -Working with truth table (3marks) circuit diagram(2marks)</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U][4]",
+      "question": "Design R-S flip-flop and JK flip-flop using NOR gates only.",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] [3]",
+      "question": "Explain the working of a digital encoder. Describe their applications, and advantages. (2 × 10 = 20) END OF THE QUESTION PAPER ***",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the working of an encoder with a suitable diagram 6 marks, Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and advantages 4 marks</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Describe the operation of a 4-bit serial-in parallel-out (SIPO) shift register. Include a timing diagram to show how data is shifted in and read out. / [CO4] [2x10 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the operation of a 4-bit serial-in parallel-out (SIPO) shift register.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Include a timing diagram to show how data is shifted in and read out.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Description with block diagram 6 marks, timing diagram and explanation 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2x10 = 20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Dr. Ajitha R.S., Associate Professor,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Department of Computer Applications,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>NSS College Rajakumari</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Phone: 9497792121</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    }
+  ]
+}

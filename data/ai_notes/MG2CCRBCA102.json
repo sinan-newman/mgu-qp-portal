@@ -1,0 +1,589 @@
+{
+  "course_code": "MG2CCRBCA102",
+  "title": "Operating Systems",
+  "dept_name": "Computer Applications",
+  "semester": 2,
+  "course_type": "CCR",
+  "max_marks": 70,
+  "total_questions": 41,
+  "repeating_skipped": 19,
+  "sources_used": [
+    "Second semester BA/BSc/BVocFYUGP April 2026",
+    "Official Model Question Paper (FYUGP 2024",
+    "II Semester MGU UGP25 - March - 2025"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 12,
+    "part_b": 20,
+    "part_c": 9
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Identify one key function of the Timer in an operating system. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Long-Term Scheduler (Job Scheduler)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "List any two process control system calls. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List any two process control system calls                                                       [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>•Create Process</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>•Terminate Process</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>OR</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any two from the following:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>End, Abort, Load, Execute,  Get Process Attributes, Set Process Attributes, Wait For</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Time,  Wait Event, Signal Event, Allocate And Free Memory.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define the user view of an operating system. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define the user view of an operating system. [CO1]...</em> in the context of Operating Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the purpose of the Process Control Block (PCB)? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Short-Term Scheduler (CPU Scheduler)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Name any two CPU scheduling algorithms that use preemptive scheduling / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Name any two CPU scheduling algorithms that use preemptive schedu...</em> in the context of Operating Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the necessary conditions required for deadlock to occur. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Medium-Term Scheduler</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Process scheduling definition -2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of scheduling critriea-5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of schedulers -8 marks</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain different approaches for deadlock detection. / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain different approaches for deadlock detection. / [CO3]...</em> in the context of Operating Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What are the benefits of the Co-operating Process? [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the benefits of the Co-operating Process? [CO3]...</em> in the context of Operating Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How can a process execute its critical section? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How can a process execute its critical section?                   [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>When one process is executing in its critical section, no other process is allowed to execute in its critical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>section. Each process must request permission to enter its critical section. The section of code</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>implementing this request is the entry section, exit section and the remainder section.</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is internal fragmentation? / [CO4] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Local Allocation.   Explanation of any three strategies give 6 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(6X5=30 Marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How does shared pages help in memory management? / [CO4] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How does shares pages help in memory management?                              [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Shared pages help in memory management by allowing multiple processes to share</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the same physical memory instead of keeping separate copies.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Reduces memory usage: Common code (e.g., libraries) is stored once and shared.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Improves efficiency: Saves space and allows faster process creation (e.g., shared</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>libraries)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(2X 5 =10 marks)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is a page fault in demand paging [CO4] [2X5 =10]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a page fault in demand paging [CO4] [2X5 =10]...</em> in the context of Operating Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate Microkernels and Module based operating system structures. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate Microkernels and Module based operating system structures.  [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Micro Kernel, contains a minimum number of functions that are required, data, and features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>simply to implement OS. Features of Microkernel include Minimalist design. High flexibility,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reliable and Portable     - (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Modular Kernel, is a type of kernel in which some parts of the system core will get allocated</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in independent files called modules. This can be added to the system at run time. It usually</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>requires a small amount of time to load modules. Its features include:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Monolithic design, Low flexibility, Efficient:  and Performance-oriented.  -- (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss Dual Mode operation in operating system. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss dual mode operation in operating system.                                                [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Dual mode operation is a mec hanism that allows an operating system to protect system</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>resources by running programs in two different modes:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• User Mode: Used for executing application programs. Has restricted access to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>hardware and system resources. Cannot execute privileged instructions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Kernel Mode (Supervisor Mode): Used by the operating system.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Mode Bit: A special hardware bit indicates the current mode (user = 0,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Kernel = 1).Ensures the system knows which mode is active.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation with figure give full marks.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the working of a simple operating system structure. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the functions of communications system call. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the functions of communications system call.       [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The communication call type facilitates: Sending or receiving messages between processes,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Synchronizing actions between user processes, Establishing shared memory regions for inter-process</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>communication and Networking via sockets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• create, delete communication connection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• send, receive messages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• transfer status information</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Attach or detach remote devices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of communication System Call-2 Marks, functions   (-4 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Write notes on Layered operating system structure. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write notes on layered operating system structure                                               [K] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A layered operating system structure  divides the operating system into a hierarchy of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>layers, where each layer performs a specific function and interacts only with its adjacent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>layers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Layer 0: Hardware</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Layer 1: CPU scheduling & memory management</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Layer 2: I/O management</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Layer 3: File system</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Top Layer: User interface / applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>With suitable diagram and explanation of each layer -5 marks.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the different states of a process with a diagram. / [CO2] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-BCA(Honours) REGULAR EXAMINATION, MARCH 2025 SECOND SEMESTER Core Course (CC) - MG2CCRBCA102 - OPERATING SYSTEMS (2024 ADMISSION ONWARDS)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the different states of a process with a diagram.        [U] / [CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation state Process states: New, Running State, Blocked (or waiting) State, Ready State,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>And Terminated state             (4 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Process state Diagram          ( 2 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Distinguish a process and a job and explain the queues and schedulers related to them. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Distinguish a process and job and explain the queue s and schedules related to them.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Difference between job & process – 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Queues: Job Queue, Ready Queue, Device (I/O) Queue - with explanation -2marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Schedulers: Long-Term Scheduler (Job Scheduler, Short-Term Scheduler (CPU Scheduler,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Medium-Term Scheduler- with explanation -2marks</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the advantages and disadvantages of multithreading. [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Define Round Robin (RR) scheduling and explain how it works with time quantum. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define Round Robin (RR) scheduling and explain how it works with time quantum.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The round-robin (RR) scheduling algorithm is designed especially for timesharing systems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The ready queue is treated as a circular queue. The CPU scheduler goes around the ready queue,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>allocating the CPU to each process for a time interval of up to 1 time quantum.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of Round robin scheduling with an example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition -3 marks. Explanation with example 3 marks.</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of threads. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of threads                                                                            [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A thread is the smallest unit of execution within a process, often called a lightweight process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A process can have multiple threads, which share the same memory space, code, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>resources but have separate registers and stack. 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of Threads: User-level threads and Kernel-level threads – 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Applications: 1 mark</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "What are semaphores? Explain two primitive semaphore operations. What are its advantages? [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the three types of buffering in interprocess communication / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the three types of buffering in interprocess communication          [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Three buffering in interprocess communication:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>i. Zero Buffering</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ii. Bounded Buffering</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>iii. Unbounded Buffering</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation 2 marks each</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Define a semaphore. Explain its basic operations and how it is used in process synchronization. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define a semaphore. Explain its basic operations and use in process synchronization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Semaphore definition – 1marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Types: Binary semaphore (0/1), Counting semaphore. -  with explanation 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Operations: wait (P) and signal (V)- with explanation 2 marks</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Define system call. Explain the importance of system calls in an operating system. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What are Monitors? Explain in detail with its appropriate syntax. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What are Monitors? Explain in detail with its appropriate syntax           [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A monitor in operating systems is a high-level synchronization construct that helps manage mutual</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>exclusion and coordination between concurrent processes or threads.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• A monitor ensures that only one process at a time can be active within the monitor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• The monitor‘s local variables can be accessed by local monitor functions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Implicitly the monitor defines a mutex lock.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Syntax of a monitor:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>monitor monitor name</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>/* shared variable declarations */</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>function P1 ( . . . ) { . . .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>function P2 ( . . . ) { . . .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>function Pn ( . . . ) { . . .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>initialization code ( . . . ) { . . .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation-  3 marks Syntax- 3 marks</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between shared memory and message passing in IPC. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate between shared memory and message passing in IPC.        [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Shared memory  requires communicating processes to establish a region of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>shared memory .Information is exchanged by reading and writing data in the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>shared memory</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Message passing System : If P and Q wish to communicate, they need to:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>establish a communication link between them. Exchange messages via</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>send/receive.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Description of each 2 marks + diagram -1 mark</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe how semaphores are used to solve the critical-section problem. [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What are the different types of frame allocation strategies? Explain briefly / [CO4] [6x5 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What are the different types of frame allocation strategies? Explain briefly.    [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In operating systems, frame allocation strategies determine how physical memory frames are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>distributed among processes. These strategies are important for efficient memory management and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>preventing issues like thrashing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The main types of frame allocation strategies:</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of swapping with a diagram. / [CO4] [6x5 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of swapping with a diagram.                           [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Swapping is a memory management technique where processes are temporarily</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>moved from main memory (RAM)  to secondary storage (swap space)  and brought</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>back when needed. Helps in improving memory utilization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation with swap in, Swap out – 3 marks, Diagram -2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(6X5=30 Marks)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is paging, and why is it used in memory management? [CO4] [6X5 =30]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain process scheduling and scheduling criteria in detail and describe different types of schedulers. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain process scheduling and scheduling criteria in detail and describe different types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of schedulers.                                                                                       [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Process scheduling is the mechanism by which an operating system selects which process in the ready</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>queue should be executed by the CPU.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheduling criteria:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• CPU utilization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Throughput.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Turnaround time.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Waiting time.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Response time.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Operating systems use three types of schedulers:</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "What is the purpose of context switching in process scheduling? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the purpose of context switching in process scheduling?  [An / CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Context switching is the process of saving the state of one process and loading the state</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of another.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Enables multitasking</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Ensures CPU sharing among processes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Improves system responsiveness</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o Supports Process Scheduling :Works with scheduling algorithms like Round</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Robin Scheduling  and Priority Scheduling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Context switching definition and steps: 6 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Purpose of Context switching in scheduling with example -9 marks.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain various process scheduling algorithms with suitable examples [CO2]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Discuss in detail how the Banker's Algorithm helps in avoiding deadlock / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss in detail how the Banker's Algorithm helps in avoiding deadlock   [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Banker's Algorithm is a deadlock avoidance algorithm. It ensures that a system never enters an unsafe</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>state, which could lead to deadlock. It helps avoid deadlocks by carefully examining resource requests</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>before granting them.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation Banker’s algorithm a with an example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Banker’s algorithm explanation – 10 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: 5marks</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain deadlock prevention techniques in detail / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain deadlock prevention techniques in detail                                 [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of deadlock – 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Four necessary conditions – 6 marks</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U]",
+      "question": "Describe the different methods of interprocess communication. [CO3]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Compare and contrast paging and segmentation in detail . / [CO4] [15x2 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare and contrast paging and segmentation in detail.                        [An] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Paging is a memory management technique in which process address space is broken into blocks of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the same size called pages (size is power of 2, between 512 bytes and 8192 bytes). Similarly, main</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>memory is divided into small fixed-sized blocks of (physical) memory called frames and the size of a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>frame is kept the same as that of a page to have optimum.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Segmentation is a memory-management scheme that supports this programmer view of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Memory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation paging and Paging Hardware with TLB and diagram -7 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of segmentation with Segmentation Hardware and diagram – 6 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparison of paging and segmentation – 2marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(15X2 = 30 Marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Describe the segmentation technique in memory management . / [CO4] [15x2 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the segmentation technique in memory management.     [A] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Segmentation divides memory into logical units called segments such as code, data, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>stack. Each segment has a base address and limit stored in a segment table. It allows</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>better memory organization and protection.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of segmentation – 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Structure (segments, base, limit, segment table) – 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Working mechanism – 4 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Advantages & disadvantages – 3 marks                                                    (15X 2= 30 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>This scheme is prepared by Bindhu Prabha, Associate Professor, SAS SNDP Yogam College,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Konni Mob.9447118794. Email. bindhusabu@gmail.com</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A]",
+      "question": "Explain the characteristics and workings of FIFO, LRU, and Optimal page replacement algorithms with examples. [CO4] [15X2 =30]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

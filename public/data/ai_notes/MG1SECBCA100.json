@@ -1,0 +1,831 @@
+{
+  "course_code": "MG1SECBCA100",
+  "title": "Fundamentals of Programming using C",
+  "dept_name": "Computer Applications",
+  "semester": 1,
+  "course_type": "SEC",
+  "max_marks": 50,
+  "total_questions": 59,
+  "repeating_skipped": 21,
+  "sources_used": [
+    "Official Model Question Paper (FYUGP 2024",
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 30,
+    "part_b": 20,
+    "part_c": 9
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "State the purpose of a hierarchy chart in problem solving.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State the purpose of a hierarchy chart in problem-solving.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A hierarchy chart visually represents the structure of a program  by showing the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>relationships and dependencies among the modules. It aids in understanding, designing,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and debugging complex systems.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Describe the purpose of interpreter. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Pass by reference: Pass the array name (base address).</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][1]",
+      "question": "What are the steps involved in the program development life cycle?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the steps involved in the program development life cycle...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "float num = 45.6789; printf(\"\"%.2f\"\", num);\"",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>*a = *b; *b = temp; }</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Define tokens and list various tokens. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Pass by value: Not directly possible; pass individual elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: Pass by reference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>#include <stdio.h></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>void printarray(int arr[], int size) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>for (int i = 0; i < size; i++)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“%d “, arr[i]);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int arr[] = {1, 2, 3, 4, 5};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int size = sizeof(arr) / sizeof(arr[0]);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printarray(arr, size);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>return 0;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Here, `arr` is passed to `printArray()` by reference. Note:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `int arr[]` is equivalent to `int arr`.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- The size is passed separately, as it’s not available within the function.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][1]",
+      "question": "Identify the types of language translators used in programming and briefly explain each.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Identify the types of language translators used in programming an...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "Write the ASCII codes correspond to letters 'A' and ‘a’ in C.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Digits: 0-9</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Special symbols: { } [ ] ( ) ; : , . < > and others</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• White spaces: space, tab, newline</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Define the goto statement and list two reasons why it is generally avoided in programming. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Type Qualifiers:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `const`: Makes variable read-only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `volatile`: Prevents compiler optimization for variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Importance:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Control variable scope and lifetime.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Optimize memory usage.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Improve code readability and maintainability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Enable compiler checks for data integrity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Static int count = 0; // retains value between function calls</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Const float PI = 3.14; // read-only variable</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "How does an expression differ from a statement in C? Provide examples.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does an expression differ from a statement in C? Provide exam...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] [3]",
+      "question": "Compare the effect of using scanf() with \"%d\" versus \"%f\" to read an integer and a float.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Compare the effect of using scanf() with \"%d\" versus \"%f\" to read...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Implement a function to concatenate two strings. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Access members using dot (.) operator: Members are accessed using the dot operator. Declaring a Structure: Struct Student { int rollno; char name[50]; float marks; }; initializing a structure: struct student s1 = {1, “john doe”, 85.5}; or struct student s1; s1.rollno = 1; strcpy(s1.name, “john doe”); s1.marks = 85.5; example: #include <stdio.h> #include <string.h> struct student { int rollno; char name[50]; float marks; }; void main() { struct student s1 = {1, “john doe”, 85.5}; printf(“roll no: %d\\n”, s1.rollno); printf(“name: %s\\n”, s1.name); printf(“marks: %.2f\\n”, s1.marks); getch(); }         [5x6 = 30]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An][3]",
+      "question": "Write a do-while loop in C to repeatedly prompt the user until they enter a positive number.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a do-while loop in C to repeatedly prompt the user until th...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [2]",
+      "question": "Identify the type modifier used to reduce the storage size of an integer.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify the type modifier used to reduce the storage size of an integer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The short type modifier reduces the storage size of an integer.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Compare the use of * and & in C pointers. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>|| (Logical OR) – Precedence: 12, Associativity: Left-to-right</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: `a || b || c` -> `(a || b) || c`</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][2]",
+      "question": "What are the ASCII value ranges for uppercase and lowercase characters in C?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the ASCII value ranges for uppercase and lowercase chara...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [3]",
+      "question": "Express the syntax of 'for' loop in C with an example.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Express the syntax of 'for' loop in C with an example.   [K] [3] Syntax: for(initialization; condition; increment/decrement) { body of the loop } Example: for (i = 0; i < 5; i++) { printf(\"%d\\n\", i); }</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain syntax error in programming with an example. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>This statement checks if `age` is 18 or more and prints the message if true.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][3]",
+      "question": "What is the purpose of the continue statement in C?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the purpose of the continue statement in C?...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [4]",
+      "question": "Write a C program to swap two variables using pointers. 8 \"Given the following code, analyze the output and explain how printf() handles formatted output: [An] [3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write a C program to swap two variables using pointers.   [A] [4] void swap(int *a, int *b) { int temp = *a;</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain how high level language simplifies the process of writing program. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>num = (num < 0) ? -num : num; while (num != 0) { digit = num % 10; product = digit; num /= 10; } printf(“product of digits: %d\\n”, product); getch(); }</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "Describe how you would compute the total cost of items stored in an array of prices.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Describe how you would compute the total cost of items stored in ...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] [3]",
+      "question": "Given the following code, analyze the output and explain how printf() handles formatted",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>output:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>float num = 45.6789;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(\"%.2f\", num);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Output: 45.68. The %.2f specifier roun ds the float to two decimal places for formatted</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>output.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the difference between & and && in C? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Changes to `arr` in the function affect the original array. [2x10 = 20] Prepared By, MR. VISHNU MOHANAN ASSISTANT PROFESSOR DEPARTMENT OF COMPUTER APPLICATIONS CHINMAYA COLLEGE OF ARTS, COMMERCE & SCIENCE, TRIPUNITHURA, PIN: 682305 MOB: 9744799308</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An][3]",
+      "question": "Analyze the output of the following code snippet and explain how printf() formats the output. float num = 45.6789; printf(\"%.2f\", num);",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Analyze the output of the following code snippet and explain how ...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [4]",
+      "question": "Given an array arr, containing even numbers from 2 to 20 .Write the code to print the last element in the array.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Given an array arr containing even numbers from 2 to 20, write the code to print the last</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>element in the array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int arr[10] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(\"%d\", arr[9]);</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define qualifier? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define qualifier? [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In programming, a qualifier is a keyword that modifies the behavior or properties of a variable,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>function, or data type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples in C:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `const`: Indicates a variable’s value cannot be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `volatile`: Indicates a variable can change unexpectedly (e.g., due to external factors).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- `static`: Affects a variable’s scope or storage duration.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "Demonstrate how to declare and call a function in C that returns an integer.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Demonstrate how to declare and call a function in C that returns ...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [4]",
+      "question": "Define recursive function in C? (10 × 2 = 20)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define a recursive function in C.      [U] [4] A recursive function is a function that calls itself to solve smaller instances of a problem until a base condition is met. Example: int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Why scanf is considered as a formatted input function? / [CO3] [10x2 = 20] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (HONOURS) REGULAR/ IMPROVEMENT/ REAPPEARANCE EXAMINATION NOVEMBER 2025 FIRST SEMESTER Skill Enhancement Course (SEC) - MG1SECBCA100 - FUNDAMENTALS OF",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Why scanf() is considered as a formatted input function? [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>scanf() is a formatted input function as it reads input according to a specified format string,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>using format specifiers like %d, %c, %f, etc. to parse the input into the required data types.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][4]",
+      "question": "What is the primary difference between a struct and a union in C? (10 X 2 = 20 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary difference between a struct and a union in C?...</em> in the context of Fundamentals of Programming using C.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [1]",
+      "question": "Explain how a hierarchy chart helps in organizing complex tasks.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how a hierarchy chart helps in organizing complex tasks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A hierarchy chart divides a program into smaller, manageable modules, showing their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>dependencies. It helps organize tasks by providing clarity, promoting modular design and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>facilitating debugging and maintenance.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "How do we check whether a given number is a perfect number or not. [A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. Example: The number 6 is a perfect number because its proper divisors are 1, 2, and 3 and 1+2+3=6] / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How do we check whether a given number is a perfect number or not. [A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. Example: The number 6 is a perfect number because its proper divisors are 1, 2, and 3 and 1+2+3=6] [An] / [CO3] #include <stdio.h> void main() { int num, sum = 0; printf(“enter a number: “); scanf(“%d”, &num); for (int i = 1; i < num; i++) { if (num % i == 0) sum += i; } if (sum == num) printf(“%d is a perfect number.\\n”, num); else printf(“%d is not a perfect number.\\n”, num); getch():; }</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][1]",
+      "question": "Outline a systematic approach to debugging a C program, and explain how debugging tools help, identify syntax, logical, and runtime errors.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Explain how a C program can determine if a given number is even or odd using the bitwise AND operator. Describe why this method is more efficient than using the modulus operator(%).",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how a C program can determine if a given number is even or odd using the bitwise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>AND operator. Describe why this method is more efficient than using the modulus</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>operator (%).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Code:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>if (num & 1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(\"Odd\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(\"Even\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation: The bitwise AND operator checks the least significant bit. It is more</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>efficient than modulus as it directly evaluates the binary representation without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>performing division.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Construct a C program that initializes an array to store the marks of five subjects for a student. Write a program that calculates and displays the student’s grade based on their average score with the following criteria: 'A' grade for an average of 85 and above, ‘B’ for 70-84, ‘C’ for 50-69, ‘D’ for 35- 49, and ‘F’ for below 35. Also add error handling to manage cases where input marks are invalid (such as negative numbers or values exceeding 100) / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Construct a C program that initializes an array to store the marks of five subjects for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a student. Write a program that calculates and displays the student’s grade based on their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>average score with the following criteria:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>'A' grade for an average of 85 and above, ‘B’ for 70-84, ‘C’ for 50-69, ‘D’ for 35- 49, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>‘F’ for below 35. Also add error handling to manage cases where input marks are invalid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(such as negative numbers or values exceeding 100) [A] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>#include <stdio.h></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int marks[5];</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>float sum = 0, average;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“enter marks for 5 subjects:\\n”);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>for (int i = 0; i < 5; i++) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“subject %d: “, i + 1);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>scanf(“%d”, &marks[i]);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>// input validation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>while (marks[i] < 0 || marks[i] > 100) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“invalid input! marks should be between 0 and 100. re-enter: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>scanf(“%d”, &marks[i]);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>sum += marks[i];</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>average = sum / 5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“average score: %.2f\\n”, average);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>char grade;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>if (average >= 85)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>grade = ‘a’;</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][2]",
+      "question": "Explain operator precedence in C with an example. How does it affect expression evaluation?",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] [2]",
+      "question": "Describe the C character set that is essential for writing C programmes.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the C character set that is essential for writing C programs.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The C character set includes:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Alphabets: A-Z, a-z</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this. #include <stdio.h> void main() { int matrix[3][3]; int primary_sum = 0, secondary_sum = 0; printf(“enter elements for 3x3 matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“element [%d][%d]: “, i, j); scanf(“%d”, &matrix[i][j]); } } for (int i = 0; i < 3; i++) { primary_sum += matrix[i][i]; secondary_sum += matrix[i][3 – i – 1]; } printf(“matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“%d “, matrix[i][j]); } printf(“\\n”); } printf(“primary diagonal sum: %d\\n”, primary_sum); printf(“secondary diagonal sum: %d\\n”, secondary_sum); getch(); }</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K][2]",
+      "question": "Why are delimiters important in C programming? Provide examples to illustrate their role.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [3]",
+      "question": "Write a C program to find the average of non negative from a list of numbers using continue statement and do not use array",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write a C program to find the average of non -negative numbers from a list of numbers using the continue statement and do not use an array.   [A] [3] #include <stdio.h> int main() { int n, i=1,count = 0, sum = 0; float avg; printf(“Enter how many numbers”); scanf(\"%d\", &n); for (i=1; i<=n; i++) { printf(“Enter the number”); scanf(\"%d\", &a if (a < 0) continue; sum = sum + a; count++; } avg = (float)sum / count; printf(\"Average: %.2f\", avg); return 0; }</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "List and describe the different types of decision-making statements available in C. Provide the syntax for each type. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List and describe the different types of decision-making statements available in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C. Provide the syntax for each type [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>C provides several decision-making statements:</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][3]",
+      "question": "Write a C program to read a user’s name and age, and display them using both printf and puts. Discuss the advantages of each function in this context.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [4]",
+      "question": "You have defined a union as union data { int i;float f ;} what will happen if you store a value in i and then try to read from f?",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>You have defined a union as union data { int i; float f; }. What will happen if you store a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>value in i and then try to read from f?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In a union, all members share the same memory location. Storing a value in one member</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(i) will overwrite the memory content of the other member (f). The memory for i and f</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>overlaps. Writing to i corrupts the value of f. Accessing f will result in undefined</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>behavior.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "List the precedence and associativity of the following operators: +, *, =, &&, ||, ==. Give examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List the precedence and associativity of the following operators: +, , =, &&, ||,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>==. Give examples. [K] / [CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][4]",
+      "question": "Write a recursive function in C to compute the nth Fibonacci number.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] [3]",
+      "question": "Analyse the statement: \"The switch statement is less flexible but more efficient than if-else.\" Provide reasons to support your answer.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Analyze the statement: \"The switch statement is less flexible but more efficient than if -</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>else.\" Provide reasons to support your answer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Switch is less flexible because it only works with discrete values (e.g., integers,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>characters) and cannot evaluate ranges or complex conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Switch is more efficient due to faster execution.</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Identify a decision-making statement in programming. Describe how it is used to control program flow. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify a decision-making statement in programming. Describe how it is used to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>control program flow. [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>if statement is a common decision-making statement.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>It’s used to execute a block of code if a condition is true. Here’s how it controls program flow:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- Evaluates the condition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- If true, executes the code block</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>- If false, skips the code block and continues with the next statement</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>if (age >= 18) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“you are eligible to vote.”);</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] [4]",
+      "question": "Calculate the factorial of a number using function. (5 × 6 = 30)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Calculate the factorial of a number using a function.    [A] [4] #include <stdio.h> int main() { int num; scanf(\"%d\", &num); printf(\"Factorial: %d\", factorial(num)); return 0; } int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the features of structures and demonstrate how to declare and initialize a structure with an example. / [CO4] [5x6 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the features of structures and demonstrate how to declare and initialize a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>structure with an example. [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Features of Structures:</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][4]",
+      "question": "Implement a recursive function to calculate the nth Fibonacci number. (5 X 6 = 30 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Analyze the differences between using a simple if statement, a nested if- else, and an if-else-if ladder in C. In what scenarios is each one useful? Support your answer with examples.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Analyze the differences between using a simple  if statement, a nested if -else and an if- else-if ladder in C. In what scenarios is each one useful? Support your answer with examples.         [An] [3] Explain each with syntax and examples. Give 2 marks for simple if and 4 marks each for nested if and if else if ladder</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Simple if: Suitable for single conditions. Example: if (x > 0) printf(\"Positive\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Nested if-else: Suitable for hierarchical conditions. Example: Example: if (a>b) { if (a>c) printf(\"A is greater\"); else printf(\"C is greater\"); } else if (b>c) printf(\"B is greater\"); else printf(\"C is greater\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• If-else-if ladder: Useful for multi-way branching. Example: Example: if (x > 0) printf(\"Positive\"); else if (x < 0) printf(\"Negative\"); else printf(\"Zero\");</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Implement a program in C to find the product of digits of an integer number. You have to read the number from the user. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Implement a program in C to find the product of digits of an integer number. You</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>have to read the number from the user. [A]/ [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>#include <stdio.h></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>int num, digit, product = 1;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>printf(“enter an integer: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>scanf(“%d”, &num);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>// handle negative numbers</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An][3]",
+      "question": "Compare the use of if-else statements and the if-else-if ladder in C. Provide examples to show when one approach may be preferred over the other.",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] [4]",
+      "question": "Classify the various categories of functions in C based on the number of arguments and return values.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Classify the various categories of functions in C based on the number of arguments and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>return values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Functions with no arguments, no return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Functions with arguments, no return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Functions with no arguments, return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Functions with arguments, return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain each with examples. Provide 2.5 marks for each category</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain types of modifiers and their importance in C programming. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain types of modifiers and their importance in C programming. [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of modifiers in C:</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U][4]",
+      "question": "Describe the different storage classes in C (e.g., auto, static, extern, register) with examples. Explain how they influence variable behaviour.",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] [4]",
+      "question": "Explain the concept of \"call by value\" with an example. How does passing a value differ from passing a reference to a function? (2 × 10 = 20) END OF THE QUESTION PAPER ***",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of \"call by value\" with an example. How does passing a value differ</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>from passing a reference to a function?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In call by value, a copy of the variable is passed, so changes in the function do not affect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the original value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept with example program:    7 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In call by reference, changes made to the parameter affect the original variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparison with pass by reference: 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(Prepared by Dr. Ja seena K U, Assistant  Professor, MES C ollege Marampally, Mob:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>9847080148)</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "How can you pass arrays to functions in C? Explain with an example. / [CO4] [2x10 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How can you pass arrays to functions in C? Explain with an example. [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In C, arrays can be passed to functions in two ways:</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U][4]",
+      "question": "Define the following terms in the context of functions in C: a) Function Declaration b) Function Definition c) Function Call d) Return Type. After defining each, explain the differences between a function declaration and a function definition with examples. (2 X 10 = 20 Marks)",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

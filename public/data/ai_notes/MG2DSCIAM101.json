@@ -1,0 +1,831 @@
+{
+  "course_code": "MG2DSCIAM101",
+  "title": "Automotive Systems for E - Vehicles",
+  "dept_name": "Industrial Automation",
+  "semester": 2,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 59,
+  "repeating_skipped": 21,
+  "sources_used": [
+    "Official Model Question Paper (FYUGP 2024",
+    "II Semester MGU UGP25 - March - 2025",
+    "Second semester BA/BSc/BVocFYUGP April 2026"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 29,
+    "part_b": 18,
+    "part_c": 12
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "A Unity Gain Amplifier using an op-amp is also known as: a). Inverting amplifier b). Non-inverting amplifier c). Voltage follower d). Differential amplifier / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A Unity Gain Amplifier using an op-amp is also known as: a). Inve...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "In a non-inverting amplifier, if the feedback resistor (Rf) is increased, the gain of the amplifier will: a). Decrease b). Become negative c). Remain unchanged d). Increase / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a non-inverting amplifier, if the feedback resistor (Rf) is in...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In a comparator circuit, when the non-inverting input voltage is higher than the inverting input voltage, the output will be: A) High B) Low C) Zero D) Undefined U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a comparator circuit, when the non-inverting input voltage is ...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is commonly added to the output of a bridge rectifier to smooth the DC signal? a). A voltage regulator b). A capacitor c). A transformer d). A resistor / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is commonly added to the output of a bridge rectifier to smo...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "The primary function of a bridge rectifier is a). To amplify an AC signal b). To convert AC voltage into DC voltage c). To filter the DC voltage d). To stabilize the DC output voltage / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(b)To convert AC voltage into DC voltage</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the main function of an Operational Amplifier A) Amplify high-frequency signals B) Amplify low-frequency signals C) Perform mathematical operations like addition, subtraction, etc. D) Convert digital signals to analog signals K C01",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the main function of an Operational Amplifier A) Amplify ...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What does BLDC stand for? a). Bipolar Linear Direct Current b). Brushless Linear Direct Current c). Brushless DC d). Bi-directional Linear DC / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What does BLDC stand for? a). Bipolar Linear Direct Current b). B...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the main challenge of wireless charging for EVs? a). High energy efficiency b). Low compatibility with modern EVs / [CO3] c). Energy losses during transmission d). Overheating of the battery during charging",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(c)Energy losses during transmission</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The primary purpose of a Unity Gain Amplifier (Buffer Amplifier) using an Op-Amp is: A) To amplify the input signal with high gain B) To provide isolation between different stages of a circuit C) To filter the input signal D) To oscillate at a fixed frequency U C01",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The primary purpose of a Unity Gain Amplifier (Buffer Amplifier) ...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "In a photodiode amplifier circuit, the operational amplifier configuration is a). Inverting amplifier b). Differential amplifier / [CO1] c). Transimpedance amplifier d). Voltage comparator",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a photodiode amplifier circuit, the operational amplifier conf...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which of the following systems uses an open-loop configuration? a). A system with feedback b). A simple amplifier without feedback c). A system with a control loop d). A system that adjusts output automatically / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(b)A simple amplifier without feedback</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The primary function of a Schmitt Trigger is A) To amplify a signal without distortion B) To convert a sinusoidal signal into a square wave C) To filter high-frequency noise from a signal D) To regulate the output voltage U CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The primary function of a Schmitt Trigger is A) To amplify a sign...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which sensor is commonly used in ESCs to monitor the motor’s current and voltage in real time? a). Hall effect sensor b). Temperature sensor c). Current and voltage sensor d). GPS sensor / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which sensor is commonly used in ESCs to monitor the motor’s curr...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "How is the rotation of a BLDC motor typically controlled? a). By varying the supply voltage to the rotor b). By using an external commutator c). By switching the current in the stator windings using an electronic controller d). By varying the magnetic field strength of the rotor / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(c)By switching the current in the stator windings using an electronic controller</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What does a capacitor filter do in a power supply? A) Increase the voltage B) Smooth the output voltage C) Decrease the current D) Store electrical energy U C02",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What does a capacitor filter do in a power supply? A) Increase th...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "In an inverting amplifier, which of the following resistors determines the gain of the amplifier? a). Input resistor (Rin) b). Feedback resistor (Rf) c). Both Rin and Rf d). None of the above / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In an inverting amplifier, which of the following resistors deter...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "In sensor applications, the role of operational amplifier is a). Signal filtering b). Signal amplification c). Signal conversion d). Data storage / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). Signal amplification</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "In a comparator circuit using the 741 op-amp, if the reference voltage (inverting input) is set to 0V, what would be the output state when the non-inverting input exceeds 0V? a). Negative saturation b). Positive saturation c). Zero volts d). It would oscillate / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a comparator circuit using the 741 op-amp, if the reference vo...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What happens if the feedback loop of SMPS fails? a). The output voltage becomes unstable b). The switching frequency increases c). The system becomes more efficient d). The transformer gets damaged / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). The output voltage becomes unstable</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The output waveform of a bridge rectifier is A) A pure sinusoidal waveform B) A smooth DC signal C) A pulsating DC signal D) An inverted AC waveform K CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The output waveform of a bridge rectifier is A) A pure sinusoidal...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the primary function of an Electronic Speed Controller (ESC) in an Electric Vehicle (EV)? a). To control the power supply to the motor b). To manage the temperature of the battery c). To regulate the speed of the motor d). None of these / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary function of an Electronic Speed Controller (E...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What happens when an ESC detects that the motor has reached the desired speed? a). It disconnects the battery b). It reduces the power to maintain the speed c). It increases the voltage to the motor d). It shuts off the motor / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). It reduces the power to maintain the speed</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In a Brushless DC motor, the rotor contains which of the following? A) Permanent magnets B) Induced electromagnets C) Copper windings D) Brushes U CO3",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a Brushless DC motor, the rotor contains which of the followin...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the primary function of a 78XX voltage regulator IC? a). To increase voltage b). To provide a constant output voltage c). To store electrical energy d). To convert AC to DC / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary function of a 78XX voltage regulator IC? a). ...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What happens when the input voltage exceeds a certain threshold in a Voltage Level Indicator circuit using a 741 op-amp? a). The LED corresponding to that threshold voltage turns on b). The output of the op-amp becomes zero c). The reference voltage is adjusted automatically d). The input voltage is reduced to the reference level / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). The LED corresponding to that threshold voltage turns on</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In an induction motor, what is the relationship between the speed of the rotor and the synchronous speed? A) The rotor speed is always higher than the synchronous speed B) The rotor speed is always equal to the synchronous speed C) The rotor speed is always lower than the synchronous speed D) The rotor speed is independent of synchronous speed A CO3",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In an induction motor, what is the relationship between the speed...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "The rotor current in an induction motor is induced by: a). External power supply b). The magnetic field produced by the stator c). A DC generator d). A rotating mechanical force / [CO3] [1x10 = 10]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The rotor current in an induction motor is induced by: a). Extern...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "At what state of charge (SOC) does DC fast charging typically slow down? a). 10% SOC b). 50% SOC c). 80% SOC d). 100% SOC / [CO3] [1x10 = 10]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>At what state of charge (SOC) does DC fast charging typically slo...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What type of current is delivered to the battery in DC fast charging? A) Alternating Current (AC) B) Direct Current (DC) C) Pulsating Current D) Inductive Current K CO3 1 * 10 = 10",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What type of current is delivered to the battery in DC fast charg...</em> in the context of Automotive Systems for E - Vehicles.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Compare single, dual and quad packages. / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the basic functionality of an Operational Amplifier and list the ideal characteristics of an Op-Amp. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>An operational amplifier (op -amp) is a high -gain, DC -coupled electronic voltage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>amplifier that uses external feedback components (resistors/capacitors) to perform</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mathematical operations, signal conditioning, and filtering. It amplifies the difference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>between its two inputs,inverting  and non-inverting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Basic Functionality of an Op-Amp</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Differential Input</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Voltage Amplification</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Feedback Mechanism</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Three-Terminal Operation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Ideal Characteristics of an Op-Amp</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Infinite Open-Loop Gain</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Infinite Input Impedance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Zero Output Impedance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Infinite Bandwidth</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Infinite Common-Mode Rejection Ratio</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Zero Input Offset Voltage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Zero Propagation Delay</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is the gain of an inverting amplifier if𝑅௙=10K 𝑎𝑛𝑑 𝑅௜௡ =1K U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Briefly explain the working of Schmitt Trigger. / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the charging and discharging process of a lithium-ion battery / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Working with diagram can give 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Lithium-ion batteries operate by moving lithium ions between a cathode and anode</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>through an electrolyte, typically using a constant -current/constant-voltage (CC/CV)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>charge profile and a reverse flow during discharge. During charging, ions move from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>cathode to anode; during discharge, they move back, creating a flow of electrons</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>that powers devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Charging Process (Storing Energy)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Ion Movement:  When a charger is connected, it forces lithium ions to leave the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>positive cathode (typically Li -metal oxide) and travel through the electrolyte and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>separator to the negative graphite anode.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Electron Flow: Electrons move through the external circuit from the charger to the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>anode, balancing the positive charge of the incoming ions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discharging Process (Releasing Energy)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Ion Movement: When a device is connected, the chemical energy is released, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>lithium ions move from the anode back to the cathode through the electrolyte.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Electron Flow: Electrons move from the anode to the cathode through the external</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>circuit, powering the connected load.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is an LDR. Explain with proper circuit diagram to amplify the signal from LDR using op-amp U CO1",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain the basic structure of a lithium-ion battery. / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "How does a capacitor filter work in a bridge rectifier circuit? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A capacitor filter works in a bridge rectifier by smoothing the pulsating DC output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>into a steadier, smoother DC voltage. Connected in parallel with the load resistor, the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>capacitor charges to the peak voltage during the diode conduction periods and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>discharges through the load when the rectifier output drops, effective ly filling in the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>gaps between pulses.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Draw the output waveform of a Schmitt trigger when𝑉௎் =2V and 𝑉௅்= - 2V U CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the symbol of an operational amplifier, its components, and explain the significance of each part in the circuit. / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain pin configuration of LM324. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Pin Configuration LM324</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is a bridge rectifier.How does it convert AC voltage to DC voltage using diodes? U CO2",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What role does the switching transistor play in an SMPS? / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "How can we use a comparator as zero crossing detector / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparator as zero crossing detector</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>To use a comparator as a Zero Crossing Detector (ZCD) , you essentially set the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>reference voltage to zero by connecting one of its inputs directly to the ground. The</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>comparator then switches its output state whenever the input signal crosses this</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>zero-volt threshold, effectively converting a sine wave into a square wave.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is a Battery Management Unit (BMU)? A CO3",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is DC fast charging, and why is it important? / [CO3] [5x4 = 20]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain how the TP4056 ensures safe charging of lithium-ion batteries. / [CO3] [5x4 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Trickle Charge</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Constant Current (CC)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Constant Voltage (CV)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Overcharge Protection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Thermal Regulation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Under-Voltage Lockout (UVLO)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Over-Discharge Protection.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Short-Circuit & Over-Current Protection</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is commutation. How is it achieved in a BLDC motor A CO3 4 * 5 = 20",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain open loop op amp configurations. / [CO1]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[K] ",
+      "question": "What is an LDR. Expain how we can use an op-amp to amplify the signal from a LDR with proper circuit diagram / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>LDR (Light Dependent Resistor), also known as a photoresistor, is a passive</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>component whose resistance changes based on the intensity of light hitting its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>surface. In the dark, its resistance is very high (often several megohms), but when</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>exposed to bright light, the resistance drops significantly</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Explain the working of a non-inverting amplifier with proper circuit diagram. Write the gain formula of non-inverting amplifier K CO1",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Define a Battery Management Unit (BMU). Describe its primary functions, components, and their roles in ensuring safe and efficient battery operation. / [CO3]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain the working of Induction motor / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>An induction motor operates on the principle of electromagnetic induction,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>converting electrical energy into mechanical energy without any direct electrical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>connection to the rotating part.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Stator: The stationary part producing the rotating magnetic field.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>` Rotor: The rotating component, either squirrel-cage or wound, that receives</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>induced current.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>An induction motor works on the principle of Faraday's Law of Electromagnetic</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Induction, where a stator creates a rotating magnetic field (RMF) when fed by a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>three-phase AC supply. This RMF cuts the rotor conductors, inducing an EMF and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>current, which interacts with the RMF to produce torque and turn the rotor.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "How we can use an IC 741 as a zero-crossing detector. Explain with proper circuit diagram and also draw the input and output waveforms U CO2",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Discuss the effect of a capacitor filter in a bridge rectifier circuit. / [CO2]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "How do input and output capacitors help improve the performance of a 78XX voltage regulator? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Input and output capacitors are essential for ensuring the stability and performance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of a 78XX voltage regulator, primarily by preventing oscillations and managing rapid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>load changes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Input Capacitor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Stability & Filter : The input capacitor is primarily used to ensure the regulator</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>remains stable and does not self-oscillate. *</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Preventing Oscillation: If the regulator is far from the power source (typically more</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>than 10 inches), the lead inductance can cause the IC to oscillate . A small capacitor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(typically 0.33 µF) placed close to the input pin bypasses this inductance.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Filtering Ripple: It acts as a reservoir to smooth out fluctuations or AC ripples from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the incoming DC supply, ensuring the regulator receives a \"clean\" signal to process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Output Capacitor:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Transient Response : The output capacitor acts as a local energy buffer for the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>connected load.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Improved Transient Response:  The 78XX is a relatively \"slow\" regulator from the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>1970s and cannot respond instantly to sub -microsecond changes in load current. If a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>load suddenly demands more current, provides that energy immediately, preventing</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the output voltage from sagging.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Noise Reduction: It filters out high-frequency noise that may be generated internally</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>by the regulator or externally by the load, resulting in a cleaner DC output</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "With the help of block diagrams explain the working of SMPS U CO2",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[K] ",
+      "question": "Describe the various types of EV charging connectors used globally. Discuss their specifications and compatibility with EVs. / [CO3] [10x2 = 20]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[K] ",
+      "question": "Briefly explain unity gain amplifier with proper circuit diagram. What is the gain of a unity gain amplifier? / [CO1] [10x2 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A unity gain amplifier , also commonly known as a voltage follower  or buffer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>amplifier, is an operational amplifier (op -amp) circuit where the output voltage is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>exactly equal to the input voltage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Gain of a Unity Gain Amplifier</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The voltage gain of a unity gain amplifier is 1 (unity) . This means there is no</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>amplification or attenuation of the signal amplitude; the signal simply \"follows\" the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>input</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Explain the working of BLDC motor. Why it is called brushless A CO3 2 * 10 = 20",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

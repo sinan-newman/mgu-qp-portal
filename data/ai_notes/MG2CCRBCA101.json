@@ -1,0 +1,602 @@
+{
+  "course_code": "MG2CCRBCA101",
+  "title": "Data Structures",
+  "dept_name": "Computer Applications",
+  "semester": 2,
+  "course_type": "CCR",
+  "max_marks": 70,
+  "total_questions": 42,
+  "repeating_skipped": 18,
+  "sources_used": [
+    "Second semester BA/BSc/BVocFYUGP April 2026",
+    "Official Model Question Paper (FYUGP 2024",
+    "II Semester MGU UGP25 - March - 2025"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 15,
+    "part_b": 18,
+    "part_c": 9
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the memory representation of a linear array. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the memory representation of a linear array.    [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition of linear array (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Elements are stored in consecutive memory locations (1 mark)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Differentiate between best-case and worst-case time complexity of an algorithm. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Initialization: Setting max = A[0] takes constant time.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Differentiate between linear and non-linear Data Structures. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Differentiate between linear and non-linear Data Structures. [CO1...</em> in the context of Data Structures.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the role of a stack when evaluating a postfix expression. Provide an example to illustrate how the stack is used. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the role of a stack when evaluating a postfix expression. Provide an example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>to illustrate how the stack is used.  [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– A stack is used to evaluate postfix (Reverse Polish) expressions efficiently. The stack</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>helps to manage operands and intermediate results. ( 1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>--  Example: 5 6 + 2 * → (5 + 6) * 2 = 22 with stack operations (1 mark)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the role of the \"top\" variable in an array-based stack implementation? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The Loop: The loop runs from the second element ((i=1)) to the last element ((i=n-1)). This</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>means it executes (n-1) times.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "How does the pop operation change the state of the stack in an array-based implementation? [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does the pop operation change the state of the stack in an ar...</em> in the context of Data Structures.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Describe how a singly linked list is represented in memory. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe how a singly linked list is represented in memory.       [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Explanation of node structure with data and next (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Use of pointers for sequential linking (1 mark)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Explain the differences between singly linked lists and doubly linked lists. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The Comparison: Inside each iteration of the loop, exactly one comparison (A[i] > max) is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>performed.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Define a linked list and explain its basic structure. [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define a linked list and explain its basic structure. [CO3]...</em> in the context of Data Structures.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Describe connected graphs using a suitable example. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe connected graphs using a suitable example.  [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition of connected graph (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Example: with vertices and edges (1 mark)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Describe a subgraph. How is it derived from a given graph. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Total Operations: Since there are (n-1) comparisons, the total work is proportional to (n)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An]",
+      "question": "What is a walk in a graph? How does it differ from a path? [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a walk in a graph? How does it differ from a path? [CO4]...</em> in the context of Data Structures.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Distinguish a priority queue and a normal queue? / [CO2] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Distinguish a priority queue and a normal queue.     [An] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Difference in operation: FIFO vs priority-based processing (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Real-life example: hospital queue (1 mark)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "What is the difference between an input-restricted and an output-restricted Double-ended-queue? / [CO2] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>return max</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Time Complexity Analysis :- Time Complexity,  O(n), where n is the number of elements in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>To determine the time complexity, we count the number of basic operations (comparisons)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>relative to the input size n</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Discuss the disadvantages of Binary Search? [CO1] (5*2=10 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss the disadvantages of Binary Search? [CO1] (5*2=10 Marks)...</em> in the context of Data Structures.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe different types of time complexity analysis with suitable examples. / [CO1] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-BCA(Honours) REGULAR EXAMINATION MARCH 2025 SECOND SEMESTER Core Course (CC) - MG2CCRBCA101 - DATA STRUCTURES (2024 ADMISSION ONWARDS)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe different types of time complexity analysis with suitable examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Best, worst, average case definitions (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Examples like Linear Search, Binary Search (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Write an algorithm to find the largest element in an array and analyze its time complexity. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write an algorithm to find the largest element in an array and analyse its time complexity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Algorithm FindLargest(A, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Input: An array A of n numbers</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Write the algorithm for the \"push\" operation in a stack. Discuss the limitations of using arrays for implementing stacks. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write the algorithm for the \"push\" operation in a stack. Discuss the limitations of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>using arrays for implementing stacks.      [An] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Stack push algorithm steps (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Limitations: fixed size, memory wastage, overflow (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Define postfix notation and explain how it simplifies the evaluation of arithmetic expressions. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define postfix notation and explain how it simplifies the evaluation of arithmetic expressions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Postfix notation, or Reverse Polish Notation (RPN), is a mathematical method where operators</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>follow their operands (e.g., 5 2 + for (5+2)). It simplifies expression evaluation by eliminating</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the need for parentheses and operator precedence rules, allowing computers to process complex</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>formulas efficiently using a simple stack data structure. -2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write algorithm to evaluate post fix expressions - 4 marks</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A]",
+      "question": "Compare the advantages and disadvantages of using postfix notation over infix notation for arithmetic expression evaluation. [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Distinguish between closed hashing and open hashing. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Distinguish between closed hashing and open hashing.   [An] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition of open hashing (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition of closed hashing (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Differences (2 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Write an algorithm for deleting the first and last node in a circular linked list. Explain it using a suitable example. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write an algorithm for deleting the first and last node in a circular linked list. Explain it using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a suitable example. [A] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Deletion from the beginning of the circular linked list</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Step-by-step approach:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Check if List is Empty: If last is nullptr, print \"List is empty\" and return nullptr.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Get Head Node: Set head to last->next.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Check for Single Node: If head equals last, delete head and set last to nullptr.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Handle Multiple Nodes:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>=> Update last->next to point to head->next.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>=> Delete head.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Return Updated last</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Deletion at the end of Circular linked list</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Step-by-step approach:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Check if the list is empty (last == None). If yes, return None.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Set head = last.next.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• If the list has only one node (head == last), delete it by setting last = None and return.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Traverse the list using a pointer curr starting from head until curr.next == last.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Update curr.next = head to skip the last node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Delete the last node and update last = curr.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Return the updated last.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Give examples</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A]",
+      "question": "Explain with diagrams how a circular linked list is implemented. What are its advantages over a singly linked list? [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Compare binary trees and binary search trees with examples. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare binary trees and binary search trees with examples.  [An] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definitions of binary tree and BST (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Examples (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Key differences (2 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Briefly explain the different types of rotations in an AVL tree. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Briefly explain the different types of rotations in an AVL tree. [U] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>AVL tree rotations are operations used to maintain a balanced binary search tree, ensuring the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>height difference between left and right subtrees (balance factor) is at most 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Rotations: rotations are designed to restore balance in O(1) time while ensuring the overall</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>time complexity remains O(log n). AVL Trees use four cases to rebalance themselves after</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>insertions and deletions: Left-Left (LL), Right-Right (RR), Left-Right (LR) and Right-Left</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(RL)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An]",
+      "question": "Compare recursive implementation and iterative implementation with suitable examples. [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the Insertion Sort algorithm. Describe its working with an example. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the Insertion Sort algorithm. Describe its working with an example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Algorithm steps or program (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Step-by-step working with an example (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Write a C program to implement a linear search algorithm. How does the dataset size affect its performance? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write a C program to implement a linear search algorithm. How does the dataset size affect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>its performance? [A] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write program 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Impact of Dataset Size on Performance 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The relationship between dataset size and performance is defined by several key factors:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Linear Growth, Worst-Case Scenario, Scalability Issues, Minimal Overhead</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An]",
+      "question": "Discuss the similarities and differences of Insertion Sort and Selection Sort. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Write an algorithm or a program to traverse a singly linked list and print all its elements. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write an algorithm or a program to traverse a singly linked list and print all its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>elements.                                                                                        [A] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Proper algorithm or program (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Explanation (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe hashing and the different types of mathematical functions that can be used as hash functions. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe hashing and the different types of mathematical functions that can be used as hash</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>functions.                     [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A hash function is a function that takes an input (or key) of arbitrary size and converts it into</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a fixed-size value, called a hash value or hash code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of Mathematical Hash Functions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Division Method (Modulo), Multiplicative Hashing, Mid-Square Method, Folding Method,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Cryptographic Hash Functions</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Analyze the advantages and disadvantages of using an AVL tree over a standard Binary Search Tree. / [CO4] [6x5 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Analyze the advantages and disadvantages of using an AVL tree over a standard</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Binary Search Tree.                                                                      [An] / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– AVL advantages: balanced height, O(log n) operations, Efficient Searching (3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Disadvantages: complex rotations, overhead (3 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "Explain insertion in an AVL tree with a suitable example. [CO4] (5*6=30 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Explain two dimensional arrays in c. Write a c program to find the row sum of a matrix. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain two dimensional arrays in C. Write a C program to find the row sum of a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>matrix.                                                                                                   [A] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition and memory layout of 2D array with explanation (7 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– C program to calculate row sum (8 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Explain how a two-dimensional array is represented in memory. Write a C program to multiply two matrices. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how a two-dimensional array is represented in memory. Write a C program to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>multiply two matrices.  [A] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A two-dimensional array is stored in memory as a contiguous block of sequential memory</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>locations, even though it is conceptually viewed as a table with rows and columns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Memory Representation-  6 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>There are two primary methods for organizing these elements in linear memory:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Row-Major Order: Elements are stored row by row. All elements of the first row are placed</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>first, followed by all elements of the second row, and so on. This is the standard method used</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in C and C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Column-Major Order: Elements are stored column by column. All elements of the first column</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>are placed first, then the second column, etc..</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write Program  - 9 marks</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A]",
+      "question": "Explainthe mergingof two sorted arrays with an algorithm and a suitable example. [CO1]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Explain the array implementation of a simple queue and circular queue with algorithms and examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the array implementation of a simple queue and circular queue with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>algorithms and examples.                                                                       [An] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Structure and operations of a simple queue with example (7 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Structure and operations of a circular queue with example (8 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain insert, delete and traverse operations with algorithm/code.</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Compare simple queues and circular queues with examples and their applications. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare simple queues and circular queues with examples and their applications.  ] [An] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simple queues and circular queues both follow the FIFO (First-In-First-Out) principle, but</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>differ in memory management. Simple queues are linear, causing wasted space at the front</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>when items are deleted. Circular queues connect the last position back to the first, enabling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>efficient reuse of empty space</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simple Queue Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Printer Queues, Message Queues, Breadth-First Search (BFS), Call Centre Management</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Circular Queue Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CPU Scheduling, Memory Management, Traffic Systems, Round-Robin Token Generation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Give examples</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An]",
+      "question": "Compare and contrast circular queue, Double-ended-queue and priority queues with examples. [CO2]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Define recursion. What are the applications of recursion? Discuss the significance of run time stack in recursive program implementation. / [CO3] [15x2 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define recursion. What are the applications of recursion? Discuss the significance of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>run time stack in recursive program implementation.                       [An] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Definition and working of recursion (4 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Applications: factorial, Fibonacci, etc.. Explain any one application with example. (5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– Runtime stack: call stack, frames, example (6 marks)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Explain the different types of recursion? Write a C program to generate fibonacci series upto a limit using recursion. / [CO3] [15x2 = 30]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the different types of recursion? Write a C program to generate fibonacci series</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>upto a limit using recursion.  [A] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Recursion is a programming technique where a function calls itself to solve smaller instances</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of the same problem</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of Recursion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Recursion can be categorized based on how and when the recursive call occurs:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Direct Recursion: The most common form, where a function directly calls itself within its own</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>body.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Indirect Recursion: Occurs when a function calls another function, which then eventually calls</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the first function, creating a circular chain.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Program                                                                                                    [15x2 = 30]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Prepared by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sahala K I</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Assistant Proessor,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Jai Bharat Arts & Sciience College, Arackappady</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Ph; 984732712</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U]",
+      "question": "Explain hashing. Discuss various collision handling methods that can be implemented to reduce collision. [CO3] (2*15=30 Marks)",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

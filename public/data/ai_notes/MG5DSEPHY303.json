@@ -1,0 +1,584 @@
+{
+  "course_code": "MG5DSEPHY303",
+  "title": "Laser, Non-linear Optics and Fiber Optics",
+  "dept_name": "Physics",
+  "semester": 5,
+  "course_type": "DSE",
+  "max_marks": 70,
+  "total_questions": 40,
+  "repeating_skipped": 20,
+  "sources_used": [
+    "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+    "Laser, Non-linear Optics and Fiber Optics",
+    "Official Practical Model Paper"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 24,
+    "part_b": 16,
+    "part_c": 0
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State any two key operating characteristics of a ruby laser. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>V-number substitution and answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑉=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜋𝑎</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜆0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>√𝑛12−𝑛22                                                                   (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑉=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕     (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Condition for single mode / multimode and conclusion:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑉≤2.405 (Single-mode),  𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Since 𝑉=16.73, The optical fibre is multimode.        (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Number of propagating modes  substitution and answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑁≈</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑉2</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][1]",
+      "question": "Distinguish between a two-level and three-level laser system.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Distinguish between a two-level and three-level laser system....</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain Stimulated emission process in a laser system. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(1 Mark) 𝑁= (16.73)2 2 =139.95=𝟏𝟒𝟎 modes        (1 Mark) [A]/[CO4]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][1]",
+      "question": "What is the function of a resonator in a laser?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the function of a resonator in a laser?...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State how acceptor doping alters the position of the Fermi level in a semiconductor. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State how acceptor doping alters the position of the Fermi level in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>semiconductor.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Acceptor doping introduces acceptor energy levels just above the valence band,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>creating an excess of holes (majority carriers) this shifts the Fermi level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>downward closer to the valence band, away from the middle of the forbidden</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>energy gap. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][1]",
+      "question": "Write down the Schawlow-Townes condition for laser oscillation and explain each term in it.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write down the Schawlow-Townes condition for laser oscillation an...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Under what condition does resonance occur in an open resonator? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Under what condition does resonance occur in an open resonator?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Resonance in an open resonator occurs when an integral number of half-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>wavelengths covers the length between the reflecting mirrors.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>OR</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐿=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑞𝜆</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2 , where 𝑞 is an integer and 𝜆 is the wavelength of light. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][1]",
+      "question": "Sketch the energy level diagram of a He-Ne laser.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Sketch the energy level diagram of a He-Ne laser....</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Explain the working principle of a mechanical Q-switch in a laser cavity. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the working principle of a mechanical Q-switch in a laser cavity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>One of the end mirrors of the laser resonator is kept rotating rapidly about an</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>axis perpendicular to the axis of the resonator. The mirror is only</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>instantaneously aligned parallel to the output reflector.  (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The flash lamp is timed to fire so that the mirror aligns only when the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>population inversion reaches its maximum. (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "Define Q-switching and how it can be achieved?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define Q-switching and how it can be achieved?...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is a laser amplifier? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is a laser amplifier?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A laser amplifier is a device used to obtain higher-intensity laser beams by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>directing a laser pulse through a gain medium (such as a laser rod) that does</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>not have external reflectors. (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K]/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The amplifying rods used have uncoated ends or are treated with antireflecting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>coatings and the amplifier is pumped with its own flash lamp. (1 Mark)</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "Compare the intensities of a mode-locked and mode-unlocked laser beam.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Compare the intensities of a mode-locked and mode-unlocked laser ...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State why second-harmonic generation (SHG) cannot occur in centrosymmetric media. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State why second-harmonic generation (SHG) cannot occur in centrosymmetric</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>media.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In a centrosymmetric medium, spatial inversion transforms the electric field</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and second-order polarization such that 𝐸→−𝐸 and 𝑃(2)→−𝑃(2). (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Substituting this into the nonlinear relation gives −𝑃(2)=𝑃(2), which forces</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑃(2)=0 and consequently 𝜒(2)=0, prohibiting second-harmonic generation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO3]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][3]",
+      "question": "What is meant by third harmonic generation?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is meant by third harmonic generation?...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Write down the frequency relation governing the generation of an idler wave in parametric processes and define each term. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write down the frequency relation governing the generation of an idler wave in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>parametric processes and define each term.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜔𝑖 =𝜔𝑝−𝜔𝑠               (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜔𝑝 -Pump Frequency,  𝜔𝑠 -Signal Frequency,  𝜔𝑖 -Idler Frequency   (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO3]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][3]",
+      "question": "Explain self-focusing of laser beam.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain self-focusing of laser beam....</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the purpose of an erbium-doped fibre amplifier (EDFA) in long-distance optical fibre communication? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the purpose of an erbium-doped fibre amplifier (EDFA) in long-distance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>optical fibre communication?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The light pulse attenuates as it travels. Rather than using optoelectronic</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>regenerators, modern networks amplify the optical signal directly using inline</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Erbium-Doped Fiber Amplifiers (EDFAs), which provide ≈ 20 𝑑𝐵 of optical gain</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>within the 1530 - 1570 𝑛𝑚 band. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO4]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "Distinguish between TE and TM modes in a slab waveguide",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Distinguish between TE and TM modes in a slab waveguide...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How is photosensitivity at ~240nm utilized to fabricate periodic gratings in germanium-doped silica fibres? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How is photosensitivity at ~240nm utilized to fabricate periodic gratings in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>germanium-doped silica fibres?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Periodic variation of refractive index along the dispersive fibre element can be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>induced in germanium doped silica by forming an interference pattern within</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the fibre core from two coherent UV laser light beams incident at an angle to the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>fibre axis. (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The glass core of the fibre is photosensitive at ~ 240 nm and this wavelength</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>may be obtained by harmonic generation from a longer wavelength laser, or it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>may be directly produced by a pulsed ultraviolet excimer laser. (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO4]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][4]",
+      "question": "Which are the two low-attenuation transmission windows in a silica glass optical fibre. Which unit is normally used to express the attenuation in an optical fibre.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which are the two low-attenuation transmission windows in a silic...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Define the acceptance angle of an optical fibre. What is meant by the acceptance cone? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define the acceptance angle of an optical fibre. What is meant by the acceptance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>cone?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The acceptance angle is defined as the maximum angle to the fibre axis at which</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>light can enter the core of an optical fibre from an external medium guided</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>along the fibre via total internal reflection.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>OR                       𝑛0sin𝜃𝑎=𝑛1√1−(𝑛2𝑛1)2                             (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The acceptance cone is the three-dimensional conical volume formed by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>acceptance angle about the central axis of the optical fibre core..  (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO4]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "Sketch the schematic of a fibre optic communication system.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Sketch the schematic of a fibre optic communication system....</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is meant by air-guiding type photonic crystal fibre? / [CO4] [2x10 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is meant by air-guiding type photonic crystal fibre?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In an air-guiding type photonic crystal fibre (also known as a hollow-core</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>photonic bandgap fibre), the central core is an air hole rather than a solid silica</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>core.    (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>It operates on physical principle: Photonic Bandgap Guiding (or 2D Bragg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reflection).  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K]/ [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2×10=20]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "Distinguish between step index and graded index optical fibre. [2×10 = 20]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Distinguish between step index and graded index optical fibre. [2...</em> in the context of Laser, Non-linear Optics and Fiber Optics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "For a plane electromagnetic wave propagating in a rectangular cavity, show that the wave vector k is perpendicular to the electric field E(t). / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>For a plane electromagnetic wave propagating in a rectangular cavity, show that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the wave vector k is perpendicular to the electric field E(t).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Wave Equation p (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝛻2𝐄= 1𝑐2𝜕2𝐄𝜕𝑡2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Plane wave solution to the wave equation (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐸(𝐫,𝑡)=𝐸0exp{𝑖(𝐤⋅𝐫−𝜔𝑡)}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Spatial standing wave components inside the cavity (2 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐸𝑥(𝑡)=𝐸0𝑥(𝑡)cos𝑘𝑥𝑥sin𝑘𝑦𝑦sin𝑘𝑧𝑧</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐸𝑦(𝑡)=𝐸0𝑦(𝑡)sin𝑘𝑥𝑥cos𝑘𝑦𝑦sin𝑘𝑧𝑧</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐸𝑧(𝑡)=𝐸0𝑧(𝑡)sin𝑘𝑥𝑥sin𝑘𝑦𝑦cos𝑘𝑧𝑧</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Maxwell’s equation (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝛻⋅𝐄=0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑘𝑥𝐸0𝑥(𝑡)+𝑘𝑦𝐸0𝑦(𝑡)+𝑘𝑧𝐸0𝑧(𝑡)=0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Dot Product Form and Final Conclusion (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐤⋅𝐄(𝑡)=0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Hence the wave vector is perpendicular to the electric field vector (𝐤⊥𝐄)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][1]",
+      "question": "Obtain the expression for the number of resonant frequencies within an open resonator.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the construction, working principle, and key operational characteristics of a He-Ne laser with a neat energy-level diagram. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the construction, working principle, and key operational</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>characteristics of a He-Ne laser with a neat energy-level diagram.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Energy Level Diagram (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Schematic Diagram (1.5 Marks)   +    Explanation (2.5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO1]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][1]",
+      "question": "With the help of a proper schematic diagram and energy level diagram, explain the construction and working of a ruby laser.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the working of a semiconductor laser with a suitable energy level diagram. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the working of a semiconductor laser with a suitable energy level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>diagram.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Energy Level Diagram (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Basic Principle & Requirements (3 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The semiconductor material must have a high transition probability for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>radiative transitions across the bandgap, exceeding non-radiative lattice</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>transfer rates. Population inversion is achieved via carrier injection through a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>forward biasing of the semiconductor diode.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The 𝑝-𝑛 junction diode must be heavily doped. In the 𝑛-type region, the Fermi</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>level 𝐹𝑐 lies within the conduction band, while in the 𝑝-type region, the Fermi</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>level 𝐹𝑣 lies within the valence band.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>When forward-biased, electrons are injected into the 𝑝-side and holes into the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑛-side, creating a high concentration of both carriers in the narrow</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>depletion/active region. This high concentration results in a population</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>inversion between the conduction band, and the valence band states near the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>junction. Electron-hole recombination in this narrow planar region releases</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>coherent optical radiation when the injected current exceeds a threshold value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Optical Confinement & Resonator Action (1 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Laser action is confined to the very thin junction region.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The crystal end faces are cleaved parallel to form an optical resonator, providing</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the necessary feedback for amplification and stimulated emission.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][1]",
+      "question": "Obtain the condition that must be satisfied to get stimulated emission from a semiconductor laser.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss the principle and operational mechanism of a Kerr-cell Q-switch in a laser system. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the principle and operational mechanism of a Kerr-cell Q-switch in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>laser system</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of Kerr effect (1.5 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A Kerr cell consists of an isotropic liquid (such as nitrobenzene) containing</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>asymmetric molecules placed between parallel plates. When an external electric</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>field is applied, the molecules tend to align parallel to the field direction and the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>liquid become optically anisotropic and birefringent, with refractive indices 𝑛𝑜</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and 𝑛𝑒 proportional to the square of the applied voltage.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The Kerr Cell Shutter System-Schematic OR Explanation (1.5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Operational Sequence (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The Kerr cell is activated by applying a high bias voltage (10--20 kV).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The flash lamp is fired to pump the active laser medium.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>After population inversion peaks (approx. 0.5 ms), the Kerr cell voltage is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>switched off as suddenly as possible.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Performance Characteristics (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Operating as a fast electro-optic shutter, switching times in the nanosecond</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>range. Effectively increases peak output power (e.g., from kilowatts to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>megawatts/gigawatts) by compressing the energy into a giant optical pulse.</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][2]",
+      "question": "Explain how Q-switching can be achieved in a laser using Kerr effect.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the phase-matching condition in second-harmonic generation and show mathematically how it leads to the equality of refractive indices at both frequencies (η = η ). / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the phase-matching condition in second-harmonic generation and show</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mathematically how it leads to the equality of refractive indices at both</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>frequencies (ηω = η2ω).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Principle of SHG and Condition for Maximum Intensity (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In SHG, energy transfer from the fundamental wave (𝜔) to the second-harmonic</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>wave (2𝜔) requires constructive interference over the propagation path.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Wave number matching condition for maximum intensity:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝑘1−𝑘2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2 =0⟹𝑘2=2𝑘1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Substitution of k1 and k2 and arriving at the final equation (1.5 Marks).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜔𝜂2𝜔</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑐 =2(𝜔𝜂𝜔𝑐 )</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜂2𝜔 =𝜂𝜔</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Refractive index ellipsoid OR Energy level representation (1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Physical Significance & Use of Birefringence (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Phase matching is achieved in anisotropic crystals by using polarization-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>dependent refractive indices, where ordinary ray index at frequency 𝜔 matches</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the extraordinary ray index at 2𝜔 along specific propagation directions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO3]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][2]",
+      "question": "What is meant by second harmonic generation? Prove that only non- centrosymmetric crystals can exhibit second harmonic generation.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the physical mechanism of self-focusing in a nonlinear medium using the Gaussian intensity profile of a laser beam. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the physical mechanism of self-focusing in a nonlinear medium using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the Gaussian intensity profile of a laser beam.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of self-focusing (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>It is a non-linear process where an intense light beam modifies the refractive index of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a medium such that causes the beam to focus itself, without changing its frequency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/ [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Derivation of the expression for intensity-dependent index (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜂=𝜂𝑙+𝜂𝑛𝑙𝐸02</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of Gaussin intensity profile of laser (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A real laser beam features a Gaussian intensity profile that peaks along the central</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>propagation axis and drops off radially.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expression for Self-focusing distance and Threshold Intensity (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐿0=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝐷</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>√𝜂𝑛𝑙𝐸02</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>,                    𝐼thresh=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜆2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜂𝑙2𝜂𝑛𝑙𝐷2</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][2]",
+      "question": "A laser operating at a pump wavelength of 𝜆௣ = 360 nm pumps a non-linear crystal to produce parametric generation. If the desired signal wavelength is 𝜆௦ = 546 nm:(1) Calculate the frequency of the pump photon 𝜔௣ and signal photon 𝜔௦.(2) Determine the idler frequency and its corresponding wavelength",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "A step-index optical fibre has core radius a = 25μm, n1 = 1.520, n2 = 1.505, and λ0 = 2μm. Calculate the V-number and determine whether the fibre is single- mode or multimode. Estimate the number of propagating modes. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A step-index optical fibre has core radius a = 25 µm, n1 = 1.520, n2 = 1.505, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>λ0 = 2 µm. Calculate the V-number and determine whether the fibre is single-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mode or multimode. Estimate the number of propagating modes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Given: Core radius, 𝑎=25 𝜇m=25×10−6 m, Core refractive index, 𝑛1=</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][3]",
+      "question": "Obtain the expression for the characteristic penetration depth of an evanescent wave in an optical fibre.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Analyse how the boundary conditions of a slab waveguide restrict the possible electromagnetic field patterns and lead to the formation of discrete modes. / [CO4] [6x5 = 30] ω 2ω",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>field penetrates the cladding.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>path difference is expressed as:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜋</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜆1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An]/[CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜋</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝜆1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>angles:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>modes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[6×5=30]</li></ul></div>",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][3]",
+      "question": "A Fiber Bragg Grating is to be fabricated to reflect a target centre wavelength 𝜆଴ = 1300 nm in a silica fibre core with effective refractive index 𝑛 = 1.5. (i) Calculate the required grating pitch/spacing. (ii) Calculate the effective velocity of this wavelength inside the fibre. [5×6 = 30]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

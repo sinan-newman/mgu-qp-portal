@@ -1,0 +1,1863 @@
+{
+  "course_code": "MG2MDCECT100",
+  "title": "IoT Based Smart Farming",
+  "dept_name": "Electronics with Computer Technology",
+  "semester": 2,
+  "course_type": "MDC",
+  "max_marks": 70,
+  "total_questions": 132,
+  "repeating_skipped": 80,
+  "sources_used": [
+    "II Semester MGU UGP25 - March - 2025",
+    "Second semester BA/BSc/BVocFYUGP April 2026",
+    "Official Practical Model Paper",
+    "Official Model Question Paper (FYUGP 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 132,
+    "part_b": 0,
+    "part_c": 0
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the major problem with excessive water use in farming? a). Soil erosion b). Waterlogging c). Loss of nutrients d). All of the above / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the major problem with excessive water use in farming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Soil erosion b). Waterlogging</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Loss of nutrients d). All of the above</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is one advantage of using humidity sensors in greenhouses? a). They eliminate the need for ventilation b). They help maintain optimal humidity for plant growth c). They reduce the need for watering d). They increase the soil p H / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is one advantage of using humidity sensors in greenhouses? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What does Io T stand for? a) Internet of Thingsb) Integration of Technology c) Intelligent Online Trackingd) Internet of Technology K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What does Io T stand for? a) Internet of Thingsb) Integration of ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Prepare a case study report /field visit report based on a simple hydroponic system using readily available materials.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Prepare a case study report /field visit report based on a simple...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the first stage of a plant's life cycle? a). Germination b). Flowering c). Pollination d). Fruiting / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the first stage of a plant's life cycle? a). Germination b). Flowering c). Pollination d). Fruiting [K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which nutrient is primarily responsible for leaf growth in plants? a). Nitrogen b). Phosphorus c). Potassium d). Calcium / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which nutrient is primarily responsible for leaf growth in plants...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which statement best defines the Internet of Things (Io T)? a) A collection of unrelated devices without communication b) A system where devices collect and exchange data via the internet c) A type of web browser d) A new social media platform U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which statement best defines the Internet of Things (Io T)? a) A ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Conduct a case study report/field visit report growth rate of plants in soil and a hydroponic system over two weeks and document your observations.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Conduct a case study report/field visit report growth rate of pla...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How do drones contribute to data collection in farming? a). By increasing soil pollution b). By spreading diseases in crops c). By replacing farmers in harvesting d). By capturing high-resolution images for crop monitoring / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How do drones contribute to data collection in farming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). By increasing soil pollution b). By spreading diseases in crops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). By replacing farmers in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>harvesting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d). By capturing high-resolution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>images for crop monitoring</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How does data help in pest management? a). By predicting pest outbreaks and suggesting timely interventions b). By completely eliminating pests from farms / [CO2] c). By increasing pesticide usage without analysis d). By decreasing the importance of soil health",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does data help in pest management? a). By predicting pest out...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Who is credited with coining the term \"Internet of Things\"? a) Tim Berners-Leeb) Kevin Ashton c) Elon Muskd) Bill Gates K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Who is credited with coining the term \"Internet of Things\"? a) Ti...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Furnish a case study report/field visit report on data collection from a soil moisture sensor in an agriculture farm.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Furnish a case study report/field visit report on data collection...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What stage follows the flowering stage in plant growth? a). Fruiting stage b). Germination stage c). Seedling stage d). Vegetative stage / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What stage follows the flowering stage in plant growth?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Fruiting stage b). Germination stage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Seedling stage d). Vegetative stage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which of the following sensors is used for detecting rainfall in agricultural Io T applications? a). Capacitive Soil Moisture Sensor b). Rain Gauge Sensor c). Thermocouple Sensor d). Ultrasonic Sensor / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following sensors is used for detecting rainfall in ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is a key characteristic of Io T devices? a) They must always require human intervention to function b) They collect, share, and analyze data automatically c) They work only with Bluetooth connections d) They are limited to home automation applications K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a key characteristic of Io T devices? a) They must always...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the main economic challenge in traditional farming? a). Increased market demand b). High production costs c). Government subsidies d). Technological advancements / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the main economic challenge in traditional farming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Increased market demand b). High production costs</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Government subsidies d). Technological advancements</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is a common issue faced by traditional farmers? a). Soil erosion b). Cloud computing c). AI integration d). Satellite imaging / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a common issue faced by traditional farmers? a). Soil ero...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How does Io T help in precision farming? a) By collecting real-time data on soil moisture, weather, and crop health b) By replacing human farmers entirely c) By automating only the sale of crops d) By eliminating the need for fertilizers R 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does Io T help in precision farming? a) By collecting real-ti...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How do actuators receive commands in an Io T system? a). Using Wi-Fi only b). Through wired connections only c). Via control signals from Io T devices d). By manually triggering the system / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How do actuators receive commands in an IoT system? a). Using Wi-Fi only b). Through wired connections only c). Via control signals from IoT devices d). By manually triggering the system [U] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How can Artificial Intelligence (AI) enhance precision farming? a). By analyzing data patterns and making predictive recommendations b). By reducing the need for technology in farming c). By making decision-making more difficult d). By increasing the use of non-data- driven farming techniques / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How can Artificial Intelligence (AI) enhance precision farming? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What role do sensors play in Io T? a) They store data permanently K 1 b) They collect real-time data from the environment c) They act as display screens for Io T devices d) They provide only power to Io T systems",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What role do sensors play in Io T? a) They store data permanently...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "When was the term Io T first used? a). 1999 b). 2005 c). 2010 d). 1995 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>When was the term IoT first used? a). 1999 b). 2005 c). 2010 d). 1995 [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the primary function of a microcontroller in an Io T system? a) To provide power to sensors b) To process sensor data and control connected devices c) To function as a storage device d) To act as a wireless communication module U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary function of a microcontroller in an Io T syst...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following is a challenge in using actuators in robotic arms on farms? a). Increased soil erosion b). Limited mobility due to terrain c). Too much crop yield d). Improved water supply / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which of the following is a challenge in using actuators in robotic arms</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>on farms?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Increased soil erosion b). Limited mobility due to terrain</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Too much crop yield d). Improved water supply</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What are the three primary nutrients required for plant growth? a). Nitrogen, Phosphorus, Potassium b). Carbon, Oxygen, Hydrogen c). Calcium, Magnesium, Sulfur d). Iron, Zinc, Copper / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What are the three primary nutrients required for plant growth? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which feature of microcontrollers makes them ideal for Io T applications? a) High power consumptionb) Large display screens c) Low power consumption and real-time processing capabilities d) Ability to run complex video games U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which feature of microcontrollers makes them ideal for Io T appli...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which factor affects irrigation scheduling? a). Sunlight intensity b). Soil moisture content c). Market prices d). Fertilizer availability / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which factor affects irrigation scheduling?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Sunlight intensity b). Soil moisture content</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Market prices d). Fertilizer availability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which of the following is a key feature of Lo Ra? a). High power consumption b). Short-range communication c). Low power consumption and long- range communication d). High data transfer speeds / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a key feature of Lo Ra? a). High power ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the primary function of a sensor in Io T? a) Generate electrical powerb) Collect data from the environment c) Store data permanentlyd) Control mechanical devices U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary function of a sensor in Io T? a) Generate ele...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "How does precision agriculture impact plant yield? a). By increasing resource efficiency b). By reducing plant growth c). By eliminating fertilizer use d). By decreasing soil quality / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How does precision agriculture impact plant yield?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). By increasing resource</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>efficiency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). By reducing plant growth</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). By eliminating fertilizer use d). By decreasing soil quality</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the first step in Io T data collection? a) Processingb) Sensing c) Transmissiond) Storage K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the first step in Io T data collection? a) Processingb) S...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What does Lo Ra stand for? a). Long Range b). Low Radiation c). Local Radio d). Long Radiation / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What does LoRa stand for? a). Long Range b). Low Radiation c). Local Radio d). Long Radiation [U] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which protocol is commonly used in Io T devices for short-range communication? a). Zigbee b). HTTP c). SMTP d). FTP / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which protocol is commonly used in Io T devices for short-range c...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How can soil moisture sensors help in farming? a) Reduce water wastage b) Reduce soil erosion c) Decrease plant growthd) Increase pesticide use U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How can soil moisture sensors help in farming? a) Reduce water wa...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "How do Io T devices benefit farmers? / [CO1] a). By providing real-time data for better decision-making b). By replacing farm equipment c). By automating all farming processes d). By reducing crop growth",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How do IoT devices benefit farmers? [K] / [CO1] a). By providing real-time data for better decision-making b). By replacing farm equipment c). By automating all farming processes d). By reducing crop growth</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Io T improves efficiency by: a). Eliminating internet connections b). Reducing data usage c). Automating routine tasks d). Limiting device connectivity / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Io T improves efficiency by: a). Eliminating internet connections...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a commonly used temperature sensor? a) LM35 b) PIR sensor c) Soil moisture sensord) Gas sensor K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a commonly used temperature sensor? a) ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to blink an LED at a 1-second interval.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to blink an LED at a 1-second interval....</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the function of an Io T protocol? a). Control hardware actions b). Store data for future use c). Display information to users d). Facilitate communication between devices / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the function of an IoT protocol?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Control hardware actions b). Store data for future use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Display information to users d). Facilitate communication</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>between devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How does the LM35 temperature sensor provide output? a). As a digital signal b). As an analog voltage proportional to temperature c). As a binary value d). Through Wi-Fi transmission / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does the LM35 temperature sensor provide output? a). As a dig...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What do humidity sensors measure? a) Water vapor in the air b) Soil moisture c) Wind speedd) Pressure U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What do humidity sensors measure? a) Water vapor in the air b) So...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Develop an Arduino program to adjust the LED blink rate to 100 milliseconds on time and 1000 milliseconds off time.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Develop an Arduino program to adjust the LED blink rate to 100 mi...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which unit is typically used to measure soil moisture content? a). Percent (% volumetric water content) b). Parts per million (ppm) c). Decibels (d B) d). Lumens (lm) / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which unit is typically used to measure soil moisture content? a). Percent (% volumetric water content) b). Parts per million (ppm) c). Decibels (dB) d). Lumens (lm) [A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following facilitates communication between Io T devices? a). TCP/IP b). SMTP c). HTTP d). MQTT / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following facilitates communication between Io T dev...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is NOT an example of an actuator? a) Servo motorb) Relay c) LEDd) Microcontroller U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is NOT an example of an actuator? a) Servo...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to create an LED chaser effect with 6 LED.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to create an LED chaser effect with 6 LE...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Io T sensors in farming help to reduce water wastage by: a). Automatically turning off irrigation systems based on soil moisture levels b). Increasing manual monitoring of crops c). Using more fertilizers for plant growth d). Enhancing traditional irrigation methods without automation / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>IoT sensors in farming help to reduce water wastage by: a). Automatically turning off irrigation systems based on soil moisture levels b). Increasing manual monitoring of crops c). Using more fertilizers for plant growth d). Enhancing traditional irrigation methods without automation [A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Microcontrollers communicate with other devices through: a). Bluetooth only b). GPIO pins c). Infrared signals d). Cloud servers / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Microcontrollers communicate with other devices through: a). Blue...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What type of actuator is used in automated irrigation? a) Solenoid valve b) Speaker c) Light sensord) Thermistor K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What type of actuator is used in automated irrigation? a) Solenoi...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino chaser program to reverse the direction of movement every 5 seconds.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino chaser program to reverse the direction of movem...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Io T systems often use actuators for: a). Storing data b). Controlling device actions c). Visualizing information d). Analyzing user behavior / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>IoT systems often use actuators for:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Storing data b). Controlling device actions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Visualizing information d). Analyzing user behavior</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the role of artificial intelligence in vertical farming? a). Monitoring plant growth and adjusting environmental factors b). Reducing the need for fertilizers c). Increasing soil moisture d). Enhancing the taste of crops / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the role of artificial intelligence in vertical farming? ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What type of actuator is commonly used in robotic arms? a) Stepper motorb) Ultrasonic sensor c) Thermistord) Light sensor K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What type of actuator is commonly used in robotic arms? a) Steppe...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Develop an Arduino program to blink an LED on when a push button is pressed and off when released.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Develop an Arduino program to blink an LED on when a push button ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Io T devices usually rely on which protocol for communication? a). HTTP b). FTP c). MQTT d). POP3 / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>IoT devices usually rely on which protocol for communication? a). HTTP b). FTP c). MQTT d). POP3 [K] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is a common challenge in retrieving agricultural data? a). The fact that modern farmers do not use technology b). The lack of need for historical data in farming c). The absence of any data storage systems d). Inconsistent data storage formats / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a common challenge in retrieving agricultural data? a). T...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to fade an LED state with a button press.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to fade an LED state with a button press...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which technology helps in retrieving large-scale agricultural data efficiently? a). Cloud computing b). Manual notebooks c). Verbal communication d). Physical farm records / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which technology helps in retrieving large-scale agricultural data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>efficiently?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Cloud computing b). Manual notebooks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Verbal communication d). Physical farm records</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which of the following factors influence the quality of collected agricultural data? a). Accuracy of sensors b). Frequency of data collection c). Proper storage and retrieval of data d). All of the above / [CO1, CO3] B",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following factors influence the quality of collected...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q60",
+      "number": 60,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a communication protocol commonly used in Io T networks? a) HTTPb) Zigbee c) USBd) HDMI K 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a communication protocol commonly used ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q61",
+      "number": 61,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to blink an LED 15 times with a 1-second delay.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to blink an LED 15 times with a 1-second...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q62",
+      "number": 62,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which unit is typically used to measure temperature in smart farming applications? a). Degrees Celsius (°C) b). Liters per second (L/s) / [CO1, CO3] c). Pascal (Pa) d). Decibels (d B)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which unit is typically used to measure temperature in smart farming</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>applications?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Degrees Celsius (°C) b). Liters per second (L/s)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1, CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Pascal (Pa) d). Decibels (dB)</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q63",
+      "number": 63,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Smart irrigation systems in farming use Io T to: a). Automate water supply based on soil moisture levels b). Control livestock movement c). Detect crop diseases d). Monitor internet usage / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Smart irrigation systems in farming use Io T to: a). Automate wat...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q64",
+      "number": 64,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is Zigbee primarily used for? a) High-speed internet communication U 1 b) Long-distance communication c) Short-range wireless communication in Io T devices d) Satellite communication",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is Zigbee primarily used for? a) High-speed internet communi...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q65",
+      "number": 65,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to cycle through red, green, and blue colors on an RGB LED.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to cycle through red, green, and blue co...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q66",
+      "number": 66,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the function of cloud computing in Io T? a). To store and process data from Io T devices b). To replace Io T devices c). To provide internet connectivity d). To act as a sensor / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the function of cloud computing in IoT?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). To store and process data from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>IoT devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). To replace IoT devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). To provide internet connectivity d). To act as a sensor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q67",
+      "number": 67,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the role of genetic modification in plant yield? a). Increasing disease resistance b). Reducing photosynthesis c). Eliminating soil nutrients d). Increasing water evaporation / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the role of genetic modification in plant yield? a). Incr...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q68",
+      "number": 68,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the main advantage of Lo Ra technology? a) High data transfer speeds b) Long-range communication with low power consumption c) Compatibility with Bluetooth devices d) Low cost for short-distance communication U 1",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the main advantage of Lo Ra technology? a) High data tran...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q69",
+      "number": 69,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Develop an Arduino program to mix colours and display purple, yellow, and cyan using RGB LED.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Develop an Arduino program to mix colours and display purple, yel...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q70",
+      "number": 70,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the role of data analytics in agriculture? a). It helps in making data-driven decisions for better productivity b). It replaces traditional farming completely c). It eliminates the need for fertilizers d). It increases manual labor / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the role of data analytics in agriculture? a). It helps in making data-driven decisions for better productivity b). It replaces traditional farming completely c). It eliminates the need for fertilizers d). It increases manual labor [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q71",
+      "number": 71,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which pesticide application method minimizes environmental impact? a). Aerial spraying b). Over-spraying c). Targeted application d). Excessive use / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which pesticide application method minimizes environmental impact...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q72",
+      "number": 72,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is essential for plant growth? a) Soil, water, and sunlightb) Soil, water, and plastic c) Soil, water, and metald) Soil, water, and sand K 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is essential for plant growth? a) Soil, wa...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q73",
+      "number": 73,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an ESP 32 program to increase the LED blink rate when a button is pressed remotely.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an ESP 32 program to increase the LED blink rate when a but...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q74",
+      "number": 74,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What type of data can Io T sensors collect in agriculture? a). Soil moisture and temperature b). Weather conditions c). Crop growth patterns d). All of the above / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What type of data can IoT sensors collect in agriculture?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Soil moisture and temperature b). Weather conditions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Crop growth patterns d). All of the above</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q75",
+      "number": 75,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the process by which a seed begins to grow into a new plant called? a). Germination b). Photosynthesis c). Pollination d). Transpiration / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the process by which a seed begins to grow into a new pla...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q76",
+      "number": 76,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an ESP 32 program to toggle the LED state with a button press.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an ESP 32 program to toggle the LED state with a button pre...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q77",
+      "number": 77,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which hydroponic system is most commonly used in vertical farms? a). Nutrient Film Technique (NFT) b). Traditional drip irrigation c). Soil-based farming d). Rainwater harvesting / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which hydroponic system is most commonly used in vertical farms?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Nutrient Film Technique (NFT) b). Traditional drip irrigation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Soil-based farming d). Rainwater harvesting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q78",
+      "number": 78,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "During which stage does a plant develop its roots and first leaves? a) Flowering stageb) Germination stage c) Pollination staged) Fruiting stage K 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>During which stage does a plant develop its roots and first leave...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q79",
+      "number": 79,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an ESP 32 program to simulate a basic traffic light system using an RGB LED remotely.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an ESP 32 program to simulate a basic traffic light system ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q80",
+      "number": 80,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the main challenge in data collection for precision farming? a). Lack of interest among farmers b). The inability to store data c). Government restrictions on data collection d). High costs and need for technical knowledge / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the main challenge in data collection for precision farming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Lack of interest among farmers b). The inability to store data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Government restrictions on</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>data collection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d). High costs and need for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>technical knowledge</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q81",
+      "number": 81,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the primary purpose of Io T devices? a). To connect and share data over the internet b). To act as stand alone devices c). To replace computers d). To provide entertainment only / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary purpose of Io T devices? a). To connect and s...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q82",
+      "number": 82,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is NOT a factor influencing plant health? a) Soil qualityb) Amount of sunlight c) Type of pot usedd) Water availability K 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is NOT a factor influencing plant health? ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q83",
+      "number": 83,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Develop an ESP 32 program to simulate a basic traffic light system using an RGB LED, including a pedestrian crossing delay by a wait button.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Develop an ESP 32 program to simulate a basic traffic light syste...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q84",
+      "number": 84,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Why is temperature control important in hydroponics? a). It prevents nutrient evaporation b). It ensures optimal root function and plant growth c). It reduces oxygen levels in the water d). It removes the need for artificial lighting / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Why is temperature control important in hydroponics? a). It prevents nutrient evaporation b). It ensures optimal root function and plant growth c). It reduces oxygen levels in the water d). It removes the need for artificial lighting [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q85",
+      "number": 85,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the role of a solenoid valve in irrigation automation? a). It collects data from the soil b). It automatically opens/closes to regulate water flow c). It controls lighting in the greenhouse d). It measures soil moisture levels / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the role of a solenoid valve in irrigation automation? a)...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q86",
+      "number": 86,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the primary factor that affects plant yield in agriculture? a) The color of the plants b) Availability of nutrients, water, and sunlight c) The height of the plants d) The number of insects present in the soil U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary factor that affects plant yield in agricultur...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q87",
+      "number": 87,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an ESP 32 program to send a notification on when an object is detected by an IR sensor.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an ESP 32 program to send a notification on when an object ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q88",
+      "number": 88,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which gas do plants absorb during photosynthesis? a). Carbon dioxide b). Oxygen c). Nitrogen d). Hydrogen / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which gas do plants absorb during photosynthesis? a). Carbon dioxide b). Oxygen c). Nitrogen d). Hydrogen [K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q89",
+      "number": 89,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the main difference between aeroponics and hydroponics? a). Hydroponics uses misted water, while aeroponics uses deep soil b). Aeroponics delivers nutrients through misted air, while hydroponics uses a / [CO2] B irrigation nutrient-rich water solution c). Hydroponics requires constant sunlight, while aeroponics does not d). Aeroponics does not require monitoring of oxygen levels, while hydroponics does",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the main difference between aeroponics and hydroponics? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q90",
+      "number": 90,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a major challenge in traditional farming? a) Lack of natural fertilizers b) Over-reliance on automated machinery c) Dependency on weather conditions and soil quality d) Excessive production of crops U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a major challenge in traditional farmin...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q91",
+      "number": 91,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Write an Arduino program to turn off the LED automatically after 5 seconds if no object is detected.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write an Arduino program to turn off the LED automatically after ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q92",
+      "number": 92,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "How does AI contribute to modern farming? / [CO2] a). Predicts weather patterns b). Reduces soil nutrients c). Eliminates crop diseases d). Increases manual labor",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How does AI contribute to modern farming? [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Predicts weather patterns b). Reduces soil nutrients</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Eliminates crop diseases d). Increases manual labor</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q93",
+      "number": 93,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the primary role of sensors in an Io T system? a). Collect and transmit data b). Store information c). Provide user interface d). Control hardware devices / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary role of sensors in an Io T system? a). Collec...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q94",
+      "number": 94,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Why is water conservation important in agriculture? a) It helps increase the cost of farming b) It prevents soil erosion and ensures sustainability c) It reduces the amount of sunlight crops receive d) It eliminates the need for irrigation U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Why is water conservation important in agriculture? a) It helps i...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q95",
+      "number": 95,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "A microcontroller has: a). Wireless connectivity only b). Display screen and keyboard c). Internet router d). CPU, memory, and I/O ports / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A microcontroller has:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Wireless connectivity only b). Display screen and keyboard</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Internet router d). CPU, memory, and I/O ports</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q96",
+      "number": 96,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "How do servo motors function in robotic arms? a). By converting electrical signals into data storage b). By rotating to a specified angle based on control signals c). By providing analog input only d). By detecting weather conditions / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How do servo motors function in robotic arms? a). By converting e...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q97",
+      "number": 97,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a common problem faced in irrigation? a) Excessive rainfall throughout the year b) Unequal water distribution and water scarcity c) The inability of soil to absorb nutrients d) Overuse of artificial lighting in crop production U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a common problem faced in irrigation? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q98",
+      "number": 98,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which of the following best describes Io T? a). A system used only for social media applications b). A network of interconnected devices communicating via the internet c). A software used for video editing d). A data storage platform / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which of the following best describes IoT? a). A system used only for social media applications b). A network of interconnected devices communicating via the internet c). A software used for video editing d). A data storage platform [U] / [CO1]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q99",
+      "number": 99,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What technology helps optimize irrigation? a). Excessive pesticide use b). Manual watering c). Io T sensors d). Traditional farming methods / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What technology helps optimize irrigation? a). Excessive pesticid...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q100",
+      "number": 100,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is a major disadvantage of excessive pesticide usage in farming? a) It makes plants grow faster b) It leads to soil and water contamination c) It completely removes all pests from crops d) It improves the taste of fruits and vegetables U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a major disadvantage of excessive pesticide usage in farm...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q101",
+      "number": 101,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "In an aquaponic system, which component is specifically required that is NOT found in a hydroponic system? a). Water pump b). Fish tank c). p H monitor d). LED grow lights / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In an aquaponic system, which component is specifically required that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>is NOT found in a hydroponic system?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Water pump b). Fish tank</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). pH monitor d). LED grow lights</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q102",
+      "number": 102,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Why is p H monitoring important in hydroponics? a). It helps prevent water evaporation b). It ensures proper nutrient absorption by plants c). It eliminates the need for fertilizers d). It reduces the energy requirements of hydroponic systems / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Why is p H monitoring important in hydroponics? a). It helps prev...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q103",
+      "number": 103,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How does modern agriculture impact the environment? a) It always improves soil fertility b) It can lead to deforestation, water pollution, and biodiversity loss U 2 c) It eliminates the need for fertilizers d) It reduces global temperatures",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does modern agriculture impact the environment? a) It always ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q104",
+      "number": 104,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "How are actuators typically triggered in a smart irrigation system? a). By cloud storage b). Through mobile app notifications c). Via commands from sensors or controllers d). By manual override / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How are actuators typically triggered in a smart irrigation system? a). By cloud storage b). Through mobile app notifications c). Via commands from sensors or controllers d). By manual override [A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q105",
+      "number": 105,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What role do drones play in agricultural data collection? a). They replace farmers entirely b). They act as automated irrigation systems c). They remove weeds from fields d). They capture aerial images to assess crop health / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What role do drones play in agricultural data collection? a). The...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q106",
+      "number": 106,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a significant impact of climate change on agriculture? a) More consistent rainfall throughout the year b) Increased crop yields in all regions c) Unpredictable weather patterns affecting crop growth d) Permanent elimination of plant diseases U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a significant impact of climate change ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q107",
+      "number": 107,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Microcontrollers manage: a). Sensor data and device control b). Data storage only c). User interaction d). Wireless connectivity / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Microcontrollers manage:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Sensor data and device control b). Data storage only</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). User interaction d). Wireless connectivity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q108",
+      "number": 108,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which crop requires the most water to grow? a). Wheat b). Rice c). Corn d). Tomatoes / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which crop requires the most water to grow? a). Wheat b). Rice c)...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q109",
+      "number": 109,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which modern farming technique helps maximize plant growth with minimal soil use? a) Traditional plowing b) Hydroponics and aeroponics c) Burning of crop residues d) Manual seed planting U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which modern farming technique helps maximize plant growth with m...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q110",
+      "number": 110,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which of the following is a common application of Zigbee? a). Home automation b). High-definition video streaming c). Satellite communication d). Online gaming / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which of the following is a common application of Zigbee?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Home automation b). High-definition video streaming</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Satellite communication d). Online gaming</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q111",
+      "number": 111,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Microcontrollers enable Io T devices to: a). Provide wireless connectivity b). Store multimedia files / [CO1, CO3] B c). Display real-time data d). Process data and control actuators",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Microcontrollers enable Io T devices to: a). Provide wireless con...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q112",
+      "number": 112,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In vertical farming, which of the following is the main advantage of growing crops in stacked layers? a) It reduces the need for irrigation. b) It maximizes land use and allows for year-round crop production. c) It eliminates the need for artificial lighting. d) It increases the size of the crops produced. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In vertical farming, which of the following is the main advantage...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q113",
+      "number": 113,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "What is the primary function of a humidity sensor in smart farming? a). Measuring the moisture content in the air b). Measuring soil nutrients c). Detecting wind speed d). Measuring temperature / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the primary function of a humidity sensor in smart farming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Measuring the moisture content</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in the air</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). Measuring soil nutrients</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Detecting wind speed d). Measuring temperature</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[A] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q114",
+      "number": 114,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the stage called when a young plant develops its first true leaves? a). Seedling stage b). Flowering stage c). Pollination stage d). Fruiting stage / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the stage called when a young plant develops its first tr...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q115",
+      "number": 115,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In a hydroponic system, what is the primary function of the nutrient solution? a) To provide water for the plants. b) To deliver essential nutrients directly to the plant roots without soil. c) To stabilize the temperature of the growing environment. d) To replace the need for artificial lighting. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In a hydroponic system, what is the primary function of the nutri...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q116",
+      "number": 116,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is a major environmental effect of excessive fertilizer and pesticide use? a). Soil degradation b). Climate stabilization c). Increased plant immunity d). Lower CO2 levels / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is a major environmental effect of excessive fertilizer and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>pesticide use?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Soil degradation b). Climate stabilization</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Increased plant immunity d). Lower CO2 levels</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q117",
+      "number": 117,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the advantage of using cloud storage for agricultural data? a). It provides easy access and scalability for large datasets b). It eliminates the need for farming equipment c). It stops the need for data analysis d). It slows down the decision-making process / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the advantage of using cloud storage for agricultural dat...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q118",
+      "number": 118,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In an aquaponic system, how do fish contribute to plant growth? a) Fish waste provides essential nutrients for the plants. b) Fish help pollinate the plants. c) Fish absorb excess water from the plants. d) Fish regulate the temperature of the plants. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In an aquaponic system, how do fish contribute to plant growth? a...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q119",
+      "number": 119,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Why is real-time data collection important in precision agriculture? a). It allows farmers to make quick decisions and respond to changes immediately b). It increases paperwork for farmers c). It reduces the need for data analysis d). It has no impact on farming productivity / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Why is real-time data collection important in precision agriculture? a). It allows farmers to make quick decisions and respond to changes immediately b). It increases paperwork for farmers c). It reduces the need for data analysis d). It has no impact on farming productivity [U] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q120",
+      "number": 120,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which gas is a major contributor to climate change from farming? a). Methane b). Oxygen c). Nitrogen d). Argon / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which gas is a major contributor to climate change from farming? ...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q121",
+      "number": 121,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How does the use of data in farming improve the overall efficiency of agricultural practices? a) It increases the cost of farming by requiring more machinery. b) It allows farmers to monitor and optimize crop health, soil conditions, and resource usage. c) It completely replaces traditional farming methods. d) It eliminates the need for physical labor in farming. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does the use of data in farming improve the overall efficienc...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q122",
+      "number": 122,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What practice helps in reducing pesticide residues in food? a). Washing and peeling b). Using more pesticides c). Avoiding organic farming d). Reducing irrigation / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What practice helps in reducing pesticide residues in food?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Washing and peeling b). Using more pesticides</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Avoiding organic farming d). Reducing irrigation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q123",
+      "number": 123,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What does Io T mean? a). Internet of Technology b). Intelligent Online Tracking c). Internet of Things d). Integration of Tools / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What does Io T mean? a). Internet of Technology b). Intelligent O...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q124",
+      "number": 124,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In precision agriculture, why is the use of data considered essential for enhancing crop yield? a) It helps farmers apply water and fertilizers in precise amounts, reducing waste. b) It helps farmers decide when to harvest without considering crop health. c) It ensures that crops are watered uniformly across the entire field. d) It replaces traditional farming machinery with fully automated robots. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In precision agriculture, why is the use of data considered essen...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q125",
+      "number": 125,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which protocol is used for secure communication over the internet? a). HTTPS b). FTP c). SMTP d). TCP / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which protocol is used for secure communication over the internet? a). HTTPS b). FTP c). SMTP d). TCP [K] / [CO1, CO3]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q126",
+      "number": 126,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Which actuator is used for opening and closing greenhouse windows automatically? a). Temperature sensor b). Linear actuator c). Humidity sensor d). p H control sensor / [CO1, CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which actuator is used for opening and closing greenhouse windows...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q127",
+      "number": 127,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which of the following is a common method of data collection in Io T-based smart farming? a) Manual inspections by farmers every few weeks. U 2 b) Wireless sensors for monitoring soil moisture, temperature, and other environmental factors. c) Using drones exclusively for aerial surveillance. d) Collecting data from weather reports alone.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which of the following is a common method of data collection in I...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q128",
+      "number": 128,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which weather factor affects farming the most? a). Temperature b). Soil p H c). Pesticide type d). Market prices / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Which weather factor affects farming the most?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Temperature b). Soil pH</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). Pesticide type d). Market prices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[K] / [CO2]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [
+        "Second semester BA/BSc/BVocFYUGP April 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q129",
+      "number": 129,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "In an Io T-based smart farming system, why is cloud storage commonly used for storing farming data? a) It allows data to be stored locally on each Io T device for faster retrieval. b) It enables centralized data storage that can be accessed remotely for analysis. c) It eliminates the need for data analytics in farming. d) It provides an unlimited supply of water for the crops. U 2",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>In an Io T-based smart farming system, why is cloud storage commo...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q130",
+      "number": 130,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the effect of insufficient sunlight on plants? a). Stunted growth and yellowing of leaves b). Increased flowering c). Faster root development d). Improved nutrient absorption / [CO2] [1x35 = 35]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the effect of insufficient sunlight on plants? a). Stunted growth and yellowing of leaves b). Increased flowering c). Faster root development d). Improved nutrient absorption [U] / [CO2] [1x35 = 35]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q131",
+      "number": 131,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Io T became commercially significant with the advent of: a). Cloud computing b). Gaming consoles c). Virtual assistants d). Smartphones / [CO1] [1x35 = 35] B",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Io T became commercially significant with the advent of: a). Clou...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q132",
+      "number": 132,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the primary purpose of data analytics in Io T-based smart farming? a) To reduce the need for human labor in farming operations. b) To analyze environmental data and improve decision-making for farming practices. c) To replace all physical farming equipment with automated systems. d) To generate financial reports for farm owners. U 2 1 * 35 = 35",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the primary purpose of data analytics in Io T-based smart...</em> in the context of IoT Based Smart Farming.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

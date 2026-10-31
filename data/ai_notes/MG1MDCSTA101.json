@@ -1,0 +1,670 @@
+{
+  "course_code": "MG1MDCSTA101",
+  "title": "Data analysis using libre calc",
+  "dept_name": "Statistics",
+  "semester": 1,
+  "course_type": "MDC",
+  "max_marks": 70,
+  "total_questions": 45,
+  "repeating_skipped": 32,
+  "sources_used": [
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+    "Data Analysis using Libre Calc",
+    "Official Practical Model Paper",
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 35,
+    "part_b": 10,
+    "part_c": 0
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "To apply a specific number format (e.g., percentage, decimal) to a cell, you should use: a). Format > Cells > Number b). Data > Validity c). Tools > Options > Decimal d). Format > Alignment / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(a) Format > Cells > Number</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Delimiter in a CSV file is a) Semi colon b) Comma c) Colon d) Space [Understand] [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Delimiter in a CSV file is a) Semi colon b) Comma c) Colon d) Spa...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Generate 30 uniform random numbers in between 0 and 500. Find its mean, median and mode . Also find the range and standard deviation of the 30 randomly generated numbers. [Understand][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Generate 30 uniform random numbers in between 0 and 500. Find its...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "If a formula in cell C3 contains the reference A1, and it is copied to cell D4, what will the new reference be? a). $A$1 b). B2 c). A1 d). D4 / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>If a formula in cell C3 contains the reference A1, and it is copi...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How do you sort data in ascending order by numbers in Libre Office Calc? a) Data > Sort > Ascending b) Format > Sort > Ascending c) Right click and choose Format Cells d) Tools > Sort > Ascending [Understand] [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How do you sort data in ascending order by numbers in Libre Offic...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The weekly sales report of a shop in a village in Kottayam District is given below. Sales Report Sl.no Item (unit) No.of units Unit cost 1 Pen (packet) 32 28.90 2 Pencil (packet) 57 32 3 Binder clip (box) 100 46.28 4 Floor cleaner (bottle) 70 94 5 Curry powder (packet) 100 46 6 Soap (packet) 135 50 7 A4 Paper (bundle) 20 150 8 Milk (packet) 550 28 9 Talcum powder (pack) 17 54 10 Shampoo (sachet) 64 3 Enter the above data in Libre Office Calc and p repare one more column showing the total sales for each item (product of last two columns) and obtain the value of total weekly sale of the shop. [Apply][CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The weekly sales report of a shop in a village in Kottayam Distri...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Choose the correct syntax from the following a). =MINIMUM(B1;B10) b). =MIN(B1:B10) c). =MINIMUM(B1:B10) d). =MIN(B1;B10) / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(b) =MIN(B1:B10)</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the purpose of VLOOKUP function in Libre Office Calc? a) To perform vertical lookups b) To perform horizontal lookups c) To format cells based on conditions d) To prevent errors in data entry [Remember] [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the purpose of VLOOKUP function in Libre Office Calc? a) ...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data provides the number of different surgical operations performed in a hospital during a given week . Represent the data by means of a simple bar diagram Type of operation Number of cases General surgery 110 Thoracic surgery 20 Prostate surgery 45 Urologic surgery 82 Surgery of abdomen 120 Neurosurgery 30 Others 18 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data provides the number of different surgical oper...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "In a line chart, what do the points connected by the lines represent? a). Different categories b). The frequency of occurrences / [CO2] c). Data values at specific time points d). Percentages of a total",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(c) Data values at specific time points</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "A survey asks respondents to rate their favourite colour (red, blue, green, yellow). What scale of measurement is this? a) Nominal b) Ordinal c) Interval d) Ratio [Understand] [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A survey asks respondents to rate their favourite colour (red, bl...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Thirty students in a business statistics class reported their major fields of studies, which is summarized as follows: Construct a simple bar diagram for the major fields for these 30 students. Major field Number of students Accounting 12 Management 6 Marketing 4 Finance 5 Undecided 3 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Thirty students in a business statistics class reported their maj...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "What is the function would you use to generate binomial random numbers in Libre Office Calc? a). RAND() b). BINOM.INV() c). RANDBETWEEN() d). NORM.DIST() / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(b) BINOM. INV()</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the equivalent of a Pivot Table in Libre Office Calc? a) Data Summary b) Pivot Chart c) Data Pilot d) Data Analyser [Understand] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the equivalent of a Pivot Table in Libre Office Calc? a) ...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data gives the time (in hours ) taken for daily activities by a certain computer professional in a company. Represent the data by means of a simple bar diagram. activity work sleep leisure reading purchase phone time 9 6 3 1 1 4 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data gives the time (in hours ) taken for daily act...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "The function RAND() in Libre Office Calc generates random numbers in the range: a). 0 to 1 b). -1 to 1 c). 0 to 10 d). -∞ to ∞ / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The function RAND() in Libre Office Calc generates random numbers...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is the main technique used to generate random numbers in Libre Office Calc for normal and beta distributions? a) Box-Muller method b) Acceptance rejection sampling c) Direct sampling d) Inverse sampling [Remember] [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the main technique used to generate random numbers in Lib...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data provides the market sales of different laptop brands in a city. Represent the data by means of a pie diagram. brand A B C D E F G sales 48 33 60 95 15 24 55 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data provides the market sales of different laptop ...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is the purpose of a t-test? a). To compare means between two groups b). To assess the relationship between two variables c). To determine variance within a single group d). To calculate correlation coefficients / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(a) To compare means between two groups</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Which test statistic is used to test ANOVA? a) t statistic b) Chi square statistic c) Paired t statistic d) F statistic [Apply] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which test statistic is used to test ANOVA? a) t statistic b) Chi...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data is about the monthly expenditure of two families A and B. Represent the data by means of two pie diagrams. Item of expenditure Expenditure(Rs.) Family A Family B Food 210 230 Clothing 130 150 House Rent 100 130 Education 70 80 Medical 40 50 Others 50 80 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data is about the monthly expenditure of two famili...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Which of the following can be used as the data source for a Pivot Table in Libre Office Calc? a). Data ranges within the spreadsheet b). External data sources (e.g., databases, CSV files) c). Other Pivot Tables d). All of the above / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(d) All of the above</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Paired t test is used for comparing a) One sample b) At least one sample c) Two related sample d) Two independent sample [Remember] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Paired t test is used for comparing a) One sample b) At least one...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data shows the types of pets owned by different families in a city. Represent the data by means of a pie diagram. Pet type No. of families Dogs 55 Cats 45 Love birds 50 Fish 30 Parrot 10 Others 10 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data shows the types of pets owned by different fam...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Which is an assumption for parametric tests a). Normality b). Equal variances c). Independence d). All the above / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(d) All of the above</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "A Perfect Positive Correlation is a) 1 b) 0 c) -1 d) -1 & 1 [Remember] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A Perfect Positive Correlation is a) 1 b) 0 c) -1 d) -1 & 1 [Reme...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The following data typically represents the yearly expenditure of a student in a private university. Represent the data by means of a pie diagram. Expenditure Amount Tuition 13600 Room rent 9000 Books Purchase 2400 Transportation 900 Recreation 2000 Other 2100 [Analyse][CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The following data typically represents the yearly expenditure of...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is the non-parametric alternative of paired t test ? a). F - Test b). Chi – squire test c). Sign Test d). Wilcoxon Signed-Rank Test / [CO4] [10x2 = 20]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(d) Wilcoxon Signed-Rank Test [10 x 2 = 20]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Choose odd one out from the following a) ANOVA b) Sign test c) Median test d) Wilcoxon Signed-Rank Test [Analyse] [CO4] [2 x 10 = 20]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Choose odd one out from the following a) ANOVA b) Sign test c) Me...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The followin g data gives the daily wages (in rupees) of 30 workers in a factory: 60, 43, 40, 32,47,32,47,45,50,37,53,17,26,39,59,68,44,30,25,32, 40,62,46,29,32,54,41,32,30,39. Calculate mean, median and mode for the above data. [Analyse][CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The followin g data gives the daily wages (in rupees) of 30 worke...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The monthly salaries of 10 employees of a company are given below. Sl.No Name Gender Monthly Salary(Rs) 1 Varun Kumar Male 41000 2 Chanchal Sawant Female 25000 3 Rohan Patel Male 32000 4 Rubeena Amir Female 48000 5 Ann Thomas Female 37000 6 Priya Mishra Female 51000 7 Purushotham Sharma Male 47500 8 Aashiq M Male 43750 9 Megha Varma Female 32000 10 Albert James Male 32000 a) Find the mean, median and mode of the monthly income. b) Find the mean and median of the monthly income of male and female separately. [Analyse][CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The monthly salaries of 10 employees of a company are given below...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "An IT company manager tracks the working hours of 30 employees in a particular day as follows: 10, 11,7, 8, 10, 9, 8, 8, 7, 6, 10, 9, 8, 7, 10, 12 , 9, 7, 6, 5, 9, 10, 11, 12, 11, 8, 5, 6, 10, 12 Find the range and standard deviation of working hours of the employees. [Analyse][CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>An IT company manager tracks the working hours of 30 employees in...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The time (in seconds) taken by 30 athletes to complete a 100 metre race are as follows: 15, 17, 22, 20, 14, 16, 15, 14, 20, 24, 16, 27, 18, 16, 24, 18, 12, 21, 24, 19, 15, 16, 15, 23, 28, 20, 18, 22, 24, 25. Find the range and standard deviation of the athlete’s finishing time for that race. [Analyse][CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The time (in seconds) taken by 30 athletes to complete a 100 metr...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "The number of smart phones sold at 30 shops in Cochin on a particular day are as follows: 9, 16, 20, 14, 23, 13, 10, 22, 18, 9, 13, 8, 23, 22, 17, 15, 19, 12, 10, 9, 17, 19, 14, 13, 11, 23, 25, 21, 17, 15. Find range and standard deviation of phone sales occurred on that day [Analyse][CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The number of smart phones sold at 30 shops in Cochin on a partic...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "An IQ test was administered to 15 students before and after they were trained. The results are as follows. Use paired t test, examine whether there is any effect for the training programme. Candidate IQ score before training IQ score after training 1 90 86 2 91 90 3 95 95 4 92 94 5 89 95 6 76 81 7 83 88 8 81 85 9 95 99 10 91 79 11 88 92 12 89 90 13 97 99 14 88 97 15 92 87 [Apply] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>An IQ test was administered to 15 students before and after they ...</em> in the context of Data analysis using libre calc.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the steps involved in importing a CSV file in to Libre Office Calc. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Steps for importing CSV files - 2 marks for each step.  [Maximum 5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Step 1: Go to File > Open > Select the CSV file and click Open. The Text</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Import dialog will appear.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Step 2: Choose the correct character set and delimiter (usually comma).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Step 3: Preview the data and adjust options as needed. Click OK.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Describe the steps to remove duplicate entries from a single column in Libre Office Calc. [Remember] [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is the purpose of data validation in Libre Office Calc? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition or steps to create data validation – 5 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data validation in LibreOffice Calc is a powerful feature that helps ensure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the accuracy, consistency, error prevention and integrity of data entered into</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>your spreadsheets</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "How can you create a bar chart in Libre Office Calc to compare sales data from different regions? [Analyse] [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Why is ratio data considered the most informative scale of measurement? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reason for the argument  / Correct definition and properties of ratio scale – 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>interval) and adds a true zero point, allowing for all mathematical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>operations, including division. It can be used for a wider range of statistical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>analysis and allows for meaningful comparisons, such as saying one value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>is twice as large as another.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of ratio scale measurement only – 4 marks,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example of ratio scale measurement only – 3 marks.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Explain how to create random numbers between 1 and 100 in Libre Office Calc? [Apply] [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is the mode of a data and how is it calculated in Libre Office Calc? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of mode – 2.5 marks,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Function to calculate mode – 2.5 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The mode is the value that appears most frequently in a dataset. Calculate</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the mode in Calc using the mode function: =MODE (range)</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is the difference between one-tailed and two-tailed t-test? [Understand] [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "What is correlation and how is it measured in Libre Office Calc? / [CO4] [3x5 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of correlation – 2.5 marks,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Function to calculate correlation – 2.5 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Correlation measures the strength and direction of the linear relationship</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>between two variables. Types of correlation  (Positive, Negative, No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Correlation). In Calc use the function: =CORREL (range 1, range 2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[3 X 5 = 15]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Outline the steps involved in performing a chi-square test in Libre Office Calc? [Remember] [CO4] [5x3=15]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis using Libre Calc",
+      "repeated_in": [
+        "Data Analysis using Libre Calc"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

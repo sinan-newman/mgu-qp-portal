@@ -1,0 +1,613 @@
+{
+  "course_code": "MG3DSCCMA200",
+  "title": "AI Techniques for Data Analysis",
+  "dept_name": "Computer Applications",
+  "semester": 3,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 43,
+  "repeating_skipped": 25,
+  "sources_used": [
+    "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+    "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+    "Official Practical Model Paper"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 25,
+    "part_b": 14,
+    "part_c": 4
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is semi-structured data? Write an example. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is semi-structured data? Write an example.                                           [K] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data that does not follow a strict schema but has some organisational structure using tags or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>markers. Example: JSON, XML.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between nominal and ordinal data. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>BoxPlot(IQRMethod)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to find the largest among three numbers using nested if statement. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to find the largest among three numbers us...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define Data Analysis. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define Data Analysis.                                                                             [K] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The process of inspecting, cleaning, transforming, and modelling data to discover useful</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>information and support decision-making.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "List two applications of AI in manufacturing. / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List two applications of AI in manufacturing. / [CO1]...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to print the multiplication table of a number using a for loop. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to print the multiplication table of a num...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "State the difference between 1D and 2D array in Numpy. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State the difference between 1D and 2D array in Numpy. [K] / [CO2]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Write a Python example code using the break statement in a loop. / [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python example code using the break statement in a loop. ...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to find the sum of digits of a number using a while loop. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to find the sum of digits of a number usin...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What are the reserved keywords? Give examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What are the reserved keywords? Give examples.                                     [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Words with predefined meanings in Python that cannot be used as identifiers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples: if, for, while</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>1D array 2D array</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Single row of elements Rows and columns (matrix form)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: np. array([1,2,3]) Example: np. array([[1,2,3],[4,5,6]])</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Give two differences between Numpy array and Python list. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Histogram Example Dataset:10,12,14,15,16,100 Here,100isanoutlier. definition–1,Methods–2,examples–2.Marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to display all prime numbers between 1 and 50. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to display all prime numbers between 1 and...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Name the process of converting long-format data into wide-format data in Pandas. Give an example. / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name the process of converting long-format data into wide-format data in Pandas. Give an</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Process: Pivoting.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>df.pivot(index=’name’,columns=’sub.’,values=’mark’)                                         [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2x5 = 10]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define Pandas Index. What is the default index in a Pandas Data Frame? / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define Pandas Index.What is the default index in a Pandas DataFrame?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>PandasIndex:labelsidentifyingrows.Defaultindex:RangeIndexstartingfrom0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>PartB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ShortAnswer Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Each question carries 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>6Write briefly about some popular data analytics tools with their key uses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Dataanalyticstoolsaresoftwareapplicationsusedtocollect,process,analyze,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>visualize,andinterpretdatafordecision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example:Python,R-programmingetc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Introduction/definition–1,keyconcepts–2,examples–2Marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to generate Fibonacci series of n terms. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to generate Fibonacci series of n terms. [...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a 4×3 Num Py array with values from 1 to 12. Also perform the following operations: • Slice the 2nd and 4th rows. • Extract the elements from the 2rd column using indexing. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a 4×3 Num Py array with values f...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a Num Py array with elements 10, 20, 30, 40, and 50. Also perform the following operations: • Display its shape and size. • Reshape it into a 5×1 array. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a Num Py array with elements 10,...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a list of ten numbers and find their sum and average. Also find the largest and smallest elements in the list. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a list of ten numbers and find t...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to sort a list in ascending and descending order, and then reverse the list. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to sort a list in ascending and descending...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a tuple of numbers, find its length and also find the maximum and minimum elements in the tuple. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a tuple of numbers, find its len...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a dictionary of student names and their marks. Display all keys and values separately. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a dictionary of student names an...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to sort a dictionary by its keys and by its values. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to sort a dictionary by its keys and by it...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a Data Frame from a dictionary containing the columns Name, Age, and Marks. • Display the Data Frame. • Retrieve only the Name column using indexing. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a Data Frame from a dictionary c...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "Write a Python program to create a Datat Frame from a CSV file named students.csv containing Name, Age, Marks and City. Perform the following operations: • Display the first five rows. • Show column names and data types. [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write a Python program to create a Datat Frame from a CSV file na...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]",
+      "question": "The number of students enrolled in different departments in a college for 2025 is given below. Write a Python program to draw a pie chart to compare enrolments across departments. Department Science Arts Commerce Engineering Students 80 150 180 200 [CO4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The number of students enrolled in different departments in a col...</em> in the context of AI Techniques for Data Analysis.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "List the secondary sources of data, describe how each can be collected, and discuss their potential limitations. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List the secondary sources of data, describe how each can be collected, and discuss their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>potential limitations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sources:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Government publications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Company records</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Research journals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Websites/databases</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Collection: Accessing online repositories, libraries, archives, or reports.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Limitations: May be outdated, biased, or lack accuracy.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Write briefly about some popular data analytics tools with their key uses. / [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe some environmental impact of AI and how can it be reduced. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe some environmental impacts of AI and how can it be reduced            [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Impacts: High energy consumption in data centres, carbon emissions, and electronic waste.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reduction: Use green data centres, optimise algorithms, apply model compression, use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Renewable energy</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain the growth of AI from 2010 to present. / [CO1] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (Honours)/MGU-BBA (Honours)/MGU-BCA (Honours) Special Examinations, July 2026 (for 2024 Admission Regular Examinations, October 2025)Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCCMA200 - AI",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explainthe growth ofAI from 2010topresent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ArtificialIntelligence(AI)hasgrownrapidlyduetoadvancesincomputingpower,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>bigdata,andmachinelearningalgorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2010–2015</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Riseofdeeplearning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Improvedimageandspeechrecognition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• IncreaseduseofGPUsforAItraining.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2016–2020</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• AIdefeatedhumanchampionsingames(e.g.,AlphaGo).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Rapidgrowthofself-drivingvehicleresearch.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• AIwidelyadoptedinhealthcare,finance,ande-commerce.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• DevelopmentofadvancedNaturalLanguageProcessing(NLP).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>2021–Present</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• EmergenceofGenerativeAImodels.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• LargeLanguageModels(LLMs)capableofhuman-liketextgeneration.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• AIintegratedintoeducation,healthcare,manufacturing,banking,andsoftware</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• FocusonExplainableAI(XAI),ethicalAI,andresponsibleAIpractices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the built-in list functions with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the built-in list functions with examples.                                         [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• len(list) – returns the number of elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• append(x) – adds item at the end.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• sort() – sorts the list in ascending order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example:       a=[3,1,2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a.sort()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>print(a)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain the importance of data structures in Python with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the importance of data structures in Python with examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Datastructuresaremethodsoforganizingandstoringdataefficientlyforeasyaccess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>andmanipulation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• List:marks=[75,80,90]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Tuple:point=(10,20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Dictionary:student={\"Name\":\"Anu\",\"Age\":20}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Set:colors={\"Red\",\"Blue\",\"Green\"}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Introduction/definition–2, examples/explanation–4Marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain any three data analysis functions in Pandas with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain any three data analysis functions in Pandas with examples. [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• df.describe() – summary statistics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• df.groupby() – group data by column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• df.corr() – computes correlation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: df.describe()</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss relational operators in Python with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss relational operators in Python with examples RelationaloperatorscomparetwovaluesandreturneitherTrueorFalse. ==,!=,<,>etc… Example: a=10 b=20 print(a==b) #False print(a<b) #True print(a!=b) #True Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is data interpretation in the data analysis life cycle? Why is the correct interpretation of analysis results important for organizations? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is data interpretation in the data analysis life cycle? Why is the correct interpretation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>of analysis results important for organisations?                                             [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The process of deriving meaningful insights from analysed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Importance: Helps organisations make correct decisions, avoid misjudgments, and ensure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>accurate strategies.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe different methods to detect outliers in a dataset with examples. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe different methods to detect outliers in a dataset with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Anoutlierisadatavaluethatdifferssignificantlyfromotherobservations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Methods</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Why is data summarization important in data analysis, and how can it be performed? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Why is data summarization important in data analysis, and how can it be performed?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Condensing large datasets to highlight key information.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Importance: Simplifies analysis, aids comparison, supports decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Methods: Aggregation, descriptive statistics (mean(), sum(), describe()).</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate the use of line plot and bar plot. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate the use ofline plot and bar plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DefinitionofLinePlot1-Marks,Definitionofbar plot1-Marks,Anythreedifference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>1markseach</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "What is missing data? List any two reasons why missing data may occur. Give one example. / [CO3] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is missing data? List any two reasons why missing data may occur. Give one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>example.                                                                                                         [K] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Information not available for some variables or records.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reasons:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Human error or omission.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Data corruption or transmission loss.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: Age field left blank in a survey.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[5x5 = 25]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between descriptive statistics functions mean(), median(), and mode() in Pandas. / [CO3] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiatebetweendescriptivestatisticsfunctionsmean(),median(),andmode()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>inPandas.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mean()-Returnsthearithmeticaverage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Median()-Returnsthemiddlevalueaftersorting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mode()-Returnsthemostfrequentlyoccurringvalue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>definition–3,Anytwodifference–2Marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain if, if-else, nested if, if –elif ladder statements in Python with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain if, if-else, nested if, if –elif ladder statements in Python with examples. [U] / [CO2] if statement: Executes a block if the condition is true x = 10 if x > 5: print(\"x is greater than 5\") if–else statement: Executes one block if the condition true, another if false if x % 2 == 0: print(\"Even\") else: print(\"Odd\") Nested if: One if inside another. if x > 0: if x < 10: print(\"x is between 1 and 9\") if–elif ladder: Multiple conditions checked sequentially. if x < 0: print(\"Negative\") elif x == 0: print(\"Zero\") else: print(\"Positive\")</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain selective statements in Python with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain selective statements in Python with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SelectivestatementsinPython:if,if-else,nestedif,if-elif-else.Includesyntaxandexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concepts–5,syntax–4,examples–6.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Illustrate with example how to create a grouped bar plot in Matplotlib with a suitable data set and interpret the plot. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Illustrate with example how to create a grouped bar plot in Matplotlib with a suitable data set</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and interpret the plot.                                                                                                    [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>students = ['A', 'B', 'C']</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>math = [80, 70, 90]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>science = [85, 75, 95]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>displaying their marks side by side for easy comparison.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[15x1 = 15]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "What is data visualization? Explain the importance of visualization in analytics and discuss different types of charts/graphs with examples. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Whatisdatavisualization?Explaintheimportanceofvisualizationinanalyticsanddiscuss</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>differenttypesofcharts/graphswithexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data visualization, importance, and charts (line, bar, pie, histogram, scatter, box plot, etc</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>withexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition–2,importance–4,charttypes–6,example-3marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    }
+  ]
+}

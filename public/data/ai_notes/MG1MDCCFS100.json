@@ -1,0 +1,557 @@
+{
+  "course_code": "MG1MDCCFS100",
+  "title": "Foundation of cyber forensics",
+  "dept_name": "Cyber Forensics",
+  "semester": 1,
+  "course_type": "MDC",
+  "max_marks": 70,
+  "total_questions": 38,
+  "repeating_skipped": 19,
+  "sources_used": [
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+    "Official Practical Model Paper",
+    "Official Model Question Paper (FYUGP 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 25,
+    "part_b": 8,
+    "part_c": 5
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Categorize the types of data that a forensics expert might discover during an investigation. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Add Evidence Item:  File > Add Evidence Item and select the created image file.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Identify one key goal of computer forensics. [Understand][1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Identify one key goal of computer forensics. [Understand][1]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Using any of the registry analysis tool to find the user activity on a window system and extract recent user activi ty such as login time for user accounts recently accessed files,recently connected usb devices . Display the findings.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Using any of the registry analysis tool to find the user activity...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Examine about the back up / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Navigate the File System: browse the file system hierarchy that includes visible files, hidden</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>partitions, and unallocated space.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[E]/[CO4]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Indicate one source where electronic can be found during an investigation. [Understand][1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Indicate one source where electronic can be found during an inves...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Identify any tool that is commonly used for hard drive imaging / []",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify Relevant Data from Deleted Files, Volatile Data, Encrypted Files</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Extract Evidence: Right-click on the specific files or folders of interest and select</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Export Files to save them to a different, secure location on the analysis workstation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Document Findings: Maintain a detailed chain of custody and document all findings,</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Subdivide the process of discovering files during a forensic investigation. [Analyse][2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Subdivide the process of discovering files during a forensic inve...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How can a user create a shortcut to a registry key? / []",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Method 1: Create a desktop shortcut to the Registry Editor  C:\\\\Windows\\\\regedit.exe</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Method 2: Create a .reg file for a specific key                        (1 mark for each method)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "What is BAIT?. [Analyse][2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is BAIT?. [Analyse][2]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Examine the difference between different types of computer forensic technology / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare with their contributions in computer forensic technologies</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Military computer forensic technologies - eg.CFX-2000,       (0.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Law Enforcement computer forensic technologies  -eg. Mirror Image Backup Software, Anadisk,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Diskette Analysis Tool, Copyqm: Diskette Duplication Software ,Text Search Plus Intelligent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Forensic Filter,          (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Business computer forensic technologies - eg. Virus/Trojan/Worm Protection(0.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An]/[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Discuss about DIRT.. [Understand][1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss about DIRT.. [Understand][1]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "What do you mean by data recovery and solution? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Problems with data recovery and factors need to concern for efficient back up</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Problems :Shrinking Expertise, Growing Complexity Failures, Budgets and Downtime (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Solutions: prepare Before Back Up, Evaluate Preparations,-Automated Recovery, Make Recoveries</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Efficient, Take Backups  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An]/[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Examine Back-Up Obstacles. [Analyse][2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Examine Back-Up Obstacles. [Analyse][2]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Discuss about common forensic Image Formats / []",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>. Raw (dd): extensions -dd , .img, .raw, .001 EWF (Expert Witness Format): extensions- .E01 , .Ex01 AFF (Advanced Forensic Format): extensions- .aff, .aff4 AccessData Custom Content Image: extensions -.AD1 SMART WinHex [U]/[]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Identify any of the analysis tool in cyber forensics.. [Understand][3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Identify any of the analysis tool in cyber forensics.. [Understan...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How to understand registry explorer? / []",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>To understand Registry Explorer, use its graphical interface to load registry \"hives\" from a file or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>live system to see a tree-like structure of keys and their values. You can navigate this structure to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>find information, view deleted keys and values, and analyze forensic data li ke user login times or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>recently used files</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Identify any two Disk Imaging tools.. [Understand][3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Identify any two Disk Imaging tools.. [Understand][3]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between unallocated space and slack space on a disk. / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Unallocated space-free space on a disk,  not been assigned to any file and can be used to store</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>new data,   (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Slack space - leftover, unused portion of a cluster that is already allocated to an existing file.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How do we measure the importance of file system analysis tools? [Evaluate][4]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How do we measure the importance of file system analysis tools? [...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "Examine the factors that affect back -up. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Backup Obstacles: Backup window, Network bandwidth, System throughput, Lack of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>resources  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Factors affecting back-up: Storage costs are decreasing,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Systems have to be online continuously.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The role of backup has changed nowadays (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An]/[CO2]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Evaluate windows registry? [Understand][3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Evaluate windows registry? [Understand][3]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Describe the Master File Table (MFT) in NTFS / []",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Contains metadata for every file and directory on a volume, acting as an index for all its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>contents. (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Evaluate Encase registry viewer [Understand][3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Evaluate Encase registry viewer [Understand][3]...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "How might you use the Windows Registry to improve system performance or security.? / [CO4] [10x1 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>For performance (1mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Registry cleanup- Use the Registry Editor to find and remove obsolete or redundant entries</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>that can cause performance issues.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Disable startup programs- disable programs that run automatically at startup.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Adjust system settings- Tune memory management or display settings, to optimize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>responsiveness.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>For security (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Restrict anonymous access, Change permissions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Disable features that could be exploited by malware or attackers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Prevent persistence: helps in remove malicious entries that allow malware to automatically run</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>on startup.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Monitor for threats:  help in detecting and removing persistent threats.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>•</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[10x1=10]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "How do you add, modify, and delete registry keys and values programmatically. [Evaluate][4] [10x1=10]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How do you add, modify, and delete registry keys and values progr...</em> in the context of Foundation of cyber forensics.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain standard service and on-site service. / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Standard Service (2.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Computer forensics experts should be able to work on your case during normal  business hours.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>On-Site Service (2.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Computer forensics experts should be able to travel to the location. At the on-site, the experts</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>should quickly be able to produce exact duplicates of the data storage media in question .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Explain the key qualifications to look for when selecting a computer forensic specialist for a criminal investigation. [Understand][1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Discuss 1)computer forensics 2)types of forensics technology / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>1.  Computer forensics is the process of methodically examining computer media (hard disks,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>diskettes, tapes, etc.) for evidence. (1mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Computer forensics services (1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The computer forensic objective, priority, accuracy versus speed, the computer forensics</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>specialist</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Examine different types of computer forensics technology. [Analyse][2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[E] ",
+      "question": "Evaluate the process of examining a file system using FTK Imager. What steps are involved in extracting evidence from a disk image. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FTK Imager allows for the preview, analysis, and export of files, including deleted ones,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>without altering the source data.  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Phase 1: Evidence Acquisition (Creating the Image)  (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Launch FTK Imager and Select Source: File > Create Disk Image</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Configure Image Destination and Format: specify where the image file will be saved.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Enter Case Information: Fill in relevant details such as case number, examiner name etc.</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Describe the general steps followed in extracting evidence from digital devices in cyber forensics. [Understand][3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Analyse network capturing tools and its's role. / [] [3x5 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Intercept and log data packets moving across a network to provide visibility for analysis,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>troubleshooting, and security monitoring.  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Working:- Packet interception, Data capture, Data decoding, Data presentation  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Role:- Network Troubleshooting and Performance Optimization , Cyber security and Intrusion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Detection, Incident Response and Forensic Analysis, Network Planning and Capacity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Management, Compliance and Auditing.  (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples:- Wireshark, tcpdump, and Network Miner, Snort, Commercial Solutions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(e.g., SolarWinds, NetWitness, Riverbed)  (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An]/[]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[3x5=15]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "Explain the various types of network capturing tools. [Understand][3] [3x5=15]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Define data recovery -1 Mark",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define computer forensics          - 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Give comparison of data recovery and computer forensics       - 4 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Role of computer forensic in law enforcement in handling digital evidence - 4 Mark</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Discuss the role of computer forensics in law enforcement, including its importance in criminal Investigations, and the measures taken to ensure the integrity and admissibility of digital evidence. / [CO1, CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>If the computer and its contents are examined by anyone other than a trained and experienced computer forensics specialist, the usefulness and credibility of that evidence will be tainted</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Look very carefully at the level of experience of the individuals involved while Choosing a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Computer Forensics Specialist for a Criminal Case. (2.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>COMPUTER FORENSICS SERVICES     (2.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data seizure, Data duplication and preservation, Data recovery, Document searches, Media</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>conversion, Expert witness services, Computer evidence service options</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Other miscellaneous services</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>MEASURES (5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Collection and analysis :Forensically sound collection,Minimize alteration, Use validated</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>tools,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Documentation and chain of custody Detailed logs, Chain of custody, Hashing  or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>\"fingerprint\" of the data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Storage and access :Secure storage, Access control</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Legal and expert support :Legal authority, Expert testimony</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[CO1,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CO3]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Differentiate between the various services offered by computer forensics experts in assisting legal investigation. [Understand][1]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain the various types of cyber forensic tools used for digital investigations. Describe their key features and functions. / [] [1x10 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Specialized software and hardware used to identify, preserve, extract, analyze, and report on</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>electronic evidence for legal purposes                                               (definition 1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data Acquisition and Preservation Tools :Hardware Write-Blockers  (each categories  1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Forensic Imagers/Duplicators:  FTK Imager dd  or dc3dd</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Data Analysis and Examination Tools: EnCase and Magnet AXIOM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>File Analysis and Recovery Tools :The Sleuth Kit, Autopsy, Scalpel) ExifTool</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Memory Analysis Tools: Volatility and MAGNET RAM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Network Analysis Tools: Wireshark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U]/[]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[1x10=10]</li></ul></div>",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "Discuss the types of business computer forensic technology. [Analyse][2] [1x10=10]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "course_code": "MG2DSCCMA101",
+  "title": "Responsive Web Designing",
+  "dept_name": "Computer Applications",
+  "semester": 2,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 42,
+  "repeating_skipped": 14,
+  "sources_used": [
+    "Second semester BA/BSc/BVocFYUGP April 2026",
+    "Official Model Question Paper (FYUGP 2024",
+    "II Semester MGU UGP25 - March - 2025"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 15,
+    "part_b": 21,
+    "part_c": 6
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Name any two pop-up boxes available in Java Script. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name any two pop-up boxes available in JavaScript.  [K] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Ans: Alert(),prompt(),confirm()—any two  [1 mark each]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define function calling. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Grid System: Bootstrap uses a 12-column grid system that automatically adjusts based on screen size.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Differentiate between let, var, and const in Java Script. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Differentiate between let, var, and const in Java Script. [CO1]...</em> in the context of Responsive Web Designing.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Name any two key features of j Query. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name any two key features of jQuery. [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Ans: Simplified DOM manipulation,Event handling, AJAX support,Cross-browser compatibility (any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>two) [ 1 mark each]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between .focus() and .blur() methods ? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Responsive Breakpoints: Bootstrap defines screen sizes such as:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• sm (small devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• md (medium devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• lg (large devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• xl (extra large devices)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Identify the purpose of closures in Java Script. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Identify the purpose of closures in Java Script. [CO1]...</em> in the context of Responsive Web Designing.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Name the foundational layout element in bootstrap that wraps content and align it consistently. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name the foundational layout element in bootstrap that wraps content and align it consistently.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.container or .container-fluid  [2 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Write a code snippet to create a responsive navigation bar in Bootstrap? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Responsive Utility Classes: Bootstrap provides classes to control layout and visibility easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain each with examples. (Give 3 marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Prepared by,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Seema K S, Assistant Professor, TOMS Arts and Scince College, Mattakara</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>9495444211</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "How do you select an element with an ID in j Query? [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How do you select an element with an ID in j Query? [CO2]...</em> in the context of Responsive Web Designing.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "If a website feels like an app, where you don’t have to reload pages, what might be causing that? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>If a website feels like an app, where you don’t have to reload pages, what might be causing that?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Caused by AJAX or SPA using JavaScript/jQuery</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is one thing that all popular web browsers have in common when it comes to Java Script? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is one thing that all popular web browsers have in common when it comes to JavaScript?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>All modern browsers contain a built -in JavaScript engin e and support JavaScript execution.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples of javascript engine V8,spidermonkey, nitro etc.( Value liberally)</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Recognize the j Query method used to change the text inside an HTML element. [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Recognize the j Query method used to change the text inside an HT...</em> in the context of Responsive Web Designing.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Mention any four predefined components in Bootstrap. / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any four predefined components in Bootstrap. [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Navbar,Cards,Alerts,Buttons,Modals (any four)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2x5 = 10]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Identify the purpose of .container-fluid class do? / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify the purpose of .container-fluid class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Creates a full-width container that spans the entire viewport width .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The main uses are -  Website headers and footers, Full -width images ,Admin dashboards,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Responsive layouts etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mention any one give marks.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Can you explain the steps to create a button using Bootstrap classes? [CO3] (5 x 2 =10)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Can you explain the steps to create a button using Bootstrap clas...</em> in the context of Responsive Web Designing.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the concept of variable scope in Java Script. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the concept of variable scope in JavaScript. [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scope refers to the accessibility of variables.[1/2 Marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Three types: Global, Function/Local, and Block scope (with let/const).</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the difference between a variable's declaration and its initialization. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the difference between a variable's declaration and initialization</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Declaration: creating a variable name. eg: let x;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Initialization: assigning an initial value. Eg: x=10;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Declaration with initialisation: Eg: let x=10;</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "Could you describe the role and usage of functions in Java Script? [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain the steps to implement form validation using j Query ? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the steps to implement form validation using jQuery ? [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Steps with example program.[5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Steps only[3 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example only[3 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss the realtime feedback in the context of form validation? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the real-time feedback in the context of form validation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Real-time feedback in form validation means checking the user's input immediately while they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>are typing or as soon as they leave a field , instead of waiting until the entire form is submitted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>When a user enters data into a form field, JavaScript validates  the input instantly and displays</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>feedback such as:Valid input ,Error messages ,Warnings or suggestions etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition  with example  5 marks.  ,Definition only 3 marks , Example only 4 marks .</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "How do the if...else and switch statements work in Java Script? Provide an example. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "State the importance of typography in web design? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State the importance of typography in web design? [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Typography plays a critical role in web design as it directly affects usability, aesthetics, brand</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>identity, and user experience. Explain with example [ 5 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Identify the class in Bootstrap which is used to make a webpage’s design responsive? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify the class in Bootstrap which is used to make a webpage's design responsive.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In Bootstrap, the primary class used to create a responsive layout is the .container class (or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.container-fluid for full-width layouts).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Bootstrap’s responsiveness is mainly powered by grid classes such as:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.row , .col- , .col-sm-* , .col-md-* ,.col-lg-* , .col-xl-*</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Give marks for explanation and examples about container classes  or grid classes.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "How does Bootstrap’s grid system work? [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe two ways to include Java Script in an HTML file. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe two ways to include JavaScript in an HTML file. [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Internal JavaScript: JavaScript code is written within the HTML file itself, typically inside the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><script> tag. The <script> tag is placed either in the <head> or at the end of the <body> section.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>External JavaScript: The JavaScript code is written in a separate file with a .js extension.This file is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>linked to the HTML document using the <script src=\"filename.js\"></script> tag.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain with example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation only[ 4 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Two Examples[5 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the statement: 'Java Script helps in validating a form before it is submitted.' / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the statement: “JavaScript helps in validating a form before it is submitted.”</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.JavaScript can check the data entered by a user before the form is sent to the server . This</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>process is called client-side form validation . Form validation is the process of verifying that user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>input is:  Complete , Correctly formatted ,Within acceptable limits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the form validation with an example code.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "What are Bootstrap responsive utilities, and how do they help in designing websites? [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the usage of .detach method? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the usage of .detach method? [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The .detach() method in jQuery is used to remove an element from the DOM while preserving its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>data and event handlers. This makes it different from .remove(), which discards everything related to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation with Syntax and example    [5 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain any two basic filters in j Query with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain any two basic filters in jQuery with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>:first, :last, :even, :odd, :eq(),:contains()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain any  two with example code</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "Describe the different components available in Bootstrap for UI design. [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Distinguish the difference between fw-light and fw-bold classes in Bootstrap. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Distinguish the difference between fw-light and fw-bold classes in Bootstrap. [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Bootstrap provides utility classes to control the font weight of text elements. Two such classes are:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>fw-light: Applies a light font weight, typically 300 depending on the browser and available font,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Used when a softer, thinner appearance is desired., Helps give a minimal or elegant look.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>fw-bold: Applies a bold font weight, typically 700. Used to highlight or emphasize important</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>content. Makes text stand out more prominently on the page</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain with syntax and example[5 marks]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Discuss about various text color classes in Bootstrap. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss various text color classes in Bootstrap</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In Bootstrap, text color classes are utility classes used to quickly change the color of text without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>writing custom CSS. These classes begin with the prefix text-.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Examples :</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>text-primary, text -secondary, text -success, text -danger, text -warning, text -info, text -light, text -</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>dark, text-muted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Give an example  code  with any 3 classes .</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "Explain j Query selectors and filters with proper examples. [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Illustrate the difference between entry control loop and exit control loop with proper example / [CO1] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Illustrate the difference between entry control loop and exit control loop with proper example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain with example[5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[5x5 = 25]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the working of switch statement with syntax or proper example / [CO1] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the working of switch statement with syntax or proper example. The switch statement in JavaScript is used to select one block of code from many possible options based on the value of an expression. Syntax: switch (expression) { case value1: // Code to execute if expression === value1 break; case value2: // Code to execute if expression === value2 break; case value3: // Code to execute if expression === value3 break; default: // Code to execute if no case matches } Explain with example.</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]",
+      "question": "How does Bootstrap handle typography, and why is it important for web design? [CO3] (5*5=25)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Discuss the various methods for handling events in j Query. Provide examples of methods such as Click event, Hover event and Submit event ? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the various methods for handling events in jQuery. Provide examples of methods such</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>as Click event, Hover event and Submit event ?  [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>jQuery simplifies event handling by providing various methods to attach functions to DOM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>elements that respond to user actions like clicking, hovering, submitting, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain each with syntax and example. [ 5 marks each]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Describe how j Query allows you to add new DOM elements. Provide examples of methods such as .append(), .prepend(), .after() and .before() ? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe how jQuery allows you to add new DOM elements. Provide examples of methods</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>such as .append(), .prepend(), .after() and .before() ?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In jQuery, new HTML elements can be inserted dynamically into the Document Object Model</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(DOM). This allows webpages to update content without reloading.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(give 2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A new element can be created using jQuery:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let newItem = $(\"<p>This is a new paragraph</p>\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>This creates a paragraph element but does not insert it into the page until an insertion method is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>used.( give  3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the methods such as .append(), .prepend(), .after() and .before() with their purpose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and examples. Give  2.5 marks for each method</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U]",
+      "question": "Discuss the different types of loops in Java Script with examples. [CO1]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Discuss the principles of Responsive Web Design / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the principles of Responsive Web Design . [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Responsive Web Design (RWD) is a design approach that ensures a website looks and functions well</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>across a variety of devices and screen sizes, such as desktops, tablets, and smartphones.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Key Principles:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Fluid Grid Layouts, Mobile-first, Media queries, Viewport meta tag, Bootstrap utilities etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain in detail with examples    [ 15 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[15x1 = 15]</li></ul></div>",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of responsive web design and how Bootstrap helps to achieve it. Provide examples. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of responsive web design and how Bootstrap helps to achieve it. Provide</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition: Responsive Web Design is an approach where a website automatically adjusts its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>layout, images, and content to fit different screen sizes such as:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Mobile phones</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Tablets</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Laptops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Large desktop screens</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The main goal is to ensure the website looks good and is usable on all devices without creating separate</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>versions for each device.( Give 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Key Principles of Responsive Design</li></ul></div>",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U]",
+      "question": "Discuss how j Query can be used for form validation with an example code. [CO2] (1*15=15)",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

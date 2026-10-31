@@ -1,0 +1,840 @@
+{
+  "course_code": "MG3DSCSTA202",
+  "title": "Data Analysis in Inferential Statistics using R/Python",
+  "dept_name": "Statistics",
+  "semester": 3,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 59,
+  "repeating_skipped": 27,
+  "sources_used": [
+    "Data Analysis In Inferential Statistics Using R/Python",
+    "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+    "Official Practical Model Paper",
+    "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 33,
+    "part_b": 19,
+    "part_c": 7
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "If the joint pmf is p(0,0)=0.2, p(0,1)=0.3, p(1,0)=0.2, p(1,1)=0.3, find P(X=0 ∣ Y=0). / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of conditional probability - 1 Mark,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>P(X=0|Y=0) =0.5 -1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[Definition of conditional probability only - 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Maximum =2 marks]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "State the formula for the conditional probability P(Y=y∣X=x) in terms of the joint and marginal probabilities. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Formula of Conditional Probability in terms of joint and marginal probabilities- 1 mark each.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[E][5]",
+      "question": "Based on the following data, test whether the preference for Car models A and B is independent of the age groups. Car model Age group Model A Model B Age I 215 135 II 325 175 III 60 90",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Based on the following data, test whether the preference for Car ...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "If P(x, y) = cx2y; for x = 1, 2 y = 1, 2, 3 is a joint probability mass function, find c. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Property of probability mass function, Ʃ f(x)=1 – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any reasonable attempt to determine C – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>P (x, y) = c x2y; c=1/28</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>P (x, y) =cx2y; c=1/36</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Given the joint probability mass function as Find the marginal probability mass function of Y. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Given f(x, y) =xy2 30 , x= 1,2,3, y= 1,2. fY (y) = 3X x=1 f(x, y) =y2 30 (1 + 2 + 3) = y25 , y= 1,2.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[E][5]",
+      "question": "Based on the following data on length (X) and weight (Y), find rank correlation coefficient. X 70 48 58 55 54 50 60 52 Y 62 47 53 60 55 68 51 48",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Based on the following data on length (X) and weight (Y), find ra...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An] ",
+      "question": "The IQ scores in a population are normally distributed with a mean of 100 and a standard deviation of 15. Calculate the percentage of people whose IQ lies between 112 and 135. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Statement Z= (X-𝜇)/𝜎~𝑁(0,1) – 1 Mark Answer= 20% - 1 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "State the pdf of the sampling distribution of mean of a sample of size n from a normal distribution. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>If Xi ∼N(µ, σ2), then ¯X∼N \u0012 µ, σ2 n \u0013 and f ¯X(x) = √n σ √ 2π exp \u0014 − n(x−µ) 2 2σ2 \u0015 .</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "State the Central Limit Theorem.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State the Central Limit Theorem....</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[E][5]",
+      "question": "Based on the following data, obtain the regression equation of X on Y and the regression equation of Y on X. X 2 4 6 8 10 Y 5 7 9 8 11",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Based on the following data, obtain the regression equation of X ...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Give two practical uses of Student's t-distribution in statistics. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any two applications -2 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "If t ~ t14 , Find P( t > 2.262 ). / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Since t0.025,14 = 2.262, P(t >2.262) = 0.025.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][2]",
+      "question": "If X follows a normal distribution with mean 2 and standard deviation 3, find the probability that the sample mean 𝑋 is greater than 2.5, given a sample size of 16.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>If X follows a normal distribution with mean 2 and standard devia...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Can the F-distribution take negative values? Why or why not? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>No, F distribution cannot take negative values- 2Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Range of F Distribution is (0, ∞)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State any two applications of the F-distribution in statistical analysis. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Applications ofF-Distribution (i) Testing equality of two variances, (ii) Analysis of Variance (ANOV A).</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][3]",
+      "question": "State the sufficient conditions for consistency of a parameter.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State the sufficient conditions for consistency of a parameter....</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State one advantage and one disadvantage of the method of moments. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>One advantage – 1 Marks (eg: Moment estimates are asymptotically unbiased)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>One disadvantage – 1 Mark (eg: If moment does not exist, method of moment is not</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>applicable)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What does 99% confidence level mean? / [CO3] f(x, y) = ; x = 1, 2, 3; y = 1, 2. xy 2",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>99% Confidence Level A 99% confidence level means that, in repeated sampling, approximately 99% of intervals constructed by the same method will contain the true population parameter.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][3]",
+      "question": "Obtain the moment estimate for μ in N (μ, σ), σ known.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Obtain the moment estimate for μ in N (μ, σ), σ known....</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Distinguish between estimator and estimate. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition/Example – 2 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What are the properties of a good point estimator? / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Properties of a Good Point Estimator (i) Unbiasedness, (ii) Consistency, (iii) Efficiency, (iv) Sufficiency.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][4]",
+      "question": "Briefly explain the two types of errors that can occur in statistical hypothesis testing.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Briefly explain the two types of errors that can occur in statist...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An][5]",
+      "question": "A test of 100 youths and 200 adults showed that 42 of the youths and 50 of the adults were poor drivers. Use the data to test the claim that the youth percentage of poor drivers is larger than the adult percentage.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A test of 100 youths and 200 adults showed that 42 of the youths ...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What is meant by a composite hypothesis? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition/Example -2 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Define Type II Error. / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Type II error occurs whenH 0 is not rejected although it is false. 1</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[E][5]",
+      "question": "The three samples given below have been obtained from three normal populations with equal variances. Test whether the population means are equal. Y 1 Y 2 Y 3 8 7 12 10 5 9 7 10 13 14 9 12 11 9 14 (5x6=30 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>The three samples given below have been obtained from three norma...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What assumptions are made in the Chi-Square test for homogeneity? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any two assumptions for Chi-square test for homogeneity/General assumptions of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Chi-square test – 2 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "What are assumptions of t-test? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Assumptions oft-Test. Any two assumptions give 2 marks. (i) Independent observations, (ii) Normally distributed population, (iii) Continuous observations, (iv) Equal variances for the pooled two-sample test.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K][4]",
+      "question": "State any two conditions required for the valid application of the non -parametric Chi - square tests.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State any two conditions required for the valid application of th...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Examine whether the mean of the population is",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Examine whether the mean of the population is...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Give the test statistic in the case of small sample test to test the population mean when the population standard deviations are unknown. / [CO4] [2x7 = 14]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Statistic- 2 Mark t= ( 𝑋−𝜇)√(𝑛−1) 𝑠  ~𝑡 𝑑𝑖𝑠𝑡𝑟𝑖𝑏𝑢𝑡𝑖𝑜𝑛 𝑤𝑖𝑡ℎ (𝑛 − 1) 𝑑𝑒𝑔𝑟𝑒𝑒𝑠 𝑜𝑓 𝑓𝑟𝑒𝑒𝑑𝑜𝑚</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A][4]",
+      "question": "A sample of 10 individuals is chosen at random from a normal population and their mean weight is found to be 67.8 Kg with standard deviation 2.826 Kg. Check whether the mean of the population is 66. (7x2=14 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A sample of 10 individuals is chosen at random from a normal popu...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCSTA202 - DATA ANALYSIS MGU-UGP (Honours)/MGU-BBA (Honours)/MGU-BCA (Honours) Special Examinations, July 2026 (for 2024 Admission Regular Examinations, October 2025)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCSTA2...</em> in the context of Data Analysis in Inferential Statistics using R/Python.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An][4]",
+      "question": "87 with standard deviation Rs. 1.28. Can the applicant safely assume that the hourly wage paid by factory B is higher than that of factory A?",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "cm. the mean height of the sample of students is found to be 168.8cm. can we accept the assumption that the mean height of the students is 170 cm? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>One-way means that only one factor is considered. One-way ANOV A involves one factor with two or more levels. Part B Short Essay Questions. Answer any 4 questions. Each question carries 6 marks.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "The joint probability mass function is given by Are the variables X and Y independent? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>f 1 (x)= 2x+3/21; x=1, 2, 3 – 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>f2(y) = 6+3y/21; x=1,2 – 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Condition for independence – 1Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Checking independence – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Condition for independence only – 2 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "If f(x, y) = cxy; x = 0, 1 and y = 1, 2 is a joint pdf, find (i) c (ii) P(X = 1, Y = 2), (iii) P(Y=2). / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>667>9.488, rejectH 0....3 marks The opinions of the three cities are not homogeneous. 5</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][1]",
+      "question": "For (X, Y), the joint pdf is given by f(x, y) = 30xy2; x = 1, 2, 3; y = 1, 2. Check independence of X and Y.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Let and be independent. Find the distribution, pdf, MGF, mean and variance of U+V. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(Chi square distribution with 2 degrees of freedom – 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>MGF=(1-2t)-1 -1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mean = 2 – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>V ariance = 4 – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[Specify Chi square pdf, mean, variance and mgf – 4 Marks (1 mark each)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Discuss different inter-relations among sampling distributions. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>If Zi ∼N(0,1), then nX i=1 Z 2i ∼χ 2n. If Z∼N(0,1), V∼χ 2ν, independently, then Zp V /ν ∼t ν. 2 If U∼χ 2v1, V∼χ 2v2, independently, then U/v1 V /v2 ∼F v1,v2.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][2]",
+      "question": "Define Student’s t distribution. State any two of its properties. Mention any one Student’s t statistic.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Define sampling distribution. If x1, x2, ..., xn are observations from a sample of population, then generate a statistic and suggest its sampling distribution. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of sampling distribution - 3 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define any statistic – 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sampling distribution– 1 Mark</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain sampling distributions with suitable examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sampling Distribution with any one example...3+3</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U][3]",
+      "question": "Explain the concepts of efficiency and sufficiency as desirable properties of point estimators, and support your explanation with one example each.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What does it mean for an estimator to be consistent? How is this property useful? State the sufficient conditions for consistentcy. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of consistency – 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sufficient conditions – 2 Marks each</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Define the concept MLE and state any three of its important properties. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition...3 marks Three important properties... 3 marks</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A][3]",
+      "question": "Obtain maximum likelih ood estimators of the parameters of uniform distribution over the interval (a, b).",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "In 90 spins of a roulette wheel with 18 red, 18 black, and 2 green slots, red occurs 52 times. Test whether the wheel is fair in terms of red outcomes? / [CO4]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>H0: P= 18/38, H1: P≠18/38 - 1 Mark each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>t =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>𝑝−𝑝𝑜</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>√𝑝0𝑞0/𝑛 ~𝑁(0,1) – 1 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Answer=1.98 – 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Table value= 1.96 - 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Conclusion -1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reject H0; This suggests that the wheel may not be fair in terms of red outcomes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[4 marks shall be awarded for any reasonable attempt.]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "A sample of 100 students is taken from a population with heights having s.d.",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Given n= 100, σ= 10, ¯X= 168.8, µ 0 = 170. H0 :µ= 170, H 1 :µ̸= 170. Z= ¯X−µ 0 σ/√n = 168.8−17010/√100 = Atα= 0.05, |Z|= 1.2<1.96. Hence, do not rejectH 0. The assumptionµ= 170 cm is not rejected.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "The average wage of a sample of 150 workers in factory A was Rs. 2.56 with standard deviation Rs. 1.08. A sample of 200 workers in factory B has average hourly wage of Rs.",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[E] ",
+      "question": "Briefly discuss ANOVA. If the Between Sum of Squares (SSC) is 123.33 and the Within Sum of Squares (SSE) is 94 for data collected on the test scores of students taught using three different teaching methods, conduct a one-way ANOVA to test whether there is a significant difference in the average scores among the teaching methods, assuming that the data was collected from 5 students per group. / [CO4] [6x4 = 24]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any reasonable brief explanation of ANOVA – 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>MSC=SSC/K-1 =61.665- 1/2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>MSE=SSE/N-K=7.833 -1/2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>F=MSC/MSE = 7.87-1 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Table value = 3.88-1 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Conclusion – 1 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reject the hypothesis, there is a significant difference in the average score</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "A survey finds 21% of 222 men and 18% of 208 women purchased books online. Check whether men are more likely to purchase books online at α = 0.05? / [CO4] [6x4 = 24]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Given n1 = 222,ˆp 1 = 0.21, n 2 = 208,ˆp 2 = 0.18. Hypotheses....1 mark H0 :p 1 =p 2, H 1 :p 1 > p2. The pooled estimate....2 marks ˆp=222(0.21) + 208(0.18)430 = 0.1955. Hence, SE= s</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>0.1955(0.8045) \u0012 1 222 + 1208 \u0013 ≈0.0382. ..........1 mark Therefore, Z= 0.21−0.180.0382 ≈0.785. Atα= 0.05, Z0.05 = 1.645. 3 ............1 mark Since</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>0.785<1.645, do not rejectH 0. ...........1 mark Part C Essay Type Questions. Answer 1 question. Each question carries 12 marks.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Define the joint probability mass function and explain its two main properties. A bag contains one red, one green, and one blue ball. Two balls are drawn without replacement. Let X be the number of red balls drawn and Y the number of green balls drawn. Construct the joint probability mass function and distribution function. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of joint probability mass function – 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Two properties -3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Correct distribution function = 2 Marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "What does the value of the joint distribution function at a point (x,y) represent? Using the following situation explain the concept. A fair coin is tossed 3 times. Let X be the number of heads in the first two tosses and Y be the number of heads in all three tosses. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The joint distribution function....4 marks FX,Y (x, y) =P(X≤x, Y≤y). Table ....4 marks Outcome X Y HHH 2 3 HHT 2 2 HT H 1 2 HT T 1 1 T HH 1 2 T HT 1 1 T T H 0 1 T T T 0 0 Rest.....4 marks.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U][2]",
+      "question": "Define chi-square distribution and state any four of its properties. For a sample of size 10 from a normal population with standard deviation 5, find P (8.4 < S2 < 42.3).",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "Explain the large sample tests for population mean. A sample of 100 students is taken from a population with heights having s.d. 10 cm. the mean height of the sample of students is found to be 168.8cm. can we accept the assumption that the mean height of the students is 170 cm? / [CO4] [12x1 = 12]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of any one large sample test for population mean-3 Mark Define H0 and H1- 2 Mark Correct test statistic= 2 Mark Z= (𝑋−𝜇)√𝑛 𝜎 ~𝑁(0,1) Answer= -1.2 -2 Marks Table value= 1.96- 2 Mark Conclusion -1 Mark Accept the hypothesis</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q57",
+      "number": 57,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "a. Explain the concept of the Chi-Square test for homogeneity of attributes. b. A study was conducted to examine whether people in three cities are / [CO4] homogeneous with respect to their opinion (Support, Neutral, Oppose) on a new transport policy. The results are as follows: City Support Neutral Oppose Total City A 40 30 30 100 City B 50 20 30 100 City C 30 40 30 100 Total 120 90 90 300 Test at 5% level of significance whether the cities are homogeneous in their opinion. [12x1 = 12]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Chi-Square Test for Homogeneity...3 marks Observed frequencies:...2 marks Support Neutral Oppose Total A 40 30 30 100 B 50 20 30 100 C 30 40 30 100 Total 120 90 90 300 Hypotheses:...1 mark H0 : The cities are homogeneous, H 1 : The cities are not homogeneous. Expected frequencies....2 marks Eij = (row total)(column total)grand total , giving Support Neutral Oppose A 40 30 30 B 40 30 30 C 40 30 30 4 Thus, χ2 = (50−40) 2 40 + (20−30) 230 + (30−40) 2 40 + (40−30) 230 = 11.667. Degrees of freedom...1 mark d f= (3−1)(3−1) = 4. Atα= 0.05, χ20.05,4 = 9.488. Since</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q58",
+      "number": 58,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An][4]",
+      "question": "Fit a Poisson distribution to the following frequency data and perform a goodness -of-fit test. x 0 1 2 3 4 f 17167 1861 124 2 1 (1x12=12 marks)",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
+      "repeated_in": [
+        "Data Analysis In Inferential Statistics Using R/Python"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q59",
+      "number": 59,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] [3]",
+      "question": "U ∼ (1)χ2 V ∼ (1)χ2",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": false
+    }
+  ]
+}

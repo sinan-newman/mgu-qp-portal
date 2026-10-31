@@ -1,0 +1,576 @@
+{
+  "course_code": "MG3VACCSC200",
+  "title": "White Hat Hacking",
+  "dept_name": "Computer Science",
+  "semester": 3,
+  "course_type": "VAC",
+  "max_marks": 50,
+  "total_questions": 39,
+  "repeating_skipped": 45,
+  "sources_used": [
+    "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+    "White Hat Hacking",
+    "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+    "Official Model Question Paper (FYUGP 2024"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 22,
+    "part_b": 13,
+    "part_c": 4
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define Target of Evaluation (TOE). / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define Target of Evaluation (TOE). [K/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected: “System, program, or network under security assessment/attack focus.”</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Partial 1 mark: Vague “target” without security-analysis context</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.1, Page No.7.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What does an exploit take advantage of? / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Dictionary Attack</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K]",
+      "question": "Define the term vulnerability in cybersecurity. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define the term vulnerability in cybersecurity. [CO1]...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Name one piece of information collected during foot printing / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name one piece of information collected during footprinting. [K/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected: Any one of these “domain name, IP range/network blocks, DNS records,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>OS hints, contact names, emails, phone numbers, exposed services, web server</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>type.”</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Partial 1 mark: Generic “information” without specificity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.2, Page No.38.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024",
+        "White Hat Hacking"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "What is information gathering in ethical hacking? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Brute Force Attack</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between wired and wireless eavesdropping. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate between wired and wireless eavesdropping. [U/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Core: Wired requires access to switch/tap/SPAN; wireless can be captured over-the-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>air; wireless adds RF range/SSID/MAC issues; encryption differences (WEP/WPA).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Marking:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Full 2: States medium difference and access modality (cable/switch vs RF),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mentions implication (range/encryption)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Partial 1 mark: Mentions only “wireless is over air” without contrast</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.6 pp.154–166; Ch.10 overview for wireless.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "List two risks caused by eavesdropping attacks. / [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List two risks caused by eavesdropping attacks. / [CO3]...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Define eavesdropping in the context of network security.[CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define eavesdropping in the context of network security.[CO3]...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define the term cracker. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define the term cracker. [K/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected: Malicious hacker using skills for illegal/destructive purposes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Partial 1 mark: “Hacker” without malicious element</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.1, Page No.3.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Identify the primary goal of an ethical hacker related to TOE. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Rainbow Table Attack</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Discuss why protecting TOEs is critical in an organization’s cybersecurity strategy.[CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss why protecting TOEs is critical in an organization’s cybe...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "List the differnt types of scaninng / [CO2] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List the different types of scanning. [K/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected: Network scanning, Host scanning & Port scanning</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Partial 1 mark:  Any common scanning techniques</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.3, Page No.64.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Summarize how firewalls can affect the result of a ping sweeps? / [CO2] [2x5 = 10]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Summarize how firewalls can affect the result of a ping sweeps? /...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K]",
+      "question": "List the different types of scaninng[CO2] [5x2 = 10] Part B Short Answer Questions Answer any 5 Questions Each question carries 5 marks",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List the different types of scaninng[CO2] [5x2 = 10] Part B Short...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Differentiate between a threat, a vulnerability, and a risk with a practical example.[CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Differentiate between a threat, a vulnerability, and a risk with ...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Why is information gathering important in ethical hacking?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Why is information gathering important in ethical hacking?...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Describe how hardware-based keystroke loggers operate with examples.[CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Describe how hardware-based keystroke loggers operate with exampl...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Discuss \"social engineering attacks\" and explain how a hacker can use them to gain access. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss \"social engineering attacks\" and explain how a hacker can...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Explain the working of ARP spoofing in active sniffing.[CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain the working of ARP spoofing in active sniffing.[CO3]...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Summarize why gaining access is referred to as “owning the system.”[CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Summarize why gaining access is referred to as “owning the system...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K]",
+      "question": "Discuss five major scripting languages used for ethical hacking?[CO2] [5x5 = 25] Part C Very Short Answer Questions Answer any one Question Each question carries 15 marks",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss five major scripting languages used for ethical hacking?[...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]",
+      "question": "Explain in detail the concept of ping sweeps, their working and their role in network reconnaissance? [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain in detail the concept of ping sweeps, their working and t...</em> in the context of White Hat Hacking.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "White Hat Hacking",
+        "Official Model Question Paper (FYUGP 2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss how a hacker can use an attack to exploit a known vulnerability. / [CO1] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (HONOURS) Regular EXAMINATION October 2025 Third SEMESTER Value Addition Course (VAC) - MG3VACCSC200 - WHITE HAT HACKING (2024 ADMISSION ONWARDS)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss how a hacker can use an attack to exploit a known vulnerability. [U/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected points: vulnerability→exploit→payload; patch state; CVE mapping;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>delivery vectors (remote/local); outcome (CIA impact). Example (e.g., SMB vuln →</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>remote code exec).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks: define vulnerability/exploit, vector example,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>impact + countermeasure (patching).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.1 pp.7–12; Ch.4 overview.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [
+        "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026"
+      ],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe Information gathering methodology . / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe Information Gathering Methodology. [U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Seven steps outline: unearth initial info → locate network range → ascertain active</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>hosts → discover open ports → detect OS → uncover services → map network.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Include passive vs active footprinting.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks: clear sequence with brief purpose of each step.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.2 pp.37–48; Fig.2.1.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between manual exploitation and scripted exploitation? / [CO2] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (Honours)/MGU-BBA (Honours)/MGU-BCA (Honours) Special Examinations, July 2026 (for 2024 Admission Regular Examinations, October 2025) Third SEMESTER Value Addition Course(VAC) - MG3VACCSC200 - WHITE HAT HACKING (2024 ADMISSION ONWARDS)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Interpret how redirection attacks compromise network communication. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Interpret how redirection attacks compromise network communication. [U/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concepts: traffic redirection via ARP spoofing/SMB relay/DNS spoofing/HTTP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>302 abuse; man-in-the-middle; session hijack implications; confidentiality/integrity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>impact.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks:  define redirection, one L2 (ARP) and one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>L7/L3 example, impact + countermeasure (ARP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>inspection/DNSSEC/HTTPS+HSTS).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.6 (ARP/DNS), Ch.7 (session hijacking).</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of password spraying in remote password guessing. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Idle Scan Uses:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Identify open ports.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Detect running services.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Find security weaknesses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Assist in penetration testing. Advantages:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Improves security.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Helps administrators detect vulnerabilities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Supports network auditing.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain why information theft is considered a confidentiality attack, using examples. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain why information theft is a confidentiality attack, with examples. [U/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concepts: Map it to CIA triad; examples: sniffed passwords, database exfiltration,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>stolen backups, shoulder surfing; contrast with integrity/availability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks:  define confidentiality, 2–3 examples, brief</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mitigation (encryption, access control).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.1 pp.5–7.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the importance of confidentiality, integrity, and availability (CIA) in a security context. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the importance of Confidentiality, Integrity, and Availability (CIA).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Confidentiality protects data from unauthorized access. Integrity ensures data accuracy.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Availability ensures systems and data are accessible when needed.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Decribe the performance of reconnaisance tools in white hat hacking / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the performance of reconnaissance tools in white hat hacking. [U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Tools and roles: Whois, DNS lookup/NSlookup, traceroute, search engines/Google</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>dorks, Netcraft, EDGAR, OSINT; outputs and how they guide scanning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks: 3–4 tools with what they reveal and how they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>feed next steps.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.2 pp.38–48; Ch.3 linkage.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss recconaisance phase. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss reconnaissance phase.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Reconnaissance  is  the  first  phase  of  ethical  hacking  involving  passive  and  active</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>information  gathering  such  as  IP  addresses,  domains,  operating  systems,  ports,  and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>services.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between brute force and dictionary attacks with suitable examples / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate brute force and dictionary attacks with examples. [U/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Contents: Definition, process, complexity, time, hybrid/salted hashes impact;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>examples/tools (Hydra, John, Hashcat); mitigation (account lockout, strong</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>passwords).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks: define both, contrast, one example each,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mitigation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.4 pp.96–104, 107</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain how human errors can act as threats to information security. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain how human errors can act as threats to information security.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Weak  passwords,  phishing,  misconfiguration,  sharing  confidential  data,  and  ignoring</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>updates can lead to security breaches.</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the process of detecting live hosts using ping sweeps and list any two commomnly used tools? / [CO2] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Detecting live hosts using ping sweeps and list any two commonly used tools.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concept: ICMP Echo Request across range; note firewall/ICMP block; alternatives</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(ARP scan, TCP SYN to common ports); tools: Nmap, fping/hping/Netdiscover.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Minimum elements for Full Marks: method description, limitations, 2 tools named,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>brief command example earns full</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.3 pp.68–70..</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Compare NESSUS and NMAP in port scanning. / [CO2] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare NESSUS and NMAP in port scanning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Nmap is a network and port scanning tool. Nessus is a vulnerability assessment tool that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>detects security weaknesses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Nmap Nessus</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Network scanning tool Vulnerability scanner</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Nmap Nessus</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Finds open ports and services Detects vulnerabilities and misconfigurations</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Fast and lightweight More comprehensive</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mainly used for reconnaissance Used for vulnerability assessment</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Open-source Commercial (with Essentials free version)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain the importance of scripting in ethical hacking with examples? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the importance of scripting in ethical hacking with examples. [U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scope: automation of reconnaissance/scanning; parsing results; quick PoCs;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>reporting; safe task repetition; examples in Bash/Python/PowerShell (e.g., mass</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Nmap wrapper, log parser, API calls); risks/ethics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Suggested outline for full marks:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>● Why scripting matters (speed, repeatability, accuracy)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>● Where used (recon, enumeration, exploitation staging, evidence collection)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>● 2–3 concrete examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>● Safety/ethics and documentation</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain port scanning and its types. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain port scanning and its types.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Port  scanning is  the  process of  checking  network  ports  to identify  open  ports and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>services running on a target system.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of Port Scanning:</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Differentiate DNS, IP, and HTTPS sniffing in detail and illustrate their attack scenarios. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate DNS, IP, and HTTPS sniffing; illustrate attack scenarios. [U/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DNS sniffing: capture queries/responses; risks (hostnames, subdomains),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>spoofing/poisoning angle.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>IP sniffing: passive capture at L3/L2; unencrypted protocols; ARP poisoning to get</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in-path; session hijack risk.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>HTTPS sniffing: normally protected; scenarios where visible (misconfig, SSL</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>stripping, rogue CA, compromised proxy); HSTS role.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Tools: Wireshark, tcpdump, mitmproxy, Ettercap.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mitigations: encryption, DNSSEC/DoT/DoH, ARP inspection, switch port security,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>HSTS, certificate pinning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>For 13–15: clear distinctions, one scenario each, tool + countermeasure per type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CEH Sybex: Ch.6 pp.158–166 (sniffing, ARP, DNS), Ch.7 hijacking.</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain offline password cracking techniques in detail. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain offline password cracking techniques in detail.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Offline password cracking is the process of cracking password hashes without interacting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>with the target system.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Techniques:</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [
+        "Official Model Question Paper (FYUGP 2024",
+        "White Hat Hacking"
+      ],
+      "has_official_scheme": true
+    }
+  ]
+}

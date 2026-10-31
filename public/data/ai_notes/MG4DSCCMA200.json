@@ -1,0 +1,416 @@
+{
+  "course_code": "MG4DSCCMA200",
+  "title": "Data Analytics using R",
+  "dept_name": "Computer Applications",
+  "semester": 4,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 28,
+  "repeating_skipped": 14,
+  "sources_used": [
+    "Official Model Question Paper (FYUGP 2024",
+    "Official Practical Model Paper",
+    "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 10,
+    "part_b": 14,
+    "part_c": 4
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Define the repeat loop in R. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define the repeat loop in R.                                                                                        [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Infinite loop.  Repeats code until break statement</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]  ",
+      "question": "Which function is used to list variables in R? [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which function is used to list variables in R? [CO1]...</em> in the context of Data Analytics using R.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Explain the purpose of the dir() function in R. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Marks – Example or diagram of the plots)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scatter plot – Relationship between variables, Two numerical variables</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Box plot – Shows distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Whisker plot – Shows spread of data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Box/Whisker – Summary statistics</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]  ",
+      "question": "How will you create a matrix in R? [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How will you create a matrix in R? [CO1]...</em> in the context of Data Analytics using R.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Write any two advantages of a 3D pie chart over the bar chart. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write any two advantages of a 3D pie chart over the bar chart.                            [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Shows proportions clearly ,  More visual and attractive</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]  ",
+      "question": "What is the purpose of edit() function in R? [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the purpose of edit() function in R? [CO2]...</em> in the context of Data Analytics using R.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Recall the file extension of an Excel file? / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Recall the file extension of an Excel file?                                                                    [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>.xlsx</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]  ",
+      "question": "What is the use of melt() function in R? [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is the use of melt() function in R? [CO2]...</em> in the context of Data Analytics using R.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] ",
+      "question": "Write the output of the code: data <- c(10, 20, 30, 40, 50) mean(data). / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write the output of the code: data <- c(10, 20, 30, 40, 50) mean(data).                 [A] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Output: 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2x5 = 10]</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U]  ",
+      "question": "How will you calculate frequencies of a vector in R? [CO3] (5X2=10 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How will you calculate frequencies of a vector in R? [CO3] (5X2=1...</em> in the context of Data Analytics using R.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Compare the if–else if ladder and switch statement (any five points). / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare the if–else if ladder and switch statement (any five points).[U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(3 Marks – Syntax of if–else if ladder and switch statement , 2 Marks – Any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>five comparison points)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>if–else – Checks conditions one by one, Used for ranges/conditions, More</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>flexible</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>switch – Matches value with cases, Used for fixed options, more efficient</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]   ",
+      "question": "What is R and why is it widely used in data analytics? [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain the concept of melting a data frame. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of melting a data frame. [K] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(3 Marks – Definition,2 Marks – Example)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Converts wide format to long format, combines multiple columns, creates</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>variable and value columns, used for data reshaping, Helps in analysis</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]   ",
+      "question": "Discuss relational operators in R. [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Compare a scatter plot, a whisker plot, and a box plot. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare a scatter plot, a whisker plot, and a box plot.    [U] / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(3 Marks – Definition and comparison of Scatter Plot, Whisker Plot, and Box Plot</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]   ",
+      "question": "What is the difference between break and next statements in R loops? [CO1]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain vectors in R with suitable examples. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain vectors in R with suitable examples.                                                              [U] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(3 Marks for vector and its definition ,2 marks for example)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Collection of elements</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Same data type</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Created using c() function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: x <- c(1, 2, 3)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Used to store data</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] [2]",
+      "question": "What is a data frame in R? [U ] [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Create a data frame product with Product ID, Product Name, and Price. Write R commands to: a) display the first five rows, b) display the last five rows. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Create a data frame product with ProductID, ProductName, and Price. Write R</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>commands to: a) display the first five rows, b) display the last five rows.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(2 marks  for creating a data frame, 1.5 marks for display first five rows and 1.5 marks for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>display last five rows)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Create data frame:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>product <- data.frame(ProductID, ProductName, Price)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Display first five rows:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>head(product, 5)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Display last five rows:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>tail(product, 5)</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U]   ",
+      "question": "Differentiate between rbind() and cbind(). [CO2]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Compare median and mode in real-life decision making with suitable examples. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare median and mode in real-life decision making with suitable examples. [An] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(1.5 Marks for the definition of Median and 1 mark for example, 1.5 Marks for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the definition of Mode and 1 mark for example)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Median – Middle value, Used for income data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Mode – Most frequent value, Used for popular product size</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Both support decisions</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Define correlation and state its significance in data analysis. [CO3]",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "What is the use of the str() function? Explain with an example. / [CO2] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the use of the str() function? Explain with an example.      [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(3 Marks – Definition, 2 Marks – Example)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Shows structure of object, displays data type, shows number of variables</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: str(product)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Used to understand data</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "How is mean calculated in R with the trim option? [CO3] (5X5=25 Marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of row binding in R using rbind().Also Create two data frames with identical column names representing sales data of two different months. Combine them using rbind() / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of row binding in R using rbind().Also Create two data frames with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>identical column names representing sales data of two different months. Combine them</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>using rbind()            [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(Definition – 3 Marks; Key Points / Concept – 4 Marks; Syntax – 2 Marks; Example Creation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>– 3 Marks; Combining using rbind() – 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Row binding is the process of combining data frames by adding rows one below another</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>using rbind().</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>It Combines rows, requires same column names and number of columns, and returns one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>combined data frame.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Syntax: rbind(dataframe1, dataframe2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example Data Frames Creation:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>jan <- data.frame(ProductID=c(1,2), Sales=c(5000,6000)); feb <- data.frame(ProductID=c(3,4),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sales=c(5500,6500))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Combining Data Frames Using rbind():</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>total <- rbind(jan, feb)</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[U]   ",
+      "question": "Explain the creation of data frames, methods of accessing data, and the use of functions such as dim(), str(), summary(), head(), and tail() for data analysis. [CO2]",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[A] ",
+      "question": "With suitable R code, explain how to create and customize a pie chart using base R. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>With suitable R code, explain how to create and customize a pie chart using base R. [A] /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(Definition of Pie Chart – 3 Marks; Syntax of pie() – 2 Marks; Creating Data – 3 Marks;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Customizing (labels, colors, title) – 4 Marks; R Code / Output – 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A pie chart is a graphical representation that shows data as proportions of a whole.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Syntax :  pie(x, labels, main, col)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Creating Data :</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>sales <- c(40, 30, 20, 10)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>labels <- c(\"Product A\", \"Product B\", \"Product C\", \"Product D\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Customizing (labels, colors, title)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Labels name categories, colors improve appearance, and title describes the chart.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>R Code / Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>pie(sales,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>labels = labels,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>main = \"Sales Distribution\",</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>col = c(\"red\", \"blue\", \"green\", \"yellow\"))</li></ul></div>",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Describe the data visualization techniques available in R. [CO3] (1X15=15 Marks)",
+      "solution_html": "<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive Evaluation Rubric (Essay / Long Problem):</strong><br>• <strong>Introduction & Conceptual Foundation (2 Marks):</strong> Comprehensive overview, definitions, contextual scope, and historical/theoretical relevance.<br>• <strong>Detailed Structural Analysis & Derivations (5 Marks):</strong> Deep exploration covering all relevant dimensions, mathematical proofs, architectural diagrams, or comparative taxonomies.<br>• <strong>Practical Applications & Critical Evaluation (2 Marks):</strong> Real-world applications, computational complexity, empirical validation, or critical critique.<br>• <strong>Conclusion & Summary (1 Mark):</strong> Concise synthesis connecting theoretical outcomes with course objectives.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Valuation Guidance:</strong> Full marks are awarded for clear structural organization, labeled diagrams/formulations where applicable, and exhaustive coverage of all sub-parts.</div></div>",
+      "source_exam": "Official Model Question Paper (FYUGP 2024",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    }
+  ]
+}

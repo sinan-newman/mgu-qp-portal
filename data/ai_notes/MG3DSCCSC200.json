@@ -1,0 +1,797 @@
+{
+  "course_code": "MG3DSCCSC200",
+  "title": "Database Management Systems",
+  "dept_name": "Computer Science",
+  "semester": 3,
+  "course_type": "DSC",
+  "max_marks": 70,
+  "total_questions": 56,
+  "repeating_skipped": 22,
+  "sources_used": [
+    "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+    "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+    "Database Management Systems (2024",
+    "Official Practical Model Paper"
+  ],
+  "has_official_scheme": true,
+  "parts_summary": {
+    "part_a": 38,
+    "part_b": 14,
+    "part_c": 4
+  },
+  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "questions": [
+    {
+      "id": "Q1",
+      "number": 1,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Identify the term used to describe the duplication of data.Explain different situation in which data duplication occurs / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify the term used to describe the duplication of data Explain different situation in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>which data duplication occurs       [U]/[C01]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The term used to describe the duplication of data is Data Redundancy.  (1 mark).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of any two situations where data is stored in multiple places  (1 mark)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q2",
+      "number": 2,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Associate the DBA’s role with database security. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Associate the DBA's role with database security. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Controls user access through authentication and authorization. (1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Defines privileges/roles, manages backups, encryption, auditing and recovery to protect data. (1)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q3",
+      "number": 3,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Define database and DBMS.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define database and DBMS....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q4",
+      "number": 4,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Add a new column warranty_period of type VARCHAR(20) to the PRODUCT table. (2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Add a new column warranty_period of type VARCHAR(20) to the PRODU...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q5",
+      "number": 5,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "State the need of normalization in database. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>State the need of normalization in database.     [U]/[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Normalization minimizes data redundancy, ensure data consistency, and improve</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>database efficiency. (2 marks)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q6",
+      "number": 6,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Comprehend the term Tuple of a Relation. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comprehend the term Tuple of a Relation. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• A tuple is a row (record) in a relation (table). (1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• It represents one complete set of attribute values describing a single entity. (1)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q7",
+      "number": 7,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "List the advantages of using DBMS approach",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List the advantages of using DBMS approach...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q8",
+      "number": 8,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Update the price of all products in the Electronics category by reducing it by 5%.(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Update the price of all products in the Electronics category by r...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q9",
+      "number": 9,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Write a SQL command to insert a new record into a Student table with attributes ID, Name, and Age . / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write  SQL command to insert a new record into a Student table with attributes ID,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Name, and Age.        [U]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Eg, INSERT INTO Student (ID, Name, Age) VALUES (1, 'Joby', 22);       (2 marks)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "List any four basic data types available in SQL and mention their typical usage scenarios. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List any four basic SQL data types and their uses. (2 Marks) Any four:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• INT/INTEGER – stores whole numbers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• CHAR – fixed-length characters.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• VARCHAR – variable-length strings.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• DATE – stores dates.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• FLOAT/REAL – decimal values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• BOOLEAN – logical values. Marking:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• 0.5 mark each (Any four × 0.5 = 2)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "Why is entity integrity important in a relational database?",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Why is entity integrity important in a relational database?...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Delete all products from the PRODUCT table where stock quantity is less than",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Delete all products from the PRODUCT table where stock quantity i...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Discuss how three-schema architecture supports data abstraction. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss how three-schema architecture supports data abstraction.  [U]/[C01]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The Three-Schema Architecture supports data abstraction by separating the database</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>into three levels— internal, conceptual, and external —so that users can access data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>without worrying about its physical storage or structure.   (2 marks)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] ",
+      "question": "Differentiate between stored and derived attribute. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differentiate between Stored and Derived Attribute. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Marking</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of Stored attribute – 1 , Definition of Derived attribute with example – 1</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "Define normalization.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define normalization....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Display the products in Appliances category in the highest order of price.(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Display the products in Appliances category in the highest order ...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Write the SQL clause to sort a table by column Name in descending order. / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write the SQL clause to sort a table by column Name in descending order.    [K]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ORDER BY Name DESC;     OR</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ORDER BY columnName DESC;     (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[2 x 5 = 10]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] ",
+      "question": "Define durability. / [CO3] [2x5 = 10]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define Durability. (2 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Expected Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Durability is one of the ACID properties. (1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Once a transaction is committed, the changes remain permanent even if system failure occurs. (1)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U][3]",
+      "question": "State the purpose of adding default constraint to a table in a relational database. . (2x5=10 marks) Part B Short Answer Questions Answer any five questions Each question carries 5 marks",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State the purpose of adding default constraint to a table in a re...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "Display the total stock quantity of products in each category. (2 marks) Q5. Customer Order System I. Create a table named ORDERS with the following structure. (5marks) Column Name Data Type Constraints order_id VARCHAR(10) PRIMARY KEY customer_name VARCHAR(50) NOT NULL product_name VARCHAR(60) NOT NULL quantity INT price_per_unit DECIMAL(10,2) II. Insert the following data into the ORDERS table. (5marks) order_id customer_name product_name quantity price_per_unit O001 Rajesh Kumar Laptop 2 52000.00 O002 Priya Sharma Mobile Phone 1 25000.00 O003 Amit Patel Tablet 3 18000.00 O004 Neha Singh Headphones 5 2500.00",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Display the total stock quantity of products in each category. (2...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Explain the functions of DBMS.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain the functions of DBMS....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "5 Delhi EC002 Divya Reddy Electronics 6",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>5 Delhi EC002 Divya Reddy Electronics 6...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Describe the three-schema architecture of DBMS.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Describe the three-schema architecture of DBMS....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "5. (2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>5. (2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "5. (2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>5. (2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [1]",
+      "question": "Explain briefly about the different types of users in DBMS.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain briefly about the different types of users in DBMS....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "8 Kochi III. Generate and execute the following queries",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>8 Kochi III. Generate and execute the following queries...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "State the characteristics of relations in relational model.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State the characteristics of relations in relational model....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "5 Hyderabad ME002 Rohan Gupta Mechanical 4",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>5 Hyderabad ME002 Rohan Gupta Mechanical 4...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [
+        "Official Practical Model Paper"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[U] [2]",
+      "question": "What is functional dependency? Explain with an example.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is functional dependency? Explain with an example....</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>(2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>(2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [3]",
+      "question": "List and explain the various aggregate functions in SQL with examples",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List and explain the various aggregate functions in SQL with exam...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A] [3]",
+      "question": "Write SQL commands to create a table STUDENT with attributes ID, Name, Age, Course. Part B Essay Questions Answer any 1 question Each question carries 15 marks",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Write SQL commands to create a table STUDENT with attributes ID, ...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[A]  [1]",
+      "question": "Draw an ER diagram for a Library Management System with entities: Book, Author, Member, and Issue. Include appropriate attributes and relationships.",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Draw an ER diagram for a Library Management System with entities:...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[An]  [2]",
+      "question": "Discuss the Relational Data Model. Explain: a. Basic concepts of relational model (5 marks) b. Relational model constraints (5 marks) c. Normalization up to Third Normal Form with examples (5 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Discuss the Relational Data Model. Explain: a. Basic concepts of ...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Database Management Systems (2024",
+      "repeated_in": [
+        "Database Management Systems (2024"
+      ],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>(2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "part": "PART_A",
+      "part_label": "Part A (Short Answer)",
+      "marks": 2,
+      "domain_tag": "[K] [1]",
+      "question": "(2 marks)",
+      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>(2 marks)...</em> in the context of Database Management Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "source_exam": "Official Practical Model Paper",
+      "repeated_in": [],
+      "has_official_scheme": false
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Explain any two functions of a DBMS / [CO1] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (HONOURS) Regular EXAMINATION October 2025 Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCCSC200,MG3DSCECC201 - DATABASE MANAGEMENT SYSTEMS (2024 ADMISSION ONWARDS)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain any two functions of  DBMS:      [K]/[C01]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A Database Management System (DBMS) provides various functions, including data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>storage, retrieval, update, and management, ensuring data consistency, security, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>integrity. These functions enable efficient data handling, support multiple user access,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and facilitate data analysis and decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of any two functions, each 2.5 marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Describe the function of 'Transaction Management' in a DBMS. / [CO1] MAHATMA GANDHI UNIVERSITY, KOTTAYAM Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCCSC200 - DATABASE MGU-UGP (Honours)/MGU-BBA (Honours)/MGU-BCA (Honours) Special Examinations, July 2026 (for 2024 Admission Regular Examinations, October 2025)",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe Transaction Management in DBMS. (5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of transaction management – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Ensures ACID properties – 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Controls concurrent transactions – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Recovery from failures (commit/rollback) – 1</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "List and explain any two informal guidelines. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List and explain any two informal guidelines.     [K]/[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Informal  guidelines are not strict rules like normalization, but they provide ways to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>build efficient database. These guidelines suggest that tables should be designed to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>minimize data redundancy and dependency, with each table having a single, well-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>defined purpose. This includes avoid redundancy in data storage, have atomic</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>columns, avoid storing derived data etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>List any two guidelines – 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of any two guidelines – 3 marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q42",
+      "number": 42,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Discuss Armstrong’s axioms with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss Armstrong's Axioms with examples. (5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Reflexivity – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Augmentation – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Transitivity – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Suitable examples – 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Stored Attribute Derived Attribute</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Physically stored in database   Calculated from other attributes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: Date of Birth                Example: Age</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q43",
+      "number": 43,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Explain the use of FOREIGN KEY constraint in SQL. Write SQL commands to create a STUDENT table with a foreign key referencing DEPARTMENT. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the use of FOREIGN KEY constraint in SQL Write SQL commands to create</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a STUDENT table with a foreign key referencing DEPARTMENT.    [A]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The FOREIGN KEY constraint in SQL is used to link two tables and maintain</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>referential integrity between them. It ensures that the value in one table (child) matches</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a valid value in another table (parent). For example, each student must belong to a valid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>department.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CREATE TABLE DEPARTMENT (</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DeptID INT PRIMARY KEY ,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DeptName V ARCHAR(50)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>CREATE TABLE STUDENT (</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>StudentID INT PRIMARY KEY ,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>StudName V ARCHAR(40),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DeptID INT,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FOREIGN KEY (DeptID) REFERENCES DEPARTMENT(DeptID)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of FOREIGN KEY constraint and its usage in SQL  - 2.5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example SQL commands- 2.5 marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q44",
+      "number": 44,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Illustrate the use of the INSERT INTO … SELECT command with an example. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Illustrate INSERT INTO...SELECT command. (5 Marks) Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Purpose of INSERT INTO...SELECT – 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct SQL syntax – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Suitable example – 2</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q45",
+      "number": 45,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the concept of a key attribute and describe how it is identified in a database system / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of a key attribute and describe how it is identified in a database</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>system.         [U]/[C01]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A key attribute is a field or a set of fields in a table that uniquely identifies each record</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in that table. It helps prevent duplicate entries and ensures accurate data retrieval.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In a DBMS, a key attribute is identified by finding an attribute (or a combination of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>attributes) that can uniquely distinguish each record in a table. It is usually chosen as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>the Primary Key because it ensures uniqueness and does not allow null values. Database</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>designers analyze data dependencies and relationships between attributes to determine</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>which one can serve as the key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of key attribute – 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of how it is identified – 2 marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q46",
+      "number": 46,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[K] ",
+      "question": "Describe entities and attributes. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe Entities and Attributes. (5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Entity – An entity in DBMS represents a real-world object or concept that can be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>uniquely identified and stored in a database. It forms the foundation of data modeling in an</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Entity-Relationship (ER) model.(1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example: A student, An employee, or bank a/c, etc. all are entities.(1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Types of Entities such as strong,weak,Derived,Multivalued etc.(1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Attribute – An Attribute is a property or characteristic that describes an entity in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>database. It provides specific information used to identify, c ategorize, and manage entities</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>effectively. Without attributes, entities have no meaningful data .(1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example –Single, Composite ,Multivalued etc. (1)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q47",
+      "number": 47,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Compare entity integrity and referential integrity constraints with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare entity integrity and referential integrity constraints with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[An][CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Entity integrity ensures that every table has a unique and non-null primary key, so each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>record can be uniquely identified. Referential integrity ensures that a foreign key in one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>table matches a valid primary key value in another table, maintaining consistency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>between related tables.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>For example, in a STUDENT table, StudentID (Primary Key) cannot be null (entity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>integrity), and in an ENROLLMENT table, StudentID (Foreign Key) must match a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>valid StudentID in the STUDENT table (referential integrity).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparison and explanation – 5 marks</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q48",
+      "number": 48,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "Categorize the different types of integrity constraints in DBMS and explain each with examples. / [CO2]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain Integrity Constraints. (5 Marks) Expected Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Domain Constraint</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Entity Integrity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Referential Integrity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Key Constraint Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Any four constraints (1 mark each) – 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Suitable examples – 1</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q49",
+      "number": 49,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[An] ",
+      "question": "The management wants to analyse employee salaries department- wise: (i)Find the total salary paid in each department. (ii)Display only those departments where the average salary is greater than 50,000. (iii)Sort the result in descending order of total salary. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SQL queries to analyse employee salaries department-wise:    [An]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sample queries for the three questions are given here. Analyse the answer and give</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mark accordingly</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(i) Find the total salary paid in each department:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT Department, SUM(Salary) AS Total_Salary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FROM Employee</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>GROUP BY Department;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(ii) Display only those departments where the average salary is greater than 50,000:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT Department, A VG(Salary) AS Average_Salary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FROM Employee</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>GROUP BY Department</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>HA VING A VG(Salary) > 50000;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(iii) Sort the result in descending order of total salary:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT Department, SUM(Salary) AS Total_Salary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FROM Employee</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>GROUP BY Department</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ORDER BY Total_Salary DESC;</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q50",
+      "number": 50,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain how INNER JOIN is used to combine Employee and Department tables. Write an SQL query to display employee names with their department names. / [CO3]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain INNER JOIN and write SQL query. (5 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• INNER JOIN is used to combine rows from two or more tables based on a related column. It</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>returns only the rows where there is a matching value in both tables. (1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Demonstrate Employee and Department Tables with a common attribute.(2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct SQL syntax of INNER JOIN – (2)</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q51",
+      "number": 51,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[A] ",
+      "question": "Demonstrate pattern matching in SQL using LIKE operator / [CO3] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>. Demonstrate pattern matching in SQL using LIKE operator   [A]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>In SQL, the LIKE operator is used for pattern matching in queries to search for specific</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>text patterns within a column and is often combined with the following wildcard</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>characters</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>%   represents any sequence of characters)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>_     represents a single character). For example,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Eg: SELECT * FROM Employee WHERE EmpName LIKE 'A%';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>retrieves all employees whose names start with the letter A.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation with relevant examples – 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[5 x 5 = 25]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q52",
+      "number": 52,
+      "part": "PART_B",
+      "part_label": "Part B (Short Essay)",
+      "marks": 6,
+      "domain_tag": "[U] ",
+      "question": "Explain the difference between UNION and UNION ALL operators. / [CO3] [5x5 = 25]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Difference between UNION and UNION ALL. (5 Marks) UNION UNION ALL Removes duplicates Keeps duplicates Slower Faster Distinct result All records returned Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of UNION – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of UNION ALL – 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Comparison – 3</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q53",
+      "number": 53,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[K] ",
+      "question": "Show How to draw an E-R diagram of a Library Database. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>E-R diagram of a Library Database      [K]/[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>The following may be used as a reference for this question.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A library database ER diagram may include entities like Book, Member</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and Borrowing, connected by relationships. The Book entity has attributes like ISBN,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>title, and author, while Member has Member ID and name. The Borrowing relationship</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>links a Member to a Book they have borrowed, often with attributes like the borrow</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>date and return date.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Entities and Attributes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Book: Attributes include ISBN (Primary Key), title, author, and category.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Member: Attributes include MemberID (Primary Key), name, address,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and phone number.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Borrowing: This is a relationship entity that can have attributes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>like borrow_date and return_date.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Relationships</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Member \"borrows\" Book: A member can borrow multiple books, and a book</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>can be borrowed by multiple members, making it a many-to-many relationship</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(often resolved with the Borrowing entity).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Borrowing links Member and Book: The Borrowing entity connects a specific</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>member to a specific book, recording the details of that borrowing event.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example ER Diagram Structure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Book (Entity)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o ISBN (Primary Key)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o title</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o author</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Member (Entity)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o MemberID (Primary Key)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o name</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Borrowing (Relationship/Junction Entity)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o borrow_date</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o return_date</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o MemberID (Foreign Key referencing Member)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>o ISBN (Foreign Key referencing Book)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>This structure allows the database to track which member has borrowed which book</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and when it is due to be returned.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Sample diagram with relevant entities, attributes and relationships  (15 marks)</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q54",
+      "number": 54,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[K] ",
+      "question": "Show How to draw an E-R diagram of a Company Database. / [CO1]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Draw an ER Diagram of a Company Database. (15 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Identification of entities (Employee, Department, Project etc.) – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Attributes – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Relationships – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct cardinalities – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Neat ER diagram with proper notation – 3</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q55",
+      "number": 55,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[S] ",
+      "question": "Describe in detail the working of nested queries in SQL. Give suitable examples and write SQL queries that use nested queries in SELECT, WHERE, and HAVING clauses. / [CO3] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe in detail the working of nested queries in SQL. Give suitable examples and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>write SQL queries that use nested queries in SELECT, WHERE, and HA VING clauses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[S]/[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A nested query (or subquery) in SQL is a query inside another query that helps retrieve</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>data based on the results of the inner query. It can appear in the SELECT, WHERE, or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>HA VING clause.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example (SELECT):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT Name, (SELECT DeptName FROM Department WHERE</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Department.DeptID = Employee.DeptID) AS DepartmentName</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FROM Employee;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example (WHERE):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT Name FROM Employee WHERE DeptID = (SELECT DeptID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>FROM Department WHERE DeptName = 'HR');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example (HA VING):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>SELECT DeptID, A VG(Salary) FROM Employee</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>GROUP BY DeptID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>HA VING A VG(Salary) > (SELECT A VG(Salary) FROM Employee);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[15 x 1 = 15]</li></ul></div>",
+      "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
+      "repeated_in": [],
+      "has_official_scheme": true
+    },
+    {
+      "id": "Q56",
+      "number": 56,
+      "part": "PART_C",
+      "part_label": "Part C (Long Essay / Problem)",
+      "marks": 10,
+      "domain_tag": "[An] ",
+      "question": "Summarize normal form based on primary key and the corresponding normalization process. / [CO2] [15x1 = 15]",
+      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain Normal Forms and Normalization. (15 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of normalization – 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Primary key concept – 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• First Normal Form (1NF) Rules and Process – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Second Normal Form (2NF) Rules and Process – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Third Normal Form (3NF) Rules and Process – 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Appropriate examples – 2</li></ul></div>",
+      "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
+      "repeated_in": [],
+      "has_official_scheme": true
+    }
+  ]
+}

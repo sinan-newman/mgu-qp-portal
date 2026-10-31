@@ -606,11 +606,12 @@ const App = {
     async loadAllData() {
         const fetchResource = (apiUrl, staticUrl) => this.fetchResource(apiUrl, staticUrl);
 
-        const [papersData, deptsData, statsData, modelData] = await Promise.all([
+        const [papersData, deptsData, statsData, modelData, syllabiData] = await Promise.all([
             fetchResource('/api/papers?limit=10000&has_files=false', 'data/papers.json'),
             fetchResource('/api/departments', 'data/departments.json'),
             fetchResource('/api/stats', 'data/stats.json'),
-            fetchResource('/api/model-papers', 'data/model_papers.json')
+            fetchResource('/api/model-papers', 'data/model_papers.json'),
+            fetchResource('/api/syllabi', 'data/mgu_syllabi.json')
         ]);
 
         const rawPapers = (papersData && papersData.papers) ? papersData.papers : (Array.isArray(papersData) ? papersData : []);
@@ -632,6 +633,7 @@ const App = {
         this.departments = rawDepts.sort((a, b) => a.name.localeCompare(b.name));
         this.stats = statsData || {};
         this.modelCatalog = Array.isArray(modelData) ? modelData : [];
+        this.syllabi = (syllabiData && syllabiData.programs) ? syllabiData.programs : [];
     },
 
     buildCourseCatalogIndex() {
@@ -1510,6 +1512,9 @@ const App = {
                 aiNotesSection.classList.remove('hidden');
                 if (window.AiNotesStudio) {
                     window.AiNotesStudio.renderSection();
+                    if (!window.AiNotesStudio.state.activeCourse && window.AiNotesStudio.state.coursesList.length > 0) {
+                        window.AiNotesStudio.selectCourse(window.AiNotesStudio.state.coursesList[0].course_code);
+                    }
                 }
             }
         }
@@ -1959,6 +1964,54 @@ const App = {
         return courseList;
     },
 
+        getCourseSyllabus(course) {
+        if (!course) return null;
+        const deptCode = (course.dept_code || course.parent_dept || '').toUpperCase();
+        const deptName = (course.dept_name || course.parent_dept_name || '').toLowerCase();
+        const title = (course.title || '').toLowerCase();
+
+        const DEPT_MAP = {
+            'STA': 'Statistics', 'MAT': 'Mathematics', 'PHY': 'Physics', 'CHE': 'Chemistry',
+            'CSC': 'Computer Science', 'CSA': 'Computer Applications', 'BCA': 'Computer Applications',
+            'BBA': 'Business Administration', 'BST': 'Business Administration', 'COM': 'BCom',
+            'COA': 'BCom', 'COF': 'BCom', 'ECO': 'Economics', 'ENG': 'English', 'MAL': 'Malayalam',
+            'HIN': 'Hindi', 'ARB': 'Arabic', 'SAN': 'Sanskrit', 'HIS': 'History', 'POL': 'Political Science',
+            'SOC': 'Sociology', 'BOT': 'Botany', 'ZOO': 'Zoology', 'PSY': 'Psychology',
+            'BCH': 'Biochemistry', 'BIF': 'Bioinformatics', 'BTG': 'Biotechnology',
+            'BTS': 'Biological Techniques', 'AGD': 'Animation and Graphic Design',
+            'AVE': 'Animation and Visual Effects', 'MMD': 'Multimedia', 'AQC': 'Aquaculture',
+            'CYB': 'Cyber Forensics', 'ELT': 'Electronics', 'ECT': 'Electronics',
+            'FTQ': 'Food Technology', 'FSQ': 'Food Science', 'FOR': 'Forensic Science',
+            'GEO': 'Geology', 'HMS': 'Home Science', 'HMC': 'Hotel Management',
+            'MCB': 'Microbiology', 'BSW': 'BSW', 'BTT': 'BTTM', 'BFA': 'Applied Arts',
+            'MUM': 'Music', 'DAN': 'Bharathanatyam', 'BHN': 'Bharathanatyam',
+            'MOH': 'Mohiniyattam', 'KAT': 'Kathakali', 'PHL': 'Philosophy', 'JMC': 'Journalism'
+        };
+
+        const target = DEPT_MAP[deptCode];
+        const list = this.syllabi || [];
+
+        if (target) {
+            const found = list.find(p => p.program && p.program.toLowerCase().includes(target.toLowerCase()));
+            if (found) return found;
+        }
+        if (deptName) {
+            const found = list.find(p => p.program && (p.program.toLowerCase().includes(deptName) || deptName.includes(p.program.toLowerCase())));
+            if (found) return found;
+        }
+        const words = title.split(/\s+/).filter(w => w.length > 4);
+        for (const w of words) {
+            const found = list.find(p => p.program && p.program.toLowerCase().includes(w));
+            if (found) return found;
+        }
+
+        return {
+            program: course.dept_name ? `MGU FYUGP - ${course.dept_name}` : 'MGU FYUGP Syllabus',
+            main_syllabus: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp',
+            links: [{ title: 'Official MGU Syllabus', url: 'https://cap.mgu.ac.in/mguugp/syllabus.jsp' }]
+        };
+    },
+
     renderGroupedCourseCard(course) {
         const isAdmin = sessionStorage.getItem('mgu_admin_auth') === 'true';
         const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;
@@ -2121,6 +2174,34 @@ const App = {
                             `).join('')}
                         </div>
                     ` : ''}
+
+                    <!-- OFFICIAL SYLLABUS SECTION (AFTER MODEL QUESTION PAPER) -->
+                    ${(() => {
+                        const syl = this.getCourseSyllabus(course);
+                        if (!syl || !syl.main_syllabus) return '';
+                        const sylUrl = syl.main_syllabus;
+                        const sylTitle = `Syllabus - ${syl.program || course.title}`;
+                        return `
+                            <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60">
+                                <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/40 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2">
+                                    <div class="flex items-center gap-1.5 min-w-0">
+                                        <i class="bi bi-book-half text-emerald-600 dark:text-emerald-400 text-xs"></i>
+                                        <span class="text-[11px] sm:text-xs font-bold text-emerald-800 dark:text-emerald-300 truncate" title="${syl.program}">
+                                            📖 Official Syllabus: ${syl.program}
+                                        </span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 shrink-0">
+                                        <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Official Syllabus PDF">
+                                            <i class="bi bi-eye"></i> View
+                                        </button>
+                                        <a href="${sylUrl}" target="_blank" rel="noopener" class="p-1 text-xs rounded-lg bg-emerald-200/80 dark:bg-emerald-800/60 hover:bg-emerald-300 text-emerald-800 dark:text-emerald-200 transition" title="Open Syllabus on MGU Portal">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    })()}
                 </div>
             </div>
         `;
@@ -2263,6 +2344,32 @@ const App = {
                         `).join('')}
                     </div>
                 ` : ''}
+
+                <!-- OFFICIAL SYLLABUS SECTION (AFTER MODEL QUESTION PAPER) -->
+                ${(() => {
+                    const syl = this.getCourseSyllabus(p);
+                    if (!syl || !syl.main_syllabus) return '';
+                    const sylUrl = syl.main_syllabus;
+                    const sylTitle = `Syllabus - ${syl.program || p.title}`;
+                    return `
+                        <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2 text-xs">
+                            <div class="flex items-center gap-1.5 min-w-0">
+                                <i class="bi bi-book-half text-emerald-600 dark:text-emerald-400 text-xs"></i>
+                                <span class="text-[11px] font-bold text-emerald-800 dark:text-emerald-300 truncate" title="${syl.program}">
+                                    📖 Syllabus: ${syl.program}
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 shrink-0">
+                                <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <a href="${sylUrl}" target="_blank" rel="noopener" class="p-0.5 text-xs text-slate-500 hover:text-emerald-600 transition" title="Open Syllabus Link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                })()}
             </div>
         `;
     },
@@ -2361,6 +2468,21 @@ const App = {
                                                         `).join('')}
                                                     </div>
                                                 ` : ''}
+
+                                                <!-- OFFICIAL SYLLABUS IN TABLE (AFTER MODEL QUESTION PAPER) -->
+                                                ${(() => {
+                                                    const syl = this.getCourseSyllabus(course);
+                                                    if (!syl || !syl.main_syllabus) return '';
+                                                    const sylUrl = syl.main_syllabus;
+                                                    const sylTitle = `Syllabus - ${syl.program || course.title}`;
+                                                    return `
+                                                        <div class="pt-1 border-t border-slate-100 dark:border-slate-700/50">
+                                                            <button onclick="App.previewDirect(this, '${sylUrl}', '${sylTitle.replace(/'/g, "\\'")}', '${course.course_code || ''}')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus: ${syl.program}">
+                                                                <i class="bi bi-book-half"></i> Syllabus
+                                                            </button>
+                                                        </div>
+                                                    `;
+                                                })()}
                                             </div>
                                         </td>
                                         <td class="py-3 px-4 text-right">

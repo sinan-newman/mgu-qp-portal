@@ -14,6 +14,7 @@
  */
 
 const AiNotesStudio = {
+    cache: new Map(),
     state: {
         activeCourse: null,
         activePaperId: 'ALL', // 'ALL' | paperId
@@ -31,9 +32,12 @@ const AiNotesStudio = {
     },
 
     init() {
-        this.cache = new Map();
+        this.cache = this.cache || new Map();
         this.loadSettings();
         this.loadSyllabi();
+        if (window.App && window.App.papers) {
+            this.state.coursesList = this.getCourses();
+        }
     },
 
     loadSettings() {
@@ -372,6 +376,15 @@ const AiNotesStudio = {
 
         this.populateDeptDropdown();
         this.renderCoursesList();
+
+        // Auto-select first course if none selected so output is immediately visible
+        if (!this.state.activeCourse && this.state.coursesList.length > 0) {
+            setTimeout(() => {
+                if (!this.state.activeCourse && this.state.coursesList.length > 0) {
+                    this.selectCourse(this.state.coursesList[0].course_code || this.state.coursesList[0].title);
+                }
+            }, 30);
+        }
     },
 
     populateDeptDropdown() {
@@ -490,8 +503,27 @@ const AiNotesStudio = {
 
     selectCourse(courseKey, part = null) {
         if (!courseKey) return;
-        const course = this.state.coursesList.find(c => (c.course_code || c.title) === courseKey);
-        if (!course) return;
+        if (!this.state.coursesList || this.state.coursesList.length === 0) {
+            this.state.coursesList = this.getCourses();
+        }
+        if (!document.getElementById('aiNotesMainContainer')) {
+            this.renderSection();
+        }
+
+        const cleanKey = String(courseKey).trim().toUpperCase();
+        const course = this.state.coursesList.find(c => 
+            (c.course_code && c.course_code.toUpperCase() === cleanKey) ||
+            (c.title && c.title.trim().toUpperCase() === cleanKey) ||
+            (c.course_code || c.title) === courseKey
+        ) || this.state.coursesList.find(c => 
+            (c.course_code && c.course_code.toUpperCase().includes(cleanKey)) ||
+            (c.title && c.title.toUpperCase().includes(cleanKey))
+        );
+
+        if (!course) {
+            console.warn('Course not found for key:', courseKey);
+            return;
+        }
 
         this.state.activeCourse = course;
         if (part) this.state.activePart = part;
@@ -534,6 +566,7 @@ const AiNotesStudio = {
 
     async generateNotes(course, forceRegenerate = false) {
         if (!course) return;
+        if (!this.cache) this.cache = new Map();
         const marks = this.state.examMarks || 70;
         const cacheKey = `${course.course_code || course.title}_${marks}_solved_schemes`;
 
@@ -1426,3 +1459,13 @@ const AiNotesStudio = {
 };
 
 window.AiNotesStudio = AiNotesStudio;
+try {
+    AiNotesStudio.init();
+} catch (e) {
+    console.warn('AiNotesStudio auto-init warning:', e);
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        try { AiNotesStudio.init(); } catch (e) {}
+    });
+}

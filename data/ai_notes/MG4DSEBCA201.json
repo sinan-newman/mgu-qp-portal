@@ -26,8 +26,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Distinguish between the four outcomes represented in a confusion matrix. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>. Distinguish between the four outcomes represented in a confusion matrix.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>TP:Model correctly predicts positive class, TN: Model correctly predicts negative class, FP:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Model predicted positive which is actually negative, FN: Model predicted negative which is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>actually positive. [Award 0.75 marks for each correct definition ]</li></ul></div>",
+      "question": "Distinguish between the four outcomes represented in a confusion matrix.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>. Distinguish between the four outcomes represented in a confusion matrix.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>TP:Model correctly predicts positive class, TN: Model correctly predicts negative class, FP:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Model predicted positive which is actually negative, FN: Model predicted negative which is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>actually positive. [Award <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.75 marks)</span> for each correct definition ]</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -40,7 +40,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Differentiate between labelled and unlabelled data? [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Differentiate between labelled and unlabelled data? [CO1]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Differentiate between labelled and unlabelled data? [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -52,8 +52,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define centroid in K-Means clustering. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>. Define centroid in K-Means clustering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concept of kmeans clustering ,value of k and its importance and intial selection of centroid – 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concept of recalculation of centroid after each assignment of points – 1 mark</li></ul></div>",
+      "question": "Define centroid in K-Means clustering.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>. Define centroid in K-Means clustering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept of kmeans clustering ,value of k and its importance and intial selection of centroid – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept of recalculation of centroid after each assignment of points – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -66,7 +66,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Explain reinforcement learning with its basic components. [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain reinforcement learning with its basic components. [CO1]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain reinforcement learning with its basic components. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -78,8 +78,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Show why ML is important today. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Show why ML is important today.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Automatic decision making / large dataset handling / any real world application – 3 marks</li></ul></div>",
+      "question": "Show why ML is important today.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show why ML is important today.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Automatic decision making / large dataset handling / any real world application – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -92,7 +92,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Distinguish between regression and classification. [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Distinguish between regression and classification. [CO1]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Distinguish between regression and classification. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -104,8 +104,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Explain the difference between hard margin and soft margin SVM. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the difference between hard margin and soft margin SVM.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Hard margin: No misclassification allowed but data must be perfectly separable. 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Soft margin: Allows some misclassification for better generalization, Soft margin works better</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>with noisy datasets. 2 marks</li></ul></div>",
+      "question": "Explain the difference between hard margin and soft margin SVM.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the difference between hard margin and soft margin SVM.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hard margin: No misclassification allowed but data must be perfectly separable. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Soft margin: Allows some misclassification for better generalization, Soft margin works better</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with noisy datasets. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -118,7 +118,7 @@
       "marks": 2,
       "domain_tag": "[K]",
       "question": "Define confusion matrix? List its components. [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define confusion matrix? List its components. [CO1]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define confusion matrix? List its components. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -130,8 +130,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Describe logistic regression. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe logistic regression.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify Logistic regression as supervised learning classification algorithm 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Output specifications as categorical/binary I mark</li></ul></div>",
+      "question": "Describe logistic regression.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe logistic regression.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify Logistic regression as supervised learning classification algorithm <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output specifications as categorical/binary I mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -144,7 +144,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Define logistic regression? State one application. [U[[CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define logistic regression? State one application. [U[[CO2]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define logistic regression? State one application. [U[[CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -156,8 +156,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[An] ",
-      "question": "Compare clustering and classification. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Compare clustering and classification.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Classification definition and should contain labelled dataset 1.5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Clusteing --- unlabelled dataset 1.5 marks</li></ul></div>",
+      "question": "Compare clustering and classification.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare clustering and classification.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Classification definition and should contain labelled dataset <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Clusteing --- unlabelled dataset <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -170,7 +170,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "State the basic principle of the Naïve Bayes classifier? [CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>State the basic principle of the Naïve Bayes classifier? [CO2]...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the basic principle of the Naïve Bayes classifier? [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -182,8 +182,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Identify whether a given dataset is linearly separable or not. / [CO2] [3x5 = 15]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify whether a given dataset is linearly separable or not.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>If student correctly states whether data can/cannot be separated using a straight line, award marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>( Graphical illustration may also be accepted) 3 marks</li></ul></div>",
+      "question": "Identify whether a given dataset is linearly separable or not. [3x5 = 15]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify whether a given dataset is linearly separable or not.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If student correctly states whether data can/cannot be separated using a straight line, award marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>( Graphical illustration may also be accepted) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -196,7 +196,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "What is a perceptron in Artificial Neural Networks? [CO2] (5 X 3= 15 Marks)",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What is a perceptron in Artificial Neural Networks? [CO2] (5 X 3=...</em> in the context of Introduction to Machine Learning.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is a perceptron in Artificial Neural Networks? [CO2] (5 X 3= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -208,8 +208,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[An] ",
-      "question": "Analyze how multiple factors improve prediction accuracy in multiple linear regression. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Analyze how multiple factors improve prediction accuracy in multiple linear regression.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation should contain keywords like multiple independent variables, complex relationship,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>reduces prediction errors . Also award marks if explained with proper examples like house price</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>prediction using multiple variables like area, location, rooms, etc. 5 marks</li></ul></div>",
+      "question": "Analyze how multiple factors improve prediction accuracy in multiple linear regression.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze how multiple factors improve prediction accuracy in multiple linear regression.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation should contain keywords like multiple independent variables, complex relationship,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>reduces prediction errors . Also award marks if explained with proper examples like house price</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>prediction using multiple variables like area, location, rooms, etc. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -222,7 +222,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Describe the different types of Machine Learning with suitable examples. [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe the different types of Machine Learning with suitable examples. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -234,8 +234,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[An] ",
-      "question": "Explain the challenges faced while implementing ML models in real-world scenarios. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the challenges faced while implementing ML models in real-world scenarios.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Availabily of data , data quality ,noise issue 2 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Computational cost / training time / lack of labeled data 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Overfitting/Underfitting issues 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Any other issues like security/ethical/deployment 1 mark</li></ul></div>",
+      "question": "Explain the challenges faced while implementing ML models in real-world scenarios.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the challenges faced while implementing ML models in real-world scenarios.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Availabily of data , data quality ,noise issue <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Computational cost / training time / lack of labeled data <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overfitting/Underfitting issues <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any other issues like security/ethical/deployment <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -248,7 +248,7 @@
       "marks": 6,
       "domain_tag": "[A]",
       "question": "Explain the K-Nearest Neighbors (KNN) algorithm. Discuss the impact of the value of k. [CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the K-Nearest Neighbors (KNN) algorithm. Discuss the impact of the value of k. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -260,8 +260,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Build a Perceptron model for AND gate and draw the decision boundary. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Build a Perceptron model for AND gate and draw the decision boundary.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation of the model/equations/ weight,bias & activation function /AND gate truth table <span class=\"inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 ml-2\">3 mark</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Perceptron model diagram I mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Proper diagram with decision boundary 1 marks</li></ul></div>",
+      "question": "Build a Perceptron model for AND gate and draw the decision boundary.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Build a Perceptron model for AND gate and draw the decision boundary.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of the model/equations/ weight,bias & activation function /AND gate truth table <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perceptron model diagram I mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Proper diagram with decision boundary <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -274,7 +274,7 @@
       "marks": 6,
       "domain_tag": "[An]",
       "question": "Discuss Decision Tree classification. Explain how decision trees are constructed. [CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss Decision Tree classification. Explain how decision trees are constructed. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -286,8 +286,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the role of Machine Learning in image and speech recognition. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the role of Machine Learning in image and speech recognition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation including importance and applications . 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Learn patterns, identify objects and speech and make intelligent decisions automatically. 3 marks</li></ul></div>",
+      "question": "Explain the role of Machine Learning in image and speech recognition.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of Machine Learning in image and speech recognition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation including importance and applications . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Learn patterns, identify objects and speech and make intelligent decisions automatically. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -300,7 +300,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Describe Support Vector Machine (SVM) for linearly separable data with a suitable diagram. [CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe Support Vector Machine (SVM) for linearly separable data with a suitable diagram. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -312,8 +312,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write the Naive Bayes classifier algorithm and its working. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Write the Naive Bayes classifier algorithm and its working.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Equation with explanation of terms 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Working and importance 2 marks</li></ul></div>",
+      "question": "Write the Naive Bayes classifier algorithm and its working.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the Naive Bayes classifier algorithm and its working.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Equation with explanation of terms <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Working and importance <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -326,7 +326,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Explain the K-Means clustering algorithm. Discuss its advantages and disadvantages. [CO2]",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the K-Means clustering algorithm. Discuss its advantages and disadvantages. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false
@@ -338,8 +338,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Identify the learning task: Disease positive or negative prediction. Justify. / [CO1] [5x4 = 20]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identify the learning task: Disease positive or negative prediction. Justify.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Identification of the problem as classification task and the reasons 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concepts of disease positive/negative prediction which is a supervised classification task</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>since the output belongs to predefined classes (positive or negative) and the model learns</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>using labeled training data. 3 marks</li></ul></div>",
+      "question": "Identify the learning task: Disease positive or negative prediction. Justify. [5x4 = 20]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the learning task: Disease positive or negative prediction. Justify.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identification of the problem as classification task and the reasons <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concepts of disease positive/negative prediction which is a supervised classification task</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>since the output belongs to predefined classes (positive or negative) and the model learns</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using labeled training data. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -352,7 +352,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Discuss the ethical considerations in Machine Learning with suitable real-world examples. [CO2] (4 X 5= 20 Marks)",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the ethical considerations in Machine Learning with suitable real-world examples. [CO2] (4 X 5= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(20 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false

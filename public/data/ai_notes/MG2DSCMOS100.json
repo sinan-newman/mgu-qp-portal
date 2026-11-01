@@ -27,8 +27,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "How do you remove an element from a List? a). list.delete(value); b). list.remove(value); c). list.pop(value); d). list.clear(value); / [CO1] a). continue b). stop c). break d). exit / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). list.remove(value);                                                              U    1</li></ul></div>",
+      "question": "How do you remove an element from a List? a). list.delete(value); b). list.remove(value); c). list.pop(value); d). list.clear(value); a). continue b). stop c). break d). exit",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). list.remove(value); U 1</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -40,8 +40,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is the function of && operator in Dart? a). To perform a logical AND operation b). To perform a logical OR operation c). To perform a logical NOT operation d). To perform an arithmetic operation / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a) To perform a logical AND operation K CO1</li></ul></div>",
+      "question": "What is the function of && operator in Dart? a). To perform a logical AND operation b). To perform a logical OR operation c). To perform a logical NOT operation d). To perform an arithmetic operation",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) To perform a logical AND operation K CO1</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -54,7 +54,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "A flutter program to display simple message using stateless widgets",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A flutter program to display simple message using stateless widge...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A flutter program to display simple message using stateless widgets . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -69,7 +69,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Which of the following control flow statements is used to terminate a loop?",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c) break                                                                                     U              1</li></ul></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) break U 1</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -81,8 +81,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Which collection uses key-value pairs? a). List b). Set c). Map d). Queue / [CO1]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Which collection uses key-value pairs? a). List b). Set c). Map d...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "question": "Which collection uses key-value pairs? a). List b). Set c). Map d). Queue",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which collection uses key-value pairs? a). List b). Set c). Map d). Queue . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false
@@ -95,7 +95,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "A flutter program to Generate increment counter by pressing a button using statefull widgets",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A flutter program to Generate increment counter by pressing a but...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A flutter program to Generate increment counter by pressing a button using statefull widgets . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -109,8 +109,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is encapsulation? a). Hiding the details and showing only the necessary parts. b). Creating objects from a class c). Using methods only. d). Inheriting from other classes. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Hiding the details and showing only the necessary parts.  U                           1</li></ul></div>",
+      "question": "What is encapsulation? a). Hiding the details and showing only the necessary parts. b). Creating objects from a class c). Using methods only. d). Inheriting from other classes.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). Hiding the details and showing only the necessary parts. U 1</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -122,8 +122,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is the correct syntax to declare a map in Dart? / [CO1] a). var map = {}; b). var map = []; c). var map = {‘key’: ‘value’}; d). var map = (‘key’, ‘value’);",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c) var map = {'key': value}; U CO1</li></ul></div>",
+      "question": "What is the correct syntax to declare a map in Dart? a). var map = {}; b). var map = []; c). var map = {‘key’: ‘value’}; d). var map = (‘key’, ‘value’);",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) var map = {'key': value}; U CO1</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -136,7 +136,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "A flutter program to display an image using assets",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>A flutter program to display an image using assets...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A flutter program to display an image using assets . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -150,8 +150,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the first step in setting up flutter on a new machine? a). Installing flutter SDK b). Creating a new project c). Running flutter doctor d). Configuring the IDE / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). Installing Flutter SDK                                                          K                           2</li></ul></div>",
+      "question": "What is the first step in setting up flutter on a new machine? a). Installing flutter SDK b). Creating a new project c). Running flutter doctor d). Configuring the IDE",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). Installing Flutter SDK K 2</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -163,8 +163,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Which method is used to save a string value in Shared Preferences? a). setstring() b). save String() c). store String() d). put String() / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d) putString() K CO2</li></ul></div>",
+      "question": "Which method is used to save a string value in Shared Preferences? a). setstring() b). save String() c). store String() d). put String()",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d) putString() K CO2</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -177,7 +177,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Login Page with Form Validation & Styling Task: Create a Flutter login page with a form containing email and password fields. a.Implement validation (e.g., email format, password length). b.Style the text fields with curved borders. c.Add a styled login button.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Login Page with Form Validation & Styling Task: Create a Flutter ...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Login Page with Form Validation & Styling Task: Create a Flutter login page with a form containing email and password fields. a.Implement validation (e.g., email format, password length). b.Style the text fields with curved borders. c.Add a styled login button. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -191,8 +191,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is the advantage of using adaptive widgets in Flutter? a). They automatically adjust their appearance based on the platform. b). They reduce the need for state management. c). They prevent UI updates in a Stateful widget. d). They replace the need for set State(). / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a). They automatically adjust their appearance based on the platform.  U            2</li></ul></div>",
+      "question": "What is the advantage of using adaptive widgets in Flutter? a). They automatically adjust their appearance based on the platform. b). They reduce the need for state management. c). They prevent UI updates in a Stateful widget. d). They replace the need for set State().",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). They automatically adjust their appearance based on the platform. U 2</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -204,8 +204,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "If running flutter doctor show issues what is likely first step to resolve them? a). Reinstall flutter b). Run flutter clean c). Restart the IDE d). Follow the recommendations provided by flutter doctor / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d) Follow the recommendations provided by flutter doctor U CO2</li></ul></div>",
+      "question": "If running flutter doctor show issues what is likely first step to resolve them? a). Reinstall flutter b). Run flutter clean c). Restart the IDE d). Follow the recommendations provided by flutter doctor",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d) Follow the recommendations provided by flutter doctor U CO2</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -218,7 +218,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "List of Fruits with Detail Screen Task: Create a Flutter app that displays a list of fruits, each with an image and name. a.Clicking on a fruit should navigate to a new screen displaying the same fruit’s details. b.Use a List View.builder() to display the list dynamically.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List of Fruits with Detail Screen Task: Create a Flutter app that...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List of Fruits with Detail Screen Task: Create a Flutter app that displays a list of fruits, each with an image and name. a.Clicking on a fruit should navigate to a new screen displaying the same fruit’s details. b.Use a List View.builder() to display the list dynamically. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -232,8 +232,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Which of the following does a Asset folder does not contain ? a). Images b). Fonts c). static data d). Configuration files / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>d). Configuration files                                                                K                          2</li></ul></div>",
+      "question": "Which of the following does a Asset folder does not contain ? a). Images b). Fonts c). static data d). Configuration files",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). Configuration files K 2</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -245,8 +245,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the shortcut key to open the command palette in V SCode? a). Ctrl + Shift + P b). Ctrl + Shift + I c). Ctrl + Shift +O d). Ctrl + Shift + K / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>a) Ctrl + Shift + P K CO2</li></ul></div>",
+      "question": "What is the shortcut key to open the command palette in V SCode? a). Ctrl + Shift + P b). Ctrl + Shift + I c). Ctrl + Shift +O d). Ctrl + Shift + K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Ctrl + Shift + P K CO2</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -259,7 +259,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Firebase Authentication (Basic) Task: Create a Flutter app that integrates Firebase Authentication. a.Allow users to sign up and log in with email and password. b.Display a welcome message after a successful login.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Firebase Authentication (Basic) Task: Create a Flutter app that i...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Firebase Authentication (Basic) Task: Create a Flutter app that integrates Firebase Authentication. a.Allow users to sign up and log in with email and password. b.Display a welcome message after a successful login. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -273,8 +273,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the primary purpose of a GET request in a RESTful API? a). To create a new resource b). To update an existing resource c). To retrieve data from a server d). To delete a resource / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). To retrieve data from a server                                              K                          3</li></ul></div>",
+      "question": "What is the primary purpose of a GET request in a RESTful API? a). To create a new resource b). To update an existing resource c). To retrieve data from a server d). To delete a resource",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). To retrieve data from a server K 3</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -286,8 +286,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is the main advantage of using Firestore over Firebase Realtime Database? a). Firestore is better for large binary files b). Firestore supports offline data persistence c). Firestore allows for more flexible querying and scaling d). Firestore is cheaper to use / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c) Firestore allows more flexible querying and scaling U CO3</li></ul></div>",
+      "question": "What is the main advantage of using Firestore over Firebase Realtime Database? a). Firestore is better for large binary files b). Firestore supports offline data persistence c). Firestore allows for more flexible querying and scaling d). Firestore is cheaper to use",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) Firestore allows more flexible querying and scaling U CO3</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -300,7 +300,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Fetch Data from API & Handle Errors Task: Use the https://jsonplaceholder.typicode.com/ API to fetch and display data in a Flutter app. a.Show a list of users/posts in a List View. b.Implement error handling for failed API calls (e.g., show an error message).",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Fetch Data from API & Handle Errors Task: Use the https://jsonpla...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Fetch Data from API & Handle Errors Task: Use the https://jsonplaceholder.typicode.com/ API to fetch and display data in a Flutter app. a.Show a list of users/posts in a List View. b.Implement error handling for failed API calls (e.g., show an error message). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -314,8 +314,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Which storage option provides real-time database synchronization in Flutter? a). SQLite b). Cloud Firestore c). Shared Preferences d). Hive / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). Cloud Firestore                                                                     U                         3</li></ul></div>",
+      "question": "Which storage option provides real-time database synchronization in Flutter? a). SQLite b). Cloud Firestore c). Shared Preferences d). Hive",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). Cloud Firestore U 3</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -327,8 +327,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What programming language is used to develop Flutter applications? a). Java b). Kotlin c). Swift d). Dart / [CO3]",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>What programming language is used to develop Flutter applications...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "question": "What programming language is used to develop Flutter applications? a). Java b). Kotlin c). Swift d). Dart",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What programming language is used to develop Flutter applications? a). Java b). Kotlin c). Swift d). Dart . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false
@@ -341,7 +341,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "UI Clone Task Task: Choose a simple UI design and replicate it in Flutter. It can be a login page, profile page, or any basic screen with proper layout and styling.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>UI Clone Task Task: Choose a simple UI design and replicate it in...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering UI Clone Task Task: Choose a simple UI design and replicate it in Flutter. It can be a login page, profile page, or any basic screen with proper layout and styling. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -355,8 +355,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Which of the following is used to persist data locally using key-value pairs in Flutter? a). Cloud Firestore b). SQLite c). Shared Preferences d). Firebase Authentication / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c). SharedPreferences                                                               K                         3</li></ul></div>",
+      "question": "Which of the following is used to persist data locally using key-value pairs in Flutter? a). Cloud Firestore b). SQLite c). Shared Preferences d). Firebase Authentication",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). SharedPreferences K 3</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -368,8 +368,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is Firebase Authentication mainly used for? a).Sending emails b).Storing images c).Managing user sign-in and sign-up d).Building UI / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>c) Managing user sign-in and sign-up K CO3</li></ul></div>",
+      "question": "What is Firebase Authentication mainly used for? a).Sending emails b).Storing images c).Managing user sign-in and sign-up d).Building UI",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) Managing user sign-in and sign-up K CO3</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -382,7 +382,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a Map that stores country names as keys and their capital cities as value",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Create a Map that stores country names as keys and their capital ...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a Map that stores country names as keys and their capital cities as value . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -396,8 +396,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What does Firestore allow you to do in real-time? a). Synchronize files between devices b). Synchronize data changes across devices c). Store encrypted data d). Track user activities / [CO3] [1x10 = 10] Part B Short Answer Questions Answer any 4 questions Each question carries 5 marks",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b). Synchronize data changes across devices                         U                        3</li></ul></div>",
+      "question": "What does Firestore allow you to do in real-time? a). Synchronize files between devices b). Synchronize data changes across devices c). Store encrypted data d). Track user activities [1x10 = 10] Part B Short Answer Questions Answer any 4 questions Each question carries 5 marks",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). Synchronize data changes across devices U 3</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -409,8 +409,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the purpose of the PATCH method in RESTful APIs? a). To completely replace a resource b). To apply partial updates to a resource c). To delete a resource d). To retrieve data from a server / [CO3] [1x10 = 10] Part B Short Answer Questions Answer any 4 questions Each question carries 5 marks",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>b) To apply partial updates to a resource U CO3 [1x10 = 10]</li></ul></div>",
+      "question": "What is the purpose of the PATCH method in RESTful APIs? a). To completely replace a resource b). To apply partial updates to a resource c). To delete a resource d). To retrieve data from a server [1x10 = 10] Part B Short Answer Questions Answer any 4 questions Each question carries 5 marks",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) To apply partial updates to a resource U CO3 [1x10 = 10]</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -423,7 +423,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement single inheritance: Create a Parent class with a method say Hello() and derive a Child class that calls this method. Flutter programs(Chooseanyone)",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Implement single inheritance: Create a Parent class with a method...</em> in the context of Foundations of Mobile Development Systems.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Implement single inheritance: Create a Parent class with a method say Hello() and derive a Child class that calls this method. Flutter programs(Chooseanyone) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -437,8 +437,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Explain the difference between Set and List in Dart. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the difference between Set and List in Dart.  U   1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Set and List-2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparison- 3 mark</li></ul></div>",
+      "question": "Explain the difference between Set and List in Dart.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the difference between Set and List in Dart. U 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Set and List- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -450,8 +450,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "How do try, catch, and finally work in Dart for handling exceptions? Provide a real-world Flutter example. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Meaning of exception handling → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Role of try block → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Role of catch block → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Role of finally block → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Flutter-related example explanation → 1 mark</li></ul></div>",
+      "question": "How do try, catch, and finally work in Dart for handling exceptions? Provide a real-world Flutter example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Meaning of exception handling → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Role of try block → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Role of catch block → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Role of finally block → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flutter-related example explanation → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -463,8 +463,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is exception handling, and why is it important in programming? Explain with an example. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is exception handling, and why is it important in programming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain with an example                                                                                    K    1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Exception Handling -1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Importance of Exception Handling -2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example and Explanation of Example-2 mark</li></ul></div>",
+      "question": "What is exception handling, and why is it important in programming? Explain with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is exception handling, and why is it important in programming?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with an example K 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Exception Handling - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance of Exception Handling - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example and Explanation of Example- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -476,8 +476,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is abstraction in Dart, and how does it simplify complex Flutter applications? / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of abstraction → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Use of abstract classes/interfaces → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• How it hides complexity → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Importance in Flutter apps → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example explanation → 1 mark</li></ul></div>",
+      "question": "What is abstraction in Dart, and how does it simplify complex Flutter applications?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Definition of abstraction → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Use of abstract classes/interfaces → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• How it hides complexity → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Importance in Flutter apps → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example explanation → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -489,8 +489,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "How does Shared Preferences store data in a Flutter application? / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How does Shared Preferences store data in a Flutter application?      U     2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation-5 Mark</li></ul></div>",
+      "question": "How does Shared Preferences store data in a Flutter application?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How does Shared Preferences store data in a Flutter application? U 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -502,8 +502,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Which Flutter widget library is specifically designed to replicate i OS-style UI components? / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(K)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct identification of the library (Cupertino) → 3 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Recall of related fact (used for iOS-style UI / Apple design) → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Mention of example widget (e.g., Cupertino Button, Cupertino Navigation Bar) → 1 mark</li></ul></div>",
+      "question": "Which Flutter widget library is specifically designed to replicate i OS-style UI components?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(K)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Correct identification of the library (Cupertino) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Recall of related fact (used for iOS-style UI / Apple design) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Mention of example widget (e.g., Cupertino Button, Cupertino Navigation Bar) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -515,8 +515,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the key difference between a Stateless and a Stateful widget in Flutter? / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the key difference between a Stateless and a Stateful widget in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Flutter?                                                                                                             K      2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Stateless Widget and Stateful Widget -2mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Key Difference-2 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example -1 mark</li></ul></div>",
+      "question": "What is the key difference between a Stateless and a Stateful widget in Flutter?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the key difference between a Stateless and a Stateful widget in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flutter? K 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Stateless Widget and Stateful Widget - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Key Difference- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -528,8 +528,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Distinguish between the release mode and build mode. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Meaning of release mode → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Meaning of debug mode → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Key differences explained (performance, debugging, size, etc.) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Practical understanding/use case → 1 mark</li></ul></div>",
+      "question": "Distinguish between the release mode and build mode.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Meaning of release mode → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Meaning of debug mode → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key differences explained (performance, debugging, size, etc.) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Practical understanding/use case → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -541,8 +541,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What are the differences between Firebase Authentication and Firebase Firestore in Flutter? / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What are the differences between Firebase Authentication and Firebase</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Firestore in Flutter?                                                                                      U         3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Differences -3 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example of each-2 mark</li></ul></div>",
+      "question": "What are the differences between Firebase Authentication and Firebase Firestore in Flutter?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What are the differences between Firebase Authentication and Firebase</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Firestore in Flutter? U 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differences - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example of each- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -554,8 +554,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Explain the concept of Firestore in flutter. / [CO3]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of Firestore → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Nature (NoSQL, cloud database) → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Key features (real-time updates, scalability, etc.) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example usage in Flutter → 1 mark</li></ul></div>",
+      "question": "Explain the concept of Firestore in flutter.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Definition of Firestore → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Nature (NoSQL, cloud database) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key features (real-time updates, scalability, etc.) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example usage in Flutter → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -567,8 +567,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the purpose of the DELETE method in RESTful APIs? / [CO3] [5x4 = 20] Part C Essay Questions Answer any 2 questions Each question carries 10 marks",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>What is the purpose of the DELETE method in RESTful APIs?           K     3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation-5 mark</li></ul></div>",
+      "question": "What is the purpose of the DELETE method in RESTful APIs? [5x4 = 20] Part C Essay Questions Answer any 2 questions Each question carries 10 marks",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the purpose of the DELETE method in RESTful APIs? K 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -580,8 +580,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Describe the role of SQLite in Flutter applications. / [CO3] [5x4 = 20] Part C Essay Questions Answer any 2 questions Each question carries 10 marks",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Definition of SQLite → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Role as local database → 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Key features (offline storage, lightweight, etc.) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example use case → 1 mark [5x4 = 20]</li></ul></div>",
+      "question": "Describe the role of SQLite in Flutter applications. [5x4 = 20] Part C Essay Questions Answer any 2 questions Each question carries 10 marks",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Definition of SQLite → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Role as local database → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key features (offline storage, lightweight, etc.) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example use case → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> [5x4 = 20]</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -593,8 +593,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Discuss the advantages and disadvantages of using Lists, Sets, and Maps in Dart. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the advantages and disadvantages of using Lists, Sets, and Maps</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>in Dart.                                                                                                            K        1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Advantages of Lists, Sets and Maps-5 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Disadvantages of Lists, Sets and Maps -5Mark</li></ul></div>",
+      "question": "Discuss the advantages and disadvantages of using Lists, Sets, and Maps in Dart.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the advantages and disadvantages of using Lists, Sets, and Maps</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>in Dart. K 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages of Lists, Sets and Maps- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Disadvantages of Lists, Sets and Maps - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5Mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -606,8 +606,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Discuss the importance of objects in managing application data in Flutter. How do they interact with UI components? / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Meaning of objects in Dart → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Role in storing and organizing data → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• How objects simplify data handling in apps → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Interaction with UI (widgets using object data, state handling) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example (model class used in UI) → 2 marks</li></ul></div>",
+      "question": "Discuss the importance of objects in managing application data in Flutter. How do they interact with UI components?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Meaning of objects in Dart → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Role in storing and organizing data → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• How objects simplify data handling in apps → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Interaction with UI (widgets using object data, state handling) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example (model class used in UI) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -619,8 +619,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Explain the concept of classes in Dart. How do they help in organizing and structuring Flutter applications? / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the concept of classes in Dart. How do they help in organizing and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>structuring Flutter applications?                                                                 K        1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Concept of classes-4mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation-3 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Syntax-3 Mark</li></ul></div>",
+      "question": "Explain the concept of classes in Dart. How do they help in organizing and structuring Flutter applications?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the concept of classes in Dart. How do they help in organizing and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structuring Flutter applications? K 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept of classes- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Syntax- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -632,8 +632,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Compare and contrast different looping mechanisms in Dart (for, while, do- while) / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Explanation of for loop → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Explanation of while loop → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Explanation of do-while loop → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Key differences (entry vs exit control, usage scenarios) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example illustrating loops → 2 marks</li></ul></div>",
+      "question": "Compare and contrast different looping mechanisms in Dart (for, while, do- while)",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO1|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Explanation of for loop → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Explanation of while loop → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Explanation of do-while loop → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key differences (entry vs exit control, usage scenarios) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example illustrating loops → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -645,8 +645,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Explain the role of set State() in Flutter state management. How does it impact UI updates? Provide examples. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explain the role of setState() in Flutter state management. How does it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>impact UI updates? Provide examples.                                                     U         2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition -4 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation-3 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example-3mark</li></ul></div>",
+      "question": "Explain the role of set State() in Flutter state management. How does it impact UI updates? Provide examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of setState() in Flutter state management. How does it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>impact UI updates? Provide examples. U 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -658,8 +658,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Discuss the differences between Material and Cupertino widgets in Flutter and their appropriate use cases. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Explanation of Material widgets → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Explanation of Cupertino widgets → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Differences (design style, platform usage, UI behaviour) → 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Appropriate use cases → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Example widgets → 1 mark</li></ul></div>",
+      "question": "Discuss the differences between Material and Cupertino widgets in Flutter and their appropriate use cases.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO2|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Explanation of Material widgets → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Explanation of Cupertino widgets → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Differences (design style, platform usage, UI behaviour) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Appropriate use cases → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example widgets → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -671,8 +671,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "How does Flutter’s reactive UI system differ from traditional imperative UI frameworks? / [CO3] [10x2 = 20]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How does Flutter’s reactive UI system differ from traditional imperative UI</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>frameworks?                                                                                               U         3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Definition of Reactive UI and Imperative UI framework -4 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Comparison-6 Mark</li></ul></div>",
+      "question": "How does Flutter’s reactive UI system differ from traditional imperative UI frameworks? [10x2 = 20]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How does Flutter’s reactive UI system differ from traditional imperative UI</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>frameworks? U 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Reactive UI and Imperative UI framework - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -684,8 +684,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the difference between idempotent and non-idempotent HTTP methods in RESTful APIs? / [CO3] [10x2 = 20]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct definition of Idempotent methods → 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Correct definition of Non-idempotent methods → 3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Listing correct examples → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>• Stating the key difference (same result vs different result on repetition) → 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[10x2 = 20]</li></ul></div>",
+      "question": "What is the difference between idempotent and non-idempotent HTTP methods in RESTful APIs? [10x2 = 20]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(U)/ [CO3|]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Correct definition of Idempotent methods → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Correct definition of Non-idempotent methods → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Listing correct examples → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Stating the key difference (same result vs different result on repetition) → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[10x2 = 20]</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true

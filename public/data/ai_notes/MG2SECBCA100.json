@@ -27,8 +27,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Why is DNS important for internet browsing? / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Why is DNS important for internet browsing? [K] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Internet understands IP address only. The domain name to ip address conversion is done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DNS server.  ---explanation 5 marks</li></ul></div>",
+      "question": "Why is DNS important for internet browsing?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is DNS important for internet browsing? / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Internet understands IP address only. The domain name to ip address conversion is done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DNS server. ---explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -40,8 +40,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Implement a navbar with an example. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>length Returns the number of characters in a string. let str = 'Hello'; console.log(str.length);  // 5</li></ul></div>",
+      "question": "Implement a navbar with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>length Returns the number of characters in a string. let str = 'Hello'; console.log(str.length); // 5</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -54,7 +54,7 @@
       "marks": 2,
       "domain_tag": "[K][1]",
       "question": "Define HTML and explain its importance in web development.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define HTML and explain its importance in web development....</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define HTML and explain its importance in web development. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -68,8 +68,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Describe how HTTP and FTP work and their roles in web communication. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>mark for explanation and 3 mark for code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>A function in JavaScript is a block of reusable code that performs a specific task when called.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><html> <head>   <title>Alert Function Example</title> </head></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><body></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><button onclick=\"hello()\">Click Me</button></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><script></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>function hello() {       alert(\"Hello World ! Welcome to JavaScript\");     }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'></script> </body> </html></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>An event is an action that occurs in the browser, such as a click, mouseover, or key press.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>JavaScript can respond to these events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><button onclick=\"showMessage()\">Click Me</button></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>DOM traversing means navigating through the structure of an HTML document (called the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Document Object Model or DOM) to access, modify, or interact with specific elements using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>JavaScript. It allows developers to move between parent, child, and sibling nodes in the HTML</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>tree. This is done using properties like parentNode, childNodes, firstElementChild,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>nextElementSibling, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'><html> <body> <div id=\"Parentdiv\">   <p id=\"ChildPara1\">This is inside a div.</p></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'></div> <script></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>var innerPara = document.getElementById(\"ChildPara1\");    // Get the <p> element</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>var parentDiv = innerPara.parentNode;                // Traverse to parent <div></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>alert(\"Parent ID is: \" + parentDiv.id);              // Show the parent ID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'></script> </body></html></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[15 X 1= 15]</li></ul></div>",
+      "question": "Describe how HTTP and FTP work and their roles in web communication.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>mark for explanation and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span> for code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A function in JavaScript is a block of reusable code that performs a specific task when called.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Alert Function Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function hello() { alert(\"Hello World ! Welcome to JavaScript\"); }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An event is an action that occurs in the browser, such as a click, mouseover, or key press.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript can respond to these events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DOM traversing means navigating through the structure of an HTML document (called the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Document Object Model or DOM) to access, modify, or interact with specific elements using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript. It allows developers to move between parent, child, and sibling nodes in the HTML</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tree. This is done using properties like parentNode, childNodes, firstElementChild,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>nextElementSibling, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is inside a div.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var innerPara = document.getElementById(\"ChildPara1\"); // Get the element</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var parentDiv = innerPara.parentNode; // Traverse to parent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>alert(\"Parent ID is: \" + parentDiv.id); // Show the parent ID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15 X 1= 15]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -81,8 +81,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Define web hosting, and why is it necessary for websites? / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>toUpperCase() and toLowerCase()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Converts all characters to uppercase or lowercase.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let s = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(s.toUpperCase());  // JAVASCRIPT</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(s.toLowerCase());  // javascript</li></ul></div>",
+      "question": "Define web hosting, and why is it necessary for websites?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>toUpperCase() and toLowerCase()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Converts all characters to uppercase or lowercase.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let s = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.toUpperCase()); // JAVASCRIPT</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.toLowerCase()); // javascript</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -95,7 +95,7 @@
       "marks": 2,
       "domain_tag": "[K][1]",
       "question": "Explain how a table is created in HTML.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Explain how a table is created in HTML....</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain how a table is created in HTML. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -109,8 +109,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "How would you set up a basic web server on Linux? List the steps. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>How would you set up a basic web server on Linux? List the steps. [A] / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation – 3 marks ..steps 2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Steps to set up a basic web server on Linux:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>i. Install a web server software like Apache.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>ii. Start the web server so it begins running.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>iii. Set it to start automatically when the computer turns on.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>iv. Place your website files in the default web directory: /var/www/html.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>v. Finally, open a browser and check if the server is working by typing the server's IP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>address or http://localhost.</li></ul></div>",
+      "question": "How would you set up a basic web server on Linux? List the steps.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How would you set up a basic web server on Linux? List the steps. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> ..steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps to set up a basic web server on Linux:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>i. Install a web server software like Apache.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ii. Start the web server so it begins running.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iii. Set it to start automatically when the computer turns on.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iv. Place your website files in the default web directory: /var/www/html.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>v. Finally, open a browser and check if the server is working by typing the server's IP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>address or http://localhost.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -122,8 +122,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Create a definition list of any five input devices. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>charAt(index) Returns the character at the specified index (starts at 0). let s = 'MGU'; console.log(s.charAt(0));  // M console.log(s.charAt(2));  // U</li></ul></div>",
+      "question": "Create a definition list of any five input devices.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>charAt(index) Returns the character at the specified index (starts at 0). let s = 'MGU'; console.log(s.charAt(0)); // M console.log(s.charAt(2)); // U</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -136,7 +136,7 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "List three advantages of making a website responsive.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>List three advantages of making a website responsive....</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List three advantages of making a website responsive. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -150,8 +150,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Describe the use of input box in Java Script. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Describe the use of input box in JavaScript. [U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Explanation– 3 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Example code – 2 marks</li></ul></div>",
+      "question": "Describe the use of input box in Java Script.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the use of input box in JavaScript. / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example code – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -163,8 +163,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "List and briefly explain the advantages of using AJAX in web applications. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>indexOf() and lastIndexOf()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>indexOf() returns the position of the first occurrence of a substring. lastIndexOf() returns the last.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Returns -1 if not found.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let str = 'banana';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Page 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.indexOf('a'));      // 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.lastIndexOf('a'));  // 5</li></ul></div>",
+      "question": "List and briefly explain the advantages of using AJAX in web applications.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indexOf() and lastIndexOf()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indexOf() returns the position of the first occurrence of a substring. lastIndexOf() returns the last.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Returns -1 if not found.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'banana';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Page 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.indexOf('a')); // 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.lastIndexOf('a')); // 5</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -177,7 +177,7 @@
       "marks": 2,
       "domain_tag": "[K][2]",
       "question": "Define the Document Object Model (DOM) and explain its role in Java Script.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Define the Document Object Model (DOM) and explain its role in Ja...</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define the Document Object Model (DOM) and explain its role in Java Script. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -191,8 +191,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Implement a function that removes duplicate values from an array. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>marks each for each concept.</li></ul></div>",
+      "question": "Implement a function that removes duplicate values from an array.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks each for each concept.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -204,8 +204,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Describe the key features of AJAX-based web applications with examples. / [CO2]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>slice(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Extracts part of a string from start index to end index (end not included). Supports negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let str = 'Web Technologies';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.slice(0, 3));  // Web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.slice(-12));   // Technologies</li></ul></div>",
+      "question": "Describe the key features of AJAX-based web applications with examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>slice(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Extracts part of a string from start index to end index (end not included). Supports negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'Web Technologies';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.slice(0, 3)); // Web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.slice(-12)); // Technologies</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -218,7 +218,7 @@
       "marks": 2,
       "domain_tag": "[U][2]",
       "question": "Describe how get Full Year() and get Month() methods are used in Java Script.",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>Describe how get Full Year() and get Month() methods are used in ...</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Describe how get Full Year() and get Month() methods are used in Java Script. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -232,8 +232,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Discuss the disadvantages of AJAX and how they can impact web development. / [CO2] [5x4 = 20]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discuss the disadvantages of AJAX and how they can impact web development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[U] / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>AJAX allows web pages to update dynamically without reloading. This enhances user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>experience by enabling faster interactions. The main concern while using AJAX in web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>development are compactability issues and security compromises. Security concerns and the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>potential for increased server load are other drawbacks that may affect performance and require</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>additional development efforts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Discussion with disadvantages-  4 marks .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Impact on web development – 1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>[5 X 4 = 20]</li></ul></div>",
+      "question": "Discuss the disadvantages of AJAX and how they can impact web development. [5x4 = 20]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the disadvantages of AJAX and how they can impact web development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AJAX allows web pages to update dynamically without reloading. This enhances user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>experience by enabling faster interactions. The main concern while using AJAX in web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>development are compactability issues and security compromises. Security concerns and the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>potential for increased server load are other drawbacks that may affect performance and require</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>additional development efforts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discussion with disadvantages- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impact on web development – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5 X 4 = 20]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -245,8 +245,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Implement onchange event in Java Script. / [CO2] [5x4 = 20] MGU-BCA (HONOURS) REGULAR/IMPROVEMENT/REAPPEARANCE EXAMINATION APRIL 2026",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>substring(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Similar to slice but does not support negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let str = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.substring(0, 4));  // Java</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.substring(4));     // Script</li></ul></div>",
+      "question": "Implement onchange event in Java Script. [5x4 = 20] MGU-BCA (HONOURS) REGULAR/IMPROVEMENT/REAPPEARANCE EXAMINATION APRIL 2026",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>substring(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Similar to slice but does not support negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.substring(0, 4)); // Java</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.substring(4)); // Script</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -259,7 +259,7 @@
       "marks": 2,
       "domain_tag": "[U][2]",
       "question": "How does AJAX improve user experience compared to traditional web applications? (4 X 5 = 20 Marks)",
-      "solution_html": "<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Direct Conceptual Definition (1 Mark):</strong> Clear and precise technical definition directly addressing <em>How does AJAX improve user experience compared to traditional web...</em> in the context of Web Technologies.<br>• <strong>Standard Formulation / Example (1 Mark):</strong> Explicit statement of key properties, formula, operational domain, or standard illustrative example.</div><div class='text-xs leading-relaxed text-slate-700 dark:text-slate-300 pl-1'><strong>Key Formulation:</strong> Under the MGU FYUGP curriculum, this concept establishes fundamental operational boundaries. Complete answers must present the exact terminology, standard mathematical or theoretical notation, and boundary conditions.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering How does AJAX improve user experience compared to traditional web applications? (4 X 5 = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(20 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -273,8 +273,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Develop a well-structured HTML page that includes multiple header levels, paragraphs, and line breaks. Explain the role of each tag used. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Develop a well-structured HTML page that includes multiple header levels, paragraphs,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>and line breaks. Explain the role of each tag used.  [A] / [CO1]</li></ul></div>",
+      "question": "Develop a well-structured HTML page that includes multiple header levels, paragraphs, and line breaks. Explain the role of each tag used.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Develop a well-structured HTML page that includes multiple header levels, paragraphs,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and line breaks. Explain the role of each tag used. / [CO1]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -286,8 +286,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Describe the purpose and working of different web protocols. / [CO1]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>replace() and replaceAll()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>replace() replaces the first occurrence of a substring. replaceAll() replaces all occurrences.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let str = 'Hello World';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(str.replace('World', 'MGU'));  // Hello MGU</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let s = 'aabbaa';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(s.replaceAll('a', 'x'));       // xxbbxx</li></ul></div>",
+      "question": "Describe the purpose and working of different web protocols.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>replace() and replaceAll()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>replace() replaces the first occurrence of a substring. replaceAll() replaces all occurrences.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'Hello World';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.replace('World', 'MGU')); // Hello MGU</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let s = 'aabbaa';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.replaceAll('a', 'x')); // xxbbxx</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -300,7 +300,7 @@
       "marks": 6,
       "domain_tag": "[A][1]",
       "question": "Define the <form> tag and describe its essential attributes. Provide an example of a simple HTML form.",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Define the tag and describe its essential attributes. Provide an example of a simple HTML form. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -314,8 +314,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Define Java Script functions, events, and DOM Traversing. Provide examples for each concept. / [CO2] [15x1 = 15]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Define JavaScript functions, events, and DOM Traversing. Provide examples for each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>concept. [U] / [CO2]</li></ul></div>",
+      "question": "Define Java Script functions, events, and DOM Traversing. Provide examples for each concept. [15x1 = 15]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define JavaScript functions, events, and DOM Traversing. Provide examples for each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>concept. / [CO2]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true
@@ -327,8 +327,8 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss the different string manipulation methods in Java Script. Explain with examples,definition and syntax. / [CO2] [15x1 = 15]",
-      "solution_html": "<div class='scheme-solution-box'><ul class='list-disc list-inside space-y-1.5 my-2'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>split(separator)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>Splits a string into an array of substrings based on a separator.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let csv = 'red,green,blue';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>let arr = csv.split(',');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-200'>console.log(arr);  // ['red', 'green', 'blue']</li></ul></div>",
+      "question": "Discuss the different string manipulation methods in Java Script. Explain with examples,definition and syntax. [15x1 = 15]",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>split(separator)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Splits a string into an array of substrings based on a separator.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let csv = 'red,green,blue';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let arr = csv.split(',');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(arr); // ['red', 'green', 'blue']</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true
@@ -341,7 +341,7 @@
       "marks": 6,
       "domain_tag": "[A][2]",
       "question": "Develop a program using Java Script function that extracts the first three letters of each word in a given sentence. (1X 15=15 Marks)",
-      "solution_html": "<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Framework & Assumptions (2.0 Marks):</strong> Statement of foundational premises, variables, and starting conditions.<br>2. <strong>Analytical Development & Proof Steps (2.0 Marks):</strong> Rigorous derivation, systematic reasoning, and logical progression.<br>3. <strong>Synthesized Conclusion & Interpretation (2.0 Marks):</strong> Final formulated result, physical/academic significance, and domain limitations.</div><div class='text-xs text-slate-700 dark:text-slate-300 leading-relaxed pl-1'><strong>Model Solution:</strong> Provide structured answers with numbered points or labeled steps. Ensure all intermediate calculations or logical assertions are fully supported with standard university academic rigor.</div></div>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Develop a program using Java Script function that extracts the first three letters of each word in a given sentence. (1X 15= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"

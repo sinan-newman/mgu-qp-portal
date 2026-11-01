@@ -744,319 +744,202 @@ const AiNotesStudio = {
         const title = data.title || course.title || 'Course';
         const dept = data.dept_name || course.dept_name || 'General';
         const sem = data.semester || course.semester || 1;
-        const marks = data.max_marks || this.state.examMarks || 70;
-        const syllabusInfo = this.findSyllabus(course);
-
         const currentPart = this.state.activePart || 'ALL';
         const searchQ = this.state.inPaperSearch || '';
 
-        // Filter questions
-        const filteredQuestions = (data.questions || []).filter(q => {
-            if (currentPart !== 'ALL' && q.part !== currentPart) {
-                return false;
-            }
-            if (searchQ) {
-                const text = (q.question + ' ' + (q.solution_html || '') + ' ' + (q.source_exam || '')).toLowerCase();
-                if (!text.includes(searchQ)) return false;
-            }
-            return true;
-        });
+        // Helper: Strip all Bloom's taxonomy tags and CO tags
+        const cleanText = (str) => {
+            if (!str) return '';
+            return str
+                .replace(/\s*\/\s*\[CO\d+\]/gi, '')
+                .replace(/\[CO\d+\]/gi, '')
+                .replace(/\[[UKAAEnCSIAPap\d\s]+\]/g, '')
+                .replace(/\[\d+\]/g, '')
+                .trim();
+        };
 
-        const partACount = data.parts_summary ? data.parts_summary.part_a : 0;
-        const partBCount = data.parts_summary ? data.parts_summary.part_b : 0;
-        const partCCount = data.parts_summary ? data.parts_summary.part_c : 0;
-        const skipped = data.repeating_skipped || 0;
+        // Determine papers list or synthesize from questions
+        let papers = data.papers || [];
+        if (!papers || papers.length === 0) {
+            // Group flat questions into sections
+            const secA = (data.questions || []).filter(q => q.part === 'PART_A');
+            const secB = (data.questions || []).filter(q => q.part === 'PART_B');
+            const secC = (data.questions || []).filter(q => q.part === 'PART_C');
+
+            const sections = [];
+            if (secA.length > 0) sections.push({ section_id: 'SEC_A', section_title: 'Part A — Short Answer Questions', marks_per_question: 2, questions: secA });
+            if (secB.length > 0) sections.push({ section_id: 'SEC_B', section_title: 'Part B — Short Essay Questions', marks_per_question: 6, questions: secB });
+            if (secC.length > 0) sections.push({ section_id: 'SEC_C', section_title: 'Part C — Essay Questions', marks_per_question: 10, questions: secC });
+
+            papers = [{
+                paper_id: 'PAPER_1',
+                paper_title: `${title} — Solved Question Paper & Valuation Scheme`,
+                sections: sections
+            }];
+        }
 
         container.innerHTML = `
-            <!-- Document Header Toolbar -->
-            <div id="aiNotesDocHeader" class="p-4 sm:p-5 bg-slate-50 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-700 flex flex-col gap-3 sticky top-0 z-20 backdrop-blur">
-                <!-- Row 1: Course Info & Primary Actions -->
+            <!-- Document Header Toolbar (Screen Only) -->
+            <div id="aiNotesDocHeader" class="p-4 sm:p-5 bg-slate-50 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-700 flex flex-col gap-3 sticky top-0 z-20 backdrop-blur print:hidden">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <div>
                         <div class="flex items-center gap-2">
-                            <span class="font-mono font-bold text-xs text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 px-2 py-0.5 rounded border border-indigo-200 dark:border-indigo-800">
+                            <span class="font-mono font-bold text-xs text-white bg-[#1E3A8A] px-2.5 py-0.5 rounded shadow-xs">
                                 ${code}
                             </span>
-                            <span class="text-[11px] font-semibold text-slate-500">
-                                Semester ${sem} • ${marks} Marks Scheme • ${dept}
+                            <span class="text-xs font-semibold text-slate-500">
+                                Semester ${sem} • ${dept}
                             </span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-slate-100 leading-snug mt-0.5">
+                        <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 leading-snug mt-1">
                             ${title}
                         </h3>
                     </div>
 
-                    <!-- Action Controls: Direct PDF Download (.pdf) -->
                     <div class="flex flex-wrap items-center gap-2 shrink-0">
                         <button 
                             id="downloadPdfBtn" 
-                            onclick="AiNotesStudio.downloadPdfFile()" 
-                            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-md hover:shadow-lg transition flex items-center gap-2 cursor-pointer" 
-                            title="Download Complete Solved Question Papers as PDF File (.pdf)"
+                            onclick="AiNotesStudio.downloadPdfFile()"
+                            class="px-3.5 py-2 rounded-xl text-xs font-bold bg-[#1E3A8A] text-white hover:bg-blue-900 transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                            title="Download Publication-Grade PDF"
                         >
-                            <i class="bi bi-file-earmark-pdf-fill text-rose-300 text-base"></i>
-                            <span>Download Solved PDF</span>
+                            <i class="bi bi-file-earmark-pdf-fill text-sm"></i>
+                            <span>Download PDF</span>
                         </button>
-
                         <button 
-                            onclick="AiNotesStudio.printBrowserPdf()" 
-                            class="px-3 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 shadow-2xs transition flex items-center gap-1.5 cursor-pointer" 
-                            title="Print or Save Vector High-Res PDF via Browser"
+                            onclick="AiNotesStudio.printBrowserPdf()"
+                            class="px-3 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 hover:bg-slate-50 transition flex items-center gap-1.5 cursor-pointer"
+                            title="Direct Browser Print"
                         >
-                            <i class="bi bi-printer-fill text-slate-500 dark:text-slate-300"></i>
-                            <span class="hidden sm:inline">Print / Vector PDF</span>
-                        </button>
-
-                        <button 
-                            onclick="AiNotesStudio.exportNotes('copy')" 
-                            class="p-2.5 rounded-xl text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 transition cursor-pointer" 
-                            title="Copy All Questions & Solutions to Clipboard"
-                        >
-                            <i class="bi bi-clipboard"></i>
-                        </button>
-
-                        <button 
-                            onclick="AiNotesStudio.generateNotes(AiNotesStudio.state.activeCourse, true)" 
-                            class="p-2.5 rounded-xl text-xs font-medium text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition cursor-pointer" 
-                            title="Reload Solved Question Papers"
-                        >
-                            <i class="bi bi-arrow-clockwise text-sm"></i>
+                            <i class="bi bi-printer"></i>
+                            <span>Print</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Row 2: Comprehensive Stats Strip -->
-                <div class="flex flex-wrap items-center gap-2 text-[11px] pt-1">
-                    <span class="px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 font-bold flex items-center gap-1.5">
-                        <i class="bi bi-check2-all text-indigo-600"></i> ${data.total_questions} Questions Solved from University Papers
-                    </span>
-
-                    ${skipped > 0 ? `
-                        <span class="px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 font-semibold flex items-center gap-1.5">
-                            <i class="bi bi-funnel-fill text-amber-500"></i> ${skipped} Duplicate / Repeating Questions Skipped
-                        </span>
-                    ` : ''}
-
-                    <span class="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 font-semibold flex items-center gap-1.5">
-                        <i class="bi bi-patch-check-fill text-emerald-600"></i> ${data.has_official_scheme ? 'Official MGU Scheme of Valuation Applied' : 'Syllabus-Aligned University Standard'}
-                    </span>
-                </div>
-
-                <!-- Row 3: Part Filters & In-Paper Search -->
-                <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-200/60 dark:border-slate-700/60 text-xs">
-                    <!-- Part Filters (Part A, Part B, Part C) -->
-                    <div class="flex items-center gap-1.5 flex-wrap">
-                        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mr-1">
-                            Filter:
-                        </span>
+                <!-- Part Filters & Search Toolbar -->
+                <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-200 dark:border-slate-700/60">
+                    <div class="flex flex-wrap items-center gap-1.5 text-xs">
                         <button 
-                            onclick="AiNotesStudio.setPart('ALL')" 
-                            class="px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                                currentPart === 'ALL'
-                                    ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-xs'
-                                    : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
-                            }"
+                            onclick="AiNotesStudio.setPart('ALL')"
+                            class="px-2.5 py-1 rounded-lg font-bold transition cursor-pointer ${currentPart === 'ALL' ? 'bg-[#1E3A8A] text-white' : 'bg-slate-200/80 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'}"
                         >
-                            All Questions (${data.total_questions})
+                            All Sections
                         </button>
                         <button 
-                            onclick="AiNotesStudio.setPart('PART_A')" 
-                            class="px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                                currentPart === 'PART_A'
-                                    ? 'bg-blue-600 text-white shadow-xs'
-                                    : 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800'
-                            }"
+                            onclick="AiNotesStudio.setPart('PART_A')"
+                            class="px-2.5 py-1 rounded-lg font-semibold transition cursor-pointer ${currentPart === 'PART_A' ? 'bg-[#1E3A8A] text-white' : 'bg-slate-200/80 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'}"
                         >
-                            Part A (${partACount})
+                            Part A (2M)
                         </button>
                         <button 
-                            onclick="AiNotesStudio.setPart('PART_B')" 
-                            class="px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                                currentPart === 'PART_B'
-                                    ? 'bg-emerald-600 text-white shadow-xs'
-                                    : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
-                            }"
+                            onclick="AiNotesStudio.setPart('PART_B')"
+                            class="px-2.5 py-1 rounded-lg font-semibold transition cursor-pointer ${currentPart === 'PART_B' ? 'bg-[#1E3A8A] text-white' : 'bg-slate-200/80 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'}"
                         >
-                            Part B (${partBCount})
+                            Part B (6M)
                         </button>
                         <button 
-                            onclick="AiNotesStudio.setPart('PART_C')" 
-                            class="px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                                currentPart === 'PART_C'
-                                    ? 'bg-purple-600 text-white shadow-xs'
-                                    : 'bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800'
-                            }"
+                            onclick="AiNotesStudio.setPart('PART_C')"
+                            class="px-2.5 py-1 rounded-lg font-semibold transition cursor-pointer ${currentPart === 'PART_C' ? 'bg-[#1E3A8A] text-white' : 'bg-slate-200/80 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'}"
                         >
-                            Part C (${partCCount})
+                            Part C (10M)
                         </button>
                     </div>
 
-                    <!-- In-Paper Question Search -->
-                    <div class="relative w-full sm:w-64">
-                        <i class="bi bi-search absolute left-2.5 top-2 text-slate-400 text-[11px]"></i>
+                    <div class="relative w-full sm:w-56">
+                        <i class="bi bi-search absolute left-2.5 top-2 text-slate-400 text-xs"></i>
                         <input 
                             type="text" 
-                            value="${this.state.inPaperSearch}"
-                            placeholder="Search in questions & solutions..." 
-                            class="w-full pl-7 pr-2.5 py-1 text-xs rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-slate-800 dark:text-slate-200"
+                            id="aiNotesInPaperSearch"
+                            value="${searchQ}"
                             oninput="AiNotesStudio.handleInPaperSearch(this.value)"
+                            placeholder="Search within paper..." 
+                            class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs focus:outline-none focus:ring-1 focus:ring-blue-600"
                         />
                     </div>
                 </div>
             </div>
 
-            <!-- Printable & Renderable Area -->
-            <div id="aiNotesPrintArea" class="p-6 sm:p-8 lg:p-10 text-slate-800 dark:text-slate-200 leading-relaxed text-xs sm:text-sm">
+            <!-- PDF Printable Area (Clean Publication Layout) -->
+            <div id="aiNotesPrintArea" class="p-6 sm:p-10 text-slate-800 dark:text-slate-200 leading-relaxed text-xs sm:text-sm">
                 
-                <!-- PDF Cover Page -->
-                <div class="pdf-cover-page mb-8 text-center border-b pb-8 border-slate-200 dark:border-slate-700">
-                    <div class="space-y-2">
-                        <div class="inline-block px-4 py-1 rounded-full border border-blue-900 text-blue-900 dark:border-blue-400 dark:text-blue-300 font-extrabold text-xs uppercase tracking-widest">
-                            Mahatma Gandhi University • Kottayam, Kerala
-                        </div>
-                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">
-                            Four Year Undergraduate Programme (FYUGP / Honours) • 2024 Scheme Onwards
-                        </div>
-                    </div>
+                ${papers.map((paper, pIdx) => {
+                    // Filter sections and questions
+                    const visibleSections = paper.sections.map(sec => {
+                        const secPart = sec.section_id.includes('SEC_A') ? 'PART_A' : (sec.section_id.includes('SEC_B') ? 'PART_B' : 'PART_C');
+                        if (currentPart !== 'ALL' && secPart !== currentPart) return null;
 
-                    <div class="my-6 space-y-3">
-                        <div class="text-sm sm:text-base font-mono font-bold text-blue-800 dark:text-blue-300 bg-blue-50 dark:bg-blue-950 py-1 px-3 rounded-lg inline-block border border-blue-200 dark:border-blue-800">
-                            ${code}
-                        </div>
-                        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
-                            ${title}
-                        </h1>
-                        <div class="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
-                            Comprehensive Solved Question Papers & Valuation Scheme Solutions
-                        </div>
-                    </div>
+                        const matchingQuestions = sec.questions.filter(q => {
+                            if (!searchQ) return true;
+                            const full = (q.question + ' ' + (q.solution_html || '') + ' ' + (q.final_answer || '')).toLowerCase();
+                            return full.includes(searchQ);
+                        });
 
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs max-w-2xl mx-auto py-3 border-t border-b border-slate-200 dark:border-slate-700">
-                        <div class="p-1.5">
-                            <div class="text-slate-400 font-bold uppercase text-[9px]">Exam Pattern</div>
-                            <div class="font-bold text-slate-800 dark:text-slate-100">${marks} Marks Scheme</div>
-                        </div>
-                        <div class="p-1.5">
-                            <div class="text-slate-400 font-bold uppercase text-[9px]">Valuation Source</div>
-                            <div class="font-bold text-emerald-700 dark:text-emerald-400">Official MGU Scheme</div>
-                        </div>
-                        <div class="p-1.5">
-                            <div class="text-slate-400 font-bold uppercase text-[9px]">Solved Questions</div>
-                            <div class="font-bold text-slate-800 dark:text-slate-100">${data.total_questions} Questions Solved</div>
-                        </div>
-                        <div class="p-1.5">
-                            <div class="text-slate-400 font-bold uppercase text-[9px]">Duplicates Skipped</div>
-                            <div class="font-bold text-amber-700 dark:text-amber-400">${skipped} Repeats Filtered</div>
-                        </div>
-                    </div>
+                        if (matchingQuestions.length === 0) return null;
+                        return { ...sec, matchingQuestions };
+                    }).filter(Boolean);
 
-                    <div class="text-[11px] text-slate-500 pt-3">
-                        Syllabus Aligned: <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" class="text-blue-700 dark:text-blue-400 underline font-semibold">cap.mgu.ac.in/mguugp/syllabus.jsp</a> • Step-by-Step Numerical Proofs & Board Marking Rubrics
-                    </div>
-                </div>
+                    if (visibleSections.length === 0) return '';
 
-                <!-- Official Syllabus Banner -->
-                <div class="syllabus-banner mb-6 p-4 rounded-xl border border-emerald-300 dark:border-emerald-800 bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50/50 dark:from-emerald-950/40 dark:via-teal-950/30 dark:to-emerald-950/20 text-slate-800 dark:text-slate-200">
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-600 text-white uppercase tracking-wider">
-                                    Official MGU Syllabus
-                                </span>
-                                <span class="text-xs font-bold text-emerald-900 dark:text-emerald-300">
-                                    ${syllabusInfo.program}
-                                </span>
+                    return `
+                        <!-- Paper Block -->
+                        <div class="paper-block mb-12">
+                            <!-- Paper Title Banner -->
+                            <div class="paper-title-banner my-6 px-5 py-3 rounded-xl bg-[#1E3A8A] text-white shadow-sm flex items-center justify-between" style="page-break-after: avoid; break-after: avoid;">
+                                <h2 class="text-sm sm:text-base font-black tracking-wider uppercase m-0 p-0 text-white">
+                                    ${paper.paper_title}
+                                </h2>
                             </div>
-                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">
-                                Curriculum, Course Outcomes & Learning Domains verified against Mahatma Gandhi University FYUGP Syllabus Portal.
-                            </p>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-2 shrink-0">
-                            ${syllabusInfo.main_syllabus ? `
-                                <a href="${syllabusInfo.main_syllabus}" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center gap-1.5 shadow-xs">
-                                    <i class="bi bi-file-earmark-pdf-fill"></i>
-                                    <span>Official Syllabus PDF</span>
-                                </a>
-                            ` : ''}
-                            <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" rel="noopener" class="px-2.5 py-1.5 rounded-lg text-xs font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition flex items-center gap-1">
-                                <i class="bi bi-globe"></i>
-                                <span>All Syllabi</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Questions List -->
-                ${filteredQuestions.length === 0 ? `
-                    <div class="text-center py-16 text-slate-400">
-                        <i class="bi bi-search text-3xl mb-2 block"></i>
-                        No questions match the current filter or search criteria.
-                    </div>
-                ` : `
-                    <div class="space-y-5">
-                        ${filteredQuestions.map((q, idx) => {
-                            const partBadgeColor = q.part === 'PART_A' 
-                                ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300' 
-                                : (q.part === 'PART_B' 
-                                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300' 
-                                    : 'bg-purple-100 text-purple-800 dark:bg-purple-900/60 dark:text-purple-300');
-
-                            return `
-                                <div class="qa-card p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm transition hover:border-slate-300 dark:hover:border-slate-600" style="break-inside: avoid; page-break-inside: avoid;">
-                                    <!-- Header Row -->
-                                    <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-slate-100 dark:border-slate-700/80">
-                                        <div class="flex items-center gap-2 flex-wrap">
-                                            <span class="px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold ${partBadgeColor}">
-                                                ${q.id} • ${q.part_label}
-                                            </span>
-                                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
-                                                ${q.marks} Marks
-                                            </span>
-                                            ${q.domain_tag ? `
-                                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                                                    ${q.domain_tag}
-                                                </span>
-                                            ` : ''}
-                                        </div>
-
-                                        <div class="flex items-center gap-2 flex-wrap text-[11px]">
-                                            <span class="text-slate-500 dark:text-slate-400 font-medium truncate max-w-[220px]" title="${q.source_exam}">
-                                                <i class="bi bi-file-earmark-text"></i> ${q.source_exam}
-                                            </span>
-                                            ${(q.repeated_in && q.repeated_in.length > 0) ? `
-                                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800" title="This question also appeared in other exams and duplicates were skipped">
-                                                    <i class="bi bi-funnel-fill text-amber-500"></i> Also appeared in: ${q.repeated_in.join(', ')}
-                                                </span>
-                                            ` : ''}
-                                        </div>
+                            <!-- Sections -->
+                            ${visibleSections.map(sec => `
+                                <div class="section-block mb-6">
+                                    <!-- Section Header -->
+                                    <div class="section-header my-4 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-700/60 border-l-4 border-[#1E3A8A] flex items-center justify-between" style="page-break-after: avoid; break-after: avoid;">
+                                        <h3 class="text-xs sm:text-sm font-bold text-[#1E3A8A] dark:text-blue-300 uppercase tracking-wide m-0 p-0">
+                                            ${sec.section_title}
+                                        </h3>
                                     </div>
 
-                                    <!-- Question Statement -->
-                                    <div class="py-3 text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
-                                        ${q.question}
-                                    </div>
+                                    <!-- Individual Question Containers -->
+                                    <div class="questions-list space-y-5">
+                                        ${sec.matchingQuestions.map(q => `
+                                            <div class="question-container p-5 rounded-2xl bg-[#F8FAFC] dark:bg-slate-800/90 border border-[#CBD5E1] dark:border-slate-700 shadow-xs" style="break-inside: avoid; page-break-inside: avoid;">
+                                                <!-- Box Header -->
+                                                <div class="box-header pb-3 border-b border-slate-200 dark:border-slate-700/80">
+                                                    <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
+                                                        <span class="font-black text-[#1E3A8A] dark:text-blue-400 mr-1.5">Q${q.number}.</span>
+                                                        ${cleanText(q.question)}
+                                                    </div>
+                                                </div>
 
-                                    <!-- Scheme of Valuation Solution Box -->
-                                    <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700/80 text-xs sm:text-[13px] leading-relaxed text-slate-700 dark:text-slate-300 space-y-2">
-                                        <div class="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-bold text-xs uppercase tracking-wider">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <span>MGU Scheme of Valuation & Value Points</span>
-                                        </div>
-                                        
-                                        <div class="text-slate-800 dark:text-slate-200">
-                                            ${q.solution_html}
-                                        </div>
+                                                <!-- Box Body -->
+                                                <div class="box-body py-3 text-xs sm:text-[13px] leading-relaxed text-slate-800 dark:text-slate-200">
+                                                    ${q.solution_html}
+                                                </div>
+
+                                                <!-- Box Footer / Final Answer Callout -->
+                                                ${q.final_answer ? `
+                                                    <div class="box-footer mt-2 pt-2 border-t border-slate-200 dark:border-slate-700 flex items-center">
+                                                        <div class="w-full px-3 py-2 rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800/60 text-[#065F46] dark:text-emerald-300 font-bold text-xs sm:text-[13px] flex items-center gap-2">
+                                                            <i class="bi bi-check-circle-fill text-emerald-600 dark:text-emerald-400 shrink-0"></i>
+                                                            <div class="overflow-x-auto">${q.final_answer}</div>
+                                                        </div>
+                                                    </div>
+                                                ` : ''}
+                                            </div>
+                                        `).join('')}
                                     </div>
                                 </div>
-                            `;
-                        }).join('')}
-                    </div>
-                `}
+                            `).join('')}
+                        </div>
+                    `;
+                }).join('')}
 
             </div>
         `;
 
-        // KaTeX Formula Render
+        // Render mathematical formulas via KaTeX
         if (window.renderMathInElement) {
             try {
                 window.renderMathInElement(document.getElementById('aiNotesPrintArea'), {
@@ -1067,7 +950,7 @@ const AiNotesStudio = {
                     throwOnError: false
                 });
             } catch (e) {
-                console.warn('KaTeX auto-render:', e);
+                console.warn('KaTeX auto-render error:', e);
             }
         }
     },

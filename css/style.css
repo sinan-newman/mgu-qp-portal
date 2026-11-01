@@ -311,7 +311,7 @@ button:active:not(:disabled) {
   header, footer, #heroSection, #mainNavTabsContainer, #filterControlsSection,
   .no-print, #geminiApiModal, #crawlDetailsModal, #aiNotesToolbar,
   .toast, #floatingFeedbackBtn, #deptDetailContainer, #adminPageSection,
-  .lg\:col-span-4, #aiCoursesListContainer, #aiNotesDocHeader,
+  .lg\:col-span-4, #aiCoursesListContainer, #aiNotesDocHeader, #aiNotesSection > div:first-child, .ai-notes-hero,
   .nav-tab-btn, button {
     display: none !important;
   }
@@ -341,6 +341,23 @@ button:active:not(:disabled) {
   .lg\:col-span-8 {
     width: 100% !important;
     grid-column: span 12 / span 12 !important;
+  }
+
+  
+  .title-page {
+    page-break-before: avoid !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  .title-page-card {
+    margin: 0 auto !important;
+    padding: 16px 20px !important;
   }
 
   #aiNotesMainContainer, #aiNotesPrintArea {

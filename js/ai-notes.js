@@ -187,7 +187,7 @@ const AiNotesStudio = {
 
         container.innerHTML = `
             <!-- Top Hero Banner -->
-            <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8 shadow-xl border border-indigo-800/50">
+            <div class="no-print print:hidden relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8 shadow-xl border border-indigo-800/50">
                 <div class="absolute -right-10 -bottom-10 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
                 
                 <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
@@ -977,50 +977,48 @@ const AiNotesStudio = {
                   .dark .q-header { background: #0f172a; border-color: #334155; color: #f8fafc; }
                   .dark .final-ans { background: rgba(6, 95, 70, 0.25); color: #6ee7b7; border-left-color: #10b981; }
 
-                  /* Academic Cover / Title Page (PDF Page 1) */
+                  /* Academic Cover / Title Page (PDF Page 1 Only - Top Aligned) */
                   .title-page {
+                    page-break-before: avoid;
                     page-break-after: always;
                     break-after: page;
-                    min-height: 85vh;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 24px 16px 36px 16px;
-                    margin-bottom: 30px;
-                    background: #FFFFFF;
+                    display: block;
+                    width: 100%;
+                    max-width: 650px;
+                    margin: 0 auto 16px auto;
+                    padding: 4px 0 0 0;
+                    box-sizing: border-box;
+                    background: transparent;
                   }
                   .title-page-card {
                     width: 100%;
-                    max-width: 680px;
-                    border: 2px solid #CBD5E1;
-                    border-radius: 12px;
-                    padding: 36px 28px;
+                    border: 1.5px solid #CBD5E1;
+                    border-radius: 10px;
+                    padding: 20px 24px;
                     text-align: center;
                     background: #FFFFFF;
                     box-sizing: border-box;
                   }
-                  .tp-emblem { width: 52px; height: 52px; margin: 0 auto 10px auto; }
-                  .tp-univ { font-size: 15pt; font-weight: 800; letter-spacing: 1.5px; color: #1E3A8A; }
-                  .tp-sub { font-size: 8.5pt; font-weight: 600; color: #64748B; letter-spacing: 0.5px; margin-top: 4px; text-transform: uppercase; }
-                  .tp-divider { height: 3px; width: 70px; background: #1E3A8A; margin: 16px auto; border-radius: 2px; }
-                  .tp-badge { display: inline-block; background: #EFF6FF; color: #1E3A8A; border: 1px solid #BFDBFE; padding: 4px 12px; border-radius: 9999px; font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; }
-                  .tp-code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 16pt; font-weight: 800; color: #1E3A8A; letter-spacing: 1px; }
-                  .tp-title { font-size: 18pt; font-weight: 800; color: #0F172A; line-height: 1.25; margin: 8px 0 10px 0; }
-                  .tp-dept { font-size: 10.5pt; font-weight: 600; color: #475569; margin-bottom: 20px; }
-                  .tp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 18px 0; text-align: left; }
-                  .tp-grid-item { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px 14px; }
-                  .tp-grid-label { display: block; font-size: 7.5pt; color: #64748B; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-                  .tp-grid-val { display: block; font-size: 9.5pt; font-weight: 700; color: #1E293B; margin-top: 2px; }
-                  .tp-seal { background: #ECFDF5; border: 1.5px solid #A7F3D0; border-radius: 8px; padding: 12px 14px; margin: 18px 0 14px 0; text-align: left; }
-                  .tp-seal-head { display: flex; align-items: center; gap: 6px; color: #065F46; font-size: 8.5pt; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 3px; }
-                  .tp-seal-body { font-size: 8pt; color: #047857; line-height: 1.45; margin: 0; }
-                  .tp-papers-box { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; text-align: left; }
-                  .tp-papers-title { font-size: 7.5pt; font-weight: 800; color: #475569; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 6px; }
-                  .tp-papers-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
-                  .tp-papers-list li { display: flex; align-items: center; justify-content: space-between; font-size: 8.5pt; color: #1E293B; border-bottom: 1px dashed #E2E8F0; padding-bottom: 3px; }
-                  .tp-footer { font-size: 7.5pt; color: #94A3B8; margin-top: 8px; border-top: 1px solid #E2E8F0; padding-top: 8px; }
-                  .dark .title-page { background: #0f172a; }
+                  .tp-emblem { width: 38px; height: 38px; margin: 0 auto 6px auto; }
+                  .tp-univ { font-size: 13pt; font-weight: 800; letter-spacing: 1.2px; color: #1E3A8A; line-height: 1.2; }
+                  .tp-sub { font-size: 7.5pt; font-weight: 600; color: #64748B; letter-spacing: 0.5px; margin-top: 3px; text-transform: uppercase; }
+                  .tp-divider { height: 2px; width: 60px; background: #1E3A8A; margin: 10px auto; border-radius: 2px; }
+                  .tp-badge { display: inline-block; background: #EFF6FF; color: #1E3A8A; border: 1px solid #BFDBFE; padding: 2px 10px; border-radius: 9999px; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px; }
+                  .tp-code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14pt; font-weight: 800; color: #1E3A8A; letter-spacing: 0.8px; line-height: 1.2; }
+                  .tp-title { font-size: 15pt; font-weight: 800; color: #0F172A; line-height: 1.25; margin: 4px 0 6px 0; }
+                  .tp-dept { font-size: 9.5pt; font-weight: 600; color: #475569; margin-bottom: 12px; }
+                  .tp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; text-align: left; }
+                  .tp-grid-item { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 10px; }
+                  .tp-grid-label { display: block; font-size: 7pt; color: #64748B; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+                  .tp-grid-val { display: block; font-size: 8.5pt; font-weight: 700; color: #1E293B; margin-top: 1px; }
+                  .tp-seal { background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 6px; padding: 8px 12px; margin: 10px 0; text-align: left; }
+                  .tp-seal-head { display: flex; align-items: center; gap: 5px; color: #065F46; font-size: 8pt; font-weight: 800; letter-spacing: 0.4px; margin-bottom: 2px; }
+                  .tp-seal-body { font-size: 7.5pt; color: #047857; line-height: 1.35; margin: 0; }
+                  .tp-papers-box { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px 12px; margin-bottom: 8px; text-align: left; }
+                  .tp-papers-title { font-size: 7pt; font-weight: 800; color: #475569; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 4px; }
+                  .tp-papers-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3px; }
+                  .tp-papers-list li { display: flex; align-items: center; justify-content: space-between; font-size: 8pt; color: #1E293B; border-bottom: 1px dashed #E2E8F0; padding-bottom: 2px; }
+                  .tp-footer { font-size: 7pt; color: #94A3B8; margin-top: 6px; border-top: 1px solid #E2E8F0; padding-top: 6px; text-align: center; }
                   .dark .title-page-card { background: #1e293b; border-color: #334155; }
                   .dark .tp-univ { color: #93c5fd; }
                   .dark .tp-title { color: #f8fafc; }
@@ -1033,13 +1031,19 @@ const AiNotesStudio = {
 
                   @media print {
                     .title-page {
-                      page-break-after: always;
-                      break-after: page;
-                      height: 98vh;
-                      max-height: 98vh;
-                      box-sizing: border-box;
-                      margin: 0;
-                      padding: 30px 15px;
+                      page-break-before: avoid !important;
+                      page-break-after: always !important;
+                      break-after: page !important;
+                      display: block !important;
+                      margin: 0 auto !important;
+                      padding: 0 !important;
+                      height: auto !important;
+                      min-height: auto !important;
+                      max-height: none !important;
+                    }
+                    .title-page-card {
+                      margin: 0 auto !important;
+                      padding: 16px 20px !important;
                     }
                   }
                 </style>
@@ -1107,13 +1111,18 @@ const AiNotesStudio = {
                         <div class="tp-papers-box">
                             <div class="tp-papers-title">Included University Examination Papers</div>
                             <ul class="tp-papers-list">
-                                ${papers.map((p, idx) => `
+                                ${papers.slice(0, 3).map((p, idx) => `
                                     <li>
                                         <span class="font-bold text-[#1E3A8A] dark:text-blue-400">Paper ${idx + 1}:</span>
                                         <span class="truncate mx-2 flex-1">${p.paper_title}</span>
                                         <span class="font-semibold text-slate-500">${p.sections.reduce((sacc, s) => sacc + s.questions.length, 0)} Qs</span>
                                     </li>
                                 `).join('')}
+                                ${papers.length > 3 ? `
+                                    <li class="text-slate-500 italic text-[7.5pt]">
+                                        + ${papers.length - 3} additional university examination papers included in manual
+                                    </li>
+                                ` : ''}
                             </ul>
                         </div>
 
@@ -1238,7 +1247,17 @@ const AiNotesStudio = {
             }
         }
 
+        const activeArea = document.getElementById('aiNotesPrintArea');
+        if (activeArea) {
+            activeArea.style.padding = '0';
+            activeArea.style.margin = '0';
+        }
+
         const restoreBtn = () => {
+            if (activeArea) {
+                activeArea.style.padding = '';
+                activeArea.style.margin = '';
+            }
             if (btn) {
                 btn.innerHTML = originalHtml;
                 btn.disabled = false;
@@ -1250,15 +1269,15 @@ const AiNotesStudio = {
 
         if (typeof window.html2pdf === 'function') {
             const opt = {
-                margin: [8, 8, 8, 8],
+                margin: [10, 10, 10, 10],
                 filename: filename,
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 1.6, useCORS: true, logging: false },
+                html2canvas: { scale: 1.6, useCORS: true, logging: false, scrollY: 0 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
                 pagebreak: { mode: ['css', 'legacy'] }
             };
 
-            window.html2pdf().set(opt).from(document.getElementById('aiNotesPrintArea')).save().then(() => {
+            window.html2pdf().set(opt).from(activeArea || document.getElementById('aiNotesPrintArea')).save().then(() => {
                 restoreBtn();
             }).catch(err => {
                 console.error('html2pdf generation error:', err);
@@ -1278,7 +1297,8 @@ const AiNotesStudio = {
         const marks = this.state.examMarks || 70;
 
         const prevTitle = document.title;
-        document.title = `${cleanCode}_${cleanTitle}_${marks}M_MGU_FYUGP_Solved_PYQ_Scheme`;
+        const docTitle = `${cleanCode}_${cleanTitle}_${marks}M_MGU_FYUGP_Solved_PYQ_Scheme`;
+        document.title = docTitle;
 
         const prevPart = this.state.activePart;
         const prevSearch = this.state.inPaperSearch;
@@ -1286,14 +1306,75 @@ const AiNotesStudio = {
         this.state.inPaperSearch = '';
         this.renderCourseDocument();
 
-        window.print();
+        // KaTeX re-render
+        if (window.renderMathInElement) {
+            try {
+                window.renderMathInElement(document.getElementById('aiNotesPrintArea'), {
+                    delimiters: [
+                        { left: '$$', right: '$$', display: true },
+                        { left: '$', right: '$', display: false }
+                    ],
+                    throwOnError: false
+                });
+            } catch (e) {}
+        }
+
+        const printArea = document.getElementById('aiNotesPrintArea');
+        if (printArea) {
+            try {
+                const printWin = window.open('', '_blank', 'width=900,height=1000');
+                if (printWin) {
+                    const katexLink = document.querySelector('link[href*="katex"]')?.outerHTML || '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">';
+                    const styleLink = '<link rel="stylesheet" href="css/style.css">';
+                    printWin.document.write(`
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <meta charset="utf-8">
+                            <title>${docTitle}</title>
+                            ${katexLink}
+                            ${styleLink}
+                            <style>
+                                @page { size: A4 portrait; margin: 14mm 12mm 14mm 12mm; }
+                                html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #1E293B !important; font-family: 'Inter', system-ui, sans-serif !important; font-size: 10.5pt !important; }
+                                .title-page { page-break-before: avoid !important; page-break-after: always !important; break-after: page !important; display: block !important; margin: 0 auto !important; padding: 0 !important; height: auto !important; }
+                                .title-page-card { margin: 0 auto !important; padding: 18px 22px !important; }
+                                .q-box { page-break-inside: avoid !important; break-inside: avoid !important; }
+                            </style>
+                        </head>
+                        <body>
+                            <div style="padding: 0; margin: 0;">
+                                ${printArea.innerHTML}
+                            </div>
+                            <script>
+                                window.onload = function() {
+                                    setTimeout(function() {
+                                        window.focus();
+                                        window.print();
+                                        window.close();
+                                    }, 400);
+                                };
+                            <\/script>
+                        </body>
+                        </html>
+                    `);
+                    printWin.document.close();
+                } else {
+                    window.print();
+                }
+            } catch (e) {
+                window.print();
+            }
+        } else {
+            window.print();
+        }
 
         setTimeout(() => {
             document.title = prevTitle;
             this.state.activePart = prevPart;
             this.state.inPaperSearch = prevSearch;
             this.renderCourseDocument();
-        }, 3000);
+        }, 1500);
     },
 
     exportNotes(format) {

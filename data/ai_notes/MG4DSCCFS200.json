@@ -27,11 +27,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Describe the \"Traversing\" operation as it applies to data structures.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Describe the \"Traversing\" operation as it applies to data structures. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversing is the process of visiting each element/node of a data structure exactly once to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>access or process the data stored in it.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Insertion - Adding a new element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scan postfix expression from left to right.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Tree</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Binary Tree"
     },
     {
       "id": "Q2",
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Define the term data structure.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define the term data structure.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define the term data structure....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q3",
@@ -55,11 +55,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the meaning of subscript.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict Binary Tree</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Beginning insertion adds a new node before the first node and updates the head pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>End insertion adds a new node after the last node and updates the last node link.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal - Visiting elements one by one.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operator is found, pop required operands.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete Binary Tree</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Strict Binary Tree"
+      "final_answer": "Complete Binary Tree"
     },
     {
       "id": "Q4",
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "List the various operations that can be performed on a data structure.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List the various operations that can be performed on a data structure.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A linked list is a linear data structure consisting of nodes where each node contains data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a pointer/reference to the next node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perform operation and push result back.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Binary Search Tree"
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Differentiate between insertion at the beginning and at the end of a linked list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete Binary Tree</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Insertion can occur only from one end, usually the rear end, while deletion can occur</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from both ends.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Final stack value gives the answer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give any example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AVL Tree etc..</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give example and explanation</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Complete Binary Tree"
+      "final_answer": "Give example and explanation"
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Recall the initial value of the top pointer/index in an array-based stack implementation when the stack is empty.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Recall the initial value of the top pointer/index in an array-based stack implementation when the stack is empty.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A subscript is an index or position number used to identify an element in an array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Deletion - Removing an existing element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operand is found, push it into stack.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict Binary Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Strict Binary Tree"
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is a linkedlist?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Stack follows the LIFO (Last In First Out) principle.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Binary Search Tree"
+      "final_answer": "Stack follows the LIFO (Last In First Out) principle."
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Summarize the concept of stack overflow and underflow conditions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Summarize the concept of stack overflow and underflow conditions.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Summarize the concept of stack overflow and underflow conditions....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "In an input-restricted queue, from which end can insertion occur?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AVL Tree etc.. Give example and explanation</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circular linked list.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "AVL Tree etc.. Give example and explanation"
+      "final_answer": "pointer."
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Define a queue data structure and its basic principle.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a queue data structure and its basic principle.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define a queue data structure and its basic principle....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Examine the relationship between parentheses and stack usage in arithmetic expressions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examine the relationship between parentheses and stack usage in arithmetic</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>expressions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Parentheses are handled using stacks. Opening parentheses are pushed and closing</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>parentheses cause popping to check matching pairs.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Outline the steps involved in preorder traversal of a binary tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Visit root, traverse left subtree, then traverse right subtree (Root-Left-Right).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "parentheses cause popping to check matching pairs."
+      "final_answer": "Outline the steps involved in preorder traversal of a binary tree."
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Predict the behavior of a priority queue when multiple elements have the same priority.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Predict the behavior of a priority queue when multiple elements have the same priority.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Predict the behavior of a priority queue when multiple elements have the same pr...</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Identify the principle followed by a stack.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the principle followed by a stack.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Stack follows the LIFO (Last In First Out) principle.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structures.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Stack follows the LIFO (Last In First Out) principle."
+      "final_answer": "structures."
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Identify the primary difference in memory allocation between arrays and linked list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify the primary difference in memory allocation between arrays and linked list.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Beginning insertion adds a new node before the first node and updates the head pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>End insertion adds a new node after the last node and updates the last node link.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal - Visiting elements one by one.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operator is found, pop required operands.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete Binary Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Complete Binary Tree"
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Compare the roles of push and pop operations in maintaining stack integrity.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the roles of push and pop operations in maintaining stack integrity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push inserts an element into the stack, while pop removes the top element. Together they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>maintain proper stack order.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give a sequence of stack operations analyze and show the status of the stack</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>after each step.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(10) → Stack: 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(20) → Stack: 10,20</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(30) → Stack: 10,20,30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pop() → removes 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Stack: 10,20 Give any example like the above one</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "maintain proper stack order."
+      "final_answer": "Stack: 10,20 Give any example like the above one"
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "State the purpose of a null pointer at the end of a singly linked list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the purpose of a null pointer at the end of a singly linked list.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circular linked list.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "pointer."
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Name the variant of a linked list in which none of the node contains NULL pointer.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Name the variant of a linked list in which none of the node contains NULL</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circular linked list.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict binary tree: Every node has either zero or two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Height balanced binary tree: Difference between heights of left and right subtrees is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>limited.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Circular linked list."
+      "final_answer": "limited."
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Illustrate the concept of balance factor in AVL tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Illustrate the concept of balance factor in AVL tree.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Illustrate the concept of balance factor in AVL tree....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "List the data structures, other than arrays, where linear search can be effectively applied.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the data structures, other than arrays, where linear search can be effectively</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>applied.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Linked lists, stacks, queues etc..</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements are stored linearly even though they are logically arranged in rows and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>columns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A two-dimensional array is stored in contiguous memory locations. In row-major order</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>all elements of the first row are stored followed by the next rows. In column-major order</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements of columns are stored consecutively. Address calculation is used to access</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements. Give explanation.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Linked lists, stacks, queues etc.."
+      "final_answer": "elements. Give explanation."
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Compare the terms height and depth of a tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Compare the terms height and depth of a tree.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Outline the steps involved in preorder traversal of a binary tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Outline the steps involved in preorder traversal of a binary tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Visit root, traverse left subtree, then traverse right subtree (Root-Left-Right).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types of trees</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Visit root, traverse left subtree, then traverse right subtree (Root-Left-Right)."
+      "final_answer": "Types of trees"
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Classify the types of tree traversal methods.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Classify the types of tree traversal methods.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Classify the types of tree traversal methods....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q23",
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Recall the main idea behind selection sort and insertion sort.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Recall the main idea behind selection sort and insertion sort.  x10 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Recall the main idea behind selection sort and insertion sort....</em> within Data Structure using C++.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Structure using C++ valuation scheme."
     },
     {
       "id": "Q25",
@@ -363,7 +363,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Name and briefly describe three common operations performed on linear data structures.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Name and briefly describe three common operations performed on linear data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structures.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structures.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -377,11 +377,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Differentiate between a linear and a non-linear data structure with a suitable example for each.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Differentiate between a linear and a non-linear data structure with a suitable example for each.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A linked list is a linear data structure consisting of nodes where each node contains data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a pointer/reference to the next node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perform operation and push result back.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Differentiate between a linear and a non-linear data structure with a suitable example for each. ."
+      "final_answer": "Binary Search Tree"
     },
     {
       "id": "Q27",
@@ -391,7 +391,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain priority queue with memory representation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain priority queue with memory representation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A priority queue is a queue where each element has a priority. The element with highest</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>priority is removed first. It can be represented using arrays or linked lists with priority</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>fields. Draw diagram of memory representation</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A priority queue is a queue where each element has a priority. The element with highest</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>priority is removed first. It can be represented using arrays or linked lists with priority</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>fields. Draw diagram of memory representation</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -405,11 +405,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Illustrate how an array is used to represent a stack in memory.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Illustrate how an array is used to represent a stack in memory.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A subscript is an index or position number used to identify an element in an array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Deletion - Removing an existing element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operand is found, push it into stack.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict Binary Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Illustrate how an array is used to represent a stack in memory. ."
+      "final_answer": "Strict Binary Tree"
     },
     {
       "id": "Q29",
@@ -419,11 +419,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Give a sequence of stack operations analyze and show the status of the stack after each step.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give a sequence of stack operations analyze and show the status of the stack after each step. Example: Push(10) → Stack: 10 Push(20) → Stack: 10,20 Push(30) → Stack: 10,20,30 Pop() → removes 30 Stack: 10,20 Give any example like the above one</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give a sequence of stack operations analyze and show the status of the stack</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>after each step.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(10) → Stack: 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(20) → Stack: 10,20</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push(30) → Stack: 10,20,30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pop() → removes 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Stack: 10,20 Give any example like the above one</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Give a sequence of stack operations analyze and show the status of the stack after each step. Example: Push(10) → Stack: 10 Push(20) → Stack: 10,20 Push(30) → Stack: 10,20,30 Pop() → removes 30 Stack: 10,20 Give any example like the above one"
+      "final_answer": "Stack: 10,20 Give any example like the above one"
     },
     {
       "id": "Q30",
@@ -433,11 +433,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Discuss the various operations performed on a queue data structure.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the various operations performed on a queue data structure.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structures.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Discuss the various operations performed on a queue data structure. ."
+      "final_answer": "structures."
     },
     {
       "id": "Q31",
@@ -447,7 +447,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain the rule for pushing an operator onto the stack when the stack already contains an operator of equal or higher precedence.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the rule for pushing an operator onto the stack when the stack already</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>contains an operator of equal or higher precedence.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the stack top has an operator of equal or higher precedence, the existing operator is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>popped before pushing the new operator.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>contains an operator of equal or higher precedence.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the stack top has an operator of equal or higher precedence, the existing operator is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>popped before pushing the new operator.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -461,11 +461,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Explain the insertion operation in linked list",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the insertion operation in linked list  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Beginning insertion adds a new node before the first node and updates the head pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>End insertion adds a new node after the last node and updates the last node link.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal - Visiting elements one by one.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operator is found, pop required operands.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete Binary Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the insertion operation in linked list ."
+      "final_answer": "Complete Binary Tree"
     },
     {
       "id": "Q33",
@@ -475,7 +475,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Differentiate between strict binary tree and height balanced binary tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between strict binary tree and height balanced binary tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict binary tree: Every node has either zero or two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Height balanced binary tree: Difference between heights of left and right subtrees is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>limited.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict binary tree: Every node has either zero or two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Height balanced binary tree: Difference between heights of left and right subtrees is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>limited.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -489,11 +489,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Compare a complete binary tree and an AVL tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Compare a complete binary tree and an AVL tree.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Beginning insertion adds a new node before the first node and updates the head pointer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>End insertion adds a new node after the last node and updates the last node link.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal - Visiting elements one by one.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If operator is found, pop required operands.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete Binary Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Compare a complete binary tree and an AVL tree. ."
+      "final_answer": "Complete Binary Tree"
     },
     {
       "id": "Q35",
@@ -503,7 +503,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Differentiate between complete binary tree and strict binary tree.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between complete binary tree and strict binary tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete binary tree: All levels are completely filled except possibly the last, which is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>filled from left.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict binary tree: Every node has either 0 or 2 children.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Complete binary tree: All levels are completely filled except possibly the last, which is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>filled from left.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strict binary tree: Every node has either 0 or 2 children.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -517,11 +517,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Identify the differences between binary search with linear search.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Identify the differences between binary search with linear search.  x4 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A linked list is a linear data structure consisting of nodes where each node contains data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a pointer/reference to the next node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perform operation and push result back.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Identify the differences between binary search with linear search. ."
+      "final_answer": "Binary Search Tree"
     },
     {
       "id": "Q37",
@@ -531,7 +531,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Describe the representation of a two-dimensional array in memory. Explain how elements are stored linearly even though they are logically arranged in rows and columns.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the representation of a two-dimensional array in memory. Explain how</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements are stored linearly even though they are logically arranged in rows and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>columns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A two-dimensional array is stored in contiguous memory locations. In row-major order,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>all elements of the first row are stored followed by the next rows. In column-major order,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements of columns are stored consecutively. Address calculation is used to access</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements. Give explanation.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements are stored linearly even though they are logically arranged in rows and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>columns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A two-dimensional array is stored in contiguous memory locations. In row-major order</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>all elements of the first row are stored followed by the next rows. In column-major order</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements of columns are stored consecutively. Address calculation is used to access</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements. Give explanation.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -545,11 +545,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Explain in your own words why an array is considered as a linear data structure with suitable examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A linked list is a linear data structure consisting of nodes where each node contains data</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a pointer/reference to the next node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perform operation and push result back.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "Binary Search Tree"
     },
     {
       "id": "Q39",
@@ -559,7 +559,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Describe the various steps to evaluate a postfix expression with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the various steps to evaluate a postfix expression with an example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -573,11 +573,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Distinguish between PUSH and POP operations of a stack with suitable algorithms.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the roles of push and pop operations in maintaining stack integrity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push inserts an element into the stack, while pop removes the top element. Together they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>maintain proper stack order.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "maintain proper stack order."
     },
     {
       "id": "Q41",
@@ -587,7 +587,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain different types of trees with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain different types of trees with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types of trees:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types of trees</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,

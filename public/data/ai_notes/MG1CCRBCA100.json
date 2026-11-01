@@ -34,7 +34,7 @@
         "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
       ],
       "has_official_scheme": true,
-      "final_answer": "the range that can be represented with the given number of bits."
+      "final_answer": "Overflow in binary addition occurs when the sum of two binary numbers exceeds"
     },
     {
       "id": "Q2",
@@ -44,11 +44,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Explain the process of converting a decimal number to binary.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the process of converting a decimal number to binary.-repeatedly divide the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>number by 2 and track the remainders. The binary number is then formed by reading the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>remainders in reverse order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overflow in binary addition happens when the result of an addition is too large to fit in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the number of bits available. In other words, the answer exceeds the maximum value that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>can be represented with the given number of bits.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Overflow in binary addition happens when the result of an addition is too large to fit in"
     },
     {
       "id": "Q3",
@@ -58,13 +58,13 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "Explain the overflow condition in binary addition with a suitable example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain the overflow condition in binary addition with a suitable example. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overflow in binary addition happens when the result of an addition is too large to fit in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the number of bits available. In other words, the answer exceeds the maximum value that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>can be represented with the given number of bits.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Overflow in binary addition happens when the result of an addition is too large to fit in"
     },
     {
       "id": "Q4",
@@ -74,13 +74,13 @@
       "marks": 2,
       "domain_tag": "[U][3]",
       "question": "Define Multiplexer.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define Multiplexer. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define Multiplexer....</em> within Digital Fundamentals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Digital Fundamentals valuation scheme."
     },
     {
       "id": "Q5",
@@ -90,11 +90,11 @@
       "marks": 2,
       "domain_tag": "[U] [1]",
       "question": "Describe the steps to convert a decimal number into BCD (8421) representation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Separate the decimal number into individual digits .Write the BCD equivalent of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>each digit and combine them .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BCD addition - 1001 1000 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "each digit and combine them ."
+      "final_answer": "BCD addition - 1001 1000"
     },
     {
       "id": "Q6",
@@ -104,11 +104,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Convert the expression into sum-of-product (SOP) form-(A+B)(A+B+C).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the expression into sum-of-product (SOP) form-(A+B)(A+B+C).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplified sum of product form is A+B. Give upmarks to intermediate results in SOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draw the block diagram of a combinational logic circuit.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Draw the block diagram of a combinational logic circuit."
     },
     {
       "id": "Q7",
@@ -118,13 +118,13 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "Draw the truth table for a three variable minterm representation F(x,y,z) = ∑(0,3,6).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Draw the truth table for a three variable minterm representation F(x,y,z) = ∑(0,3,6). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Draw the truth table for a three variable minterm representation F(x,y,z) =...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q8",
@@ -134,11 +134,11 @@
       "marks": 2,
       "domain_tag": "[An] [4]",
       "question": "Draw the truth table for an RS flip-flop and analyse the output states based on the inputs.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of RS flip-flop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> . Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sequential circuit definition or block diagram 1 mark, Explanation 1 mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Truth table of RS flip-flop . Explanation"
+      "final_answer": "Sequential circuit definition or block diagram , Explanation"
     },
     {
       "id": "Q9",
@@ -148,11 +148,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression f = A + B+ (B + C′) D] using basic laws of Boolean algebra.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplified expression is A+BD. Give marks up to 1.5 to simplification using basic laws</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and intermediate results</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with steps</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer"
     },
     {
       "id": "Q10",
@@ -162,13 +162,13 @@
       "marks": 2,
       "domain_tag": "[An][4]",
       "question": "Distinguish the positive and negative edges of a clock pulse.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Distinguish the positive and negative edges of a clock pulse. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q11",
@@ -178,11 +178,11 @@
       "marks": 2,
       "domain_tag": "[A] [1]",
       "question": "Add the following two BCD numbers: 1000 0011 and 0001 0101",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BCD addition - 1001 1000 - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>– binary subtraction of 10101101-01011011 Ans.01010010 : 3marks, discussion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and steps 3marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "BCD addition - 1001 1000"
+      "final_answer": "– binary subtraction of 10101101-01011011 Ans.01010010 : 3marks, discussion"
     },
     {
       "id": "Q12",
@@ -192,11 +192,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the use of a de-multiplexer?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the use of a de-multiplexer?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A demultiplexer is used to route a single input signal to one of several output lines based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>on select signals. It is widely used in data routing, communication systems, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>converting serial data to parallel.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplification using K-map 3 marks, implementation using NOR gate 3 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate."
     },
     {
       "id": "Q13",
@@ -206,13 +206,13 @@
       "marks": 2,
       "domain_tag": "[A][1]",
       "question": "Convert the binary number 11012 to its decimal equivalent.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Convert the binary number 11012 to its decimal equivalent. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Separate the decimal number into individual digits .Write the BCD equivalent of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>each digit and combine them .</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Separate the decimal number into individual digits .Write the BCD equivalent of"
     },
     {
       "id": "Q14",
@@ -222,11 +222,11 @@
       "marks": 2,
       "domain_tag": "[U] [2]",
       "question": "Explain how the NAND gate acts as an OR gate.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A NAND gate can act as an OR gate by using De Morgan's Theorem and by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>combining multiple NAND gates in a specific configuration.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a ‘ . b ‘ )’=a ‘’ + b ‘’ = a+b</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a a ‘ a ‘’ + b’’ =a+b</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b b ‘</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of RS flip-flop 2 marks, circuit diagram 2 marks explanation 2 marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "b b ‘"
+      "final_answer": "Truth table of RS flip-flop , circuit diagram  explanation"
     },
     {
       "id": "Q15",
@@ -236,11 +236,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Draw the block diagram of a combinational logic circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draw the block diagram of a combinational logic circuit. / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare and contrast the binary, octal, and hexadecimal number systems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the benefits of each in computing. – Comparison 4 marks benefits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>explanation 2 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Draw the block diagram of a combinational logic circuit."
+      "final_answer": "Compare and contrast the binary, octal, and hexadecimal number systems."
     },
     {
       "id": "Q16",
@@ -250,13 +250,13 @@
       "marks": 2,
       "domain_tag": "[U][2]",
       "question": "Write short notes on Maxterm and Minterm.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write short notes on Maxterm and Minterm. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write short notes on Maxterm and Minterm....</em> within Digital Fundamentals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Digital Fundamentals valuation scheme."
     },
     {
       "id": "Q17",
@@ -266,11 +266,11 @@
       "marks": 2,
       "domain_tag": "[A] [2]",
       "question": "Convert the expression into canonical form f= AB+B′C.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f = AB+ B’C=AB(C+C’)+B’C(A+A’)=ABC+ABC’+AB’C+A’B’C</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circuit diagram, graphic symbol and truth table for D-fli flop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "f = AB+ B’C=AB(C+C’)+B’C(A+A’)=ABC+ABC’+AB’C+A’B’C"
+      "final_answer": "Circuit diagram, graphic symbol and truth table for D-fli flop –  each"
     },
     {
       "id": "Q18",
@@ -280,13 +280,13 @@
       "marks": 2,
       "domain_tag": "[A][2]",
       "question": "How can a NOR gate be used to implement the AND function?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering How can a NOR gate be used to implement the AND function? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>How can a NOR gate be used to implement the AND function?...</em> within Digital Fundamentals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Digital Fundamentals valuation scheme."
     },
     {
       "id": "Q19",
@@ -296,13 +296,13 @@
       "marks": 2,
       "domain_tag": "[U] [4]",
       "question": "Define sequential circuits and explain their significance.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sequential circuit definition or block diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> , Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RS flip-flop - Working with truth table (3marks) circuit diagram(2marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JK flip-flops -Working with truth table (3marks) circuit diagram(2marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [
         "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
       ],
       "has_official_scheme": true,
-      "final_answer": "Sequential circuit definition or block diagram , Explanation"
+      "final_answer": "RS flip-flop - Working with truth table (3marks) circuit diagram(2marks)"
     },
     {
       "id": "Q20",
@@ -312,11 +312,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Explain the concept of toggling in a JK flip-flop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the concept of toggling in a JK flip-flop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A JK flip-flop toggles when both inputs, J and K, are set to 1. This means that on the next</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>clock pulse, the output Q will flip to 1if it was 0, or to 0 if it was 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>. This behavior makes the JK flip-flop useful for applications like counters</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Include a timing diagram to show how data is shifted in and read out.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description with block diagram 6 marks, timing diagram and explanation 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dr. Ajitha R.S., Associate Professor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Department of Computer Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NSS College Rajakumari</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Phone: 9497792121</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Phone: 9497792121"
     },
     {
       "id": "Q21",
@@ -326,13 +326,13 @@
       "marks": 2,
       "domain_tag": "[U][4]",
       "question": "Write short note on Combinational Logic Circuits and Sequential Logic Circuits.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write short note on Combinational Logic Circuits and Sequential Logic Circuits. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write short note on Combinational Logic Circuits and Sequential Logic Circuits....</em> within Digital Fundamentals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Digital Fundamentals valuation scheme."
     },
     {
       "id": "Q22",
@@ -356,11 +356,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Convert the binary number 101011 to octal.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer with steps / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with steps</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer with steps"
+      "final_answer": "Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer"
     },
     {
       "id": "Q24",
@@ -370,13 +370,13 @@
       "marks": 2,
       "domain_tag": "[U][4]",
       "question": "Draw the truth table of a JK flip-flop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Draw the truth table of a JK flip-flop. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of RS flip-flop 1 mark. Explanation 1 mark</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Truth table of RS flip-flop . Explanation"
     },
     {
       "id": "Q25",
@@ -386,7 +386,7 @@
       "marks": 2,
       "domain_tag": "[U] [3]",
       "question": "Draw the logic circuit for a 3-to-8 decoder. (10 × 2 = 20)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Logic circuit of 3-to-8 decoder <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Logic circuit of 3-to-8 decoder 2 marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -400,11 +400,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the primary difference between a half adder and a full adder?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the primary difference between a half adder and a full adder?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A half adder adds two single-bit binary numbers, while a full adder adds three</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>single-bit binary numbers, including a carry-in from a previous operation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x2 = 20]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A half adder adds two single-bit binary numbers, while a full adder adds three</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>single-bit binary numbers, including a carry-in from a previous operation.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "x2 = 20]"
+      "final_answer": "A half adder adds two single-bit binary numbers, while a full adder adds three"
     },
     {
       "id": "Q27",
@@ -414,13 +414,13 @@
       "marks": 2,
       "domain_tag": "[U][3]",
       "question": "What are the applications of an encoder in digital systems? (10*2=20 Marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What are the applications of an encoder in digital systems? (10*2= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(20 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and advantages 4 marks</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "and advantages"
     },
     {
       "id": "Q28",
@@ -430,11 +430,11 @@
       "marks": 6,
       "domain_tag": "[A] [1]",
       "question": "Perform binary subtraction on the numbers 1010 1101 - 0101 1011, and discuss overflow if any. Show each step in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>– binary subtraction of 10101101-01011011 Ans.01010010 : <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3marks)</span> , discussion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overflow in binary addition occurs when the sum of two binary numbers exceeds</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the range that can be represented with the given number of bits.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "and steps"
+      "final_answer": "Overflow in binary addition occurs when the sum of two binary numbers exceeds"
     },
     {
       "id": "Q29",
@@ -444,13 +444,13 @@
       "marks": 6,
       "domain_tag": "[A][1]",
       "question": "Convert the decimal number 483 to its equivalent BCD using the 8421 code",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Convert the decimal number 483 to its equivalent BCD using the 8421 code . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the decimal number 357 to its BCD representation using the 8421</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>code. Show each step of the conversion process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer : 0011 0101 0111 (3 marks explanation or steps 3 marks)</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Convert the decimal number 483 to its equivalent BCD using the 8421 code ."
+      "final_answer": "Convert the decimal number 357 to its BCD representation using the 8421"
     },
     {
       "id": "Q30",
@@ -460,11 +460,11 @@
       "marks": 6,
       "domain_tag": "[A] [2]",
       "question": "Simplify the following using Boolean laws only. (i) F= AB + A(B+C) +B(B+C) (ii) F= A′B + BC′ + BC + AB′C′.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplification using Boolean laws <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) F=AB+A(B+C)+B(B+C)=AB+AB+AC+BB+BC=AB+AC+B+BC=AB+AC+B(1+C)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>=AB+AC+B=AC+A(B+1)=AC+A=A(C+1)=A</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) F=A’B+BC’+BC+AB’C’=A’B+B(C+C’)+AB’C’=A’B+B+AB’C’=B(A’+1)+AB’C’=B+AB’C’</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplified expression is A+BD. Give marks up to 1.5 to simplification using basic laws</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and intermediate results</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(ii) F=A’B+BC’+BC+AB’C’=A’B+B(C+C’)+AB’C’=A’B+B+AB’C’=B(A’+1)+AB’C’=B+AB’C’"
+      "final_answer": "Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra."
     },
     {
       "id": "Q31",
@@ -474,11 +474,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplification using K-map <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> , implementation using NOR gate <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplification using K-map 3 marks, implementation using NOR gate 3 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate."
     },
     {
       "id": "Q32",
@@ -488,13 +488,13 @@
       "marks": 6,
       "domain_tag": "[A][2]",
       "question": "Draw the logic diagram using only NOR gates F=xy’z +x’yz’.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Draw the logic diagram using only NOR gates F=xy’z +x’yz’. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draw the block diagram of a combinational logic circuit.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Draw the logic diagram using only NOR gates F=xy’z +x’yz’. ."
+      "final_answer": "Draw the block diagram of a combinational logic circuit."
     },
     {
       "id": "Q33",
@@ -504,13 +504,13 @@
       "marks": 6,
       "domain_tag": "[A] [3]",
       "question": "Design an 8×1 multiplexer using 4×1 and 2×1 multiplexer.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Design 8x1 multiplexer using 4x1 and 2x1 multiplexer - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Two 4x1 multiplexers to handle 8 input lines.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) One 2x1 multiplexer to select between the outputs of the two 4x1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>multiplexers.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Design 8x1 multiplexer using 4x1 and 2x1 multiplexer <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Two 4x1 multiplexers to handle 8 input lines.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) One 2x1 multiplexer to select between the outputs of the two 4x1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>multiplexers.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [
         "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
       ],
       "has_official_scheme": true,
-      "final_answer": "multiplexers."
+      "final_answer": "Design 8x1 multiplexer using 4x1 and 2x1 multiplexer -6marks"
     },
     {
       "id": "Q34",
@@ -520,11 +520,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain how a decoder is used for memory address selection in computer systems.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how a decoder is used for memory address selection in computer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>systems. - by converting a binary memory address from the CPU into a single</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>active output line that enables a particular memory chip or a specific word line</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>within a chip. It takes 𝑛 input lines representing the binary address and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>activates one of its 2 𝑛 output lines, where only the selected line is active (e.g.,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>high) at any given time. This ensures that data is read from or written to only</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the correct memory cell.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>systems. - by converting a binary memory address from the CPU into a single</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>active output line that enables a particular memory chip or a specific word line</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>within a chip. It takes 𝑛 input lines representing the binary address and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>activates one of its 2 𝑛 output lines, where only the selected line is active (e.g.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>high) at any given time. This ensures that data is read from or written to only</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the correct memory cell.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "systems. - by converting a binary memory address from the CPU into a single"
     },
     {
       "id": "Q35",
@@ -534,13 +534,13 @@
       "marks": 6,
       "domain_tag": "[A][3]",
       "question": "Draw the circuit diagram of 1×8 De-multiplexer.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Draw the circuit diagram of 1×8 De-multiplexer. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draw the block diagram of a combinational logic circuit.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Draw the circuit diagram of 1×8 De-multiplexer. ."
+      "final_answer": "Draw the block diagram of a combinational logic circuit."
     },
     {
       "id": "Q36",
@@ -550,11 +550,11 @@
       "marks": 6,
       "domain_tag": "[U] [4]",
       "question": "Describe the working of the RS flip-flop with a truth table and diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of RS flip-flop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , circuit diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RS flip-flop - Working with truth table (3marks) circuit diagram(2marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JK flip-flops -Working with truth table (3marks) circuit diagram(2marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Truth table of RS flip-flop , circuit diagram explanation"
+      "final_answer": "RS flip-flop - Working with truth table (3marks) circuit diagram(2marks)"
     },
     {
       "id": "Q37",
@@ -564,11 +564,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss the characteristics and use of a D flip-flop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the characteristics and use of a D flip-flop. – characteristics table or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>discussion - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> . Use of D fip-flop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>discussion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span>. Use of D fip-flop 2 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "discussion -4 marks. Use of D fip-flop 2 marks"
     },
     {
       "id": "Q38",
@@ -594,13 +594,13 @@
       "marks": 6,
       "domain_tag": "[A] [1]",
       "question": "Convert the decimal number 256 to its BCD representation using the 8421 code. Show each step of the conversion process.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>256(Decimal)=001001010110(BCD) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3marks)</span> explanation with steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the decimal number 357 to its BCD representation using the 8421</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>code. Show each step of the conversion process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer : 0011 0101 0111 (3 marks explanation or steps 3 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [
         "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
       ],
       "has_official_scheme": true,
-      "final_answer": "256(Decimal)=001001010110(BCD) explanation with steps"
+      "final_answer": "Convert the decimal number 357 to its BCD representation using the 8421"
     },
     {
       "id": "Q40",
@@ -610,11 +610,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare and contrast the binary, octal, and hexadecimal number systems. Discuss the benefits of each in computing.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare and contrast the binary, octal, and hexadecimal number systems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the benefits of each in computing. – Comparison <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> benefits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare and contrast the binary, octal, and hexadecimal number systems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the benefits of each in computing. – Comparison 4 marks benefits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>explanation 2 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Compare and contrast the binary, octal, and hexadecimal number systems."
     },
     {
       "id": "Q41",
@@ -624,13 +624,13 @@
       "marks": 6,
       "domain_tag": "[A][1]",
       "question": "Convert the octal number 674 to hexadecimal.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Convert the octal number 674 to hexadecimal. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with steps</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Convert the octal number 674 to hexadecimal. ."
+      "final_answer": "Convert the binary number 101011 to octal. Ans: Octal 53. Two marks for correct answer"
     },
     {
       "id": "Q42",
@@ -640,13 +640,13 @@
       "marks": 6,
       "domain_tag": "[A] [2]",
       "question": "Apply De Morgan’s theorems to each of the following expressions (i )′ (ii) (ABC + DEF)′ (iii) (AB′+ C′D + EF)′.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Application of De Morgan’s theorem <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) [(A+B+C)D]′=(A+B+C)′+D′= (A′⋅B′⋅C′)+D′= A′⋅B′⋅C′+D′</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) (ABC+DEF)′=(ABC)′⋅(DEF)′= (A′+B′+C′)⋅(D′+E′+F′)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iii) B′+C′D+EF]′= (AB′)′⋅(C′D)′⋅(EF)′ =(A′+B)⋅(C+D′)⋅(E′+F′)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Apply De Morgan’s theorems to each of the following expressions (i )</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>+ C) D]′ (ii) (ABC + DEF)′ (iii) (AB′+ C′D + EF)′. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [
         "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
       ],
       "has_official_scheme": true,
-      "final_answer": "(iii)′= (AB′)′⋅(C′D)′⋅(EF)′ =(A′+B)⋅(C+D′)⋅(E′+F′)"
+      "final_answer": "Apply De Morgan’s theorems to each of the following expressions (i )"
     },
     {
       "id": "Q43",
@@ -672,11 +672,11 @@
       "marks": 6,
       "domain_tag": "[U] [4]",
       "question": "Draw the circuit diagram graphic symbol and truth table for a D flip-flop. (5 × 6 = 30)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circuit diagram, graphic symbol and truth table for D-fli flop – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Circuit diagram, graphic symbol and truth table for D-fli flop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Circuit diagram, graphic symbol and truth table for D-fli flop – each"
+      "final_answer": "Circuit diagram, graphic symbol and truth table for D-fli flop –  each"
     },
     {
       "id": "Q45",
@@ -686,11 +686,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip-flops based on a timing diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>flops based on a timing diagram. – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each for definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>comparison</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x6 = 30]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>flops based on a timing diagram. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> each for definition 2 marks for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>comparison</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "x6 = 30]"
+      "final_answer": "Compare the behaviour of positive-edge-triggered and negative-edge- triggered flip"
     },
     {
       "id": "Q46",
@@ -700,13 +700,13 @@
       "marks": 6,
       "domain_tag": "[U][4]",
       "question": "Describe T flip-flop. What is its use? (5*6=30 Marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe T flip-flop. What is its use? (5*6= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(30 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of RS flip-flop 2 marks, circuit diagram 2 marks explanation 2 marks</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe T flip-flop. What is its use? (5*6= ."
+      "final_answer": "Truth table of RS flip-flop , circuit diagram  explanation"
     },
     {
       "id": "Q47",
@@ -716,11 +716,11 @@
       "marks": 10,
       "domain_tag": "[A] [2]",
       "question": "State the basic laws of Boolean algebra. Simplify the expression AB + A (B + C) + B (B + C).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Basic laws of Boolean Algebra - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> . Simplification Steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>F=AB+A(B+C)+B(B+C)= AB+AB+AC+BB+BC= AB+AC+B+BC=AB+AC+B(1+C)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>=AB+AC+B=B(A+1)+AC=B+AC</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplified expression is A+BD. Give marks up to 1.5 to simplification using basic laws</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and intermediate results</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "=AB+AC+B=B(A+1)+AC=B+AC"
+      "final_answer": "Simplify the expression f = A + B[AC + (B + C′) D] using basic laws of Boolean algebra."
     },
     {
       "id": "Q48",
@@ -730,11 +730,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13). –</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>k-map <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , simplification <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Simplified expression <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>k-map 4 marks, simplification 4 marks, Simplified expression 2 marks</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Simplify the Boolean function using K-Map: F(w,x,y,z)=Σ(1,3,4,5,6,9,12,13)."
     },
     {
       "id": "Q49",
@@ -744,13 +744,13 @@
       "marks": 10,
       "domain_tag": "[A][2]",
       "question": "Simplify using K-map, the expression F(A,B,C,D)= ∑m(0,2,7,8,14,) with Don’t care terms D= ∑m(1,6,9,13). Draw the corresponding logic diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simplification using K-map 3 marks, implementation using NOR gate 3 marks</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "Simplify the expression F(x,y,z)=∑(0,6) and implement with NOR gate."
     },
     {
       "id": "Q50",
@@ -790,7 +790,7 @@
       "marks": 10,
       "domain_tag": "[U] [3]",
       "question": "Explain the working of a digital encoder. Describe their applications, and advantages. (2 × 10 = 20) END OF THE QUESTION PAPER ***",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the working of an encoder with a suitable diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span> , Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and advantages <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and advantages 4 marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -806,7 +806,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Describe the operation of a 4-bit serial-in parallel-out (SIPO) shift register. Include a timing diagram to show how data is shifted in and read out.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the operation of a 4-bit serial-in parallel-out (SIPO) shift register.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Include a timing diagram to show how data is shifted in and read out.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description with block diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span> , timing diagram and explanation 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x10 = 20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dr. Ajitha R.S., Associate Professor,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Department of Computer Applications,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NSS College Rajakumari</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Phone: 9497792121</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Include a timing diagram to show how data is shifted in and read out.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description with block diagram 6 marks, timing diagram and explanation 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dr. Ajitha R.S., Associate Professor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Department of Computer Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NSS College Rajakumari</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Phone: 9497792121</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
       "has_official_scheme": true,

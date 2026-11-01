@@ -27,7 +27,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Differentiate between Class and Object.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>User performs an action.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Class: Blueprint/template for creating objects.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Object: Instance of a class containing actual data and behavior.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements in try execute.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Extending Thread Class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class MyThread extends Thread{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>public void run(){</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>System.out.println(\"Thread Running\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class Demo{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>public static void main(String args[]){</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MyThread t=new MyThread();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>t.start();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Easy implementation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Direct thread control.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limitation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Cannot extend another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Source</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Object that generates events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Button, TextField.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>User performs an action.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain why Java is called a platform-independent language",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain why Java is called a platform-independent language  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain why Java is called a platform-independent language...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q3",
@@ -55,11 +55,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Distinguish between Post-decrement and Pre-decrement operators.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Source generates an event.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java is robust because it provides</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Strong memory management</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Exception handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Automatic garbage collection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Type checking</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>finally executes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Listener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receives and processes events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ActionListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• MouseListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• KeyListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• WindowListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Delegation Model</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Object created.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Event Source generates an event."
+      "final_answer": "Event Object created."
     },
     {
       "id": "Q4",
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Distinguish between the roles of the JDK and the JRE.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Distinguish between the roles of the JDK and the JRE.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Illustrate why Java a Robust language?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Object created.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The start() method creates a new thread and invokes its run() method, enabling concurrent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>execution.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listener executes event-handling code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Separation of GUI and logic.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Efficient event processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports reusable components.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Event Object created."
+      "final_answer": "• Supports reusable components."
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain the difference between / and % operators in Java?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain the difference between / and % operators in Java?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain the difference between / and % operators in Java?...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "When the finally block may execute in Java?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event sent to registered Listener.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>KeyListener is used to handle keyboard events such as key pressed, released, and typed.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Event sent to registered Listener."
+      "final_answer": "KeyListener is used to handle keyboard events such as key pressed, released, and typed."
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Which data type is best suited to store a single Unicode character?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which data type is best suited to store a single Unicode character?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which data type is best suited to store a single Unicode character?...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Examine the use of the start() method in threads.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listener executes event-handling code. Example Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Separation of GUI and logic.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Efficient event processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports reusable components.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Because the JVM invokes main() without creating an object of the class.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "• Supports reusable components."
+      "final_answer": "Because the JVM invokes main() without creating an object of the class."
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Describe the primary difference between a while loop and a do-while loop in Java.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Describe the primary difference between a while loop and a do-while loop in Java.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Describe the primary difference between a while loop and a do-while loop in Java...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Differentiate between JCheck Box and JRadio Button in functionality.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between JCheckBox and JRadioButton. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• JCheckBox: Allows multiple selections.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• JRadioButton: Allows only one selection within a ButtonGroup.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>4 bytes (32 bits)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "• JRadioButton: Allows only one selection within a ButtonGroup."
+      "final_answer": "4 bytes (32 bits)"
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "How does the continue statement differ from the break statement when used inside a for loop?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering How does the continue statement differ from the break statement when used inside a for loop?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A labelled loop is identified with a label name and is mainly used with break and continue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>outer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves control over nested loops.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows exiting multiple loops at once.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "• Allows exiting multiple loops at once."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Examine the purpose of Key Listener.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examine the purpose of KeyListener. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>KeyListener is used to handle keyboard events such as key pressed, released, and typed.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A labelled loop is identified with a label name and is mainly used with break and continue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>outer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves control over nested loops.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows exiting multiple loops at once.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "KeyListener is used to handle keyboard events such as key pressed, released, and typed."
+      "final_answer": "• Allows exiting multiple loops at once."
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain purpose of a try-catch block in Java exception handling?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain purpose of a try-catch block in Java exception handling?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The finally block executes after the try-catch block regardless of whether an exception occurs or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not (except in abnormal JVM termination).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program continues after exception handling.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event sent to registered Listener.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Event sent to registered Listener."
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Differentiate between init() and start() methods.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between init() and start() methods. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• init(): Called once when an applet is loaded.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• start(): Called after init() and whenever the applet becomes active.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JTextArea allows users to enter multiple lines of text.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multi-line text input.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports text editing.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "• start(): Called after init() and whenever the applet becomes active."
+      "final_answer": "• Supports text editing."
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Describe the finally keyword in java",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Describe the finally keyword in java  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Describe the finally keyword in java...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Why is the main() method in Java always declared as static?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is main() method declared static? </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Because the JVM invokes main() without creating an object of the class.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>drawRect() fillRect()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draws rectangle outline Draws filled rectangle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Only border visible Entire area colored</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Less memory use More graphical effect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.drawRect(10,10,100,50);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.fillRect(10,70,100,50);</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Because the JVM invokes main() without creating an object of the class."
+      "final_answer": "g.fillRect(10,70,100,50);"
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "What does it mean when a thread is in the \"Runnable\" state?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What does it mean when a thread is in the \"Runnable\" state?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What does it mean when a thread is in the \"Runnable\" state?...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define Multilevel Inheritance with syntax.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Multilevel Inheritance with syntax. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multilevel inheritance occurs when a class inherits from another class, which itself inherits from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A {}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class B extends A {}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class C extends B {}</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "class C extends B {}"
+      "final_answer": "• Supports multiple initialization methods."
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "What is the default layout of an Applet?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is the default layout of an Applet?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the default layout of an Applet?...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Write the size of a float data type.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the size of a float data type. </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event handling is the process of responding to user actions such as mouse clicks, key presses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and button selections.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components of Event Handling</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Write the size of a float data type."
+      "final_answer": "Components of Event Handling"
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "State the difference between draw Oval() and fill Oval() ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the difference between draw Oval() and fill Oval() ?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State the difference between draw Oval() and fill Oval() ?...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Precise statement of principles and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q23",
@@ -335,11 +335,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Operate the set Bounds() method for a Swing component.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Use of setBounds() method for a Swing component. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>setBounds() specifies the position and size of a component.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>button.setBounds(50,50,100,30);</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>setBounds() specifies the position and size of a component.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>button.setBounds(50,50,100,30);</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "button.setBounds(50,50,100,30);"
+      "final_answer": "setBounds() specifies the position and size of a component."
     },
     {
       "id": "Q24",
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Which method is used to update the text displayed by a JLabel after it has been created?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which method is used to update the text displayed by a JLabel after it has been created?  x10 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which method is used to update the text displayed by a JLabel after it has been ...</em> within Programming in Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Programming in Java valuation scheme."
     },
     {
       "id": "Q25",
@@ -363,7 +363,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe the concept of labelled loops.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the concept of labelled loops. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A labelled loop is identified with a label name and is mainly used with break and continue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>outer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves control over nested loops.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows exiting multiple loops at once.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A labelled loop is identified with a label name and is mainly used with break and continue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>outer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves control over nested loops.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows exiting multiple loops at once.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -377,11 +377,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Explain constructor overloading in Java.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain constructor overloading in Java.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain constructor overloading in Java. ."
+      "final_answer": "• Supports multiple initialization methods."
     },
     {
       "id": "Q27",
@@ -391,11 +391,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Examine the exception handling mechanism in Java and analyze the flow of control during an exception.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the exception handling mechanism in Java and flow of control.  Exception Handling Blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• try</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• catch</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• finally</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• throw</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• throws Flow of Control</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception Handling Blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• try</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• catch</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• finally</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• throw</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• throws</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flow of Control</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "• throws Flow of Control"
+      "final_answer": "Flow of Control"
     },
     {
       "id": "Q28",
@@ -405,11 +405,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Differentiate between static methods and instance methods.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Differentiate between static methods and instance methods.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Class: Blueprint/template for creating objects.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Object: Instance of a class containing actual data and behavior.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements in try execute.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Extending Thread Class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class MyThread extends Thread{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>public void run(){</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>System.out.println(\"Thread Running\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class Demo{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>public static void main(String args[]){</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MyThread t=new MyThread();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>t.start();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Easy implementation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Direct thread control.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limitation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Cannot extend another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Source</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Object that generates events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Button, TextField.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>User performs an action.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Differentiate between static methods and instance methods. ."
+      "final_answer": "User performs an action."
     },
     {
       "id": "Q29",
@@ -433,11 +433,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Explain the mechanism of catching multiple exceptions with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the mechanism of catching multiple exceptions with an example.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the mechanism of catching multiple exceptions with an example. ."
+      "final_answer": "• Supports multiple initialization methods."
     },
     {
       "id": "Q31",
@@ -447,7 +447,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Define Visibility Control. List the different visibility controls available in Java.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Visibility Control. List different visibility controls in Java. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Visibility control determines accessibility of class members.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access Modifier Same Class Package Subclass Other Package</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Yes No No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Default Yes Yes No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Protected Yes Yes Yes Yes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Yes Yes Yes Yes</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Visibility control determines accessibility of class members.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access Modifier Same Class Package Subclass Other Package</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Yes No No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Default Yes Yes No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Protected Yes Yes Yes Yes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Yes Yes Yes Yes</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -475,7 +475,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Contrast draw Rect() and fill Rect() methods in Graphics.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Contrast drawRect() and fillRect() methods in Graphics. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>drawRect() fillRect()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draws rectangle outline Draws filled rectangle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Only border visible Entire area colored</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Less memory use More graphical effect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.drawRect(10,10,100,50);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.fillRect(10,70,100,50);</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>drawRect() fillRect()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Draws rectangle outline Draws filled rectangle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Only border visible Entire area colored</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Less memory use More graphical effect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.drawRect(10,10,100,50);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g.fillRect(10,70,100,50);</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -489,11 +489,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Examine the event-handling mechanism of a JButton",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Examine the event-handling mechanism of a JButton  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The start() method creates a new thread and invokes its run() method, enabling concurrent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>execution.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listener executes event-handling code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Separation of GUI and logic.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Efficient event processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports reusable components.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Examine the event-handling mechanism of a JButton ."
+      "final_answer": "• Supports reusable components."
     },
     {
       "id": "Q35",
@@ -503,7 +503,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the role of the default case in a switch structure. Explain with example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of default case in switch statement.  The default case executes when none of the cases match the expression value. int day=8; switch(day){ case 1: System.out.println(\"Monday\"); break; default: System.out.println(\"Invalid Day\"); } Importance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Handles unexpected inputs.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves program reliability.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The default case executes when none of the cases match the expression value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int day=8;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>switch(day){</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>case 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>System.out.println(\"Monday\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>default</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>System.out.println(\"Invalid Day\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Handles unexpected inputs.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves program reliability.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -531,7 +531,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain constructors overloading with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain Constructor Overloading with Example. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -545,11 +545,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Discuss the behavior of access modifiers ( private , protected , public ) in Java",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Visibility control determines accessibility of class members.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access Modifier Same Class Package Subclass Other Package</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Yes No No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Default Yes Yes No No</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Protected Yes Yes Yes Yes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Yes Yes Yes Yes</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "Public Yes Yes Yes Yes"
     },
     {
       "id": "Q39",
@@ -559,7 +559,7 @@
       "marks": 10,
       "domain_tag": "[An] ",
       "question": "Outline and Investigate the different ways of creating threads in Java and analyze their suitability for various applications.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different Ways of Creating Threads in Java and Their Suitability. </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different Ways of Creating Threads in Java and Their Suitability.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -573,11 +573,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "What are the two primary ways to create a thread in Java? Explain with an example",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor Overloading</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multiple constructors with different parameter lists in the same class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables object initialization in different ways.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eg</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Flexibility in object creation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code readability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multiple initialization methods.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "• Supports multiple initialization methods."
     },
     {
       "id": "Q41",
@@ -587,7 +587,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Summarize the complete event handling mechanism in Java AWT.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Summarize the Complete Event Handling Mechanism in Java AWT. </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event handling is the process of responding to user actions such as mouse clicks, key presses,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and button selections.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components of Event Handling</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event handling is the process of responding to user actions such as mouse clicks, key presses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and button selections.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components of Event Handling</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -601,11 +601,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Explain the Delegation Event Model in Java in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java is robust because it provides</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Strong memory management</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Exception handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Automatic garbage collection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Type checking</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>finally executes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Listener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receives and processes events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ActionListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• MouseListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• KeyListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• WindowListener</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Delegation Model</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Event Object created.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "Event Object created."
     }
   ]
 }

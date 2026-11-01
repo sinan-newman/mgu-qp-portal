@@ -29,11 +29,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Arrange the following steps in the correct order to create a Matplotlib plot: (Customize plot, Show plot, Import library, Create figure, Add data).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> accordingly)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q2",
@@ -43,11 +43,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Find the function used to create a basic line plot in Matplotlib?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>mark for definition and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for use.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Seaborn is a Python data visualization library built on top of Matplotlib.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is used to create attractive and informative statistical graphs easily, with better design and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simpler code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 mark for definition and 1 mark for use.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bar Chart – px.bar()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used for comparing categories.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "mark for definition and for use."
+      "final_answer": "Used for comparing categories."
     },
     {
       "id": "Q3",
@@ -57,13 +57,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "List four common types of data visualization techniques.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List four common types of data visualization techniques.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "decisions in areas like business, healthcare, education, and government."
     },
     {
       "id": "Q4",
@@ -73,13 +73,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a simple line plot using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a simple line plot using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: plot() function connects the data points with a line, producing a simple line graph.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Ans: plot() function connects the data points with a line, producing a simple line graph."
     },
     {
       "id": "Q5",
@@ -89,11 +89,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Name two Python libraries besides Matplotlib used for data visualization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Name two Python libraries besides Matplotlib used for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>data visualization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Write any 2 libraries such as Seaborn, Plotly, Bokeh,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Altair, ggplot, Pygal, Geopandas / Folium <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Recall the role of dcc.Graph() in Dash.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: To render interactive plots and charts in a web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>application. (2marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Short Answer Questions"
     },
     {
       "id": "Q6",
@@ -103,13 +103,13 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is Seaborn, and why is it used for data visualization?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bar Chart – px.bar() Used for comparing categories.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": true,
-      "final_answer": "Bar Chart – px.bar() Used for comparing categories."
+      "final_answer": "decisions in areas like business, healthcare, education, and government."
     },
     {
       "id": "Q7",
@@ -119,13 +119,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a line plot showing the GDP growth of a country over 10 years.Customize the plot with appropriate labels for the axes,a title, and a legend.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a line plot showing the GDP growth of a country over 10 years.Customize the plot with appropriate labels for the axes,a title, and a legend. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: plot() function connects the data points with a line, producing a simple line graph.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Ans: plot() function connects the data points with a line, producing a simple line graph."
     },
     {
       "id": "Q8",
@@ -135,11 +135,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Explain the term ‘hover’.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the term ‘hover’. Definition - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Describe box plots and violin plots (1.5 marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples ( 1 mark each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Both are used to visualize the distribution of a dataset.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Explain the term ‘hover’. Definition"
+      "final_answer": "visualization."
     },
     {
       "id": "Q9",
@@ -149,11 +149,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Name two types of input components available in Dash.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scatter Plot – px.scatter()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show relationships between variables.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Storytelling in data visualization refers to presenting data with a clear narrative so that it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>conveys meaningful insights instead of just raw numbers or charts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How it improves comprehension</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes complex data simple and easy to understand.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Helps in quick identification of trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves memory and engagement compared to plain data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports better decision-making by clearly conveying insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition 2 Marks , Any three improvisations<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Used to show relationships between variables."
+      "final_answer": "Definition  , Any three improvisations"
     },
     {
       "id": "Q10",
@@ -163,13 +163,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Name libraries that provide interactive plotting",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Name libraries that provide interactive plotting  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Name libraries that provide interactive plotting...</em> within Data Visualization using Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Visualization using Python valuation scheme."
     },
     {
       "id": "Q11",
@@ -179,13 +179,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a bar plot using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a bar plot using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q12",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write down 2 best practices for data visualization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write down 2 best practices for data visualization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any 2 best practices <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualization with an example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "visualization with an example."
     },
     {
       "id": "Q13",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Name any 2 static plotting library.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Histogram – px.histogram() Used to show data distribution.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Matplotlib, Seaborn</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Histogram – px.histogram()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show data distribution.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Histogram – px.histogram() Used to show data distribution."
+      "final_answer": "Used to show data distribution."
     },
     {
       "id": "Q14",
@@ -223,13 +223,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Find out some options to deploy the dashboards",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Find out some options to deploy the dashboards  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Find out some options to deploy the dashboards...</em> within Data Visualization using Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Visualization using Python valuation scheme."
     },
     {
       "id": "Q15",
@@ -239,13 +239,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a horizontal bar plot using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a horizontal bar plot using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q16",
@@ -255,11 +255,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Recall the role of dcc.Graph() in Dash.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Recall the role of dcc.Graph() in Dash. Ans: To render interactive plots and charts in a web application. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2marks)</span> /  x5 = 10]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Recall the role of dcc.Graph() in Dash.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: To render interactive plots and charts in a web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>application. (2marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Recall the role of dcc.Graph() in Dash. Ans: To render interactive plots and charts in a web application."
+      "final_answer": "Short Answer Questions"
     },
     {
       "id": "Q17",
@@ -269,7 +269,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Can we save the charts as image files in Plotly? Describe how.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pie Chart – px.pie()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show proportions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These methods help in quick visualization with fewer lines of code and provide interactive features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like zooming and hovering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each method with code → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> × 4 methods = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overall explanation → <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Yes, charts in Plotly can be saved as image files. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is done using the write_image() function after installing kaleido,. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g. fig.write_image(\"chart.png\").</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions -Answer any 5 questions- Each question carries 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pie Chart – px.pie()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show proportions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These methods help in quick visualization with fewer lines of code and provide interactive features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like zooming and hovering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each method with code → 1 mark × 4 methods = 4 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overall explanation → 1 mark</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -283,13 +283,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Recall the command used to install Plotly in a Jupyter Notebook? (5* 2 = 10 marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Recall the command used to install Plotly in a Jupyter Notebook?  (5* 2 = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Yes, charts in Plotly can be saved as image files. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is done using the write_image() function after installing kaleido,. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g. fig.write_image(\"chart.png\").</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions -Answer any 5 questions- Each question carries 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pie Chart – px.pie()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show proportions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These methods help in quick visualization with fewer lines of code and provide interactive features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like zooming and hovering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each method with code → 1 mark × 4 methods = 4 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overall explanation → 1 mark</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Overall explanation →"
     },
     {
       "id": "Q19",
@@ -299,13 +299,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a bar plot using labels, legends in matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a bar plot using labels, legends in matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q20",
@@ -315,13 +315,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a bar plot displaying the average monthly income of workers in different industries(eg. agriculture,IT,Healthcare).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a bar plot displaying the average monthly income of workers in different industries(eg. agriculture,IT,Healthcare). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q21",
@@ -331,13 +331,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a scatter plot using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a scatter plot using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q22",
@@ -347,13 +347,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Plot the relationship between population growth and unemployment rate for five countries. Use different colours for the points.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Plot the relationship between population growth and unemployment rate for five countries. Use different colours for the points. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q23",
@@ -363,13 +363,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a sub plot using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a sub plot using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q24",
@@ -379,13 +379,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a figure with multiple subplots using matplotlib.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a figure with multiple subplots using matplotlib. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrange the following steps in the correct order to create a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Matplotlib plot: (Customize plot, Show plot, Import library</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create figure, Add data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:Import library- Create figure- Add data- Customize</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plot-Show plot. (Give 2 marks accordingly)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Arrange the following steps in the correct order to create a"
     },
     {
       "id": "Q25",
@@ -395,13 +395,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a line plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a line plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: plot() function connects the data points with a line, producing a simple line graph.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Ans: plot() function connects the data points with a line, producing a simple line graph."
     },
     {
       "id": "Q26",
@@ -411,13 +411,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a scatter plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a scatter plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q27",
@@ -427,13 +427,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a bar plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a bar plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q28",
@@ -443,13 +443,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a histogram using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a histogram using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Program to create a histogram using seaborn....</em> within Data Visualization using Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Visualization using Python valuation scheme."
     },
     {
       "id": "Q29",
@@ -459,13 +459,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a box plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a box plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q30",
@@ -475,13 +475,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a box plot with a theme using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a box plot with a theme using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: plot() function connects the data points with a line, producing a simple line graph.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Ans: plot() function connects the data points with a line, producing a simple line graph."
     },
     {
       "id": "Q31",
@@ -491,13 +491,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Use different seaborn themes(eg, \"darkgrid\",\"whitegrid\") to plot a histogram of household incomes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Use different seaborn themes(eg, \"darkgrid\",\"whitegrid\") to plot a histogram of household incomes. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q32",
@@ -507,13 +507,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a multi-grid facet Grid using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a multi-grid facet Grid using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q33",
@@ -523,13 +523,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a multi-grid Pair Grid using seaborn. Page 3 of 3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a multi-grid Pair Grid using seaborn. Page 3 of 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q34",
@@ -539,13 +539,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a multi-grid Joint Grid using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a multi-grid Joint Grid using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q35",
@@ -555,13 +555,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a stripplot in categorical plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a stripplot in categorical plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q36",
@@ -571,13 +571,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a Boxplot in categorical plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a Boxplot in categorical plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q37",
@@ -587,13 +587,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a Violinplot in categorical plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a Violinplot in categorical plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q38",
@@ -603,13 +603,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a bar plot showing the average expenditure on food, education, and healthcare by income groups(low, middle ,high) in categorical plot.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a bar plot showing the average expenditure on food, education, and healthcare by income groups(low, middle ,high) in categorical plot. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "decisions in areas like business, healthcare, education, and government."
     },
     {
       "id": "Q39",
@@ -619,13 +619,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a Swarmplot in categorical plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a Swarmplot in categorical plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q40",
@@ -635,13 +635,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a combined Swarm+Violin plot using seaborn.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a combined Swarm+Violin plot using seaborn. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q41",
@@ -651,13 +651,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create an interactive line chart showing the import and export data of a country over a decade using Plotly",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create an interactive line chart showing the import and export data of a country over a decade using Plotly . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Yes, charts in Plotly can be saved as image files. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is done using the write_image() function after installing kaleido,. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g. fig.write_image(\"chart.png\").</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions -Answer any 5 questions- Each question carries 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pie Chart – px.pie()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show proportions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These methods help in quick visualization with fewer lines of code and provide interactive features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like zooming and hovering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each method with code → 1 mark × 4 methods = 4 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overall explanation → 1 mark</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Overall explanation →"
     },
     {
       "id": "Q42",
@@ -667,13 +667,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Program to create a Plotly in simple dashboard creation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Program to create a Plotly in simple dashboard creation. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Program to create a Plotly in simple dashboard creation....</em> within Data Visualization using Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Data Visualization using Python valuation scheme."
     },
     {
       "id": "Q43",
@@ -683,11 +683,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Describe the importance of data visualization in decision-making.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the importance of data visualization in decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe any 3 importance – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe any 3 importance <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Describe any 3 importance"
     },
     {
       "id": "Q44",
@@ -697,7 +697,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Relate data visualization techniques to real-world decision-making processes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Relate data visualization techniques to real-world decision-making processes. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision-</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -727,11 +727,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss the advantages and disadvantages of using pie charts for data representation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the advantages and disadvantages of using pie charts for data representation. Advantages – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> Disadvantages – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>data representation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Disadvantages <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Discuss the advantages and disadvantages of using pie charts for data representation. Advantages – Disadvantages"
+      "final_answer": "data representation."
     },
     {
       "id": "Q47",
@@ -741,7 +741,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss different methods used in Plotly express for quick visualization with necessary codes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss different methods used in Plotly express for quick visualization with necessary codes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: 1. Line Plot – px.line()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show trends over time. Write the program segements for each plot</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: 1. Line Plot – px.line()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show trends over time. Write the program segements for each plot</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -755,13 +755,13 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Write a short note on plotly express. Explain how to install and implement the module in python with code.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a short note on plotly express. Explain how to install and implement the module in python with code.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Yes, charts in Plotly can be saved as image files. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is done using the write_image() function after installing kaleido,. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g. fig.write_image(\"chart.png\").</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions -Answer any 5 questions- Each question carries 5 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pie Chart – px.pie()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to show proportions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These methods help in quick visualization with fewer lines of code and provide interactive features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like zooming and hovering.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each method with code → 1 mark × 4 methods = 4 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Overall explanation → 1 mark</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a short note on plotly express. Explain how to install and implement the module in python with code. ."
+      "final_answer": "Overall explanation →"
     },
     {
       "id": "Q49",
@@ -771,11 +771,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss when to use box plots and violin plots for statistical visualization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss when to use box plots and violin plots for statistical</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Describe box plots and violin plots <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span> each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Both are used to visualize the distribution of a dataset.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Describe box plots and violin plots (1.5 marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples ( 1 mark each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Both are used to visualize the distribution of a dataset.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "visualization."
     },
     {
       "id": "Q50",
@@ -785,13 +785,13 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Express some techniques for narrating a Story through Data Visuals",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Express some techniques for narrating a Story through Data Visuals  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Data visualization techniques play a key role in real-world decision-making by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>transforming complex data into clear, understandable visuals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Better understanding of data: Charts and graphs (bar charts, line graphs) help decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>makers quickly grasp trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Identifying relationships and trends: Visuals like scatter plots and heatmaps reveal</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correlations and hidden insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster decision-making: Visual representation reduces time needed to analyze large</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>datasets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improved communication: Visuals make it easier to present findings to stakeholders and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>support arguments.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Risk reduction: By clearly showing patterns and anomalies, visualization helps in making</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>informed and accurate decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Thus, data visualization helps organizations and individuals make smarter, evidence-based</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>decisions in areas like business, healthcare, education, and government.</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Express some techniques for narrating a Story through Data Visuals ."
+      "final_answer": "decisions in areas like business, healthcare, education, and government."
     },
     {
       "id": "Q51",
@@ -801,11 +801,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Briefly explain some interactive function available.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Briefly explain some interactive function available.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any three interactive functions – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Briefly explain some interactive function available.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any three interactive functions <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "final_answer": "Briefly explain some interactive function available."
     },
     {
       "id": "Q52",
@@ -815,11 +815,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe the role of storytelling in data visualization and how it improves comprehension.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the role of storytelling in data visualization and how it improves comprehension?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Storytelling in data visualization refers to presenting data with a clear narrative so that it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>conveys meaningful insights instead of just raw numbers or charts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How it improves comprehension</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes complex data simple and easy to understand.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Helps in quick identification of trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves memory and engagement compared to plain data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports better decision-making by clearly conveying insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> , Any three improvisations- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Storytelling in data visualization refers to presenting data with a clear narrative so that it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>conveys meaningful insights instead of just raw numbers or charts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How it improves comprehension</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes complex data simple and easy to understand.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Helps in quick identification of trends and patterns.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves memory and engagement compared to plain data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports better decision-making by clearly conveying insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition 2 Marks , Any three improvisations<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Definition , Any three improvisations"
+      "final_answer": "Definition  , Any three improvisations"
     },
     {
       "id": "Q53",
@@ -829,13 +829,13 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "What is Seaborn? Explain its purpose in data visualization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What is Seaborn? Explain its purpose in data visualization.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Seaborn is a Python data visualization library built on top of Matplotlib.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is used to create attractive and informative statistical graphs easily, with better design and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simpler code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 mark for definition and 1 mark for use.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bar Chart – px.bar()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used for comparing categories.</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is Seaborn? Explain its purpose in data visualization. ."
+      "final_answer": "Used for comparing categories."
     },
     {
       "id": "Q54",
@@ -845,11 +845,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss about Plotly Graph Objects.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss about Plotly Graph Objects. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Discuss about Plotly Graph Objects. Explanation"
+      "final_answer": "Explanation"
     },
     {
       "id": "Q55",
@@ -859,7 +859,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the different types of charts and their appropriate use cases in data visualization. Use appropriate diagrams.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the different types of charts and their appropriate use cases in data visualization. Use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>appropriate diagrams. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Different charts are used based on the type of data and purpose:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Comparison → Bar chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Trend → Line chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Proportion → Pie chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Distribution → Histogram/Box plot</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Relationship → Scatter plot</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1Mark)</span> for each Chart with diagram and Explanations</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>appropriate diagrams.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Different charts are used based on the type of data and purpose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Comparison → Bar chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Trend → Line chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Proportion → Pie chart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Distribution → Histogram/Box plot</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Relationship → Scatter plot</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1Mark for each Chart with diagram and Explanations</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -889,13 +889,13 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "What is a multi-plot grid in Seaborn? How is it useful?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is a multi-plot grid in Seaborn? How is it useful? Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Use – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Use <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
       ],
       "has_official_scheme": true,
-      "final_answer": "What is a multi-plot grid in Seaborn? How is it useful? Definition – Use"
+      "final_answer": "Definition – 3 marks"
     },
     {
       "id": "Q58",
@@ -905,11 +905,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare the effectiveness of line plots and scatter plots in data representation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the effectiveness of line plots and scatter plots in data representation? /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Line plots and scatter plots are both used to show relationships between variables</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Trend analysis: Line plot is more effective.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Relationship/correlation: Scatter plot is more effective.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data continuity: Line plot emphasizes continuity; scatter plot does not.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Outlier detection: Scatter plot is better.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Line plots – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> Scatter plots- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Line plots and scatter plots are both used to show relationships between variables</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Trend analysis: Line plot is more effective.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Relationship/correlation: Scatter plot is more effective.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data continuity: Line plot emphasizes continuity; scatter plot does not.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Outlier detection: Scatter plot is better.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Line plots <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> Scatter plots<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Line plots – Scatter plots"
+      "final_answer": "Line plots –  Scatter plots"
     },
     {
       "id": "Q59",
@@ -919,13 +919,13 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "List five different types of plots available in Matplotlib and their uses.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering List five different types of plots available in Matplotlib and their uses.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: A multi-plot grid in Seaborn refers to a structured way of displaying multiple plots in a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grid layout, where each subplot represents a subset of the data. Seaborn provides built-in classes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like FacetGrid, PairGrid, and JointGrid to create such visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• It helps in comparing patterns across different subsets of data easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Makes it simple to visualize relationships between variables under different conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves clarity and organization instead of crowding all data into one plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Useful for detecting trends, variations, and outliers across categories.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used in exploratory data analysis (EDA) for deeper insights.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> , Uses<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering List five different types of plots available in Matplotlib and their uses. ."
+      "final_answer": "Definition-  , Uses"
     },
     {
       "id": "Q60",
@@ -935,11 +935,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe how to use a built-in dataset in Plotly Express for visualization with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe how to use a built-in dataset in Plotly Express for visualization with an example. Description – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> /  x5 = 25]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualization with an example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Describe how to use a built-in dataset in Plotly Express for visualization with an example. Description – Example"
+      "final_answer": "visualization with an example."
     },
     {
       "id": "Q61",
@@ -949,7 +949,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Differentiate Plotly Express and Plotly Grpah Objects.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate Plotly Express and Plotly Grpah Objects /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Plotly Express</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A high-level interface for creating plots quickly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires less code and is easy to use.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Built on top of Graph Objects.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Automatically handles data mapping, labels, and styling.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Suitable for quick visualization and exploratory data analysis (EDA).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Plotly Graph Objects</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A low-level, detailed interface.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires more code and manual control.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows full customization of every element (layout, axes, annotations).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Suitable for complex and highly customized visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Plotly Express - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span> Plotly Graph Objects - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Plotly Express</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A high-level interface for creating plots quickly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires less code and is easy to use.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Built on top of Graph Objects.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Automatically handles data mapping, labels, and styling.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Suitable for quick visualization and exploratory data analysis (EDA).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Plotly Graph Objects</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A low-level, detailed interface.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires more code and manual control.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows full customization of every element (layout, axes, annotations).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Suitable for complex and highly customized visualizations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Plotly Express <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span> Plotly Graph Objects <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -963,13 +963,13 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Write a brief explanation of how Matplotlib works with basic syntax examples? (5* 5 = 25 marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a brief explanation of how Matplotlib works with basic syntax examples?  (5* 5 = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(25 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: plot() function connects the data points with a line, producing a simple line graph.</li></ul>",
       "source_exam": "Data Visualization using PYTHON",
       "repeated_in": [
         "Data Visualization using PYTHON"
       ],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a brief explanation of how Matplotlib works with basic syntax examples? (5* 5 = ."
+      "final_answer": "Ans: plot() function connects the data points with a line, producing a simple line graph."
     }
   ]
 }

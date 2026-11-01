@@ -27,7 +27,7 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Describe I/O operator.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor has same name as the class.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>I/O operators in C++ are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><< (insertion operator): used with cout to output data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: cout << \"Hello\";</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>>> (extraction operator): used with cin to input data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: cin >> x;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These operators are overloaded in the iostream library.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor has same name as the class.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Define the term “tokens” in the context of computer programming.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define the term “tokens” in the context of computer programming.derstand] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define the term “tokens” in the context of computer programming....</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q3",
@@ -55,11 +55,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Estimate the advantage of using a structured programming language.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is automatically called when an object is created.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interpret the meaning of polymorphism.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Polymorphism means “many forms”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It allows the same function or operator to behave differently based on the context.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compile-time (function overloading, operator overloading)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Run-time (function overriding using virtual functions)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It has no return type (not even void).</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "It is automatically called when an object is created."
+      "final_answer": "It has no return type (not even void)."
     },
     {
       "id": "Q4",
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Compare Algorithm and Flowchart",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Compare Algorithm and Flowchart lyse] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Interpret the meaning of polymorphism.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It has no return type (not even void).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A function that belongs to a class is called a member function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is declared inside the class definition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accessed using the dot (.) operator with an object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: object.functionName();</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "It has no return type (not even void)."
+      "final_answer": "Example: object.functionName();"
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "When overloading unary operators using Friend function,it requires argument/s..",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering When overloading unary operators using Friend function,it requires argument/s.. lyse] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interpret the meaning of polymorphism.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Polymorphism means “many forms”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It allows the same function or operator to behave differently based on the context.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compile-time (function overloading, operator overloading)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Run-time (function overriding using virtual functions)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It has no return type (not even void).</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "It has no return type (not even void)."
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Present the difference between Break and Continue in loops.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used to initialize data members.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Any two points fetch full marks.)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare friend function and member function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Friend Function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declared using friend keyword.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Not a member of the class but can access private data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Invoked like a normal function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Member Function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declared normally inside class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Is a member and can access all members directly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Invoked using object and dot operator.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(Any two points fetch full marks.)"
+      "final_answer": "Invoked using object and dot operator."
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Discuss about ADT.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Discuss about ADT. derstand] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Comprehensive analytical discussion:</strong> Clear academic formulation addressing <em>Discuss about ADT....</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Comprehensive analytical discussion and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Describe how can you recognize that a function belongs to a class.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe how you can recognize that a function belongs to a class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A function that belongs to a class is called a member function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is declared inside the class definition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accessed using the dot (.) operator with an object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: object.functionName();</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mention two characteristics of Constructor.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Example: object.functionName();"
+      "final_answer": "Mention two characteristics of Constructor."
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Identify :: the operator.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify :: the operator.lyse ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Identify :: the operator....</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Examine how 2-D array can be represented in memory.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examine how 2-D array can be represented in memory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Stored in row-major order (row by row in continuous memory).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int a = {{1,2,3},{4,5,6}};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Memory representation:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a, a, a, a, a, a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Address formula:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Address(a[j]) = Base + ((i * totalColumns) + j) * size_of_element</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>To avoid ambiguity in multiple inheritance (diamond problem). Ensures only one copy of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>base class is inherited by all derived classes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{}; class B: virtual public A{}; class C: virtual public A{}; class D: public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B, public C{};</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Address(a[j]) = Base + ((i * totalColumns) + j) * size_of_element"
+      "final_answer": "B, public C{};"
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Differentiate while and do-while loop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Differentiate while and do-while loop. lyse] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Compare friend function and a member function.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare friend function and member function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Friend Function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declared using friend keyword.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Not a member of the class but can access private data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Invoked like a normal function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Member Function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declared normally inside class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Is a member and can access all members directly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Invoked using object and dot operator.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Symbols used in Flowchart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Oval – Start/End</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Parallelogram</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Input/Output Rectangle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process Diamond</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrow – Flow of control</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Connector – Joins flow lines</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Invoked using object and dot operator."
+      "final_answer": "Connector – Joins flow lines"
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain what is abstract class?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain what is abstract class?derstand ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain what is abstract class?...</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Differentiate between member function and non member function.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between member function and non-member function. Member Function Declared inside the class. Accesses class data directly. Called using object. Non-Member Function Declared outside the class. Cannot access private data (unless friend). Called independently.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Yes. Each access specifier applies to members declared after it until another is encountered.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A { private: int x; public: void get(); private: void</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>show(); };</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Differentiate between member function and non-member function. Member Function Declared inside the class. Accesses class data directly. Called using object. Non-Member Function Declared outside the class. Cannot access private data (unless friend). Called independently."
+      "final_answer": "show(); };"
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain what is a constructor?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain what is a constructor?derstand ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain what is a constructor?...</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Mention two characteristics of Constructor.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mention two characteristics of Constructor.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hierarchical Inheritance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When multiple derived classes inherit from one base class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{}; class B:public A{}; class C:public A{};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Diagram</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Base Derived1, Derived2</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Mention two characteristics of Constructor."
+      "final_answer": "Base Derived1, Derived2"
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain what is inheritance?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain what is inheritance? derstand ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain what is inheritance?...</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Define parameterised constructor",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define parameterised constructor. A parameterised constructor is a constructor that takes arguments to initialize object data members. Example: class Student { int age; public: Student(int a) { age = a; } }; Allows different initial values for different objects.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Structure of C++ Program</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Header files, namespace, class, function declarations, main().</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include <iostream></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using namespace std;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int main(){ cout<<\"Hello\"; return 0; }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) C++ Data Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Basic: int, char, float, double</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Derived: array, pointer, reference, function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- User-defined: class, struct, union</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>enum</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Define parameterised constructor. A parameterised constructor is a constructor that takes arguments to initialize object data members. Example: class Student { int age; public: Student(int a) { age = a; } }; Allows different initial values for different objects."
+      "final_answer": "enum"
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain what is the use of friend function?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain what is the use of friend function?derstand ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain what is the use of friend function?...</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Why is virtual base class is used?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is virtual base class used?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>To avoid ambiguity in multiple inheritance (diamond problem). Ensures only one copy of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>base class is inherited by all derived classes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{}; class B: virtual public A{}; class C: virtual public A{}; class D: public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B, public C{};</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A base class is one whose members are inherited by another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{public:int x;}; class B:public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A{}; Here, A is base class and B is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>derived class.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "B, public C{};"
+      "final_answer": "derived class."
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Select which of the following is a correct identifier in C++? a)VAR_1234 b)$var_name c)7VARNAME d)7var_name",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Select which of the following is a correct identifier in C++? a)VAR_1234 b)$var_name c)7VARNAME d)7var_name valuate ] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Select which of the following is a correct identifier in C++? a)VAR_1234 b)$var_...</em> within Introduction to Programming.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Introduction to Programming valuation scheme."
     },
     {
       "id": "Q23",
@@ -335,7 +335,7 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Write any two rules of operator overloading.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write any two rules of operator overloading.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Only existing operators can be overloaded.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- At least one operand must be a user-defined type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Precedence/associativity of operators cannot change.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Some operators like '.', '?:', 'sizeof' cannot be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>overloaded.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Only existing operators can be overloaded.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- At least one operand must be a user-defined type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Precedence/associativity of operators cannot change.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Some operators like '.', '?:', 'sizeof' cannot be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>overloaded.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Select which of the following symbol is used to declare the preprocessor directives in C++. a)$ b) ^ c) # d)*",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Select which of the following symbol is used to declare the preprocessor directives in C++. a)$ b) ^ c) # d)*valuate] x1=10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (b) ^ c) # d)*</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Introduction to Programming. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Option (b) ^ c) # d)*"
     },
     {
       "id": "Q25",
@@ -363,11 +363,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Classify the different symbols used in Flowchart and explain their functions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Symbols used in Flowchart: Oval – Start/End Parallelogram – Input/Output Rectangle – Process Diamond – Decision Arrow – Flow of control Connector – Joins flow lines</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Symbols used in Flowchart</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Oval – Start/End</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Parallelogram</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Input/Output Rectangle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process Diamond</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Decision</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arrow – Flow of control</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Connector – Joins flow lines</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Symbols used in Flowchart: Oval – Start/End Parallelogram – Input/Output Rectangle – Process Diamond – Decision Arrow – Flow of control Connector – Joins flow lines"
+      "final_answer": "Connector – Joins flow lines"
     },
     {
       "id": "Q26",
@@ -391,7 +391,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Differentiate between testing and debugging",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between Testing and Debugging:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Testing – Finding errors, done after coding.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Debugging – Correcting errors, done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>programmers. Testing validates; debugging</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>corrects.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Testing – Finding errors, done after coding.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Debugging – Correcting errors, done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>programmers. Testing validates; debugging</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>corrects.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -405,11 +405,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Compare and contrast call by value and call by reference using appropriate examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Compare and contrast call by value and call by reference using appropriate examples.lyse] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Swapping using call by value and call by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>reference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Call by Value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int a, int b){ int t=a; a=b; b=t; } // No change in originals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Call by Reference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int &a;, int &b;){ int t=a; a=b; b=t; } // Changes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>originals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference: Value uses copies; Reference uses actual</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Compare and contrast call by value and call by reference using appropriate examples.lyse] ."
+      "final_answer": "variables."
     },
     {
       "id": "Q29",
@@ -419,7 +419,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Can access specifiers be used more than once in a class?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Can access specifiers be used more than once in a class?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Yes. Each access specifier applies to members declared after it until another is encountered.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A { private: int x; public: void get(); private: void</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>show(); };</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Yes. Each access specifier applies to members declared after it until another is encountered.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A { private: int x; public: void get(); private: void</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>show(); };</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -447,7 +447,7 @@
       "marks": 6,
       "domain_tag": "[E] ",
       "question": "Analyze the effect of modifying a parameter in a function using call by reference. What happens to the original variable?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze effect of modifying parameter using call by reference.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Changes in function affect the original variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int &a;,int &b;){int t=a;a=b;b=t;}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Original variables are changed.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze effect of modifying parameter using call by reference.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Changes in function affect the original variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int &a;,int &b;){int t=a;a=b;b=t;}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Original variables are changed.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -461,11 +461,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Examine the use of Virtual Base class in C++",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Examine the use of Virtual Base class in C++ lyse]  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>To avoid ambiguity in multiple inheritance (diamond problem). Ensures only one copy of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>base class is inherited by all derived classes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{}; class B: virtual public A{}; class C: virtual public A{}; class D: public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B, public C{};</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Examine the use of Virtual Base class in C++ ."
+      "final_answer": "B, public C{};"
     },
     {
       "id": "Q33",
@@ -475,11 +475,11 @@
       "marks": 6,
       "domain_tag": "[E] ",
       "question": "Explain hierarchical inheritance with suitable example and diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hierarchical Inheritance: When multiple derived classes inherit from one base class. Example: class A{}; class B:public A{}; class C:public A{}; Diagram: Base Derived1, Derived2</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hierarchical Inheritance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When multiple derived classes inherit from one base class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{}; class B:public A{}; class C:public A{};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Diagram</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Base Derived1, Derived2</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Hierarchical Inheritance: When multiple derived classes inherit from one base class. Example: class A{}; class B:public A{}; class C:public A{}; Diagram: Base Derived1, Derived2"
+      "final_answer": "Base Derived1, Derived2"
     },
     {
       "id": "Q34",
@@ -503,7 +503,7 @@
       "marks": 6,
       "domain_tag": "[E] ",
       "question": "Explain single inheritance with suitable example and diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single Inheritance:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>One base class inherited by one derived</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class. Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{public:void show();}; class B:public A{public:void</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display();}; Diagram: Base Derived</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single Inheritance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>One base class inherited by one derived</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class. Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{public:void show();}; class B:public A{public:void</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display();}; Diagram: Base Derived</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -531,11 +531,11 @@
       "marks": 10,
       "domain_tag": "[An] ",
       "question": "a) What is program structure of C++? b) Illustrate C++ Data Types.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Structure of C++ Program: Header files, namespace, class, function declarations, main(). Example: #include using namespace std; int main(){ cout<<\"Hello\"; return 0; } b) C++ Data Types:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Basic: int, char, float, double</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Derived: array, pointer, reference, function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- User-defined: class, struct, union, enum</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a) Structure of C++ Program</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Header files, namespace, class, function declarations, main().</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include <iostream></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using namespace std;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int main(){ cout<<\"Hello\"; return 0; }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) C++ Data Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Basic: int, char, float, double</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Derived: array, pointer, reference, function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- User-defined: class, struct, union</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>enum</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "- User-defined: class, struct, union, enum"
+      "final_answer": "enum"
     },
     {
       "id": "Q38",
@@ -545,11 +545,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Describe in detail about OOPs and POP concept with appropriate diagram and example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>I/O operators in C++ are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><< (insertion operator): used with cout to output data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: cout << \"Hello\";</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>>> (extraction operator): used with cin to input data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: cin >> x;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>These operators are overloaded in the iostream library.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constructor has same name as the class.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "Constructor has same name as the class."
     },
     {
       "id": "Q39",
@@ -559,11 +559,11 @@
       "marks": 10,
       "domain_tag": "[E] ",
       "question": "Write two C++ programs to swap the values of two numbers: one using call by value and the other using call by reference. Analyze the differences in the outputs and explain why the results differ between the two methods.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Swapping using call by value and call by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>reference:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Call by Value:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int a, int b){ int t=a; a=b; b=t; } // No change in originals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Call by Reference:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int &a;, int &b;){ int t=a; a=b; b=t; } // Changes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>originals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference: Value uses copies; Reference uses actual</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze effect of modifying parameter using call by reference.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Changes in function affect the original variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void swap(int &a;,int &b;){int t=a;a=b;b=t;}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Original variables are changed.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "variables."
+      "final_answer": "Original variables are changed."
     },
     {
       "id": "Q40",
@@ -573,11 +573,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "a)What is inhertance ?Why we use Inheritance in C++? b)Writea C++ program to read and print employee information using multiple inheritance.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Estimate the advantage of using a structured programming language.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Easier to read, debug, and maintain.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Programs are modular (divided into functions).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reduces code redundancy.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Promotes top-down design and logical program flow.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is automatically called when an object is created.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "It is automatically called when an object is created."
     },
     {
       "id": "Q41",
@@ -587,7 +587,7 @@
       "marks": 10,
       "domain_tag": "[E] ",
       "question": "Define Base class.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Base Class (Inheritance):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A base class is one whose members are inherited by another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{public:int x;}; class B:public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A{}; Here, A is base class and B is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>derived class.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A base class is one whose members are inherited by another class.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>class A{public:int x;}; class B:public</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A{}; Here, A is base class and B is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>derived class.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -601,11 +601,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "a)What is operator overloading in C++? What are the operators that cant be overloaded in C++? Mention Rules also. b)Write a C++ program to overload binary operator '+' to add two complex numbers.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Only existing operators can be overloaded.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- At least one operand must be a user-defined type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Precedence/associativity of operators cannot change.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Some operators like '.', '?:', 'sizeof' cannot be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>overloaded.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "overloaded."
     }
   ]
 }

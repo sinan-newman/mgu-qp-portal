@@ -27,11 +27,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "State the sign convention used while applying Kirchhoff's Voltage Law.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2𝜋√𝐿𝐶 (Expression only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> , Graphical representation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of resonance- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A rise in voltage should be given +ve sign and a fall in voltage a –ve sign. If one go</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>through a resistor in the same direction as the current, then the voltage is –ve and vice</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>versa. (Any point 2 mark).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2𝜋√𝐿𝐶 (Expression only 1 mark, Graphical representation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of resonance<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "of resonance- ."
+      "final_answer": "of resonance-."
     },
     {
       "id": "Q2",
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What are the factors that affect the resistance of a conductor?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>sin 2𝜔𝑡 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Power for whole cycle, 𝑃 = − 𝑉𝑚𝐼𝑚 2 ∫ sin 2𝜔𝑡 𝑑𝑡 2𝜋 0 = 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Factors are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(1) Length – varies directly as the length of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(2) Area of cross section – varies inversely as the cross section of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(3) Nature of the material</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(4) Temperature of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Any 2 points<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / Give full marks for the formula 𝑅 = 𝜌</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐴).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>= −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑚𝐼𝑚</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2 sin 2𝜔𝑡 (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Power for whole cycle, 𝑃 = −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑚𝐼𝑚</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2 ∫ sin 2𝜔𝑡 𝑑𝑡</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 = 0 (2 mark)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "sin 2𝜔𝑡 Power for whole cycle, 𝑃 = − 𝑉𝑚𝐼𝑚 2 ∫ sin 2𝜔𝑡 𝑑𝑡 2𝜋 0 = 0"
+      "final_answer": "0 = 0"
     },
     {
       "id": "Q3",
@@ -55,7 +55,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the condition for maximum power transfer in a circuit?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the condition for the maximum power transfer in a circuit?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Maximum power is transferred when the load resistance is equal to the resistance of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the network as viewed from the output terminals with all the energy sources removed</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>leaving behind their internal resistances. (Give full marks for this point).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Maximum power is transferred when the load resistance is equal to the resistance of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the network as viewed from the output terminals with all the energy sources removed</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>leaving behind their internal resistances. (Give full marks for this point).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is meant by a short circuit? Why is a short circuit considered dangerous in household wiring?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is meant by a short circuit? Why is a short circuit considered dangerous in household wiring?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is meant by a short circuit? Why is a short circuit considered dangerous in...</em> within Current Electricity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Current Electricity valuation scheme."
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define electric current? What is its unit?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define electric current? What is its unit? Rate of flow of charge/ 𝑖 = 𝑑𝑞 𝑑𝑡 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Unit-Ampere <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Microfarad, nanofarad, picofarad, farad, etc (Any two<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Define electric current? What is its unit? Rate of flow of charge/ 𝑖 = 𝑑𝑞 𝑑𝑡 Unit-Ampere"
+      "final_answer": "Microfarad, nanofarad, picofarad, farad, etc (Any two"
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Why can’t superposition be applied directly to power calculations?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Why can’t superposition be applied directly to power calculations?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Why can’t superposition be applied directly to power calculations?...</em> within Current Electricity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Current Electricity valuation scheme."
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What are the practical units of capacitance?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What are the practical units of capacitance?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Microfarad, nanofarad, picofarad, farad, etc (Any two- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Capacitor whose capacitance can be varied. Eg. Radio tuning. (2 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Microfarad, nanofarad, picofarad, farad, etc (Any two"
+      "final_answer": "Capacitor whose capacitance can be varied. Eg. Radio tuning."
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the condition for maximum power transfer in a DC network.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the condition for maximum power transfer in a DC network.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Maximum power is transferred when the load resistance is equal to the resistance of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the network as viewed from the output terminals with all the energy sources removed</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>leaving behind their internal resistances. (Give full marks for this point).</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "leaving behind their internal resistances. (Give full marks for this point)."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Explain Faraday’s law of electromagnetic induction.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain Faraday’s law of electromagnetic induction.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>First Law- Whenever the magnetic flux liked with a circuit changes, an emf is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>induced. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Second Law- The magnitude of the induced emf is equal to the rate of change of flux</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linkages. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Briefly explain electrolytic dissociation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process where electrolytes dissociate into cations and anions when dissolved in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>water/solvent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Full mark any points related with this).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "linkages."
+      "final_answer": "(Full mark any points related with this)."
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State Faraday’s law of electromagnetic induction.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State Faraday’s law of electromagnetic induction.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>First Law- Whenever the magnetic flux liked with a circuit changes, an emf is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>induced. (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Second Law- The magnitude of the induced emf is equal to the rate of change of flux</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linkages. (1 mark)</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "linkages."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Describe a variable capacitor.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe a variable capacitor.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Capacitor whose capacitance can be varied. Eg. Radio tuning. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impedance 𝑍 = √𝑅2 + (𝑋𝐿 − 𝑋𝑐)2, where R-resistance, 𝑋𝐿- inductive reactance and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑋𝑐- capacitive reactance. (2 marks).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Capacitor whose capacitance can be varied. Eg. Radio tuning."
+      "final_answer": "Impedance 𝑍 = √𝑅2 + (𝑋𝐿 − 𝑋𝑐)2, where R-resistance, 𝑋𝐿- inductive reactance and"
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is a parallel plate capacitor? Write the formula for capacitance of a parallel plate capacitor?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is a parallel plate capacitor? Write the formula for capacitance of a parallel plate capacitor?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>capacitor?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Capacitance varies inversely with the separation between the parallel plate capacitor.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐶 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜀0𝐴</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 (Statement or formula give full mark).</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "𝑑 (Statement or formula give full mark)."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How does the separation between the plates affect the the capacitance of a parallel plate capacitor?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How does the separation between the plates affect the capacitance of a parallel plate</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>capacitor?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Capacitance varies inversely with the separation between the parallel plate capacitor.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐶 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜀0𝐴</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 (Statement or formula give full mark).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>kept at different temperatures?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is due to Seebeck effect and the arrangement is called thermocouple. (full mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for the identification of the effect and its explanation)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "𝑑 (Statement or formula give full mark)."
+      "final_answer": "for the identification of the effect and its explanation)"
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Write the expression for resistance of an electrolyte in terms of ρ, length and area?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the expression for resistance of an electrolyte in terms of ρ, length and area?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Factors are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(1) Length – varies directly as the length of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(2) Area of cross section – varies inversely as the cross section of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(3) Nature of the material</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(4) Temperature of the conductor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Any 2 points<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / Give full marks for the formula 𝑅 = 𝜌</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐴).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>= −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑚𝐼𝑚</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2 sin 2𝜔𝑡 (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Power for whole cycle, 𝑃 = −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑚𝐼𝑚</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2 ∫ sin 2𝜔𝑡 𝑑𝑡</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 = 0 (2 mark)</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "0 = 0"
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Briefly explain electrolytic dissociation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Briefly explain electrolytic dissociation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process where electrolytes dissociate into cations and anions when dissolved in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>water/solvent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Full mark any points related with this).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find the expression for V1, V2 and V3 of the voltage divider circuit shown in the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>figure.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉1 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>, 𝑉2 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>, 𝑉3 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any one<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span>, Any two<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span>, All three <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span>.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(Full mark any points related with this)."
+      "final_answer": "Any one-, Any two-, All three -."
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Why do strong electrolytes have high conductivity even at low concentrations?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Why do strong electrolytes have high conductivity even at low concentrations?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Why do strong electrolytes have high conductivity even at low concentrations?...</em> within Current Electricity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Current Electricity valuation scheme."
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define phase angle in RC circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define phase angle in RC circuit.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In RC circuit, the phase angle is the angle that current leads the applied voltage /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>phase diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tan 𝜙 = −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅 , where 𝑋𝑐 is the capacitive reactance. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An iron ring of 40 cm mean radius of a square iron bar cross section area 5 cm2. A coil</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of 500 turns is uniformly wound over the iron ring with a wire of 0.003 cm 2 cross</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>section area. If relative permeability of iron is 6000, calculate the self inductance of the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>coil.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁 = 500 ; 𝐴 = 5 𝑐𝑚2 = 5 × 10−4𝑚2 ; 𝑙 = 2𝜋 × 0.4 𝑚 ; 𝜇𝑟 = 6000 ;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜇0 = 4𝜋 × 10 − 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐿 = 𝜇0𝜇𝑟𝐴𝑁2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙 = 4𝜋 × 10−7 × 6000 × 5 × 10−4 × 50022𝜋 × 0.4 = 0.375 𝐻</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Formula<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span>, Substitution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span>, Correct answer <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span>, Unit<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span>)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "𝑅 , where 𝑋𝑐 is the capacitive reactance. ."
+      "final_answer": "(Formula-, Substitution – , Correct answer – , Unit"
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define Capacitive Reactance ( XC) and explain its dependence on frequency.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define Capacitive Reactance ( XC) and explain its dependence on frequency.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In RC circuit, the phase angle is the angle that current leads the applied voltage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>phase diagram (1 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tan 𝜙 = −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑋𝐶</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅 , where 𝑋𝑐 is the capacitive reactance. (1 mark) .</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "𝑅 , where 𝑋𝑐 is the capacitive reactance.  ."
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write expression for impedance in series LCR circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write expression for impedance in series LCR circuit.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impedance 𝑍 = √𝑅2 + (𝑋𝐿 − 𝑋𝑐)2, where R-resistance, 𝑋𝐿- inductive reactance and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑋𝑐- capacitive reactance. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that the power consumed per cycle is zero for a circuit containing inductance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Instantaneous power= 𝑉𝑚𝐼𝑚 sin 𝜔𝑡 sin (𝜔𝑡 −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜋</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "𝑋𝑐- capacitive reactance. ."
+      "final_answer": "Show that the power consumed per cycle is zero for a circuit containing inductance"
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define resonance in an LCR circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define resonance in an LCR circuit.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Under certain frequency, 𝑋𝐿 = 𝑋𝑐, then circuit impedance Z=R. Under this condition,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the circuit is said to be in resonance. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Resonance frequency 𝑓0 =</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect is the tendency of ac to flow mainly near the surface of a conductor rather</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>than uniformly through its cross section. As a result current density is higher near the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>surface and lower at the center. Effective resistance of the conductor increases. Power</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>loss increases at high frequencies, etc (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect mainly increases copper losses and heating in transformer windings</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>especially at high frequencies. Also it increases eddy current loss. (2 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Resonance frequency 𝑓0 ="
+      "final_answer": "especially at high frequencies. Also it increases eddy current loss."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is wattless current? Give one example where it occurs.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is wattless current? Give one example where it occurs.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is wattless current? Give one example where it occurs....</em> within Current Electricity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Current Electricity valuation scheme."
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Why does an emf develop when two dissimilar metals are joined and junctions are kept at different temperatures?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why does an emf develop when two dissimilar metals are joined and junctions are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>kept at different temperatures?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is due to Seebeck effect and the arrangement is called thermocouple. (full mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for the identification of the effect and its explanation)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Obtain equation for capacitor voltage during charging and plot graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of the equation 𝑉𝑐 = 𝑉0(1 − 𝑒− 𝑡𝑅𝐶) (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graph (2 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "for the identification of the effect and its explanation)"
+      "final_answer": "Graph"
     },
     {
       "id": "Q23",
@@ -335,11 +335,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define the time constant of an LR circuit in which current is decaying.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define the time constant of an LR circuit in which current is decaying.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>during the decay process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The time constant of an LR circuit is defined as the time taken by the current to rise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from zero to 0.632 or 63.2 % of the maximum steady value. 𝜏 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐿</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅 (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of 𝐼 = 𝐼0(1 − 𝑒−𝑅𝑡/𝐿) (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graphical representation of I vs t (1 mark)</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Graphical representation of I vs t"
     },
     {
       "id": "Q24",
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define Thomson effect.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Thomson effect.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When a current flows through an unequally heated metal, there is an absorption or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>evolution of heat throughout in the body of the metal. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When a current flows through an unequally heated metal, there is an absorption or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>evolution of heat throughout in the body of the metal. (2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Essay</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "evolution of heat throughout in the body of the metal."
+      "final_answer": "Short Essay"
     },
     {
       "id": "Q25",
@@ -363,11 +363,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Sketch the nature of the graph between thermo emf and the temperature difference between the hot and cold junction. (2 × 10 = 20)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Sketch the nature of the graph between thermo emf and the temperature difference between the hot and cold junction.  (2 × 10 = 20) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Sketch the nature of the graph between thermo emf and the temperature diffe...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q26",
@@ -377,11 +377,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Find the expression for V1 , V2 and V3 of the voltage divider circuit shown in the figure.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find the expression for V1, V2 and V3 of the voltage divider circuit shown in the figure. 𝑉1 = 𝑉𝑅1 𝑅1+𝑅2+𝑅3 , 𝑉2 = 𝑉𝑅2 𝑅1+𝑅2+𝑅3 , 𝑉3 = 𝑉𝑅3 𝑅1+𝑅2+𝑅3 Any one- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span> , Any two- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span> , All three - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find the expression for V1, V2 and V3 of the voltage divider circuit shown in the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>figure.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉1 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>, 𝑉2 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>, 𝑉3 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑉𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅1+𝑅2+𝑅3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any one<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span>, Any two<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span>, All three <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span>.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Find the expression for V1, V2 and V3 of the voltage divider circuit shown in the figure. 𝑉1 = 𝑉𝑅1 𝑅1+𝑅2+𝑅3 , 𝑉2 = 𝑉𝑅2 𝑅1+𝑅2+𝑅3 , 𝑉3 = 𝑉𝑅3 𝑅1+𝑅2+𝑅3 Any one- , Any two- , All three - ."
+      "final_answer": "Any one-, Any two-, All three -."
     },
     {
       "id": "Q27",
@@ -405,7 +405,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "State and explain the Superposition theorem.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State and explain the Superposition theorem.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>According to this theorem, if there are a number of emfs acting simultaneously in any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linear bilateral network, then each emf acts independently of the others.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Statement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> , explanation with the help of a circuit – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>According to this theorem, if there are a number of emfs acting simultaneously in any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linear bilateral network, then each emf acts independently of the others.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Statement only 3 marks, explanation with the help of a circuit <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -419,11 +419,11 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "State and explain Thevenin’s theorem. How will you Thevenize a given circuit?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering State and explain Thevenin’s theorem. How will you Thevenize a given circuit?   . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>According to this theorem, if there are a number of emfs acting simultaneously in any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linear bilateral network, then each emf acts independently of the others.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Statement only 3 marks, explanation with the help of a circuit <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>)</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering State and explain Thevenin’s theorem. How will you Thevenize a given circuit? ."
+      "final_answer": "(Statement only , explanation with the help of a circuit"
     },
     {
       "id": "Q30",
@@ -433,11 +433,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "An iron ring of 40 cm mean radius made of a square iron bar of cross section area 5cm2. A coil of 500 turns is uniformly wound over the iron ring with a wire of 0.003 cm2 cross section area. If relative permiability of iron is 6000, calculate the self inductance of the coil.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An iron ring of 40 cm mean radius of a square iron bar cross section area 5 cm2. A coil</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of 500 turns is uniformly wound over the iron ring with a wire of 0.003 cm 2 cross</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>section area. If relative permeability of iron is 6000, calculate the self inductance of the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>coil.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁 = 500 ; 𝐴 = 5 𝑐𝑚2 = 5 × 10−4𝑚2 ; 𝑙 = 2𝜋 × 0.4 𝑚 ; 𝜇𝑟 = 6000 ;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜇0 = 4𝜋 × 10 − 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐿 = 𝜇0𝜇𝑟𝐴𝑁2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙 = 4𝜋 × 10−7 × 6000 × 5 × 10−4 × 50022𝜋 × 0.4 = 0.375 𝐻</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Formula- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span> , Substitution – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> , Correct answer – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span> , Unit- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An iron ring of 40 cm mean radius of a square iron bar cross section area 5 cm2. A coil</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of 500 turns is uniformly wound over the iron ring with a wire of 0.003 cm 2 cross</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>section area. If relative permeability of iron is 6000, calculate the self inductance of the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>coil.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁 = 500 ; 𝐴 = 5 𝑐𝑚2 = 5 × 10−4𝑚2 ; 𝑙 = 2𝜋 × 0.4 𝑚 ; 𝜇𝑟 = 6000 ;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜇0 = 4𝜋 × 10 − 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐿 = 𝜇0𝜇𝑟𝐴𝑁2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙 = 4𝜋 × 10−7 × 6000 × 5 × 10−4 × 50022𝜋 × 0.4 = 0.375 𝐻</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Formula<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span>, Substitution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span>, Correct answer <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span>, Unit<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span>)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(Formula- , Substitution – , Correct answer – , Unit"
+      "final_answer": "(Formula-, Substitution – , Correct answer – , Unit"
     },
     {
       "id": "Q31",
@@ -447,11 +447,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Two coil A and B are placed near each other and have 200 and 800 turns respectively. A direct current of 2 amperes in coil A produces a flux of 2 .5 × 10−4 Wb in A and 1 .8 × 10−4 Wb in B. Determine (i) the self-inductance of A (ii) the mutual inductance of A and B (iii) the average emf induced in B when the current in A is interrupted in 0 .3 second.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Two coil A and B are placed near each other and have 200 and 800 turns respectively. A direct current of 2 amperes in coil A produces a flux of 2 .5 × 10−4 Wb in A and 1 .8 × 10−4 Wb in B. Determine (i) the self-inductance of A (ii) the mutual inductance of A and B (iii) the average emf induced in B when the current in A is interrupted in 0 .3 second.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derive the expression for coefficient of mutual inductance in terms of the dimensions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of the coils.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flux in first coil 𝜙1 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁1𝐼1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙/𝜇0𝜇𝑟𝐴 (1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assuming the whole flux is linked with the other coil having N2 turns</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑀 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁2𝜙1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐼1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑀 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁2𝑁1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙/𝜇0𝜇𝑟𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜇0𝜇𝑟𝐴𝑁1𝑁2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙 (2 mark)</li></ul>",
       "source_exam": "Current Electricity",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Two coil A and B are placed near each other and have 200 and 800 turns respectively. A direct current of 2 amperes in coil A produces a flux of 2 .5 × 10−4 Wb in A and 1 .8 × 10−4 Wb in B. Determine (i) the self-inductance of A (ii) the mutual inductance of A and B (iii) the average emf induced in B when the current in A is interrupted in 0 .3 second. ."
+      "final_answer": "Derive the expression for coefficient of mutual inductance in terms of the dimensions"
     },
     {
       "id": "Q32",
@@ -461,11 +461,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Derive the expression for coefficient of mutual inductance in terms of the dimensions of the coils.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derive the expression for coefficient of mutual inductance in terms of the dimensions of the coils. Flux in first coil 𝜙1 = 𝑁1𝐼1 𝑙/𝜇0𝜇𝑟𝐴 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span> Assuming the whole flux is linked with the other coil having N2 turns, 𝑀 = 𝑁2𝜙1 𝐼1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span> 𝑀 = 𝑁2𝑁1 𝑙/𝜇0𝜇𝑟𝐴 = 𝜇0𝜇𝑟𝐴𝑁1𝑁2 𝑙 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derive the expression for coefficient of mutual inductance in terms of the dimensions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of the coils.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flux in first coil 𝜙1 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁1𝐼1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙/𝜇0𝜇𝑟𝐴 (1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assuming the whole flux is linked with the other coil having N2 turns</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑀 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁2𝜙1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐼1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(1.5 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑀 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑁2𝑁1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙/𝜇0𝜇𝑟𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜇0𝜇𝑟𝐴𝑁1𝑁2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑙 (2 mark)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Derive the expression for coefficient of mutual inductance in terms of the dimensions of the coils. Flux in first coil 𝜙1 = 𝑁1𝐼1 𝑙/𝜇0𝜇𝑟𝐴 Assuming the whole flux is linked with the other coil having N2 turns, 𝑀 = 𝑁2𝜙1 𝐼1 𝑀 = 𝑁2𝑁1 𝑙/𝜇0𝜇𝑟𝐴 = 𝜇0𝜇𝑟𝐴𝑁1𝑁2 𝑙"
+      "final_answer": "Derive the expression for coefficient of mutual inductance in terms of the dimensions"
     },
     {
       "id": "Q33",
@@ -489,13 +489,13 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Show that the power consumed per cycle is zero for a circuit containing inductance only.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that the power consumed per cycle is zero for a circuit containing inductance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Instantaneous power= 𝑉𝑚𝐼𝑚 sin 𝜔𝑡 sin (𝜔𝑡 −</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that the power consumed per cycle is zero for a circuit containing inductance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Instantaneous power= 𝑉𝑚𝐼𝑚 sin 𝜔𝑡 sin (𝜔𝑡 −</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜋</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [
         "Current Electricity"
       ],
       "has_official_scheme": true,
-      "final_answer": "Instantaneous power= 𝑉𝑚𝐼𝑚 sin 𝜔𝑡 sin (𝜔𝑡 −"
+      "final_answer": "Show that the power consumed per cycle is zero for a circuit containing inductance"
     },
     {
       "id": "Q35",
@@ -519,7 +519,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "What is skin effect? How does it affect transformer losses?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is skin effect? How does it affect transformer losses?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect is the tendency of ac to flow mainly near the surface of a conductor rather</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>than uniformly through its cross section. As a result current density is higher near the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>surface and lower at the center. Effective resistance of the conductor increases. Power</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>loss increases at high frequencies, etc <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect mainly increases copper losses and heating in transformer windings</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>especially at high frequencies. Also it increases eddy current loss. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect is the tendency of ac to flow mainly near the surface of a conductor rather</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>than uniformly through its cross section. As a result current density is higher near the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>surface and lower at the center. Effective resistance of the conductor increases. Power</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>loss increases at high frequencies, etc (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Skin effect mainly increases copper losses and heating in transformer windings</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>especially at high frequencies. Also it increases eddy current loss. (2 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -547,7 +547,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "What is the time constant in LR circuit? Illustrate the variation of current with time during the decay process.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the time constant in LR circuit? Illustrate the variation of current with time</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>during the decay process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The time constant of an LR circuit is defined as the time taken by the current to rise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from zero to 0.632 or 63.2 % of the maximum steady value. 𝜏 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of 𝐼 = 𝐼0(1 − 𝑒−𝑅𝑡/𝐿) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graphical representation of I vs t <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>during the decay process.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The time constant of an LR circuit is defined as the time taken by the current to rise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from zero to 0.632 or 63.2 % of the maximum steady value. 𝜏 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐿</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑅 (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of 𝐼 = 𝐼0(1 − 𝑒−𝑅𝑡/𝐿) (2 mark)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graphical representation of I vs t (1 mark)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -575,7 +575,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Obtain equation for capacitor voltage during charging and plot graph.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Obtain equation for capacitor voltage during charging and plot graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of the equation 𝑉𝑐 = 𝑉0(1 − 𝑒− 𝑡𝑅𝐶) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graph <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Obtain equation for capacitor voltage during charging and plot graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Derivation of the equation 𝑉𝑐 = 𝑉0(1 − 𝑒− 𝑡𝑅𝐶) (3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Graph (2 marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,

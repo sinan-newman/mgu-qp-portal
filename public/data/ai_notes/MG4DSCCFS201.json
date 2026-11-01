@@ -27,7 +27,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define brute-force attack.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Framework for managing public keys and certificates.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A brute-force attack is a method of breaking encryption by trying all possible keys until the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>correct key is found.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Absorbing Phase</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a hash of the message.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Apply Initial Permutation (IP) to the plaintext.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identical plaintext blocks produce different ciphertext blocks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sender selects a secret key K.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receiver receives the message and HMAC.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Same key used for encryption and decryption.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ECB – Encrypts each block independently.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Framework for managing public keys and certificates.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Define cryptography.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define cryptography. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define cryptography....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q3",
@@ -55,11 +55,11 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Write the number of rounds in AES-128, AES-192, and AES-256.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Provides authentication and secure communication.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Digital certificates are used to verify the identity of users, servers, or organizations and to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>establish secure communication.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Send the message and signature.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Perform 16 rounds of encryption</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Expand R from 32 bits to 48 bits.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o XOR with the round key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Pass through S-boxes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Apply permutation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o XOR with L.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Swap halves.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Provides better confidentiality.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Apply the hash function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compares the computed HMAC with the received HMAC.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fast and efficient for large data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CFB – Converts block cipher to stream cipher.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components: CA, RA, Digital Certificates.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Provides authentication and secure communication."
+      "final_answer": "Components: CA, RA, Digital Certificates."
     },
     {
       "id": "Q4",
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "List cryptographic terminolog Y",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List cryptographic terminolog Y . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>List cryptographic terminolog Y...</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "State the need for digital certificates.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Components: CA, RA, Digital Certificates.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A stream cipher encrypts data one bit or one byte at a time using a keystream.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receiver computes the hash of the received message.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Apply Final Permutation (FP) to obtain ciphertext.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Symmetric encryption algorithm.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Uses 16 Feistel rounds.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used before AES.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses an Initialization Vector (IV) for added security.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hash again to generate the HMAC value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: AES, DES, Blowfish.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CTR – Uses counter values; supports parallel processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications: SSL/TLS, digital signatures, secure email.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Components: CA, RA, Digital Certificates."
+      "final_answer": "Applications: SSL/TLS, digital signatures, secure email."
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Classify the applications of cryptography",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Classify the applications of cryptography . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Classify the applications of cryptography...</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define substitution cipher.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Supports integrity and non-repudiation.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Cryptography protects banking data through encryption, authentication, and digital</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>signatures, ensuring confidentiality and integrity.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Supports integrity and non-repudiation."
+      "final_answer": "Cryptography protects banking data through encryption, authentication, and digital"
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Outline private key is also called as.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Outline private key is also called as. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Outline private key is also called as....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Define Stream cipher.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications: SSL/TLS, digital signatures, secure email.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the public parameters required in the Diffie–Hellman algorithm.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A large prime number (p)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A generator (g)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Applications: SSL/TLS, digital signatures, secure email."
+      "final_answer": "• A generator (g)"
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "List cryptographic Primitives.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List cryptographic Primitives. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>List cryptographic Primitives....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Name the two main phases of sponge construction.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Send the message along with the HMAC. HMAC Verification</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypted independently using the same key.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Send the message along with the HMAC. HMAC Verification"
+      "final_answer": "Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is"
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[C]",
       "question": "Formulate a hash function denoted as.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Formulate a hash function denoted as. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Formulate a hash function denoted as....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Discuss cryptography ensure security in online banking.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss how cryptography ensures security in online banking.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Cryptography protects banking data through encryption, authentication, and digital</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>signatures, ensuring confidentiality and integrity.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hash function converts a message of any length into a fixed-length hash value (message</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>digest). In digital signatures, the sender first computes the hash of the message and then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypts the hash using their private key to create the digital signature.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "signatures, ensuring confidentiality and integrity."
+      "final_answer": "Process"
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[C]",
       "question": "List the application of hash function.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List the application of hash function. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>List the application of hash function....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Identify the main security risk in symmetric encryption.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the main security risk in symmetric encryption.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The main security risk is secure key distribution and management, since both parties use the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>same secret key.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RSA Key Generation Steps</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Select two large prime numbers, p and q.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute:𝑛 = 𝑝 × 𝑞</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute Euler's Totient:𝜙(𝑛) = (𝑝 − 1)(𝑞 − 1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Choose an integer e such that:1 < 𝑒 < 𝜙(𝑛)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and gcd(e, φ(n)) = 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute d such that:𝑑 × 𝑒 ≡ 1(mod𝜙(𝑛))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Key = (e, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Key = (d, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Public key is used for encryption.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Private key is used for decryption.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "same secret key."
+      "final_answer": "• Private key is used for decryption."
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Define Block cipher.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define Block cipher. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypted independently using the same key.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is"
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "List the public parameters required in the Diffie–Hellman algorithm.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the public parameters required in the Diffie–Hellman algorithm.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A large prime number (p)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A generator (g)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "• A generator (g)"
+      "final_answer": "CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook)."
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[C]",
       "question": "Write classification of block cipher mode operation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write classification of block cipher mode operation. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypted independently using the same key.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is"
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Write which cryptographic primitive is used to ensure data confidentiality.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Which cryptographic primitive is used to ensure data confidentiality?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Encryption is the cryptographic primitive used to ensure data confidentiality.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Symmetric Key Cryptography</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Encryption is the cryptographic primitive used to ensure data confidentiality."
+      "final_answer": "Symmetric Key Cryptography"
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write expansion of PKI .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write expansion of PKI . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write expansion of PKI ....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Define ECB.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define ECB.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Electronic Codebook (ECB) is a block cipher mode in which each plaintext block is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypted independently using the same key.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Key Infrastructure (PKI)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "encrypted independently using the same key."
+      "final_answer": "Public Key Infrastructure (PKI)"
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Define message authentication code.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define message authentication code. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A substitution cipher is an encryption technique in which each plaintext character is replaced</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>by another character according to a fixed rule.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receiver decrypts the signature using the sender's public key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>After 16 rounds, combine the halves.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Resistant to pattern analysis attacks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Combine the result with outer padding (opad).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If both match, the message is authentic and unaltered.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Ensures integrity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provides authentication.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Resistant to forgery attacks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay type questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Main issue: key distribution.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>OFB – Uses keystream; no error propagation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Supports integrity and non-repudiation.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Supports integrity and non-repudiation."
     },
     {
       "id": "Q23",
@@ -335,11 +335,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define a key exchange protocol.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define a key exchange protocol.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A key exchange protocol is a method that allows two parties to securely establish a shared</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>secret key over an insecure network.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A key exchange protocol is a method that allows two parties to securely establish a shared</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>secret key over an insecure network.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Essay Questions (5 Marks)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "secret key over an insecure network."
+      "final_answer": "Short Essay Questions"
     },
     {
       "id": "Q24",
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Write expansion of HMAC. Type Questions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write expansion of HMAC. x10 = 10] Part B Short Essay Type Questions Answer any 4 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write expansion of HMAC. Type Questions...</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q25",
@@ -363,11 +363,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Classify symmetric key cryptography vs. asymmetric key cryptography.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Classify symmetric key cryptography vs. asymmetric key cryptography. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Classify symmetric key cryptography vs. asymmetric key cryptography....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q26",
@@ -377,11 +377,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Explain Stream ciphers and block ciphers.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Stream ciphers and block ciphers. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain Stream ciphers and block ciphers....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q27",
@@ -391,11 +391,11 @@
       "marks": 2,
       "domain_tag": "[C]",
       "question": "Explain Electronic Codebook (ECB) and Cipher Block Chaining (CBC).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Electronic Codebook (ECB) and Cipher Block Chaining (CBC). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook)."
     },
     {
       "id": "Q28",
@@ -405,11 +405,11 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Explain Digital signatures",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Digital signatures . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hash function converts a message of any length into a fixed-length hash value (message</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>digest). In digital signatures, the sender first computes the hash of the message and then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypts the hash using their private key to create the digital signature.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Process"
     },
     {
       "id": "Q29",
@@ -419,11 +419,11 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Explain Diffie-Hellman Key Exchange.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Diffie-Hellman Key Exchange. / . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Asymmetric cryptography uses two different but mathematically related keys: a public key</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Working</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The public key is shared openly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The private key is kept secret.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data encrypted with the public key can only be decrypted with the private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Solves key distribution problems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports digital signatures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provides authentication and non-repudiation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• RSA</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Diffie–Hellman</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ECC</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Secure email</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• SSL/TLS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital certificates</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "• Digital certificates"
     },
     {
       "id": "Q30",
@@ -433,11 +433,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Explain Secure Hash Algorithm. / Type Questions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Secure Hash Algorithm. / x5 = 20] Part C Essay Type Questions Answer any 2 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A stream cipher encrypts data one bit or one byte at a time using a keystream.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Receiver computes the hash of the received message.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Apply Final Permutation (FP) to obtain ciphertext.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Features</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Symmetric encryption algorithm.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Uses 16 Feistel rounds.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Widely used before AES.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Uses an Initialization Vector (IV) for added security.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hash again to generate the HMAC value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: AES, DES, Blowfish.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CTR – Uses counter values; supports parallel processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications: SSL/TLS, digital signatures, secure email.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Applications: SSL/TLS, digital signatures, secure email."
     },
     {
       "id": "Q31",
@@ -447,11 +447,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "Explain Data Encryption Standard (DES) with suitable diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Data Encryption Standard (DES) with suitable diagram. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using a 56-bit key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Operation"
     },
     {
       "id": "Q32",
@@ -461,11 +461,11 @@
       "marks": 2,
       "domain_tag": "[C]",
       "question": "Explain Advanced Encryption Standard (AES).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Advanced Encryption Standard (AES). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using a 56-bit key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Operation"
     },
     {
       "id": "Q33",
@@ -475,11 +475,11 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Explain RSA Algorithm with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain RSA Algorithm with an example. x10 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Systematic conceptual explanation:</strong> Clear academic formulation addressing <em>Explain RSA Algorithm with an example....</em> within Applied Cryptography.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Systematic conceptual explanation and core criteria verified per Applied Cryptography valuation scheme."
     },
     {
       "id": "Q34",
@@ -489,7 +489,7 @@
       "marks": 6,
       "domain_tag": "[C] ",
       "question": "Explain is the use of hash functions in digital signatures.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the use of hash functions in digital signatures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hash function converts a message of any length into a fixed-length hash value (message</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>digest). In digital signatures, the sender first computes the hash of the message and then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypts the hash using their private key to create the digital signature.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hash function converts a message of any length into a fixed-length hash value (message</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>digest). In digital signatures, the sender first computes the hash of the message and then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>encrypts the hash using their private key to create the digital signature.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -503,7 +503,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Explain DES operation in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain DES operation in detail.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using a 56-bit key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using a 56-bit key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -517,7 +517,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Write the steps of key generation in RSA Algorithm.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the steps of key generation in RSA Algorithm.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RSA Key Generation Steps:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Select two large prime numbers, p and q.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute:𝑛 = 𝑝 × 𝑞</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute Euler's Totient:𝜙(𝑛) = (𝑝 − 1)(𝑞 − 1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Choose an integer e such that:1 < 𝑒 < 𝜙(𝑛)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and gcd(e, φ(n)) = 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute d such that:𝑑 × 𝑒 ≡ 1(mod𝜙(𝑛))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Key = (e, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Key = (d, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Public key is used for encryption.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Private key is used for decryption.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RSA Key Generation Steps</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Select two large prime numbers, p and q.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute:𝑛 = 𝑝 × 𝑞</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute Euler's Totient:𝜙(𝑛) = (𝑝 − 1)(𝑞 − 1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Choose an integer e such that:1 < 𝑒 < 𝜙(𝑛)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and gcd(e, φ(n)) = 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compute d such that:𝑑 × 𝑒 ≡ 1(mod𝜙(𝑛))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Key = (e, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Private Key = (d, n)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Public key is used for encryption.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Private key is used for decryption.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -531,7 +531,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Explain the concept of asymmetric key cryptography.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the concept of asymmetric key cryptography. Asymmetric cryptography uses two different but mathematically related keys: a public key and a private key. Working:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The public key is shared openly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The private key is kept secret.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data encrypted with the public key can only be decrypted with the private key. Advantages:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Solves key distribution problems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports digital signatures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provides authentication and non-repudiation. Examples:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• RSA</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Diffie–Hellman</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ECC Applications:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Secure email</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• SSL/TLS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital certificates</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Asymmetric cryptography uses two different but mathematically related keys: a public key</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Working</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The public key is shared openly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The private key is kept secret.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data encrypted with the public key can only be decrypted with the private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Solves key distribution problems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports digital signatures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provides authentication and non-repudiation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• RSA</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Diffie–Hellman</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ECC</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Secure email</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• SSL/TLS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital certificates</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -545,11 +545,11 @@
       "marks": 6,
       "domain_tag": "[C] ",
       "question": "Write the advantages of CBC over ECB.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the advantages of CBC over ECB.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Advantages"
+      "final_answer": "CBC (Cipher Block Chaining) is more secure than ECB (Electronic Codebook)."
     },
     {
       "id": "Q39",
@@ -559,7 +559,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Explain the steps involved in generating and verifying an HMAC.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the steps involved in generating and verifying an HMAC.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>HMAC (Hash-based Message Authentication Code) provides message authentication and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>integrity using a secret key and hash function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>HMAC Generation</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>HMAC (Hash-based Message Authentication Code) provides message authentication and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>integrity using a secret key and hash function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>HMAC Generation</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -587,11 +587,11 @@
       "marks": 10,
       "domain_tag": "[C] ",
       "question": "Explain different block cipher modes of operation.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Block Cipher Modes of Operation</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using a 56-bit key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Block Cipher Modes of Operation"
+      "final_answer": "Operation"
     },
     {
       "id": "Q42",
@@ -601,11 +601,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Explain Public Key Infrastructure (PKI) with its objectives, architecture, and major components.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Public Key Infrastructure (PKI)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Asymmetric cryptography uses two different but mathematically related keys: a public key</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and a private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Working</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The public key is shared openly.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The private key is kept secret.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data encrypted with the public key can only be decrypted with the private key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Solves key distribution problems.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports digital signatures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provides authentication and non-repudiation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• RSA</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Diffie–Hellman</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ECC</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Secure email</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• SSL/TLS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital certificates</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Public Key Infrastructure (PKI)"
+      "final_answer": "• Digital certificates"
     }
   ]
 }

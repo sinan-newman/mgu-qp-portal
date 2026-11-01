@@ -28,11 +28,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is semi-structured data? Write an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is semi-structured data? Write an example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data that does not follow a strict schema but has some organisational structure using tags or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>markers. Example: JSON, XML.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data that does not follow a strict schema but has some organisational structure using tags or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>markers. Example: JSON, XML.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "markers. Example: JSON, XML."
+      "final_answer": "Data that does not follow a strict schema but has some organisational structure using tags or"
     },
     {
       "id": "Q2",
@@ -42,11 +42,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Differentiate between nominal and ordinal data.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BoxPlot(IQRMethod)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List two applications ofAI in manufacturing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Anytwo:predictivemaintenance,qualityinspection,industrialrobots,demandforecasting.1mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>each.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z-ScoreMethod</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "BoxPlot(IQRMethod)"
+      "final_answer": "Z-ScoreMethod"
     },
     {
       "id": "Q3",
@@ -56,13 +56,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to find the largest among three numbers using nested if statement.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the largest among three numbers using nested if statement.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if statement: Executes a block if the condition is true</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is greater than 5\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–else statement: Executes one block if the condition true, another if false</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x % 2 == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Even\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Odd\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Nested if: One if inside another.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is between 1 and 9\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–elif ladder: Multiple conditions checked sequentially.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Negative\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elif x == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Zero\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Positive\")</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "print(\"Positive\")"
     },
     {
       "id": "Q4",
@@ -72,11 +72,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define Data Analysis.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Data Analysis. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The process of inspecting, cleaning, transforming, and modelling data to discover useful</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>information and support decision-making.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Words with predefined meanings in Python that cannot be used as identifiers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: if, for, while</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1D array 2D array</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single row of elements Rows and columns (matrix form)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: np. array() Example: np. array([,])</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "information and support decision-making."
+      "final_answer": "Example: np. array() Example: np. array([,])"
     },
     {
       "id": "Q5",
@@ -86,11 +86,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "List two applications of AI in manufacturing.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List two applications of AI in manufacturing. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PandasIndex:labelsidentifyingrows.Defaultindex:RangeIndexstartingfrom0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ShortAnswer Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6Write briefly about some popular data analytics tools with their key uses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dataanalyticstoolsaresoftwareapplicationsusedtocollect,process,analyze</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualize,andinterpretdatafordecision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:Python,R-programmingetc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Introduction/definition–1,keyconcepts–2,examples"
     },
     {
       "id": "Q6",
@@ -100,13 +100,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to print the multiplication table of a number using a for loop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to print the multiplication table of a number using a for loop.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>foriinrange(5)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ifi==3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(i)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking:correctloop–1,breakusage–1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ScatterPlot</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "ScatterPlot"
     },
     {
       "id": "Q7",
@@ -116,11 +116,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the difference between 1D and 2D array in Numpy.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the difference between 1D and 2D array in Numpy. / </li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impacts: High energy consumption in data centres, carbon emissions, and electronic waste.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reduction: Use green data centres, optimise algorithms, apply model compression, use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Renewable energy</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "State the difference between 1D and 2D array in Numpy."
+      "final_answer": "Renewable energy"
     },
     {
       "id": "Q8",
@@ -130,11 +130,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write a Python example code using the break statement in a loop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python example code using the break statement in a loop. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Datastructuresaremethodsoforganizingandstoringdataefficientlyforeasyaccess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>andmanipulation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• List:marks=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tuple:point=(10,20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Dictionary:student={\"Name\":\"Anu\",\"Age\":20}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Set:colors={\"Red\",\"Blue\",\"Green\"}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–2, examples/explanation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Introduction/definition–2, examples/explanation"
     },
     {
       "id": "Q9",
@@ -144,13 +144,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to find the sum of digits of a number using a while loop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the sum of digits of a number using a while loop.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>foriinrange(5)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ifi==3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(i)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking:correctloop–1,breakusage–1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ScatterPlot</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "ScatterPlot"
     },
     {
       "id": "Q10",
@@ -160,11 +160,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What are the reserved keywords? Give examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What are the reserved keywords? Give examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Words with predefined meanings in Python that cannot be used as identifiers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: if, for, while</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1D array 2D array</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single row of elements Rows and columns (matrix form)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: np. array() Example: np. array()</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of analysis results important for organisations?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The process of deriving meaningful insights from analysed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance: Helps organisations make correct decisions, avoid misjudgments, and ensure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>accurate strategies.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Example: np. array() Example: np. array()"
+      "final_answer": "accurate strategies."
     },
     {
       "id": "Q11",
@@ -174,11 +174,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Give two differences between Numpy array and Python list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Histogram Example Dataset:10,12,14,15,16,100 Here,100isanoutlier. definition–1,Methods–2,examples–2.Marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DefinitionofLinePlot1-Marks,Definitionofbar plot1-Marks,Anythreedifference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1markseach</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Histogram Example Dataset:10,12,14,15,16,100 Here,100isanoutlier. definition–1,Methods–2,examples–2.Marks"
+      "final_answer": "DefinitionofLinePlot1-Marks,Definitionofbar plot1-Marks,Anythreedifference"
     },
     {
       "id": "Q12",
@@ -188,13 +188,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to display all prime numbers between 1 and 50.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to display all prime numbers between 1 and 50.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a Python program to display all prime numbers between 1 and 50....</em> within AI Techniques for Data Analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per AI Techniques for Data Analysis valuation scheme."
     },
     {
       "id": "Q13",
@@ -204,11 +204,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Name the process of converting long-format data into wide-format data in Pandas. Give an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Name the process of converting long-format data into wide-format data in Pandas. Give an</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Process: Pivoting.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>df.pivot(index=’name’,columns=’sub.’,values=’mark’) / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x5 = 10]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if statement: Executes a block if the condition is true</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is greater than 5\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–else statement: Executes one block if the condition true, another if false</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x % 2 == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Even\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Odd\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Nested if: One if inside another.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is between 1 and 9\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–elif ladder: Multiple conditions checked sequentially.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Negative\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elif x == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Zero\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Positive\")</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "x5 = 10]"
+      "final_answer": "print(\"Positive\")"
     },
     {
       "id": "Q14",
@@ -218,11 +218,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define Pandas Index. What is the default index in a Pandas Data Frame?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Pandas Index.What is the default index in a Pandas DataFrame?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PandasIndex:labelsidentifyingrows.Defaultindex:RangeIndexstartingfrom0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ShortAnswer Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6Write briefly about some popular data analytics tools with their key uses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dataanalyticstoolsaresoftwareapplicationsusedtocollect,process,analyze,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualize,andinterpretdatafordecision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:Python,R-programmingetc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>differenttypesofcharts/graphswithexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data visualization, importance, and charts (line, bar, pie, histogram, scatter, box plot, etc</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>withexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition–2,importance–4,charttypes–6,example<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Introduction/definition–1,keyconcepts–2,examples"
+      "final_answer": "Definition–2,importance–4,charttypes–6,example"
     },
     {
       "id": "Q15",
@@ -232,13 +232,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to generate Fibonacci series of n terms.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to generate Fibonacci series of n terms.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a Python program to generate Fibonacci series of n terms....</em> within AI Techniques for Data Analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per AI Techniques for Data Analysis valuation scheme."
     },
     {
       "id": "Q16",
@@ -248,13 +248,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a 4×3 Num Py array with values from 1 to 12. Also perform the following operations: • Slice the 2nd and 4th rows. • Extract the elements from the 2rd column using indexing.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a 4×3 Num Py array with values from 1 to 12. Also perform the following operations: • Slice the 2nd and 4th rows. • Extract the elements from the 2rd column using indexing.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Words with predefined meanings in Python that cannot be used as identifiers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: if, for, while</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1D array 2D array</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single row of elements Rows and columns (matrix form)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: np. array() Example: np. array([,])</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Example: np. array() Example: np. array([,])"
     },
     {
       "id": "Q17",
@@ -264,13 +264,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a Num Py array with elements 10, 20, 30, 40, and 50. Also perform the following operations: • Display its shape and size. • Reshape it into a 5×1 array.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a Num Py array with elements 10, 20, 30, 40, and 50. Also perform the following operations: • Display its shape and size. • Reshape it into a 5×1 array.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Words with predefined meanings in Python that cannot be used as identifiers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples: if, for, while</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1D array 2D array</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single row of elements Rows and columns (matrix form)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: np. array() Example: np. array([,])</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Example: np. array() Example: np. array([,])"
     },
     {
       "id": "Q18",
@@ -280,13 +280,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a list of ten numbers and find their sum and average. Also find the largest and smallest elements in the list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a list of ten numbers and find their sum and average. Also find the largest and smallest elements in the list.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a Python program to create a list of ten numbers and find their sum and av...</em> within AI Techniques for Data Analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per AI Techniques for Data Analysis valuation scheme."
     },
     {
       "id": "Q19",
@@ -296,13 +296,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to sort a list in ascending and descending order, and then reverse the list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to sort a list in ascending and descending order, and then reverse the list.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• len(list) – returns the number of elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• append(x) – adds item at the end.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• sort() – sorts the list in ascending order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: a=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a.sort()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a)</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "print(a)"
     },
     {
       "id": "Q20",
@@ -312,13 +312,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a tuple of numbers, find its length and also find the maximum and minimum elements in the tuple.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a tuple of numbers, find its length and also find the maximum and minimum elements in the tuple.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a Python program to create a tuple of numbers, find its length and also fi...</em> within AI Techniques for Data Analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per AI Techniques for Data Analysis valuation scheme."
     },
     {
       "id": "Q21",
@@ -328,13 +328,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a dictionary of student names and their marks. Display all keys and values separately.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a dictionary of student names and their marks. Display all keys and values separately.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and interpret the plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>students =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>science =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>displaying their marks side by side for easy comparison.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "and interpret the plot."
     },
     {
       "id": "Q22",
@@ -344,13 +344,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to sort a dictionary by its keys and by its values.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to sort a dictionary by its keys and by its values.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a Python program to sort a dictionary by its keys and by its values....</em> within AI Techniques for Data Analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per AI Techniques for Data Analysis valuation scheme."
     },
     {
       "id": "Q23",
@@ -360,13 +360,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a Data Frame from a dictionary containing the columns Name, Age, and Marks. • Display the Data Frame. • Retrieve only the Name column using indexing.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a Data Frame from a dictionary containing the columns Name, Age, and Marks. • Display the Data Frame. • Retrieve only the Name column using indexing.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Datastructuresaremethodsoforganizingandstoringdataefficientlyforeasyaccess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>andmanipulation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• List:marks=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tuple:point=(10,20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Dictionary:student={\"Name\":\"Anu\",\"Age\":20}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Set:colors={\"Red\",\"Blue\",\"Green\"}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–2, examples/explanation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Introduction/definition–2, examples/explanation"
     },
     {
       "id": "Q24",
@@ -376,13 +376,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "Write a Python program to create a Datat Frame from a CSV file named students.csv containing Name, Age, Marks and City. Perform the following operations: • Display the first five rows. • Show column names and data types.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to create a Datat Frame from a CSV file named students.csv containing Name, Age, Marks and City. Perform the following operations: • Display the first five rows. • Show column names and data types.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and interpret the plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>students =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>science =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>displaying their marks side by side for easy comparison.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "and interpret the plot."
     },
     {
       "id": "Q25",
@@ -392,13 +392,13 @@
       "marks": 2,
       "domain_tag": "[A]",
       "question": "The number of students enrolled in different departments in a college for 2025 is given below. Write a Python program to draw a pie chart to compare enrolments across departments. Department Science Arts Commerce Engineering Students 80 150 180 200",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering The number of students enrolled in different departments in a college for 2025 is given below. Write a Python program to draw a pie chart to compare enrolments across departments. Department Science Arts Commerce Engineering Students 80 150 180 200  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and interpret the plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>students =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>science =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>displaying their marks side by side for easy comparison.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "and interpret the plot."
     },
     {
       "id": "Q26",
@@ -408,7 +408,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "List the secondary sources of data, describe how each can be collected, and discuss their potential limitations.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the secondary sources of data, describe how each can be collected, and discuss their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>potential limitations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sources:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Government publications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Company records</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Research journals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Websites/databases</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Collection: Accessing online repositories, libraries, archives, or reports.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limitations: May be outdated, biased, or lack accuracy.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the secondary sources of data, describe how each can be collected, and discuss their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>potential limitations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sources</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Government publications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Company records</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Research journals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Websites/databases</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Collection: Accessing online repositories, libraries, archives, or reports.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limitations: May be outdated, biased, or lack accuracy.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -422,11 +422,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Write briefly about some popular data analytics tools with their key uses.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write briefly about some popular data analytics tools with their key uses. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PandasIndex:labelsidentifyingrows.Defaultindex:RangeIndexstartingfrom0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ShortAnswer Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6Write briefly about some popular data analytics tools with their key uses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dataanalyticstoolsaresoftwareapplicationsusedtocollect,process,analyze</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualize,andinterpretdatafordecision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:Python,R-programmingetc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write briefly about some popular data analytics tools with their key uses. ."
+      "final_answer": "Introduction/definition–1,keyconcepts–2,examples"
     },
     {
       "id": "Q28",
@@ -436,7 +436,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe some environmental impact of AI and how can it be reduced.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe some environmental impacts of AI and how can it be reduced / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impacts: High energy consumption in data centres, carbon emissions, and electronic waste.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reduction: Use green data centres, optimise algorithms, apply model compression, use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Renewable energy</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impacts: High energy consumption in data centres, carbon emissions, and electronic waste.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reduction: Use green data centres, optimise algorithms, apply model compression, use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Renewable energy</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -450,7 +450,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain the growth of AI from 2010 to present.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explainthe growth ofAI from 2010topresent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ArtificialIntelligence(AI)hasgrownrapidlyduetoadvancesincomputingpower,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>bigdata,andmachinelearningalgorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2010–2015</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Riseofdeeplearning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improvedimageandspeechrecognition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IncreaseduseofGPUsforAItraining.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2016–2020</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIdefeatedhumanchampionsingames(e.g.,AlphaGo).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Rapidgrowthofself-drivingvehicleresearch.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIwidelyadoptedinhealthcare,finance,ande-commerce.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• DevelopmentofadvancedNaturalLanguageProcessing(NLP).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2021–Present</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• EmergenceofGenerativeAImodels.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• LargeLanguageModels(LLMs)capableofhuman-liketextgeneration.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIintegratedintoeducation,healthcare,manufacturing,banking,andsoftware</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• FocusonExplainableAI(XAI),ethicalAI,andresponsibleAIpractices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ArtificialIntelligence(AI)hasgrownrapidlyduetoadvancesincomputingpower</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>bigdata,andmachinelearningalgorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2010–2015</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Riseofdeeplearning.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improvedimageandspeechrecognition.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IncreaseduseofGPUsforAItraining.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2016–2020</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIdefeatedhumanchampionsingames(e.g.,AlphaGo).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Rapidgrowthofself-drivingvehicleresearch.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIwidelyadoptedinhealthcare,finance,ande-commerce.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• DevelopmentofadvancedNaturalLanguageProcessing(NLP).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2021–Present</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• EmergenceofGenerativeAImodels.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• LargeLanguageModels(LLMs)capableofhuman-liketextgeneration.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• AIintegratedintoeducation,healthcare,manufacturing,banking,andsoftware</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• FocusonExplainableAI(XAI),ethicalAI,andresponsibleAIpractices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -464,7 +464,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the built-in list functions with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the built-in list functions with examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• len(list) – returns the number of elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• append(x) – adds item at the end.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• sort() – sorts the list in ascending order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: a=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a.sort()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• len(list) – returns the number of elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• append(x) – adds item at the end.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• sort() – sorts the list in ascending order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: a=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a.sort()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -478,7 +478,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain the importance of data structures in Python with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the importance of data structures in Python with examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Datastructuresaremethodsoforganizingandstoringdataefficientlyforeasyaccess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>andmanipulation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• List:marks=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tuple:point=(10,20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Dictionary:student={\"Name\":\"Anu\",\"Age\":20}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Set:colors={\"Red\",\"Blue\",\"Green\"}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–2, examples/explanation– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Datastructuresaremethodsoforganizingandstoringdataefficientlyforeasyaccess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>andmanipulation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• List:marks=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tuple:point=(10,20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Dictionary:student={\"Name\":\"Anu\",\"Age\":20}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Set:colors={\"Red\",\"Blue\",\"Green\"}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–2, examples/explanation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -492,7 +492,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain any three data analysis functions in Pandas with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain any three data analysis functions in Pandas with examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.describe() – summary statistics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.groupby() – group data by column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.corr() – computes correlation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: df.describe()</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.describe() – summary statistics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.groupby() – group data by column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.corr() – computes correlation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: df.describe()</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -506,11 +506,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss relational operators in Python with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss relational operators in Python with examples RelationaloperatorscomparetwovaluesandreturneitherTrueorFalse. ==,!=, etc… Example: a=10 b=20 print(a==b) #False print(a<b) #True print(a!=b) #True Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>RelationaloperatorscomparetwovaluesandreturneitherTrueorFalse.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>==,!=,<,>etc…</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a=10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b=20</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a==b) #False</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a<b) #True</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(a!=b) #True</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples/explanation–2.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Discuss relational operators in Python with examples RelationaloperatorscomparetwovaluesandreturneitherTrueorFalse. ==,!=, etc… Example: a=10 b=20 print(a==b) #False print(a<b) #True print(a!=b) #True Introduction/definition–1,keyconcepts–2,examples/explanation–2."
+      "final_answer": "Introduction/definition–1,keyconcepts–2,examples/explanation–2."
     },
     {
       "id": "Q34",
@@ -520,7 +520,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "What is data interpretation in the data analysis life cycle? Why is the correct interpretation of analysis results important for organizations?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is data interpretation in the data analysis life cycle? Why is the correct interpretation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of analysis results important for organisations? / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The process of deriving meaningful insights from analysed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance: Helps organisations make correct decisions, avoid misjudgments, and ensure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>accurate strategies.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of analysis results important for organisations?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The process of deriving meaningful insights from analysed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance: Helps organisations make correct decisions, avoid misjudgments, and ensure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>accurate strategies.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -534,11 +534,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe different methods to detect outliers in a dataset with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe different methods to detect outliers in a dataset with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Anoutlierisadatavaluethatdifferssignificantlyfromotherobservations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Anoutlierisadatavaluethatdifferssignificantlyfromotherobservations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Methods"
+      "final_answer": "Anoutlierisadatavaluethatdifferssignificantlyfromotherobservations."
     },
     {
       "id": "Q36",
@@ -548,7 +548,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Why is data summarization important in data analysis, and how can it be performed?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is data summarization important in data analysis, and how can it be performed?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Condensing large datasets to highlight key information.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance: Simplifies analysis, aids comparison, supports decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods: Aggregation, descriptive statistics (mean(), sum(), describe()).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Condensing large datasets to highlight key information.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance: Simplifies analysis, aids comparison, supports decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods: Aggregation, descriptive statistics (mean(), sum(), describe()).</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -576,11 +576,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "What is missing data? List any two reasons why missing data may occur. Give one example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is missing data? List any two reasons why missing data may occur. Give one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Information not available for some variables or records.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reasons:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Human error or omission.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data corruption or transmission loss.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Age field left blank in a survey.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x5 = 25]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Information not available for some variables or records.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reasons</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Human error or omission.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data corruption or transmission loss.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Age field left blank in a survey.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay Questions Answer any 1 questions</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "x5 = 25]"
+      "final_answer": "Essay Questions Answer any 1 questions"
     },
     {
       "id": "Q39",
@@ -590,11 +590,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Differentiate between descriptive statistics functions mean(), median(), and mode() in Pandas.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiatebetweendescriptivestatisticsfunctionsmean(),median(),andmode()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>inPandas.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mean()-Returnsthearithmeticaverage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Median()-Returnsthemiddlevalueaftersorting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mode()-Returnsthemostfrequentlyoccurringvalue</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>definition–3,Anytwodifference– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.describe() – summary statistics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.groupby() – group data by column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• df.corr() – computes correlation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: df.describe()</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "definition–3,Anytwodifference"
+      "final_answer": "Example: df.describe()"
     },
     {
       "id": "Q40",
@@ -604,11 +604,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain if, if-else, nested if, if –elif ladder statements in Python with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain if, if-else, nested if, if –elif ladder statements in Python with examples. /  if statement: Executes a block if the condition is true x = 10 if x > 5: print(\"x is greater than 5\") if–else statement: Executes one block if the condition true, another if false if x % 2 == 0: print(\"Even\") else: print(\"Odd\") Nested if: One if inside another. if x > 0: if x < 10: print(\"x is between 1 and 9\") if–elif ladder: Multiple conditions checked sequentially. if x < 0: print(\"Negative\") elif x == 0: print(\"Zero\") else: print(\"Positive\")</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if statement: Executes a block if the condition is true</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is greater than 5\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–else statement: Executes one block if the condition true, another if false</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x % 2 == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Even\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Odd\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Nested if: One if inside another.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"x is between 1 and 9\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if–elif ladder: Multiple conditions checked sequentially.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x < 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Negative\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elif x == 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Zero\")</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Positive\")</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Explain if, if-else, nested if, if –elif ladder statements in Python with examples. if statement: Executes a block if the condition is true x = 10 if x > 5: print(\"x is greater than 5\") if–else statement: Executes one block if the condition true, another if false if x % 2 == 0: print(\"Even\") else: print(\"Odd\") Nested if: One if inside another. if x > 0: if x < 10: print(\"x is between 1 and 9\") if–elif ladder: Multiple conditions checked sequentially. if x < 0: print(\"Negative\") elif x == 0: print(\"Zero\") else: print(\"Positive\")"
+      "final_answer": "print(\"Positive\")"
     },
     {
       "id": "Q41",
@@ -618,11 +618,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain selective statements in Python with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain selective statements in Python with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SelectivestatementsinPython:if,if-else,nestedif,if-elif-else.Includesyntaxandexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concepts–5,syntax–4,examples–6.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SelectivestatementsinPython:if,if-else,nestedif,if-elif-else.Includesyntaxandexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concepts–5,syntax–4,examples–6.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Concepts–5,syntax–4,examples–6."
+      "final_answer": "SelectivestatementsinPython:if,if-else,nestedif,if-elif-else.Includesyntaxandexamples."
     },
     {
       "id": "Q42",
@@ -632,11 +632,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Illustrate with example how to create a grouped bar plot in Matplotlib with a suitable data set and interpret the plot.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Illustrate with example how to create a grouped bar plot in Matplotlib with a suitable data set</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and interpret the plot. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>students = ['A', 'B', 'C']</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math = </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>science = </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>displaying their marks side by side for easy comparison.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x1 = 15]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and interpret the plot.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import matplotlib.pyplot as plt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import numpy as np</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>students =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>science =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = np.arange(len(students))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width = 0.35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x - width/2, math, width, label='Maths')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.bar(x + width/2, science, width, label='Science')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.xlabel('Students')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.ylabel('Marks')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.legend()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>plt.show()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The plot visually compares each student's performance across two subjects Maths and Science by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>displaying their marks side by side for easy comparison.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "x1 = 15]"
+      "final_answer": "and interpret the plot."
     },
     {
       "id": "Q43",
@@ -646,11 +646,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "What is data visualization? Explain the importance of visualization in analytics and discuss different types of charts/graphs with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Whatisdatavisualization?Explaintheimportanceofvisualizationinanalyticsanddiscuss</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>differenttypesofcharts/graphswithexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data visualization, importance, and charts (line, bar, pie, histogram, scatter, box plot, etc</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>withexamples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition–2,importance–4,charttypes–6,example- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PandasIndex:labelsidentifyingrows.Defaultindex:RangeIndexstartingfrom0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ShortAnswer Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6Write briefly about some popular data analytics tools with their key uses.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dataanalyticstoolsaresoftwareapplicationsusedtocollect,process,analyze</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>visualize,andinterpretdatafordecision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:Python,R-programmingetc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction/definition–1,keyconcepts–2,examples<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Definition–2,importance–4,charttypes–6,example"
+      "final_answer": "Introduction/definition–1,keyconcepts–2,examples"
     }
   ]
 }

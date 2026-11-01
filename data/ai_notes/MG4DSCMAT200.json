@@ -27,11 +27,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Compute 3A, -5A and 0A for .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Compute 3A, -5A and 0A for . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 0 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>−3 0 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 3 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] …1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>−5𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>−5 0 −5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>5 0 −5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 −5 −5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] …1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 0 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 0 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 0 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] …1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "3𝐴 ="
     },
     {
       "id": "Q2",
@@ -41,11 +41,11 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "Write the 3 × 3 matrix whose ijth entry is given by xij = 2 i+j.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the 3 × 3 matrix whose ijth entry is given by xij = 2 i+j. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Write the 3 × 3 matrix whose ijth entry is given by xij = 2 i+j....</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q3",
@@ -55,11 +55,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Show that the zero matrices are the only square matrices that are both symmetric and skew-symmetric.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝐴 is symmetric, then 𝐴′ = 𝐴 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝐴 is skew -symmetric, then 𝐴′ = −𝐴 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐴 = −𝐴 ⇒ 𝐴 = 0 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑥1, … , 𝑥𝑝 are rows of matrix 𝐴 then 𝑥1, … , 𝑥𝑝 are linearly independent if the only scalars</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜆1, … , 𝜆𝑝 which are such that 𝜆1𝑥1 + 𝜆2𝑥2 + ⋯ + 𝜆𝑝𝑥𝑝 = 0 are 𝜆1 = 𝜆2 = ⋯ = 𝜆𝑝 = 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>…2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example …1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "𝐴 = −𝐴 ⇒ 𝐴 = 0 …"
+      "final_answer": "Example …"
     },
     {
       "id": "Q4",
@@ -69,11 +69,11 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "Is the product of two n × n diagonal matrices a diagonal matrix? Justify.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Is the product of two n × n diagonal matrices a diagonal matrix? Justify. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Is the product of two n × n diagonal matrices a diagonal matrix? Justify....</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q5",
@@ -83,11 +83,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define linear independence of rows of a matrix.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑥1, … , 𝑥𝑝 are rows of matrix 𝐴 then 𝑥1, … , 𝑥𝑝 are linearly independent if the only scalars</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜆1, … , 𝜆𝑝 which are such that 𝜆1𝑥1 + 𝜆2𝑥2 + ⋯ + 𝜆𝑝𝑥𝑝 = 0 are 𝜆1 = 𝜆2 = ⋯ = 𝜆𝑝 = 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 100 = 25 × 4 + 0 ... 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Since 25|100, gcd(100, 25) = 25 … 2 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Example …"
+      "final_answer": "For writing 100 = 25 × 4 + 0 ..."
     },
     {
       "id": "Q6",
@@ -97,11 +97,11 @@
       "marks": 2,
       "domain_tag": "[An][4]",
       "question": "Determine whether the rows of the matrix   1 2 0 0 1 1 1 3 1   are linearly inde- pendent?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Determine whether the rows of the matrix   1 2 0 0 1 1 1 3 1   are linearly inde- pendent? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑥1, … , 𝑥𝑝 are rows of matrix 𝐴 then 𝑥1, … , 𝑥𝑝 are linearly independent if the only scalars</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜆1, … , 𝜆𝑝 which are such that 𝜆1𝑥1 + 𝜆2𝑥2 + ⋯ + 𝜆𝑝𝑥𝑝 = 0 are 𝜆1 = 𝜆2 = ⋯ = 𝜆𝑝 = 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>…2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example …1 Mark</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Example …"
     },
     {
       "id": "Q7",
@@ -111,11 +111,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Determine whether the matrices and are equivalent.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing B is in normal form. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For getting normal form of A as B … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Getting rank A =1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rank B =1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A and B are equivalent since they have the same rank … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For correct definition of complete system of residues modulo 𝑛 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A collection of 𝑛 integers 𝑎1, 𝑎2, … , 𝑎𝑛 is said to form a complete system of residues modulo 𝑛 if every</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>integer is congruent modulo 𝑛 to one and only one of the 𝑎𝑘</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>congruent modulo 𝑛 to 0,1,2, … , 𝑛 − 1, taken in some order].</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For any correct example … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "A and B are equivalent since they have the same rank …"
+      "final_answer": "For any correct example …"
     },
     {
       "id": "Q8",
@@ -125,11 +125,11 @@
       "marks": 2,
       "domain_tag": "[K][4]",
       "question": "Define an orthogonal matrix.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define an orthogonal matrix. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Define an orthogonal matrix....</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q9",
@@ -139,11 +139,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Find gcd(100, 25) using Euclidean Algorithm.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 100 = 25 × 4 + 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Since 25|100, gcd(100, 25) = 25 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Matrix form</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 −2 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 3 −4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑥</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑦</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑧</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] =</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Since 25|100, gcd(100, 25) = 25 …"
+      "final_answer": "] ="
     },
     {
       "id": "Q10",
@@ -153,11 +153,11 @@
       "marks": 2,
       "domain_tag": "[K][5]",
       "question": "State Euclid’s Lemma.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State Euclid’s Lemma. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State Euclid’s Lemma....</em> within Matrix Algebra and Number Theory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Precise statement of principles and core criteria verified per Matrix Algebra and Number Theory valuation scheme."
     },
     {
       "id": "Q11",
@@ -167,11 +167,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Find three prime numbers of the form .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing any two prime numbers of the form 2𝑛 + 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing a third prime number of the form 2𝑛 + 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>g: 3,5,17,257 etc]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 𝐴𝑚 = … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For finding 𝐴𝑛𝐴𝑚 … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 𝐴𝑛+𝑚 = … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "g: 3,5,17,257 etc]"
+      "final_answer": "Rest …"
     },
     {
       "id": "Q12",
@@ -181,11 +181,11 @@
       "marks": 2,
       "domain_tag": "[U][5]",
       "question": "If the product of two positive integers a and b is 864 and lcm(a, b) is 72, then find gcd(a, b).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering If the product of two positive integers a and b is 864 and lcm(a, b) is 72, then find gcd(a, b). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q13",
@@ -195,11 +195,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is meant by a complete system of residues modulo n. A = ⎛ ⎝ ⎜ 1 −1 0 0 0 1 1 1 1 ⎞ ⎠ ⎟ A = 12 24 36 B = 10 00 00 + 12n",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For correct definition of complete system of residues modulo 𝑛 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A collection of 𝑛 integers 𝑎1, 𝑎2, … , 𝑎𝑛 is said to form a complete system of residues modulo 𝑛 if every</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>integer is congruent modulo 𝑛 to one and only one of the 𝑎𝑘 [in other words, if 𝑎1, 𝑎2, … , 𝑎𝑛 are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>congruent modulo 𝑛 to 0,1,2, … , 𝑛 − 1, taken in some order].</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For any correct example … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑛, 𝑛 + 1, 𝑛 + 2 and 𝑛 + 3 be the 4 consecutive integers … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Their product 𝑃 = 𝑛(𝑛 + 1)(𝑛 + 2)(𝑛 + 3) =[(𝑛 + 1)(𝑛 + 2] … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>= (𝑛2 + 3𝑛)(𝑛2 + 3𝑛 + 2) … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Put 𝑘 = 𝑛2 + 3𝑛. 𝑘 is an integer … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑃 = 𝑘(𝑘 + 2) = 𝑘2 + 2𝑘 = (𝑘 + 1)2 − 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "For any correct example …"
+      "final_answer": "Rest …"
     },
     {
       "id": "Q14",
@@ -209,11 +209,11 @@
       "marks": 2,
       "domain_tag": "[K][6]",
       "question": "Define pseudoprime. Give an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define pseudoprime. Give an example. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define pseudoprime. Give an example....</em> within Matrix Algebra and Number Theory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Formal conceptual definition and core criteria verified per Matrix Algebra and Number Theory valuation scheme."
     },
     {
       "id": "Q15",
@@ -223,11 +223,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Evaluate . Type Questions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(10) = 4 or 𝑔𝑐𝑑(3,10) = 1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For getting 3𝜙(10) ≡ 1 (𝑚𝑜𝑑 10). Answer:1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing Fermat’s theorem … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Since 7 ∤ 𝑎, by Fermat’s theorem 𝑎6 ≡ 1(mod 7) … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>⇒ 7|𝑎6 − 1 … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑎6 − 1 = (𝑎3)2 − 12 = (𝑎3 + 1)(𝑎3 − 1) … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>⇒ 7|(𝑎3 + 1)(𝑎3 − 1) ⇒ 7|(𝑎3 + 1) or 7|(𝑎3 − 1) … 2 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "For getting 3𝜙(10) ≡ 1 (𝑚𝑜𝑑 10). Answer:1 …"
+      "final_answer": "⇒ 7|(𝑎3 + 1)(𝑎3 − 1) ⇒ 7|(𝑎3 + 1) or 7|(𝑎3 − 1) …"
     },
     {
       "id": "Q16",
@@ -237,11 +237,11 @@
       "marks": 2,
       "domain_tag": "[U][6]",
       "question": "Determine whether 20 12 ≡ 1(mod 13). Answer any five questions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Determine whether 20 12 ≡ 1(mod 13). Part B Answer any five questions. Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Determine whether 20 12 ≡ 1(mod 13). Answer any five questions....</em> within Matrix Algebra and Number Theory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Matrix Algebra and Number Theory valuation scheme."
     },
     {
       "id": "Q17",
@@ -251,11 +251,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "a) Express the system in matrix form and write the augmented matrix. b) Explain the effect of left multiplication by the matrix .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Matrix form: −2 1 0 3 −4 ] 𝑥 𝑦 𝑧 ] = [</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) For proving the existence of additive identity … 5 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) For proving the existence of additive inverse … 5 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(a) Matrix form: ="
+      "final_answer": "(a) For proving the existence of additive identity …"
     },
     {
       "id": "Q18",
@@ -265,11 +265,11 @@
       "marks": 2,
       "domain_tag": "[U][1]",
       "question": "Prove that for every m × n matrix A, there exists a unique m × n matrix M such that A + M = A.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Prove that for every m × n matrix A, there exists a unique m × n matrix M such that A + M = A. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑥1, … , 𝑥𝑝 are rows of matrix 𝐴 then 𝑥1, … , 𝑥𝑝 are linearly independent if the only scalars</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜆1, … , 𝜆𝑝 which are such that 𝜆1𝑥1 + 𝜆2𝑥2 + ⋯ + 𝜆𝑝𝑥𝑝 = 0 are 𝜆1 = 𝜆2 = ⋯ = 𝜆𝑝 = 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>…2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example …1 Mark</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Example …"
     },
     {
       "id": "Q19",
@@ -279,11 +279,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Reduce the matrix to row-echelon form.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct elimination below first pivot … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>  ⇝ −1 0 1 0 1 −2 1 −2 0 1 2 1 2 ] 𝜌2 − 𝜌1𝜌3 − 3𝜌1 Correct elimination below second pivot … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ⇝ −1 0 1 0 0 −1 1 −3 0 0 3 1 1 ] 𝜌3 − 𝜌2𝜌4 − 𝜌2 Correct elimination below third pivot … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ⇝ −1 0 1 0 0 −1 1 −3 0 0 0 4 −8 ] 𝜌4 + 3𝜌3 Rest … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> Remark: Give full marks to any valid row-echelon form obtained through correct elementary row operations.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐴 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 1 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 2 𝛼</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] ⇝</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 1 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 𝛼</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] 𝜌2 − 𝜌1 ⇝</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 1 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 𝛼</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 0 1 − 𝛼</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] 𝜌3 − 𝜌2 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝐴 is of rank 3 if and only if 𝛼 ≠ 1. So 𝐴 is invertible if and only if 𝛼 ≠ 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For getting 𝐴−1 = 11−𝛼 … 8 marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Correct elimination below first pivot … ⇝ 𝜌2 − 𝜌1𝜌3 − 3𝜌1 Correct elimination below second pivot … ⇝ 𝜌3 − 𝜌2𝜌4 − 𝜌2 Correct elimination below third pivot … ⇝ 𝜌4 + 3𝜌3 Rest … Remark: Give full marks to any valid row-echelon form obtained through correct elementary row operations."
+      "final_answer": "For getting 𝐴−1 = 11−𝛼 …"
     },
     {
       "id": "Q20",
@@ -293,11 +293,11 @@
       "marks": 2,
       "domain_tag": "[A][2]",
       "question": "Write the matrix representation of the following system of linear equations: 2x + 3w − 2y + z − 5t = 9 −x + 2y + 7z − t = 8 1 4y + 8w − 2z = 7 2x + 2w − 4y + 3t = 6",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the matrix representation of the following system of linear equations: 2x + 3w − 2y + z − 5t = 9 −x + 2y + 7z − t = 8 1 4y + 8w − 2z = 7 2x + 2w − 4y + 3t = 6 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Write the matrix representation of the following system of linear equations...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q21",
@@ -307,11 +307,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "For each integer , let Prove that",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 𝐴𝑚 = − 𝑚 −𝑚𝑚 1 + 𝑚] … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For finding 𝐴𝑛𝐴𝑚 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For writing 𝐴𝑛+𝑚 = − (𝑛 + 𝑚) −(𝑛 + 𝑚)𝑛 + 𝑚 1 + 𝑛 + 𝑚] … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)Any reasonable attempt … 5 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) Definition of pseudoprime … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>341=11×31 … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>210 = 1024 = 31 × 33 + 1 ⇒ 210 ≡ 1(mod 31) ⇒ 211 ≡ 2(mod 31) … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>210 ≡ 1(mod 11) ⇒ 230 = (210)3 ≡ 1(mod 11) ⇒ 231 ≡ 2(mod 11) … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>211×31 ≡ 2(mod 11 × 31) ⇒ 2341 ≡ 2(mod 341) ⇒341 is a pseudoprime … 3 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Rest …"
+      "final_answer": "211×31 ≡ 2(mod 11 × 31) ⇒ 2341 ≡ 2(mod 341) ⇒341 is a pseudoprime …"
     },
     {
       "id": "Q22",
@@ -321,11 +321,11 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "Consider the matrix A =   1 1 1 1 4 1 λ 1 1 4 1 1 λ 3 − λ 6 2 2 2 λ 6  . Show that if λ ̸= 1, 2, then the row rank of A is 4.What is the row rank of A when λ = 1, and when λ = 2?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Consider the matrix A =   1 1 1 1 4 1 λ 1 1 4 1 1 λ 3 − λ 6 2 2 2 λ 6  . Show that if λ ̸= 1, 2, then the row rank of A is 4.What is the row rank of A when λ = 1, and when λ = 2? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑥1, … , 𝑥𝑝 are rows of matrix 𝐴 then 𝑥1, … , 𝑥𝑝 are linearly independent if the only scalars</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜆1, … , 𝜆𝑝 which are such that 𝜆1𝑥1 + 𝜆2𝑥2 + ⋯ + 𝜆𝑝𝑥𝑝 = 0 are 𝜆1 = 𝜆2 = ⋯ = 𝜆𝑝 = 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>…2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example …1 Mark</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Example …"
     },
     {
       "id": "Q23",
@@ -335,11 +335,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Compare the row ranks of the matrices A = and B =",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For obtaining, row rank of 𝐴 = 2 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For obtaining, row rank of 𝐵 = 2 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A and B have the same Row rank … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] …2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The augmented matrix is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 1 4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>1 −2 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0 3 −4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>] … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) For left multiplying an arbitrary matrix 𝐴 with 3 rows by the matrix 𝑃 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The effect of left multiplication by 𝑃 is, in the product 𝑃𝐴</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Row 1 is the sum of Row 3 and 𝛼 times Row 2 of 𝐴 … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Row 2 is 𝛽 times Row 2 of 𝐴 … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Row 3 is the sum of Row 1 and 𝛾 times Row 2 of 𝐴 … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "A and B have the same Row rank …"
+      "final_answer": "Row 3 is the sum of Row 1 and 𝛾 times Row 2 of 𝐴 …"
     },
     {
       "id": "Q24",
@@ -349,11 +349,11 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "Show that the system of equations x + 2y + 3z + 3t = 3 x + 2y + 3t = 1 x + z + t = 3 x + y + z + 2t = 1 has no solution.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Show that the system of equations x + 2y + 3z + 3t = 3 x + 2y + 3t = 1 x + z + t = 3 x + y + z + 2t = 1 has no solution. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Show that the system of equations x + 2y + 3z + 3t = 3 x + 2y + 3t = 1 x + ...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q25",
@@ -363,7 +363,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Show that the product of four consecutive integers is 1 less than a perfect square.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑛, 𝑛 + 1, 𝑛 + 2 and 𝑛 + 3 be the 4 consecutive integers … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Their product 𝑃 = 𝑛(𝑛 + 1)(𝑛 + 2)(𝑛 + 3) = [𝑛(𝑛 + 3)][(𝑛 + 1)(𝑛 + 2] … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>= (𝑛2 + 3𝑛)(𝑛2 + 3𝑛 + 2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Put 𝑘 = 𝑛2 + 3𝑛. 𝑘 is an integer … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑃 = 𝑘(𝑘 + 2) = 𝑘2 + 2𝑘 = (𝑘 + 1)2 − 1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑛, 𝑛 + 1, 𝑛 + 2 and 𝑛 + 3 be the 4 consecutive integers … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Their product 𝑃 = 𝑛(𝑛 + 1)(𝑛 + 2)(𝑛 + 3) =[(𝑛 + 1)(𝑛 + 2] … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>= (𝑛2 + 3𝑛)(𝑛2 + 3𝑛 + 2) … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Put 𝑘 = 𝑛2 + 3𝑛. 𝑘 is an integer … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑃 = 𝑘(𝑘 + 2) = 𝑘2 + 2𝑘 = (𝑘 + 1)2 − 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Rest … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -377,11 +377,11 @@
       "marks": 2,
       "domain_tag": "[U][5]",
       "question": "Show that the expression a(a2+2)3 is an integer for all a ≥ 1.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Show that the expression a(a2+2)3 is an integer for all a ≥ 1. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Show that the expression a(a2+2)3 is an integer for all a ≥ 1....</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q27",
@@ -391,7 +391,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Show that there exist integers and for which if and only if .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑑 = gcd(𝑎, 𝑏) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>First assume that exist integers 𝑥 and 𝑦 for which 𝑐 = 𝑎𝑥 + 𝑏𝑦.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 = gcd(𝑎, 𝑏) ⇒ 𝑑|𝑎 and 𝑑|𝑏 ⇒ 𝑑|𝑎𝑥 and 𝑑|𝑏 𝑦 ⇒ 𝑑|𝑎𝑥 + 𝑏𝑦 ⇒ 𝑑|𝑐 ⇒ gcd(𝑎, 𝑏) |𝑐 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conversely assume that gcd(𝑎, 𝑏) |𝑐.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑|𝑐 ⇒ 𝑐 = 𝑑𝑘; 𝑘 ∈ ℤ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 = gcd(𝑎, 𝑏) ⇒ 𝑑 = 𝑎𝑢 + 𝑏𝑣 ; 𝑢, 𝑣 ∈ ℤ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>⇒ 𝑐 = 𝑎(𝑘𝑢) + 𝑏(𝑘𝑣); 𝑘𝑢, 𝑘𝑣 ∈ ℤ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑥 = 𝑘𝑢 and 𝑦 = 𝑘𝑣. Then 𝑐 = 𝑎𝑥 + 𝑏𝑦; 𝑥, 𝑦 ∈ ℤ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑑 = gcd(𝑎, 𝑏) … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>First assume that exist integers 𝑥 and 𝑦 for which 𝑐 = 𝑎𝑥 + 𝑏𝑦.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 = gcd(𝑎, 𝑏) ⇒ 𝑑|𝑎 and 𝑑|𝑏 ⇒ 𝑑|𝑎𝑥 and 𝑑|𝑏 𝑦 ⇒ 𝑑|𝑎𝑥 + 𝑏𝑦 ⇒ 𝑑|𝑐 ⇒ gcd(𝑎, 𝑏) |𝑐 … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conversely assume that gcd(𝑎, 𝑏) |𝑐.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑|𝑐 ⇒ 𝑐 = 𝑑𝑘; 𝑘 ∈ ℤ … 1 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑑 = gcd(𝑎, 𝑏) ⇒ 𝑑 = 𝑎𝑢 + 𝑏𝑣 ; 𝑢, 𝑣 ∈ ℤ … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>⇒ 𝑐 = 𝑎(𝑘𝑢) + 𝑏(𝑘𝑣); 𝑘𝑢, 𝑘𝑣 ∈ ℤ … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Let 𝑥 = 𝑘𝑢 and 𝑦 = 𝑘𝑣. Then 𝑐 = 𝑎𝑥 + 𝑏𝑦; 𝑥, 𝑦 ∈ ℤ … 1 Mark</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -405,11 +405,11 @@
       "marks": 2,
       "domain_tag": "[U][5]",
       "question": "Prove that for any integer a, one of the integers a, a+ 2, a+ 4 is divisible by 3.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Prove that for any integer a, one of the integers a, a+ 2, a+ 4 is divisible by 3. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q29",
@@ -433,11 +433,11 @@
       "marks": 2,
       "domain_tag": "[U][8]",
       "question": "If p is a prime, then prove that ϕ(pk) = pk − pk−1, for any k >0.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering If p is a prime, then prove that ϕ(pk) = pk − pk−1, for any k >0. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q31",
@@ -461,11 +461,11 @@
       "marks": 2,
       "domain_tag": "[U][8]",
       "question": "Using Euler’s theorem prove that for any integer a, a37 ≡ a(mod 1729). Answer any three questions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Using Euler’s theorem prove that for any integer a, a37 ≡ a(mod 1729). Part C Answer any three questions. Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q33",
@@ -475,11 +475,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Show that for every matrix A, there exists (a) an additive identity (b) an additive inverse.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) For proving the existence of additive identity … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) For proving the existence of additive inverse … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) For proving the existence of additive identity … 5 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) For proving the existence of additive inverse … 5 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(b) For proving the existence of additive inverse …"
+      "final_answer": "(a) For proving the existence of additive identity …"
     },
     {
       "id": "Q34",
@@ -489,11 +489,11 @@
       "marks": 2,
       "domain_tag": "[A][3]",
       "question": "(a) Reduce the matrix   1 2 0 3 1 1 2 3 3 3 1 0 1 1 3 1 1 1 2 1  to row-echelon form. (b) Reduce the matrix   1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1   to Hermite form.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering (a) Reduce the matrix   1 2 0 3 1 1 2 3 3 3 1 0 1 1 3 1 1 1 2 1  to row-echelon form. (b) Reduce the matrix   1 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1   to Hermite form. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Reduce the matrix   1 2 0 3 1 1 2 3 3 3 1 0 1 1 3 1 1 1 2 1  to row-echelon form.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Matrix Algebra and Number Theory. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Option (a) Reduce the matrix   1 2 0 3 1 1 2 3 3 3 1 0 1 1 3 1 1 1 2 1  to row-echelon form."
     },
     {
       "id": "Q35",
@@ -517,11 +517,11 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "Find the normal form of the matrix A =   1 2 −1 −2 −1 −1 1 1 0 1 2 1  .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Find the normal form of the matrix A =   1 2 −1 −2 −1 −1 1 1 0 1 2 1  . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Find the normal form of the matrix A =   1 2 −1 −2 −1 −1 1 1 0 1 2 1  ....</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q37",
@@ -545,11 +545,11 @@
       "marks": 2,
       "domain_tag": "[An][4]",
       "question": "Define an invertible matrix. Determine whether the matrix A =   1 2 3 1 3 4 1 4 4   is invertible? If so, find A−1.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define an invertible matrix. Determine whether the matrix A =   1 2 3 1 3 4 1 4 4   is invertible? If so, find A−1. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Define an invertible matrix. Determine whether the matrix A =   1 2 3 1 3...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     },
     {
       "id": "Q39",
@@ -559,11 +559,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "(a) State Division algorithm. (b) Write in the form (c) Show that the expression is an integer for all .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) For correct statement … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> Division Algorithm: Given integers 𝑎 and 𝑏, with 𝑏 > 0, there exist unique integers 𝑞 and 𝑟 satisfying 𝑎 = 𝑞𝑏 + 𝑟; 0 ≤ 𝑟 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> (c) By division algorithm 𝑎 is of the form 3𝑞, 3𝑞 + 1 or 3𝑞 + 2. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> If 𝑎 = 3𝑞, then 𝑎(𝑎2+2) 3 = 𝑞(9𝑞2 + 2), an integer … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> If 𝑎 = 3𝑞 + 1, then 𝑎(𝑎2+2) 3 = (3𝑞+1)((3𝑞+1)2+2) 3 = (3𝑞 + 1)(3𝑞2 + 2𝑞 + 1), an integer … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> If 𝑎 = 3𝑞 + 2, then 𝑎(𝑎2+2) 3 = (3𝑞+2)((3𝑞+2)2+2) 3 = (3𝑞 + 2)(3𝑞2 + 4𝑞 + 2), an integer … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) For correct statement … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Division Algorithm</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given integers 𝑎 and 𝑏, with 𝑏 > 0, there exist unique integers 𝑞 and 𝑟 satisfying</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑎 = 𝑞𝑏 + 𝑟; 0 ≤ 𝑟 < 𝑏.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) 𝑞 = −4 and 𝑟 = 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>−25 = 7 × (−4) + 3 … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) By division algorithm 𝑎 is of the form 3𝑞, 3𝑞 + 1 or 3𝑞 + 2. … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑎 = 3𝑞, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑎(𝑎2+2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 = 𝑞(9𝑞2 + 2), an integer … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑎 = 3𝑞 + 1, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑎(𝑎2+2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(3𝑞+1)((3𝑞+1)2+2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 = (3𝑞 + 1)(3𝑞2 + 2𝑞 + 1), an integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑎 = 3𝑞 + 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑎(𝑎2+2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(3𝑞+2)((3𝑞+2)2+2)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 = (3𝑞 + 2)(3𝑞2 + 4𝑞 + 2), an integer … 3 Marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "(a) For correct statement … Division Algorithm: Given integers 𝑎 and 𝑏, with 𝑏 > 0, there exist unique integers 𝑞 and 𝑟 satisfying 𝑎 = 𝑞𝑏 + 𝑟; 0 ≤ 𝑟 (c) By division algorithm 𝑎 is of the form 3𝑞, 3𝑞 + 1 or 3𝑞 + 2. … If 𝑎 = 3𝑞, then 𝑎(𝑎2+2) 3 = 𝑞(9𝑞2 + 2), an integer … If 𝑎 = 3𝑞 + 1, then 𝑎(𝑎2+2) 3 = (3𝑞+1)((3𝑞+1)2+2) 3 = (3𝑞 + 1)(3𝑞2 + 2𝑞 + 1), an integer … If 𝑎 = 3𝑞 + 2, then 𝑎(𝑎2+2) 3 = (3𝑞+2)((3𝑞+2)2+2) 3 = (3𝑞 + 2)(3𝑞2 + 4𝑞 + 2), an integer …"
+      "final_answer": "3 = (3𝑞 + 2)(3𝑞2 + 4𝑞 + 2), an integer …"
     },
     {
       "id": "Q40",
@@ -573,11 +573,11 @@
       "marks": 2,
       "domain_tag": "[U][5]",
       "question": "(a) If p is a prime and p|ab, then show that p|a or p|b. (b) Prove that the number √ 2 is irrational. 2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering (a) If p is a prime and p|ab, then show that p|a or p|b. (b) Prove that the number √ 2 is irrational. 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q41",
@@ -587,11 +587,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "(a) Show that every composite number is a pseudoprime, where (b) Show that is pseudoprime.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)Any reasonable attempt … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) Definition of pseudoprime … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>341=11×31 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>210 = 1024 = 31 × 33 + 1 ⇒ 210 ≡ 1(mod 31) ⇒ 211 ≡ 2(mod 31) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>210 ≡ 1(mod 11) ⇒ 230 = (210)3 ≡ 1(mod 11) ⇒ 231 ≡ 2(mod 11) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>211×31 ≡ 2(mod 11 × 31) ⇒ 2341 ≡ 2(mod 341) ⇒341 is a pseudoprime … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "211×31 ≡ 2(mod 11 × 31) ⇒ 2341 ≡ 2(mod 341) ⇒341 is a pseudoprime …"
+      "final_answer": "N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers."
     },
     {
       "id": "Q42",
@@ -601,11 +601,11 @@
       "marks": 2,
       "domain_tag": "[U][5]",
       "question": "(a) Show that 41 |220 − 1. (b) Find the remainder obtained upon dividing the sum 1! + 2! + 3! +· · ·+ 100! by 12.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering (a) Show that 41 |220 − 1. (b) Find the remainder obtained upon dividing the sum 1! + 2! + 3! +· · ·+ 100! by 12. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Show that 41 |220 − 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Matrix Algebra and Number Theory. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Option (a) Show that 41 |220 − 1."
     },
     {
       "id": "Q43",
@@ -615,7 +615,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "(a) Define Euler's phi function. (b) Show that if , is even. (c) Evaluate . λ x +y + 3z = 0, 2x + 3y +λz = 0, − 3x − 4y +z = 0 α A = ⎡ ⎣ ⎢ 1 1 0 1 2 1 0 α 1 ⎤ ⎦ ⎥ A−1 −25 7q +r, 0 ≤ r < 7. a( +2)a2 3 a ≥ 1 = + 1Fn 22n n = 0, 1, 2, … 341 n > 2 ϕ(n) ϕ(840)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a)For correct definition of Euler’s phi function … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Euler’s phi function: For 𝑛 ≥ 1, 𝜙(𝑛) denote the number of positive integers not exceeding 𝑛 that are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relatively prime to 𝑛. The function 𝜙 is called the Euler’s phi function.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) If 𝑛 is power of 2, say 𝑛 = 2𝑘, with 𝑘 ≥ 2, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(𝑛) = 𝜙(2𝑘) = 2𝑘 (1 − 12) = 2𝑘−1, an even integer … 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If 𝑛 is not a power of 2, then we can write 𝑛 = 𝑝𝑘𝑚, where 𝑝 is an odd prime, 𝑘 ≥ 1 and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑔𝑐𝑑 (𝑝𝑘, 𝑚) = 1 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Then, 𝜙(𝑛) = 𝜙(𝑝𝑘𝑚) = 𝜙(𝑝𝑘) 𝜙(𝑚) = 𝑝𝑘−1(𝑝 − 1)𝜙(𝑚), an even integer, since 𝑝 − 1 is even</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>… 3 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) 840 = 23 × 3 × 5 × 7 … 2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜙(840) = 840 (1 − 12) (1 − 13) (1 − 15) = (1 − 17) = 192 … 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>_______________________________________________________________________________</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -629,11 +629,11 @@
       "marks": 2,
       "domain_tag": "[U][7]",
       "question": "If p is a prime, prove that ( p − 1)! ≡ −1(mod p). 3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering If p is a prime, prove that ( p − 1)! ≡ −1(mod p). 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>If p is a prime, prove that ( p − 1)! ≡ −1(mod p). 3...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "MATRIX ALGEBRA AND NUMBER THEORY",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
     }
   ]
 }

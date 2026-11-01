@@ -28,7 +28,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is Java Virtual Machine (JVM)?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is Java Virtual Machine (JVM)? / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JVM is a virtual machine that enables the execution of Java bytecode. it acts as an interpreter</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>between the Java programming language and the underlying hardware. It provides a runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>environment for Java applications to run on different platforms and operating systems. 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JVM is a virtual machine that enables the execution of Java bytecode. it acts as an interpreter</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>between the Java programming language and the underlying hardware. It provides a runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>environment for Java applications to run on different platforms and operating systems. 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -42,11 +42,11 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Write a class Student and create an object of it using Java.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a class Student and create an object of it using Java.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q3",
@@ -56,11 +56,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a simple JFrame to display the message “Welcome to Java Swing” using a JLabel.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a simple JFrame to display the message “Welcome to Java Swing” using a JLabel. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q4",
@@ -70,11 +70,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How does a switch statement simplify multiple decision­making in a program?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How does a switch statement simplify multiple decision-making in a program? /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Defines a switch statement as a control structure used to select one block of code from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>multiple alternatives - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> , Explanations that it replaces multiple if-else-if conditions,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>making the code more organized and easier to read- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A method declared without an implementation (or a body) : Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>, Example in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "making the code more organized and easier to read"
+      "final_answer": "A method declared without an implementation (or a body) : Definition - , Example in"
     },
     {
       "id": "Q5",
@@ -84,11 +84,11 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Describe decision making and branching in Java?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Describe decision making and branching in Java?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Describe decision making and branching in Java?...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q6",
@@ -98,11 +98,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a JFrame with a button. On clicking the button, open a JDialog showing a message.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a JFrame with a button. On clicking the button, open a JDialog showing a message. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Create a JFrame with a button. On clicking the button, open a JDialog showing a ...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q7",
@@ -112,11 +112,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "How will you check whether a Vector is empty or not?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering How will you check whether a Vector is empty or not? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>, implementation with suitable example in java <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "example."
     },
     {
       "id": "Q8",
@@ -126,11 +126,11 @@
       "marks": 2,
       "domain_tag": "[An]",
       "question": "What is the difference between one-dimensional and two-dimensional arrays in Java?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is the difference between one-dimensional and two-dimensional arrays in Java?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JVM is a virtual machine that enables the execution of Java bytecode. it acts as an interpreter</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>between the Java programming language and the underlying hardware. It provides a runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>environment for Java applications to run on different platforms and operating systems. 3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "marks."
     },
     {
       "id": "Q9",
@@ -140,11 +140,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a login window using JFrame with username and password fields",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a login window using JFrame with username and password fields . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q10",
@@ -154,11 +154,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Explain abstract methods in Java",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain abstract methods in Java / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A method declared without an implementation (or a body) : Definition - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> , Example in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simple example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of the steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5×4=20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartCEssayQuestionsAnswerany1question</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Java"
+      "final_answer": "PartCEssayQuestionsAnswerany1question"
     },
     {
       "id": "Q11",
@@ -168,11 +168,11 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Differentiate between primitive data types and wrapper classes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Differentiate between primitive data types and wrapper classes.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
     },
     {
       "id": "Q12",
@@ -182,11 +182,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a form using JLabel, JText Field, and JButton to accept student name and display it on button click.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a form using JLabel, JText Field, and JButton to accept student name and display it on button click. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q13",
@@ -210,11 +210,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "What is a user-defined package? How is it created? (10*2=20 Marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is a user-defined package? How is it created? [R] (10*2= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(20 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>enumerations, and sub-packages into a single namespace or unit: Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[3×5=15]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartBShortAnswerQuestions.Answerany4questions<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5Marks)</span>each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6 Compare static variables and instance variables.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-static variables (class-level variables shared by all objects)., instance variables (object-level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.unique to each object). Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. (static variables stored once per class;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instance variables created separately for each object, static variables accessed using class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>name; instance variables accessed through objects) Highlight key differences with example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 marks</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "enumerations, and sub-packages into a single namespace or unit: Definition - 3 marks"
     },
     {
       "id": "Q15",
@@ -224,11 +224,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Develop a program using JText Area to enter feedback and display character count.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Develop a program using JText Area to enter feedback and display character count. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q16",
@@ -238,11 +238,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using JCheck Box to select hobbies and display selected hobbies.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using JCheck Box to select hobbies and display selected hobbies. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q17",
@@ -252,11 +252,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using JRadio Button to select gender.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using JRadio Button to select gender. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q18",
@@ -266,11 +266,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using JList to display a list of programming languages.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using JList to display a list of programming languages. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q19",
@@ -280,11 +280,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using JCombo Box to select a country from the list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using JCombo Box to select a country from the list. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Defines a switch statement as a control structure used to select one block of code from</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>multiple alternatives <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>, Explanations that it replaces multiple if-else-if conditions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>making the code more organized and easier to read<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "making the code more organized and easier to read"
     },
     {
       "id": "Q20",
@@ -294,11 +294,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using JTable to display student mark details",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using JTable to display student mark details . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q21",
@@ -308,13 +308,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a swing program to accept an integer in a textbox then reverse that number and display the result in the second textbox?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a swing program to accept an integer in a textbox then reverse that number and display the result in the second textbox? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a swing program to accept an integer in a textbox then reverse that number...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q22",
@@ -324,13 +324,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a swing program to accept a value in a textbox then find the area of a circle and display the result in the second textbox?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a swing program to accept a value in a textbox then find the area of a circle and display the result in the second textbox? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a swing program to accept a value in a textbox then find the area of a cir...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q23",
@@ -340,11 +340,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Design a form using Flow Layout to arrange buttons.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Design a form using Flow Layout to arrange buttons. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Design a form using Flow Layout to arrange buttons....</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q24",
@@ -354,11 +354,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a window using Border Layout and place components in all five regions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a window using Border Layout and place components in all five regions. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Create a window using Border Layout and place components in all five regions....</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q25",
@@ -368,11 +368,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Design a calculator interface using Grid Layout.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Design a calculator interface using Grid Layout. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Design a calculator interface using Grid Layout....</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q26",
@@ -382,13 +382,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a form using Grid Bag Layout for student registration.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a form using Grid Bag Layout for student registration. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q27",
@@ -398,11 +398,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Design multiple screens using Card Layout (e.g., Login → Home).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Design multiple screens using Card Layout (e.g., Login → Home). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Design multiple screens using Card Layout (e.g., Login → Home)....</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Detailed academic analysis and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q28",
@@ -412,11 +412,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Create a program using Null Layout and manually set component positions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a program using Null Layout and manually set component positions . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q29",
@@ -426,11 +426,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a java program to accept a number then check whether a given number is positive or negative and display the result in the second textbox",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a java program to accept a number then check whether a given number is positive or negative and display the result in the second textbox . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using the isEmpty() method or by checking its size using vector.size(). Explanation of any</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>one method with Java statement<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Using the isEmpty() method or by checking its size using vector.size(). Explanation of any"
     },
     {
       "id": "Q30",
@@ -440,11 +440,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a program using swing to accept values in two textboxes then find the largest number and display the result in third text box.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program using swing to accept values in two textboxes then find the largest number and display the result in third text box. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q31",
@@ -454,11 +454,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a program to insert a record in database",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to insert a record in database . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a program to insert a record in database...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q32",
@@ -468,11 +468,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a program to update a record in database",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to update a record in database . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a program to update a record in database...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q33",
@@ -482,11 +482,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Write a program to delete a record in database",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to delete a record in database . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write a program to delete a record in database...</em> within Object Oriented Programming using Java.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
+      "final_answer": "Structured thematic overview and core criteria verified per Object Oriented Programming using Java valuation scheme."
     },
     {
       "id": "Q34",
@@ -496,11 +496,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare static variables and instance variables.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare static variables and instance variables. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-static variables (class-level variables shared by all objects)., instance variables (object-level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.unique to each object). Definition- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> . (static variables stored once per class;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instance variables created separately for each object, static variables accessed using class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>name; instance variables accessed through objects) Highlight key differences with example -</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>enumerations, and sub-packages into a single namespace or unit: Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[3×5=15]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartBShortAnswerQuestions.Answerany4questions<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5Marks)</span>each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6 Compare static variables and instance variables.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-static variables (class-level variables shared by all objects)., instance variables (object-level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.unique to each object). Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. (static variables stored once per class;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instance variables created separately for each object, static variables accessed using class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>name; instance variables accessed through objects) Highlight key differences with example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 marks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "name; instance variables accessed through objects) Highlight key differences with example"
+      "final_answer": "enumerations, and sub-packages into a single namespace or unit: Definition - 3 marks"
     },
     {
       "id": "Q35",
@@ -510,11 +510,11 @@
       "marks": 6,
       "domain_tag": "[An]",
       "question": "Explain constructor overloading using a suitable example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain constructor overloading using a suitable example.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>, implementation with suitable example in java <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain constructor overloading using a suitable example. ."
+      "final_answer": "example."
     },
     {
       "id": "Q36",
@@ -524,11 +524,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe method overloading in Java and demonstrate its implementation with a suitable example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe method overloading in Java and demonstrate its implementation with a suitable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> , implementation with suitable example in java - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>, implementation with suitable example in java <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Definition – , implementation with suitable example in java"
+      "final_answer": "example."
     },
     {
       "id": "Q37",
@@ -552,11 +552,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Create and display elements of an n X n matrix",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create and display elements of an n × n matrix / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span> ,</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with correct syntax (or explanation using proper Java Statements with correct</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>syntax<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "syntax"
+      "final_answer": "Program with correct syntax (or explanation using proper Java Statements with correct"
     },
     {
       "id": "Q39",
@@ -566,11 +566,11 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Write any two methods of the String class with their uses.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write any two methods of the String class with their uses.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write any two methods of the String class with their uses. ."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q40",
@@ -580,7 +580,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain how to prevent overriding a variable in Java. Give an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how to prevent overriding a variable in Java. Give an example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-using the final keyword – explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , Example - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-using the final keyword – explanation 2 marks, Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -608,7 +608,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Explain the steps involved in creating a thread by extending the Thread class with a simple example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the steps involved in creating a thread by extending the Thread class with a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simple example. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of the steps - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> , Example - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>×4=20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartCEssayQuestionsAnswerany1question</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simple example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of the steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5×4=20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartCEssayQuestionsAnswerany1question</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -622,11 +622,11 @@
       "marks": 6,
       "domain_tag": "[An]",
       "question": "Examine the advantages and limitations of using multiple catch statements instead of a single generic catch block. (3*5=15 Marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Examine the advantages and limitations of using multiple catch statements instead of a single generic catch block.  (3*5= <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 Marks)</span> . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Examine the advantages and limitations of using multiple catch statements instead of a single generic catch block. (3*5= ."
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q44",
@@ -636,7 +636,7 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "With the help of suitable examples explain Wrapper methods.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>With the help of suitable examples explain Wrapper methods. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain any three wrapper methods such as parseXxx(), valueOf(), toString(), and xxxValue()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with proper explanation and example in Java – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 Marks)</span> . (or Definition and purposes of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>wrapper classes in Java, explanation and examples of commonly used wrapper classes and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>short description of wrapper methods – give a maximum of <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain any three wrapper methods such as parseXxx(), valueOf(), toString(), and xxxValue()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with proper explanation and example in Java <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 Marks)</span>. (or Definition and purposes of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>wrapper classes in Java, explanation and examples of commonly used wrapper classes and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>short description of wrapper methods – give a maximum of 10 marks).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -650,11 +650,11 @@
       "marks": 10,
       "domain_tag": "[An]",
       "question": "Analyze and compare the roles of interfaces and abstract classes in achieving abstraction and runtime polymorphism in Java.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>enumerations, and sub-packages into a single namespace or unit: Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[3×5=15]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartBShortAnswerQuestions.Answerany4questions<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5Marks)</span>each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>6 Compare static variables and instance variables.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>-static variables (class-level variables shared by all objects)., instance variables (object-level</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variables.unique to each object). Definition<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. (static variables stored once per class;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instance variables created separately for each object, static variables accessed using class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>name; instance variables accessed through objects) Highlight key differences with example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3 marks</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "enumerations, and sub-packages into a single namespace or unit: Definition - 3 marks"
     },
     {
       "id": "Q46",
@@ -664,11 +664,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Create a class Student with attributes roll no, name, age and course. If age of student is not in between 15 and 21 then generate user­defined exception “Age Not Within Range Exception”.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span> , Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>×1=15]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Create a class Student with attributes roll no, name, age and course. If age of student is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not in between 15 and 21 then generate user-defined exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>“AgeNotWithinRangeException”.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Class definition with proper attributes and methods, constructors to methods to initialize and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>display student details <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span>, Define AgeNotWithinRangeException (extending</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception), Implement age validation logic (checks whether age is between 15 and 21)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>throw the exception using throw keyword when the condition fails., Handle the exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using try-catch block<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15×1=15]</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "×1=15]"
+      "final_answer": "[15×1=15]"
     },
     {
       "id": "Q47",
@@ -678,11 +678,11 @@
       "marks": 10,
       "domain_tag": "[An]",
       "question": "Analyze the differences between creating a thread by extending the Thread class and implementing the Runnable interface. Justify when each approach is preferred. (1*15=15 Marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>simple example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of the steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5×4=20]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PartCEssayQuestionsAnswerany1question</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "final_answer": "PartCEssayQuestionsAnswerany1question"
     }
   ]
 }

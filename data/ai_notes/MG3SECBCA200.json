@@ -26,11 +26,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Identify the operator that has higher precedence: `and` or `or`.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the operator that has higher precedence: and or or. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: The 'and' operator has higher precedence than 'or' in Python.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: The 'and' operator has higher precedence than 'or' in Python.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "The 'and' operator has higher precedence than 'or' in Python."
+      "final_answer": "Answer: The 'and' operator has higher precedence than 'or' in Python."
     },
     {
       "id": "Q2",
@@ -40,11 +40,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Write a Python program where a tuple of integers is passed to a function that calculates and returns the sum of all elements.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a Python program where a tuple of integers is passed to a function that calculates and returns the sum of all elements. / Answer: def sum_tuple(t): return sum(t) nums = (10, 20, 30, 40) s = sum_tuple(nums) print('Sum =',s)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and returns the sum of all elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>def sum_tuple(t)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>return sum(t)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>nums = (10, 20, 30, 40)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>s = sum_tuple(nums)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print('Sum =',s)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Write a Python program where a tuple of integers is passed to a function that calculates and returns the sum of all elements. Answer: def sum_tuple(t): return sum(t) nums = (10, 20, 30, 40) s = sum_tuple(nums) print('Sum =',s)"
+      "final_answer": "print('Sum =',s)"
     },
     {
       "id": "Q3",
@@ -54,11 +54,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Why exception heirarchy is important in Python?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why exception hierarchy is important in Python? /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Exception hierarchy ensures specific exceptions are caught before general</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ones, preventing unintended handling.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Exception hierarchy ensures specific exceptions are caught before general</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ones, preventing unintended handling.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "ones, preventing unintended handling."
+      "final_answer": "Answer: Exception hierarchy ensures specific exceptions are caught before general"
     },
     {
       "id": "Q4",
@@ -68,7 +68,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the difference between a statement and an expression in Python?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the difference between a statement and an expression in Python? /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statement: performs an action (e.g., assignment).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expression: evaluates to a value.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statement: performs an action (e.g., assignment).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expression: evaluates to a value.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -82,11 +82,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Write the syntax of a lambda function. Construct a lambda function to add two numbers.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the syntax of a lambda function. Construct a lambda function to add two numbers. / Answer: Syntax: lambda arguments: expression Example: add = lambda a, b: a + b print(add(5, 3))</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>numbers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Syntax: lambda arguments: expression</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>add = lambda a, b: a + b</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(add(5, 3))</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Write the syntax of a lambda function. Construct a lambda function to add two numbers. Answer: Syntax: lambda arguments: expression Example: add = lambda a, b: a + b print(add(5, 3))"
+      "final_answer": "print(add(5, 3))"
     },
     {
       "id": "Q6",
@@ -96,11 +96,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Discuss the syntax of if…else statement in Python with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the syntax of if…else statement in Python with an example. / Answer: if condition: statement1 else: statement2 Example: x = 10 if x > 0: print('Positive') else: print('Non-positive')</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if condition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statement1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>statement2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if x > 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print('Positive')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print('Non-positive')</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Discuss the syntax of if…else statement in Python with an example. Answer: if condition: statement1 else: statement2 Example: x = 10 if x > 0: print('Positive') else: print('Non-positive')"
+      "final_answer": "print('Non-positive')"
     },
     {
       "id": "Q7",
@@ -110,11 +110,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Mention the function in `math` module which is used to find the square root of a number?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mention the function in math module used to find the square root of a number. / Answer: math.sqrt(x) Example: import math math.sqrt(16) # Output: 4.0</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mention the function in math module used to find the square root of a number.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: math.sqrt(x)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>import math</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>math.sqrt(16) # Output: 4.0</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Mention the function in math module used to find the square root of a number. Answer: math.sqrt(x) Example: import math math.sqrt(16) # Output: 4.0"
+      "final_answer": "math.sqrt(16) # Output: 4.0"
     },
     {
       "id": "Q8",
@@ -124,11 +124,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "List two libraries in Python used for Data Visualization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List two libraries in Python used for Data Visualization. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Matplotlib, Seaborn</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Matplotlib, Seaborn</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Matplotlib, Seaborn"
+      "final_answer": "Answer: Matplotlib, Seaborn"
     },
     {
       "id": "Q9",
@@ -138,7 +138,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write down the statement to extract the first 4 characters of \"My Python World\".",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write down the statement to extract the first 4 characters of 'MyPythonWorld'.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: \"MyPythonWorld\"[:4] # Output: 'MyPy'</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: \"MyPythonWorld\"[:4] # Output: 'MyPy'</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -152,11 +152,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the use of the pickle module in Python.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the use of the pickle module in Python. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Used for serializing and deserializing Python objects to/from byte streams.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Used for serializing and deserializing Python objects to/from byte streams.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Answer any 3 questions. Each question carries 5 marks.)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Used for serializing and deserializing Python objects to/from byte streams."
+      "final_answer": "Answer: Used for serializing and deserializing Python objects to/from byte streams."
     },
     {
       "id": "Q11",
@@ -166,7 +166,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Write a program to print m raise to power n, where m and n are read from the user.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a program to print m raise to power n, where m and n are read from the user.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>m = int(input('Enter base (m): '))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>n = int(input('Enter exponent (n): '))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>p = m ** n</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(f'{m} raised to {n} is { p }')</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>m = int(input('Enter base (m): '))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>n = int(input('Enter exponent (n): '))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>p = m ** n</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(f'{m} raised to {n} is { p }')</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -180,11 +180,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "State and explain any five dictionary functions with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State and explain any five dictionary functions with examples. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Explain any 5 dictionary functions with examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Functions: keys(), values(), items(), get(), update(), pop(), del, pop(), clear(), popitem(),</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: Explain any 5 dictionary functions with examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Functions: keys(), values(), items(), get(), update(), pop(), del, pop(), clear(), popitem()</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Functions: keys(), values(), items(), get(), update(), pop(), del, pop(), clear(), popitem()"
+      "final_answer": "Answer: Explain any 5 dictionary functions with examples"
     },
     {
       "id": "Q13",
@@ -194,11 +194,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Write a program that reads a text file and analyzes the frequency of each alphabet letter (a-z).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a program that reads a text file and analyzes the frequency of each alphabet letter (a-z). / Answer: # Open and read the file filename = ‘example.txt' with open(filename, 'r') as file: text = file.read().lower() # Convert all text to lowercase # Initialize dictionary for letters count = {} for ch in text: if ch.isalpha(): # Count only letters if ch in count: count[ch] += 1 else: count[ch] = 1 # Print letter counts for letter in sorted(count): print(letter, \":\", count[letter])</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a-z).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Open and read the file</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>filename = ‘example.txt'</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with open(filename, 'r') as file</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>text = file.read().lower() # Convert all text to lowercase</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Initialize dictionary for letters</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>count = {}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for ch in text</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if ch.isalpha(): # Count only letters</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if ch in count</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>count[ch] += 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>count[ch] = 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Print letter counts</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for letter in sorted(count)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(letter, \":\", count[letter])</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Write a program that reads a text file and analyzes the frequency of each alphabet letter (a-z). Answer: # Open and read the file filename = ‘example.txt' with open(filename, 'r') as file: text = file.read().lower() # Convert all text to lowercase # Initialize dictionary for letters count = {} for ch in text: if ch.isalpha(): # Count only letters if ch in count: count[ch] += 1 else: count[ch] = 1 # Print letter counts for letter in sorted(count): print(letter, \":\", count[letter])"
+      "final_answer": "print(letter, \":\", count[letter])"
     },
     {
       "id": "Q14",
@@ -208,7 +208,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Develop a Python program to create a dictionary from two lists: keys = values =. Display the dictionary and update the `\"age\"` to 22.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Develop a Python program to create a dictionary from two lists and update 'age' to 22.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>keys = ['id','name','age']</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>values = 'Anu',21]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Create empty dictionary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict = {}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Add key-value pairs using a loop</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for i in range(len(keys)):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict[keys] = values</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Original Dictionary:\", my_dict)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Update 'age' to 22</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict['age'] = 22</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Updated Dictionary:\", my_dict)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Original Dictionary: {'id': 101, 'name': 'Anu', 'age': 21}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Updated Dictionary: {'id': 101, 'name': 'Anu', 'age': 22}</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Develop a Python program to create a dictionary from two lists and update 'age' to 22.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>keys =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>values =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Create empty dictionary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict = {}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Add key-value pairs using a loop</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for i in range(len(keys))</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict[keys[i]] = values[i]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Original Dictionary:\", my_dict)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Update 'age' to 22</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_dict['age'] = 22</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Updated Dictionary:\", my_dict)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Original Dictionary: {'id': 101, 'name': 'Anu', 'age': 21}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Updated Dictionary: {'id': 101, 'name': 'Anu', 'age': 22}</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -222,11 +222,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Write a program to check whether a string is palindrome or not.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a program to check whether a string is palindrome or not. / Answer: s = input ('Enter string: ') if s == s[::-1]: print('Palindrome') else: print('Not Palindrome')</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>s = input ('Enter string: ')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if s == s[::-1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print('Palindrome')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print('Not Palindrome')</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Answer any 1 question. Each question carries 15 marks.)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Write a program to check whether a string is palindrome or not. Answer: s = input ('Enter string: ') if s == s[::-1]: print('Palindrome') else: print('Not Palindrome')"
+      "final_answer": "(Answer any 1 question. Each question carries .)"
     },
     {
       "id": "Q16",
@@ -236,7 +236,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Describe the history of Python in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the history of Python in detail. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The answer may include history of Python, features of python or applications etc.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The answer may include history of Python, features of python or applications etc.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -250,7 +250,7 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Design a mini calculator program using a user-defined function that supports addition, subtraction, multiplication, and division. Make use of a default parameter for the operator. Demonstrate different function calls and outputs.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Design a mini calculator program using a user-defined function that supports addition,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>subtraction, multiplication, and division. Make use of a default parameter for the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operator. Demonstrate different function calls and outputs. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: provide the code with correct syntax</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dr. Jaseena K U, MES College Marampally Mob: 9847080148</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Design a mini calculator program using a user-defined function that supports addition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>subtraction, multiplication, and division. Make use of a default parameter for the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operator. Demonstrate different function calls and outputs.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer: provide the code with correct syntax</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dr. Jaseena K U, MES College Marampally Mob: 9847080148</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,

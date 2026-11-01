@@ -28,10 +28,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Why is DNS important for internet browsing?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is DNS important for internet browsing? / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Internet understands IP address only. The domain name to ip address conversion is done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DNS server. ---explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why is DNS important for internet browsing? / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Internet understands IP address only. The domain name to ip address conversion is done by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DNS server. ---explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "DNS server. ---explanation"
     },
     {
       "id": "Q2",
@@ -44,7 +45,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>length Returns the number of characters in a string. let str = 'Hello'; console.log(str.length); // 5</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "length Returns the number of characters in a string. let str = 'Hello'; console.log(str.length); // 5"
     },
     {
       "id": "Q3",
@@ -59,7 +61,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -69,10 +72,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Describe how HTTP and FTP work and their roles in web communication.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>mark for explanation and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span> for code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A function in JavaScript is a block of reusable code that performs a specific task when called.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Alert Function Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function hello() { alert(\"Hello World ! Welcome to JavaScript\"); }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An event is an action that occurs in the browser, such as a click, mouseover, or key press.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript can respond to these events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DOM traversing means navigating through the structure of an HTML document (called the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Document Object Model or DOM) to access, modify, or interact with specific elements using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript. It allows developers to move between parent, child, and sibling nodes in the HTML</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tree. This is done using properties like parentNode, childNodes, firstElementChild,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>nextElementSibling, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is inside a div.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var innerPara = document.getElementById(\"ChildPara1\"); // Get the element</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var parentDiv = innerPara.parentNode; // Traverse to parent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>alert(\"Parent ID is: \" + parentDiv.id); // Show the parent ID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15 X 1= 15]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>mark for explanation and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span> for code.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A function in JavaScript is a block of reusable code that performs a specific task when called.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Alert Function Example</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function hello() { alert(\"Hello World ! Welcome to JavaScript\"); }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An event is an action that occurs in the browser, such as a click, mouseover, or key press.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript can respond to these events.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Click Me</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DOM traversing means navigating through the structure of an HTML document (called the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Document Object Model or DOM) to access, modify, or interact with specific elements using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>JavaScript. It allows developers to move between parent, child, and sibling nodes in the HTML</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tree. This is done using properties like parentNode, childNodes, firstElementChild,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>nextElementSibling, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This is inside a div.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var innerPara = document.getElementById(\"ChildPara1\"); // Get the element</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>var parentDiv = innerPara.parentNode; // Traverse to parent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>alert(\"Parent ID is: \" + parentDiv.id); // Show the parent ID</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>X 1= 15]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "X 1= 15]"
     },
     {
       "id": "Q5",
@@ -85,7 +89,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>toUpperCase() and toLowerCase()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Converts all characters to uppercase or lowercase.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let s = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.toUpperCase()); // JAVASCRIPT</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.toLowerCase()); // javascript</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(s.toLowerCase()); // javascript"
     },
     {
       "id": "Q6",
@@ -100,7 +105,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q7",
@@ -110,10 +116,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "How would you set up a basic web server on Linux? List the steps.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How would you set up a basic web server on Linux? List the steps. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> ..steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps to set up a basic web server on Linux:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>i. Install a web server software like Apache.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ii. Start the web server so it begins running.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iii. Set it to start automatically when the computer turns on.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iv. Place your website files in the default web directory: /var/www/html.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>v. Finally, open a browser and check if the server is working by typing the server's IP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>address or http://localhost.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How would you set up a basic web server on Linux? List the steps. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> ..steps <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps to set up a basic web server on Linux:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>i. Install a web server software like Apache.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ii. Start the web server so it begins running.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iii. Set it to start automatically when the computer turns on.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iv. Place your website files in the default web directory: /var/www/html.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>v. Finally, open a browser and check if the server is working by typing the server's IP</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>address or http://localhost.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "address or http://localhost."
     },
     {
       "id": "Q8",
@@ -126,7 +133,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>charAt(index) Returns the character at the specified index (starts at 0). let s = 'MGU'; console.log(s.charAt(0)); // M console.log(s.charAt(2)); // U</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "charAt(index) Returns the character at the specified index (starts at 0). let s = 'MGU'; console.log(s.charAt(0)); // M console.log(s.charAt(2)); // U"
     },
     {
       "id": "Q9",
@@ -141,7 +149,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -151,10 +160,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Describe the use of input box in Java Script.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the use of input box in JavaScript. / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example code – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the use of input box in JavaScript. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example code – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Example code"
     },
     {
       "id": "Q11",
@@ -167,7 +177,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indexOf() and lastIndexOf()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indexOf() returns the position of the first occurrence of a substring. lastIndexOf() returns the last.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Returns -1 if not found.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'banana';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Page 7</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.indexOf('a')); // 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.lastIndexOf('a')); // 5</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(str.lastIndexOf('a')); // 5"
     },
     {
       "id": "Q12",
@@ -182,7 +193,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q13",
@@ -195,7 +207,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks each for each concept.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "marks each for each concept."
     },
     {
       "id": "Q14",
@@ -208,7 +221,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>slice(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Extracts part of a string from start index to end index (end not included). Supports negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'Web Technologies';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.slice(0, 3)); // Web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.slice(-12)); // Technologies</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(str.slice(-12)); // Technologies"
     },
     {
       "id": "Q15",
@@ -223,7 +237,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q16",
@@ -232,11 +247,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Discuss the disadvantages of AJAX and how they can impact web development. [5x4 = 20]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the disadvantages of AJAX and how they can impact web development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AJAX allows web pages to update dynamically without reloading. This enhances user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>experience by enabling faster interactions. The main concern while using AJAX in web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>development are compactability issues and security compromises. Security concerns and the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>potential for increased server load are other drawbacks that may affect performance and require</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>additional development efforts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discussion with disadvantages- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impact on web development – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5 X 4 = 20]</li></ul>",
+      "question": "Discuss the disadvantages of AJAX and how they can impact web development.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the disadvantages of AJAX and how they can impact web development.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AJAX allows web pages to update dynamically without reloading. This enhances user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>experience by enabling faster interactions. The main concern while using AJAX in web</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>development are compactability issues and security compromises. Security concerns and the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>potential for increased server load are other drawbacks that may affect performance and require</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>additional development efforts.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discussion with disadvantages- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Impact on web development – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>X 4 = 20]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "X 4 = 20]"
     },
     {
       "id": "Q17",
@@ -245,11 +261,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Implement onchange event in Java Script. [5x4 = 20] MGU-BCA (HONOURS) REGULAR/IMPROVEMENT/REAPPEARANCE EXAMINATION APRIL 2026",
+      "question": "Implement onchange event in Java Script.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>substring(start, end)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Similar to slice but does not support negative indices.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'JavaScript';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.substring(0, 4)); // Java</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.substring(4)); // Script</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(str.substring(4)); // Script"
     },
     {
       "id": "Q18",
@@ -264,7 +281,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q19",
@@ -274,10 +292,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Develop a well-structured HTML page that includes multiple header levels, paragraphs, and line breaks. Explain the role of each tag used.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Develop a well-structured HTML page that includes multiple header levels, paragraphs,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and line breaks. Explain the role of each tag used. / [CO1]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Develop a well-structured HTML page that includes multiple header levels, paragraphs,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and line breaks. Explain the role of each tag used. / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "and line breaks. Explain the role of each tag used."
     },
     {
       "id": "Q20",
@@ -290,7 +309,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>replace() and replaceAll()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>replace() replaces the first occurrence of a substring. replaceAll() replaces all occurrences.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let str = 'Hello World';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(str.replace('World', 'MGU')); // Hello MGU</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let s = 'aabbaa';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(s.replaceAll('a', 'x')); // xxbbxx</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(s.replaceAll('a', 'x')); // xxbbxx"
     },
     {
       "id": "Q21",
@@ -305,7 +325,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Define the tag and describe its essential attributes. Provide an example of a simple HTML form. ."
     },
     {
       "id": "Q22",
@@ -314,11 +335,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Define Java Script functions, events, and DOM Traversing. Provide examples for each concept. [15x1 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define JavaScript functions, events, and DOM Traversing. Provide examples for each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>concept. / [CO2]</li></ul>",
+      "question": "Define Java Script functions, events, and DOM Traversing. Provide examples for each concept.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define JavaScript functions, events, and DOM Traversing. Provide examples for each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>concept. / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "concept."
     },
     {
       "id": "Q23",
@@ -327,11 +349,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss the different string manipulation methods in Java Script. Explain with examples,definition and syntax. [15x1 = 15]",
+      "question": "Discuss the different string manipulation methods in Java Script. Explain with examples,definition and syntax.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>split(separator)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Splits a string into an array of substrings based on a separator.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let csv = 'red,green,blue';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let arr = csv.split(',');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(arr); // ['red', 'green', 'blue']</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "console.log(arr);"
     },
     {
       "id": "Q24",
@@ -346,7 +369,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Develop a program using Java Script function that extracts the first three letters of each word in a given sentence. (1X 15= ."
     }
   ]
 }

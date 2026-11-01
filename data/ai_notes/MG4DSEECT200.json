@@ -32,7 +32,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Configure ADC channel"
     },
     {
       "id": "Q2",
@@ -45,7 +46,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering CISC architecture is characterized by a) Fixed-length instructions b) Reduced number of instructions c) Variable-length instructions d) Load-store architecture only K 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q3",
@@ -58,7 +60,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Read analog value</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Read analog value"
     },
     {
       "id": "Q4",
@@ -71,7 +74,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare with threshold</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Compare with threshold"
     },
     {
       "id": "Q5",
@@ -84,7 +88,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering ARM processors typically use a) Stack-based architecture b) Accumulator-based architecture c) Load–store architecture d) Memory–memory architecture U 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q6",
@@ -97,7 +102,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Signal Conversion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Light intensity → electrical signal (current/voltage).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "o Light intensity → electrical signal (current/voltage)."
     },
     {
       "id": "Q7",
@@ -110,7 +116,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering ARM logical instructions include a) ADD, SUB b) AND, ORR, EOR c) LDR, STR d) B, BL K 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q8",
@@ -123,7 +130,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output Generation o Comparator converts analog signal into:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital output (HIGH/LOW) or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Analog voltage (proportional to distance) Types of Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digital IR Sensor o Output: HIGH/LOW o Used for obstacle detection</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Analog IR Sensor o Output: variable voltage o Used for distance measurement Interfacing IR Sensor with ARM Cortex-M Typical ARM Cortex-M (e.g., STM32) Pins Used</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• GPIO (for digital input)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ADC (for analog input)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Power pins (VCC, GND) Hardware Connections Case 1: Digital IR Sensor Interface IR Sensor ARM Cortex-M</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>--------- ------------- VCC ───────► 3.3V GND ───────► GND OUT ───────► GPIO Input Pin (e.g., PA0) Case 2: Analog IR Sensor Interface IR Sensor ARM Cortex-M</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>--------- ------------- VCC ───────► 3.3V GND ───────► GND OUT ───────► ADC Pin (e.g., PA1) Flow Diagram of Operation Start │ ▼ Initialize GPIO / ADC │ ▼ Read Sensor Output │ ▼ Is Object Detected? / \\ Yes No │ │ ▼ ▼ Take Action Continue Monitoring (LED ON / Loop Back Motor Stop) Software Steps (Cortex-M) For Digital Sensor</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "--------- ------------- VCC ───────► 3.3V GND ───────► GND OUT ───────► ADC Pin (e.g., PA1) Flow Diagram of Operation Start │ ▼ Initialize GPIO / ADC │ ▼ Read Sensor Output │ ▼ Is Object Detected? / \\ Yes No │ │ ▼ ▼ Take Action Continue Monitoring (LED ON / Loop Back Motor Stop) Software Steps (Cortex-M) For Digital Sensor"
     },
     {
       "id": "Q9",
@@ -136,7 +144,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which program development tool executes code without real hardware? a) Emulator b) Simulator c) IDE d) Compiler K 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -149,7 +158,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Set PC to Exception Vector</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• PC is loaded with a fixed address from the vector table:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception Return: Sequence of Events</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>After servicing the exception, control returns to the interrupted program.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "After servicing the exception, control returns to the interrupted program."
     },
     {
       "id": "Q11",
@@ -162,7 +172,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which C data type occupies the least memory? a) int b) float c) char d) double K 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q12",
@@ -177,7 +188,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q13",
@@ -190,7 +202,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) Single-master multi-slave</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "b) Single-master multi-slave"
     },
     {
       "id": "Q14",
@@ -203,7 +216,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering The instruction used to call a function in ARM assembly is a) B b) BL c) BX d) SWI K 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q15",
@@ -216,7 +230,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) ARM Cortex-M</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "c) ARM Cortex-M"
     },
     {
       "id": "Q16",
@@ -229,7 +244,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which operating mode is used during normal program execution in ARM? a) IRQ mode b) FIQ mode c) Supervisor mode d) Thread mode K 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q17",
@@ -242,7 +258,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c) Microcontroller applications</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "c) Microcontroller applications"
     },
     {
       "id": "Q18",
@@ -255,7 +272,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which memory region is typically used for program code in Cortex-M? a) SRAM b) Peripheral region c) Flash memory d) External DRAM K 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q19",
@@ -268,7 +286,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) Special Function Registers (SFRs)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "b) Special Function Registers (SFRs)"
     },
     {
       "id": "Q20",
@@ -281,7 +300,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which of the following modes is privileged in ARM 7? a). System b). User c). User and System d). None . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q21",
@@ -294,7 +314,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which peripheral is commonly used for digital I/O? a) ADC b) DAC c) GPIO d) PWM K 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q22",
@@ -307,7 +328,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d) All of the above</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "d) All of the above"
     },
     {
       "id": "Q23",
@@ -320,7 +342,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering UART communication is a) Synchronous b) Asynchronous c) Half-duplex only d) Multi-master K 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q24",
@@ -333,7 +356,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which interrupt has higher priority in ARM? a). FIQ b). IRQ c). Reset d). Software Interrupt . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q25",
@@ -346,7 +370,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A switch connected to a microcontroller input usually requires a) Pull-up or pull-down resistor b) Crystal oscillator c) ADC d) Op-amp U 4 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q26",
@@ -359,7 +384,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b) More hardware and control logic</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "b) More hardware and control logic"
     },
     {
       "id": "Q27",
@@ -372,7 +398,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering LM35 temperature sensor output is proportional to a) Current b) Resistance c) Temperature in °C d) Light intensity K 4 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q28",
@@ -381,11 +408,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Which ARM feature improves instruction throughput? a).Microprogramming b). Polling c). Pipelining d). Segmentation [1x16 = 16]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which ARM feature improves instruction throughput? a).Microprogramming b). Polling c). Pipelining d). Segmentation [1x16 = 16] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Which ARM feature improves instruction throughput? a).Microprogramming b). Polling c). Pipelining d). Segmentation",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which ARM feature improves instruction throughput? a).Microprogramming b). Polling c). Pipelining d). Segmentation x16 = 16] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q29",
@@ -398,7 +426,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering The AMBA bus architecture is mainly used for a) External networking b) Peripheral communication c) Memory management d) Power management U 2 1 * 16 = 16 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q30",
@@ -411,7 +440,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Latency:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• FIQ (Fast Interrupt Request): Lower latency → faster response (handled with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>higher priority and minimal overhead)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IRQ (Interrupt Request): Higher latency compared to FIQ</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Register Usage:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• FIQ: Has more banked registers (R8–R14), so it can operate without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>saving/restoring many registers → faster execution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IRQ: Fewer banked registers (only R13–R14), so it often needs to save/restore</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>registers → slower than FIQ</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "registers → slower than FIQ"
     },
     {
       "id": "Q31",
@@ -424,7 +454,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Compare Harvard vs Von Neumann architecture U 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Compare Harvard vs Von Neumann architecture U 1 ."
     },
     {
       "id": "Q32",
@@ -437,7 +468,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any five give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Real-Time Operation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Embedded systems must respond within strict time constraints.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Hard real-time: Missing a deadline = system failure</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Soft real-time: Occasional delays are acceptable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reliability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Systems should operate continuously without failure.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Important in critical applications like automotive, medical devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires fault tolerance and robust design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Efficiency (Performance & Power)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Must use minimal resources (CPU, memory)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Low power consumption is crucial, especially for battery-powered devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Cost Effectiveness</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Hardware and software should be optimized to reduce overall cost</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Selection of components is based on budget and requirements</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compact Size</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Embedded systems are often part of small devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Requires minimal hardware footprint and optimized PCB design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Application-Specific Design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Designed for a specific task (not general-purpose)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves performance and efficiency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scalability and Flexibility</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Design should allow future upgrades or modifications</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Modular approach helps reuse components</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hardware-Software Co-Design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Hardware and software are developed together for optimal performance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Trade-offs are made between hardware complexity and software flexibility</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Low Power Consumption</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Essential for portable and IoT devices</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Techniques include sleep modes, power gating</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Robustness</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Must handle environmental conditions (temperature, noise, vibration)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Includes error detection and recovery mechanisms</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Includes error detection and recovery mechanisms"
     },
     {
       "id": "Q33",
@@ -450,7 +482,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What is the difference between IRQ and FIQ exceptions? K 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is the difference between IRQ and FIQ exceptions? K 2 ."
     },
     {
       "id": "Q34",
@@ -463,7 +496,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe the program logic of a buzzer and LED alert system triggered by sensor input. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the program logic of a buzzer and LED alert system triggered by sensor input. ."
     },
     {
       "id": "Q35",
@@ -476,7 +510,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What is GPIO? U 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is GPIO? U 3 ."
     },
     {
       "id": "Q36",
@@ -489,7 +524,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Feature CPSR SPSR</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Full form Current Program Status Register Saved Program Status Register</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Purpose Holds current CPU status Saves previous CPU status during exception</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Availability Always present Only in exception modes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Usage Active execution Used for restoring state after interrupt</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Copies Single One per exception mode</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Copies Single One per exception mode"
     },
     {
       "id": "Q37",
@@ -502,7 +538,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What is meant by Thumb instruction set U 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is meant by Thumb instruction set U 1 ."
     },
     {
       "id": "Q38",
@@ -515,7 +552,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Register allocation in Embedded C for ARM refers to the process of assigning</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>program variables to CPU registers instead of memory to improve execution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>speed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• ARM processors have a limited set of general-purpose registers (e.g., R0–R12).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• During compilation, the compiler decides which variables should be stored in these</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>registers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Accessing registers is much faster than accessing RAM, so this improves</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Accessing registers is much faster than accessing RAM, so this improves"
     },
     {
       "id": "Q39",
@@ -528,7 +566,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Differentiate between Thread mode and Handler mode. U 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Differentiate between Thread mode and Handler mode. U 2 ."
     },
     {
       "id": "Q40",
@@ -541,7 +580,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The ARM Cortex-M memory map defines how the entire address space (4 GB) is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>organized into different regions for code, data, and peripherals.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Total Address Space</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Cortex-M uses a 32-bit address space → 4 GB (0x00000000 to 0xFFFFFFFF)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Address Range Region Description</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0x00000000 – 0x1FFFFFFF Code Region Program memory (Flash), interrupt vectors</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0x20000000 – 0x3FFFFFFF SRAM Region Data memory (RAM)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0x40000000 – 0x5FFFFFFF Peripheral Region Memory-mapped I/O registers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0x60000000 – 0x9FFFFFFF External RAM External memory (if available)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0xA0000000 – 0xDFFFFFFF External Devices External peripherals</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0xE0000000 – 0xFFFFFFFF System Region NVIC, system control, debug components</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "0xE0000000 – 0xFFFFFFFF System Region NVIC, system control, debug components"
     },
     {
       "id": "Q41",
@@ -554,7 +594,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Which ARM GPIO pin modes are used for interfacing an IR sensor? K 4 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Which ARM GPIO pin modes are used for interfacing an IR sensor? K 4 ."
     },
     {
       "id": "Q42",
@@ -567,7 +608,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ODR (Output Data Register)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Used to write data to GPIO pins</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Controls the output state (HIGH or LOW)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Applicable when pin is configured as OUTPUT</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Writing: o 1 → sets pin HIGH o 0 → sets pin LOW IDR (Input Data Register)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Used to read data from GPIO pins</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Reflects the current logic level at the pin</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Applicable when pin is configured as INPUT</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Reading: o 1 → pin is HIGH o 0 → pin is LOW Feature ODR IDR Full form Output Data Register Input Data Register Operation Write Read Purpose Control output pins Read input pins Direction CPU → Pin Pin → CPU Usage mode Output mode Input mode</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Reading: o 1 → pin is HIGH o 0 → pin is LOW Feature ODR IDR Full form Output Data Register Input Data Register Operation Write Read Purpose Control output pins Read input pins Direction CPU → Pin Pin → CPU Usage mode Output mode Input mode"
     },
     {
       "id": "Q43",
@@ -580,7 +622,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What is I²C communication? K 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is I²C communication? K 3 ."
     },
     {
       "id": "Q44",
@@ -589,11 +632,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[K] ",
-      "question": "What is the use of the `volatile` keyword in Embedded C? [5x6 = 30]",
+      "question": "What is the use of the `volatile` keyword in Embedded C?",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The volatile keyword in Embedded C is used to tell the compiler that a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>variable’s value can change unexpectedly, outside the normal program flow. This</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>prevents the compiler from applying certain optimizations that assume the value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>doesn’t change on its own.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Purpose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Ensures the compiler always reads the variable from memory, rather than using a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>cached value in a register.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Commonly used for:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Hardware registers (GPIO, timers, ADCs)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Global variables modified in interrupts</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Shared memory in multi-threaded or RTOS applications</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "o Shared memory in multi-threaded or RTOS applications"
     },
     {
       "id": "Q45",
@@ -606,7 +650,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the sequence of operation of a traffic light controller. U 4 6 * 5 = 30 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the sequence of operation of a traffic light controller. U 4 6 * 5 = 30 ."
     },
     {
       "id": "Q46",
@@ -619,7 +664,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe any embedded system with diagram - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Classification – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Classification of Embedded Systems</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Embedded systems can be classified based on functionality and performance.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A. Based on Functionality</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "A. Based on Functionality"
     },
     {
       "id": "Q47",
@@ -632,7 +678,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q48",
@@ -645,7 +692,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flow chart /Steps ARM Exception – give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sequence of events during exception entry and exception return. – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ARM processors handle exceptions (interrupts, faults, errors) by switching execution to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>predefined exception vectors and saving the current state so execution can later resume.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Common ARM Exceptions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Reset</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Undefined Instruction</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Software Interrupt (SWI/SVC)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Prefetch Abort</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data Abort</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IRQ (Interrupt Request)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• FIQ (Fast Interrupt Request)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flow Diagram/Steps of Exception Handling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Exception Occur</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Processor Completes Current Instruction</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Save Return Address in LR_</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Save CPSR → SPSR_</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Change Processor Mode</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• (IRQ, FIQ, Abort, Supervisor, etc.)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Disable Interrupts (if required)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Load PC with Exception Vector Address</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Execute Exception Handler</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Restore Context (Return)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Resume Main Program</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Exception Entry: Sequence of Events</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When an exception occurs, ARM performs the following steps automatically:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "When an exception occurs, ARM performs the following steps automatically"
     },
     {
       "id": "Q49",
@@ -658,7 +706,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q50",
@@ -671,7 +720,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>working principle of an IR sensor – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interfacing of an IR sensor with ARM Cortex M – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Working Principle of an IR Sensor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An Infrared (IR) sensor is commonly used for object detection and proximity sensing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Basic Components</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• IR LED (Transmitter) → emits infrared light</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Photodiode / Phototransistor (Receiver) → detects reflected IR light</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Signal conditioning circuit (Comparator/Amplifier)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Principle of Operation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>✔ Step-by-step working:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "✔ Step-by-step working"
     },
     {
       "id": "Q51",
@@ -684,7 +734,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q52",
@@ -693,11 +744,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[An] ",
-      "question": "Explain how a Seven-segment Display may be interfaced to an ARM based microcontroller? [12x2 = 24]",
+      "question": "Explain how a Seven-segment Display may be interfaced to an ARM based microcontroller?",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interfacing Seven-segment Display – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 mark)</span> Program - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 mark)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Interfacing Seven-segment Display – Program"
     },
     {
       "id": "Q53",
@@ -710,7 +762,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

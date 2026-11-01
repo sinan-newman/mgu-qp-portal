@@ -29,7 +29,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Toast o Small popup message o Example: Toast.makeText(this, \"Hello User\", Toast.LENGTH_SHORT).show();</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Toast o Small popup message o Example: Toast.makeText(this, \"Hello User\", Toast.LENGTH_SHORT).show();"
     },
     {
       "id": "Q2",
@@ -42,7 +43,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Snackbar</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Appears at bottom with optional action</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Snackbar.make(view, \"Message\", Snackbar.LENGTH_LONG).show();</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Snackbar.make(view, \"Message\", Snackbar.LENGTH_LONG).show();"
     },
     {
       "id": "Q3",
@@ -55,7 +57,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dialog Box</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Alerts user with options AlertDialog.Builder builder = new AlertDialog.Builder(this); builder.setMessage(\"Are you sure?\") .setPositiveButton(\"Yes\", null) .setNegativeButton(\"No\", null) .show();</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Alerts user with options AlertDialog.Builder builder = new AlertDialog.Builder(this); builder.setMessage(\"Are you sure?\") .setPositiveButton(\"Yes\", null) .setNegativeButton(\"No\", null) .show();"
     },
     {
       "id": "Q4",
@@ -65,10 +68,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "State the primary benefit of the \"Single Codebase\" approach.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Notification (Status Bar)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Shown outside the app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Uses NotificationManager [15x1 = 15]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Notification (Status Bar)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Shown outside the app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Uses NotificationManager x1 = 15]</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Uses NotificationManager"
     },
     {
       "id": "Q5",
@@ -77,11 +81,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Recall the purpose of Radio Group. [2x5 = 10]",
+      "question": "Recall the purpose of Radio Group.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prepare Store Listing</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Add: o App name and description o Screenshots and icons o Category and tags o Privacy policy</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Add: o App name and description o Screenshots and icons o Category and tags o Privacy policy"
     },
     {
       "id": "Q6",
@@ -94,7 +99,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Upload Application</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Upload signed APK/AAB file</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Provide content rating and target audience</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Provide content rating and target audience"
     },
     {
       "id": "Q7",
@@ -103,11 +109,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss different types of menus in Android. (2024 ADMISSION ONWARDS) APP DEVELOPMENT MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (HONOURS) REGULAR EXAMINATION March 2026 Fourth SEMESTER Discipline Specific Elective (DSE) - MG4DSECSC201, MG4DSEECC201 - MOBILE",
+      "question": "Discuss different types of menus in Android. APP DEVELOPMENT",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Testing Before Release</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Use: o Internal testing o Closed testing o Open testing</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Use: o Internal testing o Closed testing o Open testing"
     },
     {
       "id": "Q8",
@@ -120,7 +127,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Publish the App</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Submit for review by Google</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• After approval, app becomes available on Play Store</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• After approval, app becomes available on Play Store"
     },
     {
       "id": "Q9",
@@ -130,10 +138,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Describe the 'Testing' phase and the various types of testing involved.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Post-Release Maintenance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Monitor feedback and reviews</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Fix bugs and release updates</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Add new features Publishing involves preparation, signing, testing, and deployment, ensuring quality and security. / [CO1]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Post-Release Maintenance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Monitor feedback and reviews</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Fix bugs and release updates</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Add new features Publishing involves preparation, signing, testing, and deployment, ensuring quality and security. / </li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Add new features Publishing involves preparation, signing, testing, and deployment, ensuring quality and security."
     },
     {
       "id": "Q10",
@@ -143,10 +152,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe different types of fragments in Android.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe different types of fragments in Android.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ListFragment – Displays a list of items</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DialogFragment – Shows dialog windows</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PreferenceFragment – Used for settings UI</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>WebViewFragment – Displays web content</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Custom Fragments – User-defined fragments</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ [CO2]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe different types of fragments in Android.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ListFragment – Displays a list of items</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DialogFragment – Shows dialog windows</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>PreferenceFragment – Used for settings UI</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>WebViewFragment – Displays web content</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Custom Fragments – User-defined fragments</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Verified per official MGU Scheme of Valuation."
     },
     {
       "id": "Q11",
@@ -156,10 +166,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Differentiate between Content Provider and SQLite database.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between Content Provider and SQLite database.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Aspect Content Provider SQLite Database</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Purpose Data sharing between apps Local data storage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access Accessible by multiple apps Restricted to one app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interface Uses URI (Uniform Resource Identifier) Uses SQL queries</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Security Controlled access permissions Internal app use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Usage Inter-app communication Data storage within app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ [CO3]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between Content Provider and SQLite database.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Aspect Content Provider SQLite Database</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Purpose Data sharing between apps Local data storage</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access Accessible by multiple apps Restricted to one app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interface Uses URI (Uniform Resource Identifier) Uses SQL queries</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Security Controlled access permissions Internal app use</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Usage Inter-app communication Data storage within app</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Verified per official MGU Scheme of Valuation."
     },
     {
       "id": "Q12",
@@ -168,11 +179,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss the concept and importance of Fragments in Android applications. [5x5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the concept and importance of Fragments in Android applications.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Fragment is a reusable UI component within an activity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Has its own lifecycle and layout</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables modular UI design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multi-pane layouts (tablets, large screens)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code reusability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows dynamic UI changes at runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enhances user experience and flexibility</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5x5 = 25]</li></ul>",
+      "question": "Discuss the concept and importance of Fragments in Android applications.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the concept and importance of Fragments in Android applications.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Fragment is a reusable UI component within an activity</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Has its own lifecycle and layout</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enables modular UI design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Supports multi-pane layouts (tablets, large screens)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Improves code reusability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Allows dynamic UI changes at runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Enhances user experience and flexibility</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x5 = 25]</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "x5 = 25]"
     },
     {
       "id": "Q13",
@@ -185,7 +197,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the complete procedure for publishing an Android application.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Describe the complete procedure for publishing an Android application."
     },
     {
       "id": "Q14",
@@ -194,11 +207,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[A] ",
-      "question": "Demonstrate event handling and UI notifications in Android with suitable examples. [15x1 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Demonstrate event handling and UI notifications in Android with suitable examples. A. Event Handling in Android Definition:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Event handling is the process of responding to user actions such as clicks, touches, or key presses. Common Events:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Button click</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Touch event</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key press Example (Button Click Event): Button btn = findViewById(R.id.button); btn.setOnClickListener(new View.OnClickListener() { @Override / [CO2] public void onClick(View v) { // Action to perform Toast.makeText(getApplicationContext(), \"Button Clicked\", Toast.LENGTH_SHORT).show(); } }); B. UI Notifications in Android Definition:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• UI notifications are used to inform users about events or updates. Types of Notifications:</li></ul>",
+      "question": "Demonstrate event handling and UI notifications in Android with suitable examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Demonstrate event handling and UI notifications in Android with suitable examples. A. Event Handling in Android Definition:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Event handling is the process of responding to user actions such as clicks, touches, or key presses. Common Events:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Button click</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Touch event</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Key press Example (Button Click Event): Button btn = findViewById(R.id.button); btn.setOnClickListener(new View.OnClickListener() { @Override /  public void onClick(View v) { // Action to perform Toast.makeText(getApplicationContext(), \"Button Clicked\", Toast.LENGTH_SHORT).show(); } }); B. UI Notifications in Android Definition:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• UI notifications are used to inform users about events or updates. Types of Notifications:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• UI notifications are used to inform users about events or updates. Types of Notifications"
     }
   ]
 }

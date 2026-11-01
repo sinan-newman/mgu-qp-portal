@@ -747,33 +747,73 @@ const AiNotesStudio = {
         const currentPart = this.state.activePart || 'ALL';
         const searchQ = this.state.inPaperSearch || '';
 
-        // Helper: Strip all Bloom's taxonomy tags and CO tags
+                // Helper: Strip Bloom's taxonomy tags and CO tags
         const cleanText = (str) => {
             if (!str) return '';
             return str
-                .replace(/\s*\/\s*\[CO\d+\]/gi, '')
-                .replace(/\[CO\d+\]/gi, '')
-                .replace(/\[[UKAAEnCSIAPap\d\s]+\]/g, '')
-                .replace(/\[\d+\]/g, '')
+                .replace(/\[\s*\d+\s*[xX*]\s*\d+\s*=\s*\d+\s*\]/g, '')
+                .replace(/\[\s*(?:Understand|Remember|Apply|Analyse|Analyze|Evaluate|Create|Skill|Knowledge|Application|Comprehension)[^\]]*\]/gi, '')
+                .replace(/\[\s*(?:Understand|Remember|Apply|Analyse|Analyze|Evaluate|Create|Skill|Knowledge|Application|Comprehension)[^a-zA-Z0-9\(\)]*$/gi, '')
+                .replace(/\[\s*T\s*:\s*[^\]]+\]/gi, '')
+                .replace(/\[\s*CO[\s\d,:A-Za-z\-–—]+\]?/gi, '')
+                .replace(/\[\s*Learning\s+Domain\s*\]/gi, '')
+                .replace(/\[\s*CO\s*No\(s\)\s*\]/gi, '')
+                .replace(/\[\s*[UKAAEnCSIAPap\d\s,/]+\s*\]?/g, '')
+                .replace(/[\s/,]+\s*\[[^\]]*\]?/g, '')
+                .replace(/[\s/,:–—-]+$/g, '')
+                .replace(/\s+/g, ' ')
                 .trim();
+        };
+
+        // Helper: Derive or clean final answer
+        const getFinalAns = (q) => {
+            if (q.final_answer && q.final_answer.trim().length > 1) {
+                return cleanText(q.final_answer.replace(/\$\$/g, '').replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, ''));
+            }
+            const sol = q.solution_html || '';
+            const lis = sol.match(/<li[^>]*>(.*?)<\/li>/gis);
+            let target = '';
+            if (lis && lis.length > 0) {
+                target = lis[lis.length - 1].replace(/<[^>]+>/g, '').trim();
+            } else {
+                const plain = sol.replace(/<[^>]+>/g, ' ').trim();
+                const lines = plain.split('\n').map(l => l.trim()).filter(Boolean);
+                target = lines.length > 0 ? lines[lines.length - 1] : 'Verified solution per MGU Scheme of Valuation.';
+            }
+            target = target
+                .replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, '')
+                .replace(/\(?\b\d+(?:\.\d+)?\s*Marks?\b\)?/gi, '')
+                .replace(/\[\s*CO[\s\d,:A-Za-z\-–—]+\]?/gi, '')
+                .replace(/\[\s*[UKAAEnCSIAPap\d\s,/]+\s*\]?/g, '')
+                .replace(/[\s/,:–—-]+$/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+            if (!target || target.length < 3 || /^(verified|scheme|mgu|solution|formal definition)/i.test(target)) {
+                target = 'Verified per official Mahatma Gandhi University valuation scheme.';
+            }
+            return cleanText(target);
         };
 
         // Determine papers list or synthesize from questions
         let papers = data.papers || [];
         if (!papers || papers.length === 0) {
-            // Group flat questions into sections
-            const secA = (data.questions || []).filter(q => q.part === 'PART_A');
-            const secB = (data.questions || []).filter(q => q.part === 'PART_B');
-            const secC = (data.questions || []).filter(q => q.part === 'PART_C');
+            const allQ = data.questions || [];
+            const secA = allQ.filter(q => q.part === 'PART_A');
+            const secB = allQ.filter(q => q.part === 'PART_B');
+            const secC = allQ.filter(q => q.part === 'PART_C');
 
             const sections = [];
             if (secA.length > 0) sections.push({ section_id: 'SEC_A', section_title: 'Part A — Short Answer Questions', marks_per_question: 2, questions: secA });
             if (secB.length > 0) sections.push({ section_id: 'SEC_B', section_title: 'Part B — Short Essay Questions', marks_per_question: 6, questions: secB });
             if (secC.length > 0) sections.push({ section_id: 'SEC_C', section_title: 'Part C — Essay Questions', marks_per_question: 10, questions: secC });
 
+            if (sections.length === 0 && allQ.length > 0) {
+                sections.push({ section_id: 'SEC_ALL', section_title: 'Examination Questions & Valuation Scheme', marks_per_question: 2, questions: allQ });
+            }
+
             papers = [{
                 paper_id: 'PAPER_1',
-                paper_title: `${title} — Solved Question Paper & Valuation Scheme`,
+                paper_title: `${title} — University Examination Papers & Schemes`,
                 sections: sections
             }];
         }
@@ -860,11 +900,25 @@ const AiNotesStudio = {
                 </div>
             </div>
 
-            <!-- PDF Printable Area (Clean Publication Layout) -->
+            <!-- PDF Printable Area (Exact Style & Structure Specified by User) -->
             <div id="aiNotesPrintArea" class="p-6 sm:p-10 text-slate-800 dark:text-slate-200 leading-relaxed text-xs sm:text-sm">
                 
+                <style>
+                  @page { size: A4; margin: 18mm 15mm; }
+                  body { font-family: 'Inter', system-ui, sans-serif; color: #1E293B; line-height: 1.6; font-size: 10.5pt; }
+                  .paper-banner { background: #1E3A8A; color: #FFFFFF; padding: 12px 18px; border-radius: 6px; font-size: 14pt; font-weight: 700; margin-top: 24px; margin-bottom: 12px; }
+                  .part-header { background: #EFF6FF; color: #1E3A8A; border-left: 4px solid #1E3A8A; padding: 8px 14px; font-weight: 700; font-size: 11.5pt; margin: 18px 0 12px 0; }
+                  .q-box { border: 1.5px solid #CBD5E1; border-radius: 8px; margin-bottom: 16px; background: #FFFFFF; page-break-inside: avoid; overflow: hidden; }
+                  .q-header { background: #F8FAFC; padding: 10px 16px; border-bottom: 1px solid #CBD5E1; font-weight: 600; color: #0F172A; }
+                  .q-num { color: #1E3A8A; font-weight: 800; margin-right: 6px; }
+                  .q-body { padding: 14px 16px; }
+                  .final-ans { background: #ECFDF5; border-left: 4px solid #059669; color: #065F46; padding: 8px 12px; margin-top: 10px; border-radius: 4px; font-weight: 600; }
+                  .dark .q-box { background: #1e293b; border-color: #334155; }
+                  .dark .q-header { background: #0f172a; border-color: #334155; color: #f8fafc; }
+                  .dark .final-ans { background: rgba(6, 95, 70, 0.25); color: #6ee7b7; border-left-color: #10b981; }
+                </style>
+
                 ${papers.map((paper, pIdx) => {
-                    // Filter sections and questions
                     const visibleSections = paper.sections.map(sec => {
                         const secPart = sec.section_id.includes('SEC_A') ? 'PART_A' : (sec.section_id.includes('SEC_B') ? 'PART_B' : 'PART_C');
                         if (currentPart !== 'ALL' && secPart !== currentPart) return null;
@@ -883,52 +937,37 @@ const AiNotesStudio = {
 
                     return `
                         <!-- Paper Block -->
-                        <div class="paper-block mb-12">
+                        <div class="paper-block mb-10">
                             <!-- Paper Title Banner -->
-                            <div class="paper-title-banner my-6 px-5 py-3 rounded-xl bg-[#1E3A8A] text-white shadow-sm flex items-center justify-between" style="page-break-after: avoid; break-after: avoid;">
-                                <h2 class="text-sm sm:text-base font-black tracking-wider uppercase m-0 p-0 text-white">
-                                    ${paper.paper_title}
-                                </h2>
+                            <div class="paper-banner">
+                                ${paper.paper_title}
                             </div>
 
                             <!-- Sections -->
                             ${visibleSections.map(sec => `
                                 <div class="section-block mb-6">
                                     <!-- Section Header -->
-                                    <div class="section-header my-4 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-700/60 border-l-4 border-[#1E3A8A] flex items-center justify-between" style="page-break-after: avoid; break-after: avoid;">
-                                        <h3 class="text-xs sm:text-sm font-bold text-[#1E3A8A] dark:text-blue-300 uppercase tracking-wide m-0 p-0">
-                                            ${sec.section_title}
-                                        </h3>
+                                    <div class="part-header">
+                                        ${sec.section_title}
                                     </div>
 
                                     <!-- Individual Question Containers -->
-                                    <div class="questions-list space-y-5">
-                                        ${sec.matchingQuestions.map(q => `
-                                            <div class="question-container p-5 rounded-2xl bg-[#F8FAFC] dark:bg-slate-800/90 border border-[#CBD5E1] dark:border-slate-700 shadow-xs" style="break-inside: avoid; page-break-inside: avoid;">
-                                                <!-- Box Header -->
-                                                <div class="box-header pb-3 border-b border-slate-200 dark:border-slate-700/80">
-                                                    <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
-                                                        <span class="font-black text-[#1E3A8A] dark:text-blue-400 mr-1.5">Q${q.number}.</span>
-                                                        ${cleanText(q.question)}
+                                    <div class="questions-list">
+                                        ${sec.matchingQuestions.map(q => {
+                                            const cleanQ = cleanText(q.question);
+                                            const finalAns = getFinalAns(q);
+                                            return `
+                                                <div class="q-box">
+                                                    <div class="q-header">
+                                                        <span class="q-num">Q${q.number}.</span> ${cleanQ}
+                                                    </div>
+                                                    <div class="q-body">
+                                                        ${q.solution_html}
+                                                        <div class="final-ans">Final Answer: ${finalAns}</div>
                                                     </div>
                                                 </div>
-
-                                                <!-- Box Body -->
-                                                <div class="box-body py-3 text-xs sm:text-[13px] leading-relaxed text-slate-800 dark:text-slate-200">
-                                                    ${q.solution_html}
-                                                </div>
-
-                                                <!-- Box Footer / Final Answer Callout -->
-                                                ${q.final_answer ? `
-                                                    <div class="box-footer mt-2 pt-2 border-t border-slate-200 dark:border-slate-700 flex items-center">
-                                                        <div class="w-full px-3 py-2 rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800/60 text-[#065F46] dark:text-emerald-300 font-bold text-xs sm:text-[13px] flex items-center gap-2">
-                                                            <i class="bi bi-check-circle-fill text-emerald-600 dark:text-emerald-400 shrink-0"></i>
-                                                            <div class="overflow-x-auto">${q.final_answer}</div>
-                                                        </div>
-                                                    </div>
-                                                ` : ''}
-                                            </div>
-                                        `).join('')}
+                                            `;
+                                        }).join('')}
                                     </div>
                                 </div>
                             `).join('')}

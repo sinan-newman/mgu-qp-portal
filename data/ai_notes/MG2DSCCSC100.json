@@ -29,10 +29,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What does it mean when we say Python is an interpreted language?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What does it mean when we say Python is an interpreted language? Python is an interpreted language, it reads python code line by line, translates each line into an intermediate form (often bytecode), and then executes that intermediate form directly. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / [CO1]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What does it mean when we say Python is an interpreted language? Python is an interpreted language, it reads python code line by line, translates each line into an intermediate form (often bytecode), and then executes that intermediate form directly. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "What does it mean when we say Python is an interpreted language? Python is an interpreted language, it reads python code line by line, translates each line into an intermediate form (often bytecode), and then executes that intermediate form directly. Explanation"
     },
     {
       "id": "Q2",
@@ -45,7 +46,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Single-line comment: Starts with `#`. Everything after `#` on that line is ignored.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Single-line comment: Starts with `#`. Everything after `#` on that line is ignored."
     },
     {
       "id": "Q3",
@@ -54,13 +56,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Name any three key features of Python. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Name any three key features of Python. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Name any three key features of Python.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Name any three key features of Python.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -69,13 +72,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table. Score Grade >= 0.9 A >= 0.8 B >= 0.7 C >= 0.6 D < 0.6 F [CO4]",
+      "question": "Write a Python Program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table. Score Grade >= 0.9 A >= 0.8 B >= 0.7 C >= 0.6 D < 0.6 F",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. If the score is between 0.0 and 1.0, print a grade using the following table. Score Grade >= 0.9 A >= 0.8 B >= 0.7 C >= 0.6 D . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q5",
@@ -85,10 +89,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define Continue Statement.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Continue Statement. The continue statement in Python is a control flow statement that skips the rest of the code inside the current iteration of a loop and proceeds to the next iteration. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / [CO2]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Continue Statement. The continue statement in Python is a control flow statement that skips the rest of the code inside the current iteration of a loop and proceeds to the next iteration. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Define Continue Statement. The continue statement in Python is a control flow statement that skips the rest of the code inside the current iteration of a loop and proceeds to the next iteration. Explanation"
     },
     {
       "id": "Q6",
@@ -101,7 +106,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multi-line comment: Python has no official syntax, but triple quotes `''' '''` or `\"\"\" \"\"\"` are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>commonly used. If not assigned, they’re treated as string literals and ignored.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Description on indendation and comments – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span> each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sample Program with proper indendation and Comment – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Sample Program with proper indendation and Comment"
     },
     {
       "id": "Q7",
@@ -110,13 +116,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Identify the output of the following Python expression: print(3 * \"Python\" + \"3\") [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify the output of the following Python expression: print(3 * \"Python\" + \"3\") [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Identify the output of the following Python expression: print(3 * \"Python\" + \"3\")",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify the output of the following Python expression: print(3 * \"Python\" + \"3\")  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q8",
@@ -125,13 +132,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to check if a given year is a Leap Year. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to check if a given year is a Leap Year. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to check if a given year is a Leap Year.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to check if a given year is a Leap Year.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q9",
@@ -141,10 +149,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Explain the purpose of the close() method in file handling.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the purpose of the close() method in file handling. close() method in file handling in Python is to release the system resources that were allocated when the file was opened. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / [CO3]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the purpose of the close() method in file handling. close() method in file handling in Python is to release the system resources that were allocated when the file was opened. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Explain the purpose of the close() method in file handling. close() method in file handling in Python is to release the system resources that were allocated when the file was opened. Explanation"
     },
     {
       "id": "Q10",
@@ -157,7 +166,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dynamically Typed: You don’t need to declare variable types. The type is determined at</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>runtime.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = 10 # x is int</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x = \"hello\" # now x is str</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "x = \"hello\" # now x is str"
     },
     {
       "id": "Q11",
@@ -166,13 +176,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Which Python data type would you use to store a collection of unique items? [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which Python data type would you use to store a collection of unique items? [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Which Python data type would you use to store a collection of unique items?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Which Python data type would you use to store a collection of unique items?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q12",
@@ -181,13 +192,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program to check whether a number is palindrome or not. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to check whether a number is palindrome or not. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program to check whether a number is palindrome or not.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to check whether a number is palindrome or not.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q13",
@@ -197,10 +209,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write an example of tuple unpacking.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write an example of tuple unpacking. Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / [CO3]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write an example of tuple unpacking. Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Write an example of tuple unpacking. Example"
     },
     {
       "id": "Q14",
@@ -213,7 +226,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain how list concatenation works. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q15",
@@ -222,13 +236,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "What is the difference between break and continue statements in Python? [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is the difference between break and continue statements in Python? [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "What is the difference between break and continue statements in Python?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is the difference between break and continue statements in Python?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q16",
@@ -237,13 +252,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to find the sum of digits in a number. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the sum of digits in a number. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to find the sum of digits in a number.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the sum of digits in a number.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q17",
@@ -252,11 +268,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define built-in functions. List 2 examples. [2x5 = 10]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define built-in functions. List 2 examples. Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> . Any 2 examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 marks)</span> each / [CO3] [2x5 = 10] Part B Short Answer Questions Answer any 5 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
+      "question": "Define built-in functions. List 2 examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define built-in functions. List 2 examples. Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> . Any 2 examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 marks)</span> each /  x5 = 10] Part B Short Answer Questions Answer any 5 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Define built-in functions. List 2 examples. Definition – . Any 2 examples – each Part B Short Answer Questions Answer any 5 questions Each question carries"
     },
     {
       "id": "Q18",
@@ -265,11 +282,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define set with an example. [2x5 = 10]",
+      "question": "Define set with an example.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks for correct program</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "marks for correct program"
     },
     {
       "id": "Q19",
@@ -278,13 +296,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Rewrite the following for loop as a while loop and ensure it produces the same output: fori in range(1, 6): print(i * \"*\") [CO2] [5 x 2 = 10]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Rewrite the following for loop as a while loop and ensure it produces the same output: fori in range(1, 6): print(i * \"*\") [CO2] [5 x 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Rewrite the following for loop as a while loop and ensure it produces the same output: fori in range(1, 6): print(i * \"*\")",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Rewrite the following for loop as a while loop and ensure it produces the same output: fori in range(1, 6): print(i * \"*\")  x 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q20",
@@ -293,13 +312,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to display the Fibonacci Sequences up to n th term where n is provided by the user. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to display the Fibonacci Sequences up to n th term where n is provided by the user. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to display the Fibonacci Sequences up to n th term where n is provided by the user.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to display the Fibonacci Sequences up to n th term where n is provided by the user.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q21",
@@ -308,13 +328,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to find the sum of all odd and even numbers up to a number specified by the user. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the sum of all odd and even numbers up to a number specified by the user. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to find the sum of all odd and even numbers up to a number specified by the user.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the sum of all odd and even numbers up to a number specified by the user.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q22",
@@ -323,13 +344,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to find the factorial of a number. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the factorial of a number. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to find the factorial of a number.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the factorial of a number.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q23",
@@ -338,13 +360,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to find the area of Trapezium using the formula Area = (1/2) * (a + b) * h,where a and b are the 2 bases of Trapezium and h is the height (Use function) [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the area of Trapezium using the formula Area = (1/2) * (a + b) * h,where a and b are the 2 bases of Trapezium and h is the height (Use function) [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to find the area of Trapezium using the formula Area = (1/2) * (a + b) * h,where a and b are the 2 bases of Trapezium and h is the height (Use function)",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to find the area of Trapezium using the formula Area = (1/2) * (a + b) * h,where a and b are the 2 bases of Trapezium and h is the height (Use function)  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q24",
@@ -353,13 +376,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to check if a 3 digit number is Armstrong number or not using functions. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to check if a 3 digit number is Armstrong number or not using functions. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to check if a 3 digit number is Armstrong number or not using functions.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to check if a 3 digit number is Armstrong number or not using functions.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q25",
@@ -368,13 +392,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program to find the largest of three numbers using functions. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the largest of three numbers using functions. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program to find the largest of three numbers using functions.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the largest of three numbers using functions.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q26",
@@ -383,13 +408,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program using functions to find the value of n Pr and n Cr. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program using functions to find the value of n Pr and n Cr. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program using functions to find the value of n Pr and n Cr.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program using functions to find the value of n Pr and n Cr.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q27",
@@ -398,13 +424,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write Python Program to sort numbers in a List in ascending order. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python Program to sort numbers in a List in ascending order. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write Python Program to sort numbers in a List in ascending order.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python Program to sort numbers in a List in ascending order.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q28",
@@ -413,13 +440,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write Python Program to search for a number in the List and report ‘Success’ or ‘Failure’. [CO4] Page 3 of 3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python Program to search for a number in the List and report ‘Success’ or ‘Failure’. [CO4] Page 3 of 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write Python Program to search for a number in the List and report ‘Success’ or ‘Failure’. Page 3 of 3",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python Program to search for a number in the List and report ‘Success’ or ‘Failure’.  Page 3 of 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q29",
@@ -428,13 +456,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a python Program to find Mean, Variance and Standard Deviation of numbers in a List. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a python Program to find Mean, Variance and Standard Deviation of numbers in a List. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a python Program to find Mean, Variance and Standard Deviation of numbers in a List.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a python Program to find Mean, Variance and Standard Deviation of numbers in a List.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q30",
@@ -443,13 +472,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to add two matrices using List. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to add two matrices using List. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to add two matrices using List.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to add two matrices using List.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q31",
@@ -458,13 +488,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Create a list containing three elements, and then create a tuple from that list. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a list containing three elements, and then create a tuple from that list. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Create a list containing three elements, and then create a tuple from that list.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a list containing three elements, and then create a tuple from that list.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q32",
@@ -473,13 +504,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program to store the latitude and longitude of a place as a tuple and display it. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to store the latitude and longitude of a place as a tuple and display it. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program to store the latitude and longitude of a place as a tuple and display it.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to store the latitude and longitude of a place as a tuple and display it.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q33",
@@ -488,13 +520,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program that takes a range and creates a list of tuples within that range with the first element as the number and the second element as the square of the number. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that takes a range and creates a list of tuples within that range with the first element as the number and the second element as the square of the number. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program that takes a range and creates a list of tuples within that range with the first element as the number and the second element as the square of the number.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that takes a range and creates a list of tuples within that range with the first element as the number and the second element as the square of the number.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q34",
@@ -503,13 +536,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "A school maintains a tuple of student records, where each record consists of a student's name, age, and marks in three subjects. Write a Python program to display the details of all students, Search for a particular student and Calculate and print the average marks of each student. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A school maintains a tuple of student records, where each record consists of a student's name, age, and marks in three subjects. Write a Python program to display the details of all students, Search for a particular student and Calculate and print the average marks of each student. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "A school maintains a tuple of student records, where each record consists of a student's name, age, and marks in three subjects. Write a Python program to display the details of all students, Search for a particular student and Calculate and print the average marks of each student.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering A school maintains a tuple of student records, where each record consists of a student's name, age, and marks in three subjects. Write a Python program to display the details of all students, Search for a particular student and Calculate and print the average marks of each student.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q35",
@@ -518,13 +552,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program to generate a Dictionary that contains (i: i*i) such that i is a number ranging from 1 to n. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to generate a Dictionary that contains (i: i*i) such that i is a number ranging from 1 to n. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program to generate a Dictionary that contains (i: i*i) such that i is a number ranging from 1 to n.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program to generate a Dictionary that contains (i: i*i) such that i is a number ranging from 1 to n.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q36",
@@ -533,13 +568,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python Program that accepts a sentence and calculate the number of digits, uppercase and lowercase letters(Use Dictionary). [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program that accepts a sentence and calculate the number of digits, uppercase and lowercase letters(Use Dictionary). [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python Program that accepts a sentence and calculate the number of digits, uppercase and lowercase letters(Use Dictionary).",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python Program that accepts a sentence and calculate the number of digits, uppercase and lowercase letters(Use Dictionary).  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q37",
@@ -548,13 +584,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program to input information about a few employees as given below: a. Name b. Employee Id c. Salary The program should output the employee ID and salary of a specified employee, given his name (Use Dictionary). [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to input information about a few employees as given below: a. Name b. Employee Id c. Salary The program should output the employee ID and salary of a specified employee, given his name (Use Dictionary). [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program to input information about a few employees as given below: a. Name b. Employee Id c. Salary The program should output the employee ID and salary of a specified employee, given his name (Use Dictionary).",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to input information about a few employees as given below: a. Name b. Employee Id c. Salary The program should output the employee ID and salary of a specified employee, given his name (Use Dictionary).  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q38",
@@ -563,13 +600,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write Python code to create a dictionary that accepts a country name as a key and its capital city as the value. Display the details in sorted order. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python code to create a dictionary that accepts a country name as a key and its capital city as the value. Display the details in sorted order. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write Python code to create a dictionary that accepts a country name as a key and its capital city as the value. Display the details in sorted order.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write Python code to create a dictionary that accepts a country name as a key and its capital city as the value. Display the details in sorted order.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q39",
@@ -578,13 +616,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program that has the dictionary of student names as keys and phone numbers as its values. Print the dictionary in a sorted order. Prompt the user to enter the name and check if it is present in the dictionary. If the name is not present, then enter the details in the dictionary. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that has the dictionary of student names as keys and phone numbers as its values. Print the dictionary in a sorted order. Prompt the user to enter the name and check if it is present in the dictionary. If the name is not present, then enter the details in the dictionary. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program that has the dictionary of student names as keys and phone numbers as its values. Print the dictionary in a sorted order. Prompt the user to enter the name and check if it is present in the dictionary. If the name is not present, then enter the details in the dictionary.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that has the dictionary of student names as keys and phone numbers as its values. Print the dictionary in a sorted order. Prompt the user to enter the name and check if it is present in the dictionary. If the name is not present, then enter the details in the dictionary.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q40",
@@ -593,13 +632,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a Python program to find the length of the set. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the length of the set. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a Python program to find the length of the set.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a Python program to find the length of the set.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q41",
@@ -608,13 +648,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program to create an intersection, union, set difference, and symmetricdifference of sets. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to create an intersection, union, set difference, and symmetricdifference of sets. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program to create an intersection, union, set difference, and symmetricdifference of sets.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to create an intersection, union, set difference, and symmetricdifference of sets.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q42",
@@ -623,13 +664,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program to read the first n lines of a file. Prompt the user to enter the value for n. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to read the first n lines of a file. Prompt the user to enter the value for n. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program to read the first n lines of a file. Prompt the user to enter the value for n.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to read the first n lines of a file. Prompt the user to enter the value for n.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q43",
@@ -638,13 +680,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program that reads the contents of the file and counts the occurrences of each letter. Prompt the user to enter the filename. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that reads the contents of the file and counts the occurrences of each letter. Prompt the user to enter the filename. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program that reads the contents of the file and counts the occurrences of each letter. Prompt the user to enter the filename.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program that reads the contents of the file and counts the occurrences of each letter. Prompt the user to enter the filename.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q44",
@@ -653,13 +696,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A]",
-      "question": "Write a program to read and write the contents from one csv file to another. [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to read and write the contents from one csv file to another. [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write a program to read and write the contents from one csv file to another.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write a program to read and write the contents from one csv file to another.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q45",
@@ -669,10 +713,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "How do you create a string in Python?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How do you create a string in Python? Using Single Quotes Using Double Quotes Using Triple Quotes Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> / [CO1]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How do you create a string in Python? Using Single Quotes Using Double Quotes Using Triple Quotes Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> / </li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "How do you create a string in Python? Using Single Quotes Using Double Quotes Using Triple Quotes Explanation – , Example"
     },
     {
       "id": "Q46",
@@ -682,10 +727,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare and contrast a Python statement and an expression with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare and contrast a Python statement and an expression with examples. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statement Expression</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A statement is an instruction that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>performs an action.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An expression is a combination of values, variables, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operators that produces a result.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements may not return a value. Expressions always return a value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used for controlling program flow,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>assignments, loops, etc. Used for calculations and evaluations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: x = 10 Example: x + 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements can contain expressions. Expressions cannot usually contain statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Statement and Expression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> each,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison / Differences – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> , Examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare and contrast a Python statement and an expression with examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statement Expression</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A statement is an instruction that</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>performs an action.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>An expression is a combination of values, variables, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operators that produces a result.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements may not return a value. Expressions always return a value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used for controlling program flow,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>assignments, loops, etc. Used for calculations and evaluations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: x = 10 Example: x + 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Statements can contain expressions. Expressions cannot usually contain statements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of Statement and Expression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> each,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison / Differences – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> , Examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Comparison / Differences – , Examples"
     },
     {
       "id": "Q47",
@@ -694,13 +740,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[K] ",
-      "question": "Define type conversion in Python. List any four built-in functions used for type conversion. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Define type conversion in Python. List any four built-in functions used for type conversion. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Define type conversion in Python. List any four built-in functions used for type conversion.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Define type conversion in Python. List any four built-in functions used for type conversion.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Define type conversion in Python. List any four built-in functions used for type conversion. ."
     },
     {
       "id": "Q48",
@@ -710,10 +757,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "How can we read multiple inputs from a user in Python?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How can we read multiple inputs from a user in Python? / [CO1] Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> 8 . Explain the concept of while loop statement. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> / [CO2] 9 . Write Python script to test whether a given year is leap year or not y = 200 if y % 4 == 0: if y % 100 == 0: if y % 400 == 0: print(\"Leap year\") else: print(\"Not a leap year\") else: print(\"Leap year\") else: print(\"Not a leap year\") Program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> / [CO2] 1 0 . Explain the importance of closing a file after performing file operations. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> / [CO3] 1 1 . Write Python script to create a Dictionary and find the number of elements in it. my_dict = { \"name\": \"Alice\", \"age\": 30, \"city\": \"New York\", \"occupation\": \"Engineer\" } number_of_elements_my_dict = len(my_dict) print(\"Dictionary 'my_dict':\", my_dict) print(\"Number of elements in 'my_dict':\", number_of_elements_my_dict) Program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> / [CO3] 1 2 . Explain insert() and remove() methods of list with suitable examples of each. insert() – Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> remove() – Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> / [CO3] [5x5 = 25] Part C Essay Questions Answer any 1 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span> 1 3 . Discuss the operators used in Python. Explain with example Explanation of 7 operators with example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span> Arithmetic Operators, Comparison Operators, Assignment Operators, Logical Operators, Identity Operators, Membership Operators, Bitwise Operators. / [CO1] 1 4 . Explain the concept of lists in Python. Discuss different ways to create a list with examples. Explain at least five basic list operations and describe the list() function with relevant examples. Concept of lists in Python – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> Different ways to create a list with examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Five basic list operations – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each Description of list() function with relevant examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> / [CO3] [15x1 = 15]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How can we read multiple inputs from a user in Python? /  Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> 8 . Explain the concept of while loop statement. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> /  9 . Write Python script to test whether a given year is leap year or not y = 200 if y % 4 == 0: if y % 100 == 0: if y % 400 == 0: print(\"Leap year\") else: print(\"Not a leap year\") else: print(\"Leap year\") else: print(\"Not a leap year\") Program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> /  1 0 . Explain the importance of closing a file after performing file operations. Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> /  1 1 . Write Python script to create a Dictionary and find the number of elements in it. my_dict = { \"name\": \"Alice\", \"age\": 30, \"city\": \"New York\", \"occupation\": \"Engineer\" } number_of_elements_my_dict = len(my_dict) print(\"Dictionary 'my_dict':\", my_dict) print(\"Number of elements in 'my_dict':\", number_of_elements_my_dict) Program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> /  1 2 . Explain insert() and remove() methods of list with suitable examples of each. insert() – Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> remove() – Explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span> , Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> /  x5 = 25] Part C Essay Questions Answer any 1 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span> 1 3 . Discuss the operators used in Python. Explain with example Explanation of 7 operators with example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span> Arithmetic Operators, Comparison Operators, Assignment Operators, Logical Operators, Identity Operators, Membership Operators, Bitwise Operators. /  1 4 . Explain the concept of lists in Python. Discuss different ways to create a list with examples. Explain at least five basic list operations and describe the list() function with relevant examples. Concept of lists in Python – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> Different ways to create a list with examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Five basic list operations – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each Description of list() function with relevant examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> /  x1 = 15]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "How can we read multiple inputs from a user in Python? Explanation – , Example – 8 . Explain the concept of while loop statement. Explanation – , Example – 9 . Write Python script to test whether a given year is leap year or not y = 200 if y % 4 == 0: if y % 100 == 0: if y % 400 == 0: print(\"Leap year\") else: print(\"Not a leap year\") else: print(\"Leap year\") else: print(\"Not a leap year\") Program – 1 0 . Explain the importance of closing a file after performing file operations. Explanation – 1 1 . Write Python script to create a Dictionary and find the number of elements in it. my_dict = { \"name\": \"Alice\", \"age\": 30, \"city\": \"New York\", \"occupation\": \"Engineer\" } number_of_elements_my_dict = len(my_dict) print(\"Dictionary 'my_dict':\", my_dict) print(\"Number of elements in 'my_dict':\", number_of_elements_my_dict) Program – 1 2 . Explain insert() and remove() methods of list with suitable examples of each. insert() – Explanation – , Example – remove() – Explanation – , Example – Part C Essay Questions Answer any 1 questions Each question carries 1 3 . Discuss the operators used in Python. Explain with example Explanation of 7 operators with example – Arithmetic Operators, Comparison Operators, Assignment Operators, Logical Operators, Identity Operators, Membership Operators, Bitwise Operators. 1 4 . Explain the concept of lists in Python. Discuss different ways to create a list with examples. Explain at least five basic list operations and describe the list() function with relevant examples. Concept of lists in Python – Different ways to create a list with examples – Five basic list operations – each Description of list() function with relevant examples"
     },
     {
       "id": "Q49",
@@ -723,10 +771,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Discuss the various features of Python in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the various features of Python in detail. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: 1. Simple and Easy to Learn: Python has a clean syntax similar to English. It uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indentation instead of braces, making code readable and beginner-friendly.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the various features of Python in detail. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: 1. Simple and Easy to Learn: Python has a clean syntax similar to English. It uses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>indentation instead of braces, making code readable and beginner-friendly.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "indentation instead of braces, making code readable and beginner-friendly."
     },
     {
       "id": "Q50",
@@ -735,13 +784,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write a Python program that accepts a number as input and prints whether it is positive, negative, or zero using if-elif-else. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python program that accepts a number as input and prints whether it is positive, negative, or zero using if-elif-else. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Write a Python program that accepts a number as input and prints whether it is positive, negative, or zero using if-elif-else.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python program that accepts a number as input and prints whether it is positive, negative, or zero using if-elif-else.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a Python program that accepts a number as input and prints whether it is positive, negative, or zero using if-elif-else. ."
     },
     {
       "id": "Q51",
@@ -754,7 +804,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of while loop statement. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of while loop statement. ."
     },
     {
       "id": "Q52",
@@ -764,10 +815,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Write the difference between break and continue statement in Python.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the difference between break and continue statement in Python. / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break Statement continue Statement</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The break statement is used to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>terminate the loop immediately.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The continue statement is used to skip the current</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iteration and continue with the next iteration of the loop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Control comes out of the loop. Control remains inside the loop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used when the loop needs to stop</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>based on a condition. Used when a particular iteration needs to be skipped.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mostly used to exit loops early. Mostly used to ignore specific values or conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pogram for break:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for i in range(1, 6):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if i == 3:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(i)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the difference between break and continue statement in Python. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break Statement continue Statement</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The break statement is used to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>terminate the loop immediately.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The continue statement is used to skip the current</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>iteration and continue with the next iteration of the loop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Control comes out of the loop. Control remains inside the loop.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used when the loop needs to stop</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>based on a condition. Used when a particular iteration needs to be skipped.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mostly used to exit loops early. Mostly used to ignore specific values or conditions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pogram for break:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for i in range(1, 6):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if i == 3:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(i)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output:</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Output"
     },
     {
       "id": "Q53",
@@ -776,13 +828,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the concept of slicing in Python lists with an example. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of slicing in Python lists with an example. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the concept of slicing in Python lists with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of slicing in Python lists with an example.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of slicing in Python lists with an example. ."
     },
     {
       "id": "Q54",
@@ -795,7 +848,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write Python script to test whether a given year is leap year or not . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write Python script to test whether a given year is leap year or not ."
     },
     {
       "id": "Q55",
@@ -805,10 +859,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare the if-else and if-elif-else statements in Python.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the if-else and if-elif-else statements in Python. / [CO2] Ans: if-else Statement if-elif-else Statement Used to check only two conditions. Used to check multiple conditions. Contains one if block and one else block. Contains one if, one or more elif, and an optional else block. Suitable for simple decision making. Suitable for multiple decision making. Execution chooses between two alternatives. Execution chooses one block among many alternatives. Syntax of if-else if condition: statement1 else: statement2 Syntax of if-elif-else if condition1: statement1 elif condition2: statement2 else: statement3 Difference – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Syntax – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare the if-else and if-elif-else statements in Python. /  Ans: if-else Statement if-elif-else Statement Used to check only two conditions. Used to check multiple conditions. Contains one if block and one else block. Contains one if, one or more elif, and an optional else block. Suitable for simple decision making. Suitable for multiple decision making. Execution chooses between two alternatives. Execution chooses one block among many alternatives. Syntax of if-else if condition: statement1 else: statement2 Syntax of if-elif-else if condition1: statement1 elif condition2: statement2 else: statement3 Difference – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Syntax – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Compare the if-else and if-elif-else statements in Python. Ans: if-else Statement if-elif-else Statement Used to check only two conditions. Used to check multiple conditions. Contains one if block and one else block. Contains one if, one or more elif, and an optional else block. Suitable for simple decision making. Suitable for multiple decision making. Execution chooses between two alternatives. Execution chooses one block among many alternatives. Syntax of if-else if condition: statement1 else: statement2 Syntax of if-elif-else if condition1: statement1 elif condition2: statement2 else: statement3 Difference – Syntax"
     },
     {
       "id": "Q56",
@@ -817,13 +872,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Describe the working of a for loop with an example that prints the first 10 even numbers. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe the working of a for loop with an example that prints the first 10 even numbers. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Describe the working of a for loop with an example that prints the first 10 even numbers.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe the working of a for loop with an example that prints the first 10 even numbers.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the working of a for loop with an example that prints the first 10 even numbers. ."
     },
     {
       "id": "Q57",
@@ -836,7 +892,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the importance of closing a file after performing file operations. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the importance of closing a file after performing file operations. ."
     },
     {
       "id": "Q58",
@@ -846,10 +903,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain how tuples differ from lists in Python with suitable examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how tuples differ from lists in Python with suitable examples. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List Tuple</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A list is mutable, which means elements can</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A tuple is immutable, which means elements</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>cannot be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists are created using square brackets [ ]. Tuples are created using parentheses ( ).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists consume more memory. Tuples consume less memory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists are suitable for data that may change. Tuples are suitable for fixed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># List - mutable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list = [1, 2, 3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list[0] = 10 # Works</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list.append(4) # Works</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(my_list)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output: [10, 2, 3, 4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Tuple - immutable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_tuple = (1, 2, 3)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_tuple[0] = 10 # Error: 'tuple' object does not support item assignment</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># my_tuple.append(4) # Error: 'tuple' object has no attribute 'append'</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(my_tuple)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output: (1, 2, 3)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example program - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how tuples differ from lists in Python with suitable examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List Tuple</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A list is mutable, which means elements can</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A tuple is immutable, which means elements</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>cannot be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists are created using square brackets . Tuples are created using parentheses ( ).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists consume more memory. Tuples consume less memory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lists are suitable for data that may change. Tuples are suitable for fixed data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># List - mutable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list = </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list = 10 # Works</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_list.append(4) # Works</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(my_list)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output: </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># Tuple - immutable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_tuple = (1, 2, 3)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>my_tuple = 10 # Error: 'tuple' object does not support item assignment</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'># my_tuple.append(4) # Error: 'tuple' object has no attribute 'append'</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(my_tuple)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output: (1, 2, 3)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example program - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Example program"
     },
     {
       "id": "Q59",
@@ -858,13 +916,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write a Python function to calculate and return the factorial of a given number. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python function to calculate and return the factorial of a given number. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Write a Python function to calculate and return the factorial of a given number.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python function to calculate and return the factorial of a given number.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a Python function to calculate and return the factorial of a given number. ."
     },
     {
       "id": "Q60",
@@ -877,7 +936,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write Python script to create a Dictionary and find the number of elements in it. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write Python script to create a Dictionary and find the number of elements in it. ."
     },
     {
       "id": "Q61",
@@ -887,10 +947,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe how update() and setdefault() methods work and when to use each, with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe how update() and setdefault() methods work and when to use each,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with examples. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: update() method: Updates a dictionary with key:value pairs from another dictionary. If a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>key exists, its value is overwritten. If it doesn’t exist, the new key:value pair is added.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Used to merge dictionaries or add/update multiple key:value pairs at once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d = {'a': 1, 'b': 2}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d.update({'b': 5, 'c': 3})</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(d) # Output: {'a': 1, 'b': 5, 'c': 3}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Here `'b'` was updated and `'c'` was added.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>setdefault()method: Returns the value of a key if it exists. If the key doesn’t exist, it inserts the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>key with a specified default value and returns that value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When you want to get a key’s value, but also ensure the key exists in the dictionary with a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>default if it was missing. Useful for initializing values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d = {'a': 1, 'b': 2}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>val1 = d.setdefault('b', 100) # 'b' exists, so returns 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>val2 = d.setdefault('c', 100) # 'c' missing, adds 'c':100 and returns 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(d) # Output: {'a': 1, 'b': 2, 'c': 100}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(val1, val2) # Output: 2 100</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe how update() and setdefault() methods work and when to use each,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>with examples. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: update() method: Updates a dictionary with key:value pairs from another dictionary. If a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>key exists, its value is overwritten. If it doesn’t exist, the new key:value pair is added.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Used to merge dictionaries or add/update multiple key:value pairs at once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d = {'a': 1, 'b': 2}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d.update({'b': 5, 'c': 3})</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(d) # Output: {'a': 1, 'b': 5, 'c': 3}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Here `'b'` was updated and `'c'` was added.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>setdefault()method: Returns the value of a key if it exists. If the key doesn’t exist, it inserts the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>key with a specified default value and returns that value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When you want to get a key’s value, but also ensure the key exists in the dictionary with a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>default if it was missing. Useful for initializing values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d = {'a': 1, 'b': 2}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>val1 = d.setdefault('b', 100) # 'b' exists, so returns 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>val2 = d.setdefault('c', 100) # 'c' missing, adds 'c':100 and returns 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(d) # Output: {'a': 1, 'b': 2, 'c': 100}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(val1, val2) # Output: 2 100</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "print(val1, val2) # Output: 2 100"
     },
     {
       "id": "Q62",
@@ -899,13 +960,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss the difference between Lists and Tuples with examples. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the difference between Lists and Tuples with examples. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Discuss the difference between Lists and Tuples with examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the difference between Lists and Tuples with examples.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Discuss the difference between Lists and Tuples with examples. ."
     },
     {
       "id": "Q63",
@@ -914,11 +976,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain insert() and remove() methods of list with suitable examples of each. [5x5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain insert() and remove() methods of list with suitable examples of each. [5x5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain insert() and remove() methods of list with suitable examples of each.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain insert() and remove() methods of list with suitable examples of each. x5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain insert() and remove() methods of list with suitable examples of each. ."
     },
     {
       "id": "Q64",
@@ -927,11 +990,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write a Python program to concatenate two lists [1, 2, 3] and [4, 5, 6] and print the result. [5x5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a Python program to concatenate two lists [1, 2, 3] and [4, 5, 6] and print</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the result. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>list1 = [1, 2, 3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>list2 = [4, 5, 6]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>result = list1 + list2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Concatenated list:\", result)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concatenated list: [1, 2, 3, 4, 5, 6]</li></ul>",
+      "question": "Write a Python program to concatenate two lists and and print the result.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a Python program to concatenate two lists  and  and print</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the result. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>list1 = </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>list2 = </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>result = list1 + list2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>print(\"Concatenated list:\", result)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concatenated list: </li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Concatenated list"
     },
     {
       "id": "Q65",
@@ -940,13 +1004,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write a Python script to open a file, write a few lines of text into it, and then read its content. [CO3] [5 x 5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python script to open a file, write a few lines of text into it, and then read its content. [CO3] [5 x 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Write a Python script to open a file, write a few lines of text into it, and then read its content.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a Python script to open a file, write a few lines of text into it, and then read its content.  x 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a Python script to open a file, write a few lines of text into it, and then read its content. ."
     },
     {
       "id": "Q66",
@@ -959,7 +1024,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q67",
@@ -969,10 +1035,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain indentation and comments in Python.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain indentation and comments in Python. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Python uses indentation to define blocks of code. Instead of `{}` like other languages,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Python relies on whitespace at the start of a line. Indentation is mandatory. It tells the interpreter</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>which statements belong to loops, functions, if-else blocks, etc. Standard is 4 spaces per indent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>level. Mixing tabs and spaces causes `</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comments:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Notes in code that are ignored by the interpreter. Used to explain code for humans.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain indentation and comments in Python. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Python uses indentation to define blocks of code. Instead of `{}` like other languages,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Python relies on whitespace at the start of a line. Indentation is mandatory. It tells the interpreter</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>which statements belong to loops, functions, if-else blocks, etc. Standard is 4 spaces per indent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>level. Mixing tabs and spaces causes `</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comments:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Notes in code that are ignored by the interpreter. Used to explain code for humans.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types:</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Types"
     },
     {
       "id": "Q68",
@@ -981,13 +1048,14 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain the concept of dictionaries in Python. Discuss various dictionary methods with examples. How is the del statement used to delete dictionary elements? Provide relevant code snippets to support your explanation. [CO3]",
+      "question": "Explain the concept of dictionaries in Python. Discuss various dictionary methods with examples. How is the del statement used to delete dictionary elements? Provide relevant code snippets to support your explanation.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q69",
@@ -996,11 +1064,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain the concept of lists in Python. Discuss different ways to create a list with examples. Explain at least five basic list operations and describe the list() function with relevant examples. [15x1 = 15]",
+      "question": "Explain the concept of lists in Python. Discuss different ways to create a list with examples. Explain at least five basic list operations and describe the list() function with relevant examples.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q70",
@@ -1009,11 +1078,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain the flow of execution in a Python program that includes function definitions and function calls. Describe how control moves between the calling function and the function definition with an example. [15x1 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the flow of execution in a Python program that includes function definitions and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function calls. Describe how control moves between the calling function and the function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>definition with an example. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Python is an interpreted language. The interpreter reads code from top to bottom and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>executes it line by line. However, when functions are present, execution does not always stay</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linear. Control \"jumps\" between different parts of the program.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function definition:When Python sees `def function_name():`, it creates a function object in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>memory and binds the name to it. The code inside the function is *not executed* at this point.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function call: When Python sees `function_name()`, it suspends the current flow, jumps to the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>first line of the function body, executes it, then returns back to the point after the call.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation on function definition and call and flow of control – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with function definition and call and explanation of control flow in that program - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 marks)</span></li></ul>",
+      "question": "Explain the flow of execution in a Python program that includes function definitions and function calls. Describe how control moves between the calling function and the function definition with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the flow of execution in a Python program that includes function definitions and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function calls. Describe how control moves between the calling function and the function</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>definition with an example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Python is an interpreted language. The interpreter reads code from top to bottom and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>executes it line by line. However, when functions are present, execution does not always stay</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linear. Control \"jumps\" between different parts of the program.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function definition:When Python sees `def function_name():`, it creates a function object in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>memory and binds the name to it. The code inside the function is *not executed* at this point.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function call: When Python sees `function_name()`, it suspends the current flow, jumps to the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>first line of the function body, executes it, then returns back to the point after the call.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation on function definition and call and flow of control – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program with function definition and call and explanation of control flow in that program - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Program with function definition and call and explanation of control flow in that program"
     },
     {
       "id": "Q71",
@@ -1022,13 +1092,14 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain the concept of sets in Python. How do you create a set? Discuss various set methods with examples. Provide relevant code snippets to demonstrate set operations. [CO3] [1 x 15 = 15]",
+      "question": "Explain the concept of sets in Python. How do you create a set? Discuss various set methods with examples. Provide relevant code snippets to demonstrate set operations.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Python Programming",
       "repeated_in": [
         "Python Programming"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

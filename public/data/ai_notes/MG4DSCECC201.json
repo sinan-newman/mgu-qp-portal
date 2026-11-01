@@ -29,7 +29,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Platform Independent: Java follows the principle “Write Once, Run Anywhere (WORA)”. Java</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>programs are compiled into bytecode, which runs on the Java Virtual Machine (JVM) . Hence,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java programs can run on any system with JVM installed</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Java programs can run on any system with JVM installed"
     },
     {
       "id": "Q2",
@@ -42,7 +43,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Object-Oriented: Java is based on object-oriented principles such as: Encapsulation, Inheritance,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Polymorphism, Abstraction. Promotes modular and reusable code</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Polymorphism, Abstraction. Promotes modular and reusable code"
     },
     {
       "id": "Q3",
@@ -55,7 +57,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simple: Easy to learn compared to C++ . Removes complex features like: Pointers, Operator</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>overloading, Uses automatic memory management</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "overloading, Uses automatic memory management"
     },
     {
       "id": "Q4",
@@ -68,7 +71,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Secure: Provides strong security features: No pointer manipulation, Security manager, Suitable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for network-based applications</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for network-based applications"
     },
     {
       "id": "Q5",
@@ -77,11 +81,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "State any two characteristics of a constructor. [2x5 = 10]",
+      "question": "State any two characteristics of a constructor.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Robust : Strong memory management . Exception handling mechanism . Eliminates runtime</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>errors like memory leaks</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "errors like memory leaks"
     },
     {
       "id": "Q6",
@@ -94,7 +99,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multithreaded: Supports execution of multiple threads simultaneously. Improves performance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and efficiency</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "and efficiency"
     },
     {
       "id": "Q7",
@@ -107,7 +113,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Distributed : Supports distributed computing using: RMI (Remote Method Invocation) ,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Networking libraries</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Networking libraries"
     },
     {
       "id": "Q8",
@@ -120,7 +127,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>High Performance : Uses Just-In-Time (JIT) compiler , Converts bytecode into native machine</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>code at runtime</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "code at runtime"
     },
     {
       "id": "Q9",
@@ -133,7 +141,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Portable: Bytecode can be carried to any platform. Consistent behavior across systems</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Portable: Bytecode can be carried to any platform. Consistent behavior across systems"
     },
     {
       "id": "Q10",
@@ -146,7 +155,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dynamic : Classes can be loaded dynamically at runtime . Supports dynamic memory</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>allocation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java is widely used due to its portability, security, and robustness, making it suitable for web,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>desktop, and enterprise applications.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "desktop, and enterprise applications."
     },
     {
       "id": "Q11",
@@ -156,10 +166,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain the role of javax.swing and java.applet packages in Java applications.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of javax.swing and java.applet packages in Java applications. /[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>javax.swing: Used to create Graphical User Interfaces (GUI) . Provides lightweight components</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like: JButton, JFrame, JTextField</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>java.applet: Used to create applet-based applications. Applets run inside a web browser or applet</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>viewer. Extends Applet class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference: Swing → Desktop GUI applications . Applet → Browser -based applications (now</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>deprecated)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of javax.swing and java.applet packages in Java applications. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>javax.swing: Used to create Graphical User Interfaces (GUI) . Provides lightweight components</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>like: JButton, JFrame, JTextField</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>java.applet: Used to create applet-based applications. Applets run inside a web browser or applet</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>viewer. Extends Applet class</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Difference: Swing → Desktop GUI applications . Applet → Browser -based applications (now</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>deprecated)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "deprecated)"
     },
     {
       "id": "Q12",
@@ -168,11 +179,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Identify the different types of inheritance supported by Java and illustrate each with suitable examples. [5x5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the different types of inheritance supported by Java and illustrate each with suitable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java supports the following types of inheritance:</li></ul>",
+      "question": "Identify the different types of inheritance supported by Java and illustrate each with suitable examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the different types of inheritance supported by Java and illustrate each with suitable</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java supports the following types of inheritance:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Java supports the following types of inheritance"
     },
     {
       "id": "Q13",
@@ -182,10 +194,11 @@
       "marks": 10,
       "domain_tag": "[K] ",
       "question": "Discuss the key features of Java in detail.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the key features of Java in detail. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java is a high -level, object-oriented programming language developed by Sun Microsystems. It</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>has several powerful features:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss the key features of Java in detail. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Java is a high -level, object-oriented programming language developed by Sun Microsystems. It</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>has several powerful features:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "has several powerful features"
     },
     {
       "id": "Q14",
@@ -194,11 +207,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain how two methods can be defined in a class and how can the user calls it from main program? Illustrate with an example. [15x1 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how two methods can be defined in a class and how the user calls them from the main</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>program. Illustrate with an example. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Java, methods are defined inside a class to perform specific tasks. These methods can be called</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from the main() method using an object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Defining Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods are defined using:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>returnType methodName(parameters) { // body }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Calling Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods are called using an object:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>objectName.methodName();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give an Example Program</li></ul>",
+      "question": "Explain how two methods can be defined in a class and how can the user calls it from main program? Illustrate with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how two methods can be defined in a class and how the user calls them from the main</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>program. Illustrate with an example. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Java, methods are defined inside a class to perform specific tasks. These methods can be called</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from the main() method using an object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Defining Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods are defined using:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>returnType methodName(parameters) { // body }</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Calling Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Methods are called using an object:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>objectName.methodName();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give an Example Program</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Give an Example Program"
     }
   ]
 }

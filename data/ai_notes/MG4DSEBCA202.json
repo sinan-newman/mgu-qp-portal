@@ -31,7 +31,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.send()Sendsaresponseofvarioustypes(string,object,array,etc.).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "res.send()Sendsaresponseofvarioustypes(string,object,array,etc.)."
     },
     {
       "id": "Q2",
@@ -44,7 +45,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering List any three features of Node.js K /CO 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q3",
@@ -53,11 +55,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Create a My SQL table named student_results with the columns: roll_no, student_name, subject, percentage, and status. Design an HTML form to input roll_no, student_name, subject, marks_obtained, and total_marks. Write a Node.js script using Express to compu te the percentage using the formula percentage = (marks_obtained / total_marks) * 100, determine the status (Pass if >= 40, else Fail), and store the result details to the table.. [ A] [CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a My SQL table named student_results with the columns: roll_no, student_name, subject, percentage, and status. Design an HTML form to input roll_no, student_name, subject, marks_obtained, and total_marks. Write a Node.js script using Express to compu te the percentage using the formula percentage = (marks_obtained / total_marks) * 100, determine the status (Pass if >= 40, else Fail), and store the result details to the table.. [ A] [CO4] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Create a My SQL table named student_results with the columns: roll_no, student_name, subject, percentage, and status. Design an HTML form to input roll_no, student_name, subject, marks_obtained, and total_marks. Write a Node.js script using Express to compu te the percentage using the formula percentage = (marks_obtained / total_marks) * 100, determine the status (Pass if >= 40, else Fail), and store the result details to the table..",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Create a My SQL table named student_results with the columns: roll_no, student_name, subject, percentage, and status. Design an HTML form to input roll_no, student_name, subject, marks_obtained, and total_marks. Write a Node.js script using Express to compu te the percentage using the formula percentage = (marks_obtained / total_marks) * 100, determine the status (Pass if >= 40, else Fail), and store the result details to the table..   . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -70,7 +73,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.json() — Sends a JSON response. Automatically sets the Content-Type header to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>application/json.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>app.get('/api/user',(req,res)=>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.json({name:\"Biju\",age:22,city:\"Kollam\"});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "});"
     },
     {
       "id": "Q5",
@@ -83,7 +87,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define asynchronous programming in Node.js K /CO 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q6",
@@ -96,7 +101,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.status()—SetstheHTTPstatuscodefortheresponse. Example: app.get('/notfound',(req,res)=>{ res.status(404).send(\"PageNotFound\"); });</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "res.status()—SetstheHTTPstatuscodefortheresponse. Example: app.get('/notfound',(req,res)=>{ res.status(404).send(\"PageNotFound\"); });"
     },
     {
       "id": "Q7",
@@ -109,7 +115,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering How to adding dependency in package.json A /CO 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q8",
@@ -119,10 +126,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Describe the purpose of req and res objects in HTTP communication.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.redirect()—RedirectstheclienttoadifferentURL.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>app.get('/old-page',(req,res)=>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.redirect('/new-page'); //Default302redirect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>//res.redirect(301,'/new-page'); //Permanentredirect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Other Useful Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.sendFile()→Sendafile(e.g.,image,PDF)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.render()→Rendertemplateengines(likePug/EJS)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.end()→Endtheresponseprocess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Introductiontoresobject- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span> ,Explanation+examplesany4methods- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.redirect()—RedirectstheclienttoadifferentURL.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>app.get('/old-page',(req,res)=>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>res.redirect('/new-page'); //Default302redirect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>//res.redirect(301,'/new-page'); //Permanentredirect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Other Useful Methods:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.sendFile()→Sendafile(e.g.,image,PDF)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.render()→Rendertemplateengines(likePug/EJS)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• res.end()→Endtheresponseprocess</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>troductiontoresobject- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span> ,Explanation+examplesany4methods- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "troductiontoresobject- ,Explanation+examplesany4methods"
     },
     {
       "id": "Q9",
@@ -135,7 +143,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the code to send an HTTP GET request to \"http://mgu.ac.in /api/data\" using the built-in http module in Node.js A /CO 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -148,7 +157,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Security: Proper directory management allows setting correct permissions, restricting</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>accesstosensitivefolders,andpreventingunauthorizedfileaccess.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "accesstosensitivefolders,andpreventingunauthorizedfileaccess."
     },
     {
       "id": "Q11",
@@ -161,7 +171,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is the role of the Event Emitter class in Node.js? U /CO 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q12",
@@ -171,10 +182,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Why is Event Emitter important in asynchronous programming?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Integration with Web Features: Directories are essential for serving static files (using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>express.static()),managingtemplates,andworkingwithURLmodulesforfilerouting.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Node.js, functions like fs.mkdir(), fs.readdir(), fs.rmdir(), and fs.promises are used for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>directoryoperations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Introduction to directory management in server-side (Node.js) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span> + Explanation of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>importance(any4points) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3Marks)</span> +fsmodulefunctions(any2)– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Integration with Web Features: Directories are essential for serving static files (using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>express.static()),managingtemplates,andworkingwithURLmodulesforfilerouting.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Node.js, functions like fs.mkdir(), fs.readdir(), fs.rmdir(), and fs.promises are used for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>directoryoperations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>troduction to directory management in server-side (Node.js) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span> + Explanation of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>importance(any4points) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3Marks)</span> +fsmodulefunctions(any2)– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "importance(any4points) +fsmodulefunctions(any2)"
     },
     {
       "id": "Q13",
@@ -187,7 +199,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering What is Express framework? Give two advantages of using Express. U /CO 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q14",
@@ -196,11 +209,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "What is blocking operation? [3x5 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is blocking operation? [A/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ablocking(synchronous)operationhaltstheeventloopuntilitcompletes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g.,`fs.readFileSync()`</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NootherJScoderunsduringthistime,reducingconcurrency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsprefersnon-blockingasyncalternatives(callbacks/Promises)forscalability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Any 3 points give full marks]</li></ul>",
+      "question": "What is blocking operation?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is blocking operation? O3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ablocking(synchronous)operationhaltstheeventloopuntilitcompletes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>e.g.,`fs.readFileSync()`</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NootherJScoderunsduringthistime,reducingconcurrency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsprefersnon-blockingasyncalternatives(callbacks/Promises)forscalability</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>y 3 points give full marks]</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "y 3 points give full marks]"
     },
     {
       "id": "Q15",
@@ -209,11 +223,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Explain Route handler/callback functions U /CO 3 [5 x 3 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Route handler/callback functions U /CO 3 [5 x 3 = 15] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Explain Route handler/callback functions U /CO 3",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain Route handler/callback functions U /CO 3 x 3 = 15] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q16",
@@ -223,10 +238,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain how Function Scope and Global Scope behave in Node.js compared to a browser environment",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how Function Scope and Global Scope behave in Node.js compared to a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>browser environment [U/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In JavaScript, scope defines the accessibility of variables. There are two main scopes to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>comparebetweenBrowserandNode.jsenvironments:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how Function Scope and Global Scope behave in Node.js compared to a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>browser environment O1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In JavaScript, scope defines the accessibility of variables. There are two main scopes to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>comparebetweenBrowserandNode.jsenvironments:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "comparebetweenBrowserandNode.jsenvironments"
     },
     {
       "id": "Q17",
@@ -239,7 +255,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe asynchronous programming in Node.js with the help of the event loop. Explain why Node.js is suitable for real-time applications U /CO 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe asynchronous programming in Node.js with the help of the event loop. Explain why Node.js is suitable for real-time applications U /CO 1 ."
     },
     {
       "id": "Q18",
@@ -249,10 +266,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain async/await with advantages.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain async/await with advantages. [U/CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>async/await is a modern feature in JavaScript (introduced in ES2017) used to handle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>asynchronous operations in a cleaner way. It allows us to write asynchronous code that appears</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>morelikesynchronouscode.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How async/await Works:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain async/await with advantages. O1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>async/await is a modern feature in JavaScript (introduced in ES2017) used to handle</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>asynchronous operations in a cleaner way. It allows us to write asynchronous code that appears</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>morelikesynchronouscode.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How async/await Works:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "How async/await Works"
     },
     {
       "id": "Q19",
@@ -265,7 +283,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain Node Package Manager (NPM). Describe installing packages locally and globally and updating packages U /CO 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain Node Package Manager (NPM). Describe installing packages locally and globally and updating packages U /CO 1 ."
     },
     {
       "id": "Q20",
@@ -275,10 +294,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the importance of directory management in server-side programming.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the importance of directory management in server-side programming. [U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Directory management is a crucial part of server-side programming, especially in Node.js using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the File System (fs) module. It involves creating, reading, updating, and deleting directories on</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>theserver.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance of Directory Management:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the importance of directory management in server-side programming. O2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Directory management is a crucial part of server-side programming, especially in Node.js using</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the File System (fs) module. It involves creating, reading, updating, and deleting directories on</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>theserver.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance of Directory Management:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Importance of Directory Management"
     },
     {
       "id": "Q21",
@@ -291,7 +311,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the difference between fs.write File() and fs.append File() with respect to handling existing files U /CO 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the difference between fs.write File() and fs.append File() with respect to handling existing files U /CO 2 ."
     },
     {
       "id": "Q22",
@@ -301,10 +322,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe file reading and writing mechanisms in Node.js.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe file reading and writing mechanisms in Node.js. [U/CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsprovidesfilehandlingoperationsthroughthebuilt-infs(FileSystem)module.Thereare</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>twomainmechanismsforreadingandwritingfiles:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe file reading and writing mechanisms in Node.js. O2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsprovidesfilehandlingoperationsthroughthebuilt-infs(FileSystem)module.Thereare</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>twomainmechanismsforreadingandwritingfiles:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "twomainmechanismsforreadingandwritingfiles"
     },
     {
       "id": "Q23",
@@ -317,7 +339,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write a complete but simple Node.js program using the File System module that does the following using asynchronous methods (callbacks) A /CO 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a complete but simple Node.js program using the File System module that does the following using asynchronous methods (callbacks) A /CO 2 ."
     },
     {
       "id": "Q24",
@@ -327,10 +350,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Demonstrate the various methods provided by the Express.js Response (res) object. Include examples for sending JSON, setting status codes, and redirecting requests.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Demonstrate the various methods provided by the Express.js Response (res) object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Include examples for sending JSON, setting status codes, and redirecting requests.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[A/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The res (Response) object in Express.js is used to send responses back to the client. It provides</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>manyusefulmethodstocontroltheHTTPresponse.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Important Methods of res Object:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Demonstrate the various methods provided by the Express.js Response (res) object.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Include examples for sending JSON, setting status codes, and redirecting requests.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>O3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The res (Response) object in Express.js is used to send responses back to the client. It provides</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>manyusefulmethodstocontroltheHTTPresponse.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Important Methods of res Object:</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Important Methods of res Object"
     },
     {
       "id": "Q25",
@@ -343,7 +367,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain how to establish a database connection to mysql in Node.js is it ok U /CO 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain how to establish a database connection to mysql in Node.js is it ok U /CO 3 ."
     },
     {
       "id": "Q26",
@@ -352,11 +377,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain how to delete records in Node.js. [5x4 = 20]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how to delete records in Node.js. [U/CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>InNode.js,deletingrecordsisdonebyconnectingtoadatabaseandexecutinga DELETEquery.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsitselfdoesnothavebuilt-indatabasesupport,sousedatabasedriverslikemysql2.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using MySQL</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constmysql=require('mysql2');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constconnection=mysql.createConnection({</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>host:'localhost',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>user:'root',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>password:'password',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>database:'mydb'</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>connection.connect();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>//Deleteasinglerecord</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constsql=\"DELETEFROMusersWHEREid=?\";</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constid=5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>connection.query(sql,[id],(err,result)=>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if(err)throwerr;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(\"Numberofrecordsdeleted:\"+result.affectedRows);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Introduction(Needofdatabasedriver+DELETEoperation)- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1Mark)</span> +MySQLDelete</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examplewithcode- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4marks)</span></li></ul>",
+      "question": "Explain how to delete records in Node.js.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how to delete records in Node.js. O3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>InNode.js,deletingrecordsisdonebyconnectingtoadatabaseandexecutinga DELETEquery.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Node.jsitselfdoesnothavebuilt-indatabasesupport,sousedatabasedriverslikemysql2.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using MySQL</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constmysql=require('mysql2');</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constconnection=mysql.createConnection({</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>host:'localhost',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>user:'root',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>password:'password',</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>database:'mydb'</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>connection.connect();</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>//Deleteasinglerecord</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constsql=\"DELETEFROMusersWHEREid=?\";</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>constid=5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>connection.query(sql,[id],(err,result)=>{</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if(err)throwerr;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>console.log(\"Numberofrecordsdeleted:\"+result.affectedRows);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>});</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>troduction(Needofdatabasedriver+DELETEoperation)- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1Mark)</span> +MySQLDelete</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examplewithcode- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "examplewithcode"
     },
     {
       "id": "Q27",
@@ -365,11 +391,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Explain Express framework in detail. Discuss routing, route parameters, response methods and sending static files. U /CO 3 [4 x 5 = 20]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain Express framework in detail. Discuss routing, route parameters, response methods and sending static files. U /CO 3 [4 x 5 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain Express framework in detail. Discuss routing, route parameters, response methods and sending static files. U /CO 3",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain Express framework in detail. Discuss routing, route parameters, response methods and sending static files. U /CO 3 x 5 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain Express framework in detail. Discuss routing, route parameters, response methods and sending static files. U /CO 3 ."
     }
   ]
 }

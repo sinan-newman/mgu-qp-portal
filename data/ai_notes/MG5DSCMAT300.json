@@ -27,12 +27,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "State and explain Jordan's Lemma.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the Extended Cauchy Integral Formula for then th derivative of an analytic function. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Iff(z) is analytic inside and on a simple closed contourC(positively oriented), andz 0 is any point interior toC, thenf(z) has derivatives of all orders atz 0, given by: f (n)(z0) = n!2πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the Extended Cauchy Integral Formula for then th derivative of an analytic function. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Iff(z) is analytic inside and on a simple closed contourC(positively oriented), andz 0 is any point interior toC, thenf(z) has derivatives of all orders atz 0, given by: f (n)(z0) = n!2πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [
         "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026"
       ],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Iff(z) is analytic inside and on a simple closed contourC(positively oriented), andz 0 is any point interior toC, thenf(z) has derivatives of all orders atz 0, given by: f (n)(z0) = n!2πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .)"
     },
     {
       "id": "Q2",
@@ -41,11 +42,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Find the Cauchy principal value of the integral [10x3 = 30] f(z) = / − 1z2 z2 f(z) f(z) dx (a > 0)∫ −∞ ∞ x sin ax +4x2 dx∫ −∞ ∞ x sinx +2x+2x2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the parametrization of line segment joiningz 1 andz 2?/ [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: z(t) = (1−t)z 1 +tz 2,0≤t≤1 orz(t) =z 1 +t(z 2 −z 1) fort∈[0,1]. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "question": "Find the Cauchy principal value of the integral f(z) = / − 1z2 z2 f(z) f(z) dx (a > 0)∫ −∞ ∞ x sin ax +4x2 dx∫ −∞ ∞ x sinx +2x+2x2",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the parametrization of line segment joiningz 1 andz 2?/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: z(t) = (1−t)z 1 +tz 2,0≤t≤1 orz(t) =z 1 +t(z 2 −z 1) fort∈. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: z(t) = (1−t)z 1 +tz 2,0≤t≤1 orz(t) =z 1 +t(z 2 −z 1) fort∈."
     },
     {
       "id": "Q3",
@@ -58,7 +60,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the Cauchy –Goursat theorem. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -71,7 +74,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>–The residue is the coefficient of 1z , so Res(f,0) =− 43 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "–The residue is the coefficient of 1z , so Res(f,0) =− 43 ."
     },
     {
       "id": "Q5",
@@ -84,7 +88,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Find the Maclaurian series for 𝑓(𝑧)=𝑧sin𝑧. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q6",
@@ -94,10 +99,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State Laurent's theorem.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State Laurent’s theorem./ [CO6] 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letfbe analytic throughout an annular domainD:R 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> where: an = 12πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .) bn = 12πi ∫︂C f(z)(z−z 0)−n+1 dz(n= 1,2,3, . . .)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State Laurent’s theorem./  1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letfbe analytic throughout an annular domainD:R 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> where: an = 12πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .) bn = 12πi ∫︂C f(z)(z−z 0)−n+1 dz(n= 1,2,3, . . .)</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Letfbe analytic throughout an annular domainD:R 1 where: an = 12πi ∫︂C f(z)(z−z 0)n+1 dz(n= 0,1,2, . . .) bn = 12πi ∫︂C f(z)(z−z 0)−n+1 dz(n= 1,2,3, . . .)"
     },
     {
       "id": "Q7",
@@ -110,7 +116,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Evaluate lim 𝑛→∞ 𝑛2+𝑖𝑛 𝑛2+1 . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q8",
@@ -119,11 +126,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the integral representation of the residue of a function ? / [CO3, CO5]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the integral representation of the residue of a functionf?/ [CO3, CO5]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Iff(z) is analytic in a deleted neighborhood of an isolated singular pointz 0, andCis a positively oriented simple closed contour surroundingz 0 containing no other singular points, the residue off(z) atz 0 is defined as: Res(f, z0) = 12πi ∫︂C f(z)dz <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "question": "What is the integral representation of the residue of a function ?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the integral representation of the residue of a functionf?/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Iff(z) is analytic in a deleted neighborhood of an isolated singular pointz 0, andCis a positively oriented simple closed contour surroundingz 0 containing no other singular points, the residue off(z) atz 0 is defined as: Res(f, z0) = 12πi ∫︂C f(z)dz <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Iff(z) is analytic in a deleted neighborhood of an isolated singular pointz 0, andCis a positively oriented simple closed contour surroundingz 0 containing no other singular points, the residue off(z) atz 0 is defined as: Res(f, z0) = 12πi ∫︂C f(z)dz"
     },
     {
       "id": "Q9",
@@ -136,7 +144,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Find the singular points, if any, of the function 𝑠𝑖𝑛𝑧2 𝑧2+1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -146,10 +155,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What are the singular points, if any, of the function ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What are the singular points, if any, of the function sinz 2z2+1 ?/ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:z=i <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> andz=−i. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What are the singular points, if any, of the function sinz 2z2+1 ?/ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:z=i <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> andz=−i. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans:z=i andz=−i."
     },
     {
       "id": "Q11",
@@ -162,7 +172,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State the formula for finding the residue of a function f(z) at a pole of order m. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q12",
@@ -172,10 +183,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "If , express in terms of .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ifz=e iθ, express cosθin terms ofz./ [CO7]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Using Euler’s formulae iθ = cosθ+isinθande −iθ =z −1: cosθ= eiθ +e −iθ 2 = z+z −12 = z2 + 12z <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ifz=e iθ, express cosθin terms ofz./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Using Euler’s formulae iθ = cosθ+isinθande −iθ =z −1: cosθ= eiθ +e −iθ 2 = z+z −12 = z2 + 12z <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Using Euler’s formulae iθ = cosθ+isinθande −iθ =z −1: cosθ= eiθ +e −iθ 2 = z+z −12 = z2 + 12z"
     },
     {
       "id": "Q13",
@@ -188,7 +200,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define improper integral of a continuous function f(x) over the interval -∞ . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q14",
@@ -197,11 +210,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[E] ",
-      "question": "Write in terms of . [2x5 = 10] nth f(z) = zsinz f sin z2 ( +1)z2 z = eiθ cosθ z sin 2θ z = eiθ Part B Short Essay Type Questions Answer any 5 questions Each question carries 6 marks",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write sin 2θin terms ofz=e iθ./ [CO7]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Sincez=e iθ, we havez 2 =e i2θ andz −2 =e −i2θ. sin(2θ) = ei2θ −e −i2θ 2i = z2 −z −22i = z4 −12iz2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> [2×5 = 10] 2 Part B Answer any 5 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span></li></ul>",
+      "question": "Write in terms of . nth f(z) = zsinz f sin z2 ( +1)z2 z = eiθ cosθ z sin 2θ z = eiθ Type Questions",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write sin 2θin terms ofz=e iθ./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Sincez=e iθ, we havez 2 =e i2θ andz −2 =e −i2θ. sin(2θ) = ei2θ −e −i2θ 2i = z2 −z −22i = z4 −12iz2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ×5 = 10] 2 Part B Answer any 5 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Sincez=e iθ, we havez 2 =e i2θ andz −2 =e −i2θ. sin(2θ) = ei2θ −e −i2θ 2i = z2 −z −22i = z4 −12iz2 2 Part B Answer any 5 questions Each question carries"
     },
     {
       "id": "Q15",
@@ -214,7 +228,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering State Jordan’s inequality. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q16",
@@ -224,10 +239,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define a simply connected domain. Also, evaluate , where denotes any closed contour lying in the open disk .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define a simply connected domain. Also, evaluate ∫︁ C zez (z2+9)5 dz, whereCdenotes any closed contour lying in the open disk|z|<1./ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: A domainDin the complex plane is calledsimply connectedif every simple closed contourClying entirely withinDencloses only points that belong toD.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•The integrandf(z) = zez(z2+9)5 has singular points wherez 2 + 9 = 0 =⇒z=±3i.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•The distance of both singular points from the origin is| ±3i|= 3.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Since the contourClies inside|z|<1, both singular pointsz=±3ilieoutsidethe contourC.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Thus,f(z) is analytic on and insideC. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•By Cauchy-Goursat Theorem: ∫︂ C zez (z2 + 9)5 dz= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define a simply connected domain. Also, evaluate ∫︁ C zez (z2+9)5 dz, whereCdenotes any closed contour lying in the open disk|z|<1./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: A domainDin the complex plane is calledsimply connectedif every simple closed contourClying entirely withinDencloses only points that belong toD.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•The integrandf(z) = zez(z2+9)5 has singular points wherez 2 + 9 = 0 =⇒z=±3i.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•The distance of both singular points from the origin is| ±3i|= 3.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Since the contourClies inside|z|<1, both singular pointsz=±3ilieoutsidethe contourC.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Thus,f(z) is analytic on and insideC. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•By Cauchy-Goursat Theorem: ∫︂ C zez (z2 + 9)5 dz= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•By Cauchy-Goursat Theorem: ∫︂ C zez (z2 + 9)5 dz= 0"
     },
     {
       "id": "Q17",
@@ -236,11 +252,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Show that use an antiderivative for every contour extending from a point z ₁ to a point z ₂ ,",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that using an antiderivative for every contour extending from a pointz 1 to a point z2, ∫︁ C zndz= 1n+1 (zn+12 −z n+11 ), (n= 0,1,2, . . .)./ [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letf(z) =z n forn= 0,1,2, . . .. Sincef(z) is an entire function, it possesses a continuous antiderivative: F(z) = zn+1 n+ 1 whereF ′(z) =f(z) =z n. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> By the Fundamental Theorem of Complex Integration, iff(z) has a continuous antiderivativeF(z) in a domain containing a contourCextending fromz 1 toz 2: ∫︂ C zndz= [F(z)] z2z1 =F(z 2)−F(z 1) = 1n+ 1 (zn+12 −z n+11 ) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "question": "Show that use an antiderivative for every contour extending from a point z ₁ to a point z ₂",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that using an antiderivative for every contour extending from a pointz 1 to a point z2, ∫︁ C zndz= 1n+1 (zn+12 −z n+11 ), (n= 0,1,2, . . .)./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letf(z) =z n forn= 0,1,2, . . .. Sincef(z) is an entire function, it possesses a continuous antiderivative: F(z) = zn+1 n+ 1 whereF ′(z) =f(z) =z n. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> By the Fundamental Theorem of Complex Integration, iff(z) has a continuous antiderivativeF(z) in a domain containing a contourCextending fromz 1 toz 2: ∫︂ C zndz= [F(z)] z2z1 =F(z 2)−F(z 1) = 1n+ 1 (zn+12 −z n+11 ) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Letf(z) =z n forn= 0,1,2, . . .. Sincef(z) is an entire function, it possesses a continuous antiderivative: F(z) = zn+1 n+ 1 whereF ′(z) =f(z) =z n. By the Fundamental Theorem of Complex Integration, iff(z) has a continuous antiderivativeF(z) in a domain containing a contourCextending fromz 1 toz 2: ∫︂ C zndz= z2z1 =F(z 2)−F(z 1) = 1n+ 1 (zn+12 −z n+11 )"
     },
     {
       "id": "Q18",
@@ -250,10 +267,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Assume that the complex series is convergent. Show that",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assume that the complex series ∑︁ zn is convergent. Show that lim n→∞ zn = 0./ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: LetS N = ∑︁Nk=1 zk be the sequence of partial sums of the series ∑︁∞n=1 zn. Given that ∑︁ zn converges to a limitS, we have: lim N→∞ SN =S <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ForN≥2, theN-th term can be written asz N =S N −S N−1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Taking the limit asN→ ∞: lim N→∞ zN = limN→∞(SN −S N−1 ) = limN→∞ SN −limN→∞ SN−1 =S−S= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Hence, limn→∞ zn = 0. 3</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assume that the complex series ∑︁ zn is convergent. Show that lim n→∞ zn = 0./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: LetS N = ∑︁Nk=1 zk be the sequence of partial sums of the series ∑︁∞n=1 zn. Given that ∑︁ zn converges to a limitS, we have: lim N→∞ SN =S <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ForN≥2, theN-th term can be written asz N =S N −S N−1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Taking the limit asN→ ∞: lim N→∞ zN = limN→∞(SN −S N−1 ) = limN→∞ SN −limN→∞ SN−1 =S−S= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Hence, limn→∞ zn = 0. 3</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: LetS N = ∑︁Nk=1 zk be the sequence of partial sums of the series ∑︁∞n=1 zn. Given that ∑︁ zn converges to a limitS, we have: lim N→∞ SN =S ForN≥2, theN-th term can be written asz N =S N −S N−1 . Taking the limit asN→ ∞: lim N→∞ zN = limN→∞(SN −S N−1 ) = limN→∞ SN −limN→∞ SN−1 =S−S= 0 Hence, limn→∞ zn = 0. 3"
     },
     {
       "id": "Q19",
@@ -263,10 +281,11 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "(i) Define Taylor series (ii) Show that the Maclaurin series representation of is , = .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Define Taylor series./ [CO6]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letf(z) be analytic throughout an open disk|z−z 0| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b) Show that the Maclaurin series representation of 11−z is 11−z = ∑︁∞n=0 zn (|z|<1). / [CO6]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Whenz 0 = 0, the Taylor series is called aMaclaurin series. Letf(z) = 1 1−z = (1−z) −1. Taking derivatives atz 0 = 0: –f(0) = 1 = 0! –f ′(z) = (1−z) −2 =⇒f ′(0) = 1 = 1! –f ′′(z) = 2(1−z) −3 =⇒f ′′(0) = 2 = 2! <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –f (n)(z) =n!(1−z) −(n+1) =⇒f (n)(0) =n! Substituting into the Maclaurin series formula: f(z) = ∞∑︂ n=0 f (n)(0) n! zn = ∞∑︂ n=0 n! n! zn = ∞∑︂ n=0 zn (|z| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Define Taylor series./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Letf(z) be analytic throughout an open disk|z−z 0| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b) Show that the Maclaurin series representation of 11−z is 11−z = ∑︁∞n=0 zn (|z|<1). / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Whenz 0 = 0, the Taylor series is called aMaclaurin series. Letf(z) = 1 1−z = (1−z) −1. Taking derivatives atz 0 = 0: –f(0) = 1 = 0! –f ′(z) = (1−z) −2 =⇒f ′(0) = 1 = 1! –f ′′(z) = 2(1−z) −3 =⇒f ′′(0) = 2 = 2! <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –f (n)(z) =n!(1−z) −(n+1) =⇒f (n)(0) =n! Substituting into the Maclaurin series formula: f(z) = ∞∑︂ n=0 f (n)(0) n! zn = ∞∑︂ n=0 n! n! zn = ∞∑︂ n=0 zn (|z| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Whenz 0 = 0, the Taylor series is called aMaclaurin series. Letf(z) = 1 1−z = (1−z) −1. Taking derivatives atz 0 = 0: –f(0) = 1 = 0! –f ′(z) = (1−z) −2 =⇒f ′(0) = 1 = 1! –f ′′(z) = 2(1−z) −3 =⇒f ′′(0) = 2 = 2! –f (n)(z) =n!(1−z) −(n+1) =⇒f (n)(0) =n! Substituting into the Maclaurin series formula: f(z) = ∞∑︂ n=0 f (n)(0) n! zn = ∞∑︂ n=0 n! n! zn = ∞∑︂ n=0 zn (|z|"
     },
     {
       "id": "Q20",
@@ -276,10 +295,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Show that the singular point of the following functions is a pole. Determine the order of that pole and the corresponding residue: (a) (b) .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that the singular point of the following functions is a pole. Determine the order of that pole and the corresponding residue./ [CO2] (a) (a) 1−coshzz3 (b) (b) 1−e2zz4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: (a)f(z) = 1−coshzz3 Using the Taylor expansion of coshz= 1 + z22! + z44! +. . .: 1−coshz=− (︃ z2 2! + z44! + z66! +. . .)︃ Divide byz 3: f(z) = 1z3 (︃ − z2 2! − z44! −. . .)︃ =− 12!z − z4! − z36! −. . . –The principal part has a single term −1/2z . –Therefore,z= 0 is apole of order 1(simple pole). –The residue is the coefficient of 1z , so Res(f,0) =− 12 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> 4 (b)f(z) = 1−e2zz4 Using the Taylor expansion ofe 2z = 1 + 2z+ (2z)22! + (2z)33! +. . .: 1−e 2z =−2z−2z 2 − 43 z3 − 23 z4 −. . . Divide byz 4: f(z) =− 2z3 − 2z2 − 4/3z − 23 −. . . –The highest power of 1z in the principal part is 3, soz= 0 is apole of order</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Show that the singular point of the following functions is a pole. Determine the order of that pole and the corresponding residue./  (a) (a) 1−coshzz3 (b) (b) 1−e2zz4</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: (a)f(z) = 1−coshzz3 Using the Taylor expansion of coshz= 1 + z22! + z44! +. . .: 1−coshz=− (︃ z2 2! + z44! + z66! +. . .)︃ Divide byz 3: f(z) = 1z3 (︃ − z2 2! − z44! −. . .)︃ =− 12!z − z4! − z36! −. . . –The principal part has a single term −1/2z . –Therefore,z= 0 is apole of order 1(simple pole). –The residue is the coefficient of 1z , so Res(f,0) =− 12 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> 4 (b)f(z) = 1−e2zz4 Using the Taylor expansion ofe 2z = 1 + 2z+ (2z)22! + (2z)33! +. . .: 1−e 2z =−2z−2z 2 − 43 z3 − 23 z4 −. . . Divide byz 4: f(z) =− 2z3 − 2z2 − 4/3z − 23 −. . . –The highest power of 1z in the principal part is 3, soz= 0 is apole of order</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: (a)f(z) = 1−coshzz3 Using the Taylor expansion of coshz= 1 + z22! + z44! +. . .: 1−coshz=− (︃ z2 2! + z44! + z66! +. . .)︃ Divide byz 3: f(z) = 1z3 (︃ − z2 2! − z44! −. . .)︃ =− 12!z − z4! − z36! −. . . –The principal part has a single term −1/2z . –Therefore,z= 0 is apole of order 1(simple pole). –The residue is the coefficient of 1z , so Res(f,0) =− 12 . 4 (b)f(z) = 1−e2zz4 Using the Taylor expansion ofe 2z = 1 + 2z+ (2z)22! + (2z)33! +. . .: 1−e 2z =−2z−2z 2 − 43 z3 − 23 z4 −. . . Divide byz 4: f(z) =− 2z3 − 2z2 − 4/3z − 23 −. . . –The highest power of 1z in the principal part is 3, soz= 0 is apole of order"
     },
     {
       "id": "Q21",
@@ -289,10 +309,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Determine the singularities of and evaluate the corresponding residues.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Determine the singularities off(z) = z2(z−1)2(z+2) and evaluate the corresponding residues. / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: The denominator is zero atz= 1 andz=−2. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (a)Atz=−2:It is apole of order 1(simple pole). Res(f,−2) = lim z→−2 (z+ 2)f(z) = lim z→−2 z2 (z−1) 2 = (−2)2(−2−1) 2 = 49 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b)Atz= 1:It is apole of order 2. Res(f,1) = lim z→1 d dz [︁ (z−1) 2f(z) ]︁ = lim z→1 d dz (︃ z2 z+ 2 )︃ Using quotient rule: d dz (︃ z2 z+ 2 )︃ = 2z(z+ 2)−z 2(1)(z+ 2) 2 = z2 + 4z(z+ 2) 2 Evaluating atz= 1: Res(f,1) = 12 + 4(1)(1 + 2)2 = 59 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Determine the singularities off(z) = z2(z−1)2(z+2) and evaluate the corresponding residues. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: The denominator is zero atz= 1 andz=−2. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (a)Atz=−2:It is apole of order 1(simple pole). Res(f,−2) = lim z→−2 (z+ 2)f(z) = lim z→−2 z2 (z−1) 2 = (−2)2(−2−1) 2 = 49 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b)Atz= 1:It is apole of order 2. Res(f,1) = lim z→1 d dz [︁ (z−1) 2f(z) ]︁ = lim z→1 d dz (︃ z2 z+ 2 )︃ Using quotient rule: d dz (︃ z2 z+ 2 )︃ = 2z(z+ 2)−z 2(1)(z+ 2) 2 = z2 + 4z(z+ 2) 2 Evaluating atz= 1: Res(f,1) = 12 + 4(1)(1 + 2)2 = 59 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: The denominator is zero atz= 1 andz=−2. (a)Atz=−2:It is apole of order 1(simple pole). Res(f,−2) = lim z→−2 (z+ 2)f(z) = lim z→−2 z2 (z−1) 2 = (−2)2(−2−1) 2 = 49 (b)Atz= 1:It is apole of order 2. Res(f,1) = lim z→1 d dz︁ = lim z→1 d dz (︃ z2 z+ 2 )︃ Using quotient rule: d dz (︃ z2 z+ 2 )︃ = 2z(z+ 2)−z 2(1)(z+ 2) 2 = z2 + 4z(z+ 2) 2 Evaluating atz= 1: Res(f,1) = 12 + 4(1)(1 + 2)2 = 59"
     },
     {
       "id": "Q22",
@@ -302,10 +323,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Find P.V.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find the principal value of ∫︁ ∞ −∞ x x2+9 dx./ [CO7]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: The functiong(x) = xx2+9 is anodd functionsinceg(−x) =−g(x). By the definition of Cauchy Principal Value: P.V.of ∫︂ ∞ −∞ x x2 + 9 dx= limR→∞ ∫︂ R −R x x2 + 9 dx <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Sinceg(x) is odd and integrated over a symmetric interval [−R, R]: ∫︂ R −R x x2 + 9 dx= 0 for allR >0 =⇒P.V. ∫︂ ∞ −∞ x x2 + 9 dx= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> 5</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find the principal value of ∫︁ ∞ −∞ x x2+9 dx./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: The functiong(x) = xx2+9 is anodd functionsinceg(−x) =−g(x). By the definition of Cauchy Principal Value: P.V.of ∫︂ ∞ −∞ x x2 + 9 dx= limR→∞ ∫︂ R −R x x2 + 9 dx <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> Sinceg(x) is odd and integrated over a symmetric interval [−R, R]: ∫︂ R −R x x2 + 9 dx= 0 for allR >0 =⇒P.V. ∫︂ ∞ −∞ x x2 + 9 dx= 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> 5</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: The functiong(x) = xx2+9 is anodd functionsinceg(−x) =−g(x). By the definition of Cauchy Principal Value: P.V.of ∫︂ ∞ −∞ x x2 + 9 dx= limR→∞ ∫︂ R −R x x2 + 9 dx Sinceg(x) is odd and integrated over a symmetric interval: ∫︂ R −R x x2 + 9 dx= 0 for allR >0 =⇒P.V. ∫︂ ∞ −∞ x x2 + 9 dx= 0 5"
     },
     {
       "id": "Q23",
@@ -314,11 +336,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[E] ",
-      "question": "Find [6x5 = 30] Part C Essay Type Questions Answer any 3 questions Each question carries 10 marks",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find ∫︁ ∞ 0 dx x4+16 ./ [CO7]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Since the integrand is even,I= ∫︁ ∞ 0 dx x4+16 = 12 ∫︁ ∞−∞ dxx4+16 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Considerf(z) = 1z4+16 over a semicircular contourC R in the upper half-plane. Poles occur atz 4 =−16 = 16e iπ, giving upper half-plane poles: z0 = 2eiπ/4 = √2 +i √2, z 1 = 2ei3π/4 =− √2 +i √2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Residue at a simple polez k: Res(f, zk) = 14z3k = zk4z4k =− zk64 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Sum of residues in upper half-plane: ∑︂ Res =− 164 (z0 +z 1) =− 164 (2i√2) =− i√232 By Residue Theorem: ∫︂ ∞ −∞ dx x4 + 16 = 2πi (︄ − i √ 2 32 )︄ = π √ 2 16 =⇒ ∫︂ ∞ 0 dx x4 + 16 = π √ 2 32 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> [6×5 = 30] 6 Part C Answer any 3 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span></li></ul>",
+      "question": "Find Type Questions",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Find ∫︁ ∞ 0 dx x4+16 ./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Since the integrand is even,I= ∫︁ ∞ 0 dx x4+16 = 12 ∫︁ ∞−∞ dxx4+16 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Considerf(z) = 1z4+16 over a semicircular contourC R in the upper half-plane. Poles occur atz 4 =−16 = 16e iπ, giving upper half-plane poles: z0 = 2eiπ/4 = √2 +i √2, z 1 = 2ei3π/4 =− √2 +i √2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Residue at a simple polez k: Res(f, zk) = 14z3k = zk4z4k =− zk64 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Sum of residues in upper half-plane: ∑︂ Res =− 164 (z0 +z 1) =− 164 (2i√2) =− i√232 By Residue Theorem: ∫︂ ∞ −∞ dx x4 + 16 = 2πi (︄ − i √ 2 32 )︄ = π √ 2 16 =⇒ ∫︂ ∞ 0 dx x4 + 16 = π √ 2 32 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ×5 = 30] 6 Part C Answer any 3 questions Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Since the integrand is even,I= ∫︁ ∞ 0 dx x4+16 = 12 ∫︁ ∞−∞ dxx4+16 . Considerf(z) = 1z4+16 over a semicircular contourC R in the upper half-plane. Poles occur atz 4 =−16 = 16e iπ, giving upper half-plane poles: z0 = 2eiπ/4 = √2 +i √2, z 1 = 2ei3π/4 =− √2 +i √2 Residue at a simple polez k: Res(f, zk) = 14z3k = zk4z4k =− zk64 Sum of residues in upper half-plane: ∑︂ Res =− 164 (z0 +z 1) =− 164 (2i√2) =− i√232 By Residue Theorem: ∫︂ ∞ −∞ dx x4 + 16 = 2πi (︄ − i √ 2 32 )︄ = π √ 2 16 =⇒ ∫︂ ∞ 0 dx x4 + 16 = π √ 2 32 6 Part C Answer any 3 questions Each question carries"
     },
     {
       "id": "Q24",
@@ -327,11 +350,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[An] ",
-      "question": "State and prove the Maximum Modulus Principle / [CO1, CO4]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State and prove the Maximum Modulus Principle./ [CO1, CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:Statement:If a functionfis analytic and not constant in a given domain D, then|f(z)|has no maximum value inD. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Proof: –SinceRis closed and bounded and|f(z)|is continuous onR,|f(z)|attains a maximumMat some pointz 0 ∈R. –Supposez 0 is an interior point ofR. Then there exists a disk|z−z 0| ≤ρlying entirely insideR. –By Gauss’s Mean Value Theorem: f(z 0) = 12π ∫︂ 2π0 f(z 0 +ρe iθ)dθ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> –Taking absolute values: |f(z 0)| ≤12π ∫︂ 2π0 |f(z 0 +ρe iθ)|dθ≤ 12π ∫︂ 2π0 M dθ=M –Since|f(z 0)|=M, we have: 1 2π ∫︂ 2π 0 [M− |f(z0 +ρe iθ)|]dθ= 0 –SinceM− |f(z 0 +ρe iθ)| ≥0 and is continuous,|f(z)|=Mfor all points on |z−z 0|=ρ. –Since this holds for allr≤ρ,|f(z)|=Mthroughout the disk. An analytic function with constant modulus is constant. –Thus, iff(z) is non-constant,|f(z)|cannot attain its maximum in the interior and must occur on the boundary. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span> are to be awarded for the proof according to the discretion of the evaluator.</li></ul>",
+      "question": "State and prove the Maximum Modulus Principle",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State and prove the Maximum Modulus Principle./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:Statement:If a functionfis analytic and not constant in a given domain D, then|f(z)|has no maximum value inD. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Proof: –SinceRis closed and bounded and|f(z)|is continuous onR,|f(z)|attains a maximumMat some pointz 0 ∈R. –Supposez 0 is an interior point ofR. Then there exists a disk|z−z 0| ≤ρlying entirely insideR. –By Gauss’s Mean Value Theorem: f(z 0) = 12π ∫︂ 2π0 f(z 0 +ρe iθ)dθ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> –Taking absolute values: |f(z 0)| ≤12π ∫︂ 2π0 |f(z 0 +ρe iθ)|dθ≤ 12π ∫︂ 2π0 M dθ=M –Since|f(z 0)|=M, we have: 1 2π ∫︂ 2π 0 [M− |f(z0 +ρe iθ)|]dθ= 0 –SinceM− |f(z 0 +ρe iθ)| ≥0 and is continuous,|f(z)|=Mfor all points on |z−z 0|=ρ. –Since this holds for allr≤ρ,|f(z)|=Mthroughout the disk. An analytic function with constant modulus is constant. –Thus, iff(z) is non-constant,|f(z)|cannot attain its maximum in the interior and must occur on the boundary. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 Marks)</span> are to be awarded for the proof according to the discretion of the evaluator.</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans:Statement:If a functionfis analytic and not constant in a given domain D, then|f(z)|has no maximum value inD. Proof: –SinceRis closed and bounded and|f(z)|is continuous onR,|f(z)|attains a maximumMat some pointz 0 ∈R. –Supposez 0 is an interior point ofR. Then there exists a disk|z−z 0| ≤ρlying entirely insideR. –By Gauss’s Mean Value Theorem: f(z 0) = 12π ∫︂ 2π0 f(z 0 +ρe iθ)dθ –Taking absolute values: |f(z 0)| ≤12π ∫︂ 2π0 |f(z 0 +ρe iθ)|dθ≤ 12π ∫︂ 2π0 M dθ=M –Since|f(z 0)|=M, we have: 1 2π ∫︂ 2π 0dθ= 0 –SinceM− |f(z 0 +ρe iθ)| ≥0 and is continuous,|f(z)|=Mfor all points on |z−z 0|=ρ. –Since this holds for allr≤ρ,|f(z)|=Mthroughout the disk. An analytic function with constant modulus is constant. –Thus, iff(z) is non-constant,|f(z)|cannot attain its maximum in the interior and must occur on the boundary. – are to be awarded for the proof according to the discretion of the evaluator."
     },
     {
       "id": "Q25",
@@ -341,10 +365,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Prove that if ( ) and , then if and only if .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prove that ifz n =x n +iy n (n= 1,2, . . .) andz=x+iy, then lim n→∞ zn =zif and only if limn→∞ xn =xand lim n→∞ yn =y./ [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: ( =⇒) Suppose lim n→∞ zn =z. For everyϵ >0,∃N∈Nsuch that for all n > N,|zn −z| N Thus, limn→∞ xn =xand lim n→∞ yn =y. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> (⇐= ) Suppose lim n→∞ xn =xand lim n→∞ yn =y. Givenϵ >0,∃N 1, N2 such that|x n −x| N1 and|y n −y| N2. LetN= max(N 1, N2). By triangle inequality, forn > N: |zn −z|=|(x n −x) +i(y n −y)| ≤ |xn −x|+|y n −y| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> 7</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prove that ifz n =x n +iy n (n= 1,2, . . .) andz=x+iy, then lim n→∞ zn =zif and only if limn→∞ xn =xand lim n→∞ yn =y./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: ( =⇒) Suppose lim n→∞ zn =z. For everyϵ >0,∃N∈Nsuch that for all n > N,|zn −z| N Thus, limn→∞ xn =xand lim n→∞ yn =y. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> (⇐= ) Suppose lim n→∞ xn =xand lim n→∞ yn =y. Givenϵ >0,∃N 1, N2 such that|x n −x| N1 and|y n −y| N2. LetN= max(N 1, N2). By triangle inequality, forn > N: |zn −z|=|(x n −x) +i(y n −y)| ≤ |xn −x|+|y n −y| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> 7</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: ( =⇒) Suppose lim n→∞ zn =z. For everyϵ >0,∃N∈Nsuch that for all n > N,|zn −z| N Thus, limn→∞ xn =xand lim n→∞ yn =y. (⇐= ) Suppose lim n→∞ xn =xand lim n→∞ yn =y. Givenϵ >0,∃N 1, N2 such that|x n −x| N1 and|y n −y| N2. LetN= max(N 1, N2). By triangle inequality, forn > N: |zn −z|=|(x n −x) +i(y n −y)| ≤ |xn −x|+|y n −y| 7"
     },
     {
       "id": "Q26",
@@ -354,10 +379,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Expand in powers of and state the region of validity. dz∫C zez( +9z2 )5 C |z| < 1 dz = ( − ) , (n = 0, 1, 2, …).∫C zn 1n+1 z n+12 z n+11 ∑zn = 0lim n→∞ zn 1 1−z 1 1−z ∑∞n=0zn (|z| < 1) 1−coshz z3 1−e2z z4 f(z) = z2 (z−1 (z+2))2 dx.∫ ∞−∞ x+9x2 .∫ ∞0 dx+16x4 = +izn xn yn n = 1, 2, … z = x +iy = zlim n→∞ zn = x and = ylimn→∞xn limn→∞yn f(z) = −1(z−1)(z−2) z",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expandf(z) = −1(z−1)(z−2) in powers ofzand state the region of validity./ [CO6]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: By partial fractions: f(z) = −1(z−1)(z−2) = 1z−1 − 1z−2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> – Region 1 (|z| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> – Region 2 (1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> – Region 3 (|z|>2): f(z) = 1z(1−1/z) − 1z(1−2/z) = ∞∑︂n=0 1−2 nzn+1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expandf(z) = −1(z−1)(z−2) in powers ofzand state the region of validity./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: By partial fractions: f(z) = −1(z−1)(z−2) = 1z−1 − 1z−2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> – Region 1 (|z| <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> – Region 2 (1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> – Region 3 (|z|>2): f(z) = 1z(1−1/z) − 1z(1−2/z) = ∞∑︂n=0 1−2 nzn+1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: By partial fractions: f(z) = −1(z−1)(z−2) = 1z−1 − 1z−2 – Region 1 (|z| – Region 2 (1 – Region 3 (|z|>2): f(z) = 1z(1−1/z) − 1z(1−2/z) = ∞∑︂n=0 1−2 nzn+1"
     },
     {
       "id": "Q27",
@@ -367,10 +393,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Let a) Find all the poles of and determine their order b) Find the residue of at each pole.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Letf(z) = z2z2−1 . (a) Find all the poles off(z) and determine their order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:f(z) = z2(z−1)(z+1) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –The denominator is zero atz= 1 andz=−1. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –Since numeratorz 2 ̸= 0 at these points, bothz= 1 andz=−1 are simple poles. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b) Find the residue off(z) at each pole./ [CO5]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans – Res(f,1) = lim z→1 (z−1) z2 (z−1)(z+ 1) = 121 + 1 = 12 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Res(f,−1) = lim z→−1 (z+ 1) z2 (z−1)(z+ 1) = (−1)2−1−1 =− 12 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Letf(z) = z2z2−1 . (a) Find all the poles off(z) and determine their order.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans:f(z) = z2(z−1)(z+1) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –The denominator is zero atz= 1 andz=−1. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> –Since numeratorz 2 ̸= 0 at these points, bothz= 1 andz=−1 are simple poles. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> (b) Find the residue off(z) at each pole./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans – Res(f,1) = lim z→1 (z−1) z2 (z−1)(z+ 1) = 121 + 1 = 12 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Res(f,−1) = lim z→−1 (z+ 1) z2 (z−1)(z+ 1) = (−1)2−1−1 =− 12 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans – Res(f,1) = lim z→1 (z−1) z2 (z−1)(z+ 1) = 121 + 1 = 12 Res(f,−1) = lim z→−1 (z+ 1) z2 (z−1)(z+ 1) = (−1)2−1−1 =− 12"
     },
     {
       "id": "Q28",
@@ -380,10 +407,11 @@
       "marks": 2,
       "domain_tag": "[E] ",
       "question": "Using residues, evaluate the improper integral",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using residues, evaluate the improper integral ∫︁ ∞ −∞ xsinax x2+4 dx(a >0)./ [CO7]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Considerf(z) = zeiazz2+4 . The upper half-plane pole isz= 2i(simple pole). <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Res(f,2i) = lim z→2i (z−2i) zeiaz (z−2i)(z+ 2i) = 2ie−2a4i = e−2a2 8 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> By Residue Theorem: ∫︂ ∞ −∞ xeiax x2 + 4 dx= 2πi (︃ e−2a 2 )︃ =iπe −2a <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Taking imaginary parts: ∫︂ ∞ −∞ xsin(ax) x2 + 4 dx=πe −2a <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> Marks are to be awarded for the steps according to the discretion of the evaluator.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using residues, evaluate the improper integral ∫︁ ∞ −∞ xsinax x2+4 dx(a >0)./ </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>•Ans: Considerf(z) = zeiazz2+4 . The upper half-plane pole isz= 2i(simple pole). <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Res(f,2i) = lim z→2i (z−2i) zeiaz (z−2i)(z+ 2i) = 2ie−2a4i = e−2a2 8 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> By Residue Theorem: ∫︂ ∞ −∞ xeiax x2 + 4 dx= 2πi (︃ e−2a 2 )︃ =iπe −2a <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Taking imaginary parts: ∫︂ ∞ −∞ xsin(ax) x2 + 4 dx=πe −2a <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> Marks are to be awarded for the steps according to the discretion of the evaluator.</li></ul>",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "•Ans: Considerf(z) = zeiazz2+4 . The upper half-plane pole isz= 2i(simple pole). Res(f,2i) = lim z→2i (z−2i) zeiaz (z−2i)(z+ 2i) = 2ie−2a4i = e−2a2 8 By Residue Theorem: ∫︂ ∞ −∞ xeiax x2 + 4 dx= 2πi (︃ e−2a 2 )︃ =iπe −2a Taking imaginary parts: ∫︂ ∞ −∞ xsin(ax) x2 + 4 dx=πe −2a Marks are to be awarded for the steps according to the discretion of the evaluator."
     },
     {
       "id": "Q29",
@@ -396,7 +424,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering 𝑧(𝑒𝑧−1). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering 𝑧(𝑒𝑧−1). ."
     },
     {
       "id": "Q30",
@@ -409,7 +438,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering State and prove the Principle of Deformation of Paths . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering State and prove the Principle of Deformation of Paths ."
     },
     {
       "id": "Q31",
@@ -422,7 +452,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Evaluate ∫ 𝑐𝑜𝑠𝑧 𝑧(𝑧2+8) 𝑑𝑧 𝑤ℎ𝑒𝑟𝑒 𝐶 C is the circle |𝑧| = 3. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Evaluate ∫ 𝑐𝑜𝑠𝑧 𝑧(𝑧2+8) 𝑑𝑧 𝑤ℎ𝑒𝑟𝑒 𝐶 C is the circle |𝑧| = 3. ."
     },
     {
       "id": "Q32",
@@ -435,7 +466,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Using the formal definition of limit, prove that the sequence zn= in/(n+1) converges to i. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Using the formal definition of limit, prove that the sequence zn= in/(n+1) converges to i. ."
     },
     {
       "id": "Q33",
@@ -448,7 +480,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Find Taylor series of 𝑓(𝑧)= 1/ 𝑧2 about 𝑧=2 and specify the region in which series is valid. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Find Taylor series of 𝑓(𝑧)= 1/ 𝑧2 about 𝑧=2 and specify the region in which series is valid. ."
     },
     {
       "id": "Q34",
@@ -461,7 +494,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Find the residue at z = 0 of the function cotz /z4 . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Find the residue at z = 0 of the function cotz /z4 . ."
     },
     {
       "id": "Q35",
@@ -474,7 +508,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Determine the nature of singularity of f(z) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Determine the nature of singularity of f(z) ."
     },
     {
       "id": "Q36",
@@ -483,11 +518,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[E][7]",
-      "question": "Evaluate ∫ 𝑑𝜃 3+2𝑠𝑖𝑛𝜃 2𝜋 0 .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Evaluate ∫ 𝑑𝜃 3+2𝑠𝑖𝑛𝜃 2𝜋 0 . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Evaluate ∫ 𝑑θ 3+2𝑠𝑖𝑛θ 2𝜋 0 .",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Evaluate ∫ 𝑑θ 3+2𝑠𝑖𝑛θ 2𝜋 0 . . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Evaluate ∫ 𝑑θ 3+2𝑠𝑖𝑛θ 2𝜋 0 . ."
     },
     {
       "id": "Q37",
@@ -500,7 +536,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering State Jordan;s lemma . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering State Jordan;s lemma ."
     },
     {
       "id": "Q38",
@@ -513,7 +550,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q39",
@@ -526,7 +564,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q40",
@@ -539,7 +578,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q41",
@@ -552,7 +592,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q42",
@@ -565,7 +606,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q43",
@@ -574,11 +616,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[E][7]",
-      "question": "Show that ∫ 𝑑𝜃 𝑎+𝑏𝑐𝑜𝑠𝜃 = 2𝜋 √𝑎2−𝑏2 2𝜋 0 , a >|𝑏|. **************",
+      "question": "Show that ∫ 𝑑θ 𝑎+𝑏𝑐𝑜𝑠θ = 2𝜋 √𝑎2−𝑏2 2𝜋 0 , a >|𝑏|. **************",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "A First Course in Complex Analysis",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

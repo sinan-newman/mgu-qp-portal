@@ -30,7 +30,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Domain <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The set of all permitted atomic values for an attribute.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Defines the data type and valid range for a column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Examples: Domain of Age = positive integers 1–120; Domain of Department = {Science, Arts,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Commerce}.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Commerce}."
     },
     {
       "id": "Q2",
@@ -39,11 +40,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define a Database Management System and compare DBMS with RDBMS. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a Database Management System and compare DBMS with RDBMS. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Define a Database Management System and compare DBMS with RDBMS.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a Database Management System and compare DBMS with RDBMS.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q3",
@@ -56,7 +58,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Attribute <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A named column in a relation, associated with a specific domain.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Describes one property of the entity being stored.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example: STUDENT table has attributes StudentID, Name, Age, Department. Degree = number of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>attributes.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "attributes."
     },
     {
       "id": "Q4",
@@ -65,11 +68,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Explain the relationship between character, field, record, and file. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain the relationship between character, field, record, and file. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Explain the relationship between character, field, record, and file.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Explain the relationship between character, field, record, and file.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q5",
@@ -82,7 +86,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Tuple <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A single row in a relation representing one real-world entity instance.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Contains exactly one value per attribute.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example: (101, 'Arjun Menon', 20, 'Science') is one tuple in STUDENT. Cardinality = number of tuples.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Example: (101, 'Arjun Menon', 20, 'Science') is one tuple in STUDENT. Cardinality = number of tuples."
     },
     {
       "id": "Q6",
@@ -91,11 +96,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Write the difference between single-valued and multi-valued attributes. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the difference between single-valued and multi-valued attributes. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write the difference between single-valued and multi-valued attributes.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the difference between single-valued and multi-valued attributes.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q7",
@@ -108,7 +114,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Relation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• A complete two-dimensional table with a schema (structure) and an instance (current data).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Properties: all cell values are atomic; column names are unique; no duplicate rows; row/column order</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>does not matter.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example: STUDENT (StudentID, Name, Age, Department) — schema; all current student rows —</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instance.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "instance."
     },
     {
       "id": "Q8",
@@ -117,11 +124,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Distinguish between a candidate key and a primary key. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Distinguish between a candidate key and a primary key. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Distinguish between a candidate key and a primary key.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Distinguish between a candidate key and a primary key.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q9",
@@ -130,11 +138,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "List any four privileges that can be granted in My SQL. [2x5 = 10]",
+      "question": "List any four privileges that can be granted in My SQL.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List any four privileges that can be granted in MySQL. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALL PRIVILEGES</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Any 4 correct privileges — ½ mark each)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(Any 4 correct privileges — ½ mark each)"
     },
     {
       "id": "Q10",
@@ -143,11 +152,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define a table and a view in My SQL. [CO3] [5 x 2 = 10]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a table and a view in My SQL. [CO3] [5 x 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Define a table and a view in My SQL.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a table and a view in My SQL.  x 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q11",
@@ -160,7 +170,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how DBMS reduces data redundancy. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data redundancy = same data stored in multiple places, causing waste and inconsistency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• DBMS reduces redundancy through:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Centralised storage: All data stored once; all applications access the same source.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Normalisation: Tables are organised so each fact is stored exactly once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Foreign Keys: Tables reference each other instead of repeating data (e.g., DeptID in EMPLOYEE table</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>instead of full department details).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data Dictionary: DBMS tracks all stored data, preventing accidental duplication.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example: Student phone number stored once in STUDENT table; other tables refer by student ID only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for defining redundancy + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each for 4 methods)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for defining redundancy + each for 4 methods)"
     },
     {
       "id": "Q12",
@@ -169,11 +180,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Discuss the ACID properties of a DBMS. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the ACID properties of a DBMS. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Discuss the ACID properties of a DBMS.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Discuss the ACID properties of a DBMS.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Discuss the ACID properties of a DBMS. ."
     },
     {
       "id": "Q13",
@@ -186,7 +198,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between data and information with examples. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data: Raw, unprocessed facts with no meaning on their own.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Information: Processed, organised data that is meaningful and useful for decision-making.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Differences:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data is input; information is output of processing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data has no context; information has meaning and purpose.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data alone is not useful; information supports decisions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Examples:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data: 85, 70, 90 → Information: Marks of three students in Chemistry.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data: 9846000000 → Information: Mobile number of the lab assistant.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Data: Monday, 38, 12 → Information: On Monday, 38 attended class; 12 were late.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for definitions + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> for differences and examples)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for definitions + for differences and examples)"
     },
     {
       "id": "Q14",
@@ -195,11 +208,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[K] ",
-      "question": "Explain the role of a Database Administrator (DBA). [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the role of a Database Administrator (DBA). [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the role of a Database Administrator (DBA).",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the role of a Database Administrator (DBA).  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the role of a Database Administrator (DBA). ."
     },
     {
       "id": "Q15",
@@ -212,7 +226,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the role of end users with examples. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• End users are people who interact with the database regularly for their work tasks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Types:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Naive / Parametric Users: Perform routine pre-defined tasks via ready-made applications. e.g., bank</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>cashier processing transactions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Casual / Ad-hoc Users: Access database occasionally; may form their own queries. e.g., manager</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>running monthly attendance report.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Sophisticated Users: Write complex queries; familiar with database tools. e.g., data analyst or research</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scientist.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Standalone Users: Maintain personal small databases using desktop software. e.g., faculty member</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tracking marks in a personal database.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for definition + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each for any 4 types with examples)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for definition + each for any 4 types with examples)"
     },
     {
       "id": "Q16",
@@ -221,11 +236,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the difference between one-to-one, one-to-many, and many-to-many relationships. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the difference between one-to-one, one-to-many, and many-to-many relationships. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the difference between one-to-one, one-to-many, and many-to-many relationships.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the difference between one-to-one, one-to-many, and many-to-many relationships.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the difference between one-to-one, one-to-many, and many-to-many relationships. ."
     },
     {
       "id": "Q17",
@@ -238,7 +254,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe how referential integrity ensures the connection between two related tables. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Referential integrity ensures that a Foreign Key (FK) value in a child table always matches a valid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Primary Key (PK) value in the parent table, or is NULL.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Rules enforced:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Insertion rule: A record cannot be added to the child table with a FK value that does not exist in the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>parent table.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Deletion rule: A parent record cannot be deleted if child records still reference it.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Update rule: A PK value in the parent table cannot be changed if child records still refer to it (unless</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>CASCADE is set).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example: In a library DB, LOAN.MemberID (FK) references MEMBER.MemberID (PK). A loan</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>cannot be added for a non-existent member.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for definition + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> for rules/example)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for definition + for rules/example)"
     },
     {
       "id": "Q18",
@@ -247,11 +264,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain how functional dependency is used in normalization and describe First, Second, and Third Normal Forms. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain how functional dependency is used in normalization and describe First, Second, and Third Normal Forms. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain how functional dependency is used in normalization and describe First, Second, and Third Normal Forms.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain how functional dependency is used in normalization and describe First, Second, and Third Normal Forms.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain how functional dependency is used in normalization and describe First, Second, and Third Normal Forms. ."
     },
     {
       "id": "Q19",
@@ -264,7 +282,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe a scenario where partial dependency and transitive dependency occurs. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Table: ENROLMENT (StudentID, CourseID, StudentName, CourseName, Marks, DeptID, DeptName)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Primary Key: {StudentID, CourseID}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Partial Dependency:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• StudentName depends only on StudentID (part of PK) — not on the full composite key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• CourseName depends only on CourseID (part of PK) — not on the full composite key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Non-key attribute depends on only part of the composite primary key.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Transitive Dependency:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• DeptName depends on DeptID, and DeptID depends on StudentID.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• DeptName is not directly dependent on the primary key — it goes through a non-key attribute (DeptID).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Chain: {StudentID, CourseID} → DeptID → DeptName</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Fix: Decompose into STUDENT, COURSE, ENROLMENT (StudentID, CourseID, Marks),</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>DEPARTMENT tables.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> for partial dependency with example + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> for transitive dependency with example)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for partial dependency with example + for transitive dependency with example)"
     },
     {
       "id": "Q20",
@@ -273,11 +292,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Describe different My SQL data types with examples. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe different My SQL data types with examples. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Describe different My SQL data types with examples.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe different My SQL data types with examples.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe different My SQL data types with examples. ."
     },
     {
       "id": "Q21",
@@ -290,7 +310,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the difference between COUNT(*), COUNT(column), and COUNT(DISTINCT column) with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• COUNT(*): Counts all rows including rows with NULL values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT COUNT(*) FROM EMPLOYEE; -- returns total rows e.g. 10</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• COUNT(column): Counts only non-NULL values in the specified column.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT COUNT(Department) FROM EMPLOYEE; -- returns 8 if 2 rows have NULL</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>dept</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• COUNT(DISTINCT column): Counts only unique non-NULL values; duplicates counted once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT COUNT(DISTINCT Department) FROM EMPLOYEE; -- returns 3 if depts</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>are HR, IT, Finance</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each for definition + example of all three functions = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> ; <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for contrast; <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for clarity)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "each for definition + example of all three functions = ; for contrast; for clarity)"
     },
     {
       "id": "Q22",
@@ -299,11 +320,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write My SQL queries to demonstrate the use of aggregate functions such as COUNT, SUM, and AVG. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write My SQL queries to demonstrate the use of aggregate functions such as COUNT, SUM, and AVG. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Write My SQL queries to demonstrate the use of aggregate functions such as COUNT, SUM, and AVG.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write My SQL queries to demonstrate the use of aggregate functions such as COUNT, SUM, and AVG.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write My SQL queries to demonstrate the use of aggregate functions such as COUNT, SUM, and AVG. ."
     },
     {
       "id": "Q23",
@@ -312,11 +334,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the UPDATE statement in My SQL. Demonstrate how to update a single column, multiple columns, and update based on a condition with examples. [5x5 = 25]",
+      "question": "Explain the UPDATE statement in My SQL. Demonstrate how to update a single column, multiple columns, and update based on a condition with examples.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the UPDATE statement in MySQL. Demonstrate how to update a single column, multiple</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>columns, and update based on a condition with examples. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• UPDATE modifies existing records in a table.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Syntax: UPDATE table_name SET column = value WHERE condition;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Without WHERE, all rows are updated — usually unintended.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Update single column:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>UPDATE EMPLOYEE SET Salary = 35000 WHERE EmpID = 101;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) Update multiple columns:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>UPDATE EMPLOYEE SET Salary = 40000, Department = 'HR' WHERE EmpID = 102;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) Update based on condition (multiple rows):</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>UPDATE EMPLOYEE SET Salary = Salary * 1.10 WHERE Department = 'IT';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for syntax + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> each for 3 scenarios + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> for WHERE clause note)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "for syntax + each for 3 scenarios + for WHERE clause note)"
     },
     {
       "id": "Q24",
@@ -325,11 +348,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Create a table EMPLOYEE with suitable fields and demonstrate the use of INSERT, UPDATE, and DELETE commands. [CO3] [5 x 5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Create a table EMPLOYEE with suitable fields and demonstrate the use of INSERT, UPDATE, and DELETE commands. [CO3] [5 x 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Create a table EMPLOYEE with suitable fields and demonstrate the use of INSERT, UPDATE, and DELETE commands.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Create a table EMPLOYEE with suitable fields and demonstrate the use of INSERT, UPDATE, and DELETE commands.  x 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Create a table EMPLOYEE with suitable fields and demonstrate the use of INSERT, UPDATE, and DELETE commands. ."
     },
     {
       "id": "Q25",
@@ -342,7 +366,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the relational data model in detail. Describe domain, attribute, tuple, and relation with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• The relational data model (E.F. Codd, 1970) organises data as two-dimensional tables called relations.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• The relational data model (E.F. Codd, 1970) organises data as two-dimensional tables called relations."
     },
     {
       "id": "Q26",
@@ -351,11 +376,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain the Entity–Relationship (ER) model used in database design and illustrate it using a suitable ER diagram. [CO2]",
+      "question": "Explain the Entity–Relationship (ER) model used in database design and illustrate it using a suitable ER diagram.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q27",
@@ -364,11 +390,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[A] ",
-      "question": "Using the table EMPLOYEE(Emp ID, Name, Department, Salary), write SQL queries to demonstrate: (a) WHERE clause to filter employees with Salary > 30000, (b) ORDER BY to sort employees by Name, (c) GROUP BY to count employees per department, (d) HAVING to show departments with more than 2 employees, (e) LIKE to find employees whose name starts with 'A', (f) BETWEEN to find employees with salary between 20000 and 50000.Explain the purpose of each clause. [15x1 = 15]",
+      "question": "Using the table EMPLOYEE(Emp ID, Name, Department, Salary), write SQL queries to demonstrate: (a) WHERE clause to filter employees with Salary > 30000, (b) ORDER BY to sort employees by Name, (c) GROUP BY to count employees per department, (d) HAVING to show departments with more than 2 employees, (e) LIKE to find employees whose name starts with 'A', (f) BETWEEN to find employees with salary between 20000 and 50000.Explain the purpose of each clause.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Using EMPLOYEE(EmpID, Name, Department, Salary), write SQL queries for: (a) WHERE, (b) ORDER</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BY, (c) GROUP BY, (d) HAVING, (e) LIKE, (f) BETWEEN. Explain the purpose of each clause. (15</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Table: EMPLOYEE (EmpID, Name, Department, Salary)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) WHERE <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Filters rows based on a condition; only matching rows are returned.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT * FROM EMPLOYEE WHERE Salary > 30000;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns all employees earning more than 30,000.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) ORDER BY <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Sorts the result set. Default is ASC (ascending); use DESC for descending.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT * FROM EMPLOYEE ORDER BY Name ASC;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns all employees sorted alphabetically by name.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c) GROUP BY <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Groups rows with the same column value. Used with aggregate functions like COUNT, SUM,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AVG.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT Department, COUNT(*) AS EmpCount FROM EMPLOYEE GROUP BY Department;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns count of employees in each department.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(d) HAVING <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Filters groups formed by GROUP BY. Like WHERE but applied after grouping.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT Department, COUNT(*) AS EmpCount FROM EMPLOYEE</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>GROUP BY Department HAVING COUNT(*) > 2;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns only departments with more than 2 employees.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(e) LIKE <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Pattern matching on text columns. % = any number of characters; _ = exactly one character.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT * FROM EMPLOYEE WHERE Name LIKE 'A%';</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns all employees whose name starts with 'A' (e.g., Arjun, Amal, Athira).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(f) BETWEEN <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Purpose: Selects rows where a value falls within an inclusive range.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>SELECT * FROM EMPLOYEE WHERE Salary BETWEEN 20000 AND 50000;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Returns employees with salary from 20,000 to 50,000 (both values included).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> per clause: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> purpose + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> correct query + <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> output explanation)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sumaja Sasidharan</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Asst.Professor</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sree Sankara Vidyapeetom College</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Valayanchirangara</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Valayanchirangara"
     },
     {
       "id": "Q28",
@@ -377,11 +404,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Describe various My SQL command types used for database definition (DDL), manipulation (DML), and control (DCL). [CO3] [1 x 15 = 15]",
+      "question": "Describe various My SQL command types used for database definition (DDL), manipulation (DML), and control (DCL).",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "Introduction to Database Management System",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

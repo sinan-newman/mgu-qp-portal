@@ -29,7 +29,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Keywords – e.g., int, return, if</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Keywords – e.g., int, return, if"
     },
     {
       "id": "Q2",
@@ -42,7 +43,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identifiers – variable, function, array names</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Identifiers – variable, function, array names"
     },
     {
       "id": "Q3",
@@ -55,7 +57,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Constants – e.g., 10, 'A', 3.14</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Constants – e.g., 10, 'A', 3.14"
     },
     {
       "id": "Q4",
@@ -68,7 +71,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Strings – e.g., \"Hello\"</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Strings – e.g., \"Hello\""
     },
     {
       "id": "Q5",
@@ -81,7 +85,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operators – +, -, *, /, ==</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Operators – +, -, *, /, =="
     },
     {
       "id": "Q6",
@@ -94,7 +99,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Special symbols – {}, (), ;, ,, etc.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Special symbols – {}, (), ;, ,, etc."
     },
     {
       "id": "Q7",
@@ -107,7 +113,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Control structure for menu-driven program (c) switch case</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Control structure for menu-driven program (c) switch case"
     },
     {
       "id": "Q8",
@@ -120,7 +127,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Default return type of function (b) int</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Default return type of function (b) int"
     },
     {
       "id": "Q9",
@@ -133,7 +141,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Use of pointers, arrays, and strings (b) Accessed and manipulated more efficiently</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Use of pointers, arrays, and strings (b) Accessed and manipulated more efficiently"
     },
     {
       "id": "Q10",
@@ -142,11 +151,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "After declaring `struct Point p;`, what will be the initial value of its members `x` and `y`? a). 0 b). NULL c). an error d). random garbage values [1x10 = 10] Part B Short Answer Questions Answer any 4 questions Each question carries 5 marks",
+      "question": "After declaring `struct Point p;`, what will be the initial value of its members `x` and `y`? a). 0 b). NULL c). an error d). random garbage values Questions",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Initial value of struct members (d) random garbage values</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Total: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Total"
     },
     {
       "id": "Q11",
@@ -159,7 +169,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arithmetic operators in C Listing of three operators: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Explaining the function of each: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> × 3 = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• + → addition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• - → subtraction</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• * → multiplication</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• / → division</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• % → modulus (remainder)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• % → modulus (remainder)"
     },
     {
       "id": "Q12",
@@ -172,7 +183,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Local and global variables with same name The local variable takes precedence (shadowing) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Illustration: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> #include int x = 10; // global int main() { int x = 20; // local printf(\"%d\", x); // prints 20 return 0; } Example program: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Local and global variables with same name The local variable takes precedence (shadowing) – Illustration: #include int x = 10; // global int main() { int x = 20; // local printf(\"%d\", x); // prints 20 return 0; } Example program"
     },
     {
       "id": "Q13",
@@ -185,7 +197,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declaring pointer variables</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A pointer holds the address of a variable of the specified type – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declaration – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int *p; // pointer to int</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>char *ch; // pointer to char</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>float *fp; // pointer to float</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "float *fp; // pointer to float"
     },
     {
       "id": "Q14",
@@ -198,7 +211,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Role of header files</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Role of header files: They allow reuse of predefined library functions – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• : standard input/output functions (printf(), scanf()) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• : mathematical functions (sqrt(), pow(), sin()) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• : mathematical functions (sqrt(), pow(), sin())"
     },
     {
       "id": "Q15",
@@ -211,7 +225,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pointer initialization</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pointers must be initialized before dereferencing – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Initialization example: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int a = 5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int *p = &a; // p initialized with address of a</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "int *p = &a; // p initialized with address of a"
     },
     {
       "id": "Q16",
@@ -220,11 +235,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Write a program using continue to print only odd numbers between 1 and 20. [5x4 = 20] Part C Essay Questions Answer any 2 questions Each question carries 10 marks",
+      "question": "Write a program using continue to print only odd numbers between 1 and 20. Questions",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program using continue to print odd numbers 1–20 Program with proper usage of ‘continue’, correct logic but with errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> Logically correct program without errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> #include int main() { for (int i = 1; i <= 20; i++) { if (i % 2 == 0) continue; printf(\"%d \", i); } return 0; }</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Program using continue to print odd numbers 1–20 Program with proper usage of ‘continue’, correct logic but with errors – Logically correct program without errors – #include int main() { for (int i = 1; i <= 20; i++) { if (i % 2 == 0) continue; printf(\"%d \", i); } return 0; }"
     },
     {
       "id": "Q17",
@@ -237,7 +253,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C Tokens and Types</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition: C tokens are the smallest individual elements of a C program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listing of any four – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listing with examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Listing with examples and explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types:</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Types"
     },
     {
       "id": "Q18",
@@ -247,10 +264,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Write a C program to copy one string to another using the strcpy() function.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program to copy one string to another Program with proper usage of ‘strcpy()’, correct logic but with errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span> Logically correct program without errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> #include #include int main() { char src[100], dest[100]; printf(\"Enter a string: \"); gets(src); strcpy(dest, src); printf(\"Copied string: %s\", dest); return 0; }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program to copy one string to another Program with proper usage of ‘strcpy()’, correct logic but with errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span> Logically correct program without errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> #include #include int main() { char src, dest; printf(\"Enter a string: \"); gets(src); strcpy(dest, src); printf(\"Copied string: %s\", dest); return 0; }</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Program to copy one string to another Program with proper usage of ‘strcpy()’, correct logic but with errors – Logically correct program without errors – #include #include int main() { char src, dest; printf(\"Enter a string: \"); gets(src); strcpy(dest, src); printf(\"Copied string: %s\", dest); return 0; }"
     },
     {
       "id": "Q19",
@@ -263,7 +281,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program demonstrating function pointer Function pointers allow calling functions dynamically – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> Program – 6 Step by step explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> #include void display(int n) { printf(\"Number: %d\\n\", n); } int main() { void (*fp)(int); // function pointer declaration fp = display; // assigning function address fp(10); // calling function through pointer return 0; }</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Program demonstrating function pointer Function pointers allow calling functions dynamically – Program – 6 Step by step explanation – #include void display(int n) { printf(\"Number: %d\\n\", n); } int main() { void (*fp)(int); // function pointer declaration fp = display; // assigning function address fp(10); // calling function through pointer return 0; }"
     },
     {
       "id": "Q20",
@@ -272,11 +291,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Write a C program to check whether a given string is a palindrome or not. [10x2 = 20]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program to check palindrome string Program with correct logic but with errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span> Logically correct program without errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> (Input – 3, Process – 5, Output – 2) #include #include int main() { char str[100]; printf(\"Enter a string: \"); gets(str); int len = strlen(str), flag = 1; for (int i = 0; i < len / 2; i++) { if (str!= str[len - i - 1]) { flag = 0; break; } } if (flag) printf(\"Palindrome\"); else printf(\"Not a palindrome\"); return 0; }</li></ul>",
+      "question": "Write a C program to check whether a given string is a palindrome or not.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Program to check palindrome string Program with correct logic but with errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span> Logically correct program without errors – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 marks)</span> (Input – 3, Process – 5, Output – 2) #include #include int main() { char str; printf(\"Enter a string: \"); gets(str); int len = strlen(str), flag = 1; for (int i = 0; i < len / 2; i++) { if (str!= str[len - i - 1]) { flag = 0; break; } } if (flag) printf(\"Palindrome\"); else printf(\"Not a palindrome\"); return 0; }</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Program to check palindrome string Program with correct logic but with errors – Logically correct program without errors – (Input – 3, Process – 5, Output – 2) #include #include int main() { char str; printf(\"Enter a string: \"); gets(str); int len = strlen(str), flag = 1; for (int i = 0; i < len / 2; i++) { if (str!= str[len - i - 1]) { flag = 0; break; } } if (flag) printf(\"Palindrome\"); else printf(\"Not a palindrome\"); return 0; }"
     }
   ]
 }

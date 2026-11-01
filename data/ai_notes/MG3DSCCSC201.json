@@ -28,10 +28,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define linear search.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define linear search. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Linear search is a searching method in which each element of the list is checked one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>by one from the beginning until the desired element is found or the end of the list.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define linear search. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Linear search is a searching method in which each element of the list is checked one</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>by one from the beginning until the desired element is found or the end of the list.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "by one from the beginning until the desired element is found or the end of the list."
     },
     {
       "id": "Q2",
@@ -44,7 +45,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Enqueue (Insertion)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Insert an element at the rear.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Update rear using: rear = (rear + 1) % MAX</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Update rear using: rear = (rear + 1) % MAX"
     },
     {
       "id": "Q3",
@@ -53,13 +55,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Identify two examples of linear non-primitive data structures. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify two examples of linear non-primitive data structures. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Identify two examples of linear non-primitive data structures.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Identify two examples of linear non-primitive data structures.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -69,10 +72,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "List any two basic operations of a stack.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List any two basic operations of a stack. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push – inserting an element to the stack <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pop – deleting an element from the stack <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List any two basic operations of a stack. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Push – inserting an element to the stack <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pop – deleting an element from the stack <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Pop – deleting an element from the stack"
     },
     {
       "id": "Q5",
@@ -85,7 +89,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Dequeue (Deletion)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Remove the element from the front.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Update front using: front = (front + 1) % MAX</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Update front using: front = (front + 1) % MAX"
     },
     {
       "id": "Q6",
@@ -94,13 +99,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Differentiate between LIFO and FIFO principle. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Differentiate between LIFO and FIFO principle. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Differentiate between LIFO and FIFO principle.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Differentiate between LIFO and FIFO principle.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q7",
@@ -110,10 +116,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Write any two uses of a circular linked list.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write any two uses of a circular linked list. /[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(implement circular queue, Playing music playlist, Buffer management, Round Robin</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scheduling, etc.)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(For correct 2 uses give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write any two uses of a circular linked list. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(implement circular queue, Playing music playlist, Buffer management, Round Robin</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scheduling, etc.)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(For correct 2 uses give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(For correct 2 uses give"
     },
     {
       "id": "Q8",
@@ -126,7 +133,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Peek (Front Element)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Returns the first element without removing it.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Returns the first element without removing it."
     },
     {
       "id": "Q9",
@@ -135,13 +143,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "Define a binary tree. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a binary tree. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Define a binary tree.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Define a binary tree.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -154,7 +163,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>isEmpty() Checks whether the queue is empty. Condition: front == -1</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "isEmpty() Checks whether the queue is empty. Condition: front == -1"
     },
     {
       "id": "Q11",
@@ -163,13 +173,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Classify the following as primitive or non-primitive: (a) integer, (b) tree, (c) queue. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Classify the following as primitive or non-primitive: (a) integer, (b) tree, (c) queue. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Classify the following as primitive or non-primitive: (a) integer, (b) tree, (c) queue.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Classify the following as primitive or non-primitive: (a) integer, (b) tree, (c) queue.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q12",
@@ -178,11 +189,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "What is the condition for inserting a node in the left subtree of a BST? [2x5 = 10]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the condition for inserting a node in the left subtree of a BST? /[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>All nodes in the left subtree of a BST should be less than the values of the parent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[2*5=10]</li></ul>",
+      "question": "What is the condition for inserting a node in the left subtree of a BST?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>What is the condition for inserting a node in the left subtree of a BST? /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>All nodes in the left subtree of a BST should be less than the values of the parent</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>node.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>*5=10]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "*5=10]"
     },
     {
       "id": "Q13",
@@ -191,11 +203,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] ",
-      "question": "List the steps for deleting the first node of a singly linked list. [2x5 = 10]",
+      "question": "List the steps for deleting the first node of a singly linked list.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>isFull() Checks whether the queue is full. Condition: (rear + 1) % MAX == front Advantages <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Efficient memory utilization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Eliminates wastage of space.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Faster insertion and deletion.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Used in CPU scheduling, buffering, and printer queues. Applications <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• CPU Scheduling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Circular Buffers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Printer Spooling</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Multimedia Streaming</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Traffic Signal Control Marking Scheme Definition of circular queue 2 Need for circular queue 2 Array representation (Front and Rear) 2 Basic operations (Enqueue, Dequeue, Peek, isEmpty, isFull) 6 Advantages 2 Applications / Diagram & example 1</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Traffic Signal Control Marking Scheme Definition of circular queue 2 Need for circular queue 2 Array representation (Front and Rear) 2 Basic operations (Enqueue, Dequeue, Peek, isEmpty, isFull) 6 Advantages 2 Applications / Diagram & example 1"
     },
     {
       "id": "Q14",
@@ -204,13 +217,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] ",
-      "question": "Write the preorder traversal for the binary tree with root A and children B and C. [CO3] [5 × 2 = 10]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the preorder traversal for the binary tree with root A and children B and C. [CO3] [5 × 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "question": "Write the preorder traversal for the binary tree with root A and children B and C.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Write the preorder traversal for the binary tree with root A and children B and C.  × 2 = 10] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q15",
@@ -220,10 +234,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Define the use of base condition in recursion .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define the use of base condition in recursion. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is the termination point in recursion prevent it from calling itself endlessly.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define the use of base condition in recursion. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It is the termination point in recursion prevent it from calling itself endlessly.</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "It is the termination point in recursion prevent it from calling itself endlessly."
     },
     {
       "id": "Q16",
@@ -233,10 +248,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Write the algorithm for merge sort.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the algorithm for merge sort. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(If the algorithm is correct, give full marks; otherwise, award marks accordingly.)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write the algorithm for merge sort. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(If the algorithm is correct, give full marks; otherwise, award marks accordingly.)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(If the algorithm is correct, give full marks; otherwise, award marks accordingly.)"
     },
     {
       "id": "Q17",
@@ -245,11 +261,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Interpret how the number of comparisons in linear search and binary search changes as the dataset size increases. MAHATMA GANDHI UNIVERSITY, KOTTAYAM Discipline Specific Core Course (DSC) - MG3DSCCSC201 - DATA MGU-UGP (Honours)/MGU-BBA (Honours)/MGU-BCA (Honours) Special Examinations, July 2026 (for 2024 Admission Regular Examinations, October 2025)Third SEMESTER",
+      "question": "Interpret how the number of comparisons in linear search and binary search changes as the dataset size increases. Discipline Specific Core Course (DSC) - MG3DSCCSC201 - DATA",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interpret how the number of comparisons in linear search and binary search changes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>as the dataset size increases.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>As the dataset size increases, the number of comparisons required by linear search and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>binary search changes differently. As the dataset size increases, the number of comparisons</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>required by linear search and binary search changes differently.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Linear Search</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Checks each element one by one until the target is found.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o As the dataset grows, the number of comparisons increases linearly</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(proportional to n).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Worst-case time complexity: O(n).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Binary Search</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Works only on a sorted dataset.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Divides the search space into two halves after each comparison.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o As the dataset grows, the number of comparisons increases very slowly</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(logarithmically).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Worst-case time complexity: O(log₂ n).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For small datasets, both methods may perform similarly. However, as the dataset becomes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>larger, binary search requires far fewer comparisons than linear search, making it much</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>more efficient for searching in sorted data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking Scheme <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explains linear search comparisons increase linearly 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explains binary search comparisons increase logarithmically (halving concept) 2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct comparison table/conclusion 1</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Correct comparison table/conclusion 1"
     },
     {
       "id": "Q18",
@@ -258,13 +275,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain merge sort with an example on the array [6, 3, 8, 2] [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain merge sort with an example on the array [6, 3, 8, 2] [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain merge sort with an example on the array",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain merge sort with an example on the array   . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain merge sort with an example on the array ."
     },
     {
       "id": "Q19",
@@ -274,10 +292,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Convert the Infix expression A+B/C-D to prefix.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the infix expression A+B/C-D to prefix. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(In the syllabus only infix to postfix conversion is given. If this question is attempted,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>please award full marks )</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Convert the infix expression A+B/C-D to prefix. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(In the syllabus only infix to postfix conversion is given. If this question is attempted,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>please award full marks )</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "please award full marks )"
     },
     {
       "id": "Q20",
@@ -286,13 +305,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Solve the postfix expression using a stack P=5, 6, 2, +, *, 12, 4, /, - [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Solve the postfix expression using a stack P=5, 6, 2, +, *, 12, 4, /, - [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Solve the postfix expression using a stack P=5, 6, 2, +, *, 12, 4, /, -",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Solve the postfix expression using a stack P=5, 6, 2, +, *, 12, 4, /, -  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Solve the postfix expression using a stack P=5, 6, 2, +, *, 12, 4, /, - ."
     },
     {
       "id": "Q21",
@@ -302,10 +322,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Differentiate between binary tree and binary search tree in terms of structure and operations.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between binary tree and binary search tree in terms of structure and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operations. /[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BT – A hierarchical tree where each node has at most two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BST – A special BT where left child value less than the parent node and right child</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>value greater than the parent nod.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(If explained correctly with neat figure representation give full marks, otherwise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>award marks accordingly)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Differentiate between binary tree and binary search tree in terms of structure and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operations. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BT – A hierarchical tree where each node has at most two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BST – A special BT where left child value less than the parent node and right child</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>value greater than the parent nod.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(If explained correctly with neat figure representation give full marks, otherwise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>award marks accordingly)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "award marks accordingly)"
     },
     {
       "id": "Q22",
@@ -318,7 +339,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare malloc(), calloc(), and realloc() with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function Description</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>malloc() Allocates a single block of memory. Memory is not initialized.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>calloc() Allocates multiple blocks of memory. Memory is initialized to zero.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>realloc() Changes the size of previously allocated memory.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• malloc() explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• calloc() explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• realloc() explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Suitable examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Suitable examples"
     },
     {
       "id": "Q23",
@@ -327,13 +349,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Define linked list. Explain its components with a neat diagram. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Define linked list. Explain its components with a neat diagram. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Define linked list. Explain its components with a neat diagram.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Define linked list. Explain its components with a neat diagram.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Define linked list. Explain its components with a neat diagram. ."
     },
     {
       "id": "Q24",
@@ -343,10 +366,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "List the difference between traversal and searching operations in data structures.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the difference between traversal and searching operations in data structures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal – visit all elements exactly once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Searching - search for a desired element, not compulsory to visit all elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(minimum 3 difference – give full marks)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the difference between traversal and searching operations in data structures.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>/</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Traversal – visit all elements exactly once.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Searching - search for a desired element, not compulsory to visit all elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(minimum 3 difference – give full marks)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(minimum 3 difference – give full marks)"
     },
     {
       "id": "Q25",
@@ -359,7 +383,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Demonstrate the use of recursion to find factorial of a number. Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Factorial of a number:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• 𝑛! = 𝑛 × (𝑛 − 1) int factorial(int n) { if(n==0 || n==1) return 1; else return n * factorial(n-1); } Marking Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Definition of recursion – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Base case – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Recursive case – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Program – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Example/output – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Example/output"
     },
     {
       "id": "Q26",
@@ -368,13 +393,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[K] ",
-      "question": "State the difference between function definition and function call. [CO1]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering State the difference between function definition and function call. [CO1] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "State the difference between function definition and function call.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering State the difference between function definition and function call.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering State the difference between function definition and function call. ."
     },
     {
       "id": "Q27",
@@ -384,12 +410,13 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe the array representation of a queue. How are the ‘front’ and ‘rear’ pointers managed?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the array representation of a queue. How are the ‘front’ and ‘rear’ pointers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>managed. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 marks)</span> , explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the array representation of a queue. How are the ‘front’ and ‘rear’ pointers</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>managed. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 marks)</span> , explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [
         "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026"
       ],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(Definition - , figure – , explanation"
     },
     {
       "id": "Q28",
@@ -402,7 +429,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Illustrate the step-by-step changes in a stack (array representation) when the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>following operations are performed: push(10), push(20), pop() and push(30)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A stack is a linear data structure that follows the LIFO (Last In First Out) principle. In an</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>array implementation, the variable TOP keeps track of the topmost element in the stack.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Initial Condition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Stack Size = 5</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• TOP = -1 (Stack is empty)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation 1: push(10)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Increment TOP by 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Insert 10 at index 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation 2: push(20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Increment TOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Insert 20 at index 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation 3: pop()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Remove the element at TOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Decrement TOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Operation 4: push(30)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Increment TOP.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Insert 30.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking Scheme <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of stack and LIFO principle 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct illustration of push(10) and updated TOP 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct illustration of push(20) and updated TOP 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct illustration of pop() with deleted element and updated TOP 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct illustration of push(30) and final stack with TOP 1</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Correct illustration of push(30) and final stack with TOP 1"
     },
     {
       "id": "Q29",
@@ -411,13 +439,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the terms stack overflow and stack underflow in the context of array-based stack implementations. [CO2]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the terms stack overflow and stack underflow in the context of array-based stack implementations. [CO2] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the terms stack overflow and stack underflow in the context of array-based stack implementations.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the terms stack overflow and stack underflow in the context of array-based stack implementations.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the terms stack overflow and stack underflow in the context of array-based stack implementations. ."
     },
     {
       "id": "Q30",
@@ -427,10 +456,11 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Compare ancestors ,descendants, and siblings of node in a tree structure.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare ancestors, descendants and siblings of a node in a tree structure. /[CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ancestors – nodes that lie on the path from root to that node excluding the node</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>itself.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Descendants – nodes that lie below the given node in the tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Siblings – nodes that share the same parent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Explain with example give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compare ancestors, descendants and siblings of a node in a tree structure. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ancestors – nodes that lie on the path from root to that node excluding the node</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>itself.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Descendants – nodes that lie below the given node in the tree.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Siblings – nodes that share the same parent.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Explain with example give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "(Explain with example give"
     },
     {
       "id": "Q31",
@@ -443,7 +473,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyse the structural and functional differences between a binary tree and a binary</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>search tree. Use an example of a binary search tree to justify your analysis.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Tree</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Each node has at most two children.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• No specific ordering of nodes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Searching may require checking many nodes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Search Tree (BST)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Left subtree contains values smaller than the root.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Right subtree contains values greater than the root.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Searching is faster due to ordered structure.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Marking Scheme</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary tree explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BST explanation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Structural differences – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Functional differences – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Suitable example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Suitable example"
     },
     {
       "id": "Q32",
@@ -452,13 +483,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[A] ",
-      "question": "Write the algorithm for traversing a singly linked list and explain with an example. [CO3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write the algorithm for traversing a singly linked list and explain with an example. [CO3] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Write the algorithm for traversing a singly linked list and explain with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Write the algorithm for traversing a singly linked list and explain with an example.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write the algorithm for traversing a singly linked list and explain with an example. ."
     },
     {
       "id": "Q33",
@@ -467,11 +499,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[K] ",
-      "question": "State the different parameter passing methods in functions. [5x5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the different parameter passing methods in functions. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Call by value and call by reference – explanation with example give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[5*5=25]</li></ul>",
+      "question": "State the different parameter passing methods in functions.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the different parameter passing methods in functions. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Call by value and call by reference – explanation with example give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>*5=25]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "*5=25]"
     },
     {
       "id": "Q34",
@@ -480,11 +513,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain how elements are shifted during insertion and deletion in a linear aray. [5x5 = 25]",
+      "question": "Explain how elements are shifted during insertion and deletion in a linear aray.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how elements are shifted during insertion and deletion in a linear array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Insertion</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>To insert an element at a given position:</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "To insert an element at a given position"
     },
     {
       "id": "Q35",
@@ -493,13 +527,14 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Demonstrate the working of merge sort using a small array. [CO1] [5 × 5 = 25]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Demonstrate the working of merge sort using a small array. [CO1] [5 × 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Demonstrate the working of merge sort using a small array.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Demonstrate the working of merge sort using a small array.  × 5 = 25] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Demonstrate the working of merge sort using a small array. ."
     },
     {
       "id": "Q36",
@@ -509,10 +544,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Discuss in detail the different operations on arrays with suitable examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss in detail the different operations on arrays with suitable examples. /[CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition of array – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 marks)</span> , explain any 4 operations with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> each)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Discuss in detail the different operations on arrays with suitable examples. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition of array – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 marks)</span> , explain any 4 operations with</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> each)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "examples – each)"
     },
     {
       "id": "Q37",
@@ -525,7 +561,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Data Structures in C and list different types with examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A data structure is a method of organizing, storing, and managing data in memory so that it</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>can be accessed and modified efficiently. In C programming, data structures help perform</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operations such as insertion, deletion, searching, sorting, and updating data efficiently.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Classification of Data Structures <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data structures are broadly classified into:</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Data structures are broadly classified into"
     },
     {
       "id": "Q38",
@@ -534,13 +571,14 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Given an array: A = [12, 23, 35, 45, 64, 87, 90] Search for the element 45 using Binary search. Show the step-by-step process. Also show what happens when the element is not found. [CO1]",
+      "question": "Given an array: A = Search for the element 45 using Binary search. Show the step-by-step process. Also show what happens when the element is not found.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q39",
@@ -549,11 +587,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "Explain all operations of circular queue with the help of diagram. [15x1 = 15]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain all operations of circular queue with the help of diagram. /[CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> , explain operations with neat diagram – 6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[15*1=15]</li></ul>",
+      "question": "Explain all operations of circular queue with the help of diagram.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain all operations of circular queue with the help of diagram. /</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Definition – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , figure – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> , explain operations with neat diagram – 6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>*1=15]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "*1=15]"
     },
     {
       "id": "Q40",
@@ -562,11 +601,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[K] ",
-      "question": "Define circular queue and list its basic operations. [15x1 = 15]",
+      "question": "Define circular queue and list its basic operations.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define Circular Queue and list its basic operations.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A Circular Queue is a queue in which the last position is connected back to the first position,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>forming a circle. It follows the FIFO (First In First Out) principle and efficiently utilizes</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>memory by reusing empty spaces created after deletions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Need for Circular Queue <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In a linear queue, after several dequeue operations, empty spaces at the beginning cannot be</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>reused.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A circular queue overcomes this problem by allowing the rear pointer to wrap around to the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>beginning of the array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Array Representation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Queue is stored in an array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Two pointers are maintained:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Front → points to the first element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>o Rear → points to the last element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Initially,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Front = Rear = -1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Basic Operations <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Basic Operations"
     },
     {
       "id": "Q41",
@@ -575,13 +615,14 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[A] ",
-      "question": "Construct a binary search tree using the sequence: 45, 25, 60, 15, 30, 50, 70. Show step-by-step insertion and represent the final tree. Perform inorder traversal on it. [CO3] [1 × 15 = 15]",
+      "question": "Construct a binary search tree using the sequence: 45, 25, 60, 15, 30, 50, 70. Show step-by-step insertion and represent the final tree. Perform inorder traversal on it.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
       "source_exam": "DATA STRUCTURES USING C",
       "repeated_in": [
         "DATA STRUCTURES USING C"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

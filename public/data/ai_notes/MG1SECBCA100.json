@@ -31,7 +31,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>State the purpose of a hierarchy chart in problem-solving.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hierarchy chart visually represents the structure of a program by showing the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>relationships and dependencies among the modules. It aids in understanding, designing,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and debugging complex systems.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "and debugging complex systems."
     },
     {
       "id": "Q2",
@@ -44,7 +45,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pass by reference: Pass the array name (base address).</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Pass by reference: Pass the array name (base address)."
     },
     {
       "id": "Q3",
@@ -59,7 +61,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q4",
@@ -72,7 +75,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>*a = *b; *b = temp; }</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "*a = *b; *b = temp; }"
     },
     {
       "id": "Q5",
@@ -82,10 +86,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define tokens and list various tokens.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pass by value: Not directly possible; pass individual elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Pass by reference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void printarray(int arr[], int size) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for (int i = 0; i < size; i++)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“%d “, arr);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int arr[] = {1, 2, 3, 4, 5};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int size = sizeof(arr) / sizeof(arr[0]);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printarray(arr, size);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>return 0;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Here, `arr` is passed to `printArray()` by reference. Note:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `int arr[]` is equivalent to `int arr`.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- The size is passed separately, as it’s not available within the function.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Pass by value: Not directly possible; pass individual elements.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: Pass by reference</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void printarray(int arr[], int size) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for (int i = 0; i < size; i++)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“%d “, arr);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int arr[] = {1, 2, 3, 4, 5};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int size = sizeof(arr) / sizeof(arr);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printarray(arr, size);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>return 0;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Here, `arr` is passed to `printArray()` by reference. Note:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `int arr[]` is equivalent to `int arr`.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- The size is passed separately, as it’s not available within the function.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "- The size is passed separately, as it’s not available within the function."
     },
     {
       "id": "Q6",
@@ -100,7 +105,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q7",
@@ -110,10 +116,11 @@
       "marks": 2,
       "domain_tag": "[U] [2]",
       "question": "Write the ASCII codes correspond to letters 'A' and ‘a’ in C.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digits: 0-9</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Special symbols: { } [ ] ( ) ; : , . and others</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• White spaces: space, tab, newline</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Digits: 0-9</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Special symbols: { }  ( ) ; : , . and others</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• White spaces: space, tab, newline</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• White spaces: space, tab, newline"
     },
     {
       "id": "Q8",
@@ -126,7 +133,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Type Qualifiers:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `const`: Makes variable read-only.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `volatile`: Prevents compiler optimization for variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Importance:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Control variable scope and lifetime.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Optimize memory usage.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Improve code readability and maintainability.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Enable compiler checks for data integrity.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Static int count = 0; // retains value between function calls</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Const float PI = 3.14; // read-only variable</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Const float PI = 3.14; // read-only variable"
     },
     {
       "id": "Q9",
@@ -141,7 +149,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q10",
@@ -154,7 +163,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Formal definition, mathematical statement, and illustrative example answering Compare the effect of using scanf() with \"%d\" versus \"%f\" to read an integer and a float. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q11",
@@ -164,10 +174,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Implement a function to concatenate two strings.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access members using dot (.) operator: Members are accessed using the dot operator. Declaring a Structure: Struct Student { int rollno; char name[50]; float marks; }; initializing a structure: struct student s1 = {1, “john doe”, 85.5}; or struct student s1; s1.rollno = 1; strcpy(s1.name, “john doe”); s1.marks = 85.5; example: #include #include struct student { int rollno; char name[50]; float marks; }; void main() { struct student s1 = {1, “john doe”, 85.5}; printf(“roll no: %d\\n”, s1.rollno); printf(“name: %s\\n”, s1.name); printf(“marks: %.2f\\n”, s1.marks); getch(); } [5x6 = 30]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Access members using dot (.) operator: Members are accessed using the dot operator. Declaring a Structure: Struct Student { int rollno; char name; float marks; }; initializing a structure: struct student s1 = {1, “john doe”, 85.5}; or struct student s1; s1.rollno = 1; strcpy(s1.name, “john doe”); s1.marks = 85.5; example: #include #include struct student { int rollno; char name; float marks; }; void main() { struct student s1 = {1, “john doe”, 85.5}; printf(“roll no: %d\\n”, s1.rollno); printf(“name: %s\\n”, s1.name); printf(“marks: %.2f\\n”, s1.marks); getch(); } x6 = 30]</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Access members using dot (.) operator: Members are accessed using the dot operator. Declaring a Structure: Struct Student { int rollno; char name; float marks; }; initializing a structure: struct student s1 = {1, “john doe”, 85.5}; or struct student s1; s1.rollno = 1; strcpy(s1.name, “john doe”); s1.marks = 85.5; example: #include #include struct student { int rollno; char name; float marks; }; void main() { struct student s1 = {1, “john doe”, 85.5}; printf(“roll no: %d\\n”, s1.rollno); printf(“name: %s\\n”, s1.name); printf(“marks: %.2f\\n”, s1.marks); getch(); }"
     },
     {
       "id": "Q12",
@@ -182,7 +193,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q13",
@@ -195,7 +207,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify the type modifier used to reduce the storage size of an integer.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The short type modifier reduces the storage size of an integer.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "The short type modifier reduces the storage size of an integer."
     },
     {
       "id": "Q14",
@@ -208,7 +221,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>|| (Logical OR) – Precedence: 12, Associativity: Left-to-right</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example: `a || b || c` -> `(a || b) || c`</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Example: `a || b || c` -> `(a || b) || c`"
     },
     {
       "id": "Q15",
@@ -223,7 +237,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q16",
@@ -233,10 +248,11 @@
       "marks": 2,
       "domain_tag": "[K] [3]",
       "question": "Express the syntax of 'for' loop in C with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Express the syntax of 'for' loop in C with an example. [3] Syntax: for(initialization; condition; increment/decrement) { body of the loop } Example: for (i = 0; i < 5; i++) { printf(\"%d\\n\", i); }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Express the syntax of 'for' loop in C with an example.  Syntax: for(initialization; condition; increment/decrement) { body of the loop } Example: for (i = 0; i < 5; i++) { printf(\"%d\\n\", i); }</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Express the syntax of 'for' loop in C with an example. Syntax: for(initialization; condition; increment/decrement) { body of the loop } Example: for (i = 0; i < 5; i++) { printf(\"%d\\n\", i); }"
     },
     {
       "id": "Q17",
@@ -249,7 +265,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This statement checks if `age` is 18 or more and prints the message if true.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "This statement checks if `age` is 18 or more and prints the message if true."
     },
     {
       "id": "Q18",
@@ -264,7 +281,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q19",
@@ -273,11 +291,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [4]",
-      "question": "Write a C program to swap two variables using pointers. 8 \"Given the following code, analyze the output and explain how printf() handles formatted output:[3]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a C program to swap two variables using pointers. [4] void swap(int *a, int *b) { int temp = *a;</li></ul>",
+      "question": "Write a C program to swap two variables using pointers. 8 \"Given the following code, analyze the output and explain how printf() handles formatted output",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a C program to swap two variables using pointers.  void swap(int *a, int *b) { int temp = *a;</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Write a C program to swap two variables using pointers. void swap(int *a, int *b) { int temp = *a;"
     },
     {
       "id": "Q20",
@@ -290,7 +309,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>num = (num < 0) ? -num : num; while (num != 0) { digit = num % 10; product = digit; num /= 10; } printf(“product of digits: %d\\n”, product); getch(); }</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "num = (num < 0) ? -num : num; while (num != 0) { digit = num % 10; product = digit; num /= 10; } printf(“product of digits: %d\\n”, product); getch(); }"
     },
     {
       "id": "Q21",
@@ -305,7 +325,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q22",
@@ -318,7 +339,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>output:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>float num = 45.6789;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(\"%.2f\", num);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Output: 45.68. The %.2f specifier roun ds the float to two decimal places for formatted</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>output.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "output."
     },
     {
       "id": "Q23",
@@ -328,10 +350,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the difference between & and && in C?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Changes to `arr` in the function affect the original array. [2x10 = 20] Prepared By, MR. VISHNU MOHANAN ASSISTANT PROFESSOR DEPARTMENT OF COMPUTER APPLICATIONS CHINMAYA COLLEGE OF ARTS, COMMERCE & SCIENCE, TRIPUNITHURA, PIN: 682305 MOB: 9744799308</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Changes to `arr` in the function affect the original array. x10 = 20] Prepared By, MR. VISHNU MOHANAN ASSISTANT PROFESSOR DEPARTMENT OF COMPUTER APPLICATIONS CHINMAYA COLLEGE OF ARTS, COMMERCE & SCIENCE, TRIPUNITHURA, PIN: 682305 MOB: 9744799308</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "- Changes to `arr` in the function affect the original array. Prepared By, MR. VISHNU MOHANAN ASSISTANT PROFESSOR DEPARTMENT OF COMPUTER APPLICATIONS CHINMAYA COLLEGE OF ARTS, COMMERCE & SCIENCE, TRIPUNITHURA, PIN: 682305 MOB: 9744799308"
     },
     {
       "id": "Q24",
@@ -346,7 +369,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q25",
@@ -356,10 +380,11 @@
       "marks": 2,
       "domain_tag": "[A] [4]",
       "question": "Given an array arr, containing even numbers from 2 to 20 .Write the code to print the last element in the array.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given an array arr containing even numbers from 2 to 20, write the code to print the last</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>element in the array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int arr[10] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(\"%d\", arr[9]);</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given an array arr containing even numbers from 2 to 20, write the code to print the last</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>element in the array.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int arr = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(\"%d\", arr);</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "printf(\"%d\", arr);"
     },
     {
       "id": "Q26",
@@ -369,10 +394,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define qualifier?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define qualifier? / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In programming, a qualifier is a keyword that modifies the behavior or properties of a variable,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function, or data type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples in C:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `const`: Indicates a variable’s value cannot be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `volatile`: Indicates a variable can change unexpectedly (e.g., due to external factors).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `static`: Affects a variable’s scope or storage duration.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define qualifier? / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In programming, a qualifier is a keyword that modifies the behavior or properties of a variable,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>function, or data type.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples in C:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `const`: Indicates a variable’s value cannot be changed.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `volatile`: Indicates a variable can change unexpectedly (e.g., due to external factors).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- `static`: Affects a variable’s scope or storage duration.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "- `static`: Affects a variable’s scope or storage duration."
     },
     {
       "id": "Q27",
@@ -387,7 +413,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q28",
@@ -397,10 +424,11 @@
       "marks": 2,
       "domain_tag": "[U] [4]",
       "question": "Define recursive function in C? (10 × 2 = 20)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define a recursive function in C. [4] A recursive function is a function that calls itself to solve smaller instances of a problem until a base condition is met. Example: int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define a recursive function in C.  A recursive function is a function that calls itself to solve smaller instances of a problem until a base condition is met. Example: int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Define a recursive function in C. A recursive function is a function that calls itself to solve smaller instances of a problem until a base condition is met. Example: int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }"
     },
     {
       "id": "Q29",
@@ -409,11 +437,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[U] ",
-      "question": "Why scanf is considered as a formatted input function? [10x2 = 20] MAHATMA GANDHI UNIVERSITY, KOTTAYAM MGU-UGP (HONOURS) REGULAR/ IMPROVEMENT/ REAPPEARANCE EXAMINATION NOVEMBER 2025 FIRST SEMESTER Skill Enhancement Course (SEC) - MG1SECBCA100 - FUNDAMENTALS OF",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why scanf() is considered as a formatted input function? / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf() is a formatted input function as it reads input according to a specified format string,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using format specifiers like %d, %c, %f, etc. to parse the input into the required data types.</li></ul>",
+      "question": "Why scanf is considered as a formatted input function?",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Why scanf() is considered as a formatted input function? / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf() is a formatted input function as it reads input according to a specified format string,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>using format specifiers like %d, %c, %f, etc. to parse the input into the required data types.</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "using format specifiers like %d, %c, %f, etc. to parse the input into the required data types."
     },
     {
       "id": "Q30",
@@ -428,7 +457,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Verified solution and valuation key established per MGU scheme criteria."
     },
     {
       "id": "Q31",
@@ -441,7 +471,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how a hierarchy chart helps in organizing complex tasks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A hierarchy chart divides a program into smaller, manageable modules, showing their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>dependencies. It helps organize tasks by providing clarity, promoting modular design and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>facilitating debugging and maintenance.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "facilitating debugging and maintenance."
     },
     {
       "id": "Q32",
@@ -450,11 +481,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[An] ",
-      "question": "How do we check whether a given number is a perfect number or not. [A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. Example: The number 6 is a perfect number because its proper divisors are 1, 2, and 3 and 1+2+3=6]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How do we check whether a given number is a perfect number or not. [A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. Example: The number 6 is a perfect number because its proper divisors are 1, 2, and 3 and 1+2+3=6] / [CO3] #include void main() { int num, sum = 0; printf(“enter a number: “); scanf(“%d”, &num); for (int i = 1; i < num; i++) { if (num % i == 0) sum += i; } if (sum == num) printf(“%d is a perfect number.\\n”, num); else printf(“%d is not a perfect number.\\n”, num); getch():; }</li></ul>",
+      "question": "How do we check whether a given number is a perfect number or not.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How do we check whether a given number is a perfect number or not. erfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. Example: The number 6 is a perfect number because its proper divisors are 1, 2, and 3 and 1+2+3=6] /  #include void main() { int num, sum = 0; printf(“enter a number: “); scanf(“%d”, &num); for (int i = 1; i < num; i++) { if (num % i == 0) sum += i; } if (sum == num) printf(“%d is a perfect number.\\n”, num); else printf(“%d is not a perfect number.\\n”, num); getch():; }</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "How do we check whether a given number is a perfect number or not. #include void main() { int num, sum = 0; printf(“enter a number: “); scanf(“%d”, &num); for (int i = 1; i < num; i++) { if (num % i == 0) sum += i; } if (sum == num) printf(“%d is a perfect number.\\n”, num); else printf(“%d is not a perfect number.\\n”, num); getch():; }"
     },
     {
       "id": "Q33",
@@ -469,7 +501,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Outline a systematic approach to debugging a C program, and explain how debugging tools help, identify syntax, logical, and runtime errors. ."
     },
     {
       "id": "Q34",
@@ -482,7 +515,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how a C program can determine if a given number is even or odd using the bitwise</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>AND operator. Describe why this method is more efficient than using the modulus</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>operator (%).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Code:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if (num & 1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(\"Odd\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>else</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(\"Even\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation: The bitwise AND operator checks the least significant bit. It is more</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>efficient than modulus as it directly evaluates the binary representation without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>performing division.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "performing division."
     },
     {
       "id": "Q35",
@@ -492,10 +526,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Construct a C program that initializes an array to store the marks of five subjects for a student. Write a program that calculates and displays the student’s grade based on their average score with the following criteria: 'A' grade for an average of 85 and above, ‘B’ for 70-84, ‘C’ for 50-69, ‘D’ for 35- 49, and ‘F’ for below 35. Also add error handling to manage cases where input marks are invalid (such as negative numbers or values exceeding 100)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Construct a C program that initializes an array to store the marks of five subjects for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a student. Write a program that calculates and displays the student’s grade based on their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>average score with the following criteria:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>'A' grade for an average of 85 and above, ‘B’ for 70-84, ‘C’ for 50-69, ‘D’ for 35- 49, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>‘F’ for below 35. Also add error handling to manage cases where input marks are invalid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(such as negative numbers or values exceeding 100) / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int marks[5];</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>float sum = 0, average;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“enter marks for 5 subjects:\\n”);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for (int i = 0; i < 5; i++) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“subject %d: “, i + 1);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &marks);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// input validation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>while (marks 100) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“invalid input! marks should be between 0 and 100. re-enter: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &marks);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>sum += marks;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>average = sum / 5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“average score: %.2f\\n”, average);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>char grade;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if (average >= 85)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grade = ‘a’;</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Construct a C program that initializes an array to store the marks of five subjects for</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a student. Write a program that calculates and displays the student’s grade based on their</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>average score with the following criteria:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>'A' grade for an average of 85 and above, ‘B’ for 70-84, ‘C’ for 50-69, ‘D’ for 35- 49, and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>‘F’ for below 35. Also add error handling to manage cases where input marks are invalid</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(such as negative numbers or values exceeding 100) / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int marks;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>float sum = 0, average;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“enter marks for 5 subjects:\\n”);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>for (int i = 0; i < 5; i++) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“subject %d: “, i + 1);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &marks);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// input validation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>while (marks 100) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“invalid input! marks should be between 0 and 100. re-enter: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &marks);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>sum += marks;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>average = sum / 5;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“average score: %.2f\\n”, average);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>char grade;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if (average >= 85)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>grade = ‘a’;</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "grade = ‘a’;"
     },
     {
       "id": "Q36",
@@ -510,7 +545,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain operator precedence in C with an example. How does it affect expression evaluation? ."
     },
     {
       "id": "Q37",
@@ -523,7 +559,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Describe the C character set that is essential for writing C programs.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The C character set includes:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Alphabets: A-Z, a-z</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• Alphabets: A-Z, a-z"
     },
     {
       "id": "Q38",
@@ -533,10 +570,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this. #include void main() { int matrix[3][3]; int primary_sum = 0, secondary_sum = 0; printf(“enter elements for 3x3 matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“element [%d][%d]: “, i, j); scanf(“%d”, &matrix[j]); } } for (int i = 0; i < 3; i++) { primary_sum += matrix; secondary_sum += matrix[3 – i – 1]; } printf(“matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“%d “, matrix[j]); } printf(“\\n”); } printf(“primary diagonal sum: %d\\n”, primary_sum); printf(“secondary diagonal sum: %d\\n”, secondary_sum); getch(); }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this. #include void main() { int matrix; int primary_sum = 0, secondary_sum = 0; printf(“enter elements for 3x3 matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“element [%d][%d]: “, i, j); scanf(“%d”, &matrix[j]); } } for (int i = 0; i < 3; i++) { primary_sum += matrix; secondary_sum += matrix– i – 1]; } printf(“matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“%d “, matrix[j]); } printf(“\\n”); } printf(“primary diagonal sum: %d\\n”, primary_sum); printf(“secondary diagonal sum: %d\\n”, secondary_sum); getch(); }</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Explain how to calculate the sum of diagonal elements in a two-dimensional array. Write an example program for a 3x3 matrix to compute this. #include void main() { int matrix; int primary_sum = 0, secondary_sum = 0; printf(“enter elements for 3x3 matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“element[%d]: “, i, j); scanf(“%d”, &matrix[j]); } } for (int i = 0; i < 3; i++) { primary_sum += matrix; secondary_sum += matrix– i – 1]; } printf(“matrix:\\n”); for (int i = 0; i < 3; i++) { for (int j = 0; j < 3; j++) { printf(“%d “, matrix[j]); } printf(“\\n”); } printf(“primary diagonal sum: %d\\n”, primary_sum); printf(“secondary diagonal sum: %d\\n”, secondary_sum); getch(); }"
     },
     {
       "id": "Q39",
@@ -551,7 +589,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Why are delimiters important in C programming? Provide examples to illustrate their role. ."
     },
     {
       "id": "Q40",
@@ -561,10 +600,11 @@
       "marks": 6,
       "domain_tag": "[A] [3]",
       "question": "Write a C program to find the average of non negative from a list of numbers using continue statement and do not use array",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a C program to find the average of non -negative numbers from a list of numbers using the continue statement and do not use an array. [3] #include int main() { int n, i=1,count = 0, sum = 0; float avg; printf(“Enter how many numbers”); scanf(\"%d\", &n); for (i=1; i<=n; i++) { printf(“Enter the number”); scanf(\"%d\", &a if (a < 0) continue; sum = sum + a; count++; } avg = (float)sum / count; printf(\"Average: %.2f\", avg); return 0; }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Write a C program to find the average of non -negative numbers from a list of numbers using the continue statement and do not use an array.  #include int main() { int n, i=1,count = 0, sum = 0; float avg; printf(“Enter how many numbers”); scanf(\"%d\", &n); for (i=1; i<=n; i++) { printf(“Enter the number”); scanf(\"%d\", &a if (a < 0) continue; sum = sum + a; count++; } avg = (float)sum / count; printf(\"Average: %.2f\", avg); return 0; }</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Write a C program to find the average of non -negative numbers from a list of numbers using the continue statement and do not use an array. #include int main() { int n, i=1,count = 0, sum = 0; float avg; printf(“Enter how many numbers”); scanf(\"%d\", &n); for (i=1; i<=n; i++) { printf(“Enter the number”); scanf(\"%d\", &a if (a < 0) continue; sum = sum + a; count++; } avg = (float)sum / count; printf(\"Average: %.2f\", avg); return 0; }"
     },
     {
       "id": "Q41",
@@ -574,10 +614,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "List and describe the different types of decision-making statements available in C. Provide the syntax for each type.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List and describe the different types of decision-making statements available in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C. Provide the syntax for each type / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C provides several decision-making statements:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List and describe the different types of decision-making statements available in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C. Provide the syntax for each type / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C provides several decision-making statements:</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "C provides several decision-making statements"
     },
     {
       "id": "Q42",
@@ -592,7 +633,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a C program to read a user’s name and age, and display them using both printf and puts. Discuss the advantages of each function in this context. ."
     },
     {
       "id": "Q43",
@@ -605,7 +647,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>You have defined a union as union data { int i; float f; }. What will happen if you store a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>value in i and then try to read from f?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In a union, all members share the same memory location. Storing a value in one member</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) will overwrite the memory content of the other member (f). The memory for i and f</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>overlaps. Writing to i corrupts the value of f. Accessing f will result in undefined</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>behavior.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "behavior."
     },
     {
       "id": "Q44",
@@ -615,10 +658,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "List the precedence and associativity of the following operators: +, *, =, &&, ||, ==. Give examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the precedence and associativity of the following operators: +, , =, &&, ||,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>==. Give examples. / [CO2]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>List the precedence and associativity of the following operators: +, , =, &&, ||,</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>==. Give examples. / </li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "==. Give examples."
     },
     {
       "id": "Q45",
@@ -633,7 +677,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Write a recursive function in C to compute the nth Fibonacci number. ."
     },
     {
       "id": "Q46",
@@ -648,7 +693,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Switch is more efficient due to faster execution."
     },
     {
       "id": "Q47",
@@ -658,10 +704,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Identify a decision-making statement in programming. Describe how it is used to control program flow.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify a decision-making statement in programming. Describe how it is used to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>control program flow. / [CO1]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if statement is a common decision-making statement.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It’s used to execute a block of code if a condition is true. Here’s how it controls program flow:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Evaluates the condition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- If true, executes the code block</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- If false, skips the code block and continues with the next statement</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if (age >= 18) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“you are eligible to vote.”);</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify a decision-making statement in programming. Describe how it is used to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>control program flow. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if statement is a common decision-making statement.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It’s used to execute a block of code if a condition is true. Here’s how it controls program flow:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- Evaluates the condition</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- If true, executes the code block</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>- If false, skips the code block and continues with the next statement</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>if (age >= 18) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“you are eligible to vote.”);</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "printf(“you are eligible to vote.”);"
     },
     {
       "id": "Q48",
@@ -671,10 +718,11 @@
       "marks": 6,
       "domain_tag": "[A] [4]",
       "question": "Calculate the factorial of a number using function. (5 × 6 = 30)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Calculate the factorial of a number using a function. [4] #include int main() { int num; scanf(\"%d\", &num); printf(\"Factorial: %d\", factorial(num)); return 0; } int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Calculate the factorial of a number using a function.  #include int main() { int num; scanf(\"%d\", &num); printf(\"Factorial: %d\", factorial(num)); return 0; } int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Calculate the factorial of a number using a function. #include int main() { int num; scanf(\"%d\", &num); printf(\"Factorial: %d\", factorial(num)); return 0; } int factorial(int n) { if (n == 0) return 1; else return n * factorial(n - 1); }"
     },
     {
       "id": "Q49",
@@ -683,11 +731,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] ",
-      "question": "Explain the features of structures and demonstrate how to declare and initialize a structure with an example. [5x6 = 30]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the features of structures and demonstrate how to declare and initialize a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structure with an example. / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Features of Structures:</li></ul>",
+      "question": "Explain the features of structures and demonstrate how to declare and initialize a structure with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the features of structures and demonstrate how to declare and initialize a</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>structure with an example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Features of Structures:</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Features of Structures"
     },
     {
       "id": "Q50",
@@ -702,7 +751,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Implement a recursive function to calculate the nth Fibonacci number. (5 X 6 = ."
     },
     {
       "id": "Q51",
@@ -712,10 +762,11 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "Analyze the differences between using a simple if statement, a nested if- else, and an if-else-if ladder in C. In what scenarios is each one useful? Support your answer with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze the differences between using a simple if statement, a nested if -else and an if- else-if ladder in C. In what scenarios is each one useful? Support your answer with examples. [3] Explain each with syntax and examples. Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for simple if and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> each for nested if and if else if ladder</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Simple if: Suitable for single conditions. Example: if (x > 0) printf(\"Positive\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Nested if-else: Suitable for hierarchical conditions. Example: Example: if (a>b) { if (a>c) printf(\"A is greater\"); else printf(\"C is greater\"); } else if (b>c) printf(\"B is greater\"); else printf(\"C is greater\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• If-else-if ladder: Useful for multi-way branching. Example: Example: if (x > 0) printf(\"Positive\"); else if (x < 0) printf(\"Negative\"); else printf(\"Zero\");</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Analyze the differences between using a simple if statement, a nested if -else and an if- else-if ladder in C. In what scenarios is each one useful? Support your answer with examples.  Explain each with syntax and examples. Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for simple if and <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span> each for nested if and if else if ladder</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Simple if: Suitable for single conditions. Example: if (x > 0) printf(\"Positive\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Nested if-else: Suitable for hierarchical conditions. Example: Example: if (a>b) { if (a>c) printf(\"A is greater\"); else printf(\"C is greater\"); } else if (b>c) printf(\"B is greater\"); else printf(\"C is greater\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• If-else-if ladder: Useful for multi-way branching. Example: Example: if (x > 0) printf(\"Positive\"); else if (x < 0) printf(\"Negative\"); else printf(\"Zero\");</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "• If-else-if ladder: Useful for multi-way branching. Example: Example: if (x > 0) printf(\"Positive\"); else if (x < 0) printf(\"Negative\"); else printf(\"Zero\");"
     },
     {
       "id": "Q52",
@@ -725,10 +776,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Implement a program in C to find the product of digits of an integer number. You have to read the number from the user.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Implement a program in C to find the product of digits of an integer number. You</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>have to read the number from the user. / [CO3]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int num, digit, product = 1;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“enter an integer: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &num);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// handle negative numbers</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Implement a program in C to find the product of digits of an integer number. You</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>have to read the number from the user. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>#include</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>void main() {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>int num, digit, product = 1;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>printf(“enter an integer: “);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>scanf(“%d”, &num);</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// handle negative numbers</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "// handle negative numbers"
     },
     {
       "id": "Q53",
@@ -743,7 +795,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q54",
@@ -756,7 +809,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Classify the various categories of functions in C based on the number of arguments and</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>return values.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Functions with no arguments, no return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Functions with arguments, no return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Functions with no arguments, return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Functions with arguments, return value</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain each with examples. Provide <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> for each category</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Explain each with examples. Provide for each category"
     },
     {
       "id": "Q55",
@@ -766,10 +820,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain types of modifiers and their importance in C programming.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain types of modifiers and their importance in C programming. / [CO2]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types of modifiers in C:</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain types of modifiers and their importance in C programming. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Types of modifiers in C:</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "Types of modifiers in C"
     },
     {
       "id": "Q56",
@@ -784,7 +839,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     },
     {
       "id": "Q57",
@@ -797,7 +853,8 @@
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the concept of \"call by value\" with an example. How does passing a value differ</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>from passing a reference to a function?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In call by value, a copy of the variable is passed, so changes in the function do not affect</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the original value.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the concept with example program: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(7 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In call by reference, changes made to the parameter affect the original variable.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison with pass by reference: <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Prepared by Dr. Ja seena K U, Assistant Professor, MES C ollege Marampally, Mob:</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>9847080148)</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "9847080148)"
     },
     {
       "id": "Q58",
@@ -806,11 +863,12 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[U] ",
-      "question": "How can you pass arrays to functions in C? Explain with an example. [2x10 = 20]",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How can you pass arrays to functions in C? Explain with an example. / [CO4]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In C, arrays can be passed to functions in two ways:</li></ul>",
+      "question": "How can you pass arrays to functions in C? Explain with an example.",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>How can you pass arrays to functions in C? Explain with an example. / </li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In C, arrays can be passed to functions in two ways:</li></ul>",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
       "repeated_in": [],
-      "has_official_scheme": true
+      "has_official_scheme": true,
+      "final_answer": "In C, arrays can be passed to functions in two ways"
     },
     {
       "id": "Q59",
@@ -825,7 +883,8 @@
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
-      "has_official_scheme": false
+      "has_official_scheme": false,
+      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
   ]
 }

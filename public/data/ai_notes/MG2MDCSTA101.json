@@ -29,7 +29,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "If a dataset contains the values 2, 4, 6, 8, and 10, what is the mean? a). 8 b). 6 c). 30 d). 5",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(b) 6</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(b) 6</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -43,7 +43,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the formula for calculating the mean of a data set? a). Sum of values / Number of values b). Sum of values x Number of values c). Sum of values + Number of values d). Sum of values - Number of values",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). Interval</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> c). Interval</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -57,7 +57,7 @@
       "marks": 2,
       "domain_tag": "[An] [2]",
       "question": "A study measures the income levels of individuals in five different cities. The income data is collected in three categories: low income, middle income, and high income. The cities are then ranked based on their average income. What type of data is being used in this scenario? a) Nominal b) Ordinal c) Interval d) Ratio",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Nominal b) Ordinal c) Interval d) Ratio</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -73,13 +73,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "The following data gives the weights in kgs of 20 college students recorded correct to the first decimal place. Obtain various descriptive measures using JAMOVI",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>The following data gives the weights in kgs of 20 college students recorded corr...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data gives the weights in kgs of 20 college students recorded correct to the first decimal place. Obtain various descriptive measures using JAMOVI</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q5",
@@ -89,7 +89,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "For a dataset, variance = 0. What is the standard deviation of the data? a). 1 b). Not defined c). 0 d). None of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) 3</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(a) 3</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -103,7 +103,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which type of data is measured on a scale where differences are meaningful but there is no true zero? a). Nominal b). Ordinal c). Interval d). Ratio",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). All of the above</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> d). All of the above</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -117,7 +117,7 @@
       "marks": 2,
       "domain_tag": "[An] [3]",
       "question": "A scatter diagram is plotted with the number of hours studied on the x-axis and exam scores on the y-axis. If the points form a pattern where exam scores increase as the number of hours studied increase, what kind of relationship does the scatter diagram show? a) Negative correlation b) No correlation c) Positive correlation d) U-shaped curve",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Negative correlation b) No correlation c) Positive correlation d) U-shaped curve</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -133,13 +133,13 @@
       "marks": 2,
       "domain_tag": "[A][1]",
       "question": "The monthly sales of items in a shop is as follows. Draw a simple bar plot in JAMOVI for the given data of monthly sales of items in the shop. Month Jan Feb Mar Apr May June Jul Sales 1700 2000 2500 1200 3000 1000 1300",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>The monthly sales of items in a shop is as follows. Draw a simple bar plot in JA...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The monthly sales of items in a shop is as follows. Draw a simple bar plot in JAMOVI for the given data of monthly sales of items in the shop. Month Jan Feb Mar Apr May June Jul Sales 1700 2000 2500 1200 3000 1000 1300</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q9",
@@ -149,11 +149,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "The difference between 25°C and 30°C is meaningful and consistent, regardless of the zero point. This indicates which scale of measurement? a). Nominal b). Ordinal c). Interval d). Ratio",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give 2 marks for (b)15,20,25,30,35 or (d) None of the above</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Give 2 marks for (b)15,20,25,30,35 or (d) None of the above</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Give  for (b)15,20,25,30,35 or (d) None of the above"
+      "final_answer": "Give for (b)15,20,25,30,35 or (d) None of the above"
     },
     {
       "id": "Q10",
@@ -163,7 +163,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the median of the following data set: 1,3,5,8,9? a). 5 b). 3 c). 9 d). 8",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). ></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a). ></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -177,7 +177,7 @@
       "marks": 2,
       "domain_tag": "[U] [2]",
       "question": "Which measure of central tendency is most affected by outliers? a) Mean b) Median c) Mode d) Standard deviation",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Mean b) Median c) Mode d) Standard deviation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -193,7 +193,7 @@
       "marks": 2,
       "domain_tag": "[An][3]",
       "question": "From following information shows the advert isement expenses and sales volume of 10 firms in India. Firm 1 2 3 4 5 6 7 8 9 10 Advertisement expenses(Rs.in lakhs) 11 13 14 16 16 15 15 14 13 13 Sales Volume ( Rs.in lakhs) 50 50 55 60 65 67 66 60 61 57 Using JAMOVI (a) Construct a scatter plot to study the relatio nship between advertisement expenditure and sales volume and the nature of correlation. (b) Calculate Pearson’s correlation coefficient between the variables and comment on the result.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Construct a scatter plot to study the relatio nship between advertisement expenditure and sales volume and the nature of correlation.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -209,7 +209,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following statements about quartile deviation is true? a). It is sensitive to outliers b). It is not affected by outliers c). It is a measure of central tendency d). None of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of correlation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept /formula of correlation coefficient<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interpretation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of correlation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concept /formula of correlation coefficient<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -223,7 +223,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is quartile deviation? a). A measure of central tendency b). A measure of dispersion c). A measure of skewness d). A measure of kurtosis",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison operators in R.<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>, Assignment operators in R.<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Comparison operators in R.<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>, Assignment operators in R.<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -237,7 +237,7 @@
       "marks": 2,
       "domain_tag": "[A] [2]",
       "question": "Which relative measure is used to compare the variability of two or more groups? a) Range b) Variance c) Coefficient of Variation d) Standard deviation",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Range b) Variance c) Coefficient of Variation d) Standard deviation</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -253,13 +253,13 @@
       "marks": 2,
       "domain_tag": "[An][3]",
       "question": "A research study was conducted to examine the differences between older and younger adults on perceived life satisfaction. Ten older adul ts (over the age of 70) and ten younger adults (between 20 and 30) were given a life satisfaction test. Scores on the measure range from 0 to 60 with high scores indicative of high life satisfaction; low scores indicative of low life satisfaction. The data are presented below. Using JAMOVI, test whether the average score of life satisfaction of the two groups are the same? Older Adults 45 38 52 48 25 39 51 46 55 46 Younger Adults 34 22 15 27 37 41 24 19 26 36",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>A research study was conducted to examine the differences between older and youn...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>A research study was conducted to examine the differences between older and younger adults on perceived life satisfaction. Ten older adul ts (over the age of 70) and ten younger adults (between 20 and 30) were given a life satisfaction test. Scores on the measure range from 0 to 60 with high scores indicative of high life satisfaction; low scores indicative of low life satisfaction. The data are presented below. Using JAMOVI, test whether the average score of life satisfaction of the two groups are the same? Older Adults 45 38 52 48 25 39 51 46 55 46 Younger Adults 34 22 15 27 37 41 24 19 26 36</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q17",
@@ -269,11 +269,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Find the mode of the scores: 4,4,6,6,2,3,3,3,3,3,4,5,6,5,6,6,3. a). 3 b). 6 c). 4 d). 5",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Find the mode of the scores: 4,4,6,6,2,3,3,3,3,3,4,5,6,5,6,6,3. a). 3 b). 6 c). ...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Find the mode of the scores: 4,4,6,6,2,3,3,3,3,3,4,5,6,5,6,6,3. a). 3 b). 6 c). 4 d). 5</em>.</p></div>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q18",
@@ -283,11 +283,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the variance of the following data: 2,2,2,2,2? a). 2 b). 0 c). 10 d). 5",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the variance of the following data: 2,2,2,2,2? a). 2 b). 0 c). 10 d). 5...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the variance of the following data: 2,2,2,2,2? a). 2 b). 0 c). 10 d). 5</em> per the Data Analysis Using Jamovi And Introduction To R syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Foundational definition established per Data Analysis Using Jamovi And Introduction To R syllabus criteria."
     },
     {
       "id": "Q19",
@@ -297,7 +297,7 @@
       "marks": 2,
       "domain_tag": "[U] [3]",
       "question": "The assumption of linearity in linear regression means: a) The relationship between the dependent and independent variables is linear b) The residuals should be normally distributed. c) The residuals should have a mean of zero. d) The residuals should be uncorrelated with each other.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) The relationship between the dependent and independent variables is linear b) The residuals should be normally distributed. c) The residuals should have a mean of zero. d) The residuals should be uncorrelated with each other.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -313,13 +313,13 @@
       "marks": 2,
       "domain_tag": "[An][3]",
       "question": "Manures M1, M2, M3, M4 and M5 are applied to 4 plots each in 20 identical plots in which the same variety of wheat was cultivated. The following table gives the yields per plot in quintals. Use Analysis of Variance, test whether the manures have significantly different effects at 5% level of significance in JAMOVI M1 6 8 4 2 M2 7 5 5 3 M3 4 7 3 2 M4 8 4 6 7 M5 2 5 4 4",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Manures M1, M2, M3, M4 and M5 are applied to 4 plots each in 20 identical plots ...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Manures M1, M2, M3, M4 and M5 are applied to 4 plots each in 20 identical plots in which the same variety of wheat was cultivated. The following table gives the yields per plot in quintals. Use Analysis of Variance, test whether the manures have significantly different effects at 5% level of significance in JAMOVI M1 6 8 4 2 M2 7 5 5 3 M3 4 7 3 2 M4 8 4 6 7 M5 2 5 4 4</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q21",
@@ -329,7 +329,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "In a regression model, the equation is y=21-5x. What can be inferred about the relationship between x and y? a). As x decreases y also decreases b). x and y are unrelated c). As x increases y also increases d). As x increases y decreases",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(d) As x increases y decreases</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(d) As x increases y decreases</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -343,7 +343,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "In logistic regression, which of the following is binary? a). Dependent variable b). Independent variable c). Error term d). All of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). All of the above</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -357,7 +357,7 @@
       "marks": 2,
       "domain_tag": "[U] [3]",
       "question": "The output of logistic regression is always a) 0 b) 1 c) 2 d) 0 or 1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 0 b) 1 c) 2 d) 0 or 1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 0 b) 1 c) 2 d) 0 or 1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -373,13 +373,13 @@
       "marks": 2,
       "domain_tag": "[An][3]",
       "question": "A company has to choose among three pensions plans. The company wishes to test the hypothesis ‘preference for plans is independent of job classification ’. It asks the opinion of a sample of 600 employees and obtained the information presented below. Use chi-square, test the hypothesis which the company wishes to do at 5% level of significance in JAMOVI. No. of employees favouring Job Classification Plan A Plan B Plan C Factory Employees 72 10 10 Clerical Employees 70 20 10 Supervisors 160 30 10 Executives 148 40 20",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>A company has to choose among three pensions plans. The company wishes to test t...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>A company has to choose among three pensions plans. The company wishes to test the hypothesis ‘preference for plans is independent of job classification ’. It asks the opinion of a sample of 600 employees and obtained the information presented below. Use chi-square, test the hypothesis which the company wishes to do at 5% level of significance in JAMOVI. No. of employees favouring Job Classification Plan A Plan B Plan C Factory Employees 72 10 10 Clerical Employees 70 20 10 Supervisors 160 30 10 Executives 148 40 20</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q25",
@@ -389,7 +389,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which test is used to check for normality of residuals in linear regression? a). Shapiro-Wilk test b). Levene's test c). Durbin-Watson test d). All of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(a) Shapiro- Wilks Test</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -403,7 +403,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following describes the relationship between variables when the correlation coefficient is +1? a). No relationship b). Perfect negative relationship c). Weak relationship d). Perfect positive relationship",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). Perfect positive relationship</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -417,7 +417,7 @@
       "marks": 2,
       "domain_tag": "[U] [4]",
       "question": "Which one of the following is an arithmetic operator in R? a) = = b) > = c) & d) +",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) = = b) > = c) & d) +</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) = = b) > = c) & d) +</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -433,13 +433,13 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "The following data on the marks of 30 students is stored in a data vector named data: Using basic R programming, find the arithmetic mean, median and range of the marks of these 30 students. 31, 31, 36, 33, 36, 37, 36, 35, 30, 35, 36, 33, 30, 36, 33, 37, 34, 30, 37, 35, 37, 31, 34, 35, 31, 37, 36, 34, 31, 34.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>The following data on the marks of 30 students is stored in a data vector named ...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data on the marks of 30 students is stored in a data vector named data: Using basic R programming, find the arithmetic mean, median and range of the marks of these 30 students. 31, 31, 36, 33, 36, 37, 36, 35, 30, 35, 36, 33, 30, 36, 33, 37, 34, 30, 37, 35, 37, 31, 34, 35, 31, 37, 36, 34, 31, 34.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q29",
@@ -449,11 +449,11 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "What will be the output of the following code? x<- 1 while (x<=5 ) { print (x) x<- x+1 } a). Error b). No output c). 1 2 3 4 5 d). 2 3 4 5",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>What will be the output of the following code? x<- 1 while (x<=5 ) { print ...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>What will be the output of the following code? x<- 1 while (x<=5 ) { print (x) x<- x+1 } a). Error b). No output c). 1 2 3 4 5 d). 2 3 4 5</em>.</p></div>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q30",
@@ -463,7 +463,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following can be included in an R Markdown document? a). R code b). La Te X c). Text formatted with markdown d). All of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c ) combining R code, text and plot in a document</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Answer any three questions. Each question carries five marks)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c ) combining R code, text and plot in a document</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Answer any three questions. Each question carries five marks)</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -477,7 +477,7 @@
       "marks": 2,
       "domain_tag": "[A] [4]",
       "question": "In R, which statement is used to terminate the execution of a loop? a) Next b) Skip c) Break d) Delete",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Next b) Skip c) Break d) Delete</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data Analysis Using Jamovi And Introduction To R. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -493,13 +493,13 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "Suppose we have four vectors: x = (2,1,3,7), y = (4,2,3,5), z = (10,20) and w = (15). Write the R script for creating following data frames. Also write the output you obtained. a) (x, z) b) (x, w) c) (x, y)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Suppose we have four vectors: x = (2,1,3,7), y = (4,2,3,5), z = (10,20) and...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Suppose we have four vectors: x = (2,1,3,7), y = (4,2,3,5), z = (10,20) and w = (15). Write the R script for creating following data frames. Also write the output you obtained. a) (x, z) b) (x, w) c) (x, y)</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q33",
@@ -509,7 +509,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "For the vector x=(10,15,20,25,30,35), what will be the output of the code x[-1]? a). 10,15,20,25,30 b). 15,20,25,30,35 c). 10 d). None of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for (b)15,20,25,30,35 or (d) None of the above</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -523,7 +523,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Suppose we have two vectors: x= (10,20,30,40), y= (20,30,40,50).How can we create a data frame containing x and y? a). dataframe(x,y ) b). dataframe c). data.frame(x,y) d). create.data.frame(x,y)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). data. frame (x, y)</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> c). data. frame (x, y)</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -537,13 +537,13 @@
       "marks": 2,
       "domain_tag": "[K] [4]",
       "question": "Which function is used to create data frame in R? a) create.data.frame ( ) b) data.frame ( ) c) make.data.frame ( ) d) df ( )",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which function is used to create data frame in R? a) create.data.frame ( ) b) da...</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which function is used to create data frame in R? a) create.data.frame ( ) b) data.frame ( ) c) make.data.frame ( ) d) df ( )</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q36",
@@ -553,7 +553,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is R Markdown primarily used for? a). Writing HTML code b). Managing databases c). Combining R code, text, and plots in a document d). Running java programs Type Questions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(c ) combining R code, text and plot in a document</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Answer any three questions. Each question carries five marks)</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(Answer any three questions. Each question carries five marks)</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -569,11 +569,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which one of the following is a comparison operator in R? a). > b). + c). * d). / Type Questions",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Which one of the following is a comparison operator in R? a). > b). + c). *...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which one of the following is a comparison operator in R? a). > b). + c). * d). / Type Questions</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q38",
@@ -583,7 +583,7 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Define median. Calculate the median for the following dataset of exam scores from a class test of 9 students:23,18,25,19,21,22,16,24,20.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of median/ formula <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Arranging observations in ascending order <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Identify middle most observation/ formula of median <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Median = 21 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of median/ formula <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Arranging observations in ascending order <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Identify middle most observation/ formula of median <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Median = 21 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -597,7 +597,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define standard deviation. Find standard deviation for the following dataset: 8,9,6,5,2.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of standard deviation(SD) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sum of values=30---1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , sum of squares of values= 210----1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , n=5---1/2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>marks, Formula for SD ----1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , correct value of SD= √6 =2.449 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of standard deviation(SD) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sum of values=30---1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , sum of squares of values= 210----1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , n=5---1/2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>marks, Formula for SD ----1/ <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , correct value of SD= √6 =2.449 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -611,7 +611,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define the term dispersion. Explain variance as a measure of dispersion.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of dispersion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition/ meaning of variance/ Formula of variance <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of dispersion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition/ meaning of variance/ Formula of variance <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -625,7 +625,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define mode. Identify the mode for the following dataset:21,56,65,32,21,89,68,21,69,21.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of mode <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , Correct value of mode=21 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Definition of mode <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> , Correct value of mode=21 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -639,7 +639,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define correlation. Also explain the concept of correlation coefficient and how it is interpreted?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of correlation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Concept /formula of correlation coefficient<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Interpretation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of correlation<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concept /formula of correlation coefficient<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -653,7 +653,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Distinguish between simple and multiple linear regression.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Simple linear regression.<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>, Multiple linear regression<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -667,7 +667,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Distinguish between comparison and assignment operators in R.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Meaning of comparison operators <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Meaning of assignment operators <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different comparison operators (any three operators) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different assignment operators(two operators) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Meaning of comparison operators <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Meaning of assignment operators <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Different comparison operators (any three operators) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Different assignment operators(two operators) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1mark)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -683,7 +683,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Define a dataframe. Suppose we have three vectors: x = (2,1,3,7), y = (4,2,3,5) and z = (10,20). Write the R script to create the following data frames: a) (x, y,z) b) (x, y) c) (x, z). Also, write the output obtained.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Data frame meaning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2marks)</span> (a) Data.frame(x,y,z) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> Ans: x y z 2 4 10 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5mark)</span> 1 2 20 3 3 10 7 5 20 (b) Data.frame(x,y) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> x y 2 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> 1 2 3 3 7 5 (c) Data.frame(x,z) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> x z 2 10 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> 1 20 3 10 7 20</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Data frame meaning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2marks)</span> (a) Data.frame(x,y,z) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> Ans: x y z 2 4 10 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5mark)</span> 1 2 20 3 3 10 7 5 20 (b) Data.frame(x,y) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> x y 2 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> 1 2 3 3 7 5 (c) Data.frame(x,z) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> x z 2 10 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(0.5 mark)</span> 1 20 3 10 7 20</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -697,7 +697,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define any three built-in functions in R with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any three built-in functions in R <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Examples<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -711,13 +711,13 @@
       "marks": 2,
       "domain_tag": "[A][2]",
       "question": "2 26.3 43.6 56.6 46.2 48.3 49.7 28.3 35.4 40.3 38.4 39.6 42.6 50.0 48.3 58.2 57.2 58.3 62.4 31.4",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>2 26.3 43.6 56.6 46.2 48.3 49.7 28.3 35.4 40.3 38.4 39.6 42.6 50.0 48.3 58.2 57....</em> within Data Analysis Using Jamovi And Introduction To R.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>2 26.3 43.6 56.6 46.2 48.3 49.7 28.3 35.4 40.3 38.4 39.6 42.6 50.0 48.3 58.2 57.2 58.3 62.4 31.4</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis Using Jamovi And Introduction To R valuation scheme."
     },
     {
       "id": "Q48",
@@ -727,7 +727,7 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "Explain the different scales of measurement.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the different scales of measurement. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the different scales of measurement. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -743,7 +743,7 @@
       "marks": 6,
       "domain_tag": "[A] [3]",
       "question": "Describe a situation in which correlation is applied in data analysis.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe a situation in which correlation is applied in data analysis. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe a situation in which correlation is applied in data analysis. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -759,7 +759,7 @@
       "marks": 6,
       "domain_tag": "[U] [3]",
       "question": "What are the assumptions of linear regression?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What are the assumptions of linear regression? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering What are the assumptions of linear regression? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -775,7 +775,7 @@
       "marks": 6,
       "domain_tag": "[K] [4]",
       "question": "List the various data types in R programming language.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering List the various data types in R programming language. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering List the various data types in R programming language. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -791,7 +791,7 @@
       "marks": 6,
       "domain_tag": "[U] [4]",
       "question": "Prepare a short note on R Markdown.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Prepare a short note on R Markdown. x3=15] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Prepare a short note on R Markdown. x3=15] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"

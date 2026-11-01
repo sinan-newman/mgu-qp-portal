@@ -28,11 +28,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Name any two pop-up boxes available in Java Script.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Ans: Alert(),prompt(),confirm()—any two</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Ans: Alert(),prompt(),confirm()—any two</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Ans: Alert(),prompt(),confirm()—any two"
+      "final_answer": "Alert(),prompt(),confirm()—any two"
     },
     {
       "id": "Q2",
@@ -42,7 +42,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define function calling.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.focus() gives focus to an input element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.blur() removes focus from an element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Flexible Images:Images scale automatically within their containers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive Breakpoints: Bootstrap defines screen sizes such as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• sm (small devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• md (medium devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• lg (large devices)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• xl (extra large devices)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.focus() gives focus to an input element.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.blur() removes focus from an element.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Flexible Images:Images scale automatically within their containers.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive Breakpoints: Bootstrap defines screen sizes such as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>sm (small devices)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>md (medium devices)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>lg (large devices)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>xl (extra large devices)</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -56,13 +56,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Differentiate between let, var, and const in Java Script.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Definitional Distinctions:</strong> Contrast foundational definitions, functional scope, and theoretical boundaries of the specified entities.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Operational & Methodological Differences:</strong> Contrast mechanisms, operational workflows, inputs/outputs, and implementation criteria.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Standard Benchmark Examples:</strong> Illustrate with representative real-world cases demonstrating distinct disciplinary applications. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Comparative Overview:</strong> Definitional, functional, and operational distinctions contrasting the characteristics of <em>Differentiate between let, var, and const in Java Script.</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Key operational, structural, and definitional distinctions verified per course curriculum."
+      "final_answer": "Comparative distinctions established per Responsive Web Designing criteria."
     },
     {
       "id": "Q4",
@@ -72,7 +72,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Name any two key features of j Query.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Caused by AJAX or SPA using JavaScript/jQuery</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Caused by AJAX or SPA using JavaScript/jQuery</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -86,7 +86,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Differentiate between .focus() and .blur() methods ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Creates a full-width container that spans the entire viewport width .</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The main uses are - Website headers and footers, Full -width images ,Admin dashboards</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive layouts etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mention any one give marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions. Answer any 5 questions. Each carries 5 marks.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Creates a full-width container that spans the entire viewport width .</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The main uses are - Website headers and footers, Full -width images ,Admin dashboards</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive layouts etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mention any one give marks.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Short Answer Questions. Answer any 5 questions. Each carries 5 marks.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -100,13 +100,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Identify the purpose of closures in Java Script.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Identify the purpose of closures in Java Script....</em> within Responsive Web Designing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Identify the purpose of closures in Java Script.</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Responsive Web Designing valuation scheme."
+      "final_answer": "Core principles verified per Responsive Web Designing valuation scheme."
     },
     {
       "id": "Q7",
@@ -116,7 +116,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Name the foundational layout element in bootstrap that wraps content and align it consistently.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps with example program.[5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps only[3 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example only[3 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Steps with example program.[5 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Steps only[3 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example only[3 marks]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -130,7 +130,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Write a code snippet to create a responsive navigation bar in Bootstrap?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, the primary class used to create a responsive layout is the .container class (or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.container-fluid for full-width layouts).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bootstrap’s responsiveness is mainly powered by grid classes such as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.row , .col- , .col-sm-* , .col-md-* ,.col-lg-* , .col-xl-*</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give marks for explanation and examples about container classes or grid classes.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, the primary class used to create a responsive layout is the .container class (or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.container-fluid for full-width layouts).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Bootstrap’s responsiveness is mainly powered by grid classes such as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.row , .col- , .col-sm-* , .col-md-* ,.col-lg-* , .col-xl-*</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Give marks for explanation and examples about container classes or grid classes.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -144,13 +144,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "How do you select an element with an ID in j Query?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>How do you select an element with an ID in j Query?...</em> within Responsive Web Designing.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>How do you select an element with an ID in j Query?</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Responsive Web Designing valuation scheme."
+      "final_answer": "Core principles verified per Responsive Web Designing valuation scheme."
     },
     {
       "id": "Q10",
@@ -160,7 +160,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "If a website feels like an app, where you don’t have to reload pages, what might be causing that?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The .detach() method in jQuery is used to remove an element from the DOM while preserving its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>data and event handlers. This makes it different from .remove(), which discards everything related to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation with Syntax and example</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The .detach() method in jQuery is used to remove an element from the DOM while preserving its</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>data and event handlers. This makes it different from .remove(), which discards everything related to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the element.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation with Syntax and example</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -174,7 +174,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is one thing that all popular web browsers have in common when it comes to Java Script?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, text color classes are utility classes used to quickly change the color of text without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>writing custom CSS. These classes begin with the prefix text-.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>text-primary, text -secondary, text -success, text -danger, text -warning, text -info, text -light, text</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>dark, text-muted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give an example code with any 3 classes .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, text color classes are utility classes used to quickly change the color of text without</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>writing custom CSS. These classes begin with the prefix text-.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>text-primary, text -secondary, text -success, text -danger, text -warning, text -info, text -light, text</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>dark, text-muted.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Give an example code with any 3 classes .</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -188,13 +188,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Recognize the j Query method used to change the text inside an HTML element.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>such as .append(), .prepend(), .after() and .before() ?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In jQuery, new HTML elements can be inserted dynamically into the Document Object Model</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(DOM). This allows webpages to update content without reloading.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(give 2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A new element can be created using jQuery</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let newItem = $(\"<p>This is a new paragraph</p>\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This creates a paragraph element but does not insert it into the page until an insertion method is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>used.( give 3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the methods such as .append(), .prepend(), .after() and .before() with their purpose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and examples. Give 2.5 marks for each method</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>such as .append(), .prepend(), .after() and .before() ?</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In jQuery, new HTML elements can be inserted dynamically into the Document Object Model</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(DOM). This allows webpages to update content without reloading.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(give 2 marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A new element can be created using jQuery</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>let newItem = $(\"<p>This is a new paragraph</p>\");</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>This creates a paragraph element but does not insert it into the page until an insertion method is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>used.( give 3 marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain the methods such as .append(), .prepend(), .after() and .before() with their purpose</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and examples. Give 2.5 marks for each method</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "and examples. Give  for each method"
+      "final_answer": "and examples. Give for each method"
     },
     {
       "id": "Q13",
@@ -204,7 +204,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Mention any four predefined components in Bootstrap.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>as Click event, Hover event and Submit event ?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>jQuery simplifies event handling by providing various methods to attach functions to DOM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements that respond to user actions like clicking, hovering, submitting, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain each with syntax and example.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>as Click event, Hover event and Submit event ?</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>jQuery simplifies event handling by providing various methods to attach functions to DOM</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>elements that respond to user actions like clicking, hovering, submitting, etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain each with syntax and example.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -218,7 +218,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Identify the purpose of .container-fluid class do?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition: Responsive Web Design is an approach where a website automatically adjusts its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>layout, images, and content to fit different screen sizes such as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Mobile phones</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tablets</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Laptops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Large desktop screens</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The main goal is to ensure the website looks good and is usable on all devices without creating separate</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>versions for each device.( Give 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Key Principles of Responsive Design</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>examples.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition: Responsive Web Design is an approach where a website automatically adjusts its</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>layout, images, and content to fit different screen sizes such as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mobile phones</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Tablets</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Laptops</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Large desktop screens</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The main goal is to ensure the website looks good and is usable on all devices without creating separate</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>versions for each device.( Give 3 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Key Principles of Responsive Design</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -232,7 +232,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "Can you explain the steps to create a button using Bootstrap classes? (5 x 2 =10)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any valid Bootstrap navbar code. Mention responsive classes such as navbar. Give marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Media Queries: CSS rules that apply different styles depending on screen size.(Give 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expalin how Bootstrap Helps in Responsive Web Design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, responsiveness is built-in using a combination of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive Utility Classes: Bootstrap provides classes to control layout and visibility easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain each with examples. (Give 3 marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Seema K S, Assistant Professor, TOMS Arts and Scince College, Mattakara</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>9495444211</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any valid Bootstrap navbar code. Mention responsive classes such as navbar. Give marks.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Media Queries: CSS rules that apply different styles depending on screen size.(Give 3 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Expalin how Bootstrap Helps in Responsive Web Design</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, responsiveness is built-in using a combination of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive Utility Classes: Bootstrap provides classes to control layout and visibility easily.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain each with examples. (Give 3 marks each)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Seema K S, Assistant Professor, TOMS Arts and Scince College, Mattakara</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>9495444211</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -248,7 +248,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe the concept of variable scope in Java Script.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scope refers to the accessibility of variables.[1/2 Marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Three types: Global, Function/Local, and Block scope (with let/const).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Scope refers to the accessibility of variables.[1/2 Marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Three types: Global, Function/Local, and Block scope (with let/const).</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -262,7 +262,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the difference between a variable's declaration and its initialization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declaration: creating a variable name. eg: let x;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Initialization: assigning an initial value. Eg: x=10;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Declaration with initialisation: Eg: let x=10;</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Declaration: creating a variable name. eg: let x;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Initialization: assigning an initial value. Eg: x=10;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Declaration with initialisation: Eg: let x=10;</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -276,7 +276,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Could you describe the role and usage of functions in Java Script?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Could you describe the role and usage of functions in Java Script?  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Could you describe the role and usage of functions in Java Script? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -292,7 +292,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain the steps to implement form validation using j Query ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps with example program.[5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Steps only[3 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example only[3 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Steps with example program.[5 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Steps only[3 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example only[3 marks]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -306,11 +306,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss the realtime feedback in the context of form validation?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Real-time feedback in form validation means checking the user's input immediately while they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>are typing or as soon as they leave a field , instead of waiting until the entire form is submitted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When a user enters data into a form field, JavaScript validates the input instantly and displays</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>feedback such as:Valid input ,Error messages ,Warnings or suggestions etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition with example 5 marks. ,Definition only 3 marks , Example only 4 marks .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Real-time feedback in form validation means checking the user's input immediately while they</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>are typing or as soon as they leave a field , instead of waiting until the entire form is submitted.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When a user enters data into a form field, JavaScript validates the input instantly and displays</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>feedback such as:Valid input ,Error messages ,Warnings or suggestions etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition with example 5 marks. ,Definition only 3 marks , Example only 4 marks .</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Definition with example . ,Definition only  , Example only  ."
+      "final_answer": "Definition with example . ,Definition only , Example only ."
     },
     {
       "id": "Q21",
@@ -320,7 +320,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "How do the if else and switch statements work in Java Script? Provide an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering How do the if else and switch statements work in Java Script? Provide an example.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering How do the if else and switch statements work in Java Script? Provide an example. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -336,7 +336,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "State the importance of typography in web design?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Typography plays a critical role in web design as it directly affects usability, aesthetics, brand</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>identity, and user experience. Explain with example</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Typography plays a critical role in web design as it directly affects usability, aesthetics, brand</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>identity, and user experience. Explain with example</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -350,7 +350,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Identify the class in Bootstrap which is used to make a webpage’s design responsive?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, the primary class used to create a responsive layout is the .container class (or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.container-fluid for full-width layouts).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bootstrap’s responsiveness is mainly powered by grid classes such as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.row , .col- , .col-sm-* , .col-md-* ,.col-lg-* , .col-xl-*</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give marks for explanation and examples about container classes or grid classes.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, the primary class used to create a responsive layout is the .container class (or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.container-fluid for full-width layouts).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Bootstrap’s responsiveness is mainly powered by grid classes such as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.row , .col- , .col-sm-* , .col-md-* ,.col-lg-* , .col-xl-*</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Give marks for explanation and examples about container classes or grid classes.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -364,7 +364,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "How does Bootstrap’s grid system work?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Function calling is the process of invoking a function by using its name followed by parentheses</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>causing the function code to execute.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fluid Grid Layout:Uses flexible grids instead of fixed-width layouts so elements resize based on screen</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>width.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Grid System: Bootstrap uses a 12-column grid system that automatically adjusts based on screen size.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Function calling is the process of invoking a function by using its name followed by parentheses</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>causing the function code to execute.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fluid Grid Layout:Uses flexible grids instead of fixed-width layouts so elements resize based on screen</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>width.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Grid System: Bootstrap uses a 12-column grid system that automatically adjusts based on screen size.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -380,7 +380,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe two ways to include Java Script in an HTML file.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Internal JavaScript: JavaScript code is written within the HTML file itself, typically inside the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><script> tag. The <script> tag is placed either in the <head> or at the end of the <body> section.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>External JavaScript: The JavaScript code is written in a separate file with a .js extension.This file is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linked to the HTML document using the <script src=\"filename.js\"></script> tag.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation only[ 4 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two Examples[5 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Internal JavaScript: JavaScript code is written within the HTML file itself, typically inside the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><script> tag. The <script> tag is placed either in the <head> or at the end of the <body> section.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>External JavaScript: The JavaScript code is written in a separate file with a .js extension.This file is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>linked to the HTML document using the <script src=\"filename.js\"></script> tag.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain with example.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation only[ 4 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two Examples[5 marks]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -394,7 +394,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the statement: 'Java Script helps in validating a form before it is submitted.'",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>.JavaScript can check the data entered by a user before the form is sent to the server . This</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>process is called client-side form validation . Form validation is the process of verifying that user</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>input is: Complete , Correctly formatted ,Within acceptable limits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the form validation with an example code.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>.JavaScript can check the data entered by a user before the form is sent to the server . This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>process is called client-side form validation . Form validation is the process of verifying that user</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>input is: Complete , Correctly formatted ,Within acceptable limits</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain the form validation with an example code.</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -408,7 +408,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "What are Bootstrap responsive utilities, and how do they help in designing websites?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive Web Design (RWD) is a design approach that ensures a website looks and functions well</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>across a variety of devices and screen sizes, such as desktops, tablets, and smartphones.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Key Principles</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fluid Grid Layouts, Mobile-first, Media queries, Viewport meta tag, Bootstrap utilities etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain in detail with examples</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive Web Design (RWD) is a design approach that ensures a website looks and functions well</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>across a variety of devices and screen sizes, such as desktops, tablets, and smartphones.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Key Principles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fluid Grid Layouts, Mobile-first, Media queries, Viewport meta tag, Bootstrap utilities etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain in detail with examples</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -424,7 +424,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the usage of .detach method?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The .detach() method in jQuery is used to remove an element from the DOM while preserving its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>data and event handlers. This makes it different from .remove(), which discards everything related to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the element.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation with Syntax and example</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The .detach() method in jQuery is used to remove an element from the DOM while preserving its</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>data and event handlers. This makes it different from .remove(), which discards everything related to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the element.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation with Syntax and example</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -438,7 +438,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain any two basic filters in j Query with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>:first, :last, :even, :odd, :eq(),:contains()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain any two with example code</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>:first, :last, :even, :odd, :eq(),:contains()</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -452,7 +452,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Describe the different components available in Bootstrap for UI design.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any valid Bootstrap navbar code. Mention responsive classes such as navbar. Give marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Media Queries: CSS rules that apply different styles depending on screen size.(Give 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expalin how Bootstrap Helps in Responsive Web Design</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, responsiveness is built-in using a combination of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive Utility Classes: Bootstrap provides classes to control layout and visibility easily.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain each with examples. (Give 3 marks each)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Seema K S, Assistant Professor, TOMS Arts and Scince College, Mattakara</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>9495444211</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any valid Bootstrap navbar code. Mention responsive classes such as navbar. Give marks.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Media Queries: CSS rules that apply different styles depending on screen size.(Give 3 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Expalin how Bootstrap Helps in Responsive Web Design</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, responsiveness is built-in using a combination of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive Utility Classes: Bootstrap provides classes to control layout and visibility easily.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain each with examples. (Give 3 marks each)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Prepared by</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Seema K S, Assistant Professor, TOMS Arts and Scince College, Mattakara</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>9495444211</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -468,7 +468,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Distinguish the difference between fw-light and fw-bold classes in Bootstrap.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Bootstrap provides utility classes to control the font weight of text elements. Two such classes are</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>fw-light: Applies a light font weight, typically 300 depending on the browser and available font</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Used when a softer, thinner appearance is desired., Helps give a minimal or elegant look.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>fw-bold: Applies a bold font weight, typically 700. Used to highlight or emphasize important</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>content. Makes text stand out more prominently on the page</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with syntax and example[5 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Bootstrap provides utility classes to control the font weight of text elements. Two such classes are</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>fw-light: Applies a light font weight, typically 300 depending on the browser and available font</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used when a softer, thinner appearance is desired., Helps give a minimal or elegant look.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>fw-bold: Applies a bold font weight, typically 700. Used to highlight or emphasize important</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>content. Makes text stand out more prominently on the page</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain with syntax and example[5 marks]</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -482,7 +482,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Discuss about various text color classes in Bootstrap.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In Bootstrap, text color classes are utility classes used to quickly change the color of text without</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>writing custom CSS. These classes begin with the prefix text-.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>text-primary, text -secondary, text -success, text -danger, text -warning, text -info, text -light, text</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>dark, text-muted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Give an example code with any 3 classes .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In Bootstrap, text color classes are utility classes used to quickly change the color of text without</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>writing custom CSS. These classes begin with the prefix text-.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>text-primary, text -secondary, text -success, text -danger, text -warning, text -info, text -light, text</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>dark, text-muted.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Give an example code with any 3 classes .</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -496,7 +496,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Explain j Query selectors and filters with proper examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>:first, :last, :even, :odd, :eq(),:contains()</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain any two with example code</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>:first, :last, :even, :odd, :eq(),:contains()</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain any two with example code</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -512,7 +512,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Illustrate the difference between entry control loop and exit control loop with proper example",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with example[5 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay Questions. Answer any 1 question. Each question carries 15 marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain with example[5 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions. Answer any 1 question. Each question carries 15 marks</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -526,11 +526,11 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe the working of switch statement with syntax or proper example",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The switch statement in JavaScript is used to select one block of code from many possible options</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>based on the value of an expression.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Syntax</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>switch (expression) {</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>case value1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// Code to execute if expression === value1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>case value2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// Code to execute if expression === value2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>case value3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// Code to execute if expression === value3</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>default</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>// Code to execute if no case matches</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>}</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay Questions.Answer any 1 question. Each question carries 15 marks .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The switch statement in JavaScript is used to select one block of code from many possible options</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>based on the value of an expression.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Syntax</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>switch (expression) {</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>case value1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>// Code to execute if expression === value1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>case value2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>// Code to execute if expression === value2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>case value3</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>// Code to execute if expression === value3</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>break;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>default</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>// Code to execute if no case matches</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions.Answer any 1 question. Each question carries 15 marks .</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Essay Questions.Answer any 1 question. Each question carries  ."
+      "final_answer": "Essay Questions.Answer any 1 question. Each question carries ."
     },
     {
       "id": "Q36",
@@ -540,7 +540,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "How does Bootstrap handle typography, and why is it important for web design? (5*5=25)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering How does Bootstrap handle typography, and why is it important for web design?  (5*5=25) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering How does Bootstrap handle typography, and why is it important for web design? (5*5=25) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -556,7 +556,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Discuss the various methods for handling events in j Query. Provide examples of methods such as Click event, Hover event and Submit event ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>as Click event, Hover event and Submit event ?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>jQuery simplifies event handling by providing various methods to attach functions to DOM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>elements that respond to user actions like clicking, hovering, submitting, etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain each with syntax and example.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>jQuery simplifies event handling by providing various methods to attach functions to DOM</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>elements that respond to user actions like clicking, hovering, submitting, etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain each with syntax and example.</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -570,11 +570,11 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Describe how j Query allows you to add new DOM elements. Provide examples of methods such as .append(), .prepend(), .after() and .before() ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>such as .append(), .prepend(), .after() and .before() ?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>In jQuery, new HTML elements can be inserted dynamically into the Document Object Model</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(DOM). This allows webpages to update content without reloading.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(give 2 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A new element can be created using jQuery</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>let newItem = $(\"<p>This is a new paragraph</p>\");</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>This creates a paragraph element but does not insert it into the page until an insertion method is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>used.( give 3 marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain the methods such as .append(), .prepend(), .after() and .before() with their purpose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and examples. Give 2.5 marks for each method</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In jQuery, new HTML elements can be inserted dynamically into the Document Object Model</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(DOM). This allows webpages to update content without reloading.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(give 2 marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A new element can be created using jQuery</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>let newItem = $(\"<p>This is a new paragraph</p>\");</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>This creates a paragraph element but does not insert it into the page until an insertion method is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>used.( give 3 marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain the methods such as .append(), .prepend(), .after() and .before() with their purpose</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and examples. Give 2.5 marks for each method</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "and examples. Give  for each method"
+      "final_answer": "and examples. Give for each method"
     },
     {
       "id": "Q39",
@@ -584,7 +584,7 @@
       "marks": 10,
       "domain_tag": "[U]",
       "question": "Discuss the different types of loops in Java Script with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Internal JavaScript: JavaScript code is written within the HTML file itself, typically inside the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><script> tag. The <script> tag is placed either in the <head> or at the end of the <body> section.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>External JavaScript: The JavaScript code is written in a separate file with a .js extension.This file is</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>linked to the HTML document using the <script src=\"filename.js\"></script> tag.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain with example.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation only[ 4 marks]</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two Examples[5 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Internal JavaScript: JavaScript code is written within the HTML file itself, typically inside the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><script> tag. The <script> tag is placed either in the <head> or at the end of the <body> section.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>External JavaScript: The JavaScript code is written in a separate file with a .js extension.This file is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>linked to the HTML document using the <script src=\"filename.js\"></script> tag.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain with example.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation only[ 4 marks]</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two Examples[5 marks]</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -600,7 +600,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Discuss the principles of Responsive Web Design",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Responsive Web Design (RWD) is a design approach that ensures a website looks and functions well</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>across a variety of devices and screen sizes, such as desktops, tablets, and smartphones.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Key Principles</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fluid Grid Layouts, Mobile-first, Media queries, Viewport meta tag, Bootstrap utilities etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explain in detail with examples</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Responsive Web Design (RWD) is a design approach that ensures a website looks and functions well</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>across a variety of devices and screen sizes, such as desktops, tablets, and smartphones.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Key Principles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fluid Grid Layouts, Mobile-first, Media queries, Viewport meta tag, Bootstrap utilities etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explain in detail with examples</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -614,7 +614,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain the concept of responsive web design and how Bootstrap helps to achieve it. Provide examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>examples.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition: Responsive Web Design is an approach where a website automatically adjusts its</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>layout, images, and content to fit different screen sizes such as</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Mobile phones</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Tablets</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Laptops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>• Large desktop screens</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The main goal is to ensure the website looks good and is usable on all devices without creating separate</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>versions for each device.( Give 3 Marks)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Key Principles of Responsive Design</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>examples.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition: Responsive Web Design is an approach where a website automatically adjusts its</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>layout, images, and content to fit different screen sizes such as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mobile phones</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Tablets</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Laptops</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Large desktop screens</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The main goal is to ensure the website looks good and is usable on all devices without creating separate</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>versions for each device.( Give 3 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Key Principles of Responsive Design</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -628,13 +628,13 @@
       "marks": 10,
       "domain_tag": "[U]",
       "question": "Discuss how j Query can be used for form validation with an example code. (1*15=15)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Real-time feedback in form validation means checking the user's input immediately while they</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>are typing or as soon as they leave a field , instead of waiting until the entire form is submitted.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>When a user enters data into a form field, JavaScript validates the input instantly and displays</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>feedback such as:Valid input ,Error messages ,Warnings or suggestions etc.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition with example 5 marks. ,Definition only 3 marks , Example only 4 marks .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Real-time feedback in form validation means checking the user's input immediately while they</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>are typing or as soon as they leave a field , instead of waiting until the entire form is submitted.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When a user enters data into a form field, JavaScript validates the input instantly and displays</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>feedback such as:Valid input ,Error messages ,Warnings or suggestions etc.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition with example 5 marks. ,Definition only 3 marks , Example only 4 marks .</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Definition with example . ,Definition only  , Example only  ."
+      "final_answer": "Definition with example . ,Definition only , Example only ."
     }
   ]
 }

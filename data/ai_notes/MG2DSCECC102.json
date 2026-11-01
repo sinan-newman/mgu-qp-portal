@@ -28,7 +28,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Name the technological innovation that led to the development of time- sharing systems.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multiprogramming</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Multiprogramming</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -42,11 +42,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "If a system suddenly crashes, how does the OS help recover lost files?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>If a system suddenly crashes, how does the OS help recover lost files?...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>If a system suddenly crashes, how does the OS help recover lost files?</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q3",
@@ -56,13 +56,13 @@
       "marks": 2,
       "domain_tag": "[K]",
       "question": "Write the system software that manages the hardware and software resources of a system.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write the system software that manages the hardware and software resources of a ...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write the system software that manages the hardware and software resources of a system.</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Structured thematic overview and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q4",
@@ -72,7 +72,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How the status of the current activity of a process can be identified?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Acts as an interface between the user and the hardware</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Acts as an interface between the user and the hardware</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -86,7 +86,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "When a user requests a file from a remote computer, the system retrieves it over the network. What OS component enables this function?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Acts as an interface between the user and the hardware</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Acts as an interface between the user and the hardware</p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -102,7 +102,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "A system allocates memory in fixed-size blocks, allowing processes to be stored in non-contiguous locations. What is this memory management technique called?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two processes require 200MB each. The system has free blocks of 150MB, 250MB</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and 300 MB. One process is allocated in the 250MB block. Name the fragmentation?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>External fragmentation</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two processes require 200MB each. The system has free blocks of 150MB, 250MB</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and 300 MB. One process is allocated in the 250MB block. Name the fragmentation?</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>External fragmentation</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -116,11 +116,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "A user needs to frequently access random parts of a large file. Which allocation method should be used.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>A user needs to frequently access random parts of a large file. Which allocation...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>A user needs to frequently access random parts of a large file. Which allocation method should be used.</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q8",
@@ -130,7 +130,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "How would you describe the reasons a process shifts from the ‘running’ state back to the ‘ready’ state?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>No</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>No</p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -146,7 +146,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What way an Operating System helps the computer?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>No</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>No</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -162,13 +162,13 @@
       "marks": 2,
       "domain_tag": "[K]",
       "question": "What is the name of the scheduler responsible for selecting processes from the ready queue for execution?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the name of the scheduler responsible for selecting processes from the r...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the name of the scheduler responsible for selecting processes from the ready queue for execution?</em> per the Fundamentals of OS and Linux syllabus.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Foundational definition established per Fundamentals of OS and Linux syllabus criteria."
     },
     {
       "id": "Q11",
@@ -178,7 +178,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Priority Scheduling lead to starvation.Why?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any 3 or more <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any 3 or more <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -194,11 +194,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define the term for live program or acitive program.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define the term for live program or acitive program....</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define the term for live program or acitive program.</em> per the Fundamentals of OS and Linux syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Formal conceptual definition and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Foundational definition established per Fundamentals of OS and Linux syllabus criteria."
     },
     {
       "id": "Q13",
@@ -208,7 +208,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Can you identify the scheduling algorithm that runs processes in the order of their arrival?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Low-priority processes get indefinitely delayed due to the continuous arrival of higher</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>priority processes.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Low-priority processes get indefinitely delayed due to the continuous arrival of higher</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>priority processes.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -224,7 +224,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Two processes require 200MB each. The system has free blocks of 150MB, 250MB, and 300MB. One process is allocated in the 250MB block. Name the fragmentation?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scheduling queue introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Scheduling queue introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -238,11 +238,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Imagine you receive a file named report.exe.Classify the file type.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Imagine you receive a file named report.exe.Classify the file type....</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Imagine you receive a file named report.exe.Classify the file type.</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q16",
@@ -252,7 +252,7 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "How does the Memory Management Unit (MMU) contribute to contiguous memory allocation?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A system allocates memory in fixed-size blocks, allowing processes to be stored in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>non-contiguous locations. What is this memory management technique called?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Paging</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A system allocates memory in fixed-size blocks, allowing processes to be stored in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>non-contiguous locations. What is this memory management technique called?</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Paging</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -268,7 +268,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which OS structure stores information about a process?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>OS definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Only three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>More than three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>OS definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Only three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>More than three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -282,7 +282,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which page replacement algorithm replaces the page that will not be used for the longest time in the future?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of page replacement algorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -296,13 +296,13 @@
       "marks": 2,
       "domain_tag": "[K]",
       "question": "Name the type of fragmentation that occurs due to fixed partition sizes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Name the type of fragmentation that occurs due to fixed partition sizes....</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Name the type of fragmentation that occurs due to fixed partition sizes.</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q20",
@@ -312,7 +312,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Why is a segment table needed in segmentation?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>It maps logical addresses to physical addresses and helps manage memory efficiently.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>It maps logical addresses to physical addresses and helps manage memory efficiently.</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -326,7 +326,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What does the absence of a cycle in an resource allocation graph indicate?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>an example to illustrate the detection of deadlock using Resource Allocation Graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>an example to illustrate the detection of deadlock using Resource Allocation Graph.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -340,13 +340,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "What term is used to describe a structured collection of related information stored on secondary storage?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What term is used to describe a structured collection of related information sto...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>What term is used to describe a structured collection of related information stored on secondary storage?</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q23",
@@ -356,7 +356,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Yes or No: A process moves directly from the 'new' state to the 'running' state.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>No</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>No</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -370,7 +370,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "List the operating system services for user.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Acts as an interface between the user and the hardware</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Acts as an interface between the user and the hardware</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -384,13 +384,13 @@
       "marks": 2,
       "domain_tag": "[K]",
       "question": "Write the type of access method commonly used in magnetic tape storage.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Structured thematic overview:</strong> Clear academic formulation addressing <em>Write the type of access method commonly used in magnetic tape storage....</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write the type of access method commonly used in magnetic tape storage.</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Structured thematic overview and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q26",
@@ -400,7 +400,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How does the system interpret an object file?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary Format, Symbols, and Relocations</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(10 × 1 = 10)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Short Answer Questions</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Binary Format, Symbols, and Relocations</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(10 × 1 = 10)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Short Answer Questions</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -414,11 +414,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Define system call.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Formal conceptual definition:</strong> Clear academic formulation addressing <em>Define system call....</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define system call.</em> per the Fundamentals of OS and Linux syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Formal conceptual definition and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Foundational definition established per Fundamentals of OS and Linux syllabus criteria."
     },
     {
       "id": "Q28",
@@ -428,13 +428,13 @@
       "marks": 2,
       "domain_tag": "[U]",
       "question": "How would you describe the issue that arises when a file system using contiguous allocation lacks large free spaces?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>How would you describe the issue that arises when a file system using contiguous...</em> within Fundamentals of OS and Linux.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>How would you describe the issue that arises when a file system using contiguous allocation lacks large free spaces?</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Fundamentals of OS and Linux valuation scheme."
+      "final_answer": "Core principles verified per Fundamentals of OS and Linux valuation scheme."
     },
     {
       "id": "Q29",
@@ -444,7 +444,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Identify the different system calls for device management .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any 3 or more <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any 3 or more <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -458,7 +458,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Describe how Time-Sharing Systems manage multiple users simultaneously.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multiprogramming</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Multiprogramming</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -472,7 +472,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Summarize the functions of the OS for a user.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Summarize the functions of the OS for a user.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Summarize the functions of the OS for a user. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -488,7 +488,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "What are the differences between CPU-bound and I/O-bound processes?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>One mark for each comparison</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>One mark for each comparison</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -502,7 +502,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain the role of the PCB in process execution and management.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the role of the PCB in process execution and management. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the role of the PCB in process execution and management. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -516,7 +516,7 @@
       "marks": 6,
       "domain_tag": "[K]",
       "question": "List and describe the four necessary conditions for deadlock to occur.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering List and describe the four necessary conditions for deadlock to occur.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering List and describe the four necessary conditions for deadlock to occur. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -532,7 +532,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "How does the acyclic graph directory improve file sharing compared to a tree-structured directory?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>tree-structured directory?</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Comparison <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Comparison <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -546,7 +546,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Summarize the operations that can be performed on a directory.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Summarize the operations that can be performed on a directory. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Summarize the operations that can be performed on a directory. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -560,7 +560,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Identify preemptive CPU scheduling algorithms and describe them.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Identify preemptive CPU scheduling algorithms and describe them.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Identify preemptive CPU scheduling algorithms and describe them. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -576,7 +576,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain how processes move between different scheduling queues.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Scheduling queue introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Scheduling queue introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -590,7 +590,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "What are background services, and when do they run?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering What are background services, and when do they run? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering What are background services, and when do they run? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -604,7 +604,7 @@
       "marks": 6,
       "domain_tag": "[K]",
       "question": "List the common file types recognized by an operating system.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering List the common file types recognized by an operating system.  . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering List the common file types recognized by an operating system. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -620,7 +620,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Explain why linked allocation is better suited for files that frequently grow in size.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Linked allocation introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Linked allocation introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -636,7 +636,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "List and define five important scheduling criteria.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering List and define five important scheduling criteria. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering List and define five important scheduling criteria. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -650,7 +650,7 @@
       "marks": 6,
       "domain_tag": "[U]",
       "question": "Compare LRU and Optimal page replacement algorithm with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of page replacement algorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -666,7 +666,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Identify the operating system services for the system.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>One mark for each service</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(4 × 5 = 20)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay Questions</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>One mark for each service</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(4 × 5 = 20)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -680,7 +680,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Why is swapping used in memory management?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Why is swapping used in memory management? x4 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Why is swapping used in memory management? x4 = 20] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -694,7 +694,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Identify the different types of operating systems.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>OS definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Only three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Or</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>More than three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>OS definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Only three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>More than three types <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(8 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -710,7 +710,7 @@
       "marks": 10,
       "domain_tag": "[K] ",
       "question": "Describe the evolution of operating systems from early computers to modern OS.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -724,7 +724,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Explain the concept of a Resource Allocation Graph in operating systems.Provide an example to illustrate the detection of deadlock using Resource Allocation Graph.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>an example to illustrate the detection of deadlock using Resource Allocation Graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -738,7 +738,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Discuss a condition that deadlock occurs.Briefly describe the deadlock characterization .",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -752,7 +752,7 @@
       "marks": 10,
       "domain_tag": "[U]",
       "question": "Discuss a condition that causes a deadlock. Briefly describe the deadlock characterization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -768,7 +768,7 @@
       "marks": 10,
       "domain_tag": "[K] ",
       "question": "What is the purpose of a page replacement algorithm?List the different types of page replacement algorithms.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>of page replacement algorithms.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Page replacement algorithm introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>For each type with examples <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(10 x 2 =20)</li></ul>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -782,7 +782,7 @@
       "marks": 10,
       "domain_tag": "[K] ",
       "question": "Show the concept of segmentation with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>an example to illustrate the detection of deadlock using Resource Allocation Graph.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>an example to illustrate the detection of deadlock using Resource Allocation Graph.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Figure with markings<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example to detect deadlock with figure <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -796,7 +796,7 @@
       "marks": 10,
       "domain_tag": "[U]",
       "question": "Explain the importance of file operations in file management. List five common types of files in an OS.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"

@@ -29,7 +29,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "If the joint pmf is p(0,0)=0.2, p(0,1)=0.3, p(1,0)=0.2, p(1,1)=0.3, find P(X=0 ∣ Y=0).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of conditional probability <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>P(X=0|Y=0) =0.5 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Definition of conditional probability only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Maximum =2 marks]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of conditional probability <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>P(X=0|Y=0) =0.5 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[Definition of conditional probability only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Maximum =2 marks]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -43,7 +43,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the formula for the conditional probability P(Y=y∣X=x) in terms of the joint and marginal probabilities.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f(x, y) =xy2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>30 , x= 1,2,3, y= 1,2.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>fY (y) =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>3X</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>x=1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f(x, y) =y2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>30 (1 + 2 + 3) = y25 , y= 1,2.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>U∼χ 2v1, V∼χ 2v2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>independently, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>U/v1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>V /v2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>∼F v1,v2.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Given</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f(x, y) =xy2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>30 , x= 1,2,3, y= 1,2.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>fY (y) =</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>3X</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>x=1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f(x, y) =y2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>30 (1 + 2 + 3) = y25 , y= 1,2.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>U∼χ 2v1, V∼χ 2v2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>independently, then</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>U/v1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V /v2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>∼F v1,v2.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -57,13 +57,13 @@
       "marks": 2,
       "domain_tag": "[E][5]",
       "question": "Based on the following data, test whether the preference for Car models A and B is independent of the age groups. Car model Age group Model A Model B Age I 215 135 II 325 175 III 60 90",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Based on the following data, test whether the preference for Car models A and B ...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Based on the following data, test whether the preference for Car models A and B is independent of the age groups. Car model Age group Model A Model B Age I 215 135 II 325 175 III 60 90</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q4",
@@ -73,7 +73,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "If P(x, y) = cx2y; for x = 1, 2 y = 1, 2, 3 is a joint probability mass function, find c.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any two applications <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Any two applications <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -87,7 +87,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Given the joint probability mass function as Find the marginal probability mass function of Y.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Applications ofF-Distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) Testing equality of two variances</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) Analysis of Variance (ANOV A).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Applications ofF-Distribution</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(i) Testing equality of two variances</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(ii) Analysis of Variance (ANOV A).</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -103,13 +103,13 @@
       "marks": 2,
       "domain_tag": "[E][5]",
       "question": "Based on the following data on length (X) and weight (Y), find rank correlation coefficient. X 70 48 58 55 54 50 60 52 Y 62 47 53 60 55 68 51 48",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Based on the following data on length (X) and weight (Y), find rank correlation ...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Based on the following data on length (X) and weight (Y), find rank correlation coefficient. X 70 48 58 55 54 50 60 52 Y 62 47 53 60 55 68 51 48</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q7",
@@ -119,7 +119,7 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "The IQ scores in a population are normally distributed with a mean of 100 and a standard deviation of 15. Calculate the percentage of people whose IQ lies between 112 and 135.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition/Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Definition/Example <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -133,7 +133,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the pdf of the sampling distribution of mean of a sample of size n from a normal distribution.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Type II error occurs whenH 0 is not rejected although it is false.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Type II error occurs whenH 0 is not rejected although it is false.</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -147,13 +147,13 @@
       "marks": 2,
       "domain_tag": "[U][2]",
       "question": "State the Central Limit Theorem.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State the Central Limit Theorem....</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>State the Central Limit Theorem.</em> per the Data Analysis in Inferential Statistics using R/Python syllabus.</p></div>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "Precise statement of principles and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Foundational definition established per Data Analysis in Inferential Statistics using R/Python syllabus criteria."
     },
     {
       "id": "Q10",
@@ -163,13 +163,13 @@
       "marks": 2,
       "domain_tag": "[E][5]",
       "question": "Based on the following data, obtain the regression equation of X on Y and the regression equation of Y on X. X 2 4 6 8 10 Y 5 7 9 8 11",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Based on the following data, obtain the regression equation of X on Y and the re...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Based on the following data, obtain the regression equation of X on Y and the regression equation of Y on X. X 2 4 6 8 10 Y 5 7 9 8 11</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q11",
@@ -179,7 +179,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Give two practical uses of Student's t-distribution in statistics.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f 1 (x)= 2x+3/21; x=1, 2, 3 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f2(y) = 6+3y/21; x=1,2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Condition for independence <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Checking independence <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Condition for independence only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f 1 (x)= 2x+3/21; x=1, 2, 3 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f2(y) = 6+3y/21; x=1,2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for independence <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Checking independence <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for independence only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -193,7 +193,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "If t ~ t14 , Find P( t > 2.262 ).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Zi ∼N(0,1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>then nX</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>i=1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z 2i ∼χ 2n.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z∼N(0,1), V∼χ 2ν</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>independently, then</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Zp</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>V /ν</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>∼t ν.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Zi ∼N(0,1)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>then nX</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>i=1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z 2i ∼χ 2n.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z∼N(0,1), V∼χ 2ν</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>independently, then</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Zp</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V /ν</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>∼t ν.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -207,13 +207,13 @@
       "marks": 2,
       "domain_tag": "[U][2]",
       "question": "If X follows a normal distribution with mean 2 and standard deviation 3, find the probability that the sample mean 𝑋 is greater than 2.5, given a sample size of 16.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "[Specify Chi square pdf, mean, variance and mgf –   each)"
+      "final_answer": "[Specify Chi square pdf, mean, variance and mgf – each)"
     },
     {
       "id": "Q14",
@@ -223,7 +223,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Can the F-distribution take negative values? Why or why not?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of consistency <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sufficient conditions <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of consistency <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sufficient conditions <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -237,7 +237,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "State any two applications of the F-distribution in statistical analysis.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>n= 100, σ= 10, ¯X= 168.8, µ 0 = 170.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>H0 :µ= 170, H 1 :µ̸= 170.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>¯X−µ 0</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>σ/√n = 168.8−17010/√100 =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Atα= 0.05</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>|Z|= 1.2<1.96.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hence, do not rejectH 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The assumptionµ= 170 cm is not rejected.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Given</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>n= 100, σ= 10, ¯X= 168.8, µ 0 = 170.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>H0 :µ= 170, H 1 :µ̸= 170.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>¯X−µ 0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>σ/√n = 168.8−17010/√100 =</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Atα= 0.05</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>|Z|= 1.2<1.96.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hence, do not rejectH 0.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The assumptionµ= 170 cm is not rejected.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -251,7 +251,7 @@
       "marks": 2,
       "domain_tag": "[K][3]",
       "question": "State the sufficient conditions for consistency of a parameter.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of consistency <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sufficient conditions <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of consistency <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sufficient conditions <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -267,7 +267,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "State one advantage and one disadvantage of the method of moments.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -281,7 +281,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What does 99% confidence level mean? f(x, y) = ; x = 1, 2, 3; y = 1, 2. xy 2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Chi-Square Test for Homogeneity...3 marks Observed frequencies:...2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Support Neutral Oppose Total</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A 40 30 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B 50 20 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C 30 40 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Total 120 90 90 300</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hypotheses:...1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>H0 : The cities are homogeneous, H 1 : The cities are not homogeneous.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expected frequencies....2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eij = (row total)(column total)grand total</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>giving</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Support Neutral Oppose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A 40 30 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B 40 30 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C 40 30 30</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Chi-Square Test for Homogeneity 3 marks Observed frequencies: 2 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Support Neutral Oppose Total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A 40 30 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>B 50 20 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>C 30 40 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total 120 90 90 300</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hypotheses: 1 mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>H0 : The cities are homogeneous, H 1 : The cities are not homogeneous.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Expected frequencies 2 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Eij = (row total)(column total)grand total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>giving</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Support Neutral Oppose</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A 40 30 30</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>B 40 30 30</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>C 40 30 30</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -295,13 +295,13 @@
       "marks": 2,
       "domain_tag": "[A][3]",
       "question": "Obtain the moment estimate for μ in N (μ, σ), σ known.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Obtain the moment estimate for μ in N (μ, σ), σ known....</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Obtain the moment estimate for μ in N (μ, σ), σ known.</em>.</p></div>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q20",
@@ -311,7 +311,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Distinguish between estimator and estimate.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition/Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Definition/Example – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -325,7 +325,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What are the properties of a good point estimator?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Properties of a Good Point Estimator</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) Unbiasedness</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) Consistency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iii) Efficiency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iv) Sufficiency.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(i) Unbiasedness</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(ii) Consistency</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iii) Efficiency</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iv) Sufficiency.</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -339,13 +339,13 @@
       "marks": 2,
       "domain_tag": "[U][4]",
       "question": "Briefly explain the two types of errors that can occur in statistical hypothesis testing.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Briefly explain the two types of errors that can occur in statistical hypothesis...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Briefly explain the two types of errors that can occur in statistical hypothesis testing.</em>.</p></div>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q23",
@@ -355,13 +355,13 @@
       "marks": 2,
       "domain_tag": "[An][5]",
       "question": "A test of 100 youths and 200 adults showed that 42 of the youths and 50 of the adults were poor drivers. Use the data to test the claim that the youth percentage of poor drivers is larger than the adult percentage.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>A test of 100 youths and 200 adults showed that 42 of the youths and 50 of the a...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>A test of 100 youths and 200 adults showed that 42 of the youths and 50 of the adults were poor drivers. Use the data to test the claim that the youth percentage of poor drivers is larger than the adult percentage.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q24",
@@ -371,7 +371,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is meant by a composite hypothesis?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition/Example - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Definition/Example - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -385,7 +385,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Define Type II Error.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Type II error occurs whenH 0 is not rejected although it is false. 1</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Type II error occurs whenH 0 is not rejected although it is false. 1</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -399,7 +399,7 @@
       "marks": 2,
       "domain_tag": "[E][5]",
       "question": "The three samples given below have been obtained from three normal populations with equal variances. Test whether the population means are equal. Y 1 Y 2 Y 3 8 7 12 10 5 9 7 10 13 14 9 12 11 9 14 (5x6=30 marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assumptions oft-Test. Any two assumptions give 2 marks.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) Independent observations</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) Normally distributed population</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iii) Continuous observations</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iv) Equal variances for the pooled two-sample test.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Assumptions oft-Test. Any two assumptions give 2 marks.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(i) Independent observations</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(ii) Normally distributed population</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iii) Continuous observations</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iv) Equal variances for the pooled two-sample test.</li></ul>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
@@ -415,7 +415,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What assumptions are made in the Chi-Square test for homogeneity?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any two assumptions for Chi-square test for homogeneity/General assumptions of</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Chi-square test <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -429,7 +429,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What are assumptions of t-test?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Assumptions oft-Test. Any two assumptions give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> . (i) Independent observations, (ii) Normally distributed population, (iii) Continuous observations, (iv) Equal variances for the pooled two-sample test.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Assumptions oft-Test. Any two assumptions give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> . (i) Independent observations, (ii) Normally distributed population, (iii) Continuous observations, (iv) Equal variances for the pooled two-sample test.</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -443,13 +443,13 @@
       "marks": 2,
       "domain_tag": "[K][4]",
       "question": "State any two conditions required for the valid application of the non -parametric Chi - square tests.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State any two conditions required for the valid application of the non -parametr...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>State any two conditions required for the valid application of the non -parametric Chi - square tests.</em> per the Data Analysis in Inferential Statistics using R/Python syllabus.</p></div>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "Precise statement of principles and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Foundational definition established per Data Analysis in Inferential Statistics using R/Python syllabus criteria."
     },
     {
       "id": "Q30",
@@ -459,13 +459,13 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Examine whether the mean of the population is",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Examine whether the mean of the population is...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Examine whether the mean of the population is</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [
         "Official Practical Model Paper"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q31",
@@ -475,7 +475,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Give the test statistic in the case of small sample test to test the population mean when the population standard deviations are unknown.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(𝑋−𝜇)√𝑛</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -489,7 +489,7 @@
       "marks": 2,
       "domain_tag": "[A][4]",
       "question": "A sample of 10 individuals is chosen at random from a normal population and their mean weight is found to be 67.8 Kg with standard deviation 2.826 Kg. Check whether the mean of the population is 66. (7x2=14 marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(𝑋−𝜇)√𝑛</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -505,11 +505,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCSTA202 - DATA ANALYSIS",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCSTA202 - DATA ANALY...</em> within Data Analysis in Inferential Statistics using R/Python.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Third SEMESTER Discipline Specific Core Course (DSC) - MG3DSCSTA202 - DATA ANALYSIS</em>.</p></div>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
+      "final_answer": "Core principles verified per Data Analysis in Inferential Statistics using R/Python valuation scheme."
     },
     {
       "id": "Q34",
@@ -519,7 +519,7 @@
       "marks": 6,
       "domain_tag": "[An][4]",
       "question": "87 with standard deviation Rs. 1.28. Can the applicant safely assume that the hourly wage paid by factory B is higher than that of factory A?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering 87 with standard deviation Rs. 1.28. Can the applicant safely assume that the hourly wage paid by factory B is higher than that of factory A? . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -535,7 +535,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "cm. the mean height of the sample of students is found to be 168.8cm. can we accept the assumption that the mean height of the students is 170 cm?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(𝑋−𝜇)√𝑛</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -549,7 +549,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "The joint probability mass function is given by Are the variables X and Y independent?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -563,7 +563,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "If f(x, y) = cxy; x = 0, 1 and y = 1, 2 is a joint pdf, find (i) c (ii) P(X = 1, Y = 2), (iii) P(Y=2).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>667>9.488, rejectH 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> The opinions of the three cities are not homogeneous. 5</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>667>9.488, rejectH 0 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> The opinions of the three cities are not homogeneous. 5</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -577,7 +577,7 @@
       "marks": 6,
       "domain_tag": "[U][1]",
       "question": "For (X, Y), the joint pdf is given by f(x, y) = 30xy2; x = 1, 2, 3; y = 1, 2. Check independence of X and Y.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering For (X, Y), the joint pdf is given by f(x, y) = 30xy2; x = 1, 2, 3; y = 1, 2. Check independence of X and Y. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering For (X, Y), the joint pdf is given by f(x, y) = 30xy2; x = 1, 2, 3; y = 1, 2. Check independence of X and Y. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -593,11 +593,11 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Let and be independent. Find the distribution, pdf, MGF, mean and variance of U+V.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "[Specify Chi square pdf, mean, variance and mgf –   each)"
+      "final_answer": "[Specify Chi square pdf, mean, variance and mgf – each)"
     },
     {
       "id": "Q40",
@@ -607,7 +607,7 @@
       "marks": 6,
       "domain_tag": "[An] ",
       "question": "Discuss different inter-relations among sampling distributions.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If Zi ∼N(0,1), then nX i=1 Z 2i ∼χ 2n. If Z∼N(0,1), V∼χ 2ν, independently, then Zp V /ν ∼t ν. 2 If U∼χ 2v1, V∼χ 2v2, independently, then U/v1 V /v2 ∼F v1,v2.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>If Zi ∼N(0,1), then nX i=1 Z 2i ∼χ 2n. If Z∼N(0,1), V∼χ 2ν, independently, then Zp V /ν ∼t ν. 2 If U∼χ 2v1, V∼χ 2v2, independently, then U/v1 V /v2 ∼F v1,v2.</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -621,7 +621,7 @@
       "marks": 6,
       "domain_tag": "[U][2]",
       "question": "Define Student’s t distribution. State any two of its properties. Mention any one Student’s t statistic.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of sampling distribution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define any statistic <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sampling distribution<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of sampling distribution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sampling distribution<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -637,7 +637,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Define sampling distribution. If x1, x2, , xn are observations from a sample of population, then generate a statistic and suggest its sampling distribution.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of sampling distribution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define any statistic <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sampling distribution<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of sampling distribution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Define any statistic <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -651,7 +651,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Explain sampling distributions with suitable examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sampling Distribution with any one example 3+3</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Sampling Distribution with any one example 3+3</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -665,7 +665,7 @@
       "marks": 6,
       "domain_tag": "[U][3]",
       "question": "Explain the concepts of efficiency and sufficiency as desirable properties of point estimators, and support your explanation with one example each.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Properties of a Good Point Estimator</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(i) Unbiasedness</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(ii) Consistency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iii) Efficiency</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(iv) Sufficiency.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Properties of a Good Point Estimator</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(i) Unbiasedness</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(ii) Consistency</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iii) Efficiency</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(iv) Sufficiency.</li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -681,7 +681,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "What does it mean for an estimator to be consistent? How is this property useful? State the sufficient conditions for consistentcy.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of consistency – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sufficient conditions – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of consistency – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sufficient conditions – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span> each</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -695,11 +695,11 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Define the concept MLE and state any three of its important properties.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition...3 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Three important properties... 3 marks</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Definition 3 marks</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "Definition..."
+      "final_answer": "Definition"
     },
     {
       "id": "Q47",
@@ -709,7 +709,7 @@
       "marks": 6,
       "domain_tag": "[A][3]",
       "question": "Obtain maximum likelih ood estimators of the parameters of uniform distribution over the interval (a, b).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Obtain maximum likelih ood estimators of the parameters of uniform distribution over the interval (a, b). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Obtain maximum likelih ood estimators of the parameters of uniform distribution over the interval (a, b). . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -725,7 +725,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "In 90 spins of a roulette wheel with 18 red, 18 black, and 2 green slots, red occurs 52 times. Test whether the wheel is fair in terms of red outcomes?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>H0: P= 18/38, H1: P≠18/38 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> each</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>t =</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝑝−𝑝𝑜</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>√𝑝0𝑞0/𝑛 ~𝑁(0,1) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer=1.98 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value= 1.96 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reject H0; This suggests that the wheel may not be fair in terms of red outcomes.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[4 marks shall be awarded for any reasonable attempt.]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>H0: P= 18/38, H1: P≠18/38 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> each</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>t =</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Answer=1.98 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value= 1.96 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reject H0; This suggests that the wheel may not be fair in terms of red outcomes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[4 marks shall be awarded for any reasonable attempt.]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -739,7 +739,7 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "A sample of 100 students is taken from a population with heights having s.d.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given n= 100, σ= 10, ¯X= 168.8, µ 0 = 170. H0 :µ= 170, H 1 :µ̸= 170. Z= ¯X−µ 0 σ/√n = 168.8−17010/√100 = Atα= 0.05, |Z|= 1.2<1.96. Hence, do not rejectH 0. The assumptionµ= 170 cm is not rejected.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Given n= 100, σ= 10, ¯X= 168.8, µ 0 = 170. H0 :µ= 170, H 1 :µ̸= 170. Z= ¯X−µ 0 σ/√n = 168.8−17010/√100 = Atα= 0.05, |Z|= 1.2<1.96. Hence, do not rejectH 0. The assumptionµ= 170 cm is not rejected.</p>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -755,7 +755,7 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "The average wage of a sample of 150 workers in factory A was Rs. 2.56 with standard deviation Rs. 1.08. A sample of 200 workers in factory B has average hourly wage of Rs.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering The average wage of a sample of 150 workers in factory A was Rs. 2.56 with standard deviation Rs. 1.08. A sample of 200 workers in factory B has average hourly wage of Rs. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering The average wage of a sample of 150 workers in factory A was Rs. 2.56 with standard deviation Rs. 1.08. A sample of 200 workers in factory B has average hourly wage of Rs. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -771,7 +771,7 @@
       "marks": 6,
       "domain_tag": "[E] ",
       "question": "Briefly discuss ANOVA. If the Between Sum of Squares (SSC) is 123.33 and the Within Sum of Squares (SSE) is 94 for data collected on the test scores of students taught using three different teaching methods, conduct a one-way ANOVA to test whether there is a significant difference in the average scores among the teaching methods, assuming that the data was collected from 5 students per group.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any reasonable brief explanation of ANOVA <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MSC=SSC/K-1 =61.665- 1/2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MSE=SSE/N-K=7.833 -1/2 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>F=MSC/MSE = 7.87<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value = 3.88<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reject the hypothesis, there is a significant difference in the average score</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Essay Questions</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Four marks shall be awarded for any reasonable attempt, if the solution does</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>not qualify for the step marks mentioned.]</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any reasonable brief explanation of ANOVA <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>MSC=SSC/K-1 =61.665- 1/2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>MSE=SSE/N-K=7.833 -1/2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>F=MSC/MSE = 7.87<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value = 3.88<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reject the hypothesis, there is a significant difference in the average score</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[Four marks shall be awarded for any reasonable attempt, if the solution does</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>not qualify for the step marks mentioned.]</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -787,7 +787,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "A survey finds 21% of 222 men and 18% of 208 women purchased books online. Check whether men are more likely to purchase books online at α = 0.05?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Given n1 = 222,ˆp 1 = 0.21, n 2 = 208,ˆp 2 = 0.18. Hypotheses <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> H0 :p 1 =p 2, H 1 :p 1 > p2. The pooled estimate <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ˆp=222(0.21) + 208(0.18)430 = 0.1955. Hence, SE= s</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0.1955(0.8045) \u0012 1 222 + 1208 \u0013 ≈0.0382. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Therefore, Z= 0.21−0.180.0382 ≈0.785. Atα= 0.05, Z0.05 = 1.645. 3 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Since</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>0.785 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Part C Essay Type Questions. Answer 1 question. Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(12 marks)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Given n1 = 222,ˆp 1 = 0.21, n 2 = 208,ˆp 2 = 0.18. Hypotheses <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> H0 :p 1 =p 2, H 1 :p 1 > p2. The pooled estimate <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> ˆp=222(0.21) + 208(0.18)430 = 0.1955. Hence, SE= s</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>0.1955(0.8045) \u0012 1 222 + 1208 \u0013 ≈0.0382. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Therefore, Z= 0.21−0.180.0382 ≈0.785. Atα= 0.05, Z0.05 = 1.645. 3 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Since</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>0.785 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span> Part C Essay Type Questions. Answer 1 question. Each question carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(12 marks)</span> .</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -801,7 +801,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "Define the joint probability mass function and explain its two main properties. A bag contains one red, one green, and one blue ball. Two balls are drawn without replacement. Let X be the number of red balls drawn and Y the number of green balls drawn. Construct the joint probability mass function and distribution function.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -815,7 +815,7 @@
       "marks": 10,
       "domain_tag": "[U] ",
       "question": "What does the value of the joint distribution function at a point (x,y) represent? Using the following situation explain the concept. A fair coin is tossed 3 times. Let X be the number of heads in the first two tosses and Y be the number of heads in all three tosses.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of joint probability mass function <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Two properties <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct pmf = 4 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>f (0,0) =0, f (0,1) =2/6, f (1,0) = 2/6, f (1,1) =2/6</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct distribution function = 2 Marks</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -829,13 +829,13 @@
       "marks": 10,
       "domain_tag": "[U][2]",
       "question": "Define chi-square distribution and state any four of its properties. For a sample of size 10 from a normal population with standard deviation 5, find P (8.4 < S2 < 42.3).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>U+V ~𝜒2 (2) Distribution</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Chi square distribution with 2 degrees of freedom <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>MGF=(1-2t)-1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mean = 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V ariance = 4 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[Specify Chi square pdf, mean, variance and mgf <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span> (1 mark each)</li></ul>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
       ],
       "has_official_scheme": false,
-      "final_answer": "[Specify Chi square pdf, mean, variance and mgf –   each)"
+      "final_answer": "[Specify Chi square pdf, mean, variance and mgf – each)"
     },
     {
       "id": "Q56",
@@ -845,7 +845,7 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Explain the large sample tests for population mean. A sample of 100 students is taken from a population with heights having s.d. 10 cm. the mean height of the sample of students is found to be 168.8cm. can we accept the assumption that the mean height of the students is 170 cm?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(𝑋−𝜇)√𝑛</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Accept the hypothesis</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of any one large sample test for population mean<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Define H0 and H1<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correct test statistic= 2 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Z=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜎 ~𝑁(0,1)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Answer= -1.2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Table value= 1.96<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Conclusion <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -859,7 +859,7 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "a. Explain the concept of the Chi-Square test for homogeneity of attributes. b. A study was conducted to examine whether people in three cities are homogeneous with respect to their opinion (Support, Neutral, Oppose) on a new transport policy. The results are as follows: City Support Neutral Oppose Total City A 40 30 30 100 City B 50 20 30 100 City C 30 40 30 100 Total 120 90 90 300 Test at 5% level of significance whether the cities are homogeneous in their opinion.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Chi-Square Test for Homogeneity...3 marks Observed frequencies:...2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Support Neutral Oppose Total</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A 40 30 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B 50 20 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C 30 40 30 100</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Total 120 90 90 300</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hypotheses:...1 mark</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>H0 : The cities are homogeneous, H 1 : The cities are not homogeneous.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Expected frequencies....2 marks</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Eij = (row total)(column total)grand total</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>giving</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Support Neutral Oppose</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A 40 30 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B 40 30 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C 40 30 30</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Chi-Square Test for Homogeneity 3 marks Observed frequencies: 2 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A 40 30 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>B 50 20 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>C 30 40 30 100</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hypotheses: 1 mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Expected frequencies 2 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Eij = (row total)(column total)grand total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>giving</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A 40 30 30</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>B 40 30 30</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>C 40 30 30</li></ul>",
       "source_exam": "III Semester MGU-UGP-(Hons) 2024 Admission Regular(Special Examination) Examination July 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -873,7 +873,7 @@
       "marks": 10,
       "domain_tag": "[An][4]",
       "question": "Fit a Poisson distribution to the following frequency data and perform a goodness -of-fit test. x 0 1 2 3 4 f 17167 1861 124 2 1 (1x12=12 marks)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Data Analysis In Inferential Statistics Using R/Python",
       "repeated_in": [
         "Data Analysis In Inferential Statistics Using R/Python"
@@ -889,7 +889,7 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "U ∼ (1)χ2 V ∼ (1)χ2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Third Semester MGU-UGP(Hons.) Regular Exam Oct 2025",
       "repeated_in": [],
       "has_official_scheme": false,

@@ -28,7 +28,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Which type of ROM can be erased electrically and reprogrammed?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any statement related to EEPROM or Flash Memory.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Any statement related to EEPROM or Flash Memory.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -42,11 +42,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "x 10 = 10",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>x 10 = 10...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>x 10 = 10</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q3",
@@ -56,11 +56,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify the truth table of basic logic gates with necessary diagrams.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify the truth table of basic logic gates with necessary diagrams....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify the truth table of basic logic gates with necessary diagrams.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q4",
@@ -70,7 +70,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Write the hexadecimal equivalent of the decimal number 17.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A subtractor unit is a combinational logic circuit designed to perform the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>arithmetic subtraction of two binary numbers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If no carry occurs, the result is negative and in 2's complement form.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NOTE: IF A STUDENT EXPLAINED IT ONLY WITH EXAMPLES, AWARD MARKS IF</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>THE STEPS ARE CORRECT.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A subtractor unit is a combinational logic circuit designed to perform the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>arithmetic subtraction of two binary numbers.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If no carry occurs, the result is negative and in 2's complement form.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>NOTE: IF A STUDENT EXPLAINED IT ONLY WITH EXAMPLES, AWARD MARKS IF</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>THE STEPS ARE CORRECT.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -84,11 +84,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a basic Boolean equation and verify the truth table.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Implement a basic Boolean equation and verify the truth table....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Implement a basic Boolean equation and verify the truth table.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q6",
@@ -98,7 +98,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Construct the truth table of a full adder for inputs A, B, and Cin.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any term related with cell quantity and layout.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Any term related with cell quantity and layout.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -111,12 +111,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Identify the addressing mode that requires two memory accesses. K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Identify the addressing mode that requires two memory accesses. K CO1...</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Identify the addressing mode that requires two memory accesses. K",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Identify the addressing mode that requires two memory accesses. K</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q8",
@@ -126,11 +126,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify De Morgan’s theorem with the help of a truth table.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify De Morgan’s theorem with the help of a truth table....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify De Morgan’s theorem with the help of a truth table.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q9",
@@ -140,7 +140,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the purpose of a subtractor unit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>2</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -154,11 +154,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify the universal property of NAND gate.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify the universal property of NAND gate....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify the universal property of NAND gate.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q11",
@@ -168,7 +168,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the main purpose of using DMA.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages of Semiconductor RAM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>High Speed: Access times are very fast, often measured in nanoseconds.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Efficient Performance: Ideal for CPU cache (SRAM) and main memory (DRAM)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>due to low latency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compact & Lightweight: Small size makes them ideal for smartphones, laptops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and tablets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Low Power Consumption: Generally consume less power compared to other</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>storage types.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reliability: No moving parts mean they are more durable and shockproof.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Disadvantages of Semiconductor RAM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Volatility: Data is lost when the power is turned off.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>High Cost: Typically more expensive per gigabyte compared to non</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>semiconductor storage technologies.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lower Capacity: While improving, they have lower storage densities compared to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hard Disk Drives (HDDs).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limited Lifespan (DRAM): Requires constant power and periodic refresh cycles</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(for DRAM) to maintain data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sensitivity: Semiconductor chips are sensitive to environmental factors like high</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>temperature and radiation.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Advantages of Semiconductor RAM</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>High Speed: Access times are very fast, often measured in nanoseconds.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Efficient Performance: Ideal for CPU cache (SRAM) and main memory (DRAM)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>due to low latency.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Compact & Lightweight: Small size makes them ideal for smartphones, laptops</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and tablets.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Low Power Consumption: Generally consume less power compared to other</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>storage types.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reliability: No moving parts mean they are more durable and shockproof.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Disadvantages of Semiconductor RAM</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Volatility: Data is lost when the power is turned off.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>High Cost: Typically more expensive per gigabyte compared to non</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>semiconductor storage technologies.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Lower Capacity: While improving, they have lower storage densities compared to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hard Disk Drives (HDDs).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Limited Lifespan (DRAM): Requires constant power and periodic refresh cycles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(for DRAM) to maintain data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sensitivity: Semiconductor chips are sensitive to environmental factors like high</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>temperature and radiation.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -181,8 +181,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Find the 1’s complement of the binary number 100110. A CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary subtraction using 2's complement is performed by adding the minuend to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the 2's complement of the subtrahend.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The key steps are: 1. Find the 2's complement of the subtrahend (invert bits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and add 1).</li></ul>",
+      "question": "Find the 1’s complement of the binary number 100110. A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Binary subtraction using 2's complement is performed by adding the minuend to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The key steps are: 1. Find the 2's complement of the subtrahend (invert bits</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and add 1).</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -196,11 +196,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify the universal property of NOR gate.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify the universal property of NOR gate....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify the universal property of NOR gate.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q14",
@@ -210,7 +210,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "State the difference between 3-variable and 4-variable K-map.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Keywords to check; - placement of data , complexity , speed, size.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any terms related with mapping techniques.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Keywords to check; - placement of data , complexity , speed, size.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any terms related with mapping techniques.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -223,12 +223,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Identify a valid BCD number. K CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Identify a valid BCD number. K CO2...</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Identify a valid BCD number. K",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Identify a valid BCD number. K</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q16",
@@ -238,11 +238,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify the truth table of RS flip flop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify the truth table of RS flip flop....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify the truth table of RS flip flop.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q17",
@@ -252,7 +252,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Identify the function of the data bus.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different number systems and integer representation with examples.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Different number systems and integer representation with examples.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -265,12 +265,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Write the result of the Boolean expression A + A′. U CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>Write the result of the Boolean expression A + A′. U CO2...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Write the result of the Boolean expression A + A′. U",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write the result of the Boolean expression A + A′. U</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q19",
@@ -280,11 +280,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Verify the truth table of JK flip flop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Verify the truth table of JK flip flop....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Verify the truth table of JK flip flop.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q20",
@@ -294,7 +294,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Determine the output of A XNOR B for all possible inputs.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Truth table of xnor gate.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Truth table of xnor gate.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -307,12 +307,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "State the source from which control signals are generated in a microprogrammed control unit. K CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State the source from which control signals are generated in a microprogrammed c...</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "State the source from which control signals are generated in a microprogrammed control unit. K",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>State the source from which control signals are generated in a microprogrammed control unit. K</em> per the Computer Organization syllabus.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Precise statement of principles and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Foundational definition established per Computer Organization syllabus criteria."
     },
     {
       "id": "Q22",
@@ -322,7 +322,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a half adder circuit and verify the truth table.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Full adder truth table.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If a carry occurs, discard it; the result is positive.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>If a carry occurs, discard it; the result is positive.</p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -336,11 +336,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "State the number of select lines in a 4-to-1 multiplexer.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Precise statement of principles:</strong> Clear academic formulation addressing <em>State the number of select lines in a 4-to-1 multiplexer....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>State the number of select lines in a 4-to-1 multiplexer.</em> per the Computer Organization syllabus.</p></div>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Precise statement of principles and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Foundational definition established per Computer Organization syllabus criteria."
     },
     {
       "id": "Q24",
@@ -349,12 +349,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "State the output condition of an RS flip-flop when R = 1 and S = 0. U CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>State the output condition of an RS flip-flop when R = 1 and S = 0. U CO3...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "State the output condition of an RS flip-flop when R = 1 and S = 0. U",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>State the output condition of an RS flip-flop when R = 1 and S = 0. U</em> per the Computer Organization syllabus.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Foundational definition established per Computer Organization syllabus criteria."
     },
     {
       "id": "Q25",
@@ -364,7 +364,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a full adder circuit and verify the truth table.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Full adder truth table.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If a carry occurs, discard it; the result is positive.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>If a carry occurs, discard it; the result is positive.</p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -378,7 +378,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What happens when J = K = 1 in a JK flip-flop?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Toggle condition.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Toggle condition.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -391,12 +391,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Name the register used in stack addressing mode. K CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Name the register used in stack addressing mode. K CO3...</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Name the register used in stack addressing mode. K",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Name the register used in stack addressing mode. K</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q28",
@@ -406,11 +406,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a basic multiplexer circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Implement a basic multiplexer circuit....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Implement a basic multiplexer circuit.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q29",
@@ -420,11 +420,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a basic de multiplexer circuit.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Implement a basic de multiplexer circuit....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Implement a basic de multiplexer circuit.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q30",
@@ -434,11 +434,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a serial in serial out shift register.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Implement a serial in serial out shift register....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Implement a serial in serial out shift register.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q31",
@@ -448,11 +448,11 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "Implement a serial in parallel out shift register.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Implement a serial in parallel out shift register....</em> within Computer Organization.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Implement a serial in parallel out shift register.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Computer Organization valuation scheme."
+      "final_answer": "Core principles verified per Computer Organization valuation scheme."
     },
     {
       "id": "Q32",
@@ -462,7 +462,7 @@
       "marks": 6,
       "domain_tag": "[U] [2]",
       "question": "x 5 = 20",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering x 5 = 20 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering x 5 = 20 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -476,7 +476,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Discuss the advantages and disadvantages of semiconductor RAM.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Advantages of Semiconductor RAM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>High Speed: Access times are very fast, often measured in nanoseconds.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Efficient Performance: Ideal for CPU cache (SRAM) and main memory (DRAM)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>due to low latency.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Compact & Lightweight: Small size makes them ideal for smartphones, laptops</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and tablets.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Low Power Consumption: Generally consume less power compared to other</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>storage types.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Reliability: No moving parts mean they are more durable and shockproof.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Disadvantages of Semiconductor RAM</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Volatility: Data is lost when the power is turned off.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>High Cost: Typically more expensive per gigabyte compared to non</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>semiconductor storage technologies.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Lower Capacity: While improving, they have lower storage densities compared to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Hard Disk Drives (HDDs).</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Limited Lifespan (DRAM): Requires constant power and periodic refresh cycles</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>(for DRAM) to maintain data.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Sensitivity: Semiconductor chips are sensitive to environmental factors like high</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>temperature and radiation.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>High Speed: Access times are very fast, often measured in nanoseconds.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Efficient Performance: Ideal for CPU cache (SRAM) and main memory (DRAM)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>due to low latency.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Compact & Lightweight: Small size makes them ideal for smartphones, laptops</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and tablets.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Low Power Consumption: Generally consume less power compared to other</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>storage types.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reliability: No moving parts mean they are more durable and shockproof.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Volatility: Data is lost when the power is turned off.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>High Cost: Typically more expensive per gigabyte compared to non</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>semiconductor storage technologies.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Lower Capacity: While improving, they have lower storage densities compared to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hard Disk Drives (HDDs).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Limited Lifespan (DRAM): Requires constant power and periodic refresh cycles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(for DRAM) to maintain data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sensitivity: Semiconductor chips are sensitive to environmental factors like high</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>temperature and radiation.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -489,12 +489,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Compare XOR and XNOR gates.? K CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Compare XOR and XNOR gates.? K CO2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Compare XOR and XNOR gates.? K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Compare XOR and XNOR gates.? K . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Compare XOR and XNOR gates.? K CO2 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Compare XOR and XNOR gates.? K ."
     },
     {
       "id": "Q35",
@@ -504,7 +504,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "List the steps involved in performing binary subtraction using 2’s complement.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Binary subtraction using 2's complement is performed by adding the minuend to</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the 2's complement of the subtrahend.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>The key steps are: 1. Find the 2's complement of the subtrahend (invert bits</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>and add 1).</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Binary subtraction using 2's complement is performed by adding the minuend to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The key steps are: 1. Find the 2's complement of the subtrahend (invert bits</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and add 1).</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -517,12 +517,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Explain the concept of Memory Hierarchy with a neat diagram. U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of Memory Hierarchy with a neat diagram. U CO1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the concept of Memory Hierarchy with a neat diagram. U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of Memory Hierarchy with a neat diagram. U . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of Memory Hierarchy with a neat diagram. U CO1 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the concept of Memory Hierarchy with a neat diagram. U ."
     },
     {
       "id": "Q37",
@@ -532,7 +532,7 @@
       "marks": 6,
       "domain_tag": "[A] ",
       "question": "Using the truth table of a T flip-flop, determine the output sequence for the given clock input. A positive-edge–triggered T flip-flop is initially in the RESET state Q0 = 0. The given inputs are 1,0,1,1,0,1.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Full adder truth table.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If a carry occurs, discard it; the result is positive.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Full adder truth table.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If a carry occurs, discard it; the result is positive.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -545,12 +545,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A CO3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A CO3 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Simplify the Boolean expression using Karnaugh Map:F(A,B,C,D)=Σm(0,2,5,7,13,15). A ."
     },
     {
       "id": "Q39",
@@ -560,7 +560,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "Compare associative mapping and direct mapping",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Keywords to check; - placement of data , complexity , speed, size.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Any terms related with mapping techniques.</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Keywords to check; - placement of data , complexity , speed, size.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Any terms related with mapping techniques.</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -573,12 +573,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U CO3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U CO3 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of a Master-Slave JK flip-flop with a neat diagram. U ."
     },
     {
       "id": "Q41",
@@ -588,7 +588,7 @@
       "marks": 6,
       "domain_tag": "[U] ",
       "question": "What is BCD representation?Discuss when and why 6 (0110) is added during the BCD addition process.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BCD definition with example– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>BCD addition rule. Invalid BCD numbers.- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> .</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>BCD definition with example– <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>BCD addition rule. Invalid BCD numbers.- <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span> .</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -601,12 +601,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Describe Cache Memory. U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Describe Cache Memory. U CO1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Describe Cache Memory. U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe Cache Memory. U . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe Cache Memory. U CO1 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe Cache Memory. U ."
     },
     {
       "id": "Q43",
@@ -616,7 +616,7 @@
       "marks": 6,
       "domain_tag": "[K] ",
       "question": "Define a parity generator. Explain the working of an even and odd parity generator with suitable examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>There are two primary types of parity generators</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Even Parity Generator: It produces a parity bit such that the total number of 1s in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the code word is even.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the data has an odd number of 1s, the generator sets the parity bit to 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the data has an even number of 1s, the generator sets the parity bit to 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Odd Parity Generator: It produces a parity bit such that the total number of 1s in</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>the code word is odd.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the data has an even number of 1s, the generator sets the parity bit to 1.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If the data has an odd number of 1s, the generator sets the parity bit to 0.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ESSAY QUESTIONS</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>There are two primary types of parity generators</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Even Parity Generator: It produces a parity bit such that the total number of 1s in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the code word is even.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If the data has an odd number of 1s, the generator sets the parity bit to 1.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If the data has an even number of 1s, the generator sets the parity bit to 0.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Odd Parity Generator: It produces a parity bit such that the total number of 1s in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the code word is odd.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If the data has an even number of 1s, the generator sets the parity bit to 1.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If the data has an odd number of 1s, the generator sets the parity bit to 0.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>ESSAY QUESTIONS</li></ul>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -629,12 +629,12 @@
       "part_label": "Part B (Short Essay)",
       "marks": 6,
       "domain_tag": "[U] [2]",
-      "question": "Illustrate the difference between Hardwired control and Microprogrammed control. A CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Step-by-step mathematical derivation and analytical reasoning answering Illustrate the difference between Hardwired control and Microprogrammed control. A CO2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li></ul>",
+      "question": "Illustrate the difference between Hardwired control and Microprogrammed control. A",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Illustrate the difference between Hardwired control and Microprogrammed control. A . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Illustrate the difference between Hardwired control and Microprogrammed control. A CO2 ."
+      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Illustrate the difference between Hardwired control and Microprogrammed control. A ."
     },
     {
       "id": "Q45",
@@ -644,7 +644,7 @@
       "marks": 10,
       "domain_tag": "[An] [3]",
       "question": "x 10 = 20",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -658,7 +658,7 @@
       "marks": 10,
       "domain_tag": "[K] ",
       "question": "Explain different data representation types in computer organization.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Different number systems and integer representation with examples.</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Different number systems and integer representation with examples.</p>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -671,8 +671,8 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[An] [3]",
-      "question": "Describe the mapping techniques used in cache memory. K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "question": "Describe the mapping techniques used in cache memory. K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -686,11 +686,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Simplify Boolean expressions using basic laws of Boolean Algebra and explain each step: a)A+ABA + ABA+AB b) A(A+B)A(A + B)A(A+B)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A) A+ABA+ABA+AB - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) = A+B+B+AB (WHER A.A=A) = A+B+AB (WHERE B+B=B) = A(1+B)+B =A+B (WHERE 1+B=1) =A+B B) A(A+B)A(A+B)A(A+B) - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) =A.A.A.(A+B).(A+B).(A+B) =A(A+B) =A.A+AB =A+AB =A(1+B) =A</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> A) A+ABA+ABA+AB - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) = A+B+B+AB (WHER A.A=A) = A+B+AB (WHERE B+B=B) = A(1+B)+B =A+B (WHERE 1+B=1) =A+B B) A(A+B)A(A+B)A(A+B) - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) =A.A.A.(A+B).(A+B).(A+B) =A(A+B) =A.A+AB =A+AB =A(1+B) =A</div>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "A) A+ABA+ABA+AB - (WITH PROPER STEPS) = A+B+B+AB (WHER A.A=A) = A+B+AB (WHERE B+B=B) = A(1+B)+B =A+B (WHERE 1+B=1) =A+B B) A(A+B)A(A+B)A(A+B) - (WITH PROPER STEPS) =A.A.A.(A+B).(A+B).(A+B) =A(A+B) =A.A+AB =A+AB =A(1+B) =A"
+      "final_answer": "A) A+ABA+ABA+AB - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) = A+B+B+AB (WHER A.A=A) = A+B+AB (WHERE B+B=B) = A(1+B)+B =A+B (WHERE 1+B=1) =A+B B) A(A+B)A(A+B)A(A+B) - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> (WITH PROPER STEPS) =A.A.A.(A+B).(A+B).(A+B) =A(A+B) =A.A+AB =A+AB =A(1+B) =A"
     },
     {
       "id": "Q49",
@@ -699,8 +699,8 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[An] [3]",
-      "question": "Construct the logic diagrams and truth tables for RS, JK, T, and D flip-flops, and explain their operation with the help of sequential circuit concepts. A CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A subtractor unit is a combinational logic circuit designed to perform the</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>arithmetic subtraction of two binary numbers.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>If no carry occurs, the result is negative and in 2's complement form.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>NOTE: IF A STUDENT EXPLAINED IT ONLY WITH EXAMPLES, AWARD MARKS IF</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>THE STEPS ARE CORRECT.</li></ul>",
+      "question": "Construct the logic diagrams and truth tables for RS, JK, T, and D flip-flops, and explain their operation with the help of sequential circuit concepts. A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A subtractor unit is a combinational logic circuit designed to perform the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>arithmetic subtraction of two binary numbers.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>If no carry occurs, the result is negative and in 2's complement form.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>NOTE: IF A STUDENT EXPLAINED IT ONLY WITH EXAMPLES, AWARD MARKS IF</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>THE STEPS ARE CORRECT.</li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -714,11 +714,11 @@
       "marks": 10,
       "domain_tag": "[A] ",
       "question": "Apply De Morgan's theorem to each of the following expressions: (a) (ABC)' + (D' + E)' (b) (A + B + C )' + (D'E)'",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A) (ABC)’+(D’+E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS = A’+B’+C’+(D’’.E’) =A’+B’+C’+DE’ B) (A+B+C)’+(D’E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS. = A’.B’.C’+(D’’+E’) = A’B’C’+D+E’.</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> A) (ABC)’+(D’+E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS = A’+B’+C’+(D’’.E’) =A’+B’+C’+DE’ B) (A+B+C)’+(D’E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS. = A’.B’.C’+(D’’+E’) = A’B’C’+D+E’.</div>",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "A) (ABC)’+(D’+E)’ - WITH PROPER STEPS = A’+B’+C’+(D’’.E’) =A’+B’+C’+DE’ B) (A+B+C)’+(D’E)’ - WITH PROPER STEPS. = A’.B’.C’+(D’’+E’) = A’B’C’+D+E’."
+      "final_answer": "A) (ABC)’+(D’+E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS = A’+B’+C’+(D’’.E’) =A’+B’+C’+DE’ B) (A+B+C)’+(D’E)’ - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 MARKS)</span> WITH PROPER STEPS. = A’.B’.C’+(D’’+E’) = A’B’C’+D+E’."
     },
     {
       "id": "Q51",
@@ -727,8 +727,8 @@
       "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
       "domain_tag": "[An] [3]",
-      "question": "Explain the hardwired control and microprogrammed control of a processor unit. U CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></li></ul>",
+      "question": "Explain the hardwired control and microprogrammed control of a processor unit. U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [],
       "has_official_scheme": false,

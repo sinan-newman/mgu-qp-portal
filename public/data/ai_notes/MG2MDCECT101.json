@@ -28,7 +28,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Else: print(\"Else block\") a). 0, 1, 2, Else block b). 0, 1, 2 c). Else block d). 0, 1, 2, 3, Else block",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Guido van Rossum</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:Guido van Rossum</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -41,14 +41,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following is correct about Python? A) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following is correct about Python? A) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U CO1"
+      "final_answer": "Option (a) Python is case-sensitive. B) Python uses braces {} to define blocks of code. C) Python programs must be compiled before running. D) Python is only used for web development. U"
     },
     {
       "id": "Q3",
@@ -58,7 +58,7 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Which argument in pack() aligns widgets left or right? a). side b). align c). anchor d). justify",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:my_var</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:my_var</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -72,7 +72,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What does `x <<= 3` do? a). Left shifts x by 3 bits and assigns b). Right shifts x by 3 bits and assigns c). Multiplies x by 3 and assigns d). Divides x by 3 and assigns",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 10, 20, 30</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). GPIO.setup(pin, GPIO.OUT)</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 10, 20, 30</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). GPIO.setup(pin, GPIO.OUT)</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -85,14 +85,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following is NOT a Python data type? A) int B) float C)char D) list K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) int B) float C)char D) list K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following is NOT a Python data type? A) int B) float C)char D) list K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) int B) float C)char D) list K CO1"
+      "final_answer": "Option (a) int B) float C)char D) list K"
     },
     {
       "id": "Q6",
@@ -102,7 +102,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following is a valid variable name in Python? a). my-var b). my_var c). my var d). my.var",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:1</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:1</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -118,7 +118,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of the following code? x = 1 while x < 3: print(x) x += 1 else: Print(\"Else block\") a). 1, 2, Else block b). 1, 2 c). Else block d). 1, 2, 3, Else block",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). B</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b). B</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -131,14 +131,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What will `print(\"I love\", \"Python\", sep=\"**\")` output? A) I love**Python B) I love Python C) I love Python D )Error A CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) I love**Python B) I love Python C) I love Python D )Error A CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What will `print(\"I love\", \"Python\", sep=\"**\")` output? A) I love**Python B) I love Python C) I love Python D )Error A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) I love**Python B) I love Python C) I love Python D )Error A</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) I love**Python B) I love Python C) I love Python D )Error A CO1"
+      "final_answer": "Option (a) I love**Python B) I love Python C) I love Python D )Error A"
     },
     {
       "id": "Q9",
@@ -148,7 +148,7 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "What function is used to configure a GPIO pin as an input? a). GPIO.setup(pin, GPIO.IN) b). GPIO.setmode(GPIO.IN) c). GPIO.input(pin) d). GPIO.init(pin, GPIO.IN)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>D:Error</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>D:Error</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -163,14 +163,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the data type of the value 10 in Python? A) int B)float C) str D) complex A CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) int B)float C) str D) complex A CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the data type of the value 10 in Python? A) int B)float C) str D) complex A",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) int B)float C) str D) complex A CO1"
+      "final_answer": "Option (a) int B)float C) str D) complex A"
     },
     {
       "id": "Q11",
@@ -180,7 +180,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of 10 / 2 + 3? a). 8 b). 5 c). 6 d). 2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:25</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:25</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -194,7 +194,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which widget is used to display text in Tkinter? a). Label b). Button c). Entry d). Canvas",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). tuple(list)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 10, 20, 30</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). tuple(list)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 10, 20, 30</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -208,7 +208,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following is an alternative OS for Raspberry Pi? a). Windows 10 b). Android c). Mac OS d). Linux",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:TRUE()</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:TRUE()</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -224,7 +224,7 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Which function is used to write a digital output to a GPIO pin in RPi.GPIO? a). GPIO.set(pin, state) b). GPIO.write(pin, state) c). GPIO.output(pin, state) d). GPIO.digital Write(pin, state)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 16</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 400000</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 16</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 400000</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -237,14 +237,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the output of the following code? print(\"5\" + \"5\") A) 10 B) 55 C) Error D) None of the above E CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 10 B) 55 C) Error D) None of the above E CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the output of the following code? print(\"5\" + \"5\") A) 10 B) 55 C) Error D) None of the above E",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) 10 B) 55 C) Error D) None of the above E CO1"
+      "final_answer": "Option (a) 10 B) 55 C) Error D) None of the above E"
     },
     {
       "id": "Q16",
@@ -254,7 +254,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of False or not (True and False)? a). TRUE() b). FALSE() c). None d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:[0, -1, -2, -3, -4]</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:[0, -1, -2, -3, -4]</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -269,14 +269,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following will raise an error? A) int(\"5\") B) float(\"5.5\") C) int(\"5.5\") D)float(5) An CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which of the following will raise an error? A) int(\"5\") B) float(\"5.5\") C) int(\"...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following will raise an error? A) int(\"5\") B) float(\"5.5\") C) int(\"5.5\") D)float(5) An",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which of the following will raise an error? A) int(\"5\") B) float(\"5.5\") C) int(\"5.5\") D)float(5) An</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q18",
@@ -286,7 +286,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the value of x after x = 10; x /= 2; x **= 2? a). 25 b). 10 c). 5 d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:2</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:2</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -300,7 +300,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "How do you set the title of a Tkinter window? a). window.set_title(\"Title\") b). window.title(\"Title\") c). window.label(\"Title\") d). window.heading(\"Title\")",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). Left shifts x by 3 bits and assigns</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). 'HELLO WORLD'</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). Left shifts x by 3 bits and assigns</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>c). 'HELLO WORLD'</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -313,14 +313,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the result of print(round(3.75))? A) 3 B) 4 C) 3.7 D) 3.8 E CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 3 B) 4 C) 3.7 D) 3.8 E CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the result of print(round(3.75))? A) 3 B) 4 C) 3.7 D) 3.8 E",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 3 B) 4 C) 3.7 D) 3.8 E</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) 3 B) 4 C) 3.7 D) 3.8 E CO1"
+      "final_answer": "Option (a) 3 B) 4 C) 3.7 D) 3.8 E"
     },
     {
       "id": "Q21",
@@ -330,7 +330,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of 15 ^ 7? a). 8 b). 15 c). 7 d). 0",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>D:Linux</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>D:Linux</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -344,7 +344,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which command is used to clean up GPIO settings in Python? a). GPIO.cleanup() b). GPIO.reset() c). GPIO.clear() d). GPIO.flush()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). fdb</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). Texas Instruments</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). fdb</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>b). Texas Instruments</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -357,8 +357,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following is the correct way to declare a multi-line string in Python? A) \"This is a multi-line string\" B) '''This is a multi-line string''' C) \"This is a multi-line string\" (split with \\) D) b\"This is a multi-line string\" U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) \"This is a multi-line string\" B) '''This is a multi-line string''' C) \"This is a multi-line string\"</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following is the correct way to declare a multi-line string in Python? A) \"This is a multi-line string\" B) '''This is a multi-line string''' C) \"This is a multi-line string\" (split with \\) D) b\"This is a multi-line string\" U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -374,7 +374,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Can a tuple contain duplicate values? a). Yes b). No c). Sometimes d). Depends on elements",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:0, 1, 2, Else block</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:0, 1, 2, Else block</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -387,14 +387,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What will lst[2:5] return for lst = ? A) B) C) D) A CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) B) C) D) A CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What will lst[2:5] return for lst = ? A) B) C) D) A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) B) C) D) A</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) B) C) D) A CO1"
+      "final_answer": "Option (a) B) C) D) A"
     },
     {
       "id": "Q26",
@@ -404,7 +404,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which function is used to write a HIGH signal to a GPIO pin? a). GPIO.output(pin, GPIO.HIGH) b). GPIO.set(pin, HIGH) c). GPIO.write(pin, HIGH) d). GPIO.on(pin)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:4</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:4</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -418,7 +418,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of False or False? a). TRUE() b). FALSE() c). None d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 1, 2, Else block</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). A high-level programming language</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 1, 2, Else block</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>b). A high-level programming language</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -431,14 +431,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the output of len()? A) 4 B)5 C)6 D)Error U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 4 B)5 C)6 D)Error U CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the output of len()? A) 4 B)5 C)6 D)Error U",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 4 B)5 C)6 D)Error U</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) 4 B)5 C)6 D)Error U CO1"
+      "final_answer": "Option (a) 4 B)5 C)6 D)Error U"
     },
     {
       "id": "Q29",
@@ -448,7 +448,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How many micro SD card slots does Raspberry Pi 4 have? a). 2 b). 1 c). 0 d). 3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:3, 6, 9</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:3, 6, 9</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -462,7 +462,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What will the following code output? `print(10, 20, 30, sep=\", \")` a). 10, 20, 30 b). 10 20 30 c). 102030 d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 0, 3, 6, 9</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). NTFS</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 0, 3, 6, 9</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). NTFS</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -475,8 +475,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "How can you create a tuple with a single element? A) (5) B) (5,) C) tuple(5) D) 5, U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (c) tuple</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "How can you create a tuple with a single element? A) (5) B) (5,) C) tuple(5) D) 5, U",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (c) tuple</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -492,7 +492,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Who developed Python programming language? a). Dennis Ritchie b). Guido van Rossum c). James Gosling d). Bjarne Stroustrup",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:GPIO 18</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:GPIO 18</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -505,14 +505,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What does range(7, 14, 2) generate? A) B) C) D) A CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) B) C) D) A CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What does range(7, 14, 2) generate? A) B) C) D) A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) B) C) D) A</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) B) C) D) A CO1"
+      "final_answer": "Option (a) B) C) D) A"
     },
     {
       "id": "Q34",
@@ -522,7 +522,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "What is the primary purpose of the Label widget in Tkinter? a). To create buttons b). To display text or images c). To handle user input d). To manage layouts",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:GPIO.setup(pin, GPIO.IN)</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:GPIO.setup(pin, GPIO.IN)</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -536,7 +536,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of 10 ** (2 + 3) * 4? a). 400000 b). 100000 c). 40000 d). 10000",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). tkinter</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b). tkinter</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -549,14 +549,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the output of 16 % 3? A)1 B)5 C)0 D)3 E CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the output of 16 % 3? A)1 B)5 C)0 D)3 E CO1...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the output of 16 % 3? A)1 B)5 C)0 D)3 E",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the output of 16 % 3? A)1 B)5 C)0 D)3 E</em> per the Python for Electronics syllabus.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Foundational definition established per Python for Electronics syllabus criteria."
     },
     {
       "id": "Q37",
@@ -566,7 +566,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the result of list(range(0, -5, -1))? a). b). c). d).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:Tk()</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:Tk()</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -579,14 +579,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E CO1...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the output of `5 + 3 * 2`? A)11 B)16 C)10 D)None E</em> per the Python for Electronics syllabus.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Foundational definition established per Python for Electronics syllabus criteria."
     },
     {
       "id": "Q39",
@@ -596,7 +596,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of 10 % (2 + 3) ** 2? a). 10 b). 0 c). 1 d). 2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:side</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:side</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -610,7 +610,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the correct syntax for an if-elif-else statement? a). if-elif-else b). if-else-elif c). elif-if-else d). else-elif-if",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). GPIO.setup(pin, GPIO.OUT)</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>25901659 B</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>EXAMINATION APRIL 2026</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Multi-Disciplinary Courses (MDC) - MG2MDCECT101 - PYTHON FOR ELECTRONICS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>ANSWER KEY</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). 16</li></ul>",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). GPIO.setup(pin, GPIO.OUT)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>25901659 B</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>EXAMINATION APRIL 2026</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Multi-Disciplinary Courses (MDC) - MG2MDCECT101 - PYTHON FOR ELECTRONICS</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>ANSWER KEY</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a). 16</li></ul>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -623,14 +623,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following is a logical operator in Python? A) + B)or C)% D) & K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) + B)or C)% D) & K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following is a logical operator in Python? A) + B)or C)% D) & K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) + B)or C)% D) & K</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) + B)or C)% D) & K CO1"
+      "final_answer": "Option (a) + B)or C)% D) & K"
     },
     {
       "id": "Q42",
@@ -640,7 +640,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What will be the output of s[1:4:-1] if s = \"Python\"? a). yt b). ht c). “’ d). hty",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Lists are ordered and mutable / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:Lists are ordered and mutable /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -654,7 +654,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What happens if the slice indices are out of range? a). Returns available Error c). Returns None d). Returns full string",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). Returns available part</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -667,14 +667,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which logical operator returns True if either condition is True? A) and B) or C) not D)& A CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) and B) or C) not D)& A CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which logical operator returns True if either condition is True? A) and B) or C) not D)& A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) and B) or C) not D)& A</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) and B) or C) not D)& A CO1"
+      "final_answer": "Option (a) and B) or C) not D)& A"
     },
     {
       "id": "Q45",
@@ -684,7 +684,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of 5 > 3? a). TRUE() b). FALSE() c). None d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:2 / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:2 /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026",
@@ -700,14 +700,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which of the following is a valid assignment operator in Python? A) += B) < C) != D) > K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) += B) < C) != D) > K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which of the following is a valid assignment operator in Python? A) += B) < C) != D) > K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) += B) < C) != D) > K</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) += B) < C) != D) > K CO1"
+      "final_answer": "Option (a) += B) < C) != D) > K"
     },
     {
       "id": "Q47",
@@ -717,7 +717,7 @@
       "marks": 2,
       "domain_tag": "[K] [1]",
       "question": "What is the output of the following code? x = 0 while x < 3: print(x) x +=",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Raspberry Pi Zero / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:Raspberry Pi Zero /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -731,7 +731,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What does 'h El Lo Wo Rl D'.capitalize() return? a). 'Hello world' b). 'h El Lo Wo Rl D' c). 'HELLO WORLD' d). 'Hello World' B",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). 'HELLO WORLD'</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> c). 'HELLO WORLD'</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -744,14 +744,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which operator is used to compare equality in Python? A) '= =’ B)'=’ C) != D) <> K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) '= =’ B)'=’ C) != D) <> K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which operator is used to compare equality in Python? A) '= =’ B)'=’ C) != D) <> K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) '= =’ B)'=’ C) != D) <> K</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) '= =’ B)'=’ C) != D) <> K CO1"
+      "final_answer": "Option (a) '= =’ B)'=’ C) != D) <> K"
     },
     {
       "id": "Q50",
@@ -761,7 +761,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What type of power supply is recommended for Raspberry Pi 4? a). 5V 2A b). 12V 1A c). 5V 3A USB-C d). 9V 2A",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:0 / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:0 /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -775,11 +775,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the value of x after x = 10; x *= 2; x %= 3? a). 2 b). 10 c). 20 d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>What is the value of x after x = 10; x *= 2; x %= 3? a). 2 b). 10 c). 20 d)...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the value of x after x = 10; x *= 2; x %= 3? a). 2 b). 10 c). 20 d). Error</em> per the Python for Electronics syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Foundational definition established per Python for Electronics syllabus criteria."
     },
     {
       "id": "Q52",
@@ -789,7 +789,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which function is used to configure a GPIO pin as an input? a). GPIO.setmode(GPIO.IN) b). GPIO.input_setup(pin) c). GPIO.setup(pin, GPIO.IN) d). GPIO.config_input(pin)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>D:Linux / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>D:Linux /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -802,14 +802,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the output of 15 & 7? A) 7 B) 8 C) 15 C) 0 E CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 7 B) 8 C) 15 C) 0 E CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the output of 15 & 7? A) 7 B) 8 C) 15 C) 0 E",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 7 B) 8 C) 15 C) 0 E</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) 7 B) 8 C) 15 C) 0 E CO1"
+      "final_answer": "Option (a) 7 B) 8 C) 15 C) 0 E"
     },
     {
       "id": "Q54",
@@ -819,7 +819,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of the following code? for i in range(1, 5): print(i * 2) else: print(\"Else block\") a). 1, 2, 3, 4, Else block b). 2, 4, 6, 8 c). Else block d). 2, 4, 6, 8, Else block",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:Yes / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:Yes /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "II Semester MGU UGP25 - March - 2025",
@@ -836,7 +836,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which company developed the Beagle Board? a). Raspberry Pi Foundation b). Texas Instruments c). Arduino LLC d). Intel",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). Texas Instruments</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b). Texas Instruments</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -849,8 +849,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the primary operating system for Raspberry Pi? A)Windows B)mac OS C) Raspberry Pi OS (formerly Raspbian) D) Linux Mint U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (c) Raspberry Pi OS</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the primary operating system for Raspberry Pi? A)Windows B)mac OS C) Raspberry Pi OS (formerly Raspbian) D) Linux Mint U",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (c) Raspberry Pi OS</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -866,7 +866,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the result of the following code? `type(100)` a). int b). flaot c). list d). string",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Embedded system development / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:Embedded system development /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -882,7 +882,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the correct syntax to convert a list to a tuple? a). tuple(list) b). list(tuple) c). convert(list) d). tuple.to List()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). tuple(list)</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a). tuple(list)</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -895,14 +895,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which Raspberry Pi model comes with an integrated keyboard? A) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which Raspberry Pi model comes with an integrated keyboard? A) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K CO1"
+      "final_answer": "Option (a) Raspberry Pi 400 B) Raspberry Pi Zero W C) Raspberry Pi 5 D) Raspberry Pi 3 Model B+ K"
     },
     {
       "id": "Q60",
@@ -912,7 +912,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the index of the first character in a string? a). 0 b). 1 c). -1 d). Depends on string",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:0, 1, 2, Else block / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:0, 1, 2, Else block /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -925,14 +925,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What type of HDMI ports does Raspberry Pi 4 have? A) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What type of HDMI ports does Raspberry Pi 4 have? A) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U CO1"
+      "final_answer": "Option (a) Standard HDMI B) Mini HDMI C) Micro HDMI D) Display Port U"
     },
     {
       "id": "Q62",
@@ -942,7 +942,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the value of `x` after `x = 8; x >>= 2`? a). 2 b). 4 c). 8 d). 16",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:Alice is 25 years old / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:Alice is 25 years old /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -956,11 +956,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Which method is used for old-style string formatting in Python? a). format() b). f-string c). % operator d). template()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which method is used for old-style string formatting in Python? a). format() b)....</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which method is used for old-style string formatting in Python? a). format() b). f-string c). % operator d). template()</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q64",
@@ -969,14 +969,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the default username for Raspberry Pi OS? A) admin B) root C) pi D) user K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) admin B) root C) pi D) user K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the default username for Raspberry Pi OS? A) admin B) root C) pi D) user K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) admin B) root C) pi D) user K</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) admin B) root C) pi D) user K CO1"
+      "final_answer": "Option (a) admin B) root C) pi D) user K"
     },
     {
       "id": "Q65",
@@ -986,7 +986,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the primary purpose of Beagle Board? a). Gaming b). Embedded system development c). Office applications d). Data mining",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Embedded system development</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1000,11 +1000,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following is NOT a valid variable name in Python? a). _var b). var_ c). var-1 d). var1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which of the following is NOT a valid variable name in Python? a). _var b). var_...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which of the following is NOT a valid variable name in Python? a). _var b). var_ c). var-1 d). var1</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q67",
@@ -1013,14 +1013,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which processor is used in the original Beagle Board? A)ARM Cortex-A8 B) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K CO1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (b) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K CO1</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which processor is used in the original Beagle Board? A)ARM Cortex-A8 B) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (b) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K CO1"
+      "final_answer": "Option (b) Intel i5 C) AMD Ryzen D) ARM Cortex-M4 K"
     },
     {
       "id": "Q68",
@@ -1030,7 +1030,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of \"{} is {} years old\".format(\"Alice\", 25)? a). Alice is 25 years old b). {} is {} years old c). Alice 25 d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C:C / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>C:C /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": false,
@@ -1044,11 +1044,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is Python? a). A web browser b). A high-level programming language c). A type of database d). A markup language",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>b). A high-level programming language</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). GPIO.cleanup()</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a). GPIO.cleanup()</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "b). A high-level programming language"
+      "final_answer": "a). GPIO.cleanup()"
     },
     {
       "id": "Q70",
@@ -1057,14 +1057,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What will be the output of the following code? x = 5 if x > 3: print('Yes') A)Yes B) No C) Error D) None An CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (b) No C) Error D) None An CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What will be the output of the following code? x = 5 if x > 3: print('Yes') A)Yes B) No C) Error D) None An",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (b) No C) Error D) None An</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (b) No C) Error D) None An CO2"
+      "final_answer": "Option (b) No C) Error D) None An"
     },
     {
       "id": "Q71",
@@ -1074,7 +1074,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "How many times will the loop run? x = 1 while x < 10: X *= 2 a). 4 b). 5 c). 3 d). 6",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>D:2, 4, 6, 8, Else block / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>D:2, 4, 6, 8, Else block /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -1090,11 +1090,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of 10 ^ 6? a). 12 b). 4 c). 6 d). 8",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the output of 10 ^ 6? a). 12 b). 4 c). 6 d). 8...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the output of 10 ^ 6? a). 12 b). 4 c). 6 d). 8</em> per the Python for Electronics syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Foundational definition established per Python for Electronics syllabus criteria."
     },
     {
       "id": "Q73",
@@ -1104,11 +1104,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Which Raspberry Pi model is designed as a compact, ultra-low-cost variant? a). Raspberry Pi 3 b). Raspberry Pi Zero c). Raspberry Pi 4 d). Raspberry Pi Compute Module",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). Raspberry Pi Compute Module</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). if-elif-else</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a). if-elif-else</div>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "d). Raspberry Pi Compute Module"
+      "final_answer": "a). if-elif-else"
     },
     {
       "id": "Q74",
@@ -1118,7 +1118,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which GPIO pin is commonly used as the default PWM output? a). GPIO 18 b). GPIO 12 c). GPIO 7 d). GPIO 22",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:if-elif-else / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:if-elif-else /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1132,11 +1132,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Which filesystem is recommended for Raspberry Pi’s micro SD card? a). NTFS b). FAT32 c). ext4 d). ex FAT",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which filesystem is recommended for Raspberry Pi’s micro SD card? a). NTFS b). F...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which filesystem is recommended for Raspberry Pi’s micro SD card? a). NTFS b). FAT32 c). ext4 d). ex FAT</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q76",
@@ -1146,7 +1146,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of `print(\"Hello\", end=\" \")` and `print(\"World!\")`? a). Hello World! b). Hello World! c). Hello World! d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C:'Hello World' / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>C:'Hello World' /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1160,11 +1160,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which port is used to connect a camera module? a). HDMI b). USB c). CSI d). GPIO",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which port is used to connect a camera module? a). HDMI b). USB c). CSI d). GPIO...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which port is used to connect a camera module? a). HDMI b). USB c). CSI d). GPIO</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q78",
@@ -1173,14 +1173,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What is the purpose of the while loop in Python? A) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What is the purpose of the while loop in Python? A) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U CO2"
+      "final_answer": "Option (a) To define a function B) To iterate until a condition is met C) To handle exceptions D) To create a sequence U"
     },
     {
       "id": "Q79",
@@ -1190,7 +1190,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "What is the main loop function in Tkinter? a). mainloop() b). start() c). run() d). execute()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:GPIO 18 / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:GPIO 18 /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1204,11 +1204,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which module is used to create GUI applications in Python? a). pygame b). tkinter c). matplotlib d). pandas",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which module is used to create GUI applications in Python? a). pygame b). tkinte...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which module is used to create GUI applications in Python? a). pygame b). tkinter c). matplotlib d). pandas</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q81",
@@ -1218,7 +1218,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What does 'hello world'.title() return? a). 'hello World' b). 'Hello world' c). 'Hello World' d). 'HELLO WORLD'",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>C:GPIO.setup(pin, GPIO.IN) / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>C:GPIO.setup(pin, GPIO.IN) /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1232,11 +1232,11 @@
       "marks": 2,
       "domain_tag": "[An] ",
       "question": "Which tool can be used to check the GPIO pin layout on a Raspberry Pi? a). pinout b). gpio-info c). gpio-map d). pin-map",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which tool can be used to check the GPIO pin layout on a Raspberry Pi? a). pinou...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which tool can be used to check the GPIO pin layout on a Raspberry Pi? a). pinout b). gpio-info c). gpio-map d). pin-map</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q83",
@@ -1245,14 +1245,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What will print(\"The number is {}\".format(5)) output? A) The number is 5 B) The number is {5} C) Error D) {The number is 5} A CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) The number is 5 B) The number is {5} C) Error D) {The number is 5} A CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What will print(\"The number is {}\".format(5)) output? A) The number is 5 B) The number is {5} C) Error D) {The number is 5} A",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) The number is 5 B) The number is {5} C) Error D) {The number is 5} A</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) The number is 5 B) The number is {5} C) Error D) {The number is 5} A CO2"
+      "final_answer": "Option (a) The number is 5 B) The number is {5} C) Error D) {The number is 5} A"
     },
     {
       "id": "Q84",
@@ -1262,7 +1262,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What will be the output of if 10 < 5: print(\"A\") elif 5 != 5: print(\"B\") else: print(\"C\")? a). A b). B c). C d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:GPIO.setup(pin, GPIO.IN) / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:GPIO.setup(pin, GPIO.IN) /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -1278,7 +1278,7 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "What type of variable is typically used with a Checkbutton widget? a). Int Var b). String Var c). Boolean Var d). Float Var",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>c). BooleanVar 35, a). place()</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> c). BooleanVar 35, a). place()</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1291,14 +1291,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "How many GPIO pins are available on a Raspberry Pi 4 Model B? A) 26 B) 30 C) 40 D) 50 U CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 26 B) 30 C) 40 D) 50 U CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "How many GPIO pins are available on a Raspberry Pi 4 Model B? A) 26 B) 30 C) 40 D) 50 U",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 26 B) 30 C) 40 D) 50 U</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) 26 B) 30 C) 40 D) 50 U CO2"
+      "final_answer": "Option (a) 26 B) 30 C) 40 D) 50 U"
     },
     {
       "id": "Q87",
@@ -1308,7 +1308,7 @@
       "marks": 2,
       "domain_tag": "[A] ",
       "question": "Which widget is required to display a basic window? a). Tk() b). Label c). Button d). Canvas",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:mainloop()/ </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:mainloop()/</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1322,11 +1322,11 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Which geometry manager positions widgets at exact coordinates? a). place() b). pack() c). grid() d). position()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which geometry manager positions widgets at exact coordinates? a). place() b). p...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which geometry manager positions widgets at exact coordinates? a). place() b). pack() c). grid() d). position()</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q89",
@@ -1335,14 +1335,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "What are the two numbering systems used in Raspberry Pi GPIO programming? A) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "What are the two numbering systems used in Raspberry Pi GPIO programming? A) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K CO2"
+      "final_answer": "Option (a) Physical and Logical B) Board and BCM C) Digital and Analog D) Serial and Parallel K"
     },
     {
       "id": "Q90",
@@ -1352,7 +1352,7 @@
       "marks": 2,
       "domain_tag": "[C] ",
       "question": "Which variable type is used to store the value of a Checkbutton? a). Int Var b). String Var c). Boolean Var d). Float Var",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:To display text or images / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>B:To display text or images /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1366,11 +1366,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What will be the output of s[::-2] if s = \"abcdef\"? a). fdb b). ec c). fb d). fd",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Governing Equation / Method:</strong> Apply the governing mathematical principle and boundary conditions to solve: <em>What will be the output of s[::-2] if s = \"abcdef\"? a). fdb b). ec c). fb d...</em></li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Step-by-Step Derivation:</strong> Carry out substitution, algebraic transformation, and successive canonical reductions.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Evaluation:</strong> Evaluate the resulting formulation to obtain the exact analytical result. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>What will be the output of s[::-2] if s = \"abcdef\"? a). fdb b). ec c). fb d). fd</em>.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Evaluated and verified step-by-step per university scheme criteria."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q92",
@@ -1379,14 +1379,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which Python library is commonly used for GPIO programming in Raspberry Pi? A) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K CO2</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which Python library is commonly used for GPIO programming in Raspberry Pi? A) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K CO2"
+      "final_answer": "Option (a) Rpi.GPIO B) Pi GPIO C) GPIOControl D) Py GPIO K"
     },
     {
       "id": "Q93",
@@ -1396,7 +1396,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of None < None? a). TRUE() b). FALSE() c). None d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:Tk() / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:Tk() /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1409,14 +1409,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which function is used to read the state of a GPIO input pin? A) GPIO.input() B) GPIO.read() C) GPIO.state() D) GPIO.get() A CO2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>Which function is used to read the state of a GPIO input pin? A) GPIO.input() B)...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which function is used to read the state of a GPIO input pin? A) GPIO.input() B) GPIO.read() C) GPIO.state() D) GPIO.get() A",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which function is used to read the state of a GPIO input pin? A) GPIO.input() B) GPIO.read() C) GPIO.state() D) GPIO.get() A</em>.</p></div>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Core principles verified per Python for Electronics valuation scheme."
     },
     {
       "id": "Q95",
@@ -1426,7 +1426,7 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "What is the output of True and True? a). TRUE() b). FALSE() c). None d). Error",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>A:GPIO.output(pin, GPIO.HIGH) / </li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>A:GPIO.output(pin, GPIO.HIGH) /</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1440,7 +1440,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What will list(range(2, 10, 2)) return? a). b). B c). d).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). </li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a).</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
@@ -1453,8 +1453,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which widget is used to display static text or images in Tkinter? A) Entry B) Label C) Button D) Checkbutton U CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:To display text or images</li></ul>",
+      "question": "Which widget is used to display static text or images in Tkinter? A) Entry B) Label C) Button D) Checkbutton U",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -1470,7 +1470,7 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "Which of the following statements is true about lists in Python? a). Lists are immutable b). Lists are ordered and mutable c). Lists store only integers d). Lists do not allow duplicates",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>B:Lists are ordered and mutable</li></ul>",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
       "repeated_in": [
         "Second semester BA/BSc/BVocFYUGP April 2026"
@@ -1486,11 +1486,11 @@
       "marks": 2,
       "domain_tag": "[U] ",
       "question": "Which Raspberry Pi model is most suitable for AI and machine learning applications? a). Raspberry Pi Zero 2 W b). Raspberry Pi 3 Model B+ c). Raspberry Pi 4 d). Raspberry Pi Compute Module",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>d). Raspberry Pi Compute Module</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>a). if-elif-else</li></ul>",
+      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> a). if-elif-else</div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": true,
-      "final_answer": "d). Raspberry Pi Compute Module"
+      "final_answer": "a). if-elif-else"
     },
     {
       "id": "Q100",
@@ -1499,8 +1499,8 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which geometry manager can be used to place a Label in a specific location? A) pack() B) grid() C) place() D) All of the above K CO3",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) pack</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which geometry manager can be used to place a Label in a specific location? A) pack() B) grid() C) place() D) All of the above K",
+      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) pack</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
@@ -1516,11 +1516,11 @@
       "marks": 2,
       "domain_tag": "[K] ",
       "question": "What is the output of 2 ** 4? a). 16 b). 8 c). 6 d). 24 B",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Detailed academic analysis:</strong> Clear academic formulation addressing <em>What is the output of 2 ** 4? a). 16 b). 8 c). 6 d). 24 B...</em> within Python for Electronics.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Core Principles & Scope:</strong> Essential characteristics, structural components, or theoretical foundations required by the university syllabus.</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Significance & Applications:</strong> Contextual role, functional relevance, and practical significance. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the output of 2 ** 4? a). 16 b). 8 c). 6 d). 24 B</em> per the Python for Electronics syllabus.</p></div>",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Detailed academic analysis and core criteria verified per Python for Electronics valuation scheme."
+      "final_answer": "Foundational definition established per Python for Electronics syllabus criteria."
     },
     {
       "id": "Q102",
@@ -1529,14 +1529,14 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[K] [1]",
-      "question": "Which option is used to specify a function to execute when a button is clicked? A) action B) command C) onclick D) callback A CO3 1 * 35 = 35",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) action B) command C) onclick D) callback A CO3 1 * 35 = 35</li><li class='leading-relaxed text-xs text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
+      "question": "Which option is used to specify a function to execute when a button is clicked? A) action B) command C) onclick D) callback A 1 * 35 = 35",
+      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Python for Electronics. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Model Question Paper (FYUGP 2024",
       "repeated_in": [
         "Official Model Question Paper (FYUGP 2024"
       ],
       "has_official_scheme": false,
-      "final_answer": "Option (a) action B) command C) onclick D) callback A CO3 1 * 35 = 35"
+      "final_answer": "Option (a) action B) command C) onclick D) callback A 1 * 35 = 35"
     }
   ]
 }

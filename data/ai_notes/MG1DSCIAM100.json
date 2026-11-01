@@ -5,706 +5,1031 @@
   "semester": 1,
   "course_type": "DSC",
   "max_marks": 70,
-  "total_questions": 45,
-  "repeating_skipped": 35,
+  "total_questions": 40,
+  "total_solved": 20,
+  "repeating_skipped": 0,
   "sources_used": [
-    "Official Practical Model Paper",
-    "Official Model Question Paper (FYUGP 2024",
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
     "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 25,
-    "part_b": 12,
-    "part_c": 8
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_1",
+      "paper_title": "EXAMINATION PAPER 1: MGU-UGP (HONOURS) REGULAR EXAM SEM 1, NOV 2024",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P1_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the microcontroller used in the Arduino Board a) ATmega328p b) ATmega2560 c) ATmega32U4 d) ATmega8 a) Differential drive wheels b) Ackermann steering wheels c) Mecanum or omni-wheels d) Skid-steer wheels",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Material used for making of LDR is__________ a) Cadmium sulphide b) Silicon c) Silver d) Copper",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which type of wheel mechanism allows a robot to move in any direction without the need to change its orientation?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What type of signal does the analogWrite() function output? a) Pulse Code Modulated Signal b) Frequency Modulated Signal c) Pulse Width Modulated Signal d) Pulse Amplitude Modulated Signal",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "The basic principle behind the operation of an ultrasonic sensor is a) Infrared reflection b) Radio wave transmission c) Sound wave reflection d) Light diffraction",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "In a RADAR system utilizing an ultrasonic sensor, what does the term \"echo\" refer to? a) The initial sound wave emitted b) The reflection of sound waves by the sensor off an object c) The failure of the sensor to d) The signal sent to the servo detect an object motor",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which Function is called repeatedly in an Arduino program? a) void setup() b) void loop() c) main() d) init()",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "The principle of operation of MQ 2 smoke sensor is the change of ____________ in the presence of gas a) voltage b) resistance c) current d) capacitance",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which model is commonly used to represent self-balancing robots? a) Simple Pendulum Model b) Inverted Pendulum Model c) Circular Motion Model d) Rotational Model",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Identify the communication protocol used by the MPU6050 to communicate with microcontrollers. a) UART b) SPI c) I2C d) CAN",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P1_Q11",
+              "number": 11,
+              "global_number": 11,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain how you would Troubleshoot an Arduino program that is not executing the void loop () function as expected. What steps would you take to identify and fix the issue.",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q12",
+              "number": 12,
+              "global_number": 12,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Why servo motor is more suitable for robotic arm rather than DC motor?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q13",
+              "number": 13,
+              "global_number": 13,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the significance of PWM signals in robotic application",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q14",
+              "number": 14,
+              "global_number": 14,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "How can an autonomous robotic vehicle navigate and change direction in response to obstacles?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q15",
+              "number": 15,
+              "global_number": 15,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the pourpose of an H bridge circuit ?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q16",
+              "number": 16,
+              "global_number": 16,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain how obstacle detection with IR sensors can be implemented in a real-world robotic application, such as an autonomous vehicle.",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P1_Q17",
+              "number": 17,
+              "global_number": 17,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Explain how to use the delay() function in Arduino to create between LED state changes.Include an example program and explain how the delay value affects the LED's behavior?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q18",
+              "number": 18,
+              "global_number": 18,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Write a program to read the values from LDR with proper steps?",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q19",
+              "number": 19,
+              "global_number": 19,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Discuss the working principles of the MPU6050 sensor. Explain how it measures acceleration and angular velocity",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            },
+            {
+              "id": "P1_Q20",
+              "number": 20,
+              "global_number": 20,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Develop a program for robot car which stop the movement when an obstacle is detected by the IR sensor END OF THE QUESTION PAPER ***",
+              "solution_html": "",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "PAPER_2",
+      "paper_title": "EXAMINATION PAPER 2: FIRST SEMESTER MGU-UGP/MGU-BBA/MGU-BCA HONOURS EXAMINATIONS NOVEMBER 2025",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P2_Q1",
+              "number": 1,
+              "global_number": 21,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which pin on an Arduino Uno board is used for SPI communication? / a). pin10 b). pin11 c). pin12 d). pin13",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). pin10/ b). pin11/ c). pin12/d). pin13</div>",
+              "final_answer": "Option . pin10/ b). pin11/ c). pin12/d). pin13",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q2",
+              "number": 2,
+              "global_number": 22,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the purpose of the\" tone \"function? / a). generate a b). generate a c). read an d). write a digital tone on a pin pulse on a pin analog value value",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). generate atoneonapin</div>",
+              "final_answer": "Option . generate atoneonapin",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q3",
+              "number": 3,
+              "global_number": 23,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What language is the Arduino IDE built on? / a). Java b). HTML c). C/C++ d). Python",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c). C/C++</div>",
+              "final_answer": "Option (c) . C/C++",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q4",
+              "number": 4,
+              "global_number": 24,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "IR flame sensor senses ______________ emitted by flames / a). Infrared b). UV Radiation c). X Ray d). None of these Radiation",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). Infrared Radiation</div>",
+              "final_answer": "Option . Infrared Radiation",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q5",
+              "number": 5,
+              "global_number": 25,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "The principle of operation of MQ 2 smoke sensor is the change of / ____________ in the presence of gas a). voltage b). resistance c). current d). capacitance",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).resistance</div>",
+              "final_answer": "Option (b) .resistance",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q6",
+              "number": 6,
+              "global_number": 26,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Number of pins present in HC-SR04 / a). 3 b). 4 c). 5 d). 6",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).4</div>",
+              "final_answer": "Option (b) .4",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q7",
+              "number": 7,
+              "global_number": 27,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which technique involves predicting future states based on current data to / optimize control actions in self-balancing robots? a). Feedforward b). Adaptive c). PID Control d). Hysteresis Control Control Control",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). Feedforward Control</div>",
+              "final_answer": "Option . Feedforward Control",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q8",
+              "number": 8,
+              "global_number": 28,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "How many number of pins does the MPU6050 sensor typically have? / a). 4 b). 6 c). 8 d). 10",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c). 8</div>",
+              "final_answer": "Option (c) . 8",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q9",
+              "number": 9,
+              "global_number": 29,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the typical output range of a standard servo motor when controlled via / PWM? a). 0-90 degrees b). 0-180 c). 0-360 d). 0-45 degrees degrees degrees",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).0-180 degrees</div>",
+              "final_answer": "Option (b) .0-180 degrees",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q10",
+              "number": 10,
+              "global_number": 30,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What are the potential applications of a radar mode system using an ultrasonic / sensor and servo motor? a). Obstacle b). Object c). Proximity d). All of the detection tracking sensing above",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">d).All ofthe above</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">PartB</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ShortanswerTypeQuestions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Answerany4Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">EachQuestion carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5marks)</span></li></ul>",
+              "final_answer": "Option (d) .All ofthe above",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P2_Q11",
+              "number": 11,
+              "global_number": 31,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain how you would Troubleshoot an Arduino program that is not executing / the void loop () function as expected. What steps would you take to identify and fix the issue.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">blockingfunctions or delay.</li></ul>",
+              "final_answer": "blockingfunctions or delay",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q12",
+              "number": 12,
+              "global_number": 32,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What are the different mathematical operators used in Ardino programming",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">+ Addition, -Subtraction, *Multiplication, / Division, %Modulus (remainder)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">++ Increment,-- Decrement.</li></ul>",
+              "final_answer": "+ Addition, -Subtraction, *Multiplication, / Division, %Modulus (remainder)",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q13",
+              "number": 13,
+              "global_number": 33,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the pourpose of an H bridge circuit ?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Control the direction of a DC motor - The purpose of an H-bridge circuit is to allow a DC</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">motortorotateinbothdirections bycontrollingthepolarityofthe voltage appliedtoit.</li></ul>",
+              "final_answer": "Control the direction of a DC motor - The purpose of an H-bridge circuit is to allow a DC",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q14",
+              "number": 14,
+              "global_number": 34,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Why LDR is connected to analog pin instead of digital pin of arduino ?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">LDR changes resistance continuously. The resistance of an LDR decreases when light</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">increases, and increases when light decreases. This produces a range of voltage values—not</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">just0or 1.</li></ul>",
+              "final_answer": "just0or 1",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q15",
+              "number": 15,
+              "global_number": 35,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What are the implications of using the HC-SR04 sensor in outdoor / environments, particularly in terms of weather conditions?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The HC-SR04 sensor is not suitable for outdoor use because rain, fog, dust, and moisture</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interfere with ultrasonic waves and can damage the non-waterproof electronics. Temperature</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and windchanges alsoaffect the speed and direction of sound,leading toinaccurate orunstable</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">distance readings inoutdoorenvironments.</li></ul>",
+              "final_answer": "distance readings inoutdoorenvironments",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q16",
+              "number": 16,
+              "global_number": 36,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Define infrared (IR) sensors and explain their basic operating principle in / obstacle detection.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Infrared(IR) sensors are devices that useinfrared light todetect objects ormeasure distance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">They work by emitting IR light from an LED and measuring the amount of reflected light</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">received by a photodiode or phototransistor. When an object is nearby, more IR light is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">reflected back, allowing the sensor to detect its presence. This makes IR sensors commonly</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">usedfor simpleandfast obstacle detection.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">EssayTypeQuestions</li></ul>",
+              "final_answer": "EssayTypeQuestions",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P2_Q17",
+              "number": 17,
+              "global_number": 37,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Write a program that uses a WHILE loopto blink an LED 5 times, with a 500ms / delay between each blink?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int led=13;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int count =0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidsetup() {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">pinMode(led, OUTPUT);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidloop(){</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count = 0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while<5){</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">digitalWrite(led, HIGH);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(500);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">digitalWrite(led, LOW);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(500);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count++;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while(1);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li></ul>",
+              "final_answer": "",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q18",
+              "number": 18,
+              "global_number": 38,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Explain the internal structure and parts of a DC in detail?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Stator (Field Magnet), Rotor / Armature, Commutator, Brushes, Armature Windings</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Shaft</li></ul>",
+              "final_answer": "Stator (Field Magnet), Rotor / Armature, Commutator, Brushes, Armature Windings",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q19",
+              "number": 19,
+              "global_number": 39,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Write a program to rotate a servo from 0 Degre to 180 Degree, 5 Times",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">#include<Servo.h></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Servomyservo;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int count =0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidsetup() {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.attach(9);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidloop()</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">{</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count = 0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while<5) {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for (int pos= 0; pos<= 180; pos++)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">{</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.write(pos);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(10);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for (int pos =180; pos >=0; pos--) {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.write(pos);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(10);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count++;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while(1);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li></ul>",
+              "final_answer": "",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q20",
+              "number": 20,
+              "global_number": 40,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Investigate the influence of terrain and environmental conditions on the direction control of robotic vehicles. How do factors such as slope, surface texture, and / obstacles affect navigation strategies?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Terrainand environmental conditions greatly impact roboticnavigation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Slopes require moretorque andstabilitycontrol.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Surface texture affects traction andsteering accuracy.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Obstacles require detection andreal-time avoidancestrategies.</li></ul>",
+              "final_answer": " Obstacles require detection andreal-time avoidancestrategies",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P1_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Which pin on an Arduino Uno board is used for SPI communication? a). pin10 b). pin11 c). pin12 d). pin13",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "a).pin10/ b).pin11/ c).pin12/d).pin13"
+      "question": "What is the microcontroller used in the Arduino Board a) ATmega328p b) ATmega2560 c) ATmega32U4 d) ATmega8 a) Differential drive wheels b) Ackermann steering wheels c) Mecanum or omni-wheels d) Skid-steer wheels",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q2",
+      "id": "P1_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Write a program to turn on and turn off LED",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write a program to turn on and turn off LED</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
+      "question": "Material used for making of LDR is__________ a) Cadmium sulphide b) Silicon c) Silver d) Copper",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q3",
+      "id": "P1_Q3",
       "number": 3,
+      "global_number": 3,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What is the purpose of the\" tone \"function? a). generate a tone on a pin b). generate a pulse on a pin c). read an analog value d). write a digital value",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> c).C/C++</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "c).C/C++"
+      "question": "Which type of wheel mechanism allows a robot to move in any direction without the need to change its orientation?",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q4",
+      "id": "P1_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The Speed of sound in air is------ A) 3m/s B) 3000m/s C) 34m/s D)343m/s R 2",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 3m/s B) 3000m/s C) 34m/s D)343m/s R 2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Interactive robotic systems. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) 3m/s B) 3000m/s C) 34m/s D)343m/s R 2"
+      "question": "What type of signal does the analogWrite() function output? a) Pulse Code Modulated Signal b) Frequency Modulated Signal c) Pulse Width Modulated Signal d) Pulse Amplitude Modulated Signal",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q5",
+      "id": "P1_Q5",
       "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Write a program to create an SOS signal using LED",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write a program to create an SOS signal using LED</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
+      "question": "The basic principle behind the operation of an ultrasonic sensor is a) Infrared reflection b) Radio wave transmission c) Sound wave reflection d) Light diffraction",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q6",
+      "id": "P1_Q6",
       "number": 6,
+      "global_number": 6,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What language is the Arduino IDE built on? a). Java b). HTML c). C/C++ d). Python",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b).4</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": false,
-      "final_answer": "b).4"
+      "question": "In a RADAR system utilizing an ultrasonic sensor, what does the term \"echo\" refer to? a) The initial sound wave emitted b) The reflection of sound waves by the sensor off an object c) The failure of the sensor to d) The signal sent to the servo detect an object motor",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q7",
+      "id": "P1_Q7",
       "number": 7,
+      "global_number": 7,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Which is the communication protocol used by the MPU6050 to communicate with microcontrollers. A) UART B) SPI C) I2C D) CAN R 3 4 ----------- Function is called repeatedly in an Arduino program. A) void setup() B) void loop() C) main() D) Init() R 1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>blockingfunctionsordelay.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "blockingfunctionsordelay."
+      "question": "Which Function is called repeatedly in an Arduino program? a) void setup() b) void loop() c) main() d) init()",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q8",
+      "id": "P1_Q8",
       "number": 8,
+      "global_number": 8,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Control LED or a buzzer using LDR",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Control LED or a buzzer using LDR</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
+      "question": "The principle of operation of MQ 2 smoke sensor is the change of ____________ in the presence of gas a) voltage b) resistance c) current d) capacitance",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q9",
+      "id": "P1_Q9",
       "number": 9,
+      "global_number": 9,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "IR flame sensor senses emitted by flames a). Infrared Radiation b). UV Radiation c). X Ray d). None of these",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b).0-180degrees</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "b).0-180degrees"
+      "question": "Which model is commonly used to represent self-balancing robots? a) Simple Pendulum Model b) Inverted Pendulum Model c) Circular Motion Model d) Rotational Model",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q10",
+      "id": "P1_Q10",
       "number": 10,
+      "global_number": 10,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Set up a light-controlled buzzer operation system",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Set up a light-controlled buzzer operation system</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
+      "question": "Identify the communication protocol used by the MPU6050 to communicate with microcontrollers. a) UART b) SPI c) I2C d) CAN",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q11",
+      "id": "P1_Q11",
       "number": 11,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "The principle of operation of MQ 2 smoke sensor is the change of in the presence of gas a). voltage b). resistance c). current d). capacitance",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>blockingfunctionsordelay.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": true,
-      "final_answer": "blockingfunctionsordelay."
-    },
-    {
-      "id": "Q12",
-      "number": 12,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Which Component is NOT typically found in an ultrasonic sensor? A) Transmitter B) Receiver C) Amplifier D) Solar panel U 2",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Interactive robotic systems. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) Transmitter B) Receiver C) Amplifier D) Solar panel U 2"
-    },
-    {
-      "id": "Q13",
-      "number": 13,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Design a parking Indicator using ultrasonic sensor",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Design a parking Indicator using ultrasonic sensor</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q14",
-      "number": 14,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Number of pins present in HC-SR04 a). 3 b). 4 c). 5 d). 6",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>LDR changes resistance continuously. The resistance of an LDR decreases when light</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>increases, and increases when light decreases. This produces a range of voltage values—not</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>just0or1.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": false,
-      "final_answer": "just0or1."
-    },
-    {
-      "id": "Q15",
-      "number": 15,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Create a smoke and fire alarm system",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Create a smoke and fire alarm system</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q16",
-      "number": 16,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Which technique involves predicting future states based on current data to optimize control actions in self-balancing robots? a). Feedforward Control b). Adaptive Control c). PID Control d). Hysteresis Control",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Infrared(IR)sensorsaredevicesthatuseinfraredlighttodetectobjectsormeasuredistance.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>They work by emitting IR light from an LED and measuring the amount of reflected light</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>received by a photodiode or phototransistor. When an object is nearby, more IR light is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>reflected back, allowing the sensor to detect its presence. This makes IR sensors commonly</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>usedforsimpleandfastobstacledetection.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Type Questions</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Essay Type Questions"
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The correct file extension for the Arduino IDE installation file is A) .exe B) .zip C) .tar.gz D) .dmg U 1",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Interactive robotic systems. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) .exe B) .zip C) .tar.gz D) .dmg U 1"
-    },
-    {
-      "id": "Q18",
-      "number": 18,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Assemble a robocar using geared DC motors and a Driver module",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Assemble a robocar using geared DC motors and a Driver module</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "How many number of pins does the MPU6050 sensor typically have? a). 4 b). 6 c). 8 d). 10",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>#include<Servo.h></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Servomyservo;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>intcount=0;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>voidsetup(){</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.attach(9);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>voidloop()</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>count=0;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>while(count<5) {</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for(intpos=0;pos<=180;pos++)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.write(pos);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>delay(10);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for(intpos=180;pos>=0;pos--){</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.write(pos);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>delay(10);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>count++;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>while(1);</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "#include<Servo.h>"
-    },
-    {
-      "id": "Q20",
-      "number": 20,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Write an Arduino program for PIR motion sensor-based burglar alarm using Wokwi simulator.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write an Arduino program for PIR motion sensor-based burglar alarm using Wokwi simulator.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "What is the typical output range of a standard servo motor when controlled via PWM? a). 0-90 degrees b). 0-180 degrees c). 0-360 degrees d). 0-45 degrees",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b).0-180degrees</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": true,
-      "final_answer": "b).0-180degrees"
-    },
-    {
-      "id": "Q22",
-      "number": 22,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Which model is commonly used to represent self-balancing robots? A) Simple Pendulum Model B) Inverted Pendulum Model C) Circular Motion Model D) Rotational Model U 3",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Interactive robotic systems. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) Simple Pendulum Model B) Inverted Pendulum Model C) Circular Motion Model D) Rotational Model U 3"
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What are the potential applications of a radar mode system using an ultrasonic sensor and servo motor? a). Obstacle detection b). Object tracking c). Proximity sensing d). All of the above",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> d).Alloftheabove</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "d).Alloftheabove"
-    },
-    {
-      "id": "Q24",
-      "number": 24,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Write an Arduino program for LPG Gas leak detector using MQ2 sensor using Wokwi simulator.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write an Arduino program for LPG Gas leak detector using MQ2 sensor using Wokwi simulator.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q25",
-      "number": 25,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Gradually increase and decrease the intensity of LED use PWM function of Arduino.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Gradually increase and decrease the intensity of LED use PWM function of Arduino.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Interactive robotic systems valuation scheme."
-    },
-    {
-      "id": "Q26",
-      "number": 26,
+      "global_number": 11,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[K] ",
       "question": "Explain how you would Troubleshoot an Arduino program that is not executing the void loop () function as expected. What steps would you take to identify and fix the issue.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>blockingfunctionsordelay.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "blockingfunctionsordelay."
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q27",
-      "number": 27,
+      "id": "P1_Q12",
+      "number": 12,
+      "global_number": 12,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Explain the difference between the void setup () and void loop () in Arduino? Give an example? A 1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>blockingfunctionsordelay.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "blockingfunctionsordelay."
+      "question": "Why servo motor is more suitable for robotic arm rather than DC motor?",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q28",
-      "number": 28,
+      "id": "P1_Q13",
+      "number": 13,
+      "global_number": 13,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "What are the different mathematical operators used in Ardino programming",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>+ Addition, -Subtraction, *Multiplication, / Division, %Modulus (remainder),</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>++Increment,--Decrement.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "++Increment,--Decrement."
+      "question": "Explain the significance of PWM signals in robotic application",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q29",
-      "number": 29,
+      "id": "P1_Q14",
+      "number": 14,
+      "global_number": 14,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Describe the working principle of ultrasonic sensor in detail? U 2",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe the working principle of ultrasonic sensor in detail? U 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the working principle of ultrasonic sensor in detail? U 2 ."
+      "question": "How can an autonomous robotic vehicle navigate and change direction in response to obstacles?",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
     },
     {
-      "id": "Q30",
-      "number": 30,
+      "id": "P1_Q15",
+      "number": 15,
+      "global_number": 15,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
       "question": "What is the pourpose of an H bridge circuit ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Control the direction of a DC motor - The purpose of an H-bridge circuit is to allow a DC</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>motortorotateinbothdirectionsbycontrollingthepolarityofthevoltageappliedtoit.</li></ul>",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P1_Q16",
+      "number": 16,
+      "global_number": 16,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Explain how obstacle detection with IR sensors can be implemented in a real-world robotic application, such as an autonomous vehicle.",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P1_Q17",
+      "number": 17,
+      "global_number": 17,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Explain how to use the delay() function in Arduino to create between LED state changes.Include an example program and explain how the delay value affects the LED's behavior?",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P1_Q18",
+      "number": 18,
+      "global_number": 18,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Write a program to read the values from LDR with proper steps?",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P1_Q19",
+      "number": 19,
+      "global_number": 19,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Discuss the working principles of the MPU6050 sensor. Explain how it measures acceleration and angular velocity",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P1_Q20",
+      "number": 20,
+      "global_number": 20,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Develop a program for robot car which stop the movement when an obstacle is detected by the IR sensor END OF THE QUESTION PAPER ***",
+      "solution_html": "",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": false
+    },
+    {
+      "id": "P2_Q1",
+      "number": 1,
+      "global_number": 21,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Which pin on an Arduino Uno board is used for SPI communication? / a). pin10 b). pin11 c). pin12 d). pin13",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). pin10/ b). pin11/ c). pin12/d). pin13</div>",
+      "final_answer": "Option . pin10/ b). pin11/ c). pin12/d). pin13",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "motortorotateinbothdirectionsbycontrollingthepolarityofthevoltageappliedtoit."
+      "has_official_scheme": true
     },
     {
-      "id": "Q31",
-      "number": 31,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Explain how Arduino platform contributed to the growth of the Internet of Things (Io T)? U 1",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain how Arduino platform contributed to the growth of the Internet of Things (Io T)? U 1 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain how Arduino platform contributed to the growth of the Internet of Things (Io T)? U 1 ."
+      "id": "P2_Q2",
+      "number": 2,
+      "global_number": 22,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is the purpose of the\" tone \"function? / a). generate a b). generate a c). read an d). write a digital tone on a pin pulse on a pin analog value value",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). generate atoneonapin</div>",
+      "final_answer": "Option . generate atoneonapin",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
     },
     {
-      "id": "Q32",
-      "number": 32,
+      "id": "P2_Q3",
+      "number": 3,
+      "global_number": 23,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What language is the Arduino IDE built on? / a). Java b). HTML c). C/C++ d). Python",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c). C/C++</div>",
+      "final_answer": "Option (c) . C/C++",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q4",
+      "number": 4,
+      "global_number": 24,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "IR flame sensor senses ______________ emitted by flames / a). Infrared b). UV Radiation c). X Ray d). None of these Radiation",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). Infrared Radiation</div>",
+      "final_answer": "Option . Infrared Radiation",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q5",
+      "number": 5,
+      "global_number": 25,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "The principle of operation of MQ 2 smoke sensor is the change of / ____________ in the presence of gas a). voltage b). resistance c). current d). capacitance",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).resistance</div>",
+      "final_answer": "Option (b) .resistance",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q6",
+      "number": 6,
+      "global_number": 26,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Number of pins present in HC-SR04 / a). 3 b). 4 c). 5 d). 6",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).4</div>",
+      "final_answer": "Option (b) .4",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q7",
+      "number": 7,
+      "global_number": 27,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Which technique involves predicting future states based on current data to / optimize control actions in self-balancing robots? a). Feedforward b). Adaptive c). PID Control d). Hysteresis Control Control Control",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a). Feedforward Control</div>",
+      "final_answer": "Option . Feedforward Control",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q8",
+      "number": 8,
+      "global_number": 28,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "How many number of pins does the MPU6050 sensor typically have? / a). 4 b). 6 c). 8 d). 10",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c). 8</div>",
+      "final_answer": "Option (c) . 8",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q9",
+      "number": 9,
+      "global_number": 29,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is the typical output range of a standard servo motor when controlled via / PWM? a). 0-90 degrees b). 0-180 c). 0-360 d). 0-45 degrees degrees degrees",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b).0-180 degrees</div>",
+      "final_answer": "Option (b) .0-180 degrees",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q10",
+      "number": 10,
+      "global_number": 30,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What are the potential applications of a radar mode system using an ultrasonic / sensor and servo motor? a). Obstacle b). Object c). Proximity d). All of the detection tracking sensing above",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">d).All ofthe above</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">PartB</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ShortanswerTypeQuestions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Answerany4Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">EachQuestion carries <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5marks)</span></li></ul>",
+      "final_answer": "Option (d) .All ofthe above",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q11",
+      "number": 11,
+      "global_number": 31,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
+      "question": "Explain how you would Troubleshoot an Arduino program that is not executing / the void loop () function as expected. What steps would you take to identify and fix the issue.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">blockingfunctions or delay.</li></ul>",
+      "final_answer": "blockingfunctions or delay",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q12",
+      "number": 12,
+      "global_number": 32,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "What are the different mathematical operators used in Ardino programming",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">+ Addition, -Subtraction, *Multiplication, / Division, %Modulus (remainder)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">++ Increment,-- Decrement.</li></ul>",
+      "final_answer": "+ Addition, -Subtraction, *Multiplication, / Division, %Modulus (remainder)",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q13",
+      "number": 13,
+      "global_number": 33,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "What is the pourpose of an H bridge circuit ?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Control the direction of a DC motor - The purpose of an H-bridge circuit is to allow a DC</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">motortorotateinbothdirections bycontrollingthepolarityofthe voltage appliedtoit.</li></ul>",
+      "final_answer": "Control the direction of a DC motor - The purpose of an H-bridge circuit is to allow a DC",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q14",
+      "number": 14,
+      "global_number": 34,
+      "part": "PART_B",
+      "marks": 6,
       "question": "Why LDR is connected to analog pin instead of digital pin of arduino ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>LDR changes resistance continuously. The resistance of an LDR decreases when light</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>increases, and increases when light decreases. This produces a range of voltage values—not</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>just0or1.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">LDR changes resistance continuously. The resistance of an LDR decreases when light</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">increases, and increases when light decreases. This produces a range of voltage values—not</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">just0or 1.</li></ul>",
+      "final_answer": "just0or 1",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "just0or1."
+      "has_official_scheme": true
     },
     {
-      "id": "Q33",
-      "number": 33,
+      "id": "P2_Q15",
+      "number": 15,
+      "global_number": 35,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Explain the function of an ultrasonic sensor in RADAR mode? U 3",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the function of an ultrasonic sensor in RADAR mode? U 3 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the function of an ultrasonic sensor in RADAR mode? U 3 ."
-    },
-    {
-      "id": "Q34",
-      "number": 34,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "What are the implications of using the HC-SR04 sensor in outdoor environments, particularly in terms of weather conditions?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The HC-SR04 sensor is not suitable for outdoor use because rain, fog, dust, and moisture</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interfere with ultrasonic waves and can damage the non-waterproof electronics. Temperature</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>andwindchangesalsoaffectthespeedanddirectionofsound,leadingtoinaccurateorunstable</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>distancereadingsinoutdoorenvironments.</li></ul>",
+      "question": "What are the implications of using the HC-SR04 sensor in outdoor / environments, particularly in terms of weather conditions?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The HC-SR04 sensor is not suitable for outdoor use because rain, fog, dust, and moisture</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interfere with ultrasonic waves and can damage the non-waterproof electronics. Temperature</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and windchanges alsoaffect the speed and direction of sound,leading toinaccurate orunstable</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">distance readings inoutdoorenvironments.</li></ul>",
+      "final_answer": "distance readings inoutdoorenvironments",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "distancereadingsinoutdoorenvironments."
+      "has_official_scheme": true
     },
     {
-      "id": "Q35",
-      "number": 35,
+      "id": "P2_Q16",
+      "number": 16,
+      "global_number": 36,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Explain the working principle of IR Flame sensor? U 2",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of IR Flame sensor? U 2 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the working principle of IR Flame sensor? U 2 ."
-    },
-    {
-      "id": "Q36",
-      "number": 36,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "Define infrared (IR) sensors and explain their basic operating principle in obstacle detection.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Infrared(IR)sensorsaredevicesthatuseinfraredlighttodetectobjectsormeasuredistance.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>They work by emitting IR light from an LED and measuring the amount of reflected light</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>received by a photodiode or phototransistor. When an object is nearby, more IR light is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>reflected back, allowing the sensor to detect its presence. This makes IR sensors commonly</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>usedforsimpleandfastobstacledetection.</li></ul>",
+      "question": "Define infrared (IR) sensors and explain their basic operating principle in / obstacle detection.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Infrared(IR) sensors are devices that useinfrared light todetect objects ormeasure distance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">They work by emitting IR light from an LED and measuring the amount of reflected light</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">received by a photodiode or phototransistor. When an object is nearby, more IR light is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">reflected back, allowing the sensor to detect its presence. This makes IR sensors commonly</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">usedfor simpleandfast obstacle detection.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">EssayTypeQuestions</li></ul>",
+      "final_answer": "EssayTypeQuestions",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "usedforsimpleandfastobstacledetection."
+      "has_official_scheme": true
     },
     {
-      "id": "Q37",
-      "number": 37,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "What is the primary function of a self-balancing robotic system? Explain in detail. U 3 4 * 5 = 20",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering What is the primary function of a self-balancing robotic system? Explain in detail. U 3 4 * 5 = 20 . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is the primary function of a self-balancing robotic system? Explain in detail. U 3 4 * 5 = 20 ."
-    },
-    {
-      "id": "Q38",
-      "number": 38,
+      "id": "P2_Q17",
+      "number": 17,
+      "global_number": 37,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[K] ",
-      "question": "Write a program that uses a WHILE loopto blink an LED 5 times, with a 500ms delay between each blink?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>#include<Servo.h></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Servomyservo;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>intcount=0;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>voidsetup(){</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.attach(9);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>voidloop()</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>count=0;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>while(count<5) {</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for(intpos=0;pos<=180;pos++)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.write(pos);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>delay(10);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for(intpos=180;pos>=0;pos--){</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>myservo.write(pos);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>delay(10);</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>count++;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>while(1);</li></ul>",
+      "question": "Write a program that uses a WHILE loopto blink an LED 5 times, with a 500ms / delay between each blink?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int led=13;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int count =0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidsetup() {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">pinMode(led, OUTPUT);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidloop(){</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count = 0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while<5){</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">digitalWrite(led, HIGH);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(500);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">digitalWrite(led, LOW);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(500);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count++;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while(1);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li></ul>",
+      "final_answer": "",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "#include<Servo.h>"
+      "has_official_scheme": true
     },
     {
-      "id": "Q39",
-      "number": 39,
+      "id": "P2_Q18",
+      "number": 18,
+      "global_number": 38,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Compare void setup () and void loop () functions in Arduino programming. How do they work together to create a complete Arduino Sketch? And explain the uses of both functions? U 1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check the void setup() function - Check for infinite loops in setup() - Ensure the code</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>compiles without errors in the Arduino IDE- Ensure correct board/port selection - Look for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>blockingfunctionsordelay.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "blockingfunctionsordelay."
-    },
-    {
-      "id": "Q40",
-      "number": 40,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
       "question": "Explain the internal structure and parts of a DC in detail?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Stator (Field Magnet), Rotor / Armature, Commutator, Brushes, Armature Windings,</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Shaft</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Stator (Field Magnet), Rotor / Armature, Commutator, Brushes, Armature Windings</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Shaft</li></ul>",
+      "final_answer": "Stator (Field Magnet), Rotor / Armature, Commutator, Brushes, Armature Windings",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Shaft"
+      "has_official_scheme": true
     },
     {
-      "id": "Q41",
-      "number": 41,
+      "id": "P2_Q19",
+      "number": 19,
+      "global_number": 39,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Write a program to read the values from LDR with proper steps? A 2",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
-    },
-    {
-      "id": "Q42",
-      "number": 42,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
       "question": "Write a program to rotate a servo from 0 Degre to 180 Degree, 5 Times",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>#include Servomyservo; intcount=0; voidsetup(){ myservo.attach(9); } voidloop() { count=0; while(count =0;pos--){ myservo.write(pos); delay(10); } count++; } while(1); }</p>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">#include<Servo.h></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Servomyservo;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">int count =0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidsetup() {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.attach(9);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">voidloop()</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">{</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count = 0;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while<5) {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for (int pos= 0; pos<= 180; pos++)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">{</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.write(pos);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(10);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for (int pos =180; pos >=0; pos--) {</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">myservo.write(pos);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">delay(10);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">count++;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">while(1);</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">}</li></ul>",
+      "final_answer": "",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "#include Servomyservo; intcount=0; voidsetup(){ myservo.attach(9); } voidloop() { count=0; while(count =0;pos--){ myservo.write(pos); delay(10); } count++; } while(1); }"
+      "has_official_scheme": true
     },
     {
-      "id": "Q43",
-      "number": 43,
+      "id": "P2_Q20",
+      "number": 20,
+      "global_number": 40,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Describe the fundamental principles that enable self -balancing robots to maintain stability. What technologies and mechanisms do these robots employ to achieve balance? U 3",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
-    },
-    {
-      "id": "Q44",
-      "number": 44,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Investigate the influence of terrain and environmental conditions on the direction control of robotic vehicles. How do factors such as slope, surface texture, and obstacles affect navigation strategies?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Terrainandenvironmentalconditionsgreatlyimpactroboticnavigation.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'> Slopesrequiremoretorqueandstabilitycontrol.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'> Surfacetextureaffectstractionandsteeringaccuracy.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'> Obstaclesrequiredetectionandreal-timeavoidancestrategies.</li></ul>",
+      "question": "Investigate the influence of terrain and environmental conditions on the direction control of robotic vehicles. How do factors such as slope, surface texture, and / obstacles affect navigation strategies?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Terrainand environmental conditions greatly impact roboticnavigation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Slopes require moretorque andstabilitycontrol.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Surface texture affects traction andsteering accuracy.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\"> Obstacles require detection andreal-time avoidancestrategies.</li></ul>",
+      "final_answer": " Obstacles require detection andreal-time avoidancestrategies",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": " Obstaclesrequiredetectionandreal-timeavoidancestrategies."
-    },
-    {
-      "id": "Q45",
-      "number": 45,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Explain the fundamental principles behind servo motors. What are the main components of a servo system, and how do they work together to achieve precise control of movement? U 2 2 * 10 = 20",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
+      "has_official_scheme": true
     }
   ]
 }

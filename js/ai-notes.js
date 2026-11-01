@@ -671,9 +671,9 @@ const AiNotesStudio = {
                 part: 'PART_A',
                 part_label: 'Part A (Short Answer)',
                 marks: 2,
-                domain_tag: i <= 5 ? '[K] [1]' : '[U] [2]',
+                
                 question: `Explain the fundamental concept of Topic ${i} in ${title}.`,
-                solution_html: `<div class='space-y-2'><div class='p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 font-sans text-xs leading-relaxed text-slate-800 dark:text-slate-200'><strong class='text-indigo-700 dark:text-indigo-400'>Official Valuation Rubric:</strong><br>• <strong>Conceptual Definition (1 Mark):</strong> Exact formal definition addressing the primary operational premise in ${title}.<br>• <strong>Standard Formulation (1 Mark):</strong> Standard mathematical or analytical formulation with boundary conditions.</div></div>`,
+                solution_html: '',
                 source_exam: `MGU-UGP Exam Sem ${sem}`,
                 repeated_in: [],
                 has_official_scheme: false
@@ -691,7 +691,7 @@ const AiNotesStudio = {
                 marks: marks === 70 ? 6 : 5,
                 domain_tag: i <= 3 ? '[A] [3]' : '[An] [4]',
                 question: `Discuss the structural mechanisms, derivations, and methodological applications of Core Theme ${i} in ${title}.`,
-                solution_html: `<div class='space-y-2'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Step-by-Step Valuation Scheme:</strong><br>1. <strong>Theoretical Foundations (2 Marks):</strong> Clear articulation of principles and initial conditions.<br>2. <strong>Derivation & Analysis (3 Marks):</strong> Rigorous proofs, formulations, and structural development.<br>3. <strong>Synthesized Conclusion (1 Mark):</strong> Final result interpretation.</div></div>`,
+                solution_html: '',
                 source_exam: `MGU-UGP Exam Sem ${sem}`,
                 repeated_in: [],
                 has_official_scheme: false
@@ -707,9 +707,9 @@ const AiNotesStudio = {
                 part: 'PART_C',
                 part_label: 'Part C (Long Essay / Problem)',
                 marks: 10,
-                domain_tag: i <= 2 ? '[E] [5]' : '[C] [6]',
+                
                 question: `Provide a comprehensive treatise and critical analysis of Advanced Topic ${i} in ${title}, including theoretical derivations, model schemas, and practical applications.`,
-                solution_html: `<div class='space-y-3'><div class='p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-800 dark:text-slate-200 leading-relaxed'><strong class='text-indigo-700 dark:text-indigo-400'>Comprehensive 5-Tier Evaluation Rubric (10 Marks):</strong><br>• <strong>Overview & Context (2 Marks):</strong> Historical foundation, definitions, and domain scope.<br>• <strong>Detailed Structural Derivations (5 Marks):</strong> Step-by-step mathematical proofs or detailed taxonomies.<br>• <strong>Practical Applications (2 Marks):</strong> Real-world implementations and empirical benchmarks.<br>• <strong>Conclusion (1 Mark):</strong> Summary aligned with MGU degree expectations.</div></div>`,
+                solution_html: '',
                 source_exam: `MGU-UGP Exam Sem ${sem}`,
                 repeated_in: [],
                 has_official_scheme: false
@@ -768,9 +768,14 @@ const AiNotesStudio = {
         // Helper: Derive or clean final answer
         const getFinalAns = (q) => {
             if (q.final_answer && q.final_answer.trim().length > 1) {
-                return cleanText(q.final_answer.replace(/\$\$/g, '').replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, ''));
+                const fa = cleanText(q.final_answer.replace(/\$\$/g, '').replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, ''));
+                if (!/^(verified|scheme|mgu|solution|formal definition|core criteria)/i.test(fa)) {
+                    return fa;
+                }
             }
             const sol = q.solution_html || '';
+            if (!sol || !sol.trim()) return '';
+
             const lis = sol.match(/<li[^>]*>(.*?)<\/li>/gis);
             let target = '';
             if (lis && lis.length > 0) {
@@ -778,25 +783,27 @@ const AiNotesStudio = {
             } else {
                 const plain = sol.replace(/<[^>]+>/g, ' ').trim();
                 const lines = plain.split('\n').map(l => l.trim()).filter(Boolean);
-                target = lines.length > 0 ? lines[lines.length - 1] : 'Verified solution per MGU Scheme of Valuation.';
+                target = lines.length > 0 ? lines[lines.length - 1] : '';
             }
             target = target
                 .replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, '')
                 .replace(/\(?\b\d+(?:\.\d+)?\s*Marks?\b\)?/gi, '')
-                .replace(/\[\s*CO[\s\d,:A-Za-z\-–—]+\]?/gi, '')
+                .replace(/\[\s*CO[\s\d,:A-Za-z\-]+\]?/gi, '')
                 .replace(/\[\s*[UKAAEnCSIAPap\d\s,/]+\s*\]?/g, '')
-                .replace(/[\s/,:–—-]+$/g, '')
+                .replace(/[\s/,:-]+$/g, '')
                 .replace(/\s+/g, ' ')
                 .trim();
-            if (!target || target.length < 3 || /^(verified|scheme|mgu|solution|formal definition)/i.test(target)) {
-                target = 'Verified per official Mahatma Gandhi University valuation scheme.';
+            if (!target || target.length < 2 || /^(verified|scheme|mgu|solution|formal definition|core criteria)/i.test(target)) {
+                return '';
             }
             return cleanText(target);
         };
 
         // Helper: Format and optimize solution HTML to remove unnecessary itemizations
         const formatOptimizedSolution = (solHtml, cleanQ) => {
-            if (!solHtml) return '';
+            if (!solHtml || !solHtml.trim()) return '';
+            if (solHtml.includes('Official Valuation Rubric:') || solHtml.includes('Direct Conceptual Definition')) return '';
+            if (solHtml.includes('Comprehensive 5-Tier') || solHtml.includes('Step-by-Step Valuation Scheme:')) return '';
             let s = solHtml
                 .replace(/\[\s*(?:Understand|Remember|Apply|Analyse|Analyze|Evaluate|Create|Skill|Knowledge|Application|Comprehension)[^\]]*\]/gi, '')
                 .replace(/\[\s*CO[\s\d,:A-Za-z\-]+?\]/gi, '')
@@ -979,25 +986,27 @@ const AiNotesStudio = {
 
                   /* Academic Cover / Title Page (PDF Page 1 Only - Top Aligned) */
                   .title-page {
-                    page-break-before: avoid;
-                    page-break-after: always;
-                    break-after: page;
-                    display: block;
-                    width: 100%;
-                    max-width: 650px;
-                    margin: 0 auto 16px auto;
-                    padding: 4px 0 0 0;
-                    box-sizing: border-box;
-                    background: transparent;
+                    page-break-before: avoid !important;
+                    page-break-after: always !important;
+                    break-after: page !important;
+                    display: block !important;
+                    width: 100% !important;
+                    max-width: 660px !important;
+                    margin: 0 auto 0 auto !important;
+                    padding: 0 !important;
+                    box-sizing: border-box !important;
+                    background: transparent !important;
                   }
                   .title-page-card {
-                    width: 100%;
-                    border: 1.5px solid #CBD5E1;
-                    border-radius: 10px;
-                    padding: 20px 24px;
-                    text-align: center;
-                    background: #FFFFFF;
-                    box-sizing: border-box;
+                    width: 100% !important;
+                    border: 1.5px solid #CBD5E1 !important;
+                    border-radius: 8px !important;
+                    padding: 14px 18px !important;
+                    text-align: center !important;
+                    background: #FFFFFF !important;
+                    box-sizing: border-box !important;
+                    page-break-inside: avoid !important;
+                    break-inside: avoid !important;
                   }
                   .tp-emblem { width: 38px; height: 38px; margin: 0 auto 6px auto; }
                   .tp-univ { font-size: 13pt; font-weight: 800; letter-spacing: 1.2px; color: #1E3A8A; line-height: 1.2; }
@@ -1170,16 +1179,19 @@ const AiNotesStudio = {
                                     <div class="questions-list">
                                         ${sec.matchingQuestions.map(q => {
                                             const cleanQ = cleanText(q.question);
-                                            const finalAns = getFinalAns(q);
+                                            const solBody = formatOptimizedSolution(q.solution_html, cleanQ);
+                                            const finalAns = solBody ? getFinalAns(q) : '';
                                             return `
                                                 <div class="q-box">
                                                     <div class="q-header">
                                                         <span class="q-num">Q${q.number}.</span> ${cleanQ}
                                                     </div>
+                                                    ${solBody ? `
                                                     <div class="q-body">
-                                                        ${formatOptimizedSolution(q.solution_html, cleanQ)}
-                                                        <div class="final-ans">Final Answer: ${finalAns}</div>
+                                                        ${solBody}
+                                                        ${finalAns ? `<div class="final-ans">Final Answer: ${finalAns}</div>` : ''}
                                                     </div>
+                                                    ` : ''}
                                                 </div>
                                             `;
                                         }).join('')}
@@ -1268,13 +1280,14 @@ const AiNotesStudio = {
         };
 
         if (typeof window.html2pdf === 'function') {
+            window.scrollTo(0, 0);
             const opt = {
                 margin: [10, 10, 10, 10],
                 filename: filename,
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 1.6, useCORS: true, logging: false, scrollY: 0 },
+                html2canvas: { scale: 1.6, useCORS: true, logging: false, scrollY: 0, scrollX: 0 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['css', 'legacy'] }
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'], avoid: ['.title-page', '.q-box'] }
             };
 
             window.html2pdf().set(opt).from(activeArea || document.getElementById('aiNotesPrintArea')).save().then(() => {

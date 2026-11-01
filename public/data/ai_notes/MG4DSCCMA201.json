@@ -5,440 +5,379 @@
   "semester": 4,
   "course_type": "DSC",
   "max_marks": 70,
-  "total_questions": 28,
-  "repeating_skipped": 14,
+  "total_questions": 14,
+  "total_solved": 14,
+  "repeating_skipped": 0,
   "sources_used": [
-    "Official Model Question Paper (FYUGP 2024",
-    "Official Practical Model Paper",
     "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 10,
-    "part_b": 14,
-    "part_c": 4
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_1",
+      "paper_title": "EXAMINATION PAPER 1: MGU-UGP (HONOURS) 2024 ADMISSION REGULAR EXAM SEM 4, MARCH 2026",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P1_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain why the interpretation of results is important in data analysis. (Write any / two points).",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Write any two points).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Helps understand results, Helps make correct decisions.</li></ul>",
+              "final_answer": "(Write any two points)",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "How does data support decision making?",
+              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Provides evidence, Reduces uncertainty.</p>",
+              "final_answer": "Provides evidence, Reduces uncertainty",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Define describing data numerically. Give two examples of numerical summary / measures.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Summarizing data using numbers.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examples: Mean, Median</li></ul>",
+              "final_answer": "Summarizing data using numbers",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Name the different types of ANOVA.",
+              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">One-way ANOVA, Two-way ANOVA</p>",
+              "final_answer": "One-way ANOVA, Two-way ANOVA",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "State the main difference between ANOVA and Kruskal-Wallis test.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ANOVA is a parametric test that assumes normal distribution of data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Kruskal-Wallis test is a non-parametric test that does not assume normal distribution.</li></ul>",
+              "final_answer": "ANOVA is a parametric test that assumes normal distribution of data",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P1_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain how information supports decision making in business organizations.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Information – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Role in Decision Making / Importance – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Accurate data, Planning, Problem identification , Risk reduction , Performance improvement</li></ul>",
+              "final_answer": "(Definition of Information – ; Role in Decision Making / Importance – )",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain how the SPSS/PSPP interface supports data analysis workflow.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Overview of SPSS/PSPP Interface – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">View, Variable View, Output, Menu/Syntax) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data View – Data entry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Variable View – Define variables</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Menu Bar – Analysis</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Output Window – Results</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Syntax – Commands</li></ul>",
+              "final_answer": "Syntax – Commands",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the purpose of a line chart and a bar chart. How do they differ in the type / of data they represent?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">type of data they represent?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Purpose of Line Chart – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Purpose of Bar Chart – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Difference in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data Representation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Aspect Line Chart Bar Chart</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Purpose Shows trend Shows comparison</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data Type Continuous / Time data Categorical data</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use Changes over time Compare categories</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Representation Points connected by lines Rectangular bars</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Main Difference Trend Comparison</li></ul>",
+              "final_answer": "Main Difference Trend Comparison",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Compare Recoding and Visual Binning methods in SPSS. Explain when each / method should be used.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Compare Recoding and Visual Binning methods in SPSS. Explain when each</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">method should be used.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Recoding – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">When to Use Each Method – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Recoding – Change values/categories.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used to modify data values.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Visual Binning – Create groups from ranges.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used for continuous data grouping.</li></ul>",
+              "final_answer": "Used for continuous data grouping",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Illustrate with an example how regression is applied for prediction.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Regression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Example of Prediction using Regression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Regression predicts dependent variable.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Uses independent variable.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example: Predict sales from advertising.</li></ul>",
+              "final_answer": "Example: Predict sales from advertising",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q11",
+              "number": 11,
+              "global_number": 11,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the procedure for undertaking correlations.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Steps / Procedure for Correlation Analysis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Enter data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Select Analyze → Correlate → Bivariate.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Choose variables.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Select correlation method.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Click OK to get correlation value</li></ul>",
+              "final_answer": "Click OK to get correlation value",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q12",
+              "number": 12,
+              "global_number": 12,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Interpret a Two-Way ANOVA output to identify main effects.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpret a Two-Way ANOVA output to identify main effects.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Meaning of Two-Way ANOVA – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Identification of Main Effects from Output (using p</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">value / significance) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Check ANOVA table.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Identify factors.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examine p-value.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p < 0.05 indicates significance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Determine main effect of factors.</li></ul>",
+              "final_answer": "Determine main effect of factors",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P1_Q13",
+              "number": 13,
+              "global_number": 13,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Explain skewness and kurtosis. Explain how these measures describe the / shape of a distribution. Discuss Positive and negative skewness. How these measures support interpretation of data.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">shape of a distribution. Discuss Positive and negative skewness. How these</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">/ CO2]</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">measures support interpretation of data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Skewness – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Definition of Kurtosis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Shape of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Distribution – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Positive & Negative Skewness – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpretation / Importance in Data Analysis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Skewness – Measure of symmetry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Kurtosis – Measure of peakedness</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive Skewness – Tail to the right</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Negative Skewness – Tail to the left</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use – Describes shape of distribution</li></ul>",
+              "final_answer": "Use – Describes shape of distribution",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q14",
+              "number": 14,
+              "global_number": 14,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Describe null hypothesis, alternate hypothesis, significance level and p-value in / respect of paired-sample t-test.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">respect of paired-sample t-test.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Null Hypothesis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; Alternate Hypothesis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Significance</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Level – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; p-value – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Null Hypothesis (H₀) – No difference</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Alternate Hypothesis (H₁) – Difference</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Significance Level (α) – 0.05 level</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p-value – Probability value</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Decision –</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p ≤ 0.05 Reject H₀</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p > 0.05 Accept H₀</li></ul>",
+              "final_answer": "p > 0.05 Accept H₀",
+              "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P1_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Explain why the interpretation of results is important in data analysis. (Write any two points).",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Helps understand results, Helps make correct decisions.</p>",
+      "question": "Explain why the interpretation of results is important in data analysis. (Write any / two points).",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Write any two points).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Helps understand results, Helps make correct decisions.</li></ul>",
+      "final_answer": "(Write any two points)",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(Write any two points)."
+      "has_official_scheme": true
     },
     {
-      "id": "Q2",
+      "id": "P1_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Mention any two uses of data analytics in business.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Mention any two uses of data analytics in business.</em>.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Digital Tools for Business and Research valuation scheme."
-    },
-    {
-      "id": "Q3",
-      "number": 3,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
       "question": "How does data support decision making?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Summarizing data using numbers.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples: Mean, Median</li></ul>",
+      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Provides evidence, Reduces uncertainty.</p>",
+      "final_answer": "Provides evidence, Reduces uncertainty",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Examples: Mean, Median"
+      "has_official_scheme": true
     },
     {
-      "id": "Q4",
+      "id": "P1_Q3",
+      "number": 3,
+      "global_number": 3,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Define describing data numerically. Give two examples of numerical summary / measures.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Summarizing data using numbers.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examples: Mean, Median</li></ul>",
+      "final_answer": "Summarizing data using numbers",
+      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P1_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "List the three main views in SPSS/PSPP.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>List the three main views in SPSS/PSPP.</em>.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Digital Tools for Business and Research valuation scheme."
-    },
-    {
-      "id": "Q5",
-      "number": 5,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Define describing data numerically. Give two examples of numerical summary measures.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>ANOVA is a parametric test that assumes normal distribution of data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Kruskal-Wallis test is a non-parametric test that does not assume normal distribution.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Short Answer Questions Answer any 5 questions</li></ul>",
-      "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Short Answer Questions Answer any 5 questions"
-    },
-    {
-      "id": "Q6",
-      "number": 6,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Give any two summary measures used to describe data numerically.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Summarizing data using numbers.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples: Mean, Median</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Examples: Mean, Median"
-    },
-    {
-      "id": "Q7",
-      "number": 7,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
       "question": "Name the different types of ANOVA.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Overview of SPSS/PSPP Interface <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>View, Variable View, Output, Menu/Syntax) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data View – Data entry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Variable View – Define variables</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Menu Bar – Analysis</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Output Window – Results</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Syntax – Commands</li></ul>",
+      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">One-way ANOVA, Two-way ANOVA</p>",
+      "final_answer": "One-way ANOVA, Two-way ANOVA",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Syntax – Commands"
+      "has_official_scheme": true
     },
     {
-      "id": "Q8",
-      "number": 8,
+      "id": "P1_Q5",
+      "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Cross tab is a way to bring out the relationship between variables. Justify the statement.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Cross tab is a way to bring out the relationship between variables. Justify the statement.</em>.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Digital Tools for Business and Research valuation scheme."
-    },
-    {
-      "id": "Q9",
-      "number": 9,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
       "question": "State the main difference between ANOVA and Kruskal-Wallis test.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Compare Recoding and Visual Binning methods in SPSS. Explain when each</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>method should be used.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Recoding <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When to Use Each Method <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Recoding – Change values/categories.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used to modify data values.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Visual Binning – Create groups from ranges.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used for continuous data grouping.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ANOVA is a parametric test that assumes normal distribution of data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Kruskal-Wallis test is a non-parametric test that does not assume normal distribution.</li></ul>",
+      "final_answer": "ANOVA is a parametric test that assumes normal distribution of data",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Compare Recoding and Visual Binning methods in SPSS. Explain when each"
+      "has_official_scheme": true
     },
     {
-      "id": "Q10",
-      "number": 10,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Differentiate between a paired sample t-test and an independent sample t-test.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Null Hypothesis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; Alternate Hypothesis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Significance</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Level <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; p-value <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Null Hypothesis (H₀) – No difference</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Alternate Hypothesis (H₁) – Difference</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Significance Level (α) – 0.05 level</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p-value – Probability value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Decision</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p ≤ 0.05 Reject H₀</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p > 0.05 Accept H₀</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "respect of paired-sample t-test."
-    },
-    {
-      "id": "Q11",
-      "number": 11,
+      "id": "P1_Q6",
+      "number": 6,
+      "global_number": 6,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Explain how information supports decision making in business organizations.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Correlation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Steps / Procedure for Correlation Analysis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Enter data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Select Analyze → Correlate → Bivariate.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Choose variables.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Select correlation method.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Click OK to get correlation value</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Information – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Role in Decision Making / Importance – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Accurate data, Planning, Problem identification , Risk reduction , Performance improvement</li></ul>",
+      "final_answer": "(Definition of Information – ; Role in Decision Making / Importance – )",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Click OK to get correlation value"
+      "has_official_scheme": true
     },
     {
-      "id": "Q12",
-      "number": 12,
+      "id": "P1_Q7",
+      "number": 7,
+      "global_number": 7,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "Explain the importance of information in business decision-making.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Information <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Role in Decision Making / Importance <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Accurate data, Planning, Problem identification , Risk reduction , Performance improvement</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "(Definition of Information – ; Role in Decision Making / Importance"
-    },
-    {
-      "id": "Q13",
-      "number": 13,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Explain how the SPSS/PSPP interface supports data analysis workflow.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>shape of a distribution. Discuss Positive and negative skewness. How these</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>measures support interpretation of data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Skewness <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Definition of Kurtosis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Shape of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Distribution <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Positive & Negative Skewness <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation / Importance in Data Analysis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Skewness – Measure of symmetry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Kurtosis – Measure of peakedness</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive Skewness – Tail to the right</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Negative Skewness – Tail to the left</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use – Describes shape of distribution</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Overview of SPSS/PSPP Interface – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">View, Variable View, Output, Menu/Syntax) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data View – Data entry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Variable View – Define variables</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Menu Bar – Analysis</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Output Window – Results</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Syntax – Commands</li></ul>",
+      "final_answer": "Syntax – Commands",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "/"
+      "has_official_scheme": true
     },
     {
-      "id": "Q14",
-      "number": 14,
+      "id": "P1_Q8",
+      "number": 8,
+      "global_number": 8,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the steps involved in creating a data file and defining variables in SPSS/PSPP.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Overview of SPSS/PSPP Interface <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>View, Variable View, Output, Menu/Syntax) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data View – Data entry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Variable View – Define variables</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Menu Bar – Analysis</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Output Window – Results</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Syntax – Commands</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Syntax – Commands"
-    },
-    {
-      "id": "Q15",
-      "number": 15,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "Explain the purpose of a line chart and a bar chart. How do they differ in the type of data they represent?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data Representation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Purpose Shows trend Shows comparison</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data Type Continuous / Time data Categorical data</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use Changes over time Compare categories</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Representation Points connected by lines Rectangular bars</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Main Difference Trend Comparison</li></ul>",
+      "question": "Explain the purpose of a line chart and a bar chart. How do they differ in the type / of data they represent?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">type of data they represent?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Purpose of Line Chart – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Purpose of Bar Chart – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Difference in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data Representation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Aspect Line Chart Bar Chart</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Purpose Shows trend Shows comparison</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data Type Continuous / Time data Categorical data</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use Changes over time Compare categories</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Representation Points connected by lines Rectangular bars</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Main Difference Trend Comparison</li></ul>",
+      "final_answer": "Main Difference Trend Comparison",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "type of data they represent?"
+      "has_official_scheme": true
     },
     {
-      "id": "Q16",
-      "number": 16,
+      "id": "P1_Q9",
+      "number": 9,
+      "global_number": 9,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the process of computing a new variable in SPSS/PSPP with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Overview of SPSS/PSPP Interface <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>View, Variable View, Output, Menu/Syntax) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data View – Data entry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Variable View – Define variables</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Menu Bar – Analysis</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Output Window – Results</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Syntax – Commands</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Syntax – Commands"
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Compare Recoding and Visual Binning methods in SPSS. Explain when each method should be used.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Recoding <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When to Use Each Method <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Recoding – Change values/categories.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used to modify data values.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Visual Binning – Create groups from ranges.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used for continuous data grouping.</li></ul>",
+      "question": "Compare Recoding and Visual Binning methods in SPSS. Explain when each / method should be used.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Compare Recoding and Visual Binning methods in SPSS. Explain when each</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">method should be used.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Recoding – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">When to Use Each Method – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Recoding – Change values/categories.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used to modify data values.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Visual Binning – Create groups from ranges.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used for continuous data grouping.</li></ul>",
+      "final_answer": "Used for continuous data grouping",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Compare Recoding and Visual Binning methods in SPSS. Explain when each"
+      "has_official_scheme": true
     },
     {
-      "id": "Q18",
-      "number": 18,
+      "id": "P1_Q10",
+      "number": 10,
+      "global_number": 10,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "Describe the purpose and use of scatter diagrams, P-P plots, and Q-Q plots.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe the purpose and use of scatter diagrams, P-P plots, and Q-Q plots. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the purpose and use of scatter diagrams, P-P plots, and Q-Q plots. ."
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A] ",
       "question": "Illustrate with an example how regression is applied for prediction.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Regression <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Example of Prediction using Regression <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Regression predicts dependent variable.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Uses independent variable.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example: Predict sales from advertising.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Regression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Example of Prediction using Regression – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Regression predicts dependent variable.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Uses independent variable.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example: Predict sales from advertising.</li></ul>",
+      "final_answer": "Example: Predict sales from advertising",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Example: Predict sales from advertising."
+      "has_official_scheme": true
     },
     {
-      "id": "Q20",
-      "number": 20,
+      "id": "P1_Q11",
+      "number": 11,
+      "global_number": 11,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the procedure for conducting Explore command and interpreting the results.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain the procedure for conducting Explore command and interpreting the results. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain the procedure for conducting Explore command and interpreting the results. ."
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Discuss the procedure for undertaking correlations.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Correlation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Steps / Procedure for Correlation Analysis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Enter data.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Select Analyze → Correlate → Bivariate.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Choose variables.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Select correlation method.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Click OK to get correlation value</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Steps / Procedure for Correlation Analysis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Enter data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Select Analyze → Correlate → Bivariate.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Choose variables.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Select correlation method.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Click OK to get correlation value</li></ul>",
+      "final_answer": "Click OK to get correlation value",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Click OK to get correlation value"
+      "has_official_scheme": true
     },
     {
-      "id": "Q22",
-      "number": 22,
+      "id": "P1_Q12",
+      "number": 12,
+      "global_number": 12,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[A] ",
-      "question": "A researcher wants to study the effect of two factors (e.g., teaching method and gender) on student performance. Explain how two-way ANOVA can be applied, including assumptions and steps.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Meaning of Two-Way ANOVA <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Identification of Main Effects from Output (using p</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>value / significance) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check ANOVA table.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Identify factors.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examine p-value.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p < 0.05 indicates significance.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Determine main effect of factors.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions Answer any 1 questions</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Essay Questions Answer any 1 questions"
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A] ",
       "question": "Interpret a Two-Way ANOVA output to identify main effects.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Meaning of Two-Way ANOVA <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Identification of Main Effects from Output (using p</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>value / significance) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Check ANOVA table.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Identify factors.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examine p-value.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p < 0.05 indicates significance.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Determine main effect of factors.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Essay Questions Answer any 1 questions</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpret a Two-Way ANOVA output to identify main effects.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Meaning of Two-Way ANOVA – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Identification of Main Effects from Output (using p</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">value / significance) – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Check ANOVA table.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Identify factors.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examine p-value.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p < 0.05 indicates significance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Determine main effect of factors.</li></ul>",
+      "final_answer": "Determine main effect of factors",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Essay Questions Answer any 1 questions"
+      "has_official_scheme": true
     },
     {
-      "id": "Q24",
-      "number": 24,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A] ",
-      "question": "Describe when and why nonparametric tests like Chi-square and Kruskal-Wallis are used. Explain with an example.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Compare Recoding and Visual Binning methods in SPSS. Explain when each</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>method should be used.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Recoding <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When to Use Each Method <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Recoding – Change values/categories.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used to modify data values.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Visual Binning – Create groups from ranges.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used for continuous data grouping.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Compare Recoding and Visual Binning methods in SPSS. Explain when each"
-    },
-    {
-      "id": "Q25",
-      "number": 25,
+      "id": "P1_Q13",
+      "number": 13,
+      "global_number": 13,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Explain skewness and kurtosis. Explain how these measures describe the shape of a distribution. Discuss Positive and negative skewness. How these measures support interpretation of data.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Skewness <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Definition of Kurtosis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Shape of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation / Importance in Data Analysis <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Skewness – Measure of symmetry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Kurtosis – Measure of peakedness</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive Skewness – Tail to the right</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Negative Skewness – Tail to the left</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use – Describes shape of distribution</li></ul>",
+      "question": "Explain skewness and kurtosis. Explain how these measures describe the / shape of a distribution. Discuss Positive and negative skewness. How these measures support interpretation of data.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">shape of a distribution. Discuss Positive and negative skewness. How these</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">/ CO2]</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">measures support interpretation of data.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of Skewness – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Definition of Kurtosis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Shape of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Distribution – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Positive & Negative Skewness – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>;</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpretation / Importance in Data Analysis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Skewness – Measure of symmetry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Kurtosis – Measure of peakedness</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive Skewness – Tail to the right</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Negative Skewness – Tail to the left</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use – Describes shape of distribution</li></ul>",
+      "final_answer": "Use – Describes shape of distribution",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "/"
+      "has_official_scheme": true
     },
     {
-      "id": "Q26",
-      "number": 26,
+      "id": "P1_Q14",
+      "number": 14,
+      "global_number": 14,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Illustrate the methods of presenting data graphically in SPSS with examples.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Compare Recoding and Visual Binning methods in SPSS. Explain when each</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>method should be used.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of Recoding <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Definition of Visual Binning <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>;</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When to Use Each Method <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Recoding – Change values/categories.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used to modify data values.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Visual Binning – Create groups from ranges.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Used for continuous data grouping.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Compare Recoding and Visual Binning methods in SPSS. Explain when each"
-    },
-    {
-      "id": "Q27",
-      "number": 27,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Describe null hypothesis, alternate hypothesis, significance level and p-value in respect of paired-sample t-test.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p-value – Probability value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Decision</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p ≤ 0.05 Reject H₀</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>p > 0.05 Accept H₀</li></ul>",
+      "question": "Describe null hypothesis, alternate hypothesis, significance level and p-value in / respect of paired-sample t-test.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">respect of paired-sample t-test.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Null Hypothesis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; Alternate Hypothesis – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>; Significance</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Level – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>; p-value – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Null Hypothesis (H₀) – No difference</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Alternate Hypothesis (H₁) – Difference</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Significance Level (α) – 0.05 level</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p-value – Probability value</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Decision –</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p ≤ 0.05 Reject H₀</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p > 0.05 Accept H₀</li></ul>",
+      "final_answer": "p > 0.05 Accept H₀",
       "source_exam": "MGU-UGP (HONOURS) 2024 Admission Regular Exam Sem 4, March 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "respect of paired-sample t-test."
-    },
-    {
-      "id": "Q28",
-      "number": 28,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Explain correlation and regression analysis with assumptions and the step -by-step procedure to analyze the relationship between two variables in SPSS/PSPP.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Overview of SPSS/PSPP Interface <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>; Components supporting workflow (Data</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>View, Variable View, Output, Menu/Syntax) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span> )</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data View – Data entry</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Variable View – Define variables</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Menu Bar – Analysis</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Output Window – Results</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Syntax – Commands</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Syntax – Commands"
+      "has_official_scheme": true
     }
   ]
 }

@@ -5,620 +5,517 @@
   "semester": 5,
   "course_type": "DSE",
   "max_marks": 70,
-  "total_questions": 40,
-  "repeating_skipped": 20,
+  "total_questions": 20,
+  "total_solved": 20,
+  "repeating_skipped": 0,
   "sources_used": [
-    "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-    "Laser, Non-linear Optics and Fiber Optics",
-    "Official Practical Model Paper"
+    "Semester 5 FYUGP (Model Question Paper)",
+    "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 24,
-    "part_b": 16,
-    "part_c": 0
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_2",
+      "paper_title": "EXAMINATION PAPER 2: V SEMESTER MGU UGP (HONOURS) - 2024 ADMISSION REGULAR EXAMINATION OCTOBER 2026",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P2_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "State any two key operating characteristics of a ruby laser.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Pulsed Laser Output/Spiking/ Three level laser. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">520, Cladding refractive index, 𝑛 = 1.505, Free-space wavelength, 𝜆 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 𝜇m = 2×10−6 m</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">V-number substitution and answer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 = 2𝜋𝑎 √𝑛2−𝑛2 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆0 1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋×(25×10−6 m)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 = √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2×10−6 m</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Condition for single mode / multimode and conclusion</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 ≤ 2.405 (Single-mode), 𝑉 > 2.405 (Multimode) (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Since 𝑉 = 16.73, The optical fibre is multimode. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Number of propagating modes substitution and answer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑁 ≈ (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">between two cladding layers of lower refractive index 𝑛 ) is achieved via total</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total Phase Condition (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2𝑏sin𝜃)+2𝜙(𝜃)= 2𝑁𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Formation of Discrete Modes (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Simplifying the phase condition yields the equation for discrete propagation</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">angles</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜙(𝜃)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑏sin𝜃+𝜆 = 𝑁𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2𝜋 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[6×5=30]</li></ul>",
+              "final_answer": "",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain Stimulated emission process in a laser system. / State how acceptor doping alters the position of the Fermi level in a",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">An incident photon with energy matching the transition interval (ℎ𝜈 = 𝐸 −𝐸 )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interacts with an atomic system in an excited state, thereby inducing a radiative</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">transition to a lower energy level. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR 𝑛 sin𝜃 = 𝑛 √1−(</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛2)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0 𝑎 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The acceptance cone is the three-dimensional conical volume formed by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">acceptance angle about the central axis of the optical fibre core.. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">thresh 𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑙</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜂𝑛𝑙𝐷2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(16.73)2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑁 = = 139.95= 𝟏𝟒𝟎 modes (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">field penetrates the cladding.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phase Shift Due to Propagation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Using the core wavelength 𝜆 = 𝜆 /𝑛 , the phase shift due to this geometrical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 0 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">path difference is expressed as</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2𝑏sin𝜃)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆</li></ul>",
+              "final_answer": "",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "/ semiconductor.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">semiconductor.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Acceptor doping introduces acceptor energy levels just above the valence band</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">creating an excess of holes (majority carriers) this shifts the Fermi level</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">downward closer to the valence band, away from the middle of the forbidden</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">energy gap. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+              "final_answer": "energy gap. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Under what condition does resonance occur in an open resonator?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Resonance in an open resonator occurs when an integral number of half</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wavelengths covers the length between the reflecting mirrors.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑞𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = , where 𝑞 is an integer and 𝜆 is the wavelength of light. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+              "final_answer": "𝐿 = , where 𝑞 is an integer and 𝜆 is the wavelength of light. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain the working principle of a mechanical Q-switch in a laser cavity.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">One of the end mirrors of the laser resonator is kept rotating rapidly about an</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">axis perpendicular to the axis of the resonator. The mirror is only</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">instantaneously aligned parallel to the output reflector. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The flash lamp is timed to fire so that the mirror aligns only when the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">population inversion reaches its maximum. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+              "final_answer": "population inversion reaches its maximum. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is a laser amplifier? / State why second-harmonic generation (SHG) cannot occur in centrosymmetric",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A laser amplifier is a device used to obtain higher-intensity laser beams by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">directing a laser pulse through a gain medium (such as a laser rod) that does</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">not have external reflectors. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The amplifying rods used have uncoated ends or are treated with antireflecting</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">coatings and the amplifier is pumped with its own flash lamp. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+              "final_answer": "coatings and the amplifier is pumped with its own flash lamp. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "/ media. Write down the frequency relation governing the generation of an idler wave in",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">media.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In a centrosymmetric medium, spatial inversion transforms the electric field</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and second-order polarization such that 𝐸 → −𝐸 and 𝑃(2) → −𝑃(2). (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Substituting this into the nonlinear relation gives −𝑃(2) = 𝑃(2), which forces</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑃(2) = 0 and consequently 𝜒(2) = 0, prohibiting second-harmonic generation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+              "final_answer": "()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "/ parametric processes and define each term. What is the purpose of an erbium-doped fibre amplifier (EDFA) in long-distance",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">parametric processes and define each term.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜔 = 𝜔 −𝜔 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑖 𝑝 𝑠</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜔 -Pump Frequency, 𝜔 -Signal Frequency, 𝜔 -Idler Frequency (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑝 𝑠 𝑖</li></ul>",
+              "final_answer": "𝑝 𝑠 𝑖",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "/ optical fibre communication? How is photosensitivity at ~240nm utilized to fabricate periodic gratings in",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">optical fibre communication?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The light pulse attenuates as it travels. Rather than using optoelectronic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">regenerators, modern networks amplify the optical signal directly using inline</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Erbium-Doped Fiber Amplifiers (EDFAs), which provide ≈ 20 𝑑𝐵 of optical gain</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">within the 1530 - 1570 𝑛𝑚 band. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+              "final_answer": "within the 1530 - 1570 𝑛𝑚 band. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "/ germanium-doped silica fibres?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">germanium-doped silica fibres?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Periodic variation of refractive index along the dispersive fibre element can be</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">induced in germanium doped silica by forming an interference pattern within</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the fibre core from two coherent UV laser light beams incident at an angle to the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">fibre axis. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The glass core of the fibre is photosensitive at ~ 240 nm and this wavelength</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">may be obtained by harmonic generation from a longer wavelength laser, or it</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">may be directly produced by a pulsed ultraviolet excimer laser. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+              "final_answer": "may be directly produced by a pulsed ultraviolet excimer laser. ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q11",
+              "number": 11,
+              "global_number": 11,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Define the acceptance angle of an optical fibre. What is meant by the / acceptance cone?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cone?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The acceptance angle is defined as the maximum angle to the fibre axis at which</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">light can enter the core of an optical fibre from an external medium guided</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">along the fibre via total internal reflection.</li></ul>",
+              "final_answer": "along the fibre via total internal reflection",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q12",
+              "number": 12,
+              "global_number": 12,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is meant by air-guiding type photonic crystal fibre?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In an air-guiding type photonic crystal fibre (also known as a hollow-core</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">photonic bandgap fibre), the central core is an air hole rather than a solid silica</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">core. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">It operates on physical principle: Photonic Bandgap Guiding (or 2D Bragg</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reflection). (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[2×10=20]</li></ul>",
+              "final_answer": "",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P2_Q13",
+              "number": 13,
+              "global_number": 13,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "For a plane electromagnetic wave propagating in a rectangular cavity, show that / the wave vector k is perpendicular to the electric field E(t).",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For a plane electromagnetic wave propagating in a rectangular cavity, show that</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the wave vector k is perpendicular to the electric field E(t).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Wave Equation p (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 𝜕2𝐄</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝛻2𝐄=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐2 𝜕𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Plane wave solution to the wave equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸(𝐫,𝑡) = 𝐸 exp{𝑖(𝐤⋅𝐫−𝜔𝑡)}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Spatial standing wave components inside the cavity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)cos𝑘 𝑥sin𝑘 𝑦sin𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 0𝑥 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)sin𝑘 𝑥cos𝑘 𝑦sin𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 0𝑦 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)sin𝑘 𝑥sin𝑘 𝑦cos𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑧 0𝑧 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Maxwell’s equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝛻⋅𝐄 = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑘 𝐸 (𝑡)+𝑘 𝐸 (𝑡)+𝑘 𝐸 (𝑡) = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 0𝑥 𝑦 0𝑦 𝑧 0𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dot Product Form and Final Conclusion (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐤⋅𝐄(𝑡) = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Hence the wave vector is perpendicular to the electric field vector (𝐤⊥ 𝐄)</li></ul>",
+              "final_answer": "Hence the wave vector is perpendicular to the electric field vector (𝐤⊥ 𝐄)",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q14",
+              "number": 14,
+              "global_number": 14,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Describe the construction, working principle, and key operational characteristics / of a He-Ne laser with a neat energy-level diagram.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">characteristics of a He-Ne laser with a neat energy-level diagram.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Energy Level Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Schematic Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>) + Explanation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span>)</li></ul>",
+              "final_answer": "Schematic Diagram () + Explanation ()",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q15",
+              "number": 15,
+              "global_number": 15,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the working of a semiconductor laser with a suitable energy level / diagram.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">diagram.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Energy Level Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Basic Principle & Requirements (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The semiconductor material must have a high transition probability for</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">radiative transitions across the bandgap, exceeding non-radiative lattice</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">transfer rates. Population inversion is achieved via carrier injection through a</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">forward biasing of the semiconductor diode.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The 𝑝-𝑛 junction diode must be heavily doped. In the 𝑛-type region, the Fermi</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">level 𝐹 lies within the conduction band, while in the 𝑝-type region, the Fermi</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">level 𝐹 lies within the valence band.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑣</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">When forward-biased, electrons are injected into the 𝑝-side and holes into the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛-side, creating a high concentration of both carriers in the narrow</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">depletion/active region. This high concentration results in a population</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">inversion between the conduction band, and the valence band states near the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">junction. Electron-hole recombination in this narrow planar region releases</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">coherent optical radiation when the injected current exceeds a threshold value.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Optical Confinement & Resonator Action (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Laser action is confined to the very thin junction region.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The crystal end faces are cleaved parallel to form an optical resonator, providing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the necessary feedback for amplification and stimulated emission.</li></ul>",
+              "final_answer": "the necessary feedback for amplification and stimulated emission",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q16",
+              "number": 16,
+              "global_number": 16,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the principle and operational mechanism of a Kerr-cell Q-switch in a / laser system.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">laser system</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Explanation of Kerr effect (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A Kerr cell consists of an isotropic liquid (such as nitrobenzene) containing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">asymmetric molecules placed between parallel plates. When an external electric</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">field is applied, the molecules tend to align parallel to the field direction and the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">liquid become optically anisotropic and birefringent, with refractive indices 𝑛</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑜</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and 𝑛 proportional to the square of the applied voltage.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑒</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The Kerr Cell Shutter System-Schematic OR Explanation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Operational Sequence (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The Kerr cell is activated by applying a high bias voltage (10--20 kV).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The flash lamp is fired to pump the active laser medium.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">After population inversion peaks (approx. 0.5 ms), the Kerr cell voltage is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">switched off as suddenly as possible.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Performance Characteristics (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Operating as a fast electro-optic shutter, switching times in the nanosecond</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">range. Effectively increases peak output power (e.g., from kilowatts to</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">megawatts/gigawatts) by compressing the energy into a giant optical pulse.</li></ul>",
+              "final_answer": "megawatts/gigawatts) by compressing the energy into a giant optical pulse",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q17",
+              "number": 17,
+              "global_number": 17,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the phase-matching condition in second-harmonic generation and show / mathematically how it leads to the equality of refractive indices at both frequencies (ηω = η2ω). Explain the physical mechanism of self-focusing in a nonlinear medium using",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">mathematically how it leads to the equality of refractive indices at both</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">frequencies (η = η ).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ω 2ω</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Principle of SHG and Condition for Maximum Intensity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In SHG, energy transfer from the fundamental wave (𝜔) to the second-harmonic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wave (2𝜔) requires constructive interference over the propagation path.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Wave number matching condition for maximum intensity</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑘 −𝑘</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0 ⟹𝑘 = 2𝑘</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 2 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Substitution of k and k and arriving at the final equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔𝜂 𝜔𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔 𝜔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 2( )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐 𝑐</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜂 = 𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔 𝜔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Refractive index ellipsoid OR Energy level representation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Physical Significance & Use of Birefringence (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phase matching is achieved in anisotropic crystals by using polarization</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">dependent refractive indices, where ordinary ray index at frequency 𝜔 matches</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the extraordinary ray index at 2𝜔 along specific propagation directions.</li></ul>",
+              "final_answer": "the extraordinary ray index at 2𝜔 along specific propagation directions",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q18",
+              "number": 18,
+              "global_number": 18,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "/ the Gaussian intensity profile of a laser beam.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the Gaussian intensity profile of a laser beam.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of self-focusing (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">It is a non-linear process where an intense light beam modifies the refractive index of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">a medium such that causes the beam to focus itself, without changing its frequency.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Derivation of the expression for intensity-dependent index (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜂 = 𝜂 +𝜂 𝐸2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑙 𝑛𝑙 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Explanation of Gaussin intensity profile of laser (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A real laser beam features a Gaussian intensity profile that peaks along the central</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">propagation axis and drops off radially.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Expression for Self-focusing distance and Threshold Intensity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐷 𝜆2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = , 𝐼 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">√𝜂𝑛𝑙𝐸</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li></ul>",
+              "final_answer": "",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q19",
+              "number": 19,
+              "global_number": 19,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "A step-index optical fibre has core radius a = 25μm, n = 1.520, n = 1.505, and / 1 2 λ = 2μm. Calculate the V-number and determine whether the fibre is single- 0 mode or multimode. Estimate the number of propagating modes.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A step-index optical fibre has core radius a = 25 µm, n = 1.520, n = 1.505, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">λ = 2 µm. Calculate the V-number and determine whether the fibre is single</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">mode or multimode. Estimate the number of propagating modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Given: Core radius, 𝑎 = 25 𝜇m = 25×10−6 m, Core refractive index, 𝑛 =</li></ul>",
+              "final_answer": "Given: Core radius, 𝑎 = 25 𝜇m = 25×10−6 m, Core refractive index, 𝑛 =",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q20",
+              "number": 20,
+              "global_number": 20,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Analyse how the boundary conditions of a slab waveguide restrict the possible / electromagnetic field patterns and lead to the formation of discrete modes.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">electromagnetic field patterns and lead to the formation of discrete modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Introduction to Slab Waveguide & Confinement Mechanism (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Confinement of light in a dielectric slab waveguide 𝑛 in</li></ul>",
+              "final_answer": "Confinement of light in a dielectric slab waveguide 𝑛 in",
+              "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P2_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
       "question": "State any two key operating characteristics of a ruby laser.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Pulsed Laser Output/Spiking/ Three level laser. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">520, Cladding refractive index, 𝑛 = 1.505, Free-space wavelength, 𝜆 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 𝜇m = 2×10−6 m</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">V-number substitution and answer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 = 2𝜋𝑎 √𝑛2−𝑛2 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆0 1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋×(25×10−6 m)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 = √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2×10−6 m</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Condition for single mode / multimode and conclusion</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉 ≤ 2.405 (Single-mode), 𝑉 > 2.405 (Multimode) (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Since 𝑉 = 16.73, The optical fibre is multimode. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Number of propagating modes substitution and answer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑉2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑁 ≈ (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">between two cladding layers of lower refractive index 𝑛 ) is achieved via total</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total Phase Condition (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2𝑏sin𝜃)+2𝜙(𝜃)= 2𝑁𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Formation of Discrete Modes (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Simplifying the phase condition yields the equation for discrete propagation</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">angles</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜙(𝜃)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑏sin𝜃+𝜆 = 𝑁𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2𝜋 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[6×5=30]</li></ul>",
+      "final_answer": "",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
+      "has_official_scheme": true
     },
     {
-      "id": "Q2",
+      "id": "P2_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[A][1]",
-      "question": "Distinguish between a two-level and three-level laser system.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Comparative Overview:</strong> Definitional, functional, and operational distinctions contrasting the characteristics of <em>Distinguish between a two-level and three-level laser system.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Comparative distinctions established per Laser, Non-linear Optics and Fiber Optics criteria."
+      "question": "Explain Stimulated emission process in a laser system. / State how acceptor doping alters the position of the Fermi level in a",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">An incident photon with energy matching the transition interval (ℎ𝜈 = 𝐸 −𝐸 )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interacts with an atomic system in an excited state, thereby inducing a radiative</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">transition to a lower energy level. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR 𝑛 sin𝜃 = 𝑛 √1−(</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛2)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0 𝑎 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The acceptance cone is the three-dimensional conical volume formed by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">acceptance angle about the central axis of the optical fibre core.. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">thresh 𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑙</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜂𝑛𝑙𝐷2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(16.73)2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑁 = = 139.95= 𝟏𝟒𝟎 modes (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">field penetrates the cladding.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phase Shift Due to Propagation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Using the core wavelength 𝜆 = 𝜆 /𝑛 , the phase shift due to this geometrical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 0 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">path difference is expressed as</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2𝑏sin𝜃)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜆</li></ul>",
+      "final_answer": "",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
     },
     {
-      "id": "Q3",
+      "id": "P2_Q3",
       "number": 3,
+      "global_number": 3,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Explain Stimulated emission process in a laser system.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'><span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> 𝑁= (16.73)2 2 =139.95=𝟏𝟒𝟎 modes <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span> /</p>",
+      "question": "/ semiconductor.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">semiconductor.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Acceptor doping introduces acceptor energy levels just above the valence band</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">creating an excess of holes (majority carriers) this shifts the Fermi level</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">downward closer to the valence band, away from the middle of the forbidden</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">energy gap. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+      "final_answer": "energy gap. ()",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "𝑁= (16.73)2 2 =139.95=𝟏𝟒𝟎 modes"
+      "has_official_scheme": true
     },
     {
-      "id": "Q4",
+      "id": "P2_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U][1]",
-      "question": "What is the function of a resonator in a laser?",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is the function of a resonator in a laser?</em> per the Laser, Non-linear Optics and Fiber Optics syllabus.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Laser, Non-linear Optics and Fiber Optics syllabus criteria."
-    },
-    {
-      "id": "Q5",
-      "number": 5,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "State how acceptor doping alters the position of the Fermi level in a semiconductor.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>semiconductor.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Acceptor doping introduces acceptor energy levels just above the valence band,</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>creating an excess of holes (majority carriers) this shifts the Fermi level</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>downward closer to the valence band, away from the middle of the forbidden</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>energy gap. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
-    },
-    {
-      "id": "Q6",
-      "number": 6,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K][1]",
-      "question": "Write down the Schawlow-Townes condition for laser oscillation and explain each term in it.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Write down the Schawlow-Townes condition for laser oscillation and explain each term in it.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Laser, Non-linear Optics and Fiber Optics valuation scheme."
-    },
-    {
-      "id": "Q7",
-      "number": 7,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
       "question": "Under what condition does resonance occur in an open resonator?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Resonance in an open resonator occurs when an integral number of half-</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wavelengths covers the length between the reflecting mirrors.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 , where 𝑞 is an integer and 𝜆 is the wavelength of light. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Resonance in an open resonator occurs when an integral number of half</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wavelengths covers the length between the reflecting mirrors.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑞𝜆</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = , where 𝑞 is an integer and 𝜆 is the wavelength of light. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+      "final_answer": "𝐿 = , where 𝑞 is an integer and 𝜆 is the wavelength of light. ()",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "has_official_scheme": true
     },
     {
-      "id": "Q8",
-      "number": 8,
+      "id": "P2_Q5",
+      "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U][1]",
-      "question": "Sketch the energy level diagram of a He-Ne laser.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Sketch the energy level diagram of a He-Ne laser.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Laser, Non-linear Optics and Fiber Optics valuation scheme."
-    },
-    {
-      "id": "Q9",
-      "number": 9,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
       "question": "Explain the working principle of a mechanical Q-switch in a laser cavity.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>One of the end mirrors of the laser resonator is kept rotating rapidly about an</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>axis perpendicular to the axis of the resonator. The mirror is only</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>instantaneously aligned parallel to the output reflector. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The flash lamp is timed to fire so that the mirror aligns only when the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>population inversion reaches its maximum. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">One of the end mirrors of the laser resonator is kept rotating rapidly about an</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">axis perpendicular to the axis of the resonator. The mirror is only</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">instantaneously aligned parallel to the output reflector. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The flash lamp is timed to fire so that the mirror aligns only when the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">population inversion reaches its maximum. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+      "final_answer": "population inversion reaches its maximum. ()",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "has_official_scheme": true
     },
     {
-      "id": "Q10",
+      "id": "P2_Q6",
+      "number": 6,
+      "global_number": 6,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is a laser amplifier? / State why second-harmonic generation (SHG) cannot occur in centrosymmetric",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A laser amplifier is a device used to obtain higher-intensity laser beams by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">directing a laser pulse through a gain medium (such as a laser rod) that does</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">not have external reflectors. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The amplifying rods used have uncoated ends or are treated with antireflecting</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">coatings and the amplifier is pumped with its own flash lamp. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+      "final_answer": "coatings and the amplifier is pumped with its own flash lamp. ()",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q7",
+      "number": 7,
+      "global_number": 7,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "/ media. Write down the frequency relation governing the generation of an idler wave in",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">media.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In a centrosymmetric medium, spatial inversion transforms the electric field</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and second-order polarization such that 𝐸 → −𝐸 and 𝑃(2) → −𝑃(2). (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Substituting this into the nonlinear relation gives −𝑃(2) = 𝑃(2), which forces</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑃(2) = 0 and consequently 𝜒(2) = 0, prohibiting second-harmonic generation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+      "final_answer": "()",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q8",
+      "number": 8,
+      "global_number": 8,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "/ parametric processes and define each term. What is the purpose of an erbium-doped fibre amplifier (EDFA) in long-distance",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">parametric processes and define each term.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜔 = 𝜔 −𝜔 (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑖 𝑝 𝑠</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜔 -Pump Frequency, 𝜔 -Signal Frequency, 𝜔 -Idler Frequency (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑝 𝑠 𝑖</li></ul>",
+      "final_answer": "𝑝 𝑠 𝑖",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q9",
+      "number": 9,
+      "global_number": 9,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "/ optical fibre communication? How is photosensitivity at ~240nm utilized to fabricate periodic gratings in",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">optical fibre communication?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The light pulse attenuates as it travels. Rather than using optoelectronic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">regenerators, modern networks amplify the optical signal directly using inline</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Erbium-Doped Fiber Amplifiers (EDFAs), which provide ≈ 20 𝑑𝐵 of optical gain</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">within the 1530 - 1570 𝑛𝑚 band. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li></ul>",
+      "final_answer": "within the 1530 - 1570 𝑛𝑚 band. ()",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q10",
       "number": 10,
+      "global_number": 10,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U][2]",
-      "question": "Define Q-switching and how it can be achieved?",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define Q-switching and how it can be achieved?</em> per the Laser, Non-linear Optics and Fiber Optics syllabus.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Laser, Non-linear Optics and Fiber Optics syllabus criteria."
+      "question": "/ germanium-doped silica fibres?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">germanium-doped silica fibres?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Periodic variation of refractive index along the dispersive fibre element can be</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">induced in germanium doped silica by forming an interference pattern within</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the fibre core from two coherent UV laser light beams incident at an angle to the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">fibre axis. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The glass core of the fibre is photosensitive at ~ 240 nm and this wavelength</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">may be obtained by harmonic generation from a longer wavelength laser, or it</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">may be directly produced by a pulsed ultraviolet excimer laser. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li></ul>",
+      "final_answer": "may be directly produced by a pulsed ultraviolet excimer laser. ()",
+      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
+      "has_official_scheme": true
     },
     {
-      "id": "Q11",
+      "id": "P2_Q11",
       "number": 11,
+      "global_number": 11,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "What is a laser amplifier?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A laser amplifier is a device used to obtain higher-intensity laser beams by</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>directing a laser pulse through a gain medium (such as a laser rod) that does</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>not have external reflectors. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The amplifying rods used have uncoated ends or are treated with antireflecting</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>coatings and the amplifier is pumped with its own flash lamp. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
+      "question": "Define the acceptance angle of an optical fibre. What is meant by the / acceptance cone?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cone?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The acceptance angle is defined as the maximum angle to the fibre axis at which</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">light can enter the core of an optical fibre from an external medium guided</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">along the fibre via total internal reflection.</li></ul>",
+      "final_answer": "along the fibre via total internal reflection",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "coatings and the amplifier is pumped with its own flash lamp."
+      "has_official_scheme": true
     },
     {
-      "id": "Q12",
+      "id": "P2_Q12",
       "number": 12,
+      "global_number": 12,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U][2]",
-      "question": "Compare the intensities of a mode-locked and mode-unlocked laser beam.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Comparative Overview:</strong> Definitional, functional, and operational distinctions contrasting the characteristics of <em>Compare the intensities of a mode-locked and mode-unlocked laser beam.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Comparative distinctions established per Laser, Non-linear Optics and Fiber Optics criteria."
-    },
-    {
-      "id": "Q13",
-      "number": 13,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "State why second-harmonic generation (SHG) cannot occur in centrosymmetric media.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>media.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In a centrosymmetric medium, spatial inversion transforms the electric field</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and second-order polarization such that 𝐸→−𝐸 and 𝑃(2)→−𝑃(2). <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Substituting this into the nonlinear relation gives −𝑃(2)=𝑃(2), which forces</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑃(2)=0 and consequently 𝜒(2)=0, prohibiting second-harmonic generation.</li></ul>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
-    },
-    {
-      "id": "Q14",
-      "number": 14,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U][3]",
-      "question": "What is meant by third harmonic generation?",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is meant by third harmonic generation?</em> per the Laser, Non-linear Optics and Fiber Optics syllabus.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Laser, Non-linear Optics and Fiber Optics syllabus criteria."
-    },
-    {
-      "id": "Q15",
-      "number": 15,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Write down the frequency relation governing the generation of an idler wave in parametric processes and define each term.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>𝜔𝑝 -Pump Frequency, 𝜔𝑠 -Signal Frequency, 𝜔𝑖 -Idler Frequency <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></p>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
-    },
-    {
-      "id": "Q16",
-      "number": 16,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U][3]",
-      "question": "Explain self-focusing of laser beam.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Explain self-focusing of laser beam.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Laser, Non-linear Optics and Fiber Optics valuation scheme."
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What is the purpose of an erbium-doped fibre amplifier (EDFA) in long-distance optical fibre communication?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The light pulse attenuates as it travels. Rather than using optoelectronic</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>regenerators, modern networks amplify the optical signal directly using inline</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Erbium-Doped Fiber Amplifiers (EDFAs), which provide ≈ 20 𝑑𝐵 of optical gain</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>within the 1530 - 1570 𝑛𝑚 band. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
-    },
-    {
-      "id": "Q18",
-      "number": 18,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[A][4]",
-      "question": "Distinguish between TE and TM modes in a slab waveguide",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "[6×5=30]"
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "How is photosensitivity at ~240nm utilized to fabricate periodic gratings in germanium-doped silica fibres?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Periodic variation of refractive index along the dispersive fibre element can be</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>induced in germanium doped silica by forming an interference pattern within</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the fibre core from two coherent UV laser light beams incident at an angle to the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>fibre axis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The glass core of the fibre is photosensitive at ~ 240 nm and this wavelength</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>may be obtained by harmonic generation from a longer wavelength laser, or it</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>may be directly produced by a pulsed ultraviolet excimer laser. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
-    },
-    {
-      "id": "Q20",
-      "number": 20,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U][4]",
-      "question": "Which are the two low-attenuation transmission windows in a silica glass optical fibre. Which unit is normally used to express the attenuation in an optical fibre.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Which are the two low-attenuation transmission windows in a silica glass optical fibre. Which unit is normally used to express the attenuation in an optical fibre.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Laser, Non-linear Optics and Fiber Optics valuation scheme."
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Define the acceptance angle of an optical fibre. What is meant by the acceptance cone?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
-      "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
-    },
-    {
-      "id": "Q22",
-      "number": 22,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[A][4]",
-      "question": "Sketch the schematic of a fibre optic communication system.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Sketch the schematic of a fibre optic communication system.</em>.</p></div>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Laser, Non-linear Optics and Fiber Optics valuation scheme."
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
       "question": "What is meant by air-guiding type photonic crystal fibre?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>In an air-guiding type photonic crystal fibre (also known as a hollow-core</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>photonic bandgap fibre), the central core is an air hole rather than a solid silica</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>core. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>It operates on physical principle: Photonic Bandgap Guiding (or 2D Bragg</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reflection). <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>×10=20]</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In an air-guiding type photonic crystal fibre (also known as a hollow-core</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">photonic bandgap fibre), the central core is an air hole rather than a solid silica</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">core. (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">It operates on physical principle: Photonic Bandgap Guiding (or 2D Bragg</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reflection). (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[2×10=20]</li></ul>",
+      "final_answer": "",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "×10=20]"
+      "has_official_scheme": true
     },
     {
-      "id": "Q24",
-      "number": 24,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[A][4]",
-      "question": "Distinguish between step index and graded index optical fibre.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "[6×5=30]"
-    },
-    {
-      "id": "Q25",
-      "number": 25,
+      "id": "P2_Q13",
+      "number": 13,
+      "global_number": 13,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "For a plane electromagnetic wave propagating in a rectangular cavity, show that the wave vector k is perpendicular to the electric field E(t).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
+      "question": "For a plane electromagnetic wave propagating in a rectangular cavity, show that / the wave vector k is perpendicular to the electric field E(t).",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For a plane electromagnetic wave propagating in a rectangular cavity, show that</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the wave vector k is perpendicular to the electric field E(t).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Wave Equation p (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 𝜕2𝐄</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝛻2𝐄=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐2 𝜕𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Plane wave solution to the wave equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸(𝐫,𝑡) = 𝐸 exp{𝑖(𝐤⋅𝐫−𝜔𝑡)}</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Spatial standing wave components inside the cavity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)cos𝑘 𝑥sin𝑘 𝑦sin𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 0𝑥 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)sin𝑘 𝑥cos𝑘 𝑦sin𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 0𝑦 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐸 (𝑡) = 𝐸 (𝑡)sin𝑘 𝑥sin𝑘 𝑦cos𝑘 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑧 0𝑧 𝑥 𝑦 𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Maxwell’s equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝛻⋅𝐄 = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑘 𝐸 (𝑡)+𝑘 𝐸 (𝑡)+𝑘 𝐸 (𝑡) = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 0𝑥 𝑦 0𝑦 𝑧 0𝑧</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dot Product Form and Final Conclusion (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐤⋅𝐄(𝑡) = 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Hence the wave vector is perpendicular to the electric field vector (𝐤⊥ 𝐄)</li></ul>",
+      "final_answer": "Hence the wave vector is perpendicular to the electric field vector (𝐤⊥ 𝐄)",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
+      "has_official_scheme": true
     },
     {
-      "id": "Q26",
-      "number": 26,
+      "id": "P2_Q14",
+      "number": 14,
+      "global_number": 14,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U][1]",
-      "question": "Obtain the expression for the number of resonant frequencies within an open resonator.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Obtain the expression for the number of resonant frequencies within an open resonator. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Obtain the expression for the number of resonant frequencies within an open resonator. ."
-    },
-    {
-      "id": "Q27",
-      "number": 27,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Describe the construction, working principle, and key operational characteristics of a He-Ne laser with a neat energy-level diagram.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Schematic Diagram <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span> + Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span></p>",
+      "question": "Describe the construction, working principle, and key operational characteristics / of a He-Ne laser with a neat energy-level diagram.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">characteristics of a He-Ne laser with a neat energy-level diagram.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Energy Level Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Schematic Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>) + Explanation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 Marks)</span>)</li></ul>",
+      "final_answer": "Schematic Diagram () + Explanation ()",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "has_official_scheme": true
     },
     {
-      "id": "Q28",
-      "number": 28,
+      "id": "P2_Q15",
+      "number": 15,
+      "global_number": 15,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[A][1]",
-      "question": "With the help of a proper schematic diagram and energy level diagram, explain the construction and working of a ruby laser.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering With the help of a proper schematic diagram and energy level diagram, explain the construction and working of a ruby laser. ."
-    },
-    {
-      "id": "Q29",
-      "number": 29,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the working of a semiconductor laser with a suitable energy level diagram.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>diagram.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Basic Principle & Requirements <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The semiconductor material must have a high transition probability for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>radiative transitions across the bandgap, exceeding non-radiative lattice</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>transfer rates. Population inversion is achieved via carrier injection through a</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>forward biasing of the semiconductor diode.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The 𝑝-𝑛 junction diode must be heavily doped. In the 𝑛-type region, the Fermi</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>level 𝐹𝑐 lies within the conduction band, while in the 𝑝-type region, the Fermi</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>level 𝐹𝑣 lies within the valence band.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>When forward-biased, electrons are injected into the 𝑝-side and holes into the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑛-side, creating a high concentration of both carriers in the narrow</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>depletion/active region. This high concentration results in a population</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>inversion between the conduction band, and the valence band states near the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>junction. Electron-hole recombination in this narrow planar region releases</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>coherent optical radiation when the injected current exceeds a threshold value.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Optical Confinement & Resonator Action <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Laser action is confined to the very thin junction region.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The crystal end faces are cleaved parallel to form an optical resonator, providing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the necessary feedback for amplification and stimulated emission.</li></ul>",
+      "question": "Explain the working of a semiconductor laser with a suitable energy level / diagram.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">diagram.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Energy Level Diagram (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Basic Principle & Requirements (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The semiconductor material must have a high transition probability for</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">radiative transitions across the bandgap, exceeding non-radiative lattice</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">transfer rates. Population inversion is achieved via carrier injection through a</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">forward biasing of the semiconductor diode.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The 𝑝-𝑛 junction diode must be heavily doped. In the 𝑛-type region, the Fermi</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">level 𝐹 lies within the conduction band, while in the 𝑝-type region, the Fermi</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">level 𝐹 lies within the valence band.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑣</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">When forward-biased, electrons are injected into the 𝑝-side and holes into the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑛-side, creating a high concentration of both carriers in the narrow</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">depletion/active region. This high concentration results in a population</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">inversion between the conduction band, and the valence band states near the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">junction. Electron-hole recombination in this narrow planar region releases</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">coherent optical radiation when the injected current exceeds a threshold value.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Optical Confinement & Resonator Action (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Laser action is confined to the very thin junction region.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The crystal end faces are cleaved parallel to form an optical resonator, providing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the necessary feedback for amplification and stimulated emission.</li></ul>",
+      "final_answer": "the necessary feedback for amplification and stimulated emission",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Verified per official MGU Scheme of Valuation."
+      "has_official_scheme": true
     },
     {
-      "id": "Q30",
-      "number": 30,
+      "id": "P2_Q16",
+      "number": 16,
+      "global_number": 16,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U][1]",
-      "question": "Obtain the condition that must be satisfied to get stimulated emission from a semiconductor laser.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Obtain the condition that must be satisfied to get stimulated emission from a semiconductor laser. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Obtain the condition that must be satisfied to get stimulated emission from a semiconductor laser. ."
-    },
-    {
-      "id": "Q31",
-      "number": 31,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Discuss the principle and operational mechanism of a Kerr-cell Q-switch in a laser system.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of Kerr effect <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A Kerr cell consists of an isotropic liquid (such as nitrobenzene) containing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>asymmetric molecules placed between parallel plates. When an external electric</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field is applied, the molecules tend to align parallel to the field direction and the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>liquid become optically anisotropic and birefringent, with refractive indices 𝑛𝑜</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and 𝑛𝑒 proportional to the square of the applied voltage.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The Kerr Cell Shutter System-Schematic OR Explanation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Operational Sequence <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The Kerr cell is activated by applying a high bias voltage (10--20 kV).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The flash lamp is fired to pump the active laser medium.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>After population inversion peaks (approx. 0.5 ms), the Kerr cell voltage is</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>switched off as suddenly as possible.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Performance Characteristics <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Operating as a fast electro-optic shutter, switching times in the nanosecond</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>range. Effectively increases peak output power (e.g., from kilowatts to</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>megawatts/gigawatts) by compressing the energy into a giant optical pulse.</li></ul>",
+      "question": "Discuss the principle and operational mechanism of a Kerr-cell Q-switch in a / laser system.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">laser system</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Explanation of Kerr effect (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A Kerr cell consists of an isotropic liquid (such as nitrobenzene) containing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">asymmetric molecules placed between parallel plates. When an external electric</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">field is applied, the molecules tend to align parallel to the field direction and the</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">liquid become optically anisotropic and birefringent, with refractive indices 𝑛</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑜</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and 𝑛 proportional to the square of the applied voltage.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑒</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The Kerr Cell Shutter System-Schematic OR Explanation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Operational Sequence (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The Kerr cell is activated by applying a high bias voltage (10--20 kV).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The flash lamp is fired to pump the active laser medium.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">After population inversion peaks (approx. 0.5 ms), the Kerr cell voltage is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">switched off as suddenly as possible.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Performance Characteristics (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Operating as a fast electro-optic shutter, switching times in the nanosecond</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">range. Effectively increases peak output power (e.g., from kilowatts to</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">megawatts/gigawatts) by compressing the energy into a giant optical pulse.</li></ul>",
+      "final_answer": "megawatts/gigawatts) by compressing the energy into a giant optical pulse",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "megawatts/gigawatts) by compressing the energy into a giant optical pulse."
+      "has_official_scheme": true
     },
     {
-      "id": "Q32",
-      "number": 32,
+      "id": "P2_Q17",
+      "number": 17,
+      "global_number": 17,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U][2]",
-      "question": "Explain how Q-switching can be achieved in a laser using Kerr effect.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Explain how Q-switching can be achieved in a laser using Kerr effect. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Explain how Q-switching can be achieved in a laser using Kerr effect. ."
-    },
-    {
-      "id": "Q33",
-      "number": 33,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the phase-matching condition in second-harmonic generation and show mathematically how it leads to the equality of refractive indices at both frequencies (η = η ).",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
+      "question": "Explain the phase-matching condition in second-harmonic generation and show / mathematically how it leads to the equality of refractive indices at both frequencies (ηω = η2ω). Explain the physical mechanism of self-focusing in a nonlinear medium using",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">mathematically how it leads to the equality of refractive indices at both</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">frequencies (η = η ).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ω 2ω</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Principle of SHG and Condition for Maximum Intensity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">In SHG, energy transfer from the fundamental wave (𝜔) to the second-harmonic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">wave (2𝜔) requires constructive interference over the propagation path.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Wave number matching condition for maximum intensity</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑘 −𝑘</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0 ⟹𝑘 = 2𝑘</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 2 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Substitution of k and k and arriving at the final equation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 Marks)</span>).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔𝜂 𝜔𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔 𝜔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 2( )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑐 𝑐</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜂 = 𝜂</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝜔 𝜔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Refractive index ellipsoid OR Energy level representation (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1.5 mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Physical Significance & Use of Birefringence (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phase matching is achieved in anisotropic crystals by using polarization</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">dependent refractive indices, where ordinary ray index at frequency 𝜔 matches</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the extraordinary ray index at 2𝜔 along specific propagation directions.</li></ul>",
+      "final_answer": "the extraordinary ray index at 2𝜔 along specific propagation directions",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
+      "has_official_scheme": true
     },
     {
-      "id": "Q34",
-      "number": 34,
+      "id": "P2_Q18",
+      "number": 18,
+      "global_number": 18,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U][2]",
-      "question": "What is meant by second harmonic generation? Prove that only non- centrosymmetric crystals can exhibit second harmonic generation.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering What is meant by second harmonic generation? Prove that only non- centrosymmetric crystals can exhibit second harmonic generation. . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is meant by second harmonic generation? Prove that only non- centrosymmetric crystals can exhibit second harmonic generation. ."
-    },
-    {
-      "id": "Q35",
-      "number": 35,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the physical mechanism of self-focusing in a nonlinear medium using the Gaussian intensity profile of a laser beam.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of self-focusing <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>It is a non-linear process where an intense light beam modifies the refractive index of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>a medium such that causes the beam to focus itself, without changing its frequency.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Derivation of the expression for intensity-dependent index <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜂=𝜂𝑙+𝜂𝑛𝑙𝐸02</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Explanation of Gaussin intensity profile of laser <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A real laser beam features a Gaussian intensity profile that peaks along the central</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>propagation axis and drops off radially.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Expression for Self-focusing distance and Threshold Intensity <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝐿0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>√𝜂𝑛𝑙𝐸02</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>, 𝐼thresh=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜂𝑙2𝜂𝑛𝑙𝐷2</li></ul>",
+      "question": "/ the Gaussian intensity profile of a laser beam.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the Gaussian intensity profile of a laser beam.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of self-focusing (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">It is a non-linear process where an intense light beam modifies the refractive index of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">a medium such that causes the beam to focus itself, without changing its frequency.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Derivation of the expression for intensity-dependent index (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝜂 = 𝜂 +𝜂 𝐸2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑙 𝑛𝑙 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Explanation of Gaussin intensity profile of laser (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A real laser beam features a Gaussian intensity profile that peaks along the central</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">propagation axis and drops off radially.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Expression for Self-focusing distance and Threshold Intensity (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐷 𝜆2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = , 𝐼 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">√𝜂𝑛𝑙𝐸</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li></ul>",
+      "final_answer": "",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "𝜂𝑙2𝜂𝑛𝑙𝐷2"
+      "has_official_scheme": true
     },
     {
-      "id": "Q36",
-      "number": 36,
+      "id": "P2_Q19",
+      "number": 19,
+      "global_number": 19,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[A][2]",
-      "question": "A laser operating at a pump wavelength of 𝜆 = 360 nm pumps a non-linear crystal to produce parametric generation. If the desired signal wavelength is 𝜆0 = 546 nm:(1) Calculate the frequency of the pump photon 𝜔 and signal photon 𝜔0.(2) Determine the idler frequency and its corresponding wavelength",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering A laser operating at a pump wavelength of 𝜆 = 360 nm pumps a non-linear crystal to produce parametric generation. If the desired signal wavelength is 𝜆0 = 546 nm:(1) Calculate the frequency of the pump photon 𝜔 and signal photon 𝜔0.(2) Determine the idler frequency and its corresponding wavelength ."
-    },
-    {
-      "id": "Q37",
-      "number": 37,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A] ",
-      "question": "A step-index optical fibre has core radius a = 25μm, n1 = 1.520, n2 = 1.505, and λ0 = 2μm. Calculate the V-number and determine whether the fibre is single- mode or multimode. Estimate the number of propagating modes.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
+      "question": "A step-index optical fibre has core radius a = 25μm, n = 1.520, n = 1.505, and / 1 2 λ = 2μm. Calculate the V-number and determine whether the fibre is single- 0 mode or multimode. Estimate the number of propagating modes.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A step-index optical fibre has core radius a = 25 µm, n = 1.520, n = 1.505, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">λ = 2 µm. Calculate the V-number and determine whether the fibre is single</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">mode or multimode. Estimate the number of propagating modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Given: Core radius, 𝑎 = 25 𝜇m = 25×10−6 m, Core refractive index, 𝑛 =</li></ul>",
+      "final_answer": "Given: Core radius, 𝑎 = 25 𝜇m = 25×10−6 m, Core refractive index, 𝑛 =",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
+      "has_official_scheme": true
     },
     {
-      "id": "Q38",
-      "number": 38,
+      "id": "P2_Q20",
+      "number": 20,
+      "global_number": 20,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U][3]",
-      "question": "Obtain the expression for the characteristic penetration depth of an evanescent wave in an optical fibre.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "[6×5=30]"
-    },
-    {
-      "id": "Q39",
-      "number": 39,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[An] ",
-      "question": "Analyse how the boundary conditions of a slab waveguide restrict the possible electromagnetic field patterns and lead to the formation of discrete modes. ω 2ω",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
+      "question": "Analyse how the boundary conditions of a slab waveguide restrict the possible / electromagnetic field patterns and lead to the formation of discrete modes.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">electromagnetic field patterns and lead to the formation of discrete modes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Introduction to Slab Waveguide & Confinement Mechanism (<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Confinement of light in a dielectric slab waveguide 𝑛 in</li></ul>",
+      "final_answer": "Confinement of light in a dielectric slab waveguide 𝑛 in",
       "source_exam": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "[6×5=30]"
-    },
-    {
-      "id": "Q40",
-      "number": 40,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A][3]",
-      "question": "A Fiber Bragg Grating is to be fabricated to reflect a target centre wavelength 𝜆⁰ = 1300 nm in a silica fibre core with effective refractive index 𝑛 = 1.5. (i) Calculate the required grating pitch/spacing. (ii) Calculate the effective velocity of this wavelength inside the fibre.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>520, Cladding refractive index, 𝑛2=1.505, Free-space wavelength, 𝜆0=</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 𝜇m=2×10−6 m</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>V-number substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋𝑎</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆0</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋×(25×10−6 m)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2×10−6 m √(1.520)2−(1.505)2 = 𝟏𝟔.𝟕 (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Condition for single mode / multimode and conclusion</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉≤2.405 (Single-mode), 𝑉>2.405 (Multimode) (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Since 𝑉=16.73, The optical fibre is multimode. (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Number of propagating modes substitution and answer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑉2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(16.73)2</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2 =139.95=𝟏𝟒𝟎 modes (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>20 Analyse how the boundary conditions of a slab waveguide restrict the possible</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>electromagnetic field patterns and lead to the formation of discrete modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Introduction to Slab Waveguide & Confinement Mechanism (1 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Confinement of light in a dielectric slab waveguide (core refractive index 𝑛1 in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two cladding layers of lower refractive index 𝑛2) is achieved via total</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>internal reflection (TIR) at the boundaries. Unlike metallic waveguides, the</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>wave amplitude does not drop to zero at the boundary; rather, an evanescent</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>field penetrates the cladding.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phase Shift Due to Propagation (2 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using the core wavelength 𝜆1=𝜆0/𝑛1, the phase shift due to this geometrical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>path difference is expressed as</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Total Phase Condition (1.5 Marks)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The total phase change must be an integral multiple of 2𝜋 (2𝑁𝜋)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(2𝑏sin𝜃)+2𝜙(𝜃)=2𝑁𝜋</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Formation of Discrete Modes (1.5 Mark)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Simplifying the phase condition yields the equation for discrete propagation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>angles</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝑏sin𝜃+𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜙(𝜃)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>2𝜋 =𝑁𝜆1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Heree 𝑁 is an integer (the mode number) and the phase shift 𝜙(𝜃) is a function</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of angle, only specific, discrete ray directions (𝜃) satisfy this condition. This</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>restriction restricts the electromagnetic field patterns to a set of discrete guided</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>modes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>[6×5=30]</li></ul>",
-      "source_exam": "Laser, Non-linear Optics and Fiber Optics",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "[6×5=30]"
+      "has_official_scheme": true
     }
   ]
 }

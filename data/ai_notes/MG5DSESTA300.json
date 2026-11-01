@@ -96,12 +96,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [2]",
-      "question": "The built-in object eurodist contains road distances (km) between 21 European cities. (a) Obtain a two-dimensional configuration using classical MDS (cmdscale). (b) Plot the cities. (c) Compute the goodness-of-fit measures and the proportion of variation explained by each dimension.",
+      "question": "The built-in object eurodist contains road distances (km) between 21 European cities. Obtain a two-dimensional configuration using classical MDS (cmdscale). (b) Plot the cities. (c) Compute the goodness-of-fit measures and the proportion of variation explained by each dimension.",
       "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills official valuation criteria specified for Introduction To Multivariate Analysis. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Obtain a two-dimensional configuration using classical MDS"
+      "final_answer": "Option Obtain a two-dimensional configuration using classical MDS"
     },
     {
       "id": "Q7",
@@ -124,12 +124,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [3]",
-      "question": "Use the variables mpg, cyl, disp, hp, drat, wt and qsec of the mtcars data set. (a) Examine the correlation matrix and test its suitability for factor analysis. (b) Fit a two – factor maximum- likelihood model with varimax rotation. Report the loadings, uniqueness’s and communalities. (c) Compute regression factor scores and plot the cars in the factor space. Which cars have the highest and lowest scores on Factor 1?",
+      "question": "Use the variables mpg, cyl, disp, hp, drat, wt and qsec of the mtcars data set. Examine the correlation matrix and test its suitability for factor analysis. (b) Fit a two – factor maximum- likelihood model with varimax rotation. Report the loadings, uniqueness’s and communalities. (c) Compute regression factor scores and plot the cars in the factor space. Which cars have the highest and lowest scores on Factor 1?",
       "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills official valuation criteria specified for Introduction To Multivariate Analysis. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Examine the correlation matrix and test its suitability for factor analysis."
+      "final_answer": "Option Examine the correlation matrix and test its suitability for factor analysis."
     },
     {
       "id": "Q9",
@@ -152,7 +152,7 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [4]",
-      "question": "Two samples of sizes 70 and 100 are given from two normal populations Np(µ1,𝛴) and Np(µ2,𝛴). Let 𝑋̅(1)= 𝑋̅(2)= and S = . Obtain the best discriminant function to discriminate between two populations and classify the observations X=.",
+      "question": "Two samples of sizes 70 and 100 are given from two normal populations Np(µ1,𝛴) and Np(µ2,𝛴). Let 𝑋̅= 𝑋̅= and S = . Obtain the best discriminant function to discriminate between two populations and classify the observations X=.",
       "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Two samples of sizes 70 and 100 are given from two normal populations Np(µ1,𝛴) and Np(µ2,𝛴). Let 𝑋̅(1)= 𝑋̅(2)= and S = . Obtain the best discriminant function to discriminate between two populations and classify the observations X=.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
@@ -208,7 +208,7 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [4]",
-      "question": "Use the knn () function of the package class (supplied with R) on the iris data. (a) Standardise the four measurements. Use 100 randomly selected flowers (set. seed (123)) as the training set and the remaining 50 as the test set. Classify the test flowers with k = 5 and give the confusion matrix and accuracy. (b) Choose k using leave-one-out cross-validation (knn.cv) for k = 1, …, 25 and plot the error against k.",
+      "question": "Use the knn () function of the package class (supplied with R) on the iris data. Standardise the four measurements. Use 100 randomly selected flowers (set. seed ) as the training set and the remaining 50 as the test set. Classify the test flowers with k = 5 and give the confusion matrix and accuracy. (b) Choose k using leave-one-out cross-validation (knn.cv) for k = 1, …, 25 and plot the error against k.",
       "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Use the knn () function of the package class (supplied with R) on the iris data. (a) Standardise the four measurements. Use 100 randomly selected flowers (set. seed (123)) as the training set and the remaining 50 as the test set. Classify the test flowers with k = 5 and give the confusion matrix and accuracy. (b) Choose k using leave-one-out cross-validation (knn.cv) for k = 1, …, 25 and plot the error against k.</em>.</p></div>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
@@ -236,12 +236,12 @@
       "part_label": "Part A (Short Answer)",
       "marks": 2,
       "domain_tag": "[A] [5]",
-      "question": "Cross-classify the 32 cars of mtcars by number of cylinders (cyl) and number of forward gears (gear). (a) Construct the contingency table and test for association. Why does R give a warning, and how can it be avoided? (b) Perform correspondence analysis. How much of the inertia is ex plained by each dimension? (c) Draw and interpret the correspondence map.",
+      "question": "Cross-classify the 32 cars of mtcars by number of cylinders (cyl) and number of forward gears (gear). Construct the contingency table and test for association. Why does R give a warning, and how can it be avoided? (b) Perform correspondence analysis. How much of the inertia is ex plained by each dimension? (c) Draw and interpret the correspondence map.",
       "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills official valuation criteria specified for Introduction To Multivariate Analysis. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
       "source_exam": "Official Practical Model Paper",
       "repeated_in": [],
       "has_official_scheme": false,
-      "final_answer": "Option (a) Construct the contingency table and test for association. Why does R give a warning, and how can it be avoided?"
+      "final_answer": "Option Construct the contingency table and test for association. Why does R give a warning, and how can it be avoided?"
     },
     {
       "id": "Q17",
@@ -383,5 +383,6 @@
       "has_official_scheme": false,
       "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
     }
-  ]
+  ],
+  "total_solved": 26
 }

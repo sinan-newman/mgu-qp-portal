@@ -6,469 +6,790 @@
   "course_type": "MDC",
   "max_marks": 70,
   "total_questions": 30,
-  "repeating_skipped": 15,
+  "total_solved": 30,
+  "repeating_skipped": 0,
   "sources_used": [
-    "Official Model Question Paper (FYUGP 2024",
-    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024"
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 14,
-    "part_b": 12,
-    "part_c": 4
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_1",
+      "paper_title": "EXAMINATION PAPER 1: MGU-UGP (HONOURS) REGULAR EXAM SEM 1, NOV 2024",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P1_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Define Social Psychology",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social Psychology is the study of how individuals think, feel, and behave in social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">contexts.</li></ul>",
+              "final_answer": "Social Psychology is the study of how individuals think, feel, and behave in social",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is social cognition.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social cognition refers to how people process, store, and apply information about others</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and social situations.</li></ul>",
+              "final_answer": "Social cognition refers to how people process, store, and apply information about others",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain interview method in research.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The interview method involves collecting data through direct, structured, or unstructured</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">conversations with participants.</li></ul>",
+              "final_answer": "The interview method involves collecting data through direct, structured, or unstructured",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Identify four characteristics of Personality",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Four characteristics of personality are consistency, individual differences, adaptability</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and traits.</li></ul>",
+              "final_answer": "Four characteristics of personality are consistency, individual differences, adaptability",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Discuss the term Ego",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The ego, in psychology, is the rational part of the mind that mediates between the id</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">superego, and reality.</li></ul>",
+              "final_answer": "The ego, in psychology, is the rational part of the mind that mediates between the id",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Define Toxic Relationships",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Toxic relationships are harmful relationships characterized by manipulation, control, or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">emotional abuse.</li></ul>",
+              "final_answer": "Toxic relationships are harmful relationships characterized by manipulation, control, or",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain active listening.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Active listening is fully focusing on the speaker, understanding their message, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">responding thoughtfully.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(5 × 2 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
+              "final_answer": "Short Essay Type Questions",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P1_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the relevance of social psychology in everyday life",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social psychology helps in understanding human behaviour in social settings</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">improving interpersonal relationships, and addressing social issues.</li></ul>",
+              "final_answer": "Social psychology helps in understanding human behaviour in social settings",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Define self-esteem and its significance.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-esteem refers to an individual's overall sense of self-worth, influencing confidence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and mental well-being.</li></ul>",
+              "final_answer": "Self-esteem refers to an individual's overall sense of self-worth, influencing confidence",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Describe projective techniques and their purpose in research.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Projective techniques involve ambiguous stimuli to uncover unconscious thoughts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">feelings, and motives, aiding in personality assessment.</li></ul>",
+              "final_answer": "Projective techniques involve ambiguous stimuli to uncover unconscious thoughts",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q11",
+              "number": 11,
+              "global_number": 11,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the main sources of attraction in close relationships and their significance.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The main sources of attraction in close relationships include proximity, similarity</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">physical attractiveness, and reciprocal liking, which foster emotional bonds and mutual</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">understanding.</li></ul>",
+              "final_answer": "understanding",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q12",
+              "number": 12,
+              "global_number": 12,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the role of media in perpetuating or reducing stereotypes?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Media can perpetuate stereotypes by reinforcing biased portrayals or reduce them by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">promoting diverse and inclusive representations.</li></ul>",
+              "final_answer": "Media can perpetuate stereotypes by reinforcing biased portrayals or reduce them by",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q13",
+              "number": 13,
+              "global_number": 13,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Illustrate eight types of love put forward by Sternberg",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Sternberg's eight types of love include non-love, liking, infatuation, empty love, romantic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">love, companionate love, fatuous love, and consummate love, each defined by varying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">levels of intimacy, passion, and commitment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(3 × 5 = 15)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li></ul>",
+              "final_answer": "Essay Type Questions",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P1_Q14",
+              "number": 14,
+              "global_number": 14,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Compare and contrast the approaches of Ruth Benedict and Margaret Mead in studying the relationship between culture and personality.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ruth Benedict emphasized how cultural patterns shape the collective personality of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">societies, describing culture as a \"personality writ large.\" She studied specific cultures, like</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the Zuni and Dobu, to highlight their unique traits. Margaret Mead, however, focused on</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">how childhood socialization within different cultures influences personality development.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Her work, like the study of adolescence in Samoa, demonstrated the flexibility of human</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">behaviour across cultures. While Benedict emphasized the overarching cultural</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">framework, Mead highlighted the role of individual upbringing and social structures.</li></ul>",
+              "final_answer": "framework, Mead highlighted the role of individual upbringing and social structures",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q15",
+              "number": 15,
+              "global_number": 15,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Discuss the psychological and social factors that contribute to the development of prejudice and stereotyping, END OF THE QUESTION PAPER ***",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Psychological factors, such as cognitive biases like categorization and in-group</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">favouritism, lead to generalizations and prejudices. Fear of the unknown and personal</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">insecurities also contribute to stereotyping. Social factors include cultural norms and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">values that perpetuate stereotypes through socialization. Media representations and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">unequal power dynamics in society further reinforce these biases. Together, these factors</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">create and sustain prejudice in individual and group interactions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1 × 10 = 10)</li></ul>",
+              "final_answer": "",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "PAPER_2",
+      "paper_title": "EXAMINATION PAPER 2: FIRST SEMESTER MGU-UGP/MGU-BBA/MGU-BCA HONOURS EXAMINATIONS NOVEMBER 2025",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P2_Q1",
+              "number": 1,
+              "global_number": 16,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain the concept of social influence.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social influence refers to the way individuals change their attitudes or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">behavior due to others.</li></ul>",
+              "final_answer": "Social influence refers to the way individuals change their attitudes or",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q2",
+              "number": 2,
+              "global_number": 17,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Recall self-esteem.",
+              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Self-esteem is an individual’s overall evaluation of their own worth.</p>",
+              "final_answer": "",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q3",
+              "number": 3,
+              "global_number": 18,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Discribe discrimination.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Discrimination is the unfair treatment of individuals based on group</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">membership.</li></ul>",
+              "final_answer": "Discrimination is the unfair treatment of individuals based on group",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q4",
+              "number": 4,
+              "global_number": 19,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Explain the process of person perception.",
+              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Person perception is the process of forming impressions about others.</p>",
+              "final_answer": "Person perception is the process of forming impressions about others",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q5",
+              "number": 5,
+              "global_number": 20,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Identify introvert Personality.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">An introvert is a person who is inward-oriented and prefers solitude or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">small groups.</li></ul>",
+              "final_answer": "An introvert is a person who is inward-oriented and prefers solitude or",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q6",
+              "number": 6,
+              "global_number": 21,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Discribe nonverbal communication in relationships.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Nonverbal communication includes gestures, facial expressions, posture</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and eye contact.</li></ul>",
+              "final_answer": "Nonverbal communication includes gestures, facial expressions, posture",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q7",
+              "number": 7,
+              "global_number": 22,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Define reciprocity in attraction.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reciprocity in attraction means liking someone who also shows liking in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">return.</li></ul>",
+              "final_answer": "Reciprocity in attraction means liking someone who also shows liking in",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P2_Q8",
+              "number": 8,
+              "global_number": 23,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the advantages of using case studies in social psychology.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Case studies provide in-depth understanding of individual behavior and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">real-life situations. They are especially useful for studying rare or complex</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">phenomena.</li></ul>",
+              "final_answer": "phenomena",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q9",
+              "number": 9,
+              "global_number": 24,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "According to Mead's research, how does child-rearing influence / personality development across different cultures? Explain.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Mead explained that child-rearing practices shape personality through</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">social interaction. Different cultures promote different personality traits</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">based on social expectations.</li></ul>",
+              "final_answer": "based on social expectations",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q10",
+              "number": 10,
+              "global_number": 25,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "illustate What are the effective methods of conflict resolution ?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Effective conflict resolution methods include communication</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">negotiation, compromise, and mediation. These methods help reduce tension</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and promote mutual understanding.</li></ul>",
+              "final_answer": "and promote mutual understanding",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q11",
+              "number": 11,
+              "global_number": 26,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the advantages and disadvantages of interviews.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interviews allow detailed and flexible data collection but are time</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">consuming. They may also suffer from interviewer bias.</li></ul>",
+              "final_answer": "Interviews allow detailed and flexible data collection but are time",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q12",
+              "number": 12,
+              "global_number": 27,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the factors influencing self-concept development.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-concept is influenced by family, peers, social comparison, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cultural environment. Life experiences also shape self-identity.</li></ul>",
+              "final_answer": "Self-concept is influenced by family, peers, social comparison, and",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q13",
+              "number": 13,
+              "global_number": 28,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Describe the stages of development in psychoanalytic theory, including / the oral, anal, and phallic stages.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The psychoanalytic stages include oral, anal, and phallic stages of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">childhood development. Each stage is linked to specific personality</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">formation outcomes.</li></ul>",
+              "final_answer": "formation outcomes",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P2_Q14",
+              "number": 14,
+              "global_number": 29,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Analyse toxic relationship affect an individual sense of self-worth and / confidence? Explain.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A toxic relationship damages an individual’s self-worth through constant</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">criticism, control, and emotional neglect. It creates insecurity, fear, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">reduced confidence. Over time, the person may internalize negativity and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lose emotional stability.</li></ul>",
+              "final_answer": "lose emotional stability",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q15",
+              "number": 15,
+              "global_number": 30,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Discuss the role of self-disclosure in building intimacy and trust in / relationships.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-disclosure involves sharing personal thoughts, emotions, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">experiences with others. It strengthens emotional bonding and deepens</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interpersonal trust. Through honest communication, intimacy grows and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">relationships become more meaningful.</li></ul>",
+              "final_answer": "relationships become more meaningful",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P1_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Explain the concept of social influence.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social influence refers to the way individuals change their attitudes or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>behavior due to others.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Social influence refers to the way individuals change their attitudes or"
+      "question": "Define Social Psychology",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social Psychology is the study of how individuals think, feel, and behave in social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">contexts.</li></ul>",
+      "final_answer": "Social Psychology is the study of how individuals think, feel, and behave in social",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q2",
+      "id": "P1_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Define Psychology. (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define Psychology. (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "question": "What is social cognition.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social cognition refers to how people process, store, and apply information about others</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and social situations.</li></ul>",
+      "final_answer": "Social cognition refers to how people process, store, and apply information about others",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q3",
+      "id": "P1_Q3",
       "number": 3,
+      "global_number": 3,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Recall self-esteem.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Discrimination is the unfair treatment of individuals based on group</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>membership.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Discrimination is the unfair treatment of individuals based on group"
+      "question": "Explain interview method in research.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The interview method involves collecting data through direct, structured, or unstructured</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">conversations with participants.</li></ul>",
+      "final_answer": "The interview method involves collecting data through direct, structured, or unstructured",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q4",
+      "id": "P1_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "what is social learning (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>what is social learning (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "question": "Identify four characteristics of Personality",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Four characteristics of personality are consistency, individual differences, adaptability</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and traits.</li></ul>",
+      "final_answer": "Four characteristics of personality are consistency, individual differences, adaptability",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q5",
+      "id": "P1_Q5",
       "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Discribe discrimination.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>An introvert is a person who is inward-oriented and prefers solitude or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>small groups.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "An introvert is a person who is inward-oriented and prefers solitude or"
+      "question": "Discuss the term Ego",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The ego, in psychology, is the rational part of the mind that mediates between the id</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">superego, and reality.</li></ul>",
+      "final_answer": "The ego, in psychology, is the rational part of the mind that mediates between the id",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q6",
+      "id": "P1_Q6",
       "number": 6,
+      "global_number": 6,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Explain self-esteem (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Explain self-esteem (Understand )</em>.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Social psychology valuation scheme."
+      "question": "Define Toxic Relationships",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Toxic relationships are harmful relationships characterized by manipulation, control, or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">emotional abuse.</li></ul>",
+      "final_answer": "Toxic relationships are harmful relationships characterized by manipulation, control, or",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q7",
+      "id": "P1_Q7",
       "number": 7,
+      "global_number": 7,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Explain the process of person perception.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reciprocity in attraction means liking someone who also shows liking in</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>return.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Reciprocity in attraction means liking someone who also shows liking in"
+      "question": "Explain active listening.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Active listening is fully focusing on the speaker, understanding their message, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">responding thoughtfully.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(5 × 2 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
+      "final_answer": "Short Essay Type Questions",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q8",
+      "id": "P1_Q8",
       "number": 8,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Define interview schedule (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define interview schedule (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "global_number": 8,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Discuss the relevance of social psychology in everyday life",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social psychology helps in understanding human behaviour in social settings</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">improving interpersonal relationships, and addressing social issues.</li></ul>",
+      "final_answer": "Social psychology helps in understanding human behaviour in social settings",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q9",
+      "id": "P1_Q9",
       "number": 9,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Identify introvert Personality.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Mead explained that child-rearing practices shape personality through</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>social interaction. Different cultures promote different personality traits</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>based on social expectations.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "based on social expectations."
+      "global_number": 9,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Define self-esteem and its significance.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-esteem refers to an individual's overall sense of self-worth, influencing confidence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and mental well-being.</li></ul>",
+      "final_answer": "Self-esteem refers to an individual's overall sense of self-worth, influencing confidence",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q10",
+      "id": "P1_Q10",
       "number": 10,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Define attraction. (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>Define attraction. (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "global_number": 10,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Describe projective techniques and their purpose in research.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Projective techniques involve ambiguous stimuli to uncover unconscious thoughts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">feelings, and motives, aiding in personality assessment.</li></ul>",
+      "final_answer": "Projective techniques involve ambiguous stimuli to uncover unconscious thoughts",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q11",
+      "id": "P1_Q11",
       "number": 11,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Discribe nonverbal communication in relationships.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interviews allow detailed and flexible data collection but are time</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>consuming. They may also suffer from interviewer bias.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Interviews allow detailed and flexible data collection but are time"
+      "global_number": 11,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Explain the main sources of attraction in close relationships and their significance.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The main sources of attraction in close relationships include proximity, similarity</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">physical attractiveness, and reciprocal liking, which foster emotional bonds and mutual</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">understanding.</li></ul>",
+      "final_answer": "understanding",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q12",
+      "id": "P1_Q12",
       "number": 12,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "What is fatuous love? (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is fatuous love? (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "global_number": 12,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Discuss the role of media in perpetuating or reducing stereotypes?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Media can perpetuate stereotypes by reinforcing biased portrayals or reduce them by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">promoting diverse and inclusive representations.</li></ul>",
+      "final_answer": "Media can perpetuate stereotypes by reinforcing biased portrayals or reduce them by",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q13",
+      "id": "P1_Q13",
       "number": 13,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Define reciprocity in attraction.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The psychoanalytic stages include oral, anal, and phallic stages of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>childhood development. Each stage is linked to specific personality</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>formation outcomes.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "formation outcomes."
+      "global_number": 13,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Illustrate eight types of love put forward by Sternberg",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Sternberg's eight types of love include non-love, liking, infatuation, empty love, romantic</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">love, companionate love, fatuous love, and consummate love, each defined by varying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">levels of intimacy, passion, and commitment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(3 × 5 = 15)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li></ul>",
+      "final_answer": "Essay Type Questions",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q14",
+      "id": "P1_Q14",
       "number": 14,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "What is compromise? (Understand )",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Definition & Core Meaning:</strong> Essential theoretical definition establishing the governing parameters, technical criteria, and principles for <em>What is compromise? (Understand )</em> per the Social psychology syllabus.</p></div>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Foundational definition established per Social psychology syllabus criteria."
+      "global_number": 14,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Compare and contrast the approaches of Ruth Benedict and Margaret Mead in studying the relationship between culture and personality.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ruth Benedict emphasized how cultural patterns shape the collective personality of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">societies, describing culture as a \"personality writ large.\" She studied specific cultures, like</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the Zuni and Dobu, to highlight their unique traits. Margaret Mead, however, focused on</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">how childhood socialization within different cultures influences personality development.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Her work, like the study of adolescence in Samoa, demonstrated the flexibility of human</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">behaviour across cultures. While Benedict emphasized the overarching cultural</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">framework, Mead highlighted the role of individual upbringing and social structures.</li></ul>",
+      "final_answer": "framework, Mead highlighted the role of individual upbringing and social structures",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q15",
+      "id": "P1_Q15",
       "number": 15,
+      "global_number": 15,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Discuss the psychological and social factors that contribute to the development of prejudice and stereotyping, END OF THE QUESTION PAPER ***",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Psychological factors, such as cognitive biases like categorization and in-group</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">favouritism, lead to generalizations and prejudices. Fear of the unknown and personal</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">insecurities also contribute to stereotyping. Social factors include cultural norms and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">values that perpetuate stereotypes through socialization. Media representations and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">unequal power dynamics in society further reinforce these biases. Together, these factors</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">create and sustain prejudice in individual and group interactions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1 × 10 = 10)</li></ul>",
+      "final_answer": "",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q1",
+      "number": 1,
+      "global_number": 16,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Explain the concept of social influence.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social influence refers to the way individuals change their attitudes or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">behavior due to others.</li></ul>",
+      "final_answer": "Social influence refers to the way individuals change their attitudes or",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q2",
+      "number": 2,
+      "global_number": 17,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Recall self-esteem.",
+      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Self-esteem is an individual’s overall evaluation of their own worth.</p>",
+      "final_answer": "",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q3",
+      "number": 3,
+      "global_number": 18,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Discribe discrimination.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Discrimination is the unfair treatment of individuals based on group</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">membership.</li></ul>",
+      "final_answer": "Discrimination is the unfair treatment of individuals based on group",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q4",
+      "number": 4,
+      "global_number": 19,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Explain the process of person perception.",
+      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">Person perception is the process of forming impressions about others.</p>",
+      "final_answer": "Person perception is the process of forming impressions about others",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q5",
+      "number": 5,
+      "global_number": 20,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Identify introvert Personality.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">An introvert is a person who is inward-oriented and prefers solitude or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">small groups.</li></ul>",
+      "final_answer": "An introvert is a person who is inward-oriented and prefers solitude or",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q6",
+      "number": 6,
+      "global_number": 21,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Discribe nonverbal communication in relationships.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Nonverbal communication includes gestures, facial expressions, posture</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and eye contact.</li></ul>",
+      "final_answer": "Nonverbal communication includes gestures, facial expressions, posture",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q7",
+      "number": 7,
+      "global_number": 22,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Define reciprocity in attraction.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reciprocity in attraction means liking someone who also shows liking in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">return.</li></ul>",
+      "final_answer": "Reciprocity in attraction means liking someone who also shows liking in",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q8",
+      "number": 8,
+      "global_number": 23,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Explain the advantages of using case studies in social psychology.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Self-disclosure involves sharing personal thoughts, emotions, and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>experiences with others. It strengthens emotional bonding and deepens</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interpersonal trust. Through honest communication, intimacy grows and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>relationships become more meaningful.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Case studies provide in-depth understanding of individual behavior and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">real-life situations. They are especially useful for studying rare or complex</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">phenomena.</li></ul>",
+      "final_answer": "phenomena",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "relationships become more meaningful."
+      "has_official_scheme": true
     },
     {
-      "id": "Q16",
-      "number": 16,
+      "id": "P2_Q9",
+      "number": 9,
+      "global_number": 24,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "How does being in a toxic relationship affect an individual sense of self-worth and confidence? Analyse. (Analyse)",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Self-esteem refers to an individual's overall sense of self-worth, influencing confidence</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and mental well-being.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Self-esteem refers to an individual's overall sense of self-worth, influencing confidence"
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "According to Mead's research, how does child-rearing influence personality development across different cultures? Explain.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Ruth Benedict emphasized how cultural patterns shape the collective personality of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>societies, describing culture as a \"personality writ large.\" She studied specific cultures, like</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the Zuni and Dobu, to highlight their unique traits. Margaret Mead, however, focused on</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>how childhood socialization within different cultures influences personality development.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Her work, like the study of adolescence in Samoa, demonstrated the flexibility of human</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>behaviour across cultures. While Benedict emphasized the overarchi ng cultural</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>framework, Mead highlighted the role of individual upbringing and social structures.</li></ul>",
+      "question": "According to Mead's research, how does child-rearing influence / personality development across different cultures? Explain.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Mead explained that child-rearing practices shape personality through</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">social interaction. Different cultures promote different personality traits</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">based on social expectations.</li></ul>",
+      "final_answer": "based on social expectations",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Ruth Benedict emphasized how cultural patterns shape the collective personality of"
+      "has_official_scheme": true
     },
     {
-      "id": "Q18",
-      "number": 18,
+      "id": "P2_Q10",
+      "number": 10,
+      "global_number": 25,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Describe the advantages of using projective techniques. (Understand)",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe the advantages of using projective techniques. (Understand) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the advantages of using projective techniques. (Understand) ."
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[A] ",
       "question": "illustate What are the effective methods of conflict resolution ?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>negotiation, compromise, and mediation. These methods help reduce tension</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and promote mutual understanding.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Effective conflict resolution methods include communication</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">negotiation, compromise, and mediation. These methods help reduce tension</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and promote mutual understanding.</li></ul>",
+      "final_answer": "and promote mutual understanding",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "and promote mutual understanding."
+      "has_official_scheme": true
     },
     {
-      "id": "Q20",
-      "number": 20,
+      "id": "P2_Q11",
+      "number": 11,
+      "global_number": 26,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "How can we build a relationship effectively (Analyse)",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering How can we build a relationship effectively (Analyse) . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering How can we build a relationship effectively (Analyse) ."
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Discuss the advantages and disadvantages of interviews.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interviews allow detailed and flexible data collection but are time-</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>consuming. They may also suffer from interviewer bias.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interviews allow detailed and flexible data collection but are time</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">consuming. They may also suffer from interviewer bias.</li></ul>",
+      "final_answer": "Interviews allow detailed and flexible data collection but are time",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "consuming. They may also suffer from interviewer bias."
+      "has_official_scheme": true
     },
     {
-      "id": "Q22",
-      "number": 22,
+      "id": "P2_Q12",
+      "number": 12,
+      "global_number": 27,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Describe the special features of Id, Ego, and super Ego. (Understand)()",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe the special features of Id, Ego, and super Ego. (Understand)() . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the special features of Id, Ego, and super Ego. (Understand)() ."
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Discuss the factors influencing self-concept development.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Self-concept is influenced by family, peers, social comparison, and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>cultural environment. Life experiences also shape self-identity.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-concept is influenced by family, peers, social comparison, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cultural environment. Life experiences also shape self-identity.</li></ul>",
+      "final_answer": "Self-concept is influenced by family, peers, social comparison, and",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "cultural environment. Life experiences also shape self-identity."
+      "has_official_scheme": true
     },
     {
-      "id": "Q24",
-      "number": 24,
+      "id": "P2_Q13",
+      "number": 13,
+      "global_number": 28,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Examine the impact of social media on interpersonal relationships. (understand) ()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social psychology helps in understanding human behaviour in social settings</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>improving interpersonal relationships, and addressing social issues.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Social psychology helps in understanding human behaviour in social settings"
-    },
-    {
-      "id": "Q25",
-      "number": 25,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[An] ",
-      "question": "Describe the stages of development in psychoanalytic theory, including the oral, anal, and phallic stages.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>childhood development. Each stage is linked to specific personality</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>formation outcomes.</li></ul>",
+      "question": "Describe the stages of development in psychoanalytic theory, including / the oral, anal, and phallic stages.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The psychoanalytic stages include oral, anal, and phallic stages of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">childhood development. Each stage is linked to specific personality</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">formation outcomes.</li></ul>",
+      "final_answer": "formation outcomes",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "formation outcomes."
+      "has_official_scheme": true
     },
     {
-      "id": "Q26",
-      "number": 26,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Describe the signs of toxic relationships (Understand) ()",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering Describe the signs of toxic relationships (Understand) () . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering Describe the signs of toxic relationships (Understand) () ."
-    },
-    {
-      "id": "Q27",
-      "number": 27,
+      "id": "P2_Q14",
+      "number": 14,
+      "global_number": 29,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[An] ",
-      "question": "Analyse toxic relationship affect an individual sense of self-worth and confidence? Explain.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A toxic relationship damages an individual’s self-worth through constant</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>criticism, control, and emotional neglect. It creates insecurity, fear, and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>reduced confidence. Over time, the person may internalize negativity and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>lose emotional stability.</li></ul>",
+      "question": "Analyse toxic relationship affect an individual sense of self-worth and / confidence? Explain.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A toxic relationship damages an individual’s self-worth through constant</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">criticism, control, and emotional neglect. It creates insecurity, fear, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">reduced confidence. Over time, the person may internalize negativity and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lose emotional stability.</li></ul>",
+      "final_answer": "lose emotional stability",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "lose emotional stability."
+      "has_official_scheme": true
     },
     {
-      "id": "Q28",
-      "number": 28,
+      "id": "P2_Q15",
+      "number": 15,
+      "global_number": 30,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Use Sternberg’s triangular theory of love to Understand love relationships. (Apply)()",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis. <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(10 Marks)</span></p>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Detailed essay covering conceptual foundations, mathematical formulation, and critical analysis."
-    },
-    {
-      "id": "Q29",
-      "number": 29,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Discuss the role of self-disclosure in building intimacy and trust in relationships.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Self-disclosure involves sharing personal thoughts, emotions, and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>experiences with others. It strengthens emotional bonding and deepens</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interpersonal trust. Through honest communication, intimacy grows and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>relationships become more meaningful.</li></ul>",
+      "question": "Discuss the role of self-disclosure in building intimacy and trust in / relationships.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Self-disclosure involves sharing personal thoughts, emotions, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">experiences with others. It strengthens emotional bonding and deepens</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interpersonal trust. Through honest communication, intimacy grows and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">relationships become more meaningful.</li></ul>",
+      "final_answer": "relationships become more meaningful",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "relationships become more meaningful."
-    },
-    {
-      "id": "Q30",
-      "number": 30,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[An] [3]",
-      "question": "Case study is an important research method in social psychology. Discuss its strengths and limitations. (Understand)()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social Psychology is the study of how individuals think, feel, and behave in social</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>contexts.</li></ul>",
-      "source_exam": "Official Model Question Paper (FYUGP 2024",
-      "repeated_in": [
-        "Official Model Question Paper (FYUGP 2024"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Social Psychology is the study of how individuals think, feel, and behave in social"
+      "has_official_scheme": true
     }
   ]
 }

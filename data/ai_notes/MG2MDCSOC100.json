@@ -5,319 +5,599 @@
   "semester": 2,
   "course_type": "MDC",
   "max_marks": 70,
-  "total_questions": 21,
-  "repeating_skipped": 3,
+  "total_questions": 22,
+  "total_solved": 22,
+  "repeating_skipped": 0,
   "sources_used": [
-    "Second semester BA/BSc/BVocFYUGP April 2026",
-    "II Semester MGU UGP25 - March - 2025"
+    "II Semester MGU UGP25 - March - 2025",
+    "Second semester BA/BSc/BVocFYUGP April 2026"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 10,
-    "part_b": 7,
-    "part_c": 4
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_1",
+      "paper_title": "EXAMINATION PAPER 1: II SEMESTER MGU UGP25 - MARCH - 2025",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P1_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is meant by cyberspace?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberspace refers to the virtual environment created by interconnected computer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">networks, particularly the internet, where online interactions and communication occur.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li></ul>",
+              "final_answer": "",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What factors influence how people curate their online identities?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">People curate online identities through personal branding, social validation, self</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">expression, audience expectations, personal goals, privacy concerns and carefully</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">managing their digital image to control public perception. .</li></ul>",
+              "final_answer": "managing their digital image to control public perception",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "How does technology impact the development of moral values in / individuals and societies?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technology shapes moral values by influencing behaviors, norms, and interactions, both</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">positively through empathy and knowledge-sharing and negatively via cyberbullying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and privacy concerns, while also challenging traditional frameworks by exposing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">diverse perspectives and reshaping social norms through digital interactions. .</li></ul>",
+              "final_answer": "diverse perspectives and reshaping social norms through digital interactions",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What are social media platforms, and how do they differ from other / online communication tools?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social media platforms are online services for creating, sharing, and interacting with</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">content. Examples include Facebook, Twitter, and Instagram. Unlike email or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">messaging apps, they prioritize public or semi-public interactions. These platforms</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">emphasize user-generated content and real-time social connections. .</li></ul>",
+              "final_answer": "emphasize user-generated content and real-time social connections",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "How do digital identities affect personal privacy and security?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital identities create data trails that can be tracked, collected, and potentially</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misused, increasing vulnerability to privacy breaches, identity theft, and surveillance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li></ul>",
+              "final_answer": "",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Discuss the role of social media in shaping political opinions and / movements.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Yes, social media significantly influences political opinions and movements by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">facilitating information dissemination, mobilization, and discussion. It enables rapid</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">spread of ideas, activism, and community-building around political causes, though it can</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">also spread misinformation. .</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(5 × 2 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
+              "final_answer": "Short Essay Type Questions",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P1_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain digital ethnography.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital ethnography, also known as netnography or virtual ethnography, is a qualitative</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">research method that adapts traditional ethnographic techniques to study online communities</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and cultures. Explores how technology mediates social relationships and cultural practices.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Provides insights into emerging digital cultures and online social norms. .</li></ul>",
+              "final_answer": "Provides insights into emerging digital cultures and online social norms",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What are some examples of negative and harmful behaviours that can / occur online?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberbullying,Identity theft and digital fraud, Hate Speech , Trolling, Doxing (revealing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">private info without consent), Spreading Misinformation/Disinformation , Online Scams and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Fraud, Grooming (manipulating minors online). .</li></ul>",
+              "final_answer": "Fraud, Grooming (manipulating minors online)",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the concept of a network society, and what are its defining / characteristics?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A term popularized by sociologist Manuel Castells, the network society describes a social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">structure where networks, powered by digital technologies, become the primary organizing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">principle of society. Interconnected Networks: Social, economic, and political activities occur</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">in interconnected digital spaces. Decentralization: Hierarchical structures are replaced by more</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">flexible and decentralized networks. Information as a Core Resource: Information and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">knowledge are critical for societal development. .</li></ul>",
+              "final_answer": "knowledge are critical for societal development",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is crypto jacking, and how does it affect users and businesses?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cryptojacking is a type of malware that uses a victim's computer to mine cryptocurrency.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For individual users, it leads to reduced device performance, increased electricity costs, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">potential hardware damage due to excessive resource consumption. Businesses face more</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">severe consequences, including compromised network security, significant productivity losses</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">increased operational costs, and potential data breaches. .</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2 × 5 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li></ul>",
+              "final_answer": "Essay Type Questions",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P1_Q12",
+              "number": 12,
+              "global_number": 11,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Define Artificial intelligence and evaluate its societal implications.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AI refers to computer systems designed to perform tasks that typically require human</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">intelligence, including learning, reasoning, problem-solving, perception, and language</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">understanding. Societal Implications : Economy and Labor: AI has the potential to automate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">tasks, increasing efficiency and productivity across industries. job displacement and the need</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for workforce retraining. New AI-related jobs. Healthcare: AI can revolutionize diagnostics</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">drug discovery, personalized medicine, and patient care, potentially leading to more effective</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and accessible healthcare. Education: AI can personalize learning experiences, provide</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">intelligent tutoring systems, and automate administrative tasks.Governance and Security: AI</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">can enhance public safety through surveillance and crime prediction, but also raises concerns</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">about privacy. Social Interactions: AI-powered virtual assistants and social robots can impact</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">human interaction and companionship. Existential Risks: While debated, some concerns exist</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">regarding the long-term risks of advanced AI, including potential loss of human control.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1 × 15 = 15)</li></ul>",
+              "final_answer": "",
+              "source_exam": "II Semester MGU UGP25 - March - 2025",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "PAPER_2",
+      "paper_title": "EXAMINATION PAPER 2: SECOND SEMESTER BA/BSC/BVOCFYUGP APRIL 2026",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P2_Q1",
+              "number": 1,
+              "global_number": 12,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is virtual reality (VR), and how does it create immersive experiences?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual Reality (VR) is a computer-generated three-dimensional environment that allows</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">users to interact with a simulated world using devices such as VR headsets and sensors. It</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">creates immersive experiences by stimulating vision, sound, and movement, making users</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">feel physically present in a virtual environment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Education</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AR and VR improve learning through interactive and immersive experiences. Students can</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">conduct virtual experiments, explore historical places, and understand complex concepts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">more effectively.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">High Cost</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The equipment and software required for AR and VR are expensive.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Facebook</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Allows users to connect with friends, share posts, photos, videos, and join groups and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communities.</li></ul>",
+              "final_answer": "communities",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q2",
+              "number": 2,
+              "global_number": 13,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What factors influence how people curate their online identities?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Online identities are influenced by factors such as social expectations, peer influence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">personal interests, cultural background, privacy concerns, and the desire for social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">acceptance. Social media platforms also shape how individuals present themselves online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Healthcare</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">VR is used in medical training, surgery simulation, and therapy for mental health conditions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AR assists doctors during surgeries by displaying digital information in real time.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy and Security Risks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">These technologies collect personal and behavioural data, raising privacy concerns.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Instagram</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Focuses mainly on photo and video sharing with features such as stories, reels, and live</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">streaming.</li></ul>",
+              "final_answer": "streaming",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q3",
+              "number": 3,
+              "global_number": 14,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "How does technology impact the development of moral values in individuals / and societies?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">societies?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technology influences moral values by shaping communication, behaviour, and social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interaction. It can promote awareness, education, and global understanding, but excessive</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">dependence on technology may reduce face-to-face interaction and encourage unethical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">practices such as cyberbullying, plagiarism, and online fraud.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Entertainment and Gaming</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">These technologies provide immersive gaming and entertainment experiences, increasing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">user engagement.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Health Issues</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Excessive use may cause eye strain, dizziness, headaches, and social isolation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">WhatsApp</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Provides instant messaging, voice calls, video calls, and group communication.</li></ul>",
+              "final_answer": "Provides instant messaging, voice calls, video calls, and group communication",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q4",
+              "number": 4,
+              "global_number": 15,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Discuss the importance of digital identity in today's society.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital identity refers to the online presence and personal information associated with an</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">individual. It is important because it enables communication, online transactions, education</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">employment opportunities, and access to digital services. A secure digital identity also helps</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">build trust and social participation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Business and Industry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Companies use AR and VR for employee training, product design, virtual meetings, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marketing.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital Divide</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Not everyone has equal access to advanced technologies, increasing inequality.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Twitter/X</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used for sharing short messages, opinions, and news updates quickly.</li></ul>",
+              "final_answer": "Used for sharing short messages, opinions, and news updates quickly",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q5",
+              "number": 5,
+              "global_number": 16,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What are social networks, and how do they create online communities?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social networks are digital platforms that connect people through communication and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sharing of information. They create online communities by allowing users with common</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interests, goals, or identities to interact, collaborate, and exchange ideas regardless of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">geographical boundaries.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Tourism and Real Estate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual tours help people explore tourist destinations and properties remotely.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ethical Concerns</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual environments may encourage addiction, misinformation, or harmful content.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">YouTube</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A video-sharing platform for education, entertainment, and information dissemination.</li></ul>",
+              "final_answer": "A video-sharing platform for education, entertainment, and information dissemination",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q6",
+              "number": 6,
+              "global_number": 17,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What are the ethical concerns surrounding the use of AI in society?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Major ethical concerns related to AI include privacy violations, data misuse, job</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">displacement, algorithmic bias, lack of accountability, surveillance, and the possibility of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misuse in warfare or manipulation. These concerns highlight the need for ethical regulation</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">of AI technologies.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Military and Defence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">VR-based simulations are used for training soldiers in safe environments.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Challenges of AR and VR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technical Limitations</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Limited infrastructure, internet connectivity, and technical knowledge can restrict</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">implementation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">LinkedIn</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A professional networking platform used for career development and employment</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">opportunities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Impact of Social Media on Social Life</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive Impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Improved Communication – Connects people across geographical boundaries.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Access to Information – Provides instant news and educational content.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social Awareness – Helps spread awareness about social issues and movements.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Business Opportunities – Supports digital marketing and entrepreneurship.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Community Building – Creates support groups and online communities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Negative Impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Addiction and Time Wastage – Excessive use affects productivity and mental health.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberbullying – Online harassment negatively affects individuals.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy Risks – Personal data may be misused or leaked.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Fake News and Misinformation – Rapid spread of false information creates confusion.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reduced Face-to-Face Interaction – Overdependence on social media weakens direct social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">relationships.</li></ul>",
+              "final_answer": "relationships",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P2_Q7",
+              "number": 7,
+              "global_number": 18,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Discuss the negative impact of AI.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Artificial Intelligence (AI) has many advantages, but it also creates several negative impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">on society.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Job Displacement – Automation may replace human workers in industries, leading to</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">unemployment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy Concerns – AI systems collect large amounts of personal data, increasing the risk of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">surveillance and misuse.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Bias and Discrimination – AI algorithms may reflect social biases and produce unfair</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">decisions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cybercrime and Misuse – AI can be used for hacking, deepfakes, and spreading</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misinformation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dependence on Technology – Excessive reliance on AI may reduce human creativity and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">decision-making abilities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ethical Issues – Lack of accountability in AI decisions raises moral and legal concerns.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Therefore, responsible use and regulation of AI are essential for protecting society.</li></ul>",
+              "final_answer": "Therefore, responsible use and regulation of AI are essential for protecting society",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q8",
+              "number": 8,
+              "global_number": 19,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "List and explain some examples of respectful and positive behaviour online.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">List and Explain Some Examples of Respectful and Positive Behaviour Online</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive online behaviour promotes healthy digital interaction and cyber ethics.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examples</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Using Polite Language</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Communicating respectfully without abusive or offensive words.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Respecting Privacy</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Not sharing others’ personal information or images without permission.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Avoiding Cyberbullying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Treating others kindly and not harassing or humiliating people online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Sharing Accurate Information</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Verifying facts before forwarding messages or news.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Acknowledging Others’ Opinions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Respecting different viewpoints and engaging in constructive discussions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Practicing Digital Responsibility</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Following ethical rules and reporting harmful online activities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Such behaviours help create safe and inclusive online communities.</li></ul>",
+              "final_answer": "Such behaviours help create safe and inclusive online communities",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q9",
+              "number": 9,
+              "global_number": 20,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the concept of a network society, and what are its defining / characteristics?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The concept of a network society was developed by Manuel Castells. A network society is a</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">society where social, economic, and cultural activities are organized through digital</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communication networks.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Characteristics</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Global Connectivity – People are connected across the world through the internet.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Information-Based Economy – Knowledge and information become key economic resources.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital Communication – Online interaction replaces many traditional forms of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communication.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Flexibility and Decentralization – Networks allow flexible and rapid exchange of information.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual Communities – Social relationships increasingly occur in digital spaces.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The network society has transformed work, education, politics, and social relationships.</li></ul>",
+              "final_answer": "The network society has transformed work, education, politics, and social relationships",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q10",
+              "number": 10,
+              "global_number": 21,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "How does identity theft occur in the digital world, and what can individuals do / to safeguard their personal information?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Safeguard their Personal Information?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Identity theft occurs when criminals steal personal information such as passwords, bank</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">details, Aadhaar numbers, or social media credentials for fraudulent purposes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Common Methods</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phishing emails and fake websites</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Hacking and malware attacks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data breaches</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social engineering techniques</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Safeguarding Measures</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use strong and unique passwords.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Enable two-factor authentication.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Avoid sharing sensitive information online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Update software and antivirus systems regularly.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Be cautious while opening suspicious emails or links.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use secure websites for online transactions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital awareness and cyber security practices help protect individuals from identity theft.</li></ul>",
+              "final_answer": "Digital awareness and cyber security practices help protect individuals from identity theft",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_C",
+          "section_title": "Part C — Essay Questions",
+          "marks_per_question": 10,
+          "questions": [
+            {
+              "id": "P2_Q12",
+              "number": 12,
+              "global_number": 22,
+              "part": "PART_C",
+              "marks": 10,
+              "question": "Discuss the features of various social media platforms and its impact on social / life.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social media platforms are digital communication tools that enable people to create, share</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and exchange information globally.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Features of Social Media Platforms</li></ul>",
+              "final_answer": "Features of Social Media Platforms",
+              "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P1_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
       "question": "What is meant by cyberspace?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Cyberspace refers to the virtual environment created by interconnected computer</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>networks, particularly the internet, where online interactions and communication occur.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberspace refers to the virtual environment created by interconnected computer</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">networks, particularly the internet, where online interactions and communication occur.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li></ul>",
+      "final_answer": "",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Cyberspace refers to the virtual environment created by interconnected computer"
+      "has_official_scheme": true
     },
     {
-      "id": "Q2",
+      "id": "P1_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What is virtual reality (VR), and how does it create immersive experiences?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Online identities are influenced by factors such as social expectations, peer influence</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>personal interests, cultural background, privacy concerns, and the desire for social</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>acceptance. Social media platforms also shape how individuals present themselves online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Healthcare</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>VR is used in medical training, surgery simulation, and therapy for mental health conditions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>AR assists doctors during surgeries by displaying digital information in real time.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Privacy and Security Risks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>These technologies collect personal and behavioural data, raising privacy concerns.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Instagram</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Focuses mainly on photo and video sharing with features such as stories, reels, and live</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>streaming.</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "streaming."
-    },
-    {
-      "id": "Q3",
-      "number": 3,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
       "question": "What factors influence how people curate their online identities?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Technology shapes moral values by influencing behaviors, norms, and interactions, both</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>positively through empathy and knowledge-sharing and negatively via cyberbullying</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and privacy concerns, while also challenging traditional frameworks by exposing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>diverse perspectives and reshaping social norms through digital interactions. .</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">People curate online identities through personal branding, social validation, self</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">expression, audience expectations, personal goals, privacy concerns and carefully</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">managing their digital image to control public perception. .</li></ul>",
+      "final_answer": "managing their digital image to control public perception",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [
-        "Second semester BA/BSc/BVocFYUGP April 2026"
-      ],
-      "has_official_scheme": true,
-      "final_answer": "diverse perspectives and reshaping social norms through digital interactions. ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q4",
+      "id": "P1_Q3",
+      "number": 3,
+      "global_number": 3,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "How does technology impact the development of moral values in / individuals and societies?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technology shapes moral values by influencing behaviors, norms, and interactions, both</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">positively through empathy and knowledge-sharing and negatively via cyberbullying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and privacy concerns, while also challenging traditional frameworks by exposing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">diverse perspectives and reshaping social norms through digital interactions. .</li></ul>",
+      "final_answer": "diverse perspectives and reshaping social norms through digital interactions",
+      "source_exam": "II Semester MGU UGP25 - March - 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P1_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[A] ",
-      "question": "How does technology impact the development of moral values in individuals and societies?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social media platforms are online services for creating, sharing, and interacting with</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>content. Examples include Facebook, Twitter, and Instagram. Unlike email or</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>messaging apps, they prioritize public or semi-public interactions. These platforms</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>emphasize user-generated content and real-time social connections. .</li></ul>",
+      "question": "What are social media platforms, and how do they differ from other / online communication tools?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social media platforms are online services for creating, sharing, and interacting with</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">content. Examples include Facebook, Twitter, and Instagram. Unlike email or</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">messaging apps, they prioritize public or semi-public interactions. These platforms</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">emphasize user-generated content and real-time social connections. .</li></ul>",
+      "final_answer": "emphasize user-generated content and real-time social connections",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [
-        "Second semester BA/BSc/BVocFYUGP April 2026"
-      ],
-      "has_official_scheme": true,
-      "final_answer": "emphasize user-generated content and real-time social connections. ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q5",
+      "id": "P1_Q5",
       "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What are social media platforms, and how do they differ from other online communication tools?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Digital identities create data trails that can be tracked, collected, and potentially</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>misused, increasing vulnerability to privacy breaches, identity theft, and surveillance.</li></ul>",
-      "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Digital identities create data trails that can be tracked, collected, and potentially"
-    },
-    {
-      "id": "Q6",
-      "number": 6,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Discuss the importance of digital identity in today's society.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Major ethical concerns related to AI include privacy violations, data misuse, job</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>displacement, algorithmic bias, lack of accountability, surveillance, and the possibility of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>misuse in warfare or manipulation. These concerns highlight the need for ethical regulation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>of AI technologies.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Answer any 2 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span> each)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Military and Defence</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>VR-based simulations are used for training soldiers in safe environments.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Challenges of AR and VR</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Technical Limitations</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Limited infrastructure, internet connectivity, and technical knowledge can restrict</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>implementation.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>LinkedIn</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A professional networking platform used for career development and employment</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>opportunities.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Impact of Social Media on Social Life</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive Impacts</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Improved Communication – Connects people across geographical boundaries.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Access to Information – Provides instant news and educational content.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social Awareness – Helps spread awareness about social issues and movements.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Business Opportunities – Supports digital marketing and entrepreneurship.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Community Building – Creates support groups and online communities.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Negative Impacts</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Addiction and Time Wastage – Excessive use affects productivity and mental health.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Cyberbullying – Online harassment negatively affects individuals.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Privacy Risks – Personal data may be misused or leaked.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fake News and Misinformation – Rapid spread of false information creates confusion.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reduced Face-to-Face Interaction – Overdependence on social media weakens direct social</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>relationships.</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "relationships."
-    },
-    {
-      "id": "Q7",
-      "number": 7,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[E] ",
       "question": "How do digital identities affect personal privacy and security?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Digital ethnography, also known as netnography or virtual ethnography, is a qualitative</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>research method that adapts traditional ethnographic techniques to study online communities</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and cultures. Explores how technology mediates social relationships and cultural practices .</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Provides insights into emerging digital cultures and online social norms. .</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital identities create data trails that can be tracked, collected, and potentially</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misused, increasing vulnerability to privacy breaches, identity theft, and surveillance.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li></ul>",
+      "final_answer": "",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Provides insights into emerging digital cultures and online social norms. ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q8",
-      "number": 8,
+      "id": "P1_Q6",
+      "number": 6,
+      "global_number": 6,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What are social networks, and how do they create online communities?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>List and Explain Some Examples of Respectful and Positive Behaviour Online</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive online behaviour promotes healthy digital interaction and cyber ethics.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using Polite Language</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Communicating respectfully without abusive or offensive words.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting Privacy</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Not sharing others’ personal information or images without permission.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Avoiding Cyberbullying</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Treating others kindly and not harassing or humiliating people online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sharing Accurate Information</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Verifying facts before forwarding messages or news.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Acknowledging Others’ Opinions</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting different viewpoints and engaging in constructive discussions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Practicing Digital Responsibility</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Following ethical rules and reporting harmful online activities.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Such behaviours help create safe and inclusive online communities.</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Such behaviours help create safe and inclusive online communities."
-    },
-    {
-      "id": "Q9",
-      "number": 9,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Discuss the role of social media in shaping political opinions and movements.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A term popularized by sociologist Manuel Castells, the network society describes a social</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>structure where networks, powered by digital technologies, become the primary organizing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>principle of society. Interconnected Networks: Social, economic, and political activities occur</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>in interconnected digital spaces. Decentralization: Hierarchical structures are replaced by more</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>flexible and decentralized networks. Information as a Core Resource: Information and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>knowledge are critical for societal development. .</li></ul>",
+      "question": "Discuss the role of social media in shaping political opinions and / movements.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Yes, social media significantly influences political opinions and movements by</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">facilitating information dissemination, mobilization, and discussion. It enables rapid</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">spread of ideas, activism, and community-building around political causes, though it can</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">also spread misinformation. .</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(5 × 2 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
+      "final_answer": "Short Essay Type Questions",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "knowledge are critical for societal development. ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q10",
-      "number": 10,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What are the ethical concerns surrounding the use of AI in society?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Safeguard their Personal Information?</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Identity theft occurs when criminals steal personal information such as passwords, bank</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>details, Aadhaar numbers, or social media credentials for fraudulent purposes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Common Methods</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phishing emails and fake websites</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hacking and malware attacks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data breaches</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social engineering techniques</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Safeguarding Measures</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use strong and unique passwords.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Enable two-factor authentication.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Avoid sharing sensitive information online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Update software and antivirus systems regularly.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Be cautious while opening suspicious emails or links.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use secure websites for online transactions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Digital awareness and cyber security practices help protect individuals from identity theft.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Answer any 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span>)</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(Answer any 1"
-    },
-    {
-      "id": "Q11",
-      "number": 11,
+      "id": "P1_Q7",
+      "number": 7,
+      "global_number": 7,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
       "question": "Explain digital ethnography.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The cyber world and society are deeply and increasingly intertwined, forming a complex</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>symbiotic relationship. Social Interaction: The cyber world provides platforms for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>communication, relationship building, and community formation, often transcending</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>geographical boundaries. Economy: E-commerce, digital marketplaces, online banking driven</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>by the cyber world. Businesses rely heavily on digital infrastructure for operations, marketing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and global reach. Politics and Governance: The cyber world is a crucial space for political</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>discourse, mobilization, and information dissemination. Governments utilize digital platforms</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for service delivery and communication, while also facing challenges related to cybersecurity</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and online governance. Culture and Identity: Digital platforms shape cultural trends</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>facilitate the sharing of creative content, and influence identity formation and expression.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Education and Knowledge: The internet provides unprecedented access to information and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>learning resources, transforming educational practices and democratizing knowledge</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>acquisition. Health and Wellbeing: Digital connectivity impacts physical and mental health</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>through healthcare technologies, information access, and changing lifestyle patterns.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Challenges: This deep interconnectedness also presents challenges such as cybercrime, privacy</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>violations, the spread of misinformation, digital divides, and the potential for social isolation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and mental health issues. .</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital ethnography, also known as netnography or virtual ethnography, is a qualitative</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">research method that adapts traditional ethnographic techniques to study online communities</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and cultures. Explores how technology mediates social relationships and cultural practices.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Provides insights into emerging digital cultures and online social norms. .</li></ul>",
+      "final_answer": "Provides insights into emerging digital cultures and online social norms",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "and mental health issues. ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q12",
-      "number": 12,
+      "id": "P1_Q8",
+      "number": 8,
+      "global_number": 8,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Discuss the negative impact of AI.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social media platforms are digital communication tools that enable people to create, share</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and exchange information globally.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Features of Social Media Platforms</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Features of Social Media Platforms"
-    },
-    {
-      "id": "Q13",
-      "number": 13,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "What are some examples of negative and harmful behaviours that can occur online?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>List and Explain Some Examples of Respectful and Positive Behaviour Online</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive online behaviour promotes healthy digital interaction and cyber ethics.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using Polite Language</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Communicating respectfully without abusive or offensive words.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting Privacy</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Not sharing others’ personal information or images without permission.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Avoiding Cyberbullying</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Treating others kindly and not harassing or humiliating people online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sharing Accurate Information</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Verifying facts before forwarding messages or news.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Acknowledging Others’ Opinions</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting different viewpoints and engaging in constructive discussions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Practicing Digital Responsibility</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Following ethical rules and reporting harmful online activities.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Such behaviours help create safe and inclusive online communities.</li></ul>",
+      "question": "What are some examples of negative and harmful behaviours that can / occur online?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberbullying,Identity theft and digital fraud, Hate Speech , Trolling, Doxing (revealing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">private info without consent), Spreading Misinformation/Disinformation , Online Scams and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Fraud, Grooming (manipulating minors online). .</li></ul>",
+      "final_answer": "Fraud, Grooming (manipulating minors online)",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Such behaviours help create safe and inclusive online communities."
+      "has_official_scheme": true
     },
     {
-      "id": "Q14",
-      "number": 14,
+      "id": "P1_Q9",
+      "number": 9,
+      "global_number": 9,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[K] ",
-      "question": "List and explain some examples of respectful and positive behaviour online.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Positive online behaviour promotes healthy digital interaction and cyber ethics.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Examples</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Using Polite Language</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Communicating respectfully without abusive or offensive words.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting Privacy</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Not sharing others’ personal information or images without permission.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Avoiding Cyberbullying</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Treating others kindly and not harassing or humiliating people online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Sharing Accurate Information</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Verifying facts before forwarding messages or news.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Acknowledging Others’ Opinions</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Respecting different viewpoints and engaging in constructive discussions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Practicing Digital Responsibility</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Following ethical rules and reporting harmful online activities.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Such behaviours help create safe and inclusive online communities.</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Such behaviours help create safe and inclusive online communities."
-    },
-    {
-      "id": "Q15",
-      "number": 15,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "What is the concept of a network society, and what are its defining characteristics?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The concept of a network society was developed by Manuel Castells. A network society is a</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>society where social, economic, and cultural activities are organized through digital</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>communication networks.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Characteristics</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Global Connectivity – People are connected across the world through the internet.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Information-Based Economy – Knowledge and information become key economic resources.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Digital Communication – Online interaction replaces many traditional forms of</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>communication.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Flexibility and Decentralization – Networks allow flexible and rapid exchange of information.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Virtual Communities – Social relationships increasingly occur in digital spaces.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The network society has transformed work, education, politics, and social relationships.</li></ul>",
+      "question": "What is the concept of a network society, and what are its defining / characteristics?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A term popularized by sociologist Manuel Castells, the network society describes a social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">structure where networks, powered by digital technologies, become the primary organizing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">principle of society. Interconnected Networks: Social, economic, and political activities occur</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">in interconnected digital spaces. Decentralization: Hierarchical structures are replaced by more</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">flexible and decentralized networks. Information as a Core Resource: Information and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">knowledge are critical for societal development. .</li></ul>",
+      "final_answer": "knowledge are critical for societal development",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [
-        "Second semester BA/BSc/BVocFYUGP April 2026"
-      ],
-      "has_official_scheme": true,
-      "final_answer": "The network society has transformed work, education, politics, and social relationships."
+      "has_official_scheme": true
     },
     {
-      "id": "Q16",
-      "number": 16,
+      "id": "P1_Q10",
+      "number": 10,
+      "global_number": 10,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[An] ",
       "question": "What is crypto jacking, and how does it affect users and businesses?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Virtual Reality (VR) is a computer-generated three-dimensional environment that allows</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>users to interact with a simulated world using devices such as VR headsets and sensors. It</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>creates immersive experiences by stimulating vision, sound, and movement, making users</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>feel physically present in a virtual environment.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Education</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>AR and VR improve learning through interactive and immersive experiences. Students can</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>conduct virtual experiments, explore historical places, and understand complex concepts</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>more effectively.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>High Cost</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The equipment and software required for AR and VR are expensive.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Facebook</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Allows users to connect with friends, share posts, photos, videos, and join groups and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>communities.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cryptojacking is a type of malware that uses a victim's computer to mine cryptocurrency.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For individual users, it leads to reduced device performance, increased electricity costs, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">potential hardware damage due to excessive resource consumption. Businesses face more</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">severe consequences, including compromised network security, significant productivity losses</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">increased operational costs, and potential data breaches. .</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(2 × 5 = 10)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li></ul>",
+      "final_answer": "Essay Type Questions",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "communities."
+      "has_official_scheme": true
     },
     {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[An] ",
-      "question": "How does identity theft occur in the digital world, and what can individuals do to safeguard their personal information?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Identity theft occurs when criminals steal personal information such as passwords, bank</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>details, Aadhaar numbers, or social media credentials for fraudulent purposes.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Common Methods</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Phishing emails and fake websites</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Hacking and malware attacks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data breaches</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social engineering techniques</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Safeguarding Measures</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use strong and unique passwords.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Enable two-factor authentication.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Avoid sharing sensitive information online.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Update software and antivirus systems regularly.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Be cautious while opening suspicious emails or links.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Use secure websites for online transactions.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Digital awareness and cyber security practices help protect individuals from identity theft.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Answer any 1 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(15 marks)</span>)</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(Answer any 1"
-    },
-    {
-      "id": "Q18",
-      "number": 18,
+      "id": "P1_Q12",
+      "number": 12,
+      "global_number": 11,
       "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
       "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Discuss the interconnectedness of the cyber world and society.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The cyber world and society are deeply and increasingly intertwined, forming a complex</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>symbiotic relationship. Social Interaction: The cyber world provides platforms for</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>communication, relationship building, and community formation, often transcending</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>geographical boundaries. Economy: E-commerce, digital marketplaces, online banking driven</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>by the cyber world. Businesses rely heavily on digital infrastructure for operations, marketing</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and global reach. Politics and Governance: The cyber world is a crucial space for political</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>discourse, mobilization, and information dissemination. Governments utilize digital platforms</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for service delivery and communication, while also facing challenges related to cybersecurity</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and online governance. Culture and Identity: Digital platforms shape cultural trends</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>facilitate the sharing of creative content, and influence identity formation and expression.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Education and Knowledge: The internet provides unprecedented access to information and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>learning resources, transforming educational practices and democratizing knowledge</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>acquisition. Health and Wellbeing: Digital connectivity impacts physical and mental health</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>through healthcare technologies, information access, and changing lifestyle patterns.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Challenges: This deep interconnectedness also presents challenges such as cybercrime, privacy</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>violations, the spread of misinformation, digital divides, and the potential for social isolation</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and mental health issues. .</li></ul>",
-      "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "and mental health issues. ."
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Examine the potential benefits and challenges of implementing AR and VR technologies in various sectors of society.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Augmented Reality (AR) and Virtual Reality (VR) are advanced technologies that transform</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>how people interact with digital environments. AR overlays digital information onto the real</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>world, while VR creates fully immersive virtual environments.</li></ul>",
-      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Benefits of AR and VR"
-    },
-    {
-      "id": "Q20",
-      "number": 20,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[E] ",
       "question": "Define Artificial intelligence and evaluate its societal implications.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>AI refers to computer systems designed to perform tasks that typically require human</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>intelligence, including learning, reasoning, problem-solving, perception, and language</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>understanding. Societal Implications : Economy and Labor: AI has the potential to automate</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>tasks, increasing efficiency and productivity across industries. job displacement and the need</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>for workforce retraining. New AI-related jobs. Healthcare: AI can revolutionize diagnostics</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>drug discovery, personalized medicine, and patient care, potentially leading to more effective</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and accessible healthcare. Education: AI can personalize learning experiences, provide</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>intelligent tutoring systems, and automate administrative tasks. Governance and Security: AI</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>can enhance public safety through surveillance and crime prediction, but also raises concerns</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>about privacy. Social Interactions: AI-powered virtual assistants and social robots can impact</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>human interaction and companionship. Existential Risks: While debated, some concerns exist</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>regarding the long-term risks of advanced AI, including potential loss of human control.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(1 × 15 = 15)</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AI refers to computer systems designed to perform tasks that typically require human</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">intelligence, including learning, reasoning, problem-solving, perception, and language</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">understanding. Societal Implications : Economy and Labor: AI has the potential to automate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">tasks, increasing efficiency and productivity across industries. job displacement and the need</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">for workforce retraining. New AI-related jobs. Healthcare: AI can revolutionize diagnostics</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">drug discovery, personalized medicine, and patient care, potentially leading to more effective</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and accessible healthcare. Education: AI can personalize learning experiences, provide</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">intelligent tutoring systems, and automate administrative tasks.Governance and Security: AI</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">can enhance public safety through surveillance and crime prediction, but also raises concerns</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">about privacy. Social Interactions: AI-powered virtual assistants and social robots can impact</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">human interaction and companionship. Existential Risks: While debated, some concerns exist</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">regarding the long-term risks of advanced AI, including potential loss of human control.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1 × 15 = 15)</li></ul>",
+      "final_answer": "",
       "source_exam": "II Semester MGU UGP25 - March - 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(1 × 15 = 15)"
+      "has_official_scheme": true
     },
     {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_C",
-      "part_label": "Part C (Long Essay / Problem)",
-      "marks": 10,
-      "domain_tag": "[U] ",
-      "question": "Discuss the features of various social media platforms and its impact on social life.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Social media platforms are digital communication tools that enable people to create, share</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>and exchange information globally.</li></ul>",
+      "id": "P2_Q1",
+      "number": 1,
+      "global_number": 12,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is virtual reality (VR), and how does it create immersive experiences?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual Reality (VR) is a computer-generated three-dimensional environment that allows</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">users to interact with a simulated world using devices such as VR headsets and sensors. It</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">creates immersive experiences by stimulating vision, sound, and movement, making users</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">feel physically present in a virtual environment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Education</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AR and VR improve learning through interactive and immersive experiences. Students can</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">conduct virtual experiments, explore historical places, and understand complex concepts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">more effectively.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">High Cost</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The equipment and software required for AR and VR are expensive.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Facebook</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Allows users to connect with friends, share posts, photos, videos, and join groups and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communities.</li></ul>",
+      "final_answer": "communities",
       "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Features of Social Media Platforms"
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q2",
+      "number": 2,
+      "global_number": 13,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What factors influence how people curate their online identities?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Online identities are influenced by factors such as social expectations, peer influence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">personal interests, cultural background, privacy concerns, and the desire for social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">acceptance. Social media platforms also shape how individuals present themselves online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Healthcare</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">VR is used in medical training, surgery simulation, and therapy for mental health conditions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">AR assists doctors during surgeries by displaying digital information in real time.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy and Security Risks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">These technologies collect personal and behavioural data, raising privacy concerns.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Instagram</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Focuses mainly on photo and video sharing with features such as stories, reels, and live</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">streaming.</li></ul>",
+      "final_answer": "streaming",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q3",
+      "number": 3,
+      "global_number": 14,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "How does technology impact the development of moral values in individuals / and societies?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">societies?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technology influences moral values by shaping communication, behaviour, and social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interaction. It can promote awareness, education, and global understanding, but excessive</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">dependence on technology may reduce face-to-face interaction and encourage unethical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">practices such as cyberbullying, plagiarism, and online fraud.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Entertainment and Gaming</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">These technologies provide immersive gaming and entertainment experiences, increasing</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">user engagement.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Health Issues</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Excessive use may cause eye strain, dizziness, headaches, and social isolation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">WhatsApp</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Provides instant messaging, voice calls, video calls, and group communication.</li></ul>",
+      "final_answer": "Provides instant messaging, voice calls, video calls, and group communication",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q4",
+      "number": 4,
+      "global_number": 15,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Discuss the importance of digital identity in today's society.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital identity refers to the online presence and personal information associated with an</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">individual. It is important because it enables communication, online transactions, education</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">employment opportunities, and access to digital services. A secure digital identity also helps</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">build trust and social participation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Business and Industry</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Companies use AR and VR for employee training, product design, virtual meetings, and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marketing.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital Divide</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Not everyone has equal access to advanced technologies, increasing inequality.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Twitter/X</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Used for sharing short messages, opinions, and news updates quickly.</li></ul>",
+      "final_answer": "Used for sharing short messages, opinions, and news updates quickly",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q5",
+      "number": 5,
+      "global_number": 16,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What are social networks, and how do they create online communities?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social networks are digital platforms that connect people through communication and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sharing of information. They create online communities by allowing users with common</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interests, goals, or identities to interact, collaborate, and exchange ideas regardless of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">geographical boundaries.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Tourism and Real Estate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual tours help people explore tourist destinations and properties remotely.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ethical Concerns</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual environments may encourage addiction, misinformation, or harmful content.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">YouTube</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A video-sharing platform for education, entertainment, and information dissemination.</li></ul>",
+      "final_answer": "A video-sharing platform for education, entertainment, and information dissemination",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q6",
+      "number": 6,
+      "global_number": 17,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What are the ethical concerns surrounding the use of AI in society?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Major ethical concerns related to AI include privacy violations, data misuse, job</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">displacement, algorithmic bias, lack of accountability, surveillance, and the possibility of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misuse in warfare or manipulation. These concerns highlight the need for ethical regulation</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">of AI technologies.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Military and Defence</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">VR-based simulations are used for training soldiers in safe environments.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Challenges of AR and VR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Technical Limitations</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Limited infrastructure, internet connectivity, and technical knowledge can restrict</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">implementation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">LinkedIn</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">A professional networking platform used for career development and employment</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">opportunities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Impact of Social Media on Social Life</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive Impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Improved Communication – Connects people across geographical boundaries.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Access to Information – Provides instant news and educational content.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social Awareness – Helps spread awareness about social issues and movements.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Business Opportunities – Supports digital marketing and entrepreneurship.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Community Building – Creates support groups and online communities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Negative Impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Addiction and Time Wastage – Excessive use affects productivity and mental health.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cyberbullying – Online harassment negatively affects individuals.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy Risks – Personal data may be misused or leaked.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Fake News and Misinformation – Rapid spread of false information creates confusion.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reduced Face-to-Face Interaction – Overdependence on social media weakens direct social</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">relationships.</li></ul>",
+      "final_answer": "relationships",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q7",
+      "number": 7,
+      "global_number": 18,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Discuss the negative impact of AI.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Artificial Intelligence (AI) has many advantages, but it also creates several negative impacts</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">on society.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Job Displacement – Automation may replace human workers in industries, leading to</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">unemployment.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Privacy Concerns – AI systems collect large amounts of personal data, increasing the risk of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">surveillance and misuse.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Bias and Discrimination – AI algorithms may reflect social biases and produce unfair</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">decisions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Cybercrime and Misuse – AI can be used for hacking, deepfakes, and spreading</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">misinformation.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dependence on Technology – Excessive reliance on AI may reduce human creativity and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">decision-making abilities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ethical Issues – Lack of accountability in AI decisions raises moral and legal concerns.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Therefore, responsible use and regulation of AI are essential for protecting society.</li></ul>",
+      "final_answer": "Therefore, responsible use and regulation of AI are essential for protecting society",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q8",
+      "number": 8,
+      "global_number": 19,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "List and explain some examples of respectful and positive behaviour online.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">List and Explain Some Examples of Respectful and Positive Behaviour Online</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Positive online behaviour promotes healthy digital interaction and cyber ethics.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Examples</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Using Polite Language</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Communicating respectfully without abusive or offensive words.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Respecting Privacy</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Not sharing others’ personal information or images without permission.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Avoiding Cyberbullying</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Treating others kindly and not harassing or humiliating people online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Sharing Accurate Information</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Verifying facts before forwarding messages or news.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Acknowledging Others’ Opinions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Respecting different viewpoints and engaging in constructive discussions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Practicing Digital Responsibility</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Following ethical rules and reporting harmful online activities.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Such behaviours help create safe and inclusive online communities.</li></ul>",
+      "final_answer": "Such behaviours help create safe and inclusive online communities",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q9",
+      "number": 9,
+      "global_number": 20,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "What is the concept of a network society, and what are its defining / characteristics?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The concept of a network society was developed by Manuel Castells. A network society is a</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">society where social, economic, and cultural activities are organized through digital</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communication networks.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Characteristics</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Global Connectivity – People are connected across the world through the internet.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Information-Based Economy – Knowledge and information become key economic resources.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital Communication – Online interaction replaces many traditional forms of</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">communication.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Flexibility and Decentralization – Networks allow flexible and rapid exchange of information.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Virtual Communities – Social relationships increasingly occur in digital spaces.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The network society has transformed work, education, politics, and social relationships.</li></ul>",
+      "final_answer": "The network society has transformed work, education, politics, and social relationships",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q10",
+      "number": 10,
+      "global_number": 21,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "How does identity theft occur in the digital world, and what can individuals do / to safeguard their personal information?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Safeguard their Personal Information?</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Identity theft occurs when criminals steal personal information such as passwords, bank</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">details, Aadhaar numbers, or social media credentials for fraudulent purposes.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Common Methods</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Phishing emails and fake websites</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Hacking and malware attacks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data breaches</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social engineering techniques</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Safeguarding Measures</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use strong and unique passwords.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Enable two-factor authentication.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Avoid sharing sensitive information online.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Update software and antivirus systems regularly.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Be cautious while opening suspicious emails or links.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Use secure websites for online transactions.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Digital awareness and cyber security practices help protect individuals from identity theft.</li></ul>",
+      "final_answer": "Digital awareness and cyber security practices help protect individuals from identity theft",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q12",
+      "number": 12,
+      "global_number": 22,
+      "part": "PART_C",
+      "marks": 10,
+      "question": "Discuss the features of various social media platforms and its impact on social / life.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Social media platforms are digital communication tools that enable people to create, share</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">and exchange information globally.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Features of Social Media Platforms</li></ul>",
+      "final_answer": "Features of Social Media Platforms",
+      "source_exam": "Second semester BA/BSc/BVocFYUGP April 2026",
+      "has_official_scheme": true
     }
   ]
 }

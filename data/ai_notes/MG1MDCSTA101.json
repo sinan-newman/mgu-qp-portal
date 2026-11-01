@@ -5,711 +5,777 @@
   "semester": 1,
   "course_type": "MDC",
   "max_marks": 70,
-  "total_questions": 45,
-  "repeating_skipped": 32,
+  "total_questions": 30,
+  "total_solved": 30,
+  "repeating_skipped": 0,
   "sources_used": [
-    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-    "Data Analysis using Libre Calc",
-    "Official Practical Model Paper",
-    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024"
+    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
   ],
   "has_official_scheme": true,
-  "parts_summary": {
-    "part_a": 35,
-    "part_b": 10,
-    "part_c": 0
-  },
   "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
+  "papers": [
+    {
+      "paper_id": "PAPER_1",
+      "paper_title": "EXAMINATION PAPER 1: MGU-UGP (HONOURS) REGULAR EXAM SEM 1, NOV 2024",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P1_Q1",
+              "number": 1,
+              "global_number": 1,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the purpose of data validation in LibreOffice Calc? a) To prevent errors in data entry b) To format cells based on conditions c) To perform calculations on data d) To create charts and graphs a) Numerical b) Alphabetical c) Custom d) None of these",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a) To prevent errors in data entry - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option To prevent errors in data entry - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q2",
+              "number": 2,
+              "global_number": 2,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which of the following operations can you perform within a Pivot Table in Libre Office Calc? a) Grouping data b) Applying filters c) Sorting by row or column d) All of the above",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> d) All of the above - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (d) All of the above - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q3",
+              "number": 3,
+              "global_number": 3,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "If the response to a question are Strongly Disagree, Disagree, Neutral, Agree and Strongly agree, which sorting we use?",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Custom - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (c) Custom - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q4",
+              "number": 4,
+              "global_number": 4,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "ANOVA is used to compare a) One sample b) At least one sample c) More than two samples d) None of the above",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) More than two samples - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (c) More than two samples - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q5",
+              "number": 5,
+              "global_number": 5,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "To find the first quartile (Q1) in LibreOffice Calc, which function is used? a) =QUARTILE(A1:A10, 1) b) =QUARTILE(A1:A10, 0) c) =QUARTILE(A1:A10, 2) d) =QUARTILE(A1:A10, 3)",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a) =QUARTILE (A1:A10,1) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option =QUARTILE (A1:A10,1) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q6",
+              "number": 6,
+              "global_number": 6,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Choose the correct syntax from the following a) =MINIMUM(B1;B10) b) =MIN(B1:B10) c) =MINIMUM(B1:B10) d) =MIN(B1;B10)",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) =MIN (B1:B10) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (b) =MIN (B1:B10) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q7",
+              "number": 7,
+              "global_number": 7,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What type of data is best suited for a histogram? a) Categorical data b) Ordinal data c) Continuous or grouped data d) Ratio type data",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Continuous or grouped data - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (c) Continuous or grouped data - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q8",
+              "number": 8,
+              "global_number": 8,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What does a pie chart represent? a) The distribution of data points b) Data changes over time c) Portions or percentages of a d) Comparison between two data whole sets",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Portions or percentages of a whole - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (c) Portions or percentages of a whole - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q9",
+              "number": 9,
+              "global_number": 9,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the non-parametric analogue of one sample t test? a) Sign Test b) Wilcoxon one sample Signed - Rank test c) Chi – squire test d) F - Test",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) Wilcoxon one sample signed- rank test - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (b) Wilcoxon one sample signed- rank test - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q10",
+              "number": 10,
+              "global_number": 10,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "The range of values that coefficient of correlation can take are a) 0 to +1 b) -1 to +1 c) -1 to 0 d) 0 to infinity",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) -1 to +1 - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+              "final_answer": "Option (b) -1 to +1 - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P1_Q11",
+              "number": 11,
+              "global_number": 11,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What are the key characteristics of nominal, ordinal, interval, and ratio data?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Characteristics of nominal, ordinal, Interval and ratio data –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definitions or examples of nominal, ordinal, interval and ratio data–Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Any 3 –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span>, Any 2 – Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Any 1—Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+              "final_answer": "Any 3 –Give , Any 2 – Give , Any 1—Give",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q12",
+              "number": 12,
+              "global_number": 12,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "How do you interpret the p-value from a paired t-test in Calc?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpretation of p value from a paired t test in Libre Calc –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of p value –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. Based on p value, we can reject or accept the null</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">hypothesis- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. How to do Paired t test in Libre Calc- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marks]</li></ul>",
+              "final_answer": "marks]",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q13",
+              "number": 13,
+              "global_number": 13,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Distinguish between word wrapping, shrinking and orientation options in Alignment tab in Format Cell",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Purpose of Word wrapping, Shrinking and orientation option in Alignment tab in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Format cell–Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. Any two- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span>, Any one –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[Max:<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>]</li></ul>",
+              "final_answer": "[Max:]",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q14",
+              "number": 14,
+              "global_number": 14,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "The following are the scores of two batsmen A and B in a series of innings A 12 15 6 73 7 19 19 36 84 29 B 47 12 76 42 4 51 37 48 13 0 Who is the better run getter in terms of averages?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total score of A=300. Total score of B=330. Average score of batsman A=30 and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">that of B=33. In terms of averages, batsman B is better run getter - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. (How</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">to do averages in Libre Calc -Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>)</li></ul>",
+              "final_answer": "to do averages in Libre Calc -Give )",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P1_Q15",
+              "number": 15,
+              "global_number": 15,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What does it mean if a number is “uniformly random”? Explain the steps to create 10 random numbers between 0 and 1 in Libre Calc. END OF THE QUESTION PAPER ***",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of uniformly random number- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. Steps for creating 10 random</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">numbers between 0 and 1in Libre Calc –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dr. Maya T Nair</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Associate Professor in Statistics</li></ul>",
+              "final_answer": "Associate Professor in Statistics",
+              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": "PAPER_2",
+      "paper_title": "EXAMINATION PAPER 2: FIRST SEMESTER MGU-UGP/MGU-BBA/MGU-BCA HONOURS EXAMINATIONS NOVEMBER 2025",
+      "sections": [
+        {
+          "section_id": "PART_A",
+          "section_title": "Part A — Short Answer Questions",
+          "marks_per_question": 2,
+          "questions": [
+            {
+              "id": "P2_Q1",
+              "number": 1,
+              "global_number": 16,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "To apply a specific number format (e.g., percentage, decimal) to a cell, you / should use: a). Format > Cells > Number b). Data > Validity c). Tools > Options > Decimal d). Format > Alignment",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) Format > Cells > Number</div>",
+              "final_answer": "Option Format > Cells > Number",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q2",
+              "number": 2,
+              "global_number": 17,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "If a formula in cell C3 contains the reference A1, and it is copied to cell D4, what / will the new reference be? a). $A$1 b). B2 c). A1 d). D4",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) B2</div>",
+              "final_answer": "Option (b) B2",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q3",
+              "number": 3,
+              "global_number": 18,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Choose the correct syntax from the following / a). =MINIMUM(B1;B10) b). =MIN(B1:B10) c). =MINIMUM(B1:B10) d). =MIN(B1;B10)",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) =MIN(B1:B10)</div>",
+              "final_answer": "Option (b) =MIN(B1:B10)",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q4",
+              "number": 4,
+              "global_number": 19,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "In a line chart, what do the points connected by the lines represent? / a). Different categories b). The frequency of occurrences c). Data values at specific time d). Percentages of a total points",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (c) Data values at specific time points</div>",
+              "final_answer": "Option (c) Data values at specific time points",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q5",
+              "number": 5,
+              "global_number": 20,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the function would you use to generate binomial random numbers in / LibreOffice Calc? a). RAND() b). BINOM.INV() c). RANDBETWEEN() d). NORM.DIST()",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) BINOM. INV()</div>",
+              "final_answer": "Option (b) BINOM. INV()",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q6",
+              "number": 6,
+              "global_number": 21,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "The function RAND() in LibreOffice Calc generates random numbers in the / range: a). 0 to 1 b). -1 to 1 c). 0 to 10 d). -∞ to ∞",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) 0 to 1</div>",
+              "final_answer": "Option 0 to 1",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q7",
+              "number": 7,
+              "global_number": 22,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the purpose of a t-test? / a). To compare means between b). To assess the relationship two groups between two variables c). To determine variance within a d). To calculate correlation single group coefficients",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) To compare means between two groups</div>",
+              "final_answer": "Option To compare means between two groups",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q8",
+              "number": 8,
+              "global_number": 23,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which of the following can be used as the data source for a Pivot Table in / LibreOffice Calc? a). Data ranges within the b). External data sources (e.g., spreadsheet databases, CSV files) c). Other Pivot Tables d). All of the above",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) All of the above</div>",
+              "final_answer": "Option (d) All of the above",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q9",
+              "number": 9,
+              "global_number": 24,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "Which is an assumption for parametric tests / a). Normality b). Equal variances c). Independence d). All the above",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) All of the above</div>",
+              "final_answer": "Option (d) All of the above",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q10",
+              "number": 10,
+              "global_number": 25,
+              "part": "PART_A",
+              "marks": 2,
+              "question": "What is the non-parametric alternative of paired t test ? / a). F - Test b). Chi – squire test c). Sign Test d). Wilcoxon Signed-Rank Test",
+              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) Wilcoxon Signed-Rank Test</div>",
+              "final_answer": "Option (d) Wilcoxon Signed-Rank Test",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        },
+        {
+          "section_id": "PART_B",
+          "section_title": "Part B — Short Essay Questions",
+          "marks_per_question": 6,
+          "questions": [
+            {
+              "id": "P2_Q11",
+              "number": 11,
+              "global_number": 26,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Explain the steps involved in importing a CSV file in to LibreOffice Calc.",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Steps for importing CSV files - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for each step.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 1: Go to File > Open > Select the CSV file and click Open. The Text</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Import dialog will appear.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 2: Choose the correct character set and delimiter (usually comma).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 3: Preview the data and adjust options as needed. Click OK.</li></ul>",
+              "final_answer": "Step 3: Preview the data and adjust options as needed. Click OK",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q12",
+              "number": 12,
+              "global_number": 27,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the purpose of data validation in LibreOffice Calc?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition or steps to create data validation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data validation in LibreOffice Calc is a powerful feature that helps ensure</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the accuracy, consistency, error prevention and integrity of data entered into</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">your spreadsheets</li></ul>",
+              "final_answer": "your spreadsheets",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q13",
+              "number": 13,
+              "global_number": 28,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "Why is ratio data considered the most informative scale of measurement?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marks.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interval) and adds a true zero point, allowing for all mathematical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">operations, including division. It can be used for a wider range of statistical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">analysis and allows for meaningful comparisons, such as saying one value</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">is twice as large as another.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of ratio scale measurement only – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example of ratio scale measurement only – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
+              "final_answer": "Example of ratio scale measurement only",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q14",
+              "number": 14,
+              "global_number": 29,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is the mode of a data and how is it calculated in LibreOffice Calc?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Function to calculate mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The mode is the value that appears most frequently in a dataset. Calculate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the mode in Calc using the mode function: =MODE (range)</li></ul>",
+              "final_answer": "the mode in Calc using the mode function: =MODE (range)",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            },
+            {
+              "id": "P2_Q15",
+              "number": 15,
+              "global_number": 30,
+              "part": "PART_B",
+              "marks": 6,
+              "question": "What is correlation and how is it measured in LibreOffice Calc?",
+              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Function to calculate correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Correlation measures the strength and direction of the linear relationship</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">between two variables. Types of correlation (Positive, Negative, No</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Correlation). In Calc use the function: =CORREL (range 1, range 2)</li></ul>",
+              "final_answer": "Correlation). In Calc use the function: =CORREL (range 1, range 2)",
+              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+              "has_official_scheme": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "questions": [
     {
-      "id": "Q1",
+      "id": "P1_Q1",
       "number": 1,
+      "global_number": 1,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "To apply a specific number format (e.g., percentage, decimal) to a cell, you should use: a). Format > Cells > Number b). Data > Validity c). Tools > Options > Decimal d). Format > Alignment",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(a) Format > Cells > Number"
+      "question": "What is the purpose of data validation in LibreOffice Calc? a) To prevent errors in data entry b) To format cells based on conditions c) To perform calculations on data d) To create charts and graphs a) Numerical b) Alphabetical c) Custom d) None of these",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a) To prevent errors in data entry - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option To prevent errors in data entry - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q2",
+      "id": "P1_Q2",
       "number": 2,
+      "global_number": 2,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Delimiter in a CSV file is a) Semi colon b) Comma c) Colon d) Space",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Step 1: Go to File > Open > Select the CSV file and click Open. The Text</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Import dialog will appear.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Step 2: Choose the correct character set and delimiter (usually comma).</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Step 3: Preview the data and adjust options as needed. Click OK.</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step 3: Preview the data and adjust options as needed. Click OK."
+      "question": "Which of the following operations can you perform within a Pivot Table in Libre Office Calc? a) Grouping data b) Applying filters c) Sorting by row or column d) All of the above",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> d) All of the above - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (d) All of the above - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q3",
+      "id": "P1_Q3",
       "number": 3,
+      "global_number": 3,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Generate 30 uniform random numbers in between 0 and 500. Find its mean, median and mode . Also find the range and standard deviation of the 30 randomly generated numbers.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Associate Professor in Statistics"
+      "question": "If the response to a question are Strongly Disagree, Disagree, Neutral, Agree and Strongly agree, which sorting we use?",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Custom - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (c) Custom - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q4",
+      "id": "P1_Q4",
       "number": 4,
+      "global_number": 4,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[A] ",
-      "question": "If a formula in cell C3 contains the reference A1, and it is copied to cell D4, what will the new reference be? a). $A$1 b). B2 c). A1 d). D4",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(c) Data values at specific time points</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": false,
-      "final_answer": "(c) Data values at specific time points"
+      "question": "ANOVA is used to compare a) One sample b) At least one sample c) More than two samples d) None of the above",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) More than two samples - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (c) More than two samples - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q5",
+      "id": "P1_Q5",
       "number": 5,
+      "global_number": 5,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "How do you sort data in ascending order by numbers in Libre Office Calc? a) Data > Sort > Ascending b) Format > Sort > Ascending c) Right click and choose Format Cells d) Tools > Sort > Ascending",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Associate Professor in Statistics"
+      "question": "To find the first quartile (Q1) in LibreOffice Calc, which function is used? a) =QUARTILE(A1:A10, 1) b) =QUARTILE(A1:A10, 0) c) =QUARTILE(A1:A10, 2) d) =QUARTILE(A1:A10, 3)",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> a) =QUARTILE (A1:A10,1) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option =QUARTILE (A1:A10,1) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q6",
+      "id": "P1_Q6",
       "number": 6,
+      "global_number": 6,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The weekly sales report of a shop in a village in Kottayam District is given below. Sales Report Sl.no Item (unit) No.of units Unit cost 1 Pen (packet) 32 28.90 2 Pencil (packet) 57 32 3 Binder clip (box) 100 46.28 4 Floor cleaner (bottle) 70 94 5 Curry powder (packet) 100 46 6 Soap (packet) 135 50 7 A4 Paper (bundle) 20 150 8 Milk (packet) 550 28 9 Talcum powder (pack) 17 54 10 Shampoo (sachet) 64 3 Enter the above data in Libre Office Calc and p repare one more column showing the total sales for each item (product of last two columns) and obtain the value of total weekly sale of the shop.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation of p value from a paired t test in Libre Calc –Give 5 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of p value –Give 5 marks. Based on p value, we can reject or accept the null</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>hypothesis- Give 5 marks. How to do Paired t test in Libre Calc- Give 3 marks.)</li></ul>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "marks]"
+      "question": "Choose the correct syntax from the following a) =MINIMUM(B1;B10) b) =MIN(B1:B10) c) =MINIMUM(B1:B10) d) =MIN(B1;B10)",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) =MIN (B1:B10) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (b) =MIN (B1:B10) - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q7",
+      "id": "P1_Q7",
       "number": 7,
+      "global_number": 7,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[A] ",
-      "question": "Choose the correct syntax from the following a). =MINIMUM(B1;B10) b). =MIN(B1:B10) c). =MINIMUM(B1:B10) d). =MIN(B1;B10)",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(a) To compare means between two groups</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(a) To compare means between two groups"
+      "question": "What type of data is best suited for a histogram? a) Categorical data b) Ordinal data c) Continuous or grouped data d) Ratio type data",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Continuous or grouped data - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (c) Continuous or grouped data - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q8",
+      "id": "P1_Q8",
       "number": 8,
+      "global_number": 8,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "What is the purpose of VLOOKUP function in Libre Office Calc? a) To perform vertical lookups b) To perform horizontal lookups c) To format cells based on conditions d) To prevent errors in data entry",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "a) To prevent errors in data entry - Give"
+      "question": "What does a pie chart represent? a) The distribution of data points b) Data changes over time c) Portions or percentages of a d) Comparison between two data whole sets",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> c) Portions or percentages of a whole - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (c) Portions or percentages of a whole - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q9",
+      "id": "P1_Q9",
       "number": 9,
+      "global_number": 9,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data provides the number of different surgical operations performed in a hospital during a given week . Represent the data by means of a simple bar diagram Type of operation Number of cases General surgery 110 Thoracic surgery 20 Prostate surgery 45 Urologic surgery 82 Surgery of abdomen 120 Neurosurgery 30 Others 18",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data provides the number of different surgical operations performed in a hospital during a given week . Represent the data by means of a simple bar diagram Type of operation Number of cases General surgery 110 Thoracic surgery 20 Prostate surgery 45 Urologic surgery 82 Surgery of abdomen 120 Neurosurgery 30 Others 18</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
+      "question": "What is the non-parametric analogue of one sample t test? a) Sign Test b) Wilcoxon one sample Signed - Rank test c) Chi – squire test d) F - Test",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) Wilcoxon one sample signed- rank test - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (b) Wilcoxon one sample signed- rank test - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q10",
+      "id": "P1_Q10",
       "number": 10,
+      "global_number": 10,
       "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
       "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "In a line chart, what do the points connected by the lines represent? a). Different categories b). The frequency of occurrences c). Data values at specific time points d). Percentages of a total",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>(d) Wilcoxon Signed-Rank Test</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(d) Wilcoxon Signed-Rank Test"
+      "question": "The range of values that coefficient of correlation can take are a) 0 to +1 b) -1 to +1 c) -1 to 0 d) 0 to infinity",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> b) -1 to +1 - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></div>",
+      "final_answer": "Option (b) -1 to +1 - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q11",
+      "id": "P1_Q11",
       "number": 11,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "A survey asks respondents to rate their favourite colour (red, blue, green, yellow). What scale of measurement is this? a) Nominal b) Ordinal c) Interval d) Ratio",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interval) and adds a true zero point, allowing for all mathematical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>operations, including division. It can be used for a wider range of statistical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>analysis and allows for meaningful comparisons, such as saying one value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>is twice as large as another.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Example of ratio scale measurement only – ."
+      "global_number": 11,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "What are the key characteristics of nominal, ordinal, interval, and ratio data?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Characteristics of nominal, ordinal, Interval and ratio data –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definitions or examples of nominal, ordinal, interval and ratio data–Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Any 3 –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span>, Any 2 – Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>, Any 1—Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span></li></ul>",
+      "final_answer": "Any 3 –Give , Any 2 – Give , Any 1—Give",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q12",
+      "id": "P1_Q12",
       "number": 12,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Thirty students in a business statistics class reported their major fields of studies, which is summarized as follows: Construct a simple bar diagram for the major fields for these 30 students. Major field Number of students Accounting 12 Management 6 Marketing 4 Finance 5 Undecided 3",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>Thirty students in a business statistics class reported their major fields of studies, which is summarized as follows: Construct a simple bar diagram for the major fields for these 30 students. Major field Number of students Accounting 12 Management 6 Marketing 4 Finance 5 Undecided 3</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
+      "global_number": 12,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "How do you interpret the p-value from a paired t-test in Calc?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Interpretation of p value from a paired t test in Libre Calc –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(Definition of p value –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. Based on p value, we can reject or accept the null</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">hypothesis- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. How to do Paired t test in Libre Calc- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marks]</li></ul>",
+      "final_answer": "marks]",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q13",
+      "id": "P1_Q13",
       "number": 13,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[An] ",
-      "question": "What is the function would you use to generate binomial random numbers in Libre Office Calc? a). RAND() b). BINOM.INV() c). RANDBETWEEN() d). NORM.DIST()",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interval) and adds a true zero point, allowing for all mathematical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>operations, including division. It can be used for a wider range of statistical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>analysis and allows for meaningful comparisons, such as saying one value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>is twice as large as another.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Example of ratio scale measurement only – ."
+      "global_number": 13,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "Distinguish between word wrapping, shrinking and orientation options in Alignment tab in Format Cell",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Purpose of Word wrapping, Shrinking and orientation option in Alignment tab in</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Format cell–Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. Any two- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span>, Any one –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">[Max:<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>]</li></ul>",
+      "final_answer": "[Max:]",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q14",
+      "id": "P1_Q14",
       "number": 14,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "What is the equivalent of a Pivot Table in Libre Office Calc? a) Data Summary b) Pivot Chart c) Data Pilot d) Data Analyser",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data analysis using libre calc. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) Data Summary b) Pivot Chart c) Data Pilot d) Data Analyser"
+      "global_number": 14,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "The following are the scores of two batsmen A and B in a series of innings A 12 15 6 73 7 19 19 36 84 29 B 47 12 76 42 4 51 37 48 13 0 Who is the better run getter in terms of averages?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total score of A=300. Total score of B=330. Average score of batsman A=30 and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">that of B=33. In terms of averages, batsman B is better run getter - Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>. (How</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">to do averages in Libre Calc -Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>)</li></ul>",
+      "final_answer": "to do averages in Libre Calc -Give )",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
     },
     {
-      "id": "Q15",
+      "id": "P1_Q15",
       "number": 15,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data gives the time (in hours ) taken for daily activities by a certain computer professional in a company. Represent the data by means of a simple bar diagram. activity work sleep leisure reading purchase phone time 9 6 3 1 1 4",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data gives the time (in hours ) taken for daily activities by a certain computer professional in a company. Represent the data by means of a simple bar diagram. activity work sleep leisure reading purchase phone time 9 6 3 1 1 4</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q16",
-      "number": 16,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "The function RAND() in Libre Office Calc generates random numbers in the range: a). 0 to 1 b). -1 to 1 c). 0 to 10 d). -∞ to ∞",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": false,
-      "final_answer": "Associate Professor in Statistics"
-    },
-    {
-      "id": "Q17",
-      "number": 17,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "What is the main technique used to generate random numbers in Libre Office Calc for normal and beta distributions? a) Box-Muller method b) Acceptance rejection sampling c) Direct sampling d) Inverse sampling",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Associate Professor in Statistics"
-    },
-    {
-      "id": "Q18",
-      "number": 18,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data provides the market sales of different laptop brands in a city. Represent the data by means of a pie diagram. brand A B C D E F G sales 48 33 60 95 15 24 55",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data provides the market sales of different laptop brands in a city. Represent the data by means of a pie diagram. brand A B C D E F G sales 48 33 60 95 15 24 55</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q19",
-      "number": 19,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "What is the purpose of a t-test? a). To compare means between two groups b). To assess the relationship between two variables c). To determine variance within a single group d). To calculate correlation coefficients",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of correlation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Function to calculate correlation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correlation measures the strength and direction of the linear relationship</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two variables. Types of correlation (Positive, Negative, No</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correlation). In Calc use the function: =CORREL (range 1, range 2)</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Definition of correlation – 2.5 marks"
-    },
-    {
-      "id": "Q20",
-      "number": 20,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Which test statistic is used to test ANOVA? a) t statistic b) Chi square statistic c) Paired t statistic d) F statistic",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data analysis using libre calc. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) t statistic b) Chi square statistic c) Paired t statistic d) F statistic"
-    },
-    {
-      "id": "Q21",
-      "number": 21,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data is about the monthly expenditure of two families A and B. Represent the data by means of two pie diagrams. Item of expenditure Expenditure(Rs.) Family A Family B Food 210 230 Clothing 130 150 House Rent 100 130 Education 70 80 Medical 40 50 Others 50 80",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data is about the monthly expenditure of two families A and B. Represent the data by means of two pie diagrams. Item of expenditure Expenditure(Rs.) Family A Family B Food 210 230 Clothing 130 150 House Rent 100 130 Education 70 80 Medical 40 50 Others 50 80</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q22",
-      "number": 22,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[U] ",
-      "question": "Which of the following can be used as the data source for a Pivot Table in Libre Office Calc? a). Data ranges within the spreadsheet b). External data sources (e.g., databases, CSV files) c). Other Pivot Tables d). All of the above",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interval) and adds a true zero point, allowing for all mathematical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>operations, including division. It can be used for a wider range of statistical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>analysis and allows for meaningful comparisons, such as saying one value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>is twice as large as another.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Example of ratio scale measurement only – ."
-    },
-    {
-      "id": "Q23",
-      "number": 23,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Paired t test is used for comparing a) One sample b) At least one sample c) Two related sample d) Two independent sample",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data analysis using libre calc. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) One sample b) At least one sample c) Two related sample d) Two independent sample"
-    },
-    {
-      "id": "Q24",
-      "number": 24,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data shows the types of pets owned by different families in a city. Represent the data by means of a pie diagram. Pet type No. of families Dogs 55 Cats 45 Love birds 50 Fish 30 Parrot 10 Others 10",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data shows the types of pets owned by different families in a city. Represent the data by means of a pie diagram. Pet type No. of families Dogs 55 Cats 45 Love birds 50 Fish 30 Parrot 10 Others 10</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q25",
-      "number": 25,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "Which is an assumption for parametric tests a). Normality b). Equal variances c). Independence d). All the above",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Verified solution established per official university examination criteria.</p>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "(d) All of the above"
-    },
-    {
-      "id": "Q26",
-      "number": 26,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "A Perfect Positive Correlation is a) 1 b) 0 c) -1 d) -1 & 1",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Correct Option:</strong> Option (a) 1 b) 0 c) -1 d) -1 & 1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Fulfills the core curriculum criteria under Data analysis using libre calc. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) 1 b) 0 c) -1 d) -1 & 1"
-    },
-    {
-      "id": "Q27",
-      "number": 27,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The following data typically represents the yearly expenditure of a student in a private university. Represent the data by means of a pie diagram. Expenditure Amount Tuition 13600 Room rent 9000 Books Purchase 2400 Transportation 900 Recreation 2000 Other 2100",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The following data typically represents the yearly expenditure of a student in a private university. Represent the data by means of a pie diagram. Expenditure Amount Tuition 13600 Room rent 9000 Books Purchase 2400 Transportation 900 Recreation 2000 Other 2100</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q28",
-      "number": 28,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] ",
-      "question": "What is the non-parametric alternative of paired t test ? a). F - Test b). Chi – squire test c). Sign Test d). Wilcoxon Signed-Rank Test",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b) Wilcoxon one sample signed- rank test - Give 2 marks</div>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "b) Wilcoxon one sample signed- rank test - Give 2 marks"
-    },
-    {
-      "id": "Q29",
-      "number": 29,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "Choose odd one out from the following a) ANOVA b) Sign test c) Median test d) Wilcoxon Signed-Rank Test",
-      "solution_html": "<div class='p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium'><span class='font-bold text-blue-800 dark:text-blue-400'>Correct Answer:</span> b) Wilcoxon one sample signed- rank test - Give 2 marks</div>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "b) Wilcoxon one sample signed- rank test - Give 2 marks"
-    },
-    {
-      "id": "Q30",
-      "number": 30,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The followin g data gives the daily wages (in rupees) of 30 workers in a factory: 60, 43, 40, 32,47,32,47,45,50,37,53,17,26,39,59,68,44,30,25,32, 40,62,46,29,32,54,41,32,30,39. Calculate mean, median and mode for the above data.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The followin g data gives the daily wages (in rupees) of 30 workers in a factory: 60, 43, 40, 32,47,32,47,45,50,37,53,17,26,39,59,68,44,30,25,32, 40,62,46,29,32,54,41,32,30,39. Calculate mean, median and mode for the above data.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q31",
-      "number": 31,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The monthly salaries of 10 employees of a company are given below. Sl.No Name Gender Monthly Salary(Rs) 1 Varun Kumar Male 41000 2 Chanchal Sawant Female 25000 3 Rohan Patel Male 32000 4 Rubeena Amir Female 48000 5 Ann Thomas Female 37000 6 Priya Mishra Female 51000 7 Purushotham Sharma Male 47500 8 Aashiq M Male 43750 9 Megha Varma Female 32000 10 Albert James Male 32000 a) Find the mean, median and mode of the monthly income. b) Find the mean and median of the monthly income of male and female separately.",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Fulfills the core curriculum criteria under Data analysis using libre calc. <span class='font-bold text-emerald-700 dark:text-emerald-400'>(2 Marks)</span></p>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Option (a) Find the mean, median and mode of the monthly income. b) Find the mean and median of the monthly income of male and female separately."
-    },
-    {
-      "id": "Q32",
-      "number": 32,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "An IT company manager tracks the working hours of 30 employees in a particular day as follows: 10, 11,7, 8, 10, 9, 8, 8, 7, 6, 10, 9, 8, 7, 10, 12 , 9, 7, 6, 5, 9, 10, 11, 12, 11, 8, 5, 6, 10, 12 Find the range and standard deviation of working hours of the employees.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>An IT company manager tracks the working hours of 30 employees in a particular day as follows: 10, 11,7, 8, 10, 9, 8, 8, 7, 6, 10, 9, 8, 7, 10, 12 , 9, 7, 6, 5, 9, 10, 11, 12, 11, 8, 5, 6, 10, 12 Find the range and standard deviation of working hours of the employees.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q33",
-      "number": 33,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The time (in seconds) taken by 30 athletes to complete a 100 metre race are as follows: 15, 17, 22, 20, 14, 16, 15, 14, 20, 24, 16, 27, 18, 16, 24, 18, 12, 21, 24, 19, 15, 16, 15, 23, 28, 20, 18, 22, 24, 25. Find the range and standard deviation of the athlete’s finishing time for that race.",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The time (in seconds) taken by 30 athletes to complete a 100 metre race are as follows: 15, 17, 22, 20, 14, 16, 15, 14, 20, 24, 16, 27, 18, 16, 24, 18, 12, 21, 24, 19, 15, 16, 15, 23, 28, 20, 18, 22, 24, 25. Find the range and standard deviation of the athlete’s finishing time for that race.</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q34",
-      "number": 34,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "The number of smart phones sold at 30 shops in Cochin on a particular day are as follows: 9, 16, 20, 14, 23, 13, 10, 22, 18, 9, 13, 8, 23, 22, 17, 15, 19, 12, 10, 9, 17, 19, 14, 13, 11, 23, 25, 21, 17, 15. Find range and standard deviation of phone sales occurred on that day",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>The number of smart phones sold at 30 shops in Cochin on a particular day are as follows: 9, 16, 20, 14, 23, 13, 10, 22, 18, 9, 13, 8, 23, 22, 17, 15, 19, 12, 10, 9, 17, 19, 14, 13, 11, 23, 25, 21, 17, 15. Find range and standard deviation of phone sales occurred on that day</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q35",
-      "number": 35,
-      "part": "PART_A",
-      "part_label": "Part A (Short Answer)",
-      "marks": 2,
-      "domain_tag": "[K] [1]",
-      "question": "An IQ test was administered to 15 students before and after they were trained. The results are as follows. Use paired t test, examine whether there is any effect for the training programme. Candidate IQ score before training IQ score after training 1 90 86 2 91 90 3 95 95 4 92 94 5 89 95 6 76 81 7 83 88 8 81 85 9 95 99 10 91 79 11 88 92 12 89 90 13 97 99 14 88 97 15 92 87",
-      "solution_html": "<div class='space-y-1.5 text-slate-800 dark:text-slate-200'><p class='leading-relaxed text-xs sm:text-sm'><strong class='font-semibold text-blue-900 dark:text-blue-300'>Academic Formulation:</strong> Systematic analytical explanation detailing the foundational mechanisms, applications, and requirements for <em>An IQ test was administered to 15 students before and after they were trained. The results are as follows. Use paired t test, examine whether there is any effect for the training programme. Candidate IQ score before training IQ score after training 1 90 86 2 91 90 3 95 95 4 92 94 5 89 95 6 76 81 7 83 88 8 81 85 9 95 99 10 91 79 11 88 92 12 89 90 13 97 99 14 88 97 15 92 87</em>.</p></div>",
-      "source_exam": "Official Practical Model Paper",
-      "repeated_in": [
-        "Official Practical Model Paper"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Core principles verified per Data analysis using libre calc valuation scheme."
-    },
-    {
-      "id": "Q36",
-      "number": 36,
+      "global_number": 15,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "Explain the steps involved in importing a CSV file in to Libre Office Calc.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
+      "question": "What does it mean if a number is “uniformly random”? Explain the steps to create 10 random numbers between 0 and 1 in Libre Calc. END OF THE QUESTION PAPER ***",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of uniformly random number- Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>. Steps for creating 10 random</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">numbers between 0 and 1in Libre Calc –Give <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Dr. Maya T Nair</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Associate Professor in Statistics</li></ul>",
+      "final_answer": "Associate Professor in Statistics",
+      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q1",
+      "number": 1,
+      "global_number": 16,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "To apply a specific number format (e.g., percentage, decimal) to a cell, you / should use: a). Format > Cells > Number b). Data > Validity c). Tools > Options > Decimal d). Format > Alignment",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) Format > Cells > Number</div>",
+      "final_answer": "Option Format > Cells > Number",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Associate Professor in Statistics"
+      "has_official_scheme": true
     },
     {
-      "id": "Q37",
-      "number": 37,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Describe the steps to remove duplicate entries from a single column in Libre Office Calc.",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation of p value from a paired t test in Libre Calc –Give 5 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of p value –Give 5 marks. Based on p value, we can reject or accept the null</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>hypothesis- Give 5 marks. How to do Paired t test in Libre Calc- Give 3 marks.)</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "marks]"
-    },
-    {
-      "id": "Q38",
-      "number": 38,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "What is the purpose of data validation in Libre Office Calc?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition or steps to create data validation <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Data validation in LibreOffice Calc is a powerful feature that helps ensure</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the accuracy, consistency, error prevention and integrity of data entered into</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>your spreadsheets</li></ul>",
+      "id": "P2_Q2",
+      "number": 2,
+      "global_number": 17,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "If a formula in cell C3 contains the reference A1, and it is copied to cell D4, what / will the new reference be? a). $A$1 b). B2 c). A1 d). D4",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) B2</div>",
+      "final_answer": "Option (b) B2",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "your spreadsheets"
+      "has_official_scheme": true
     },
     {
-      "id": "Q39",
-      "number": 39,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "How can you create a bar chart in Libre Office Calc to compare sales data from different regions?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation of p value from a paired t test in Libre Calc –Give 5 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of p value –Give 5 marks. Based on p value, we can reject or accept the null</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>hypothesis- Give 5 marks. How to do Paired t test in Libre Calc- Give 3 marks.)</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "marks]"
+      "id": "P2_Q3",
+      "number": 3,
+      "global_number": 18,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Choose the correct syntax from the following / a). =MINIMUM(B1;B10) b). =MIN(B1:B10) c). =MINIMUM(B1:B10) d). =MIN(B1;B10)",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) =MIN(B1:B10)</div>",
+      "final_answer": "Option (b) =MIN(B1:B10)",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
     },
     {
-      "id": "Q40",
-      "number": 40,
+      "id": "P2_Q4",
+      "number": 4,
+      "global_number": 19,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "In a line chart, what do the points connected by the lines represent? / a). Different categories b). The frequency of occurrences c). Data values at specific time d). Percentages of a total points",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (c) Data values at specific time points</div>",
+      "final_answer": "Option (c) Data values at specific time points",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q5",
+      "number": 5,
+      "global_number": 20,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is the function would you use to generate binomial random numbers in / LibreOffice Calc? a). RAND() b). BINOM.INV() c). RANDBETWEEN() d). NORM.DIST()",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (b) BINOM. INV()</div>",
+      "final_answer": "Option (b) BINOM. INV()",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q6",
+      "number": 6,
+      "global_number": 21,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "The function RAND() in LibreOffice Calc generates random numbers in the / range: a). 0 to 1 b). -1 to 1 c). 0 to 10 d). -∞ to ∞",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) 0 to 1</div>",
+      "final_answer": "Option 0 to 1",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q7",
+      "number": 7,
+      "global_number": 22,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is the purpose of a t-test? / a). To compare means between b). To assess the relationship two groups between two variables c). To determine variance within a d). To calculate correlation single group coefficients",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) To compare means between two groups</div>",
+      "final_answer": "Option To compare means between two groups",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q8",
+      "number": 8,
+      "global_number": 23,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Which of the following can be used as the data source for a Pivot Table in / LibreOffice Calc? a). Data ranges within the b). External data sources (e.g., spreadsheet databases, CSV files) c). Other Pivot Tables d). All of the above",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) All of the above</div>",
+      "final_answer": "Option (d) All of the above",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q9",
+      "number": 9,
+      "global_number": 24,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "Which is an assumption for parametric tests / a). Normality b). Equal variances c). Independence d). All the above",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) All of the above</div>",
+      "final_answer": "Option (d) All of the above",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q10",
+      "number": 10,
+      "global_number": 25,
+      "part": "PART_A",
+      "marks": 2,
+      "question": "What is the non-parametric alternative of paired t test ? / a). F - Test b). Chi – squire test c). Sign Test d). Wilcoxon Signed-Rank Test",
+      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (d) Wilcoxon Signed-Rank Test</div>",
+      "final_answer": "Option (d) Wilcoxon Signed-Rank Test",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q11",
+      "number": 11,
+      "global_number": 26,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] ",
+      "question": "Explain the steps involved in importing a CSV file in to LibreOffice Calc.",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Steps for importing CSV files - <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span> for each step.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 1: Go to File > Open > Select the CSV file and click Open. The Text</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Import dialog will appear.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 2: Choose the correct character set and delimiter (usually comma).</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Step 3: Preview the data and adjust options as needed. Click OK.</li></ul>",
+      "final_answer": "Step 3: Preview the data and adjust options as needed. Click OK",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q12",
+      "number": 12,
+      "global_number": 27,
+      "part": "PART_B",
+      "marks": 6,
+      "question": "What is the purpose of data validation in LibreOffice Calc?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition or steps to create data validation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Data validation in LibreOffice Calc is a powerful feature that helps ensure</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the accuracy, consistency, error prevention and integrity of data entered into</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">your spreadsheets</li></ul>",
+      "final_answer": "your spreadsheets",
+      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
+      "has_official_scheme": true
+    },
+    {
+      "id": "P2_Q13",
+      "number": 13,
+      "global_number": 28,
+      "part": "PART_B",
+      "marks": 6,
       "question": "Why is ratio data considered the most informative scale of measurement?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>interval) and adds a true zero point, allowing for all mathematical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>operations, including division. It can be used for a wider range of statistical</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>analysis and allows for meaningful comparisons, such as saying one value</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>is twice as large as another.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Example of ratio scale measurement only <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Reason for the argument / Correct definition and properties of ratio scale – 5</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">marks.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Ratio data includes all characteristics of other scales (nominal, ordinal and</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">interval) and adds a true zero point, allowing for all mathematical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">operations, including division. It can be used for a wider range of statistical</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">analysis and allows for meaningful comparisons, such as saying one value</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">is twice as large as another.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of ratio scale measurement only – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example of ratio scale measurement only – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span>.</li></ul>",
+      "final_answer": "Example of ratio scale measurement only",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "Example of ratio scale measurement only – ."
+      "has_official_scheme": true
     },
     {
-      "id": "Q41",
-      "number": 41,
+      "id": "P2_Q14",
+      "number": 14,
+      "global_number": 29,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Explain how to create random numbers between 1 and 100 in Libre Office Calc?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of uniformly random number- Give 2 marks. Steps for creating 10 random</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>numbers between 0 and 1in Libre Calc –Give 3 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Dr. Maya T Nair</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Associate Professor in Statistics</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Associate Professor in Statistics"
-    },
-    {
-      "id": "Q42",
-      "number": 42,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] ",
-      "question": "What is the mode of a data and how is it calculated in Libre Office Calc?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> ,</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Function to calculate mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> .</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The mode is the value that appears most frequently in a dataset. Calculate</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>the mode in Calc using the mode function: =MODE (range)</li></ul>",
+      "question": "What is the mode of a data and how is it calculated in LibreOffice Calc?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Function to calculate mode – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The mode is the value that appears most frequently in a dataset. Calculate</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">the mode in Calc using the mode function: =MODE (range)</li></ul>",
+      "final_answer": "the mode in Calc using the mode function: =MODE (range)",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "the mode in Calc using the mode function: =MODE (range)"
+      "has_official_scheme": true
     },
     {
-      "id": "Q43",
-      "number": 43,
+      "id": "P2_Q15",
+      "number": 15,
+      "global_number": 30,
       "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
       "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "What is the difference between one-tailed and two-tailed t-test?",
-      "solution_html": "<p class='leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200'>Step-by-step mathematical derivation and analytical reasoning answering What is the difference between one-tailed and two-tailed t-test? derstand] . <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></p>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "Step-by-step mathematical derivation and analytical reasoning answering What is the difference between one-tailed and two-tailed t-test? ."
-    },
-    {
-      "id": "Q44",
-      "number": 44,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[An] ",
-      "question": "What is correlation and how is it measured in Libre Office Calc?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> ,</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Function to calculate correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span> .</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correlation measures the strength and direction of the linear relationship</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>between two variables. Types of correlation (Positive, Negative, No</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Correlation). In Calc use the function: =CORREL (range 1, range 2)</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>X 5 = 15]</li></ul>",
+      "question": "What is correlation and how is it measured in LibreOffice Calc?",
+      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Function to calculate correlation – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2.5 marks)</span>.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Correlation measures the strength and direction of the linear relationship</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">between two variables. Types of correlation (Positive, Negative, No</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Correlation). In Calc use the function: =CORREL (range 1, range 2)</li></ul>",
+      "final_answer": "Correlation). In Calc use the function: =CORREL (range 1, range 2)",
       "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "repeated_in": [],
-      "has_official_scheme": true,
-      "final_answer": "X 5 = 15]"
-    },
-    {
-      "id": "Q45",
-      "number": 45,
-      "part": "PART_B",
-      "part_label": "Part B (Short Essay)",
-      "marks": 6,
-      "domain_tag": "[U] [2]",
-      "question": "Outline the steps involved in performing a chi-square test in Libre Office Calc?",
-      "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Interpretation of p value from a paired t test in Libre Calc –Give 5 marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(Definition of p value –Give 5 marks. Based on p value, we can reject or accept the null</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>hypothesis- Give 5 marks. How to do Paired t test in Libre Calc- Give 3 marks.)</li></ul>",
-      "source_exam": "Data Analysis using Libre Calc",
-      "repeated_in": [
-        "Data Analysis using Libre Calc"
-      ],
-      "has_official_scheme": false,
-      "final_answer": "marks]"
+      "has_official_scheme": true
     }
   ]
 }

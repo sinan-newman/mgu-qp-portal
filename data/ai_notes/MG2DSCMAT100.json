@@ -24,7 +24,7 @@
               "number": 2,
               "question": "Define critical points of a function of two variables with an example.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Both first-order partial derivatives vanish simultaneously: $$f_x(x_0, y_0) = 0 \\quad \\text{and} \\quad f_y(x_0, y_0) = 0$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>At least one of the partial derivatives $f_x$ or $f_y$ does not exist at $(x_0, y_0)$.</li></ul>",
-              "final_answer": "Critical Point: $(0, 0)$ where $f_x(0,0) = 0$ and $f_y(0,0) = 0$."
+              "final_answer": "Critical Point: $$ where $f_x = 0$ and $f_y = 0$."
             },
             {
               "number": 3,
@@ -48,7 +48,7 @@
               "number": 6,
               "question": "Define an inconsistent system of equations.",
               "solution_html": "<p class=\"mb-2\"><strong>Formal Definition:</strong> A system of linear algebraic equations $Ax = b$ is called <strong>inconsistent</strong> if there exists no tuple of values $(x_1, x_2, \\dots, x_n)$ that satisfies all equations simultaneously (i.e., the solution set is the empty set $\\emptyset$).</p> <p class=\"mb-2\"><strong>Rank Criterion (Rouché–Capelli Theorem):</strong> A linear system is inconsistent if and only if the rank of the coefficient matrix $A$ is strictly less than the rank of the augmented matrix $\\mid b]$:</p> $$\\text{rank}(A) < \\text{rank}(\\mid b])$$ <p>In Gaussian elimination, this condition manifests as an echelon row of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, stating the contradiction $0 = c$.</p>",
-              "final_answer": "A system possessing no solution, characterized by $\\text{rank}(A) < \\text{rank}(\\mid b])$."
+              "final_answer": "A system possessing no solution, characterized by $\\text{rank} < \\text{rank}(\\mid b])$."
             },
             {
               "number": 7,
@@ -97,7 +97,7 @@
               "number": 13,
               "question": "Using the Gauss elimination method, find the nature of the solution of the system: $x - y + z = 4$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
               "solution_html": "<p class=\"mb-2\"><strong>Step 1: Set up the augmented matrix $\\mid b]$:</strong></p> $$\\mid b] = \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 1 & -2 & -2 & 9 \\\\ 2 & 1 & 3 & 1 \\end{bmatrix}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Eliminate $x$ from rows 2 and 3 using elementary row operations:</p> <p>Apply $R_2 \\to R_2 - R_1$ and $R_3 \\to R_3 - 2R_1$:</p> $$R_2 - R_1 = - 1, \\; -2 - (-1), \\; -2 - 1 \\mid 9 - 4] = \\; -1, \\; -3 \\mid 5]$$ $$R_3 - 2R_1 = - 2, \\; 1 - 2(-1), \\; 3 - 2(1) \\mid 1 - 2(4)] = \\; 3, \\; 1 \\mid -7]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & -1 & -3 & 5 \\\\ 0 & 3 & 1 & -7 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Scale row 2 and eliminate $y$ from row 3:</p> <p>Apply $R_2 \\to -R_2$:</p> $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 3 & 1 & -7 \\end{bmatrix}$$ <p>Apply $R_3 \\to R_3 - 3R_2$:</p> $$R_3 - 3R_2 = \\; 3 - 3(1), \\; 1 - 3(3) \\mid -7 - 3(-5)] = \\; 0, \\; -8 \\mid 8]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 0 & -8 & 8 \\end{bmatrix} \\xrightarrow{R_3 \\to -\\frac{1}{8}R_3} \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 0 & 1 & -1 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Rank Analysis and Nature of Solution:</p> <p>Number of non-zero rows in coefficient echelon matrix $A = 3 \\implies \\text{rank}(A) = 3$.</p> <p>Number of non-zero rows in augmented matrix $\\mid b] = 3 \\implies \\text{rank}(\\mid b]) = 3$.</p> <p>Number of variables $n = 3$.</p> $$\\text{rank}(A) = \\text{rank}(\\mid b]) = n = 3$$ <p>Therefore, the system is <strong>consistent</strong> and has a <strong>unique solution</strong>.</p> <p class=\"text-xs text-slate-600 dark:text-slate-300 mt-1\">Back substitution yields: $z = -1$, $y = -5 - 3(-1) = -2$, and $x = 4 + (-2) - (-1) = 3$.</p> </div> </div>",
-              "final_answer": "Consistent with a Unique Solution: $\\text{rank}(A) = \\text{rank}(\\mid b]) = 3 = n$, where $(x, y, z) = (3, -2, -1)$."
+              "final_answer": "Consistent with a Unique Solution: $\\text{rank} = \\text{rank}(\\mid b]) = 3 = n$, where $(x, y, z) = (3, -2, -1)$."
             },
             {
               "number": 14,
@@ -128,13 +128,13 @@
               "number": 17,
               "question": "Find the absolute maximum and minimum value of $f(x, y) = x^2 + y^2$ on the triangular region in the first quadrant bounded by the lines $x = 0$, $y = 0$, and $y + 2x = 2$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Finding points (0,0), (0,2), (1,0) 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Evaluating 𝑓(𝑥, 𝑦) and its derivative on each side and hence getting ቀସହ , ଶହቁ… 2 Marks</li></ul>",
-              "final_answer": "\\text{Absolute Minimum} = 0 \\text{ at } (0,0); \\quad \\text{Absolute Maximum} = 4 \\text{ at } (0,2)"
+              "final_answer": "\\text{Absolute Minimum} = 0 \\text{ at } ; \\quad \\text{Absolute Maximum} = 4 \\text{ at }"
             },
             {
               "number": 18,
-              "question": "(a) State the Fundamental Theorem of Calculus, Part 1. (b) Find $\\int_0^4 f(x)\\, dx$ if $f(x) = \\begin{cases} \\sqrt{x}, & 0 \\leq x < 1 \\\\ \\frac{1}{x^2}, & 1 \\leq x \\leq 4 \\end{cases}$.",
+              "question": "State the Fundamental Theorem of Calculus, Part 1. (b) Find $\\int_0^4 f(x)\\, dx$ if $f(x) = \\begin{cases} \\sqrt{x}, & 0 \\leq x < 1 \\\\ \\frac{1}{x^2}, & 1 \\leq x \\leq 4 \\end{cases}$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>൩ or any other equivalent 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Observing 𝑟 = 3 = 𝑛 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concluding the system has exactly one solution 2 Marks</li></ul>",
-              "final_answer": "(a) \\; F'(x) = f(x); \\quad (b) \\; \\int_0^4 f(x)\\, dx = \\frac{17}{12}"
+              "final_answer": "\\; F'(x) = f(x); \\quad (b) \\; \\int_0^4 f(x)\\, dx = \\frac{17}{12}"
             },
             {
               "number": 19,
@@ -144,19 +144,19 @@
             },
             {
               "number": 20,
-              "question": "Solve the following system of equations using Gauss elimination and back substitution: (a) $2x + 5y = 2$, $4x - 3y = 30$. (b) $x - y + z = 0$, $-x + y - z = 0$, $10y + 25z = 90$, $20x + 10y = 80$.",
+              "question": "Solve the following system of equations using Gauss elimination and back substitution: $2x + 5y = 2$, $4x - 3y = 30$. (b) $x - y + z = 0$, $-x + y - z = 0$, $10y + 25z = 90$, $20x + 10y = 80$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>$R_2 \\to R_2 + R_1$: Row 2 becomes all zeros $\\; 0\\; 0 \\mid 0]$. Move it to the bottom.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>$R_4 \\to R_4 - 20R_1$: $- 20, \\; 10 - 20(-1), \\; 0 - 20(1) \\mid 80 - 0] = \\; 30, \\; -20 \\mid 80]$.</li></ul>",
-              "final_answer": "(a) $x = 6, \\; y = -2$; \\qquad (b) $x = 2, \\; y = 4, \\; z = 2$."
+              "final_answer": "$x = 6, \\; y = -2$; \\qquad (b) $x = 2, \\; y = 4, \\; z = 2$."
             },
             {
               "number": 21,
-              "question": "(a) Define an edge-deleted subgraph and a vertex-deleted subgraph of a graph. Illustrate your definition using examples. (b) Draw the graphs $C_6 - v$ and $C_6 - e$ where $v \\in V(C_6)$ & $e \\in E(C_6)$. (c) Is $C_6$ a subgraph of $C_6$?",
+              "question": "Define an edge-deleted subgraph and a vertex-deleted subgraph of a graph. Illustrate your definition using examples. (b) Draw the graphs $C_6 - v$ and $C_6 - e$ where $v \\in V(C_6)$ & $e \\in E(C_6)$. (c) Is $C_6$ a subgraph of $C_6$?",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
-              "final_answer": "(a) \\; G - e \\text{ and } G - v; \\quad (b) \\; P_5 \\text{ and } P_6; \\quad (c) \\; \\text{Yes, every graph is a subgraph of itself.}"
+              "final_answer": "\\; G - e \\text{ and } G - v; \\quad (b) \\; P_5 \\text{ and } P_6; \\quad (c) \\; \\text{Yes, every graph is a subgraph of itself.}"
             },
             {
               "number": 22,
-              "question": "(a) Draw a non-simple graph with vertex set $V = \\{A, B, C, D, E, F, G, H\\}$ and edge set $E = \\{AA, CC, FF, AB, BC, CD, DE, EF, FG, GH, HA\\}$. (b) Identify and list all loops in the graph.",
+              "question": "Draw a non-simple graph with vertex set $V = \\{A, B, C, D, E, F, G, H\\}$ and edge set $E = \\{AA, CC, FF, AB, BC, CD, DE, EF, FG, GH, HA\\}$. (b) Identify and list all loops in the graph.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
               "final_answer": "\\text{Loops: } \\{AA, CC, FF\\}"
             }
@@ -219,7 +219,7 @@
               "number": 8,
               "question": "Draw the cycle graph $C_6$.",
               "solution_html": "<p class=\"mb-2\"><strong>Definition:</strong> The cycle graph $C_6$ is a connected 2-regular simple graph with 6 vertices and 6 edges.</p> <p class=\"mb-2\">Vertex set: $V(C_6) = \\{v_1, v_2, v_3, v_4, v_5, v_6\\}$.</p> <p class=\"mb-2\">Edge set: $E(C_6) = \\{\\{v_1, v_2\\}, \\{v_2, v_3\\}, \\{v_3, v_4\\}, \\{v_4, v_5\\}, \\{v_5, v_6\\}, \\{v_6, v_1\\}\\}$.</p> <p>The vertices can be visualized as arranged at the six vertices of a regular hexagon, connected cyclically in a closed loop.</p>",
-              "final_answer": "$$C_6 \\text{ has } |V| = 6, \\; |E| = 6, \\text{ and degree regular sequence } (2, 2, 2, 2, 2, 2).$$"
+              "final_answer": "$$C_6 \\text{ has } |V| = 6, \\; |E| = 6, \\text{ and degree regular sequence } .$$"
             }
           ]
         },
@@ -232,7 +232,7 @@
               "number": 9,
               "question": "Find the critical points of the function $f(x, y) = x^2 - y^2 - 2x + 4y + 6$ and distinguish the points which are local extreme values or saddle points.",
               "solution_html": "<div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Find first-order partial derivatives and critical points:</p> $$f_x = \\frac{\\partial}{\\partial x}\\left(x^2 - y^2 - 2x + 4y + 6\\right) = 2x - 2 = 0 \\implies x = 1$$ $$f_y = \\frac{\\partial}{\\partial y}\\left(x^2 - y^2 - 2x + 4y + 6\\right) = -2y + 4 = 0 \\implies y = 2$$ <p>The unique critical point is $(1, 2)$.</p> </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Compute second-order partial derivatives:</p> $$f_{xx} = \\frac{\\partial^2 f}{\\partial x^2} = 2, \\qquad f_{yy} = \\frac{\\partial^2 f}{\\partial y^2} = -2, \\qquad f_{xy} = \\frac{\\partial^2 f}{\\partial x \\partial y} = 0$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Evaluate the Discriminant (Hessian determinant):</p> $$D = f_{xx} f_{yy} - (f_{xy})^2 = (2)(-2) - (0)^2 = -4$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Classification via Second Derivative Test:</p> <p>Since $D = -4 < 0$, the Second Derivative Test guarantees that the critical point $(1, 2)$ is a <strong>saddle point</strong>. The function has no local extrema.</p> </div> </div>",
-              "final_answer": "Critical Point: $(1, 2)$, classified as a **Saddle Point** ($D = -4 < 0$)."
+              "final_answer": "Critical Point: $$, classified as a **Saddle Point** ($D = -4 < 0$)."
             },
             {
               "number": 10,
@@ -248,15 +248,15 @@
             },
             {
               "number": 12,
-              "question": "(a) Define Riemann integral and use the given values of $a = -1$ and $b = 2$ to express the limit $\\lim_{\\max \\Delta x_k \\to 0} \\sum_{k=1}^n (x_k^*)^2 \\Delta x_k$ as an integral. (b) Interval $$ is divided into five subintervals with partition points $x_0 = 1, x_1 = 3.5, x_2 = 4.5, x_3 = 6.5, x_4 = 7, x_5 = 8$. Find the mesh size of this partition.",
+              "question": "Define Riemann integral and use the given values of $a = -1$ and $b = 2$ to express the limit $\\lim_{\\max \\Delta x_k \\to 0} \\sum_{k=1}^n (x_k^*)^2 \\Delta x_k$ as an integral. (b) Interval $$ is divided into five subintervals with partition points $x_0 = 1, x_1 = 3.5, x_2 = 4.5, x_3 = 6.5, x_4 = 7, x_5 = 8$. Find the mesh size of this partition.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑎 = 𝑥଴ < 𝑥ଵ < … … <𝑥 = 𝑏 that divides into n subintervals … 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A partition is regular if all the subintervals have the same length ∆𝑥 =</li></ul>",
-              "final_answer": "(a) \\; \\int_{-1}^2 x^2\\, dx; \\quad (b) \\; \\text{Mesh size } \\|\\Delta\\| = 2.5"
+              "final_answer": "\\; \\int_{-1}^2 x^2\\, dx; \\quad (b) \\; \\text{Mesh size } \\|\\Delta\\| = 2.5"
             },
             {
               "number": 13,
               "question": "Solve by the Gauss elimination method: $x + 2y - z = 1$, $3x + 6y - 3z = 5$, $2x + 4y - 2z = 2$.",
               "solution_html": "<p class=\"mb-2\"><strong>Step 1: Construct the augmented matrix $\\mid b]$:</strong></p> $$\\mid b] = \\begin{bmatrix} 1 & 2 & -1 & 1 \\\\ 3 & 6 & -3 & 5 \\\\ 2 & 4 & -2 & 2 \\end{bmatrix}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Apply elementary row operations to eliminate $x$ in rows 2 and 3:</p> <p>Apply $R_2 \\to R_2 - 3R_1$ and $R_3 \\to R_3 - 2R_1$:</p> $$R_2 - 3R_1 = - 3(1), \\; 6 - 3(2), \\; -3 - 3(-1) \\mid 5 - 3(1)] = \\; 0, \\; 0 \\mid 2]$$ $$R_3 - 2R_1 = - 2(1), \\; 4 - 2(2), \\; -2 - 2(-1) \\mid 2 - 2(1)] = \\; 0, \\; 0 \\mid 0]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & 2 & -1 & 1 \\\\ 0 & 0 & 0 & 2 \\\\ 0 & 0 & 0 & 0 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Analyze Consistency via Rank:</p> <p>In row 2, we have the equation:</p> $$0x + 0y + 0z = 2 \\implies 0 = 2 \\quad (\\text{a mathematical contradiction!})$$ $$\\text{rank}(A) = 1, \\qquad \\text{rank}(\\mid b]) = 2$$ <p>Since $\\text{rank}(A) < \\text{rank}(\\mid b])$, the system is <strong>inconsistent</strong> and has <strong>no solution</strong>.</p> </div> </div>",
-              "final_answer": "Inconsistent System: No solution exists because $\\text{rank}(A) = 1 < \\text{rank}(\\mid b]) = 2$."
+              "final_answer": "Inconsistent System: No solution exists because $\\text{rank} = 1 < \\text{rank}(\\mid b]) = 2$."
             },
             {
               "number": 14,
@@ -291,31 +291,31 @@
             },
             {
               "number": 18,
-              "question": "Use a double integral to find the volume: (a) The volume under the plane $z = 2x + y$ and over the rectangle $R = \\{(x, y) : 3 \\leq x \\leq 5, \\; 1 \\leq y \\leq 2\\}$. (b) Volume of the solid enclosed by the surface $z = x^2$ and the planes $x = 0, \\; x = 2, \\; y = 3, \\; y = 0, \\; z = 0$.",
+              "question": "Use a double integral to find the volume: The volume under the plane $z = 2x + y$ and over the rectangle $R = \\{(x, y) : 3 \\leq x \\leq 5, \\; 1 \\leq y \\leq 2\\}$. (b) Volume of the solid enclosed by the surface $z = x^2$ and the planes $x = 0, \\; x = 2, \\; y = 3, \\; y = 0, \\; z = 0$.",
               "solution_html": "<div class=\"space-y-4\"> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(a) Volume under $z = 2x + y$ over $R = \\times $</h4> $$V = \\iint_R (2x + y)\\, dA = \\int_3^5 \\int_1^2 (2x + y)\\, dy\\, dx$$ <p>Inner integral with respect to $y$:</p> $$\\int_1^2 (2x + y)\\, dy = \\leftxy + \\frac{y^2}{2} \\right]_1^2 = \\left( 4x + \\frac{4}{2} \\right) - \\left( 2x + \\frac{1}{2} \\right) = 2x + \\frac{3}{2}$$ <p>Outer integral with respect to $x$:</p> $$V = \\int_3^5 \\left(2x + \\frac{3}{2}\\right) dx = \\leftx^2 + \\frac{3}{2}x \\right]_3^5 = \\left( 5^2 + \\frac{3(5)}{2} \\right) - \\left( 3^2 + \\frac{3(3)}{2} \\right)$$ $$V = (25 + 7.5) - (9 + 4.5) = 32.5 - 13.5 = 19$$ </div> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(b) Volume enclosed by $z = x^2$ and $x=0, x=2, y=0, y=3, z=0$</h4> <p class=\"mb-2\">The solid lies above the rectangle $R = \\times $ in the $xy$-plane and beneath the parabolic cylinder $z = x^2$:</p> $$V = \\iint_R x^2\\, dA = \\int_0^2 \\int_0^3 x^2\\, dy\\, dx$$ $$\\int_0^3 dy = 3 \\implies V = 3 \\int_0^2 x^2\\, dx = 3 \\left\\frac{x^3}{3} \\right]_0^2 = 3 \\left( \\frac{8}{3} \\right) = 8$$ </div> </div>",
-              "final_answer": "(a) $V = 19$; \\qquad (b) $V = 8$."
+              "final_answer": "$V = 19$; \\qquad (b) $V = 8$."
             },
             {
               "number": 19,
-              "question": "(a) State the Fundamental Theorem of Calculus, Part 1. (b) Using the Fundamental Theorem of calculus, find $\\int_1^4 \\left( \\frac{1}{\\sqrt{t}} - 3\\sqrt{t} \\right) dt$.",
+              "question": "State the Fundamental Theorem of Calculus, Part 1. (b) Using the Fundamental Theorem of calculus, find $\\int_1^4 \\left( \\frac{1}{\\sqrt{t}} - 3\\sqrt{t} \\right) dt$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>൩ or any other equivalent 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Observing 𝑟 = 3 = 𝑛 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concluding the system has exactly one solution 2 Marks</li></ul>",
-              "final_answer": "(a) \\; F'(x) = f(x); \\quad (b) \\; \\int_1^4 \\left(\\frac{1}{\\sqrt{t}} - 3\\sqrt{t}\\right) dt = -12"
+              "final_answer": "\\; F'(x) = f(x); \\quad (b) \\; \\int_1^4 \\left(\\frac{1}{\\sqrt{t}} - 3\\sqrt{t}\\right) dt = -12"
             },
             {
               "number": 20,
-              "question": "(a) Explain the Gauss elimination method. (b) Solve the linear system of equations using the Gauss elimination method: $x - 2y + 2z = 8$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
+              "question": "Explain the Gauss elimination method. (b) Solve the linear system of equations using the Gauss elimination method: $x - 2y + 2z = 8$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Swap ($R_i \\leftrightarrow R_j$):</strong> Interchange two rows.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Scaling ($R_i \\to kR_i, k \\neq 0$):</strong> Multiply a row by a non-zero scalar.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Addition ($R_i \\to R_i + kR_j$):</strong> Add a scalar multiple of one row to another row.</li></ul>",
               "final_answer": "$$x = \\frac{12}{5} = 2.4, \\quad y = -\\frac{61}{20} = -3.05, \\quad z = -\\frac{1}{4} = -0.25$$"
             },
             {
               "number": 21,
-              "question": "(a) Define the degree sequence of a graph. Write the degree sequence of the path graph $P_5$. (b) State the handshaking lemma.",
+              "question": "Define the degree sequence of a graph. Write the degree sequence of the path graph $P_5$. (b) State the handshaking lemma.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The two endpoints $v_1$ and $v_5$ each have degree 1: $\\deg(v_1) = \\deg(v_5) = 1$.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The three internal vertices $v_2, v_3, v_4$ each have degree 2: $\\deg(v_2) = \\deg(v_3) = \\deg(v_4) = 2$.</li></ul>",
-              "final_answer": "(a) $\\text{Degree Sequence}(P_5) = (2, 2, 2, 1, 1)$; \\qquad (b) $\\sum_{v \\in V} \\deg(v) = 2|E|$."
+              "final_answer": "$\\text{Degree Sequence}(P_5) = $; \\qquad (b) $\\sum_{v \\in V} \\deg(v) = 2|E|$."
             },
             {
               "number": 22,
-              "question": "(a) Sketch a non-simple graph with vertex set $V = \\{J, K, L, M, N, O, P, Q, R, S, T, U, V\\}$ and edge set $E = \\{JJ, KK, LL, MM, NO, OP, PQ, QR, RS, ST, TU, UV, VJ, JM, KN, LO\\}$. (b) List all loops that exist in the graph.",
+              "question": "Sketch a non-simple graph with vertex set $V = \\{J, K, L, M, N, O, P, Q, R, S, T, U, V\\}$ and edge set $E = \\{JJ, KK, LL, MM, NO, OP, PQ, QR, RS, ST, TU, UV, VJ, JM, KN, LO\\}$. (b) List all loops that exist in the graph.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
               "final_answer": "\\text{Loops: } \\{JJ, KK, LL, MM\\}"
             }
@@ -360,13 +360,13 @@
               "number": 5,
               "question": "Give an example of a linear system of 3 equations in 3 unknowns.",
               "solution_html": "<p class=\"mb-2\">A system of three linear equations in three variables $x, y, z$ with a unique solution:</p> $$\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$$ <p>This system has the unique solution $(x, y, z) = (1, 2, 3)$, as verified by direct substitution.</p>",
-              "final_answer": "Example: $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ with unique solution $(1, 2, 3)$."
+              "final_answer": "Example: $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ with unique solution $$."
             },
             {
               "number": 6,
               "question": "What are the elementary row operations of a matrix.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Interchange:</strong> Swapping the positions of any two rows: $$R_i \\longleftrightarrow R_j$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Scaling:</strong> Multiplying all entries in a row by a non-zero scalar $k \\in \\mathbb{R} \\setminus \\{0\\}$: $$R_i \\longrightarrow k R_i$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Addition:</strong> Adding a scalar multiple of one row to another row: $$R_i \\longrightarrow R_i + k R_j \\quad (i \\neq j)$$</li></ul>",
-              "final_answer": "The three elementary row operations: (1) $R_i \\leftrightarrow R_j$, (2) $R_i \\to k R_i$ ($k \\neq 0$), and (3) $R_i \\to R_i + k R_j$."
+              "final_answer": "The three elementary row operations: $R_i \\leftrightarrow R_j$, $R_i \\to k R_i$ ($k \\neq 0$), and $R_i \\to R_i + k R_j$."
             },
             {
               "number": 7,
@@ -389,15 +389,15 @@
           "questions": [
             {
               "number": 9,
-              "question": "Find $\\frac{\\partial z}{\\partial x}$ and $\\frac{\\partial z}{\\partial y}$ at $(0, 0, 0)$, using formula for implicit differentiation, if $x^3 + z^2 + y e^{xz} + z \\cos y = 0$.",
+              "question": "Find $\\frac{\\partial z}{\\partial x}$ and $\\frac{\\partial z}{\\partial y}$ at $$, using formula for implicit differentiation, if $x^3 + z^2 + y e^{xz} + z \\cos y = 0$.",
               "solution_html": "<p class=\"mb-2\">Let $F(x, y, z) = x^3 + z^2 + y e^{xz} + z \\cos y = 0$.</p> <p class=\"mb-2\">By implicit differentiation formulas for $z = z(x, y)$:</p> $$\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}, \\qquad \\frac{\\partial z}{\\partial y} = -\\frac{F_y}{F_z}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Compute partial derivatives $F_x, F_y, F_z$:</p> $$F_x = \\frac{\\partial}{\\partial x}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 3x^2 + 0 + y(z e^{xz}) + 0 = 3x^2 + y z e^{xz}$$ $$F_y = \\frac{\\partial}{\\partial y}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 0 + 0 + e^{xz} + z(-\\sin y) = e^{xz} - z\\sin y$$ $$F_z = \\frac{\\partial}{\\partial z}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 2z + y(x e^{xz}) + \\cos y = 2z + x y e^{xz} + \\cos y$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Evaluate at the origin $(x, y, z) = (0, 0, 0)$:</p> $$F_x(0, 0, 0) = 3(0)^2 + (0)(0)e^0 = 0$$ $$F_y(0, 0, 0) = e^0 - (0)\\sin(0) = 1 - 0 = 1$$ $$F_z(0, 0, 0) = 2(0) + (0)(0)e^0 + \\cos(0) = 0 + 0 + 1 = 1$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Calculate the partial derivatives:</p> $$\\left.\\frac{\\partial z}{\\partial x}\\right|_{(0, 0, 0)} = -\\frac{F_x(0, 0, 0)}{F_z(0, 0, 0)} = -\\frac{0}{1} = 0$$ $$\\left.\\frac{\\partial z}{\\partial y}\\right|_{(0, 0, 0)} = -\\frac{F_y(0, 0, 0)}{F_z(0, 0, 0)} = -\\frac{1}{1} = -1$$ </div> </div>",
-              "final_answer": "$$\\left.\\frac{\\partial z}{\\partial x}\\right|_{(0, 0, 0)} = 0, \\qquad \\left.\\frac{\\partial z}{\\partial y}\\right|_{(0, 0, 0)} = -1$$"
+              "final_answer": "$$\\left.\\frac{\\partial z}{\\partial x}\\right|_{} = 0, \\qquad \\left.\\frac{\\partial z}{\\partial y}\\right|_{} = -1$$"
             },
             {
               "number": 10,
               "question": "Find the local extreme values (if any) of $f(x, y) = y^2 - x^2$.",
               "solution_html": "<div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Determine critical points:</p> $$f_x = \\frac{\\partial}{\\partial x}(y^2 - x^2) = -2x = 0 \\implies x = 0$$ $$f_y = \\frac{\\partial}{\\partial y}(y^2 - x^2) = 2y = 0 \\implies y = 0$$ <p>The sole critical point is $(0, 0)$.</p> </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Second-order partial derivatives:</p> $$f_{xx} = -2, \\qquad f_{yy} = 2, \\qquad f_{xy} = 0$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Evaluate Discriminant (Hessian determinant):</p> $$D = f_{xx} f_{yy} - (f_{xy})^2 = (-2)(2) - 0^2 = -4$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Classification:</p> <p>Because $D = -4 < 0$, the Second Derivative Test concludes that $(0, 0)$ is a <strong>saddle point</strong>.</p> <p>Along the $y$-axis ($x = 0$), $f(0, y) = y^2 \\geq 0$, which has a minimum at $(0, 0)$. Along the $x$-axis ($y = 0$), $f(x, 0) = -x^2 \\leq 0$, which has a maximum at $(0, 0)$. Hence, $f$ has no local extrema.</p> </div> </div>",
-              "final_answer": "No local extreme values exist; the critical point $(0, 0)$ is a **Saddle Point** ($D = -4 < 0$)."
+              "final_answer": "No local extreme values exist; the critical point $$ is a **Saddle Point** ($D = -4 < 0$)."
             },
             {
               "number": 11,
@@ -414,8 +414,8 @@
             {
               "number": 13,
               "question": "What are the different types of solutions a system of equations can have? Explain using Gaussian elimination.",
-              "solution_html": "<p class=\"mb-2\">When a linear system $Ax = b$ with $n$ variables is transformed into row echelon form $ilde{A} \\mid ilde{b}]$ via Gaussian elimination, the Rouché–Capelli Theorem classifies all solutions into three mutually exclusive types:</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Unique Solution (Consistent with $r = n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = n$. Every column has a leading pivot, permitting unambiguous back substitution to a single solution vector.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Infinitely Many Solutions (Consistent with $r < n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = r < n$. There are $n - r > 0$ free variables, yielding a continuum of solutions parameterized by $n - r$ independent parameters.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. No Solution (Inconsistent System):</p> <p>Occurs when $\\text{rank}(A) < \\text{rank}(\\mid b])$. An echelon row appears of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, signifying the contradiction $0 = c$.</p> </div> </div>",
-              "final_answer": "Three types of solutions: (1) Unique Solution ($r = n$), (2) Infinitely Many Solutions ($r < n$), and (3) No Solution / Inconsistent ($\\text{rank}(A) < \\text{rank}(\\mid b])$)."
+              "solution_html": "<p class=\"mb-2\">When a linear system $Ax = b$ with $n$ variables is transformed into row echelon form $ilde{A} \\mid ilde{b}]$ via Gaussian elimination, the Rouché–Capelli Theorem classifies all solutions into three mutually exclusive types:</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Unique Solution $r = n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = n$. Every column has a leading pivot, permitting unambiguous back substitution to a single solution vector.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Infinitely Many Solutions $r < n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = r < n$. There are $n - r > 0$ free variables, yielding a continuum of solutions parameterized by $n - r$ independent parameters.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. No Solution (Inconsistent System):</p> <p>Occurs when $\\text{rank}(A) < \\text{rank}(\\mid b])$. An echelon row appears of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, signifying the contradiction $0 = c$.</p> </div> </div>",
+              "final_answer": "Three types of solutions: Unique Solution ($r = n$), Infinitely Many Solutions ($r < n$), and No Solution / Inconsistent ($\\text{rank} < \\text{rank}(\\mid b])$)."
             },
             {
               "number": 14,
@@ -446,7 +446,7 @@
               "number": 17,
               "question": "Find the absolute maximum and minimum values of $f(x, y) = 2 + 2x + 2y - x^2 - y^2$ on the triangular region in the first quadrant bounded by the lines $x = 0, \\; y = 0, \\; y = 9 - x$.",
               "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Finding points (0,0), (0,2), (1,0) 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Evaluating 𝑓(𝑥, 𝑦) and its derivative on each side and hence getting ቀସହ , ଶହቁ… 2 Marks</li></ul>",
-              "final_answer": "\\text{Absolute Maximum} = 4 \\text{ at } (1,1); \\quad \\text{Absolute Minimum} = -61 \\text{ at } (9,0) \\text{ and } (0,9)"
+              "final_answer": "\\text{Absolute Maximum} = 4 \\text{ at } ; \\quad \\text{Absolute Minimum} = -61 \\text{ at } \\text{ and }"
             },
             {
               "number": 18,
@@ -456,9 +456,9 @@
             },
             {
               "number": 19,
-              "question": "Find the area under the curve $y = f(x)$ over the stated interval: (a) $f(x) = x^3$ over $$. (b) $f(x) = x^{-2/3}$ over $$.",
+              "question": "Find the area under the curve $y = f(x)$ over the stated interval: $f(x) = x^3$ over $$. (b) $f(x) = x^{-2/3}$ over $$.",
               "solution_html": "<div class=\"space-y-4\"> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(a) Area for $f(x) = x^3$ over $$</h4> $$A_1 = \\int_2^3 x^3\\, dx = \\left\\frac{x^4}{4} \\right]_2^3 = \\frac{3^4}{4} - \\frac{2^4}{4} = \\frac{81 - 16}{4} = \\frac{65}{4} = 16.25$$ </div> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(b) Area for $f(x) = x^{-2/3}$ over $$</h4> $$A_2 = \\int_1^{27} x^{-2/3}\\, dx = \\left\\frac{x^{(-2/3 + 1)}}{-2/3 + 1} \\right]_1^{27} = \\left\\frac{x^{1/3}}{1/3} \\right]_1^{27} = 3\\leftx^{1/3} \\right]_1^{27}$$ $$A_2 = 3\\left( (27)^{1/3} - (1)^{1/3} \\right) = 3(3 - 1) = 3(2) = 6$$ </div> </div>",
-              "final_answer": "(a) $\\text{Area} = \\frac{65}{4} = 16.25$; \\qquad (b) $\\text{Area} = 6$."
+              "final_answer": "$\\text{Area} = \\frac{65}{4} = 16.25$; \\qquad (b) $\\text{Area} = 6$."
             },
             {
               "number": 20,
@@ -476,7 +476,7 @@
               "number": 22,
               "question": "Draw any five simple cubic graphs with at most 8 vertices.",
               "solution_html": "<p class=\"mb-2\"><strong>Theoretical Condition for Cubic Graphs:</strong> A graph is <em>cubic</em> (3-regular) if $\\deg(v) = 3$ for all $v \\in V$.</p> <p class=\"mb-2\">By the Handshaking Lemma, $\\sum \\deg(v) = 3|V| = 2|E|$, so the vertex count $|V|$ <strong>must be an even integer</strong>. For $|V| \\leq 8$, permissible values of $|V|$ are $4, 6,$ and $8$.</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Graph 1: The Complete Graph $K_4$ ($|V| = 4, |E| = 6$)</p> <p>Tetrahedral topology where each vertex connects to the other 3 vertices.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Graph 2: The Complete Bipartite Graph $K_{3,3}$ ($|V| = 6, |E| = 9$)</p> <p>Utility graph with bipartition into two sets of 3 vertices, each joined to all 3 in the other partition.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. Graph 3: The Triangular Prism Graph ($|V| = 6, |E| = 9$)</p> <p>Consists of two disjoint 3-cycles $C_3$ joined by 3 matching vertical edges.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">4. Graph 4: The 3-Dimensional Cube Graph $Q_3$ ($|V| = 8, |E| = 12$)</p> <p>The standard 8-vertex cube skeleton consisting of two concentric 4-cycles $C_4$ joined by 4 rung edges.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">5. Graph 5: The Möbius Ladder Graph $M_8$ ($|V| = 8, |E| = 12$)</p> <p>An 8-cycle $C_8$ with 4 cross-rungs joining opposite antipodal vertices.</p> </div> </div>",
-              "final_answer": "Five distinct cubic graphs: (1) $K_4$, (2) $K_{3,3}$, (3) Triangular Prism, (4) 3-Cube $Q_3$, and (5) Möbius Ladder $M_8$."
+              "final_answer": "Five distinct cubic graphs: $K_4$, $K_{3,3}$, Triangular Prism, 3-Cube $Q_3$, and Möbius Ladder $M_8$."
             }
           ]
         }
@@ -506,7 +506,7 @@
       "marks": 2,
       "question": "Define critical points of a function of two variables with an example.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Both first-order partial derivatives vanish simultaneously: $$f_x(x_0, y_0) = 0 \\quad \\text{and} \\quad f_y(x_0, y_0) = 0$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>At least one of the partial derivatives $f_x$ or $f_y$ does not exist at $(x_0, y_0)$.</li></ul>",
-      "final_answer": "Critical Point: $(0, 0)$ where $f_x(0,0) = 0$ and $f_y(0,0) = 0$.",
+      "final_answer": "Critical Point: $$ where $f_x = 0$ and $f_y = 0$.",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -558,7 +558,7 @@
       "marks": 2,
       "question": "Define an inconsistent system of equations.",
       "solution_html": "<p class=\"mb-2\"><strong>Formal Definition:</strong> A system of linear algebraic equations $Ax = b$ is called <strong>inconsistent</strong> if there exists no tuple of values $(x_1, x_2, \\dots, x_n)$ that satisfies all equations simultaneously (i.e., the solution set is the empty set $\\emptyset$).</p> <p class=\"mb-2\"><strong>Rank Criterion (Rouché–Capelli Theorem):</strong> A linear system is inconsistent if and only if the rank of the coefficient matrix $A$ is strictly less than the rank of the augmented matrix $\\mid b]$:</p> $$\\text{rank}(A) < \\text{rank}(\\mid b])$$ <p>In Gaussian elimination, this condition manifests as an echelon row of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, stating the contradiction $0 = c$.</p>",
-      "final_answer": "A system possessing no solution, characterized by $\\text{rank}(A) < \\text{rank}(\\mid b])$.",
+      "final_answer": "A system possessing no solution, characterized by $\\text{rank} < \\text{rank}(\\mid b])$.",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -649,7 +649,7 @@
       "marks": 6,
       "question": "Using the Gauss elimination method, find the nature of the solution of the system: $x - y + z = 4$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
       "solution_html": "<p class=\"mb-2\"><strong>Step 1: Set up the augmented matrix $\\mid b]$:</strong></p> $$\\mid b] = \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 1 & -2 & -2 & 9 \\\\ 2 & 1 & 3 & 1 \\end{bmatrix}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Eliminate $x$ from rows 2 and 3 using elementary row operations:</p> <p>Apply $R_2 \\to R_2 - R_1$ and $R_3 \\to R_3 - 2R_1$:</p> $$R_2 - R_1 = - 1, \\; -2 - (-1), \\; -2 - 1 \\mid 9 - 4] = \\; -1, \\; -3 \\mid 5]$$ $$R_3 - 2R_1 = - 2, \\; 1 - 2(-1), \\; 3 - 2(1) \\mid 1 - 2(4)] = \\; 3, \\; 1 \\mid -7]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & -1 & -3 & 5 \\\\ 0 & 3 & 1 & -7 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Scale row 2 and eliminate $y$ from row 3:</p> <p>Apply $R_2 \\to -R_2$:</p> $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 3 & 1 & -7 \\end{bmatrix}$$ <p>Apply $R_3 \\to R_3 - 3R_2$:</p> $$R_3 - 3R_2 = \\; 3 - 3(1), \\; 1 - 3(3) \\mid -7 - 3(-5)] = \\; 0, \\; -8 \\mid 8]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 0 & -8 & 8 \\end{bmatrix} \\xrightarrow{R_3 \\to -\\frac{1}{8}R_3} \\begin{bmatrix} 1 & -1 & 1 & 4 \\\\ 0 & 1 & 3 & -5 \\\\ 0 & 0 & 1 & -1 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Rank Analysis and Nature of Solution:</p> <p>Number of non-zero rows in coefficient echelon matrix $A = 3 \\implies \\text{rank}(A) = 3$.</p> <p>Number of non-zero rows in augmented matrix $\\mid b] = 3 \\implies \\text{rank}(\\mid b]) = 3$.</p> <p>Number of variables $n = 3$.</p> $$\\text{rank}(A) = \\text{rank}(\\mid b]) = n = 3$$ <p>Therefore, the system is <strong>consistent</strong> and has a <strong>unique solution</strong>.</p> <p class=\"text-xs text-slate-600 dark:text-slate-300 mt-1\">Back substitution yields: $z = -1$, $y = -5 - 3(-1) = -2$, and $x = 4 + (-2) - (-1) = 3$.</p> </div> </div>",
-      "final_answer": "Consistent with a Unique Solution: $\\text{rank}(A) = \\text{rank}(\\mid b]) = 3 = n$, where $(x, y, z) = (3, -2, -1)$.",
+      "final_answer": "Consistent with a Unique Solution: $\\text{rank} = \\text{rank}(\\mid b]) = 3 = n$, where $(x, y, z) = (3, -2, -1)$.",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -701,7 +701,7 @@
       "marks": 10,
       "question": "Find the absolute maximum and minimum value of $f(x, y) = x^2 + y^2$ on the triangular region in the first quadrant bounded by the lines $x = 0$, $y = 0$, and $y + 2x = 2$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Finding points (0,0), (0,2), (1,0) 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Evaluating 𝑓(𝑥, 𝑦) and its derivative on each side and hence getting ቀସହ , ଶହቁ… 2 Marks</li></ul>",
-      "final_answer": "\\text{Absolute Minimum} = 0 \\text{ at } (0,0); \\quad \\text{Absolute Maximum} = 4 \\text{ at } (0,2)",
+      "final_answer": "\\text{Absolute Minimum} = 0 \\text{ at } ; \\quad \\text{Absolute Maximum} = 4 \\text{ at }",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -712,9 +712,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) State the Fundamental Theorem of Calculus, Part 1. (b) Find $\\int_0^4 f(x)\\, dx$ if $f(x) = \\begin{cases} \\sqrt{x}, & 0 \\leq x < 1 \\\\ \\frac{1}{x^2}, & 1 \\leq x \\leq 4 \\end{cases}$.",
+      "question": "State the Fundamental Theorem of Calculus, Part 1. (b) Find $\\int_0^4 f(x)\\, dx$ if $f(x) = \\begin{cases} \\sqrt{x}, & 0 \\leq x < 1 \\\\ \\frac{1}{x^2}, & 1 \\leq x \\leq 4 \\end{cases}$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>൩ or any other equivalent 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Observing 𝑟 = 3 = 𝑛 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concluding the system has exactly one solution 2 Marks</li></ul>",
-      "final_answer": "(a) \\; F'(x) = f(x); \\quad (b) \\; \\int_0^4 f(x)\\, dx = \\frac{17}{12}",
+      "final_answer": "\\; F'(x) = f(x); \\quad (b) \\; \\int_0^4 f(x)\\, dx = \\frac{17}{12}",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -738,9 +738,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "Solve the following system of equations using Gauss elimination and back substitution: (a) $2x + 5y = 2$, $4x - 3y = 30$. (b) $x - y + z = 0$, $-x + y - z = 0$, $10y + 25z = 90$, $20x + 10y = 80$.",
+      "question": "Solve the following system of equations using Gauss elimination and back substitution: $2x + 5y = 2$, $4x - 3y = 30$. (b) $x - y + z = 0$, $-x + y - z = 0$, $10y + 25z = 90$, $20x + 10y = 80$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>$R_2 \\to R_2 + R_1$: Row 2 becomes all zeros $\\; 0\\; 0 \\mid 0]$. Move it to the bottom.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>$R_4 \\to R_4 - 20R_1$: $- 20, \\; 10 - 20(-1), \\; 0 - 20(1) \\mid 80 - 0] = \\; 30, \\; -20 \\mid 80]$.</li></ul>",
-      "final_answer": "(a) $x = 6, \\; y = -2$; \\qquad (b) $x = 2, \\; y = 4, \\; z = 2$.",
+      "final_answer": "$x = 6, \\; y = -2$; \\qquad (b) $x = 2, \\; y = 4, \\; z = 2$.",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -751,9 +751,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) Define an edge-deleted subgraph and a vertex-deleted subgraph of a graph. Illustrate your definition using examples. (b) Draw the graphs $C_6 - v$ and $C_6 - e$ where $v \\in V(C_6)$ & $e \\in E(C_6)$. (c) Is $C_6$ a subgraph of $C_6$?",
+      "question": "Define an edge-deleted subgraph and a vertex-deleted subgraph of a graph. Illustrate your definition using examples. (b) Draw the graphs $C_6 - v$ and $C_6 - e$ where $v \\in V(C_6)$ & $e \\in E(C_6)$. (c) Is $C_6$ a subgraph of $C_6$?",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
-      "final_answer": "(a) \\; G - e \\text{ and } G - v; \\quad (b) \\; P_5 \\text{ and } P_6; \\quad (c) \\; \\text{Yes, every graph is a subgraph of itself.}",
+      "final_answer": "\\; G - e \\text{ and } G - v; \\quad (b) \\; P_5 \\text{ and } P_6; \\quad (c) \\; \\text{Yes, every graph is a subgraph of itself.}",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
       "has_official_scheme": true
     },
@@ -764,7 +764,7 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) Draw a non-simple graph with vertex set $V = \\{A, B, C, D, E, F, G, H\\}$ and edge set $E = \\{AA, CC, FF, AB, BC, CD, DE, EF, FG, GH, HA\\}$. (b) Identify and list all loops in the graph.",
+      "question": "Draw a non-simple graph with vertex set $V = \\{A, B, C, D, E, F, G, H\\}$ and edge set $E = \\{AA, CC, FF, AB, BC, CD, DE, EF, FG, GH, HA\\}$. (b) Identify and list all loops in the graph.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
       "final_answer": "\\text{Loops: } \\{AA, CC, FF\\}",
       "source_exam": "EXAMINATION PAPER 1: MARCH 2025 REGULAR EXAMINATION",
@@ -870,7 +870,7 @@
       "marks": 2,
       "question": "Draw the cycle graph $C_6$.",
       "solution_html": "<p class=\"mb-2\"><strong>Definition:</strong> The cycle graph $C_6$ is a connected 2-regular simple graph with 6 vertices and 6 edges.</p> <p class=\"mb-2\">Vertex set: $V(C_6) = \\{v_1, v_2, v_3, v_4, v_5, v_6\\}$.</p> <p class=\"mb-2\">Edge set: $E(C_6) = \\{\\{v_1, v_2\\}, \\{v_2, v_3\\}, \\{v_3, v_4\\}, \\{v_4, v_5\\}, \\{v_5, v_6\\}, \\{v_6, v_1\\}\\}$.</p> <p>The vertices can be visualized as arranged at the six vertices of a regular hexagon, connected cyclically in a closed loop.</p>",
-      "final_answer": "$$C_6 \\text{ has } |V| = 6, \\; |E| = 6, \\text{ and degree regular sequence } (2, 2, 2, 2, 2, 2).$$",
+      "final_answer": "$$C_6 \\text{ has } |V| = 6, \\; |E| = 6, \\text{ and degree regular sequence } .$$",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -883,7 +883,7 @@
       "marks": 6,
       "question": "Find the critical points of the function $f(x, y) = x^2 - y^2 - 2x + 4y + 6$ and distinguish the points which are local extreme values or saddle points.",
       "solution_html": "<div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Find first-order partial derivatives and critical points:</p> $$f_x = \\frac{\\partial}{\\partial x}\\left(x^2 - y^2 - 2x + 4y + 6\\right) = 2x - 2 = 0 \\implies x = 1$$ $$f_y = \\frac{\\partial}{\\partial y}\\left(x^2 - y^2 - 2x + 4y + 6\\right) = -2y + 4 = 0 \\implies y = 2$$ <p>The unique critical point is $(1, 2)$.</p> </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Compute second-order partial derivatives:</p> $$f_{xx} = \\frac{\\partial^2 f}{\\partial x^2} = 2, \\qquad f_{yy} = \\frac{\\partial^2 f}{\\partial y^2} = -2, \\qquad f_{xy} = \\frac{\\partial^2 f}{\\partial x \\partial y} = 0$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Evaluate the Discriminant (Hessian determinant):</p> $$D = f_{xx} f_{yy} - (f_{xy})^2 = (2)(-2) - (0)^2 = -4$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Classification via Second Derivative Test:</p> <p>Since $D = -4 < 0$, the Second Derivative Test guarantees that the critical point $(1, 2)$ is a <strong>saddle point</strong>. The function has no local extrema.</p> </div> </div>",
-      "final_answer": "Critical Point: $(1, 2)$, classified as a **Saddle Point** ($D = -4 < 0$).",
+      "final_answer": "Critical Point: $$, classified as a **Saddle Point** ($D = -4 < 0$).",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -920,9 +920,9 @@
       "part": "PART_B",
       "part_label": "Part B — Short Essay Questions",
       "marks": 6,
-      "question": "(a) Define Riemann integral and use the given values of $a = -1$ and $b = 2$ to express the limit $\\lim_{\\max \\Delta x_k \\to 0} \\sum_{k=1}^n (x_k^*)^2 \\Delta x_k$ as an integral. (b) Interval $$ is divided into five subintervals with partition points $x_0 = 1, x_1 = 3.5, x_2 = 4.5, x_3 = 6.5, x_4 = 7, x_5 = 8$. Find the mesh size of this partition.",
+      "question": "Define Riemann integral and use the given values of $a = -1$ and $b = 2$ to express the limit $\\lim_{\\max \\Delta x_k \\to 0} \\sum_{k=1}^n (x_k^*)^2 \\Delta x_k$ as an integral. (b) Interval $$ is divided into five subintervals with partition points $x_0 = 1, x_1 = 3.5, x_2 = 4.5, x_3 = 6.5, x_4 = 7, x_5 = 8$. Find the mesh size of this partition.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>𝑎 = 𝑥଴ < 𝑥ଵ < … … <𝑥 = 𝑏 that divides into n subintervals … 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>A partition is regular if all the subintervals have the same length ∆𝑥 =</li></ul>",
-      "final_answer": "(a) \\; \\int_{-1}^2 x^2\\, dx; \\quad (b) \\; \\text{Mesh size } \\|\\Delta\\| = 2.5",
+      "final_answer": "\\; \\int_{-1}^2 x^2\\, dx; \\quad (b) \\; \\text{Mesh size } \\|\\Delta\\| = 2.5",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -935,7 +935,7 @@
       "marks": 6,
       "question": "Solve by the Gauss elimination method: $x + 2y - z = 1$, $3x + 6y - 3z = 5$, $2x + 4y - 2z = 2$.",
       "solution_html": "<p class=\"mb-2\"><strong>Step 1: Construct the augmented matrix $\\mid b]$:</strong></p> $$\\mid b] = \\begin{bmatrix} 1 & 2 & -1 & 1 \\\\ 3 & 6 & -3 & 5 \\\\ 2 & 4 & -2 & 2 \\end{bmatrix}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Apply elementary row operations to eliminate $x$ in rows 2 and 3:</p> <p>Apply $R_2 \\to R_2 - 3R_1$ and $R_3 \\to R_3 - 2R_1$:</p> $$R_2 - 3R_1 = - 3(1), \\; 6 - 3(2), \\; -3 - 3(-1) \\mid 5 - 3(1)] = \\; 0, \\; 0 \\mid 2]$$ $$R_3 - 2R_1 = - 2(1), \\; 4 - 2(2), \\; -2 - 2(-1) \\mid 2 - 2(1)] = \\; 0, \\; 0 \\mid 0]$$ $$\\mid b] \\sim \\begin{bmatrix} 1 & 2 & -1 & 1 \\\\ 0 & 0 & 0 & 2 \\\\ 0 & 0 & 0 & 0 \\end{bmatrix}$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Analyze Consistency via Rank:</p> <p>In row 2, we have the equation:</p> $$0x + 0y + 0z = 2 \\implies 0 = 2 \\quad (\\text{a mathematical contradiction!})$$ $$\\text{rank}(A) = 1, \\qquad \\text{rank}(\\mid b]) = 2$$ <p>Since $\\text{rank}(A) < \\text{rank}(\\mid b])$, the system is <strong>inconsistent</strong> and has <strong>no solution</strong>.</p> </div> </div>",
-      "final_answer": "Inconsistent System: No solution exists because $\\text{rank}(A) = 1 < \\text{rank}(\\mid b]) = 2$.",
+      "final_answer": "Inconsistent System: No solution exists because $\\text{rank} = 1 < \\text{rank}(\\mid b]) = 2$.",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -998,9 +998,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "Use a double integral to find the volume: (a) The volume under the plane $z = 2x + y$ and over the rectangle $R = \\{(x, y) : 3 \\leq x \\leq 5, \\; 1 \\leq y \\leq 2\\}$. (b) Volume of the solid enclosed by the surface $z = x^2$ and the planes $x = 0, \\; x = 2, \\; y = 3, \\; y = 0, \\; z = 0$.",
+      "question": "Use a double integral to find the volume: The volume under the plane $z = 2x + y$ and over the rectangle $R = \\{(x, y) : 3 \\leq x \\leq 5, \\; 1 \\leq y \\leq 2\\}$. (b) Volume of the solid enclosed by the surface $z = x^2$ and the planes $x = 0, \\; x = 2, \\; y = 3, \\; y = 0, \\; z = 0$.",
       "solution_html": "<div class=\"space-y-4\"> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(a) Volume under $z = 2x + y$ over $R = \\times $</h4> $$V = \\iint_R (2x + y)\\, dA = \\int_3^5 \\int_1^2 (2x + y)\\, dy\\, dx$$ <p>Inner integral with respect to $y$:</p> $$\\int_1^2 (2x + y)\\, dy = \\leftxy + \\frac{y^2}{2} \\right]_1^2 = \\left( 4x + \\frac{4}{2} \\right) - \\left( 2x + \\frac{1}{2} \\right) = 2x + \\frac{3}{2}$$ <p>Outer integral with respect to $x$:</p> $$V = \\int_3^5 \\left(2x + \\frac{3}{2}\\right) dx = \\leftx^2 + \\frac{3}{2}x \\right]_3^5 = \\left( 5^2 + \\frac{3(5)}{2} \\right) - \\left( 3^2 + \\frac{3(3)}{2} \\right)$$ $$V = (25 + 7.5) - (9 + 4.5) = 32.5 - 13.5 = 19$$ </div> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(b) Volume enclosed by $z = x^2$ and $x=0, x=2, y=0, y=3, z=0$</h4> <p class=\"mb-2\">The solid lies above the rectangle $R = \\times $ in the $xy$-plane and beneath the parabolic cylinder $z = x^2$:</p> $$V = \\iint_R x^2\\, dA = \\int_0^2 \\int_0^3 x^2\\, dy\\, dx$$ $$\\int_0^3 dy = 3 \\implies V = 3 \\int_0^2 x^2\\, dx = 3 \\left\\frac{x^3}{3} \\right]_0^2 = 3 \\left( \\frac{8}{3} \\right) = 8$$ </div> </div>",
-      "final_answer": "(a) $V = 19$; \\qquad (b) $V = 8$.",
+      "final_answer": "$V = 19$; \\qquad (b) $V = 8$.",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -1011,9 +1011,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) State the Fundamental Theorem of Calculus, Part 1. (b) Using the Fundamental Theorem of calculus, find $\\int_1^4 \\left( \\frac{1}{\\sqrt{t}} - 3\\sqrt{t} \\right) dt$.",
+      "question": "State the Fundamental Theorem of Calculus, Part 1. (b) Using the Fundamental Theorem of calculus, find $\\int_1^4 \\left( \\frac{1}{\\sqrt{t}} - 3\\sqrt{t} \\right) dt$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−5</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>−1</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>൩ or any other equivalent 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Observing 𝑟 = 3 = 𝑛 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Concluding the system has exactly one solution 2 Marks</li></ul>",
-      "final_answer": "(a) \\; F'(x) = f(x); \\quad (b) \\; \\int_1^4 \\left(\\frac{1}{\\sqrt{t}} - 3\\sqrt{t}\\right) dt = -12",
+      "final_answer": "\\; F'(x) = f(x); \\quad (b) \\; \\int_1^4 \\left(\\frac{1}{\\sqrt{t}} - 3\\sqrt{t}\\right) dt = -12",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -1024,7 +1024,7 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) Explain the Gauss elimination method. (b) Solve the linear system of equations using the Gauss elimination method: $x - 2y + 2z = 8$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
+      "question": "Explain the Gauss elimination method. (b) Solve the linear system of equations using the Gauss elimination method: $x - 2y + 2z = 8$, $x - 2y - 2z = 9$, $2x + y + 3z = 1$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Swap ($R_i \\leftrightarrow R_j$):</strong> Interchange two rows.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Scaling ($R_i \\to kR_i, k \\neq 0$):</strong> Multiply a row by a non-zero scalar.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Addition ($R_i \\to R_i + kR_j$):</strong> Add a scalar multiple of one row to another row.</li></ul>",
       "final_answer": "$$x = \\frac{12}{5} = 2.4, \\quad y = -\\frac{61}{20} = -3.05, \\quad z = -\\frac{1}{4} = -0.25$$",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
@@ -1037,9 +1037,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) Define the degree sequence of a graph. Write the degree sequence of the path graph $P_5$. (b) State the handshaking lemma.",
+      "question": "Define the degree sequence of a graph. Write the degree sequence of the path graph $P_5$. (b) State the handshaking lemma.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The two endpoints $v_1$ and $v_5$ each have degree 1: $\\deg(v_1) = \\deg(v_5) = 1$.</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>The three internal vertices $v_2, v_3, v_4$ each have degree 2: $\\deg(v_2) = \\deg(v_3) = \\deg(v_4) = 2$.</li></ul>",
-      "final_answer": "(a) $\\text{Degree Sequence}(P_5) = (2, 2, 2, 1, 1)$; \\qquad (b) $\\sum_{v \\in V} \\deg(v) = 2|E|$.",
+      "final_answer": "$\\text{Degree Sequence}(P_5) = $; \\qquad (b) $\\sum_{v \\in V} \\deg(v) = 2|E|$.",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
       "has_official_scheme": true
     },
@@ -1050,7 +1050,7 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "(a) Sketch a non-simple graph with vertex set $V = \\{J, K, L, M, N, O, P, Q, R, S, T, U, V\\}$ and edge set $E = \\{JJ, KK, LL, MM, NO, OP, PQ, QR, RS, ST, TU, UV, VJ, JM, KN, LO\\}$. (b) List all loops that exist in the graph.",
+      "question": "Sketch a non-simple graph with vertex set $V = \\{J, K, L, M, N, O, P, Q, R, S, T, U, V\\}$ and edge set $E = \\{JJ, KK, LL, MM, NO, OP, PQ, QR, RS, ST, TU, UV, VJ, JM, KN, LO\\}$. (b) List all loops that exist in the graph.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(a) Definition of Edge deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Definition of Vertex deleted with example 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(b) Drawing C6 1 Mark</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 – v 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Graph of C6 –e 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>(c) Yes 1 Mark</li></ul>",
       "final_answer": "\\text{Loops: } \\{JJ, KK, LL, MM\\}",
       "source_exam": "EXAMINATION PAPER 2: APRIL 2026 REGULAR / REAPPEARANCE EXAMINATION",
@@ -1117,7 +1117,7 @@
       "marks": 2,
       "question": "Give an example of a linear system of 3 equations in 3 unknowns.",
       "solution_html": "<p class=\"mb-2\">A system of three linear equations in three variables $x, y, z$ with a unique solution:</p> $$\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$$ <p>This system has the unique solution $(x, y, z) = (1, 2, 3)$, as verified by direct substitution.</p>",
-      "final_answer": "Example: $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ with unique solution $(1, 2, 3)$.",
+      "final_answer": "Example: $\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$ with unique solution $$.",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1130,7 +1130,7 @@
       "marks": 2,
       "question": "What are the elementary row operations of a matrix.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Interchange:</strong> Swapping the positions of any two rows: $$R_i \\longleftrightarrow R_j$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Scaling:</strong> Multiplying all entries in a row by a non-zero scalar $k \\in \\mathbb{R} \\setminus \\{0\\}$: $$R_i \\longrightarrow k R_i$$</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'><strong>Row Addition:</strong> Adding a scalar multiple of one row to another row: $$R_i \\longrightarrow R_i + k R_j \\quad (i \\neq j)$$</li></ul>",
-      "final_answer": "The three elementary row operations: (1) $R_i \\leftrightarrow R_j$, (2) $R_i \\to k R_i$ ($k \\neq 0$), and (3) $R_i \\to R_i + k R_j$.",
+      "final_answer": "The three elementary row operations: $R_i \\leftrightarrow R_j$, $R_i \\to k R_i$ ($k \\neq 0$), and $R_i \\to R_i + k R_j$.",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1167,9 +1167,9 @@
       "part": "PART_B",
       "part_label": "Part B — Short Essay Questions",
       "marks": 6,
-      "question": "Find $\\frac{\\partial z}{\\partial x}$ and $\\frac{\\partial z}{\\partial y}$ at $(0, 0, 0)$, using formula for implicit differentiation, if $x^3 + z^2 + y e^{xz} + z \\cos y = 0$.",
+      "question": "Find $\\frac{\\partial z}{\\partial x}$ and $\\frac{\\partial z}{\\partial y}$ at $$, using formula for implicit differentiation, if $x^3 + z^2 + y e^{xz} + z \\cos y = 0$.",
       "solution_html": "<p class=\"mb-2\">Let $F(x, y, z) = x^3 + z^2 + y e^{xz} + z \\cos y = 0$.</p> <p class=\"mb-2\">By implicit differentiation formulas for $z = z(x, y)$:</p> $$\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}, \\qquad \\frac{\\partial z}{\\partial y} = -\\frac{F_y}{F_z}$$ <div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Compute partial derivatives $F_x, F_y, F_z$:</p> $$F_x = \\frac{\\partial}{\\partial x}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 3x^2 + 0 + y(z e^{xz}) + 0 = 3x^2 + y z e^{xz}$$ $$F_y = \\frac{\\partial}{\\partial y}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 0 + 0 + e^{xz} + z(-\\sin y) = e^{xz} - z\\sin y$$ $$F_z = \\frac{\\partial}{\\partial z}\\left[x^3 + z^2 + y e^{xz} + z \\cos y\\right] = 2z + y(x e^{xz}) + \\cos y = 2z + x y e^{xz} + \\cos y$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Evaluate at the origin $(x, y, z) = (0, 0, 0)$:</p> $$F_x(0, 0, 0) = 3(0)^2 + (0)(0)e^0 = 0$$ $$F_y(0, 0, 0) = e^0 - (0)\\sin(0) = 1 - 0 = 1$$ $$F_z(0, 0, 0) = 2(0) + (0)(0)e^0 + \\cos(0) = 0 + 0 + 1 = 1$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Calculate the partial derivatives:</p> $$\\left.\\frac{\\partial z}{\\partial x}\\right|_{(0, 0, 0)} = -\\frac{F_x(0, 0, 0)}{F_z(0, 0, 0)} = -\\frac{0}{1} = 0$$ $$\\left.\\frac{\\partial z}{\\partial y}\\right|_{(0, 0, 0)} = -\\frac{F_y(0, 0, 0)}{F_z(0, 0, 0)} = -\\frac{1}{1} = -1$$ </div> </div>",
-      "final_answer": "$$\\left.\\frac{\\partial z}{\\partial x}\\right|_{(0, 0, 0)} = 0, \\qquad \\left.\\frac{\\partial z}{\\partial y}\\right|_{(0, 0, 0)} = -1$$",
+      "final_answer": "$$\\left.\\frac{\\partial z}{\\partial x}\\right|_{} = 0, \\qquad \\left.\\frac{\\partial z}{\\partial y}\\right|_{} = -1$$",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1182,7 +1182,7 @@
       "marks": 6,
       "question": "Find the local extreme values (if any) of $f(x, y) = y^2 - x^2$.",
       "solution_html": "<div class=\"space-y-3\"> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 1: Determine critical points:</p> $$f_x = \\frac{\\partial}{\\partial x}(y^2 - x^2) = -2x = 0 \\implies x = 0$$ $$f_y = \\frac{\\partial}{\\partial y}(y^2 - x^2) = 2y = 0 \\implies y = 0$$ <p>The sole critical point is $(0, 0)$.</p> </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 2: Second-order partial derivatives:</p> $$f_{xx} = -2, \\qquad f_{yy} = 2, \\qquad f_{xy} = 0$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 3: Evaluate Discriminant (Hessian determinant):</p> $$D = f_{xx} f_{yy} - (f_{xy})^2 = (-2)(2) - 0^2 = -4$$ </div> <div> <p class=\"font-semibold text-slate-800 dark:text-slate-200\">Step 4: Classification:</p> <p>Because $D = -4 < 0$, the Second Derivative Test concludes that $(0, 0)$ is a <strong>saddle point</strong>.</p> <p>Along the $y$-axis ($x = 0$), $f(0, y) = y^2 \\geq 0$, which has a minimum at $(0, 0)$. Along the $x$-axis ($y = 0$), $f(x, 0) = -x^2 \\leq 0$, which has a maximum at $(0, 0)$. Hence, $f$ has no local extrema.</p> </div> </div>",
-      "final_answer": "No local extreme values exist; the critical point $(0, 0)$ is a **Saddle Point** ($D = -4 < 0$).",
+      "final_answer": "No local extreme values exist; the critical point $$ is a **Saddle Point** ($D = -4 < 0$).",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1220,8 +1220,8 @@
       "part_label": "Part B — Short Essay Questions",
       "marks": 6,
       "question": "What are the different types of solutions a system of equations can have? Explain using Gaussian elimination.",
-      "solution_html": "<p class=\"mb-2\">When a linear system $Ax = b$ with $n$ variables is transformed into row echelon form $ilde{A} \\mid ilde{b}]$ via Gaussian elimination, the Rouché–Capelli Theorem classifies all solutions into three mutually exclusive types:</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Unique Solution (Consistent with $r = n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = n$. Every column has a leading pivot, permitting unambiguous back substitution to a single solution vector.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Infinitely Many Solutions (Consistent with $r < n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = r < n$. There are $n - r > 0$ free variables, yielding a continuum of solutions parameterized by $n - r$ independent parameters.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. No Solution (Inconsistent System):</p> <p>Occurs when $\\text{rank}(A) < \\text{rank}(\\mid b])$. An echelon row appears of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, signifying the contradiction $0 = c$.</p> </div> </div>",
-      "final_answer": "Three types of solutions: (1) Unique Solution ($r = n$), (2) Infinitely Many Solutions ($r < n$), and (3) No Solution / Inconsistent ($\\text{rank}(A) < \\text{rank}(\\mid b])$).",
+      "solution_html": "<p class=\"mb-2\">When a linear system $Ax = b$ with $n$ variables is transformed into row echelon form $ilde{A} \\mid ilde{b}]$ via Gaussian elimination, the Rouché–Capelli Theorem classifies all solutions into three mutually exclusive types:</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Unique Solution $r = n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = n$. Every column has a leading pivot, permitting unambiguous back substitution to a single solution vector.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Infinitely Many Solutions $r < n$):</p> <p>Occurs when $\\text{rank}(A) = \\text{rank}(\\mid b]) = r < n$. There are $n - r > 0$ free variables, yielding a continuum of solutions parameterized by $n - r$ independent parameters.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. No Solution (Inconsistent System):</p> <p>Occurs when $\\text{rank}(A) < \\text{rank}(\\mid b])$. An echelon row appears of the form $\\; 0\\; \\dots\\; 0 \\mid c]$ where $c \\neq 0$, signifying the contradiction $0 = c$.</p> </div> </div>",
+      "final_answer": "Three types of solutions: Unique Solution ($r = n$), Infinitely Many Solutions ($r < n$), and No Solution / Inconsistent ($\\text{rank} < \\text{rank}(\\mid b])$).",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1273,7 +1273,7 @@
       "marks": 10,
       "question": "Find the absolute maximum and minimum values of $f(x, y) = 2 + 2x + 2y - x^2 - y^2$ on the triangular region in the first quadrant bounded by the lines $x = 0, \\; y = 0, \\; y = 9 - x$.",
       "solution_html": "<ul class='list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300'><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Finding points (0,0), (0,2), (1,0) 2 Marks</li><li class='leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300'>Evaluating 𝑓(𝑥, 𝑦) and its derivative on each side and hence getting ቀସହ , ଶହቁ… 2 Marks</li></ul>",
-      "final_answer": "\\text{Absolute Maximum} = 4 \\text{ at } (1,1); \\quad \\text{Absolute Minimum} = -61 \\text{ at } (9,0) \\text{ and } (0,9)",
+      "final_answer": "\\text{Absolute Maximum} = 4 \\text{ at } ; \\quad \\text{Absolute Minimum} = -61 \\text{ at } \\text{ and }",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1297,9 +1297,9 @@
       "part": "PART_C",
       "part_label": "Part C — Essay Questions",
       "marks": 10,
-      "question": "Find the area under the curve $y = f(x)$ over the stated interval: (a) $f(x) = x^3$ over $$. (b) $f(x) = x^{-2/3}$ over $$.",
+      "question": "Find the area under the curve $y = f(x)$ over the stated interval: $f(x) = x^3$ over $$. (b) $f(x) = x^{-2/3}$ over $$.",
       "solution_html": "<div class=\"space-y-4\"> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(a) Area for $f(x) = x^3$ over $$</h4> $$A_1 = \\int_2^3 x^3\\, dx = \\left\\frac{x^4}{4} \\right]_2^3 = \\frac{3^4}{4} - \\frac{2^4}{4} = \\frac{81 - 16}{4} = \\frac{65}{4} = 16.25$$ </div> <div> <h4 class=\"font-bold text-indigo-900 dark:text-indigo-300 text-sm mb-1\">(b) Area for $f(x) = x^{-2/3}$ over $$</h4> $$A_2 = \\int_1^{27} x^{-2/3}\\, dx = \\left\\frac{x^{(-2/3 + 1)}}{-2/3 + 1} \\right]_1^{27} = \\left\\frac{x^{1/3}}{1/3} \\right]_1^{27} = 3\\leftx^{1/3} \\right]_1^{27}$$ $$A_2 = 3\\left( (27)^{1/3} - (1)^{1/3} \\right) = 3(3 - 1) = 3(2) = 6$$ </div> </div>",
-      "final_answer": "(a) $\\text{Area} = \\frac{65}{4} = 16.25$; \\qquad (b) $\\text{Area} = 6$.",
+      "final_answer": "$\\text{Area} = \\frac{65}{4} = 16.25$; \\qquad (b) $\\text{Area} = 6$.",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     },
@@ -1338,7 +1338,7 @@
       "marks": 10,
       "question": "Draw any five simple cubic graphs with at most 8 vertices.",
       "solution_html": "<p class=\"mb-2\"><strong>Theoretical Condition for Cubic Graphs:</strong> A graph is <em>cubic</em> (3-regular) if $\\deg(v) = 3$ for all $v \\in V$.</p> <p class=\"mb-2\">By the Handshaking Lemma, $\\sum \\deg(v) = 3|V| = 2|E|$, so the vertex count $|V|$ <strong>must be an even integer</strong>. For $|V| \\leq 8$, permissible values of $|V|$ are $4, 6,$ and $8$.</p> <div class=\"space-y-3\"> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">1. Graph 1: The Complete Graph $K_4$ ($|V| = 4, |E| = 6$)</p> <p>Tetrahedral topology where each vertex connects to the other 3 vertices.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">2. Graph 2: The Complete Bipartite Graph $K_{3,3}$ ($|V| = 6, |E| = 9$)</p> <p>Utility graph with bipartition into two sets of 3 vertices, each joined to all 3 in the other partition.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">3. Graph 3: The Triangular Prism Graph ($|V| = 6, |E| = 9$)</p> <p>Consists of two disjoint 3-cycles $C_3$ joined by 3 matching vertical edges.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">4. Graph 4: The 3-Dimensional Cube Graph $Q_3$ ($|V| = 8, |E| = 12$)</p> <p>The standard 8-vertex cube skeleton consisting of two concentric 4-cycles $C_4$ joined by 4 rung edges.</p> </div> <div> <p class=\"font-bold text-indigo-900 dark:text-indigo-300\">5. Graph 5: The Möbius Ladder Graph $M_8$ ($|V| = 8, |E| = 12$)</p> <p>An 8-cycle $C_8$ with 4 cross-rungs joining opposite antipodal vertices.</p> </div> </div>",
-      "final_answer": "Five distinct cubic graphs: (1) $K_4$, (2) $K_{3,3}$, (3) Triangular Prism, (4) 3-Cube $Q_3$, and (5) Möbius Ladder $M_8$.",
+      "final_answer": "Five distinct cubic graphs: $K_4$, $K_{3,3}$, Triangular Prism, 3-Cube $Q_3$, and Möbius Ladder $M_8$.",
       "source_exam": "MODEL QUESTION PAPER: MGU FYUGP CURRICULUM",
       "has_official_scheme": true
     }
@@ -1349,5 +1349,6 @@
     "part_b": 24,
     "part_c": 18
   },
-  "has_official_scheme": true
+  "has_official_scheme": true,
+  "total_solved": 66
 }

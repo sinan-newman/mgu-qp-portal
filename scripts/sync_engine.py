@@ -292,6 +292,7 @@ def sync_storage_repo():
         git_exe = shutil.which("git") or "git"
 
     token = os.environ.get("STORAGE_PAT") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+    git_env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
 
     if not os.path.exists(STORAGE_DIR):
         if token:
@@ -299,17 +300,22 @@ def sync_storage_repo():
                 import subprocess
                 clone_url = f"https://{token}@github.com/sinan-newman/mgu-qp-storage.git"
                 print(f"[Storage Push] Cloning storage repository...", flush=True)
-                subprocess.run([git_exe, "clone", "--depth", "1", clone_url, STORAGE_DIR], check=True)
+                subprocess.run([git_exe, "clone", "--depth", "1", clone_url, STORAGE_DIR], check=True, timeout=120, env=git_env)
             except Exception as e:
                 print(f"[Storage Push] Note: Could not clone storage repo: {e}", flush=True)
                 return
         else:
+            print("[Storage Push] STORAGE_PAT not provided and storage dir not present; skipping storage sync.", flush=True)
             return
+
+    if not token:
+        print("[Storage Push] No storage token configured; skipping remote push (files retained locally).", flush=True)
+        return
 
     try:
         import subprocess
         # Check untracked or modified files in storage
-        status = subprocess.check_output([git_exe, "-C", STORAGE_DIR, "status", "-s"], text=True)
+        status = subprocess.check_output([git_exe, "-C", STORAGE_DIR, "status", "-s"], text=True, timeout=30)
         untracked = [line.strip().replace("?? ", "").replace("M ", "").strip() for line in status.splitlines() if "pdf/DOC-" in line or "pdf/QP_" in line or "pdf/SCHEME_" in line]
         if not untracked:
             print("[Storage Push] Storage repository is up to date.", flush=True)
@@ -318,20 +324,25 @@ def sync_storage_repo():
         batch_size = 50
         batches = [untracked[i:i + batch_size] for i in range(0, len(untracked), batch_size)]
         
-        push_target = f"https://{token}@github.com/sinan-newman/mgu-qp-storage.git" if token else "origin"
+        push_target = f"https://{token}@github.com/sinan-newman/mgu-qp-storage.git"
         
         for idx, batch in enumerate(batches, 1):
-            subprocess.run([git_exe, "-C", STORAGE_DIR, "add"] + batch, check=True)
-            diff_check = subprocess.run([git_exe, "-C", STORAGE_DIR, "diff", "--staged", "--quiet"])
+            subprocess.run([git_exe, "-C", STORAGE_DIR, "add"] + batch, check=True, timeout=60, env=git_env)
+            diff_check = subprocess.run([git_exe, "-C", STORAGE_DIR, "diff", "--staged", "--quiet"], timeout=30, env=git_env)
             if diff_check.returncode == 0:
                 continue
-            subprocess.run([git_exe, "-C", STORAGE_DIR, "commit", "-m", f"Automated sync: add MGU exam QP/Scheme chunk {idx}/{len(batches)} [skip ci]"], check=True)
+            subprocess.run([git_exe, "-C", STORAGE_DIR, "commit", "-m", f"Automated sync: add MGU exam QP/Scheme chunk {idx}/{len(batches)} [skip ci]"], check=True, timeout=60, env=git_env)
             for attempt in range(3):
-                p_res = subprocess.run([git_exe, "-C", STORAGE_DIR, "push", push_target, "main"], capture_output=True, text=True)
-                if p_res.returncode == 0:
-                    print(f"[Storage Push] Batch {idx}/{len(batches)} pushed.", flush=True)
-                    break
-                else:
+                try:
+                    p_res = subprocess.run([git_exe, "-C", STORAGE_DIR, "push", push_target, "main"], capture_output=True, text=True, timeout=60, env=git_env)
+                    if p_res.returncode == 0:
+                        print(f"[Storage Push] Batch {idx}/{len(batches)} pushed.", flush=True)
+                        break
+                    else:
+                        print(f"[Storage Push] Push attempt {attempt+1} warning: {p_res.stderr.strip()}", flush=True)
+                        time.sleep(2)
+                except subprocess.TimeoutExpired:
+                    print(f"[Storage Push] Push attempt {attempt+1} timed out.", flush=True)
                     time.sleep(2)
     except Exception as e:
         print(f"[Storage Push] Note: Storage push completed or skipped: {e}", flush=True)

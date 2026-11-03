@@ -1101,17 +1101,17 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
 
 def start_background_scheduler():
     def scheduler_loop():
-        INTERVAL_SECONDS = 6 * 3600  # 6 hours
+        time.sleep(30)
         while True:
-            time.sleep(INTERVAL_SECONDS)
             try:
-                print("[Scheduled 6-Hr Auto-Sync] Starting background crawl...", flush=True)
+                print("[Scheduled 6-Hr Auto-Sync] Checking for university updates...", flush=True)
                 import scripts.sync_engine as sync_engine
                 sync_engine.run_sync(trigger_type="automatic")
                 load_data()
                 print("[Scheduled 6-Hr Auto-Sync] Completed successfully.", flush=True)
             except Exception as e:
                 print(f"[Scheduled 6-Hr Auto-Sync] Error: {e}", flush=True)
+            time.sleep(6 * 3600)
 
     t = threading.Thread(target=scheduler_loop, daemon=True)
     t.start()

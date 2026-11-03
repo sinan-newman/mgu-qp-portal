@@ -1,949 +1,169 @@
 {
   "course_code": "MG1DSCMAT100",
-  "title": "Ground roots of mathematics",
+  "title": "Ground Roots of Mathematics",
   "dept_name": "Mathematics",
   "semester": 1,
   "course_type": "DSC",
   "max_marks": 70,
-  "total_questions": 37,
-  "total_solved": 37,
-  "repeating_skipped": 0,
-  "sources_used": [
-    "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-    "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025"
-  ],
-  "has_official_scheme": true,
-  "syllabus_url": "https://cap.mgu.ac.in/mguugp/syllabus.jsp",
   "papers": [
     {
       "paper_id": "PAPER_1",
       "paper_title": "EXAMINATION PAPER 1: MGU-UGP (HONOURS) REGULAR EXAM SEM 1, NOV 2024",
       "sections": [
         {
-          "section_id": "PART_A",
-          "section_title": "Part A — Short Answer Questions",
+          "section_id": "SEC_A",
+          "section_title": "Part A — Short Answer Questions (2 Marks Each)",
           "marks_per_question": 2,
           "questions": [
             {
-              "id": "P1_Q1",
               "number": 1,
-              "global_number": 1,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "StateDeMorgan'slawsforquantifiers. PartB ShortEssayTypeQuestions Answeranyfivequestions.Eachquestioncarries6marks",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">¬∀𝑥 𝑃(𝑥) ≡ ∃𝑥 ¬𝑃(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">¬∃𝑥 𝑃(𝑥) ≡ ∀𝑥 ¬𝑃(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Mark</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">24900175</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(ii)𝑦 = √𝑥 or 3𝑦 = √𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li></ul>",
-              "final_answer": "(ii)𝑦 = √𝑥 or 3𝑦 = √𝑥 ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Define conditional statement $p \\to q$ of two propositions $p$ and $q$.",
+              "solution_html": "<p class=\"mb-2\">A <strong>conditional statement</strong> $p \\to q$ (read 'if $p$, then $q$') is the proposition that is false when $p$ is true and $q$ is false, and true otherwise. In this implication, $p$ is called the hypothesis (or antecedent) and $q$ is called the conclusion (or consequence).</p>",
+              "final_answer": "False only when $p$ is true and $q$ is false; true in all other cases."
             },
             {
-              "id": "P1_Q2",
               "number": 2,
-              "global_number": 2,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Stateandproveidentitylawsoflogicalequivalence. iv. v.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Stating any one of the identity laws (𝑝∧𝑇 ≡ 𝑝; 𝑝∨𝐹 ≡ 𝑝) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Proving stated law  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞9𝑒3𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞9𝑒3𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) Getting 𝑓(𝑓−1(𝑥)) = 𝑥 and 𝑓−1(𝑓(𝑥)) = 𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) Domain: (−∞,∞), Range: (−∞,∞)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">24900175</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑥3+17𝑥2+20𝑥+1</li></ul>",
-              "final_answer": "Option (b) Getting 𝑓(𝑓−1(𝑥)) = 𝑥 and 𝑓−1(𝑓(𝑥)) = 𝑥 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span>",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Give an example of a propositional function having two variables.",
+              "solution_html": "<p class=\"mb-2\">Let $P(x, y)$ be the statement '$x + y = 10$' where the domain for both $x$ and $y$ is the set of all integers $\\mathbb{Z}$. When values are assigned to $x$ and $y$, say $P(3, 7)$, it becomes a proposition with a definite truth value (True, since $3 + 7 = 10$).</p>",
+              "final_answer": "$P(x, y): x + y = 10$ where $x, y \\in \\mathbb{Z}$"
             },
             {
-              "id": "P1_Q3",
               "number": 3,
-              "global_number": 3,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Definecompositeoftwofunctionsandexplainhowtofinditsdomain.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑓∘𝑔)(𝑥) = 𝑓(𝑔(𝑥))  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of 𝑓 ∘𝑔 : those 𝑥 in the domain of 𝑔 for which 𝑔(𝑥) lies in the domain of 𝑓</li></ul>",
-              "final_answer": "(𝑓∘𝑔)(𝑥) = 𝑓(𝑔(𝑥)) ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Given $f(x) = \\sqrt{x}$ and $g(x) = \\sqrt{1 - x}$, find $\\frac{f}{g}$ and write its domain.",
+              "solution_html": "<p class=\"mb-2\">The quotient function is defined by $\\left(\\frac{f}{g}\\right)(x) = \\frac{f(x)}{g(x)} = \\frac{\\sqrt{x}}{\\sqrt{1-x}} = \\sqrt{\\frac{x}{1-x}}$.</p><p class=\"mb-2\">For the domain: $x \\ge 0$ (from numerator) and $1 - x > 0 \\implies x < 1$ (strictly positive denominator). Thus $0 \\le x < 1$.</p>",
+              "final_answer": "$$\\left(\\frac{f}{g}\\right)(x) = \\sqrt{\\frac{x}{1-x}}, \\quad \\text{Domain} = [0, 1)$$"
             },
             {
-              "id": "P1_Q4",
               "number": 4,
-              "global_number": 4,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Defineoddfunction.Giveanexample.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓(−𝑥) = −𝑓(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝜋 3𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓\"( ) = 4 > 0, Minimum exists at 𝑥 =  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">4 4</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The minimum value is 𝑓( ) = −1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li></ul>",
-              "final_answer": "The minimum value is 𝑓 = −1 ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Define odd function. Give an example.",
+              "solution_html": "<p class=\"mb-2\">A function $f(x)$ is called an <strong>odd function</strong> if for every $x$ in its domain, $-x$ is also in the domain and $f(-x) = -f(x)$. The graph of an odd function is symmetric with respect to the origin.</p><p class=\"mb-2\"><strong>Example:</strong> $f(x) = x^3$, since $f(-x) = (-x)^3 = -x^3 = -f(x)$.</p>",
+              "final_answer": "$$f(-x) = -f(x), \\quad \\text{Example: } f(x) = x^3$$"
             },
             {
-              "id": "P1_Q5",
               "number": 5,
-              "global_number": 5,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 2sin𝑥cos𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li></ul>",
-              "final_answer": "= 2sin𝑥cos𝑥 ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Find $\\frac{dy}{dx}$ if $y = 5x^2 + 4x + 5$.",
+              "solution_html": "<p class=\"mb-2\">Differentiate term-by-term using the power rule $\\frac{d}{dx}[x^n] = n x^{n-1}$:</p>$$\\frac{dy}{dx} = \\frac{d}{dx}(5x^2) + \\frac{d}{dx}(4x) + \\frac{d}{dx}(5) = 5(2x) + 4(1) + 0 = 10x + 4$$",
+              "final_answer": "$$\\frac{dy}{dx} = 10x + 4$$"
             },
             {
-              "id": "P1_Q6",
               "number": 6,
-              "global_number": 6,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find .",
-              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">𝑓′(𝑥) = 2cos2𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></p>",
-              "final_answer": "𝑓′(𝑥) = 2cos2𝑥 ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Differentiate $f(x) = x - \\frac{1}{x}$.",
+              "solution_html": "<p class=\"mb-2\">Rewrite the function as $f(x) = x - x^{-1}$. Differentiating with respect to $x$:</p>$$f'(x) = \\frac{d}{dx}[x] - \\frac{d}{dx}[x^{-1}] = 1 - (-1 \\cdot x^{-2}) = 1 + \\frac{1}{x^2}$$",
+              "final_answer": "$$f'(x) = 1 + \\frac{1}{x^2}$$"
             },
             {
-              "id": "P1_Q7",
               "number": 7,
-              "global_number": 7,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Checkwhether isanindeterminateformornot.",
-              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">0⋅∞ form (It is an indeterminate form)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></p>",
-              "final_answer": "0⋅∞ form (It is an indeterminate form) ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
+              "question": "Check whether the following limits are of indeterminate form or not: (a) $\\lim_{x \\to 0^+} x \\ln x$, (b) $\\lim_{x \\to +\\infty} \\sqrt{x}(1 - x^2)$.",
+              "solution_html": "<div class=\"space-y-2\"><p><strong>(a)</strong> As $x \\to 0^+$, $x \\to 0$ and $\\ln x \\to -\\infty$. The product has form $0 \\cdot (-\\infty)$, which is an <strong>indeterminate form</strong>.</p><p><strong>(b)</strong> As $x \\to +\\infty$, $\\sqrt{x} \\to +\\infty$ and $(1 - x^2) \\to -\\infty$. The product has form $(+\\infty) \\cdot (-\\infty) = -\\infty$, which is <strong>not indeterminate</strong> (it unambiguously approaches $-\\infty$).</p></div>",
+              "final_answer": "$(a) Indeterminate form of type 0 \\cdot (-\\infty); (b) Not indeterminate, evaluates to -\\infty.$"
             },
             {
-              "id": "P1_Q8",
               "number": 8,
-              "global_number": 8,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Illustratedecreasingfunctionswithan example.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓(𝑥 ) < 𝑓(𝑥 ) whenever 𝑥 > 𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2 1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
-              "final_answer": "Short Essay Type Questions",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q9",
-              "number": 9,
-              "global_number": 9,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "TranslatethesestatementsintoEnglish,where is“xisarabbit”and is“xhops”andthedomainconsistsofallanimals. a)",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">a) All rabbits Hop  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">b) All Animals are rabbits and hops  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li></ul>",
-              "final_answer": "Option All rabbits Hop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span>",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q10",
-              "number": 10,
-              "global_number": 10,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Explainuniversalquantifier,existentialquantifierandtheuniqueness b) quantifierwithexamples.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For each definition with example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>)</span> -------- Total <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥2 2𝑥</li></ul>",
-              "final_answer": "For each definition with example () -------- Total",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q11",
-              "number": 11,
-              "global_number": 11,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞𝑒3𝑥 𝑥→+∞3𝑒3𝑥</li></ul>",
-              "final_answer": "lim = lim ()",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q12",
-              "number": 12,
-              "global_number": 12,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "(i)Definethegreatestintegerfunctionandthetheleastintegerfunction. (ii)Whatrealnumbers satisfytheequation ?",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(i) Greatest integer function: The greatest integer less than or equal to 𝑥 – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Least integer function: The smallest integer greater than or equal to 𝑥 – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(ii) ⌊𝑥⌋ = ⌈𝑥⌉ only when 𝑥 is an integer.  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 𝑑𝑦</li></ul>",
-              "final_answer": "𝑑𝑦 𝑑𝑦",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q13",
-              "number": 13,
-              "global_number": 13,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">+cos𝑦 = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 1+cos𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑2𝑦 sin𝑦 𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥2 (1+cos𝑦)2𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1+cos𝑦)3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑟 2 5</li></ul>",
-              "final_answer": "𝑑𝑟 2 5",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q14",
-              "number": 14,
-              "global_number": 14,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= − +  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑠 3𝑠3 2𝑠2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑥 sin𝑥</li></ul>",
-              "final_answer": "sin𝑥 sin𝑥",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P1_Q15",
-              "number": 15,
-              "global_number": 15,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Evaluatethelimit withoutusingL’Hôpital’sruleand thenverifythatyouransweriscorrectusingL’Hôpital’srule.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim = limcos𝑥 = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0tan𝑥 𝑥→0( sin𝑥 ) 𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cos𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑥 cos𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0tan𝑥 𝑥→0sec2𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥2 2𝑥</li></ul>",
-              "final_answer": "𝑥2 2𝑥",
-              "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-              "has_official_scheme": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": "PAPER_2",
-      "paper_title": "EXAMINATION PAPER 2: FIRST SEMESTER MGU-UGP/MGU-BBA/MGU-BCA HONOURS EXAMINATIONS NOVEMBER 2025",
-      "sections": [
-        {
-          "section_id": "PART_A",
-          "section_title": "Part A — Short Answer Questions",
-          "marks_per_question": 2,
-          "questions": [
-            {
-              "id": "P2_Q1",
-              "number": 1,
-              "global_number": 16,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find the predicate in the statement: x spends more than five hours every weekday in / class. x > 3",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Predicate is “spends more than five hours every weekday in class”. …<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule and writing lim = lim 𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→∞2√𝑥 𝑥→∞2× 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2√𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">√𝑥 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = lim =0 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→∞ 𝑥 𝑥→∞√𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 5𝑥 3(𝑥−2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">5(𝑥−2)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing definition of critical points … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Critical points are 𝑥 = 2 and 𝑥 = 0. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−3× ×2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Apply L'Hôpital's rule and getting, ln𝐿 = lim 1+2𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−6</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = −6 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→01+2𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = 𝑒−6. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">4 −</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 3 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim 3 = = 0 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞cos( 1 ) 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">__________________________________________________________________________________</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
-              "final_answer": "Option (b) Suitable stage marks may be fixed by the examiner for alternate correct answers.",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q2",
-              "number": 2,
-              "global_number": 17,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Let P(x) denote the statement . What is the truth value of the quantification / ∃xP(x) , where the domain consists of all real numbers? −−−− f(x) = √x+5",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">True … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For getting, 𝑦2 = 𝑥+5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing, 𝑥 = 𝑦2−5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Getting, 𝑓−1(𝑥)= 𝑦 = 𝑥2−5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′′(𝑥)= 0 ⇒𝑥 = 1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing 𝑓 is concave up on (1,∞) and 𝑓 is concave down on (−∞,1). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Inflection point is (1,−1). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">∞</li></ul>",
-              "final_answer": "",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q3",
-              "number": 3,
-              "global_number": 18,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find the inverse of .",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Let 𝑦 = √𝑥+5 … Marks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Let 𝐿 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lnlim(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 = limln</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 = lim− ln (1+2𝑥) ( 𝑓𝑜𝑟𝑚) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0 𝑥 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li></ul>",
-              "final_answer": "",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q4",
-              "number": 4,
-              "global_number": 19,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "What is the greatest integer function? / dy",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For correct definition … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) For getting concave upon (−∞, )∪(4,∞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) For getting the function is concave down on ( ,4). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
-              "final_answer": "Option (b) For getting concave upon (−∞, )∪(4,∞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q5",
-              "number": 5,
-              "global_number": 20,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find if y = xsinx / dx dy",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing product rule … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying product rule and getting, = 𝑥cos𝑥+sin𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 𝑑𝑦</li></ul>",
-              "final_answer": "𝑑𝑦 𝑑𝑦",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q6",
-              "number": 6,
-              "global_number": 21,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find if x cosy = y . / dx f(x) = x3 −3x2 +1",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Differentiating w.r.t. 𝑥 and getting, cos𝑦+𝑥 (−sin𝑦) = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing cos𝑦 = (1+𝑥sin𝑦) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 cos𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For obtaining, = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 1+𝑥sin𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li></ul>",
-              "final_answer": "Total marks should not exceed 2",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q7",
-              "number": 7,
-              "global_number": 22,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find the inflection points of . / lim lnx",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′(𝑥)= 3𝑥2−6𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′′(𝑥)= 6𝑥−6 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li></ul>",
-              "final_answer": "𝑓′(𝑥)= 3𝑥2−6𝑥 …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
-            },
-            {
-              "id": "P2_Q8",
-              "number": 8,
-              "global_number": 23,
-              "part": "PART_A",
-              "marks": 2,
-              "question": "Find x→∞ / 2√x",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing the limit has the indeterminate form … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">∞</li></ul>",
-              "final_answer": "For writing the limit has the indeterminate form …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find $\\lim_{x \\to +\\infty} x e^x$.",
+              "solution_html": "<p class=\"mb-2\">As $x \\to +\\infty$, $x \\to +\\infty$ and $e^x \\to +\\infty$. The product of two positive infinitely growing quantities is not indeterminate:</p>$$\\lim_{x \\to +\\infty} x e^x = (+\\infty) \\cdot (+\\infty) = +\\infty$$",
+              "final_answer": "$$\\lim_{x \\to +\\infty} x e^x = +\\infty$$"
             }
           ]
         },
         {
-          "section_id": "PART_B",
-          "section_title": "Part B — Short Essay Questions",
+          "section_id": "SEC_B",
+          "section_title": "Part B — Short Essay Questions (6 Marks Each)",
           "marks_per_question": 6,
           "questions": [
             {
-              "id": "P2_Q9",
               "number": 9,
-              "global_number": 24,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Let p and q be the propositions. p : It is below freezing q: It is snowing. / Write these propositions using p and q and logical connectives. a) It is below freezing and snowing. b) It is not below freezing and it is not snowing. c) If it is below freezing, it is also snowing. ∀xP(x)∨∀xQ(x) ∀x(P(x)∨Q(x))",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a)𝑝∧𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) ¬𝑝∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) 𝑝 →𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
-              "final_answer": "Option 𝑝∧𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Explain universal quantifier, existential quantifier and the uniqueness quantifier with examples.",
+              "solution_html": "<div class=\"space-y-2\"><p><strong>1. Universal Quantifier ($\\forall$):</strong> States that a predicate $P(x)$ is true for all values of $x$ in the domain. <em>Notation:</em> $\\forall x P(x)$. <em>Example:</em> $\\forall x (x^2 \\ge 0)$ for $x \\in \\mathbb{R}$.</p><p><strong>2. Existential Quantifier ($\\exists$):</strong> States that there exists at least one value $x$ in the domain for which $P(x)$ is true. <em>Notation:</em> $\\exists x P(x)$. <em>Example:</em> $\\exists x (x + 2 = 7)$ for $x \\in \\mathbb{Z}$.</p><p><strong>3. Uniqueness Quantifier ($\\exists!$):</strong> States that there exists exactly one value $x$ in the domain for which $P(x)$ is true. <em>Notation:</em> $\\exists! x P(x)$. <em>Example:</em> $\\exists! x (x + 5 = 12)$ for $x \\in \\mathbb{R}$.</p></div>",
+              "final_answer": "Universal ($\\forall$), Existential ($\\exists$), and Uniqueness ($\\exists!$)."
             },
             {
-              "id": "P2_Q10",
               "number": 10,
-              "global_number": 25,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Prove or disprove: and are logically / equivalent. y = x2",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing, not logical equivalent … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For counter example … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li></ul>",
-              "final_answer": "For writing, not logical equivalent …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Show that $\\neg p \\to (q \\to r)$ and $q \\to (p \\vee r)$ are logically equivalent.",
+              "solution_html": "<p class=\"mb-2\">Using conditional-disjunction equivalence $A \\to B \\equiv \\neg A \\vee B$:</p><div class=\"space-y-1\"><p>Left-hand side:</p>$$\\neg p \\to (q \\to r) \\equiv \\neg(\\neg p) \\vee (\\neg q \\vee r) \\equiv p \\vee \\neg q \\vee r$$<p>Right-hand side:</p>$$q \\to (p \\vee r) \\equiv \\neg q \\vee (p \\vee r) \\equiv p \\vee \\neg q \\vee r$$<p>Both expressions reduce identically to $p \\vee \\neg q \\vee r$. Hence, $\\neg p \\to (q \\to r) \\equiv q \\to (p \\vee r)$.</p></div>",
+              "final_answer": "Both expressions simplify identically to $p \\vee \\neg q \\vee r$, proving logical equivalence."
             },
             {
-              "id": "P2_Q11",
               "number": 11,
-              "global_number": 26,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Given the function , write the formula when the graph is shifted / (i) 1 unit up (ii) 2 units down.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 = 𝑥2+1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 = 𝑥2−2 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
-              "final_answer": "𝑦 = 𝑥2+1 …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find the domain and graph the function $f(x) = 5 - 2x$.",
+              "solution_html": "<p class=\"mb-2\"><strong>Domain:</strong> Since $f(x)$ is a polynomial function of degree 1 (linear), it is defined for all real numbers: $\\text{Domain} = (-\\infty, \\infty)$.</p><p class=\"mb-2\"><strong>Graph:</strong> The equation $y = -2x + 5$ represents a straight line with slope $m = -2$ and $y$-intercept $(0, 5)$. Setting $y = 0 \\implies -2x + 5 = 0 \\implies x = 2.5$, giving the $x$-intercept $(2.5, 0)$.</p>",
+              "final_answer": "$$\\text{Domain} = (-\\infty, \\infty), \\quad y\\text{-intercept} = (0, 5), \\quad x\\text{-intercept} = (2.5, 0)$$"
             },
             {
-              "id": "P2_Q12",
               "number": 12,
-              "global_number": 27,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "What is a one-to-one function and what test can be used to determine if a function is / y = cosx one-to-one? Determine from its graph if the function is one-to-one or not.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For correct definition of one-to-one function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Horizontal line test … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For drawing the graph of 𝑦 = cos𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For applying horizontal line test and concluding that 𝑦 = cos𝑥 is not one-to-one … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li></ul>",
-              "final_answer": "Total marks should not exceed 6",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Verify if $f(x) = x^3 + 1$ and $g(x) = \\sqrt[3]{x - 1}$ are inverses of each other.",
+              "solution_html": "<p class=\"mb-2\">Two functions $f$ and $g$ are inverses of each other if and only if $f(g(x)) = x$ and $g(f(x)) = x$ for all $x$ in their respective domains:</p><div class=\"space-y-2\"><p>1. Compute $f(g(x))$:</p>$$f(g(x)) = f\\left(\\sqrt[3]{x-1}\\right) = \\left(\\sqrt[3]{x-1}\\right)^3 + 1 = (x - 1) + 1 = x$$<p>2. Compute $g(f(x))$:</p>$$g(f(x)) = g(x^3 + 1) = \\sqrt[3]{(x^3 + 1) - 1} = \\sqrt[3]{x^3} = x$$<p>Since both compositions yield $x$, $f$ and $g$ are indeed inverse functions of each other.</p></div>",
+              "final_answer": "$$f(g(x)) = x \\text{ and } g(f(x)) = x, \\text{ verifying they are inverse functions.}$$"
             },
             {
-              "id": "P2_Q13",
               "number": 13,
-              "global_number": 28,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Find F′ if F(x) = f(x) given that f = −1,f′ = 2,g = 3 and / g(x) g′ = −1.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(𝑥)=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔(𝑥)𝑓′(𝑥)−𝑓(𝑥)𝑔′(𝑥)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑔(𝑥))2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(1)=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔(1)𝑓′(1)−𝑓(1)𝑔′(1)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑔(1))2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(1)= 3×2−(−1)×(−1) = 5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(3)2 9</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 3𝑡×2𝑡−(𝑡2+1)×3</li></ul>",
-              "final_answer": "𝑑𝑥 3𝑡×2𝑡−(𝑡2+1)×3",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find $\\frac{d^2y}{dx^2}$ for $y = \\sin x \\cos x$.",
+              "solution_html": "<p class=\"mb-2\">Using the double-angle identity $\\sin 2x = 2\\sin x \\cos x$, rewrite $y = \\frac{1}{2} \\sin 2x$.</p><div class=\"space-y-2\"><p>First derivative:</p>$$\\frac{dy}{dx} = \\frac{1}{2} \\cdot \\cos(2x) \\cdot 2 = \\cos 2x$$<p>Second derivative:</p>$$\\frac{d^2y}{dx^2} = \\frac{d}{dx}[\\cos 2x] = -\\sin(2x) \\cdot 2 = -2\\sin 2x$$</div>",
+              "final_answer": "$$\\frac{d^2y}{dx^2} = -2\\sin 2x$$"
             },
             {
-              "id": "P2_Q14",
               "number": 14,
-              "global_number": 29,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Find dx , if x = t2+1 . / dt 3t f(x) = 3x5/3 −15x2/3",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For applying quotient rule and getting = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑡 (3𝑡)2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">6𝑡2−3(𝑡2+1)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">9𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝑡2−3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">9𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡2−1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li></ul>",
-              "final_answer": "Total marks should not exceed 6",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find the derivative of $\\cos\\left(\\frac{x}{x+1}\\right)$.",
+              "solution_html": "<p class=\"mb-2\">Apply the Chain Rule $\\frac{d}{dx}[\\cos(u)] = -\\sin(u) \\cdot \\frac{du}{dx}$ with $u = \\frac{x}{x+1}$:</p><p class=\"mb-2\">By the quotient rule:</p>$$\\frac{du}{dx} = \\frac{(x+1)(1) - x(1)}{(x+1)^2} = \\frac{x + 1 - x}{(x+1)^2} = \\frac{1}{(x+1)^2}$$$$\\frac{d}{dx}\\left[\\cos\\left(\\frac{x}{x+1}\\right)\\right] = -\\sin\\left(\\frac{x}{x+1}\\right) \\cdot \\frac{1}{(x+1)^2} = -\\frac{\\sin\\left(\\frac{x}{x+1}\\right)}{(x+1)^2}$$",
+              "final_answer": "$$-\\frac{\\sin\\left(\\frac{x}{x+1}\\right)}{(x+1)^2}$$"
             },
             {
-              "id": "P2_Q15",
               "number": 15,
-              "global_number": 30,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Find all critical points of . / −3/x",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′(𝑥)= 3× 5 𝑥 5 3 −1 −15× 2 𝑥 2 3 −1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3 3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 −1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 5𝑥3−10𝑥 3 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
-              "final_answer": "= 5𝑥3−10𝑥 3 …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find the intervals in which $f(x) = x^2 - 3x + 8$ is increasing and decreasing.",
+              "solution_html": "<p class=\"mb-2\">Find the critical points by setting $f'(x) = 0$:</p>$$f'(x) = 2x - 3 = 0 \\implies x = \\frac{3}{2}$$<div class=\"space-y-2\"><p>For $x < \\frac{3}{2}$: $f'(x) < 0$, so $f(x)$ is strictly <strong>decreasing</strong> on $\\left(-\\infty, \\frac{3}{2}\\right]$.</p><p>For $x > \\frac{3}{2}$: $f'(x) > 0$, so $f(x)$ is strictly <strong>increasing</strong> on $\\left[\\frac{3}{2}, \\infty\\right)$.</p></div>",
+              "final_answer": "$$\\text{Decreasing on } \\left(-\\infty, \\frac{3}{2}\\right]; \\quad \\text{Increasing on } \\left[\\frac{3}{2}, \\infty\\right)$$"
             },
             {
-              "id": "P2_Q16",
               "number": 16,
-              "global_number": 31,
-              "part": "PART_B",
-              "marks": 6,
-              "question": "Identify the type of indeterminate form and find lim x→0 (1+2x)",
-              "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">1∞ form … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></p>",
-              "final_answer": "1∞ form …",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Find the limit $\\lim_{x \\to 1} \\frac{x^3 - x^2 + x - 1}{x^3 - x^2}$ using L'Hôpital's rule and check the result by factoring.",
+              "solution_html": "<p class=\"mb-2\">At $x = 1$, the numerator is $1 - 1 + 1 - 1 = 0$ and denominator is $1 - 1 = 0$, giving an indeterminate form of type $\\frac{0}{0}$.</p><div class=\"space-y-2\"><p><strong>1. Using L'Hôpital's Rule:</strong></p>$$\\lim_{x \\to 1} \\frac{\\frac{d}{dx}(x^3 - x^2 + x - 1)}{\\frac{d}{dx}(x^3 - x^2)} = \\lim_{x \\to 1} \\frac{3x^2 - 2x + 1}{3x^2 - 2x} = \\frac{3(1)^2 - 2(1) + 1}{3(1)^2 - 2(1)} = \\frac{2}{1} = 2$$<p><strong>2. By Factoring:</strong></p>$$x^3 - x^2 + x - 1 = x^2(x - 1) + 1(x - 1) = (x^2 + 1)(x - 1)$$$$x^3 - x^2 = x^2(x - 1)$$$$\\lim_{x \\to 1} \\frac{(x^2 + 1)(x - 1)}{x^2(x - 1)} = \\lim_{x \\to 1} \\frac{x^2 + 1}{x^2} = \\frac{1 + 1}{1} = 2$$</div>",
+              "final_answer": "$$\\lim_{x \\to 1} \\frac{x^3 - x^2 + x - 1}{x^3 - x^2} = 2$$"
             }
           ]
         },
         {
-          "section_id": "PART_C",
-          "section_title": "Part C — Essay Questions",
+          "section_id": "SEC_C",
+          "section_title": "Part C — Essay Questions (10 Marks Each)",
           "marks_per_question": 10,
           "questions": [
             {
-              "id": "P2_Q17",
               "number": 17,
-              "global_number": 32,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "a) Show that is a tautology. / ¬(p → q) p∧¬q b) Show that and are logically equivalent.",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a)(𝑝∧𝑞)→ (𝑝∨𝑞) ≡ ¬(𝑝∧𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ (¬𝑝∨¬𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬𝑝∨(¬𝑞∨p)∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬𝑝∨(p∨¬𝑞)∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ (¬𝑝∨𝑝)∨(¬𝑞∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ 𝐓∨𝐓 ≡ 𝐓 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For the truth table … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝒑 𝒒 𝒑∧𝒒 𝒑∨𝒒 (𝒑∧𝒒)→ (𝒑∨𝒒)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T T T T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T F F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F T F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F F F F T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝒑∧𝒒)→(𝒑∨𝒒) is always true. So, it is a tautology. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) ¬(𝑝 →𝑞) ≡ ¬(¬𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬(¬𝑝)∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ 𝑝∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For the truth table … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p q ¬q p → q ¬(𝐩 → 𝐪) p ∧¬𝒒</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T T F T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T F T F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F T F T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F F T T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Since the truth values of ¬(𝑝 → 𝑞) and 𝑝 ∧¬𝑞 agree, ¬(𝑝 → 𝑞) ≡ 𝑝∧¬𝑞. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li></ul>",
-              "final_answer": "Option (𝑝∧𝑞)→ (𝑝∨𝑞) ≡ ¬(𝑝∧𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "(a) Show that $\\forall x(P(x) \\wedge Q(x))$ and $\\forall x P(x) \\wedge \\forall x Q(x)$ are logically equivalent. (b) Show that $\\forall x P(x) \\vee \\forall x Q(x)$ and $\\forall x(P(x) \\vee Q(x))$ are not logically equivalent.",
+              "solution_html": "<div class=\"space-y-3\"><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(a) Proof of Equivalence:</p><p>Suppose $\\forall x(P(x) \\wedge Q(x))$ is true. Then for every arbitrary $c$ in the domain, $P(c) \\wedge Q(c)$ is true. By simplification, $P(c)$ is true for all $c$ (so $\\forall x P(x)$ is true) and $Q(c)$ is true for all $c$ (so $\\forall x Q(x)$ is true). Hence $\\forall x P(x) \\wedge \\forall x Q(x)$ is true. Conversely, if both $\\forall x P(x)$ and $\\forall x Q(x)$ are true, then for any arbitrary $c$, both $P(c)$ and $Q(c)$ hold, giving $P(c) \\wedge Q(c)$, which establishes $\\forall x(P(x) \\wedge Q(x))$.</p></div><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(b) Counterexample for Disjunction:</p><p>Let the domain be all integers $\\mathbb{Z}$. Let $P(x)$ be '$x$ is even' and $Q(x)$ be '$x$ is odd'. Every integer is either even or odd, so $\\forall x(P(x) \\vee Q(x))$ is True. However, not all integers are even (so $\\forall x P(x)$ is False) and not all integers are odd (so $\\forall x Q(x)$ is False). Thus $\\forall x P(x) \\vee \\forall x Q(x)$ is False $\\vee$ False = False. Since True $\\not\\equiv$ False, they are not logically equivalent.</p></div></div>",
+              "final_answer": "(a) Both statements hold for all elements universally; (b) Counterexample: parity of integers proves non-equivalence."
             },
             {
-              "id": "P2_Q18",
               "number": 18,
-              "global_number": 33,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "a) Define even and odd functions. / f(x) = 0 b) Show that the function is an odd function as well as an even function. −− −−−− f g",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of even function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of odd function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For proving 𝑓(𝑥) is even. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For proving 𝑓(𝑥) is odd. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓 √𝑥 𝑥</li></ul>",
-              "final_answer": "𝑓 √𝑥 𝑥",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "(a) Define a one-to-one function and state the horizontal line test for one-to-one functions. (b) Sketch and determine whether the following functions are one-to-one or not: (i) $y = \\sqrt{x}$, (ii) $y = x^2$.",
+              "solution_html": "<div class=\"space-y-3\"><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(a) Definition & Test:</p><p>A function $f: A \\to B$ is <strong>one-to-one (injective)</strong> if $f(x_1) = f(x_2) \\implies x_1 = x_2$ for all $x_1, x_2 \\in A$.</p><p><strong>Horizontal Line Test:</strong> A function $y = f(x)$ is one-to-one if and only if no horizontal line intersects the graph of the function in more than one point.</p></div><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(b) Evaluations:</p><p><strong>(i) $y = \\sqrt{x}$ (for $x \\ge 0$):</strong> Any horizontal line $y = c$ (with $c \\ge 0$) intersects the graph at exactly one point $x = c^2$. Hence, $y = \\sqrt{x}$ is <strong>one-to-one</strong>.</p><p><strong>(ii) $y = x^2$ (on $\\mathbb{R}$):</strong> The horizontal line $y = 4$ intersects the parabola at $x = 2$ and $x = -2$. Since $f(-2) = f(2) = 4$ with $-2 \\neq 2$, $y = x^2$ is <strong>not one-to-one</strong>.</p></div></div>",
+              "final_answer": "$(i) y = \\sqrt{x} is one-to-one; (ii) y = x^2 is not one-to-one on \\mathbb{R}.$"
             },
             {
-              "id": "P2_Q19",
               "number": 19,
-              "global_number": 34,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "Let f(x) = √x and g(x) = √1−x . Find and . Also, write the domain of / g f each of the functions. y = x3 (b) Given the function , write the formula when the graph of the function is shifted 1 unit to the left and 1 unit down. y = (3x2 +2x−1)6",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) = = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔 √1−𝑥 1−𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of 𝑓 = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔 √1−𝑥 1−𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓 √𝑥 𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of is (0,1]. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) For replacing 𝑥 by 𝑥+1 in the given equation (shifting 1 unit to the left) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For shifting 1 unit down … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For getting the required equation as 𝑦 = (𝑥+1)3−1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li></ul>",
-              "final_answer": "Option = = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "(a) Find the composites $f \\circ g$, $g \\circ f$, $f \\circ f$, and $g \\circ g$ and the domain of each if $f(x) = \\sqrt{x}$ and $g(x) = x + 1$. (b) Given $y = x^2$, write the formula when the graph is shifted up 1 unit.",
+              "solution_html": "<div class=\"space-y-3\"><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(a) Composite Functions & Domains:</p><ul class=\"list-disc list-inside space-y-1\"><li>$(f \\circ g)(x) = f(x+1) = \\sqrt{x+1}$, domain: $x + 1 \\ge 0 \\implies [-1, \\infty)$.</li><li>$(g \\circ f)(x) = g(\\sqrt{x}) = \\sqrt{x} + 1$, domain: $[0, \\infty)$.</li><li>$(f \\circ f)(x) = f(\\sqrt{x}) = \\sqrt{\\sqrt{x}} = \\sqrt[4]{x}$, domain: $[0, \\infty)$.</li><li>$(g \\circ g)(x) = g(x+1) = (x+1) + 1 = x + 2$, domain: $(-\\infty, \\infty)$.</li></ul></div><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(b) Vertical Shift:</p><p>A vertical shift of 1 unit upwards corresponds to adding $1$ to the function: $y = x^2 + 1$.</p></div></div>",
+              "final_answer": "$$(f \\circ g)(x) = \\sqrt{x+1} \\text{ on } [-1, \\infty); \\quad (g \\circ f)(x) = \\sqrt{x} + 1 \\text{ on } [0, \\infty); \\quad y = x^2 + 1$$"
             },
             {
-              "id": "P2_Q20",
               "number": 20,
-              "global_number": 35,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "Find the derivative of . / dy y = (x2tanx)4 (b) Find if . dx f(x) f′(x) = x(x−4)2",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) 𝑑𝑦 = 6(3𝑥2+2𝑥−1)5(6𝑥+2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) 𝑑𝑦 = 4(𝑥2tan𝑥)3(𝑥2𝑠𝑒𝑐2𝑥+2𝑥tan𝑥) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li></ul>",
-              "final_answer": "Option 𝑑𝑦 = 6(3𝑥2+2𝑥−1)5(6𝑥+2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Use implicit differentiation to find $\\frac{dy}{dx}$ if $2(x^2 + y^2)^2 = 25(x^2 - y^2)$ at the point $(3, 1)$.",
+              "solution_html": "<p class=\"mb-2\">Differentiate both sides with respect to $x$:</p>$$2 \\cdot 2(x^2 + y^2) \\left(2x + 2y\\frac{dy}{dx}\\right) = 25\\left(2x - 2y\\frac{dy}{dx}\\right)$$$$8(x^2 + y^2)\\left(x + y\\frac{dy}{dx}\\right) = 50\\left(x - y\\frac{dy}{dx}\\right)$$<p class=\"mb-2\">Substitute $x = 3$ and $y = 1$ ($x^2 + y^2 = 9 + 1 = 10$):</p>$$8(10)\\left(3 + 1\\frac{dy}{dx}\\right) = 50\\left(3 - 1\\frac{dy}{dx}\\right)$$$$80\\left(3 + \\frac{dy}{dx}\\right) = 50\\left(3 - \\frac{dy}{dx}\\right)$$$$240 + 80\\frac{dy}{dx} = 150 - 50\\frac{dy}{dx}$$$$130\\frac{dy}{dx} = 150 - 240 = -90 \\implies \\frac{dy}{dx} = -\\frac{90}{130} = -\\frac{9}{13}$$",
+              "final_answer": "$$\\left.\\frac{dy}{dx}\\right|_{(3, 1)} = -\\frac{9}{13}$$"
             },
             {
-              "id": "P2_Q21",
               "number": 21,
-              "global_number": 36,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "Suppose that has derivative and / f′′(x) = (x−4)(3x−4) . Find the intervals in which the function is increasing. (b) Find the intervals in which the function is concave up. (c) Find the intervals in which the function is concave down.",
-              "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) For getting 𝑓 is increasing on</div>",
-              "final_answer": "Option For getting 𝑓 is increasing on",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Determine the intervals where the following functions are increasing and decreasing: (a) $f(x) = 2x^3 - 24x + 7$, (b) $f(x) = x^4 - 4x$.",
+              "solution_html": "<div class=\"space-y-3\"><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(a) $f(x) = 2x^3 - 24x + 7$:</p><p>$f'(x) = 6x^2 - 24 = 6(x^2 - 4) = 6(x - 2)(x + 2) = 0 \\implies x = -2, 2$.</p><ul class=\"list-disc list-inside\"><li>Increasing on $(-\\infty, -2]$ and $[2, \\infty)$ where $f'(x) > 0$.</li><li>Decreasing on $[-2, 2]$ where $f'(x) < 0$.</li></ul></div><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(b) $f(x) = x^4 - 4x$:</p><p>$f'(x) = 4x^3 - 4 = 4(x^3 - 1) = 4(x - 1)(x^2 + x + 1) = 0 \\implies x = 1$.</p><ul class=\"list-disc list-inside\"><li>Decreasing on $(-\\infty, 1]$ where $f'(x) < 0$.</li><li>Increasing on $[1, \\infty)$ where $f'(x) > 0$.</li></ul></div></div>",
+              "final_answer": "$(a) Inc: (-\\infty, -2] \\cup [2, \\infty), Dec: [-2, 2]; (b) Dec: (-\\infty, 1], Inc: [1, \\infty).$"
             },
             {
-              "id": "P2_Q22",
               "number": 22,
-              "global_number": 37,
-              "part": "PART_C",
-              "marks": 10,
-              "question": "Evaluate the following limits using L’Hôpital’s rule. / lim 1−et t→0 tet",
-              "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1−𝑒𝑡 −𝑒𝑡</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule to get lim = lim … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡→0 𝑡𝑒𝑡 𝑡→0 𝑡𝑒𝑡+𝑒𝑡</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−𝑒𝑡 −1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = lim = −1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡→0𝑒𝑡(𝑡+1) 𝑡→0𝑡+1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 − 4 3 − 4 𝑥 − 7 3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule to get lim = lim 3 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 1 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞sin( ) 𝑥→+∞− cos( )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 𝑥2 𝑥</li></ul>",
-              "final_answer": "Option The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-              "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-              "has_official_scheme": true
+              "question": "Identify the type of indeterminate form and evaluate the following limits: (a) $\\lim_{x \\to +\\infty} x \\sin\\left(\\frac{\\pi}{x}\\right)$, (b) $\\lim_{x \\to \\frac{\\pi}{2}^-} \\sec 3x \\cos x$.",
+              "solution_html": "<div class=\"space-y-3\"><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(a) $\\lim_{x \\to +\\infty} x \\sin\\left(\\frac{\\pi}{x}\\right)$:</p><p>As $x \\to +\\infty$, $x \\to +\\infty$ and $\\sin(\\pi/x) \\to 0$, giving indeterminate form $\\infty \\cdot 0$.</p><p>Let $t = \\frac{1}{x} \\to 0^+$: $\\lim_{t \\to 0^+} \\frac{\\sin(\\pi t)}{t} = \\pi \\lim_{t \\to 0^+} \\frac{\\sin(\\pi t)}{\\pi t} = \\pi(1) = \\pi$.</p></div><div><p class=\"font-semibold text-slate-800 dark:text-slate-200\">(b) $\\lim_{x \\to \\frac{\\pi}{2}^-} \\sec 3x \\cos x$:</p><p>Form $\\infty \\cdot 0$. Rewrite as $\\lim_{x \\to \\frac{\\pi}{2}^-} \\frac{\\cos x}{\\cos 3x}$ (form $\\frac{0}{0}$).</p><p>Apply L'Hôpital's Rule: $\\lim_{x \\to \\frac{\\pi}{2}^-} \\frac{-\\sin x}{-3\\sin 3x} = \\frac{-\\sin(\\pi/2)}{-3\\sin(3\\pi/2)} = \\frac{-1}{-3(-1)} = -\\frac{1}{3}$.</p></div></div>",
+              "final_answer": "$$(a) \\; \\text{Type } \\infty \\cdot 0, \\; \\text{Limit} = \\pi; \\qquad (b) \\; \\text{Type } \\infty \\cdot 0, \\; \\text{Limit} = -\\frac{1}{3}$$"
             }
           ]
         }
       ]
-    }
-  ],
-  "questions": [
-    {
-      "id": "P1_Q1",
-      "number": 1,
-      "global_number": 1,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "StateDeMorgan'slawsforquantifiers. PartB ShortEssayTypeQuestions Answeranyfivequestions.Eachquestioncarries6marks",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">¬∀𝑥 𝑃(𝑥) ≡ ∃𝑥 ¬𝑃(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">¬∃𝑥 𝑃(𝑥) ≡ ∀𝑥 ¬𝑃(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Mark</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">24900175</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(ii)𝑦 = √𝑥 or 3𝑦 = √𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li></ul>",
-      "final_answer": "(ii)𝑦 = √𝑥 or 3𝑦 = √𝑥 ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q2",
-      "number": 2,
-      "global_number": 2,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Stateandproveidentitylawsoflogicalequivalence. iv. v.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Stating any one of the identity laws (𝑝∧𝑇 ≡ 𝑝; 𝑝∨𝐹 ≡ 𝑝) <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Proving stated law  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞9𝑒3𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞9𝑒3𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 0  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) Getting 𝑓(𝑓−1(𝑥)) = 𝑥 and 𝑓−1(𝑓(𝑥)) = 𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) Domain: (−∞,∞), Range: (−∞,∞)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">24900175</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2𝑥3+17𝑥2+20𝑥+1</li></ul>",
-      "final_answer": "Option (b) Getting 𝑓(𝑓−1(𝑥)) = 𝑥 and 𝑓−1(𝑓(𝑥)) = 𝑥 <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span>",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q3",
-      "number": 3,
-      "global_number": 3,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Definecompositeoftwofunctionsandexplainhowtofinditsdomain.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑓∘𝑔)(𝑥) = 𝑓(𝑔(𝑥))  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of 𝑓 ∘𝑔 : those 𝑥 in the domain of 𝑔 for which 𝑔(𝑥) lies in the domain of 𝑓</li></ul>",
-      "final_answer": "(𝑓∘𝑔)(𝑥) = 𝑓(𝑔(𝑥)) ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q4",
-      "number": 4,
-      "global_number": 4,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Defineoddfunction.Giveanexample.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓(−𝑥) = −𝑓(𝑥)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝜋 3𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓\"( ) = 4 > 0, Minimum exists at 𝑥 =  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">4 4</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝜋</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">The minimum value is 𝑓( ) = −1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li></ul>",
-      "final_answer": "The minimum value is 𝑓 = −1 ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q5",
-      "number": 5,
-      "global_number": 5,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 2sin𝑥cos𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li></ul>",
-      "final_answer": "= 2sin𝑥cos𝑥 ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q6",
-      "number": 6,
-      "global_number": 6,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find .",
-      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">𝑓′(𝑥) = 2cos2𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></p>",
-      "final_answer": "𝑓′(𝑥) = 2cos2𝑥 ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q7",
-      "number": 7,
-      "global_number": 7,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Checkwhether isanindeterminateformornot.",
-      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">0⋅∞ form (It is an indeterminate form)  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></p>",
-      "final_answer": "0⋅∞ form (It is an indeterminate form) ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q8",
-      "number": 8,
-      "global_number": 8,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Illustratedecreasingfunctionswithan example.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓(𝑥 ) < 𝑓(𝑥 ) whenever 𝑥 > 𝑥  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 2 1 2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li></ul>",
-      "final_answer": "Short Essay Type Questions",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q9",
-      "number": 9,
-      "global_number": 9,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "TranslatethesestatementsintoEnglish,where is“xisarabbit”and is“xhops”andthedomainconsistsofallanimals. a)",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">a) All rabbits Hop  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">b) All Animals are rabbits and hops  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li></ul>",
-      "final_answer": "Option All rabbits Hop <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span>",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q10",
-      "number": 10,
-      "global_number": 10,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Explainuniversalquantifier,existentialquantifierandtheuniqueness b) quantifierwithexamples.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For each definition with example  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 marks)</span>)</span> -------- Total <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥2 2𝑥</li></ul>",
-      "final_answer": "For each definition with example () -------- Total",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q11",
-      "number": 11,
-      "global_number": 11,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞𝑒3𝑥 𝑥→+∞3𝑒3𝑥</li></ul>",
-      "final_answer": "lim = lim ()",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q12",
-      "number": 12,
-      "global_number": 12,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "(i)Definethegreatestintegerfunctionandthetheleastintegerfunction. (ii)Whatrealnumbers satisfytheequation ?",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(i) Greatest integer function: The greatest integer less than or equal to 𝑥 – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Least integer function: The smallest integer greater than or equal to 𝑥 – <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(ii) ⌊𝑥⌋ = ⌈𝑥⌉ only when 𝑥 is an integer.  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 𝑑𝑦</li></ul>",
-      "final_answer": "𝑑𝑦 𝑑𝑦",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q13",
-      "number": 13,
-      "global_number": 13,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">+cos𝑦 = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 1+cos𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑2𝑦 sin𝑦 𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥2 (1+cos𝑦)2𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">=  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1+cos𝑦)3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑟 2 5</li></ul>",
-      "final_answer": "𝑑𝑟 2 5",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q14",
-      "number": 14,
-      "global_number": 14,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= − +  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑠 3𝑠3 2𝑠2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑥 sin𝑥</li></ul>",
-      "final_answer": "sin𝑥 sin𝑥",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P1_Q15",
-      "number": 15,
-      "global_number": 15,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Evaluatethelimit withoutusingL’Hôpital’sruleand thenverifythatyouransweriscorrectusingL’Hôpital’srule.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim = limcos𝑥 = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0tan𝑥 𝑥→0( sin𝑥 ) 𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">cos𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">sin𝑥 cos𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim = lim = 1  <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0tan𝑥 𝑥→0sec2𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥2 2𝑥</li></ul>",
-      "final_answer": "𝑥2 2𝑥",
-      "source_exam": "MGU-UGP (HONOURS) Regular Exam Sem 1, Nov 2024",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q1",
-      "number": 1,
-      "global_number": 16,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find the predicate in the statement: x spends more than five hours every weekday in / class. x > 3",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Predicate is “spends more than five hours every weekday in class”. …<span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule and writing lim = lim 𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→∞2√𝑥 𝑥→∞2× 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2√𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">√𝑥 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = lim =0 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→∞ 𝑥 𝑥→∞√𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Short Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 5𝑥 3(𝑥−2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">5(𝑥−2)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing definition of critical points … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Critical points are 𝑥 = 2 and 𝑥 = 0. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−3× ×2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Apply L'Hôpital's rule and getting, ln𝐿 = lim 1+2𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−6</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = −6 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→01+2𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐿 = 𝑒−6. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Essay Type Questions</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">4 −</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 3 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim 3 = = 0 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞cos( 1 ) 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">__________________________________________________________________________________</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">N.B: Suitable stage marks may be fixed by the examiner for alternate correct answers.</li></ul>",
-      "final_answer": "Option (b) Suitable stage marks may be fixed by the examiner for alternate correct answers.",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q2",
-      "number": 2,
-      "global_number": 17,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Let P(x) denote the statement . What is the truth value of the quantification / ∃xP(x) , where the domain consists of all real numbers? −−−− f(x) = √x+5",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">True … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For getting, 𝑦2 = 𝑥+5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing, 𝑥 = 𝑦2−5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Getting, 𝑓−1(𝑥)= 𝑦 = 𝑥2−5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′′(𝑥)= 0 ⇒𝑥 = 1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing 𝑓 is concave up on (1,∞) and 𝑓 is concave down on (−∞,1). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Inflection point is (1,−1). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">∞</li></ul>",
-      "final_answer": "",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q3",
-      "number": 3,
-      "global_number": 18,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find the inverse of .",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Let 𝑦 = √𝑥+5 … Marks</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Let 𝐿 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lim(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 =</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">lnlim(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 = limln</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(1+2𝑥)−</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">ln𝐿 = lim− ln (1+2𝑥) ( 𝑓𝑜𝑟𝑚) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→0 𝑥 0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li></ul>",
-      "final_answer": "",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q4",
-      "number": 4,
-      "global_number": 19,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "What is the greatest integer function? / dy",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For correct definition … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) For getting concave upon (−∞, )∪(4,∞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) For getting the function is concave down on ( ,4). … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
-      "final_answer": "Option (b) For getting concave upon (−∞, )∪(4,∞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q5",
-      "number": 5,
-      "global_number": 20,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find if y = xsinx / dx dy",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing product rule … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying product rule and getting, = 𝑥cos𝑥+sin𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 𝑑𝑦</li></ul>",
-      "final_answer": "𝑑𝑦 𝑑𝑦",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q6",
-      "number": 6,
-      "global_number": 21,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find if x cosy = y . / dx f(x) = x3 −3x2 +1",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Differentiating w.r.t. 𝑥 and getting, cos𝑦+𝑥 (−sin𝑦) = <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing cos𝑦 = (1+𝑥sin𝑦) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑦 cos𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For obtaining, = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 1+𝑥sin𝑦</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 2.</li></ul>",
-      "final_answer": "Total marks should not exceed 2",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q7",
-      "number": 7,
-      "global_number": 22,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find the inflection points of . / lim lnx",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′(𝑥)= 3𝑥2−6𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′′(𝑥)= 6𝑥−6 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Marks)</span></li></ul>",
-      "final_answer": "𝑓′(𝑥)= 3𝑥2−6𝑥 …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q8",
-      "number": 8,
-      "global_number": 23,
-      "part": "PART_A",
-      "marks": 2,
-      "question": "Find x→∞ / 2√x",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing the limit has the indeterminate form … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">∞</li></ul>",
-      "final_answer": "For writing the limit has the indeterminate form …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q9",
-      "number": 9,
-      "global_number": 24,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Let p and q be the propositions. p : It is below freezing q: It is snowing. / Write these propositions using p and q and logical connectives. a) It is below freezing and snowing. b) It is not below freezing and it is not snowing. c) If it is below freezing, it is also snowing. ∀xP(x)∨∀xQ(x) ∀x(P(x)∨Q(x))",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a)𝑝∧𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) ¬𝑝∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(c) 𝑝 →𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li></ul>",
-      "final_answer": "Option 𝑝∧𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q10",
-      "number": 10,
-      "global_number": 25,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Prove or disprove: and are logically / equivalent. y = x2",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For writing, not logical equivalent … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For counter example … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 marks)</span></li></ul>",
-      "final_answer": "For writing, not logical equivalent …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q11",
-      "number": 11,
-      "global_number": 26,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Given the function , write the formula when the graph is shifted / (i) 1 unit up (ii) 2 units down.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 = 𝑥2+1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑦 = 𝑥2−2 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li></ul>",
-      "final_answer": "𝑦 = 𝑥2+1 …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q12",
-      "number": 12,
-      "global_number": 27,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "What is a one-to-one function and what test can be used to determine if a function is / y = cosx one-to-one? Determine from its graph if the function is one-to-one or not.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For correct definition of one-to-one function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Horizontal line test … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For drawing the graph of 𝑦 = cos𝑥 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For applying horizontal line test and concluding that 𝑦 = cos𝑥 is not one-to-one … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li></ul>",
-      "final_answer": "Total marks should not exceed 6",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q13",
-      "number": 13,
-      "global_number": 28,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Find F′ if F(x) = f(x) given that f = −1,f′ = 2,g = 3 and / g(x) g′ = −1.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(𝑥)=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔(𝑥)𝑓′(𝑥)−𝑓(𝑥)𝑔′(𝑥)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑔(𝑥))2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(1)=</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔(1)𝑓′(1)−𝑓(1)𝑔′(1)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">… <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝑔(1))2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝐹′(1)= 3×2−(−1)×(−1) = 5 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(3)2 9</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥 3𝑡×2𝑡−(𝑡2+1)×3</li></ul>",
-      "final_answer": "𝑑𝑥 3𝑡×2𝑡−(𝑡2+1)×3",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q14",
-      "number": 14,
-      "global_number": 29,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Find dx , if x = t2+1 . / dt 3t f(x) = 3x5/3 −15x2/3",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For applying quotient rule and getting = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑡 (3𝑡)2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">6𝑡2−3(𝑡2+1)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">9𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝑡2−3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">9𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡2−1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3𝑡2</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 6.</li></ul>",
-      "final_answer": "Total marks should not exceed 6",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q15",
-      "number": 15,
-      "global_number": 30,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Find all critical points of . / −3/x",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓′(𝑥)= 3× 5 𝑥 5 3 −1 −15× 2 𝑥 2 3 −1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">3 3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">2 −1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= 5𝑥3−10𝑥 3 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li></ul>",
-      "final_answer": "= 5𝑥3−10𝑥 3 …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q16",
-      "number": 16,
-      "global_number": 31,
-      "part": "PART_B",
-      "marks": 6,
-      "question": "Identify the type of indeterminate form and find lim x→0 (1+2x)",
-      "solution_html": "<p class=\"leading-relaxed text-xs sm:text-sm text-slate-800 dark:text-slate-200\">1∞ form … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></p>",
-      "final_answer": "1∞ form …",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q17",
-      "number": 17,
-      "global_number": 32,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "a) Show that is a tautology. / ¬(p → q) p∧¬q b) Show that and are logically equivalent.",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a)(𝑝∧𝑞)→ (𝑝∨𝑞) ≡ ¬(𝑝∧𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ (¬𝑝∨¬𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬𝑝∨(¬𝑞∨p)∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬𝑝∨(p∨¬𝑞)∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ (¬𝑝∨𝑝)∨(¬𝑞∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ 𝐓∨𝐓 ≡ 𝐓 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For the truth table … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(6 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝒑 𝒒 𝒑∧𝒒 𝒑∨𝒒 (𝒑∧𝒒)→ (𝒑∨𝒒)</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T T T T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T F F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F T F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F F F F T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(𝒑∧𝒒)→(𝒑∨𝒒) is always true. So, it is a tautology. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) ¬(𝑝 →𝑞) ≡ ¬(¬𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ ¬(¬𝑝)∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">≡ 𝑝∧¬𝑞 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">OR</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For the truth table … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(4 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">p q ¬q p → q ¬(𝐩 → 𝐪) p ∧¬𝒒</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T T F T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">T F T F T T</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F T F T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">F F T T F F</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Since the truth values of ¬(𝑝 → 𝑞) and 𝑝 ∧¬𝑞 agree, ¬(𝑝 → 𝑞) ≡ 𝑝∧¬𝑞. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li></ul>",
-      "final_answer": "Option (𝑝∧𝑞)→ (𝑝∨𝑞) ≡ ¬(𝑝∧𝑞)∨(𝑝∨𝑞) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q18",
-      "number": 18,
-      "global_number": 33,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "a) Define even and odd functions. / f(x) = 0 b) Show that the function is an odd function as well as an even function. −− −−−− f g",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of even function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Definition of odd function … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For proving 𝑓(𝑥) is even. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For proving 𝑓(𝑥) is odd. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓 √𝑥 𝑥</li></ul>",
-      "final_answer": "𝑓 √𝑥 𝑥",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q19",
-      "number": 19,
-      "global_number": 34,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "Let f(x) = √x and g(x) = √1−x . Find and . Also, write the domain of / g f each of the functions. y = x3 (b) Given the function , write the formula when the graph of the function is shifted 1 unit to the left and 1 unit down. y = (3x2 +2x−1)6",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) = = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔 √1−𝑥 1−𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of 𝑓 = … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of is</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔 √1−𝑥 1−𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓 √𝑥 𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑔</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Domain of is (0,1]. … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑓</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) For replacing 𝑥 by 𝑥+1 in the given equation (shifting 1 unit to the left) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For shifting 1 unit down … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">For getting the required equation as 𝑦 = (𝑥+1)3−1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(1 Mark)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Total marks should not exceed 10.</li></ul>",
-      "final_answer": "Option = = √ … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q20",
-      "number": 20,
-      "global_number": 35,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "Find the derivative of . / dy y = (x2tanx)4 (b) Find if . dx f(x) f′(x) = x(x−4)2",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) 𝑑𝑦 = 6(3𝑥2+2𝑥−1)5(6𝑥+2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) 𝑑𝑦 = 4(𝑥2tan𝑥)3(𝑥2𝑠𝑒𝑐2𝑥+2𝑥tan𝑥) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑑𝑥</li></ul>",
-      "final_answer": "Option 𝑑𝑦 = 6(3𝑥2+2𝑥−1)5(6𝑥+2) … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(5 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q21",
-      "number": 21,
-      "global_number": 36,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "Suppose that has derivative and / f′′(x) = (x−4)(3x−4) . Find the intervals in which the function is increasing. (b) Find the intervals in which the function is concave up. (c) Find the intervals in which the function is concave down.",
-      "solution_html": "<div class=\"p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-medium\"><span class=\"font-bold text-emerald-800 dark:text-emerald-400\">Correct Answer:</span> (a) For getting 𝑓 is increasing on</div>",
-      "final_answer": "Option For getting 𝑓 is increasing on",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
-    },
-    {
-      "id": "P2_Q22",
-      "number": 22,
-      "global_number": 37,
-      "part": "PART_C",
-      "marks": 10,
-      "question": "Evaluate the following limits using L’Hôpital’s rule. / lim 1−et t→0 tet",
-      "solution_html": "<ul class=\"list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300\"><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(a) The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1−𝑒𝑡 −𝑒𝑡</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule to get lim = lim … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡→0 𝑡𝑒𝑡 𝑡→0 𝑡𝑒𝑡+𝑒𝑡</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">−𝑒𝑡 −1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">= lim = lim = −1 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑡→0𝑒𝑡(𝑡+1) 𝑡→0𝑡+1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">(b) The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">0</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 − 4 3 − 4 𝑥 − 7 3</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">Applying L'Hôpital's rule to get lim = lim 3 … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(3 Marks)</span></li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">1 1 1</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥→+∞sin( ) 𝑥→+∞− cos( )</li><li class=\"leading-relaxed text-xs sm:text-sm text-slate-700 dark:text-slate-300\">𝑥 𝑥2 𝑥</li></ul>",
-      "final_answer": "Option The given limit is an indeterminate form of type . … <span class=\"font-bold text-emerald-700 dark:text-emerald-400\">(2 Marks)</span>",
-      "source_exam": "First Semester MGU-UGP/MGU-BBA/MGU-BCA Honours Examinations November 2025",
-      "has_official_scheme": true
     }
   ]
 }

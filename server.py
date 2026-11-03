@@ -193,6 +193,9 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if parsed.path == "/api/ai/notes":
             self.handle_ai_notes_post()
             return
+        if parsed.path == "/api/improve-solutions":
+            self.handle_improve_solutions_post()
+            return
         self.send_json_response({"error": "Endpoint not found"}, status=404)
 
     def handle_api_get(self, path, params):
@@ -853,6 +856,14 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                 reports = []
         self.send_json_response(reports)
 
+    def handle_improve_solutions_post(self):
+        try:
+            import scripts.train_and_improve_solutions as improve_engine
+            threading.Thread(target=improve_engine.run_improvement_cycle, daemon=True).start()
+            self.send_json_response({"success": True, "message": "Improvement and training cycle started in background"})
+        except Exception as e:
+            self.send_json_response({"error": str(e)}, status=500)
+
     def handle_ai_notes_post(self):
         try:
             content_length = int(self.headers.get("Content-Length", 0))
@@ -1108,6 +1119,12 @@ def start_background_scheduler():
                 import scripts.sync_engine as sync_engine
                 sync_engine.run_sync(trigger_type="automatic")
                 load_data()
+                print("[Scheduled 6-Hr Auto-Sync] Sync completed. Starting solution enhancement cycle...", flush=True)
+                try:
+                    import scripts.train_and_improve_solutions as improve_engine
+                    improve_engine.run_improvement_cycle()
+                except Exception as improve_err:
+                    print(f"[Scheduled 6-Hr Auto-Sync] Solution training error: {improve_err}", flush=True)
                 print("[Scheduled 6-Hr Auto-Sync] Completed successfully.", flush=True)
             except Exception as e:
                 print(f"[Scheduled 6-Hr Auto-Sync] Error: {e}", flush=True)

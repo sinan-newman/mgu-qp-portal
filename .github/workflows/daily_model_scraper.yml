@@ -42,6 +42,12 @@ jobs:
           mkdir -p public/data
           cp -r data/* public/data/ || true
 
+      - name: Continuous Solution Training & LaTeX Math Enhancement
+        run: |
+          python scripts/train_and_improve_solutions.py
+          mkdir -p public/data/ai_notes
+          cp -r data/ai_notes/* public/data/ai_notes/ || true
+
       - name: Commit and Push Database Updates if Any
         run: |
           git config user.name "MGU Model-Sync Bot"
@@ -50,7 +56,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new model papers found. Database is already up to date."
           else
-            git commit -m "Automated daily runner: ingested new FYUGP model question papers from mgu.ac.in [skip ci]"
+            git commit -m "Automated daily runner: ingested FYUGP model papers and trained solutions [skip ci]"
             git push
           fi
 

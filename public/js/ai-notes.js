@@ -747,7 +747,7 @@ const AiNotesStudio = {
         const currentPart = this.state.activePart || 'ALL';
         const searchQ = this.state.inPaperSearch || '';
 
-                // Helper: Strip Bloom's taxonomy tags and CO tags
+                // Helper: Strip Bloom's taxonomy tags and CO tags safely without corrupting math intervals
         const cleanText = (str) => {
             if (!str) return '';
             return str
@@ -755,22 +755,56 @@ const AiNotesStudio = {
                 .replace(/\[\s*(?:Understand|Remember|Apply|Analyse|Analyze|Evaluate|Create|Skill|Knowledge|Application|Comprehension)[^\]]*\]/gi, '')
                 .replace(/\[\s*(?:Understand|Remember|Apply|Analyse|Analyze|Evaluate|Create|Skill|Knowledge|Application|Comprehension)[^a-zA-Z0-9\(\)]*$/gi, '')
                 .replace(/\[\s*T\s*:\s*[^\]]+\]/gi, '')
-                .replace(/\[\s*CO[\s\d,:A-Za-z\-–—]+\]?/gi, '')
+                .replace(/(?:\s*[/–—]\s*)?\[\s*CO[\s\d,:A-Za-z\-–—]+\]/gi, '')
                 .replace(/\[\s*Learning\s+Domain\s*\]/gi, '')
                 .replace(/\[\s*CO\s*No\(s\)\s*\]/gi, '')
-                .replace(/\[\s*[UKAAEnCSIAPap\d\s,/]+\s*\]?/g, '')
-                .replace(/[\s/,]+\s*\[[^\]]*\]?/g, '')
-                .replace(/[\s/,:–—-]+$/g, '')
+                .replace(/\[\s*(?:U|K|A|An|E|C|S|R|Ap)\s*\](?:\s*\[\s*\d+\s*\])?/g, '')
+                .replace(/\b(?:CO\d+|\[CO\d+\])\b/gi, '')
+                .replace(/(?:\s*[/–—]\s*)+\s*$/g, '')
                 .replace(/\s+/g, ' ')
                 .trim();
         };
 
-        // Helper: Derive or clean final answer
+        // Helper: Format math formulas ensuring balanced KaTeX delimiters
+        const formatMathInString = (str) => {
+            if (!str || typeof str !== 'string') return '';
+            let s = str.trim();
+            if (!s) return '';
+
+            // Already enclosed in standard math delimiters
+            if ((s.startsWith('$$') && s.endsWith('$$')) || 
+                (s.startsWith('$') && s.endsWith('$')) ||
+                (s.startsWith('\\(') && s.endsWith('\\)')) ||
+                (s.startsWith('\\[') && s.endsWith('\\]'))) {
+                return s;
+            }
+
+            const hasLatexMacro = /\\[a-zA-Z]{2,}/.test(s);
+            const hasSubSuper = /[a-zA-Z]_{[^{}]+}|[a-zA-Z]\^[0-9{]/.test(s);
+            const hasMathEq = /[a-zA-Z0-9_\^\(\)]+\s*=\s*[-+]?[a-zA-Z0-9_\^\(\)\\]+/.test(s);
+            const hasSymbols = /[±×÷·≤≥≠≈∞∫∑√∂]/.test(s);
+
+            if (hasLatexMacro || hasSubSuper || (hasMathEq && (hasSymbols || s.includes('\\')))) {
+                if (s.includes('\\frac') || s.includes('\\partial') || s.includes('\\int') || 
+                    s.includes('\\matrix') || s.includes('\\begin') || s.includes('\\quad') || 
+                    s.includes('\\qquad') || s.includes('\n')) {
+                    const cleanMath = s.replace(/^\$\$|\$\$$|^\\\[|\\\]$/g, '').trim();
+                    return `$$${cleanMath}$$`;
+                }
+                const cleanInline = s.replace(/^\$|\$$|^\\\(|\\\)$/g, '').trim();
+                return `$${cleanInline}$`;
+            }
+            return s;
+        };
+
+        // Helper: Derive or clean final answer while strictly preserving LaTeX math delimiters
         const getFinalAns = (q) => {
             if (q.final_answer && q.final_answer.trim().length > 1) {
-                const fa = cleanText(q.final_answer.replace(/\$\$/g, '').replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, ''));
+                let fa = q.final_answer.trim();
+                fa = fa.replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, '').trim();
                 if (!/^(verified|scheme|mgu|solution|formal definition|core criteria)/i.test(fa)) {
-                    return fa;
+                    fa = cleanText(fa);
+                    return formatMathInString(fa);
                 }
             }
             const sol = q.solution_html || '';
@@ -788,15 +822,12 @@ const AiNotesStudio = {
             target = target
                 .replace(/^(?:Final\s+Answer|Ans(?:wer)?)\s*[:\-]\s*/i, '')
                 .replace(/\(?\b\d+(?:\.\d+)?\s*Marks?\b\)?/gi, '')
-                .replace(/\[\s*CO[\s\d,:A-Za-z\-]+\]?/gi, '')
-                .replace(/\[\s*[UKAAEnCSIAPap\d\s,/]+\s*\]?/g, '')
-                .replace(/[\s/,:-]+$/g, '')
-                .replace(/\s+/g, ' ')
                 .trim();
+            target = cleanText(target);
             if (!target || target.length < 2 || /^(verified|scheme|mgu|solution|formal definition|core criteria)/i.test(target)) {
                 return '';
             }
-            return cleanText(target);
+            return formatMathInString(target);
         };
 
         // Helper: Format and optimize solution HTML to remove unnecessary itemizations
@@ -1205,19 +1236,69 @@ const AiNotesStudio = {
             </div>
         `;
 
-        // Render mathematical formulas via KaTeX
-        if (window.renderMathInElement) {
-            try {
-                window.renderMathInElement(document.getElementById('aiNotesPrintArea'), {
-                    delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false }
-                    ],
-                    throwOnError: false
-                });
-            } catch (e) {
-                console.warn('KaTeX auto-render error:', e);
+        // Render mathematical formulas via KaTeX with auto-healing
+        this.renderAcademicMath(document.getElementById('aiNotesPrintArea'));
+    },
+
+    renderAcademicMath(rootEl = null) {
+        const el = rootEl || document.getElementById('aiNotesPrintArea');
+        if (!el) return;
+
+        // Auto-heal text nodes that contain raw un-delimited LaTeX macros
+        const healRawMathText = (node) => {
+            if (node.nodeType === Node.TEXT_NODE) {
+                const text = node.nodeValue;
+                if (text && !text.includes('$') && !text.includes('\\(') && !text.includes('\\[') && !text.includes('&nbsp;')) {
+                    if (/\\[a-zA-Z]{2,}|[a-zA-Z]_{[^{}]+}/.test(text)) {
+                        const parent = node.parentElement;
+                        if (parent && !parent.closest('.katex') && !parent.closest('.katex-display') && !['SCRIPT', 'STYLE', 'CODE', 'PRE', 'TEXTAREA'].includes(parent.tagName)) {
+                            node.nodeValue = `$${text.trim()}$`;
+                        }
+                    }
+                }
+            } else if (node.nodeType === Node.ELEMENT_NODE) {
+                if (!node.classList.contains('katex') && !['SCRIPT', 'STYLE', 'CODE', 'PRE', 'TEXTAREA'].includes(node.tagName)) {
+                    for (let child = node.firstChild; child; child = child.nextSibling) {
+                        healRawMathText(child);
+                    }
+                }
             }
+        };
+
+        try { healRawMathText(el); } catch (e) {}
+
+        const render = () => {
+            if (window.renderMathInElement) {
+                try {
+                    window.renderMathInElement(el, {
+                        delimiters: [
+                            { left: '$$', right: '$$', display: true },
+                            { left: '$', right: '$', display: false },
+                            { left: '\\(', right: '\\)', display: false },
+                            { left: '\\[', right: '\\]', display: true }
+                        ],
+                        ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+                        throwOnError: false
+                    });
+                } catch (e) {
+                    console.warn('KaTeX render error:', e);
+                }
+            }
+        };
+
+        if (window.renderMathInElement) {
+            render();
+        } else {
+            let retries = 0;
+            const timer = setInterval(() => {
+                retries++;
+                if (window.renderMathInElement) {
+                    clearInterval(timer);
+                    render();
+                } else if (retries > 25) {
+                    clearInterval(timer);
+                }
+            }, 120);
         }
     },
 
@@ -1245,19 +1326,7 @@ const AiNotesStudio = {
         this.renderCourseDocument();
 
         // KaTeX re-render
-        if (window.renderMathInElement) {
-            try {
-                window.renderMathInElement(document.getElementById('aiNotesPrintArea'), {
-                    delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false }
-                    ],
-                    throwOnError: false
-                });
-            } catch (e) {
-                console.warn(e);
-            }
-        }
+        this.renderAcademicMath(document.getElementById('aiNotesPrintArea'));
 
         const activeArea = document.getElementById('aiNotesPrintArea');
         if (activeArea) {
@@ -1320,17 +1389,7 @@ const AiNotesStudio = {
         this.renderCourseDocument();
 
         // KaTeX re-render
-        if (window.renderMathInElement) {
-            try {
-                window.renderMathInElement(document.getElementById('aiNotesPrintArea'), {
-                    delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false }
-                    ],
-                    throwOnError: false
-                });
-            } catch (e) {}
-        }
+        this.renderAcademicMath(document.getElementById('aiNotesPrintArea'));
 
         const printArea = document.getElementById('aiNotesPrintArea');
         if (printArea) {

@@ -49,6 +49,12 @@ jobs:
           mkdir -p public/data public/uploads
           cp -r data/* public/data/ || true
 
+      - name: Continuous Solution Training & LaTeX Math Enhancement
+        run: |
+          python scripts/train_and_improve_solutions.py
+          mkdir -p public/data/ai_notes
+          cp -r data/ai_notes/* public/data/ai_notes/ || true
+
       - name: Commit and Push Changes if Any
         run: |
           git config user.name "MGU Auto-Sync Bot"
@@ -57,7 +63,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new question papers found. Database is already up to date."
           else
-            git commit -m "Automated sync: ingest latest QP, schemes, and FYUGP model papers [skip ci]"
+            git commit -m "Automated sync: ingest latest QP, schemes, FYUGP model papers and trained solutions [skip ci]"
             git push
           fi
 

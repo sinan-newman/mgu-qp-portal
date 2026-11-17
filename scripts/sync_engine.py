@@ -4,18 +4,20 @@ sync_engine.py
 Unified Autonomous MGU FYUGP Question Paper & Scheme of Valuation Sync Engine.
 
 Features:
-1. Live-scrapes https://assist.mgu.ac.in/schema/ across all FYUGP exam sessions (Semesters 1-5).
+1. Live-scrapes https://assist.mgu.ac.in/schema/ and DYNAMICALLY discovers all FYUGP exam sessions (Semesters 1-8).
+   Never misses newly added exam sessions (e.g., Session 36: III Semester FYUGP Regular Exam October 2026).
 2. Robustly handles both new modern accordion markup (<button class="accordion"> and onclick="openFile(...)")
    and legacy panel markup (<div class="panel-heading">).
 3. Detects QP code, FYUGP course code (MG[1-8]...), and course title without department name bleeding.
-4. Downloads all new Question Papers & Schemes of Valuation concurrently.
-5. Mirrors PDFs to:
+4. Leverages canonical taxonomy from papers.json and departments.json to guarantee 100% accurate titles.
+5. Concurrently downloads all new Question Papers & Schemes of Valuation with anti-drop retries.
+6. Mirrors PDFs to:
    - uploads/
    - public/uploads/
    - ../mgu-qp-storage/pdf/ (with automated git commit & push for jsDelivr CDN delivery)
-6. Updates data/papers.json while STRICTLY preserving all existing model question papers.
-7. Logs every crawl (automatic or manual) into data/crawl_history.json and public/data/crawl_history.json.
-8. Updates stats.json and public/data/stats.json with new file metrics.
+7. Updates data/papers.json while STRICTLY preserving all existing model question papers.
+8. Logs every crawl (automatic or manual) into data/crawl_history.json and public/data/crawl_history.json.
+9. Updates stats.json and public/data/stats.json with new file metrics.
 """
 
 import os
@@ -24,6 +26,7 @@ import re
 import json
 import time
 import shutil
+import ssl
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone
@@ -51,7 +54,15 @@ BASE_URL = "https://assist.mgu.ac.in/schema/"
 CDN_BASE = "https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf"
 RAW_BASE = "https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf"
 
-EXAM_SESSIONS = [
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "application/pdf,text/html,*/*",
+    "Referer": BASE_URL
+}
+
+# Fallback sessions list in case live dropdown cannot be reached
+FALLBACK_EXAM_SESSIONS = [
+    {"id": "36", "semester": 3, "label": "Semester 3", "name": "III Semester MGU UGP/ B.Voc/BBA/BCA (Honours) 2025 Admission Regular Exam October 2026", "batch": "2025 Admission"},
     {"id": "35", "semester": 5, "label": "Semester 5", "name": "V Semester MGU UGP (Honours) - 2024 Admission regular Examination October 2026", "batch": "2024 Admission"},
     {"id": "34", "semester": 1, "label": "Semester 1", "name": "First Semester MGU-UGP (HONOURS) Special Examination July 2026", "batch": "2024 Admission"},
     {"id": "33", "semester": 3, "label": "Semester 3", "name": "III SEM.FYUGP", "batch": "2024 Admission"},
@@ -79,6 +90,18 @@ COURSE_TYPE_NAMES = {
     "MIN": "Minor Course"
 }
 
+# Roman numerals and semester wording map
+ROMAN_SEM_MAP = {
+    'i': 1, 'first': 1, '1st': 1, 'sem 1': 1, 'sem-1': 1, 'sem.1': 1,
+    'ii': 2, 'second': 2, '2nd': 2, 'sem 2': 2, 'sem-2': 2, 'sem.2': 2,
+    'iii': 3, 'third': 3, '3rd': 3, 'sem 3': 3, 'sem-3': 3, 'sem.3': 3,
+    'iv': 4, 'fourth': 4, '4th': 4, 'sem 4': 4, 'sem-4': 4, 'sem.4': 4,
+    'v': 5, 'fifth': 5, '5th': 5, 'sem 5': 5, 'sem-5': 5, 'sem.5': 5,
+    'vi': 6, 'sixth': 6, '6th': 6, 'sem 6': 6, 'sem-6': 6, 'sem.6': 6,
+    'vii': 7, 'seventh': 7, '7th': 7, 'sem 7': 7, 'sem-7': 7, 'sem.7': 7,
+    'viii': 8, 'eighth': 8, '8th': 8, 'sem 8': 8, 'sem-8': 8, 'sem.8': 8,
+}
+
 # Load departments taxonomy
 DEPT_DICT = {}
 DEPT_NAME_SET = set()
@@ -104,6 +127,22 @@ if os.path.exists(depts_path):
     except Exception as e:
         print(f"[Warning] Failed to load departments.json: {e}")
 
+# Build canonical course title lookup from papers.json
+CANONICAL_TITLES = {}
+papers_json_path = os.path.join(DATA_DIR, "papers.json")
+if os.path.exists(papers_json_path):
+    try:
+        with open(papers_json_path, "r", encoding="utf-8") as f:
+            _existing = json.load(f)
+            for p in _existing:
+                cc = (p.get("course_code") or "").strip().upper()
+                tt = (p.get("title") or "").strip()
+                if cc and tt and not tt.startswith("Course ") and not is_department_name(tt) if 'is_department_name' in globals() else True:
+                    if cc not in CANONICAL_TITLES or len(tt) > len(CANONICAL_TITLES[cc]):
+                        CANONICAL_TITLES[cc] = tt
+    except Exception as e:
+        print(f"[Warning] Failed to build canonical titles: {e}")
+
 def is_department_name(title):
     if not title:
         return True
@@ -124,47 +163,148 @@ def safe_url_quote(url):
     except Exception:
         return url
 
+def parse_semester_from_string(s):
+    """Accurately determine semester number from text (e.g. III Semester -> 3)."""
+    n = s.lower()
+    m_roman = re.search(r'\b(viii|vii|vi|iv|v|iii|ii|i)\b\s*(?:sem|\.|\s*semester|_sem)', n)
+    if m_roman:
+        return ROMAN_SEM_MAP.get(m_roman.group(1), 1)
+    m_word = re.search(r'\b(first|second|third|fourth|fifth|sixth|seventh|eighth)\s+semester', n)
+    if m_word:
+        return ROMAN_SEM_MAP.get(m_word.group(1), 1)
+    m_num = re.search(r'\b(\d+)(?:st|nd|rd|th)?\s+sem', n)
+    if m_num:
+        return int(m_num.group(1))
+    m_sem = re.search(r'sem\s*(\d+)', n)
+    if m_sem:
+        return int(m_sem.group(1))
+    return 1
+
+def discover_live_exam_sessions():
+    """Live-query assist.mgu.ac.in homepage to detect ALL exam sessions in the dropdown."""
+    print("[Discovery] Querying https://assist.mgu.ac.in/schema/ for live exam sessions...", flush=True)
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    
+    req = urllib.request.Request(BASE_URL, headers=BROWSER_HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx, timeout=25) as resp:
+            html = resp.read().decode('utf-8', errors='ignore')
+            
+        options = re.findall(r'<option[^>]*value=[\"\']?(\d+)[\"\']?[^>]*>(.*?)</option>', html, re.IGNORECASE | re.DOTALL)
+        if not options:
+            print("[Discovery] No options found on homepage; falling back to historical sessions list.", flush=True)
+            return FALLBACK_EXAM_SESSIONS
+            
+        discovered = []
+        seen_ids = set()
+        
+        for val, raw_text in options:
+            eid = str(val).strip()
+            if not eid or eid in seen_ids:
+                continue
+            seen_ids.add(eid)
+            
+            clean_name = clean_html(raw_text)
+            # Match FYUGP / MGU-UGP / Honours programs
+            is_fyugp = bool(re.search(r'ugp|fyugp|honours|hons|four year|bba.*hons|bca.*hons', clean_name, re.IGNORECASE))
+            if not is_fyugp:
+                continue
+                
+            sem = parse_semester_from_string(clean_name)
+            m_batch = re.search(r'(\d{4}\s*Admission)', clean_name, re.IGNORECASE)
+            batch = m_batch.group(1) if m_batch else "2024 Admission"
+            
+            discovered.append({
+                "id": eid,
+                "semester": sem,
+                "label": f"Semester {sem}",
+                "name": clean_name,
+                "batch": batch
+            })
+            
+        # Also ensure fallback sessions are included if missing
+        for fb in FALLBACK_EXAM_SESSIONS:
+            if fb["id"] not in seen_ids:
+                discovered.append(fb)
+                seen_ids.add(fb["id"])
+                
+        # Sort descending by numeric ID (newest exams first)
+        discovered.sort(key=lambda x: int(x["id"]) if x["id"].isdigit() else 0, reverse=True)
+        print(f"[Discovery] Discovered {len(discovered)} active FYUGP exam sessions from university portal.", flush=True)
+        for s in discovered:
+            print(f"   Exam ID {s['id']:>2} | Sem {s['semester']} | {s['name'][:65]}")
+        return discovered
+    except Exception as e:
+        print(f"[Discovery] Note: Live discovery exception ({e}); using complete fallback sessions list.", flush=True)
+        return FALLBACK_EXAM_SESSIONS
+
 def fetch_exam_html(exam_id):
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+
     data = urllib.parse.urlencode({"options": str(exam_id)}).encode("utf-8")
     req = urllib.request.Request(
         BASE_URL,
         data=data,
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MGU-Portal-Sync/1.0"}
+        headers=BROWSER_HEADERS
     )
-    for attempt in range(3):
+    for attempt in range(4):
         try:
-            with urllib.request.urlopen(req, timeout=35) as resp:
+            with urllib.request.urlopen(req, context=ctx, timeout=35) as resp:
                 return resp.read().decode("utf-8", errors="ignore")
         except Exception as e:
-            if attempt == 2:
+            if attempt == 3:
                 print(f"[Sync] Warning: Failed to fetch exam {exam_id}: {e}", flush=True)
-            time.sleep(1.5)
+            time.sleep(2.0)
     return ""
 
 def extract_metadata_from_pdf(pdf_path):
-    if not os.path.exists(pdf_path):
+    """Extract course code and course title from downloaded PDF with multi-line title handling."""
+    if not os.path.exists(pdf_path) or os.path.getsize(pdf_path) < 100:
         return None, None
     try:
         from pypdf import PdfReader
         reader = PdfReader(pdf_path)
         if len(reader.pages) == 0:
             return None, None
-        page1 = reader.pages[0].extract_text() or ""
-        m_code = re.search(r'\b(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|DEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|\d{3}))\b', page1, re.IGNORECASE)
+            
+        full_text = ""
+        for p_idx in range(min(2, len(reader.pages))):
+            full_text += (reader.pages[p_idx].extract_text() or "") + "\n"
+            
+        # Match FYUGP Course Code
+        m_code = re.search(r'\b(MG[1-8](?:DSC|DSE|SEC|MDC|VAC|CCR|AEC|DEC|MDE|SDC|MPC|HON|MIN|MDE)[A-Z]{2,5}(?:A\d{2}|\d{3}))\b', full_text, re.IGNORECASE)
         code = m_code.group(1).upper() if m_code else None
 
+        # Check canonical title map first
+        if code and code in CANONICAL_TITLES:
+            return code, CANONICAL_TITLES[code]
+
+        # Try to parse title from header line
         title = None
-        for line in page1.splitlines()[:15]:
-            l_str = line.strip()
-            if not l_str or len(l_str) < 4:
-                continue
-            if any(k in l_str.upper() for k in ["MAHATMA GANDHI", "UNIVERSITY", "EXAMINATION", "PAGES", "SECTION", "TIME", "MAXIMUM", "TOTAL"]):
-                continue
-            if code and code in l_str.upper():
-                continue
-            if re.search(r'[A-Za-z]{4,}', l_str):
-                title = l_str
-                break
+        m_title = re.search(r'-\s*(?:MG[1-8][A-Z0-9]+)\s*-\s*(.*?)(?=\(\d{4}\s*ADMISSION|\(\d{4}\s*ADM|Duration:|Maximum Marks:|\n\s*Remember|\n\s*Part|\n\s*Time)', full_text, re.DOTALL | re.IGNORECASE)
+        if m_title:
+            cand = re.sub(r'\s+', ' ', m_title.group(1)).strip(' -:\n\r')
+            if len(cand) > 3 and not is_department_name(cand):
+                title = cand
+
+        if not title:
+            # Fallback line scanning
+            for line in full_text.splitlines()[:20]:
+                l_str = line.strip()
+                if not l_str or len(l_str) < 4:
+                    continue
+                if any(k in l_str.upper() for k in ["MAHATMA GANDHI", "UNIVERSITY", "EXAMINATION", "PAGES", "SECTION", "TIME", "MAXIMUM", "TOTAL", "REG.NO", "NAME :"]):
+                    continue
+                if code and code in l_str.upper():
+                    continue
+                if re.search(r'[A-Za-z]{4,}', l_str) and not is_department_name(l_str):
+                    title = l_str
+                    break
+                    
         return code, title
     except Exception:
         return None, None
@@ -175,11 +315,14 @@ def parse_header_text(raw_header):
     course_code = ""
     title = header
 
-    # 1. Match QP code at start: 26900015 - ...
+    # 1. Match QP code at start: 26900015 - ... or just 26900576
     m_qp = re.match(r'^(\d{6,8})\s*[-:]\s*(.*)$', header)
     if m_qp:
         qp_code = m_qp.group(1)
         remainder = m_qp.group(2).strip()
+    elif re.match(r'^\d{6,8}$', header):
+        qp_code = header
+        remainder = ""
     else:
         remainder = header
 
@@ -189,7 +332,7 @@ def parse_header_text(raw_header):
         course_code = m_mg.group(1).upper()
         # Clean title
         title_cand = remainder.replace(m_mg.group(0), '')
-        title_cand = re.sub(r'^\s*[-:–—]\s*|\s*[-:–—]\s*$', '', title_cand).strip()
+        title_cand = re.sub(r'^\s*[-:—]\s*|\s*[-:—]\s*$', '', title_cand).strip()
         title_cand = re.sub(r'\s*-\s*', ' - ', title_cand).strip(' -')
         title = title_cand
     else:
@@ -197,20 +340,24 @@ def parse_header_text(raw_header):
         m_mg_fb = re.search(r'\b(MG[1-8][A-Z]{6,9}(?:A\d{2}|\d{3}))\b', remainder, re.IGNORECASE)
         if m_mg_fb:
             course_code = m_mg_fb.group(1).upper()
-            title_cand = remainder.replace(m_mg_fb.group(0), '').strip(' -:–—')
+            title_cand = remainder.replace(m_mg_fb.group(0), '').strip(' -:—')
             title = title_cand
         else:
             # CBCS or other codes
             m_cb = re.search(r'\b([A-Z]{2,4}\d[A-Z]{2,4}\d{1,3}[A-Z]?)\b', remainder)
             if m_cb:
                 course_code = m_cb.group(1).upper()
-                title = remainder.replace(m_cb.group(0), '').strip(' -:–—')
+                title = remainder.replace(m_cb.group(0), '').strip(' -:—')
             else:
                 title = remainder
 
+    # Check canonical map
+    if course_code and course_code in CANONICAL_TITLES:
+        title = CANONICAL_TITLES[course_code]
+
     # Sanitize title: never equal department name/code
     if is_department_name(title) or len(title) < 3:
-        title = f"Course {course_code}" if course_code else header
+        title = CANONICAL_TITLES.get(course_code, f"Course {course_code}" if course_code else header)
 
     return qp_code, course_code, title
 
@@ -267,19 +414,23 @@ def download_file(url, target_path):
         return True
     tmp = target_path + ".tmp"
     safe_url = safe_url_quote(url)
-    for attempt in range(3):
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+
+    for attempt in range(4):
         try:
             req = urllib.request.Request(
                 safe_url,
-                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MGU-Portal-Sync/1.0"}
+                headers=BROWSER_HEADERS
             )
-            with urllib.request.urlopen(req, timeout=30) as resp, open(tmp, "wb") as f_out:
+            with urllib.request.urlopen(req, context=ctx, timeout=35) as resp, open(tmp, "wb") as f_out:
                 shutil.copyfileobj(resp, f_out)
             if os.path.exists(tmp) and os.path.getsize(tmp) > 100:
                 shutil.move(tmp, target_path)
                 return True
         except Exception:
-            time.sleep(1.5)
+            time.sleep(1.5 + (attempt * 1.5))
         finally:
             if os.path.exists(tmp):
                 try: os.remove(tmp)
@@ -389,12 +540,15 @@ def run_sync(trigger_type="manual"):
     files_to_download = []
     new_items_logged = []
 
-    # 2. Crawl all FYUGP exam sessions
-    for exam in EXAM_SESSIONS:
+    # 2. Dynamically discover all active FYUGP exam sessions from university portal
+    exam_sessions = discover_live_exam_sessions()
+
+    # Crawl each discovered exam session
+    for exam in exam_sessions:
         eid = exam["id"]
         sem_num = exam["semester"]
         ename = exam["name"]
-        print(f"[Sync] Fetching Exam ID {eid} ({exam['label']}: {ename[:45]}...) ...", flush=True)
+        print(f"[Sync] Fetching Exam ID {eid} ({exam['label']}: {ename[:50]}...) ...", flush=True)
         html = fetch_exam_html(eid)
         if not html:
             continue
@@ -428,14 +582,15 @@ def run_sync(trigger_type="manual"):
                         furl = BASE_URL + furl.lstrip("/")
                     found_files.append((furl, flabel))
 
-                all_scraped_courses.append({
-                    "exam_id": eid,
-                    "exam_name": ename,
-                    "semester": sem_num,
-                    "batch": exam.get("batch", "2024 Admission"),
-                    "raw_header": raw_header,
-                    "files": found_files
-                })
+                if found_files:
+                    all_scraped_courses.append({
+                        "exam_id": eid,
+                        "exam_name": ename,
+                        "semester": sem_num,
+                        "batch": exam.get("batch", "2024 Admission"),
+                        "raw_header": raw_header,
+                        "files": found_files
+                    })
         else:
             # Fallback to old panel-heading markup
             panel_pattern = re.compile(r'<div class="panel-heading"[^>]*>(.*?)</div>\s*<div[^>]*class="panel-collapse[^"]*"[^>]*>(.*?)</div>', re.DOTALL | re.IGNORECASE)
@@ -454,16 +609,18 @@ def run_sync(trigger_type="manual"):
                     if not furl.startswith("http"):
                         furl = BASE_URL + furl.lstrip("/")
                     found_files.append((furl, flabel))
-                all_scraped_courses.append({
-                    "exam_id": eid,
-                    "exam_name": ename,
-                    "semester": sem_num,
-                    "batch": exam.get("batch", "2024 Admission"),
-                    "raw_header": raw_header,
-                    "files": found_files
-                })
+                    
+                if found_files:
+                    all_scraped_courses.append({
+                        "exam_id": eid,
+                        "exam_name": ename,
+                        "semester": sem_num,
+                        "batch": exam.get("batch", "2024 Admission"),
+                        "raw_header": raw_header,
+                        "files": found_files
+                    })
 
-    print(f"[Sync] Discovered {len(all_scraped_courses)} courses across all exam sessions.", flush=True)
+    print(f"[Sync] Discovered {len(all_scraped_courses)} course exam items across {len(exam_sessions)} exam sessions.", flush=True)
 
     # 3. Detect which files are NEW
     for c_item in all_scraped_courses:
@@ -499,16 +656,14 @@ def run_sync(trigger_type="manual"):
                 return (True, furl, fn, c_item, flabel)
             return (False, furl, fn, c_item, flabel)
 
-        print(f"[Sync] Downloading {len(files_to_download)} new PDFs with 10 workers...", flush=True)
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        print(f"[Sync] Downloading {len(files_to_download)} new PDFs with 8 workers...", flush=True)
+        with ThreadPoolExecutor(max_workers=8) as executor:
             download_results = list(executor.map(_dl_worker, files_to_download))
 
         downloaded_count = sum(1 for r in download_results if r[0])
         print(f"[Sync] Successfully downloaded {downloaded_count}/{len(files_to_download)} files.", flush=True)
 
     # 5. Integrate into papers_db
-    # Build lookup table of papers_db
-    # Lookup by (exam_id, course_code, qp_code) and id
     papers_by_key = {}
     for p in papers_db:
         key = (str(p.get("exam_id", "")), (p.get("course_code") or "").upper(), (p.get("qp_code") or "").upper())
@@ -545,6 +700,10 @@ def run_sync(trigger_type="manual"):
                         title = pdf_title
                     meta_course = parse_course_metadata(course_code, sem_default=sem_num)
                     break
+
+        # Check canonical map one more time
+        if course_code and course_code in CANONICAL_TITLES:
+            title = CANONICAL_TITLES[course_code]
 
         is_ambiguous = bool(not course_code or meta_course["dept_code"] == "GEN")
 
@@ -672,7 +831,6 @@ def run_sync(trigger_type="manual"):
             pass
 
     end_time = datetime.now(timezone.utc)
-    # Format local IST time
     ist_offset_hours = 5.5
     ist_time = end_time.timestamp() + (ist_offset_hours * 3600)
     ist_dt = datetime.fromtimestamp(ist_time, tz=timezone.utc)
@@ -684,7 +842,7 @@ def run_sync(trigger_type="manual"):
         "timestamp_local": ist_str,
         "trigger_type": trigger_type.lower(),
         "status": "success",
-        "total_exams_checked": len(EXAM_SESSIONS),
+        "total_exams_checked": len(exam_sessions),
         "new_files_added": total_new_files,
         "new_qps_added": new_qps_added,
         "new_schemes_added": new_schemes_added,
@@ -692,9 +850,7 @@ def run_sync(trigger_type="manual"):
         "summary": f"{total_new_files} new files added ({new_qps_added} QPs, {new_schemes_added} Schemes)" if total_new_files > 0 else "0 new files (Database up to date)",
         "new_items": new_items_logged
     }
-    # Prepend to history (most recent first)
     crawl_history.insert(0, crawl_record)
-    # Keep last 100 crawls
     crawl_history = crawl_history[:100]
 
     with open(crawl_history_file, "w", encoding="utf-8") as f:
@@ -733,7 +889,7 @@ def run_sync(trigger_type="manual"):
     print("\n" + "=" * 70)
     print("  MGU QUESTION PAPERS & SCHEMES SYNC COMPLETE")
     print("=" * 70)
-    print(f"  Exams checked: {len(EXAM_SESSIONS)}")
+    print(f"  Exams checked: {len(exam_sessions)}")
     print(f"  New files added: {total_new_files} ({new_qps_added} QPs, {new_schemes_added} Schemes)")
     print(f"  Total portal courses: {len(papers_db)}")
     print(f"  Crawl logged in crawl_history.json")

@@ -6933,12 +6933,12 @@ const App = {
                         <!-- Direct PDF Preview Buttons -->
                         <div class="flex items-center gap-1.5 shrink-0">
                             ${qpFile ? `
-                                <button type="button" onclick="App.openPdfPreview('${qpFile.url}', 'QP - ${this.escapeHtml(rawHeader)}', '${qpFile.mgu_url || \'\'}', '${qpFile.raw_url || \'\'}')" class="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-blue-200 dark:border-blue-800 transition">
+                                <button type="button" onclick="App.openPdfPreview('${qpFile.url}', 'QP - ${this.escapeHtml(rawHeader).replace(/'/g, "\\'")}', '${qpFile.mgu_url || ""}', '${qpFile.raw_url || ""}')" class="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-blue-200 dark:border-blue-800 transition">
                                     <i class="bi bi-file-earmark-pdf-fill text-blue-600"></i> Read QP PDF
                                 </button>
                             ` : ''}
                             ${schFile ? `
-                                <button type="button" onclick="App.openPdfPreview('${schFile.url}', 'Scheme - ${this.escapeHtml(rawHeader)}', '${schFile.mgu_url || \'\'}', '${schFile.raw_url || \'\'}')" class="px-2.5 py-1.5 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-emerald-200 dark:border-emerald-800 transition">
+                                <button type="button" onclick="App.openPdfPreview('${schFile.url}', 'Scheme - ${this.escapeHtml(rawHeader).replace(/'/g, "\\'")}', '${schFile.mgu_url || ""}', '${schFile.raw_url || ""}')" class="px-2.5 py-1.5 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-emerald-200 dark:border-emerald-800 transition">
                                     <i class="bi bi-file-earmark-check-fill text-emerald-600"></i> Read Scheme PDF
                                 </button>
                             ` : ''}

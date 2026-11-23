@@ -1904,14 +1904,32 @@ const App = {
             'sep': 'September', 'oct': 'October', 'nov': 'November', 'dec': 'December'
         };
         const setSuffix = name.includes('(Set A)') ? ' (Set A)' : (name.includes('(Set B)') ? ' (Set B)' : '');
+        const specialSuffix = /(?:special exam|special examination|\(special\))/i.test(name) ? ' (Special)' : '';
         const m = name.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*[,\s\-]+(20\d\d)/i);
         if (m) {
             const rawM = m[1].toLowerCase().slice(0, 3);
             const fullM = monthMap[rawM] || m[1];
-            return `${fullM} ${m[2]}${setSuffix}`;
+            return `${fullM} ${m[2]}${specialSuffix}${setSuffix}`;
         }
         const y = name.match(/20\d\d/);
-        return y ? `${y[0]}${setSuffix}` : name;
+        return y ? `${y[0]}${specialSuffix}${setSuffix}` : name;
+    },
+
+    getDedupedExamPapers(papers) {
+        const rawExamPapers = (papers || []).filter(p => p.has_qp || p.has_scheme);
+        const seen = new Set();
+        const result = [];
+        for (const p of rawExamPapers) {
+            const label = this.extractMonthYear(p.exam_name);
+            const qpName = (p.qp_url || (p.files && (p.files.find(f => f.type === 'QP') || {}).url) || '').split('/').pop();
+            const schName = (p.scheme_url || (p.files && (p.files.find(f => f.type === 'SCHEME') || {}).url) || '').split('/').pop();
+            const key = `${p.exam_id || ''}_${label}_${qpName}_${schName}`;
+            if (!seen.has(key)) {
+                seen.add(key);
+                result.push(p);
+            }
+        }
+        return result;
     },
 
     groupPapersByCourse(paperList, enrichFromCatalog = false) {
@@ -1955,9 +1973,41 @@ const App = {
                 });
             }
 
-            // Merge papers
-            const pKey = p.id || `${p.exam_id}_${p.exam_name}_${p.course_code}`;
-            if (!course.papers.some(ep => (ep.id || `${ep.exam_id}_${ep.exam_name}_${ep.course_code}`) === pKey)) {
+            // Merge papers with strict session deduplication
+            const existingPaper = course.papers.find(ep => {
+                if (p.id && ep.id === p.id) return true;
+                if (p.exam_id && ep.exam_id && String(ep.exam_id) === String(p.exam_id)) {
+                    const pSet = (p.exam_name || '').includes('(Set');
+                    const epSet = (ep.exam_name || '').includes('(Set');
+                    if (!pSet && !epSet) return true;
+                }
+                if (p.exam_name && ep.exam_name && p.exam_name.trim().toLowerCase() === ep.exam_name.trim().toLowerCase()) {
+                    return true;
+                }
+                return false;
+            });
+
+            if (existingPaper) {
+                if (p.has_qp && !existingPaper.has_qp) {
+                    existingPaper.has_qp = true;
+                    existingPaper.qp_url = p.qp_url;
+                }
+                if (p.has_scheme && !existingPaper.has_scheme) {
+                    existingPaper.has_scheme = true;
+                    existingPaper.scheme_url = p.scheme_url;
+                }
+                if (p.files && Array.isArray(p.files)) {
+                    if (!existingPaper.files) existingPaper.files = [];
+                    const existingUrls = new Set(existingPaper.files.map(f => f.url || f.mgu_url));
+                    p.files.forEach(f => {
+                        const u = f.url || f.mgu_url;
+                        if (u && !existingUrls.has(u)) {
+                            existingPaper.files.push(f);
+                            existingUrls.add(u);
+                        }
+                    });
+                }
+            } else {
                 course.papers.push(p);
             }
         });
@@ -1994,9 +2044,41 @@ const App = {
                         });
                     }
 
-                    // Merge papers
-                    const pKey = cp.id || `${cp.exam_id}_${cp.exam_name}_${cp.course_code}`;
-                    if (!course.papers.some(ep => (ep.id || `${ep.exam_id}_${ep.exam_name}_${ep.course_code}`) === pKey)) {
+                    // Merge papers with strict session deduplication
+                    const existingCatPaper = course.papers.find(ep => {
+                        if (cp.id && ep.id === cp.id) return true;
+                        if (cp.exam_id && ep.exam_id && String(ep.exam_id) === String(cp.exam_id)) {
+                            const pSet = (cp.exam_name || '').includes('(Set');
+                            const epSet = (ep.exam_name || '').includes('(Set');
+                            if (!pSet && !epSet) return true;
+                        }
+                        if (cp.exam_name && ep.exam_name && cp.exam_name.trim().toLowerCase() === ep.exam_name.trim().toLowerCase()) {
+                            return true;
+                        }
+                        return false;
+                    });
+
+                    if (existingCatPaper) {
+                        if (cp.has_qp && !existingCatPaper.has_qp) {
+                            existingCatPaper.has_qp = true;
+                            existingCatPaper.qp_url = cp.qp_url;
+                        }
+                        if (cp.has_scheme && !existingCatPaper.has_scheme) {
+                            existingCatPaper.has_scheme = true;
+                            existingCatPaper.scheme_url = cp.scheme_url;
+                        }
+                        if (cp.files && Array.isArray(cp.files)) {
+                            if (!existingCatPaper.files) existingCatPaper.files = [];
+                            const existingUrls = new Set(existingCatPaper.files.map(f => f.url || f.mgu_url));
+                            cp.files.forEach(f => {
+                                const u = f.url || f.mgu_url;
+                                if (u && !existingUrls.has(u)) {
+                                    existingCatPaper.files.push(f);
+                                    existingUrls.add(u);
+                                }
+                            });
+                        }
+                    } else {
                         course.papers.push(cp);
                     }
                 });
@@ -2210,7 +2292,7 @@ const App = {
         const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;
         const firstPaper = (course.papers && course.papers[0]) || { id: course.course_code || 'paper' };
         const isBookmarked = (course.papers || []).some(p => this.bookmarks.has(p.id));
-        const examPapers = (course.papers || []).filter(p => p.has_qp || p.has_scheme);
+        const examPapers = this.getDedupedExamPapers(course.papers);
 
         return `
             <div class="paper-card bg-white dark:bg-slate-800 rounded-2xl p-5 flex flex-col justify-between shadow-xs border border-slate-200/80 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 transition">
@@ -2578,7 +2660,7 @@ const App = {
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60">
                             ${courses.map(course => {
-                                const examPapers = (course.papers || []).filter(p => p.has_qp || p.has_scheme);
+                                const examPapers = this.getDedupedExamPapers(course.papers);
                                 const firstPaper = (course.papers && course.papers[0]) || { id: course.course_code || 'paper' };
                                 const isBookmarked = (course.papers || []).some(p => this.bookmarks.has(p.id));
                                 const ctypeClass = `badge-${(course.course_type || 'dsc').toLowerCase()}`;

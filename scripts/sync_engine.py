@@ -734,9 +734,15 @@ def run_sync(trigger_type="manual"):
 
     # 5. Integrate into papers_db
     papers_by_key = {}
+    papers_by_ce = {}
     for p in papers_db:
-        key = (str(p.get("exam_id", "")), (p.get("course_code") or "").upper(), (p.get("qp_code") or "").upper())
+        eid_str = str(p.get("exam_id", ""))
+        cc_str = (p.get("course_code") or "").upper().strip()
+        qp_str = (p.get("qp_code") or "").upper().strip()
+        key = (eid_str, cc_str, qp_str)
         papers_by_key[key] = p
+        if cc_str:
+            papers_by_ce[(eid_str, cc_str)] = p
         if p.get("id"):
             papers_by_key[p["id"]] = p
 
@@ -779,9 +785,9 @@ def run_sync(trigger_type="manual"):
         key = (str(eid), course_code.upper(), qp_code.upper())
         target_paper = papers_by_key.get(key)
         
-        # If not found by full key, try by exam_id and course_code if course_code is unique
+        # If not found by full key, try by exam_id and course_code to strictly prevent duplicate course cards in the same exam
         if not target_paper and course_code:
-            target_paper = papers_by_key.get((str(eid), course_code.upper(), ""))
+            target_paper = papers_by_ce.get((str(eid), course_code.upper()))
             
         if not target_paper:
             # Check by canonical id
@@ -826,6 +832,14 @@ def run_sync(trigger_type="manual"):
             papers_db.append(target_paper)
             papers_by_key[key] = target_paper
             papers_by_key[target_paper["id"]] = target_paper
+            if course_code:
+                papers_by_ce[(str(eid), course_code.upper())] = target_paper
+        else:
+            # Existing paper found: upgrade metadata if more specific
+            if qp_code and not target_paper.get("qp_code"):
+                target_paper["qp_code"] = qp_code
+            if title and (not target_paper.get("title") or target_paper["title"].startswith("Course ") or target_paper["title"] == qp_code):
+                target_paper["title"] = title
 
         # Merge files
         existing_target_urls = set(f.get("url") for f in target_paper.get("files", []))

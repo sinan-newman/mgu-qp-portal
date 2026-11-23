@@ -552,9 +552,9 @@ const App = {
         }
     },
 
-    openPdfPreview(url, title = 'Document Preview') {
+    openPdfPreview(url, title = 'Document Preview', mguUrl = '', rawUrl = '') {
         if (window.PDFViewer) {
-            window.PDFViewer.openDirect(url, title);
+            window.PDFViewer.openDirect(url, title, '', mguUrl, rawUrl);
         }
     },
 
@@ -2480,7 +2480,7 @@ const App = {
                                     <button onclick="App.previewDirect(this, '${m.cdn_url || m.url}', '${m.title.replace(/'/g, "\\'")}', '${p.course_code || ''}')" class="px-2 py-1 text-xs font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1 transition" title="Preview Model QP">
                                         <i class="bi bi-eye"></i> View
                                     </button>
-                                    <button onclick="App.downloadDirect(this, '${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model_Paper'}', '${course.course_code || ''}')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
+                                    <button onclick="App.downloadDirect(this, '${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model_Paper'}', '${p.course_code || ''}')" class="p-1 text-xs rounded-lg bg-slate-200/80 dark:bg-slate-600 hover:bg-slate-300 dark:hover:bg-slate-500 text-slate-700 dark:text-slate-200 transition" title="Download Model QP">
                                         <i class="bi bi-download"></i>
                                     </button>
                                 </div>
@@ -6933,12 +6933,12 @@ const App = {
                         <!-- Direct PDF Preview Buttons -->
                         <div class="flex items-center gap-1.5 shrink-0">
                             ${qpFile ? `
-                                <button type="button" onclick="App.openPdfPreview('${qpFile.url}', 'QP - ${this.escapeHtml(rawHeader)}')" class="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-blue-200 dark:border-blue-800 transition">
+                                <button type="button" onclick="App.openPdfPreview('${qpFile.url}', 'QP - ${this.escapeHtml(rawHeader)}', '${qpFile.mgu_url || \'\'}', '${qpFile.raw_url || \'\'}')" class="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-blue-200 dark:border-blue-800 transition">
                                     <i class="bi bi-file-earmark-pdf-fill text-blue-600"></i> Read QP PDF
                                 </button>
                             ` : ''}
                             ${schFile ? `
-                                <button type="button" onclick="App.openPdfPreview('${schFile.url}', 'Scheme - ${this.escapeHtml(rawHeader)}')" class="px-2.5 py-1.5 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-emerald-200 dark:border-emerald-800 transition">
+                                <button type="button" onclick="App.openPdfPreview('${schFile.url}', 'Scheme - ${this.escapeHtml(rawHeader)}', '${schFile.mgu_url || \'\'}', '${schFile.raw_url || \'\'}')" class="px-2.5 py-1.5 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-lg font-semibold flex items-center gap-1 text-[11px] border border-emerald-200 dark:border-emerald-800 transition">
                                     <i class="bi bi-file-earmark-check-fill text-emerald-600"></i> Read Scheme PDF
                                 </button>
                             ` : ''}

@@ -587,70 +587,65 @@ const PDFViewer = {
         // If no exam paper, check model papers
         if (!primaryUrl && doc.model_papers && doc.model_papers.length > 0) {
             const m = doc.model_papers[0];
-            primaryUrl = m.cdn_url || m.url;
+            primaryUrl = m.cdn_url || m.pdf_url || m.url;
         }
 
         if (!primaryUrl) return [];
 
         const cleanRaw = primaryUrl.trim();
-        const filename = cleanRaw.split('/').pop().split('?')[0];
+        const filename = (cleanRaw.split('/').pop().split('?')[0] || '').trim();
         const candidates = [];
 
-        // Candidate 1: Direct same-origin uploads path (most reliable when deployed on GitHub Pages or local)
-        if (filename && filename.endsWith('.pdf')) {
-            if (cleanRaw.includes('model_papers') || filename.startsWith('MODEL_')) {
-                candidates.push('uploads/model_papers/' + filename);
-                candidates.push('public/uploads/model_papers/' + filename);
-            } else {
-                candidates.push('uploads/' + filename);
-                candidates.push('public/uploads/' + filename);
+        // Canonical MGU direct university URL derivation
+        let mguUrl = (matchingFile && matchingFile.mgu_url) || (doc && (isQP ? doc.mgu_qp_url : doc.mgu_scheme_url)) || '';
+        if (!mguUrl && cleanRaw.includes('mgu.ac.in')) {
+            mguUrl = cleanRaw;
+        }
+        if (!mguUrl && filename && filename.startsWith('DOC-')) {
+            mguUrl = `https://assist.mgu.ac.in/schema/assets/storage/${filename}`;
+        }
+
+        const isLocal = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
+        if (isLocal) {
+            // Local development: prioritize local disk files and server proxy
+            if (filename) {
+                candidates.push(`uploads/${filename}`);
+                candidates.push(`uploads/model_papers/${filename}`);
+                candidates.push(`/uploads/${filename}`);
+                candidates.push(`/uploads/model_papers/${filename}`);
             }
-            if (window.location.origin) {
-                const pathname = window.location.pathname;
-                const basePath = pathname.substring(0, pathname.lastIndexOf('/') + 1);
-                if (cleanRaw.includes('model_papers') || filename.startsWith('MODEL_')) {
-                    candidates.push(window.location.origin + basePath + 'uploads/model_papers/' + filename);
-                } else {
-                    candidates.push(window.location.origin + basePath + 'uploads/' + filename);
-                }
+            if (mguUrl) {
+                candidates.push(`/api/proxy-pdf?url=${encodeURIComponent(mguUrl)}`);
+            } else if (cleanRaw.startsWith('http')) {
+                candidates.push(`/api/proxy-pdf?url=${encodeURIComponent(cleanRaw)}`);
             }
         }
 
-        // Candidate 2: Primary URL as provided
+        // Production / GitHub Pages: prioritize globally accessible CDN mirrors FIRST
         if (cleanRaw.startsWith('http://') || cleanRaw.startsWith('https://')) {
             candidates.push(cleanRaw);
         }
 
-        // Candidate 3: GitHub Raw CDN (direct upstream source, guaranteed immediate sync)
+        if (filename && filename.endsWith('.pdf')) {
+            candidates.push('https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
+            candidates.push('https://fastly.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
+            candidates.push('https://gcore.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
+        }
+
         if (matchingFile && matchingFile.raw_url) {
             candidates.push(matchingFile.raw_url);
         } else if (filename && filename.endsWith('.pdf')) {
             candidates.push('https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf/' + filename);
         }
 
-        // Candidate 4: jsDelivr CDN (fast edge distribution)
-        if (filename && filename.endsWith('.pdf')) {
-            candidates.push('https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
-            candidates.push('https://fastly.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
-        }
-
-        // Candidate 5: Local server proxy if running on localhost / dev server
-        const isLocal = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '';
-        const mguUrl = (matchingFile && matchingFile.mgu_url) ? matchingFile.mgu_url : (cleanRaw.includes('mgu.ac.in') ? cleanRaw : '');
-        if (isLocal && mguUrl) {
-            candidates.push(`/api/proxy-pdf?url=${encodeURIComponent(mguUrl)}`);
-        } else if (isLocal && cleanRaw.startsWith('http')) {
-            candidates.push(`/api/proxy-pdf?url=${encodeURIComponent(cleanRaw)}`);
-        }
-
-        // Candidate 6: Direct MGU URL
-        if (mguUrl) {
-            candidates.push(mguUrl);
-        }
-
-        // Candidate 7: Public reliable CORS proxies for direct MGU fallback on GitHub Pages
+        // Direct university and CORS proxies fallback
         if (mguUrl && !isLocal) {
+            candidates.push(`https://corsproxy.io/?url=${encodeURIComponent(mguUrl)}`);
             candidates.push(`https://api.allorigins.win/raw?url=${encodeURIComponent(mguUrl)}`);
+            candidates.push(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(mguUrl)}`);
+            candidates.push(mguUrl);
+        } else if (mguUrl) {
+            candidates.push(mguUrl);
         }
 
         // Return deduplicated list
@@ -761,9 +756,37 @@ const PDFViewer = {
             if (this.loadingSpinner) this.loadingSpinner.classList.add('hidden');
         } catch (err) {
             console.warn('[PDFViewer] Fetch buffer error:', err);
-            // If direct PDF.js fetch failed, try fallback iframe before showing error
-            const directMgu = this.currentDoc.qp_url || this.currentDoc.scheme_url || '';
-            this.showError('This paper is listed in the examination portal, but the digital PDF is temporarily unreachable or undergoing university digitization.', directMgu);
+            
+            // Seamless Multi-Tier In-Modal Fallback before showing error:
+            const isQP = this.activeType === 'QP';
+            const matchingFile = (this.currentDoc.files || []).find(f => {
+                const ftype = (f.type || '').toUpperCase();
+                return isQP ? (ftype === 'QP') : (ftype === 'SCHEME');
+            });
+            const primary = isQP ? this.currentDoc.qp_url : this.currentDoc.scheme_url;
+            const filename = primary ? primary.split('/').pop().split('?')[0] : '';
+            const targetMgu = (matchingFile && matchingFile.mgu_url) 
+                || (this.currentDoc && (isQP ? this.currentDoc.mgu_qp_url : this.currentDoc.mgu_scheme_url))
+                || (filename && filename.startsWith('DOC-') ? `https://assist.mgu.ac.in/schema/assets/storage/${filename}` : '')
+                || primary || '';
+
+            if (targetMgu && (targetMgu.startsWith('http://') || targetMgu.startsWith('https://'))) {
+                console.log('[PDFViewer] Activating Google Docs Viewer seamless in-modal fallback for:', targetMgu);
+                this.setupActions(null, targetMgu, this.currentDoc, this.activeType);
+                if (this.pagesContainer) this.pagesContainer.classList.add('hidden');
+                if (this.loadingSpinner) this.loadingSpinner.classList.add('hidden');
+                if (this.errorCard) this.errorCard.classList.add('hidden');
+                if (this.toolbar) this.toolbar.classList.remove('hidden');
+
+                if (this.iframe) {
+                    this.iframe.className = 'w-full flex-1 h-full min-h-[550px] sm:min-h-[720px] border-0 rounded-xl shadow-lg bg-white dark:bg-slate-900';
+                    this.iframe.src = `https://docs.google.com/viewer?url=${encodeURIComponent(targetMgu)}&embedded=true`;
+                    this.iframe.classList.remove('hidden');
+                    return;
+                }
+            }
+
+            this.showError('Unable to render document in embedded viewer. Access the official university document directly:', targetMgu);
         }
     },
 
@@ -958,16 +981,23 @@ const PDFViewer = {
 
         if (this.errorCard) {
             this.errorCard.classList.remove('hidden');
+            const targetUrl = directUrl || (this.currentDoc ? (this.currentDoc.mgu_qp_url || this.currentDoc.mgu_scheme_url || this.currentDoc.qp_url || this.currentDoc.scheme_url) : '');
+            const hasTarget = Boolean(targetUrl && targetUrl.startsWith('http'));
+
             if (this.errorTitle) {
-                this.errorTitle.textContent = 'Document Pending University Upload';
+                this.errorTitle.textContent = hasTarget
+                    ? 'Official University Document Available'
+                    : 'Document Pending University Upload';
             }
             if (this.errorMessage) {
-                this.errorMessage.textContent = msg || 'This paper is listed in the examination database, but the official PDF document is not yet available.';
+                this.errorMessage.textContent = hasTarget
+                    ? (msg || 'The official examination document is listed on the university portal. Use the direct link below to access or download the official PDF immediately:')
+                    : (msg || 'This paper is listed in the examination schedule, but the digitized PDF file has not yet been released by the university.');
             }
             if (this.directMguLink) {
-                const targetUrl = directUrl || (this.currentDoc ? (this.currentDoc.qp_url || this.currentDoc.scheme_url) : '');
-                if (targetUrl && targetUrl.startsWith('http')) {
+                if (hasTarget) {
                     this.directMguLink.href = targetUrl;
+                    this.directMguLink.innerHTML = '<i class="bi bi-box-arrow-up-right"></i> Open Official University PDF';
                     this.directMguLink.classList.remove('hidden');
                 } else {
                     this.directMguLink.classList.add('hidden');
@@ -1035,16 +1065,24 @@ const PDFViewer = {
         return false;
     },
 
-    openDirect(url, title = 'Document Preview', code = '') {
+    openDirect(url, title = 'Document Preview', code = '', mguUrl = '', rawUrl = '') {
         const dummyDoc = {
             title: title,
             course_code: code,
             dept_name: 'Official Mahatma Gandhi University Examination Asset',
             semester_label: 'FYUGP',
             qp_url: url,
+            mgu_qp_url: mguUrl,
+            raw_qp_url: rawUrl,
             has_qp: true,
             has_scheme: false,
-            files: [{ type: 'QP', url: url, label: 'Question Paper' }]
+            files: [{ 
+                type: 'QP', 
+                url: url, 
+                mgu_url: mguUrl, 
+                raw_url: rawUrl, 
+                label: 'Question Paper' 
+            }]
         };
         this.open(dummyDoc, 'QP');
     },

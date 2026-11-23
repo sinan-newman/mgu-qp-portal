@@ -664,8 +664,9 @@ def run_scraper(force=False):
                     "id": f"model_{code}_{ptype.lower()}_{int(time.time())}",
                     "title": clean_t,
                     "paper_type": ptype,
-                    "url": f"uploads/model_papers/{out_filename}",
+                    "url": f"{CDN_BASE}/{out_filename}",
                     "cdn_url": f"{CDN_BASE}/{out_filename}",
+                    "local_url": f"uploads/model_papers/{out_filename}",
                     "pages": page_count,
                     "source": f"MGU Official FYUGP Model Question Paper (Semester {sem})"
                 }
@@ -748,7 +749,7 @@ def run_scraper(force=False):
                     "model_id": m.get("id"),
                     "title": title if not is_department_name(title) else (p.get("title") or f"Course {cc}"),
                     "paper_type": pt,
-                    "url": url,
+                    "url": m.get("cdn_url") or (f"{CDN_BASE}/{os.path.basename(url)}" if "uploads" in url else url),
                     "cdn_url": m.get("cdn_url") or f"{CDN_BASE}/{os.path.basename(url)}",
                     "pages": m.get("pages") or 2,
                     "_score": score

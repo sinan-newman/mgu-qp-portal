@@ -326,27 +326,32 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
         if path == "/api/proxy-pdf":
             # Proxy PDF to allow seamless inline iframe preview
             pdf_url = params.get("url", [""])[0].strip()
+            fn = pdf_url.split("/")[-1].split("?")[0] if pdf_url else ""
 
-            # Handle local uploads directly
-            clean_local = pdf_url.lstrip("/")
-            if clean_local.startswith("uploads/"):
-                for candidate_root in [BASE_DIR, os.path.join(BASE_DIR, "public")]:
-                    local_target = os.path.join(candidate_root, clean_local.replace("/", os.sep))
-                    if os.path.exists(local_target) and os.path.isfile(local_target):
+            # 1. Fast local disk resolution across all known PDF stores
+            if fn and fn.endswith(".pdf"):
+                local_candidates = [
+                    os.path.join(BASE_DIR, "uploads", fn),
+                    os.path.join(BASE_DIR, "uploads", "model_papers", fn),
+                    os.path.join(BASE_DIR, "public", "uploads", fn),
+                    os.path.join(BASE_DIR, "public", "uploads", "model_papers", fn),
+                    os.path.abspath(os.path.join(BASE_DIR, "..", "mgu-qp-storage", "pdf", fn))
+                ]
+                for cand in local_candidates:
+                    if os.path.exists(cand) and os.path.isfile(cand) and os.path.getsize(cand) > 500:
                         try:
-                            with open(local_target, "rb") as f_pdf:
+                            with open(cand, "rb") as f_pdf:
                                 data = f_pdf.read()
                             self.send_response(200)
                             self.send_header("Content-Type", "application/pdf")
                             self.send_header("Content-Length", str(len(data)))
-                            self.send_header("Content-Disposition", 'inline; filename="preview.pdf"')
+                            self.send_header("Content-Disposition", f'inline; filename="{fn}"')
                             self.send_header("Cache-Control", "public, max-age=86400")
                             self.end_headers()
                             self.wfile.write(data)
                             return
                         except Exception as e:
-                            self.send_json_response({"error": f"Failed to read local PDF: {str(e)}"}, status=500)
-                            return
+                            pass
 
             is_valid_source = pdf_url and (
                 pdf_url.startswith("https://assist.mgu.ac.in/") or
@@ -365,17 +370,30 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
                 encoded_path = urllib.parse.quote(parts.path, safe='/@:')
                 safe_pdf_url = urllib.parse.urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
 
-                req = urllib.request.Request(
-                    safe_pdf_url,
-                    headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MGU-Portal-Proxy/1.0"}
-                )
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                    "Referer": "https://assist.mgu.ac.in/schema/",
+                    "Accept": "application/pdf,application/octet-stream,*/*"
+                }
+
+                req = urllib.request.Request(safe_pdf_url, headers=headers)
                 with urllib.request.urlopen(req, timeout=30) as resp:
                     data = resp.read()
+                    
+                    # Auto-cache to local uploads for subsequent instant loading
+                    if fn and len(data) > 500:
+                        try:
+                            cache_target = os.path.join(BASE_DIR, "uploads", fn)
+                            os.makedirs(os.path.dirname(cache_target), exist_ok=True)
+                            with open(cache_target, "wb") as f_cache:
+                                f_cache.write(data)
+                        except Exception:
+                            pass
+
                     self.send_response(200)
                     self.send_header("Content-Type", "application/pdf")
                     self.send_header("Content-Length", str(len(data)))
-                    # Remove restrictive framing headers so iframe preview works
-                    self.send_header("Content-Disposition", "inline; filename=\"preview.pdf\"")
+                    self.send_header("Content-Disposition", f'inline; filename="{fn or "preview.pdf"}"')
                     self.send_header("Cache-Control", "public, max-age=86400")
                     self.end_headers()
                     self.wfile.write(data)

@@ -429,6 +429,10 @@ def download_file(url, target_path):
             if os.path.exists(tmp) and os.path.getsize(tmp) > 100:
                 shutil.move(tmp, target_path)
                 return True
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                break
+            time.sleep(1.5 + (attempt * 1.5))
         except Exception:
             time.sleep(1.5 + (attempt * 1.5))
         finally:
@@ -497,6 +501,60 @@ def sync_storage_repo():
                     time.sleep(2)
     except Exception as e:
         print(f"[Storage Push] Note: Storage push completed or skipped: {e}", flush=True)
+
+
+def verify_and_download_missing_files(papers_db):
+    """Integrity check: Ensure all files referenced in papers_db exist in storage repo."""
+    missing_from_storage = []
+    missing_from_uploads = []
+    for p in papers_db:
+        for f_entry in p.get("files", []):
+            u = f_entry.get("url") or ""
+            mgu_u = f_entry.get("mgu_url") or ""
+            fn = os.path.basename(u.split("?")[0])
+            if fn.endswith(".pdf"):
+                sp = os.path.join(STORAGE_PDF_DIR, fn)
+                lp = os.path.join(LOCAL_UPLOADS_DIR, fn)
+                has_sp = os.path.exists(sp) and os.path.getsize(sp) >= 100
+                has_lp = os.path.exists(lp) and os.path.getsize(lp) >= 100
+                
+                if not has_sp and not has_lp:
+                    cand_mgu = mgu_u or f"https://assist.mgu.ac.in/schema/assets/storage/{fn}"
+                    missing_from_storage.append((fn, cand_mgu))
+                elif has_sp and not has_lp:
+                    missing_from_uploads.append((sp, lp))
+                elif has_lp and not has_sp:
+                    try:
+                        shutil.copy2(lp, sp)
+                    except Exception:
+                        pass
+    
+    # If files exist in storage repo but not in local uploads dir, copy them over locally
+    if missing_from_uploads:
+        for sp_path, lp_path in missing_from_uploads:
+            try:
+                shutil.copy2(sp_path, lp_path)
+            except Exception:
+                pass
+
+    if not missing_from_storage:
+        print("[Integrity] All database PDFs verified present in storage repo.", flush=True)
+        return
+        
+    print(f"[Integrity] Found {len(missing_from_storage)} missing PDFs in storage repo. Initiating university download...", flush=True)
+    recovered = 0
+    for fn, cand_url in missing_from_storage:
+        sp = os.path.join(STORAGE_PDF_DIR, fn)
+        lp = os.path.join(LOCAL_UPLOADS_DIR, fn)
+        pub_p = os.path.join(PUB_UPLOADS_DIR, fn)
+        if download_file(cand_url, lp):
+            try:
+                shutil.copy2(lp, sp)
+                shutil.copy2(lp, pub_p)
+                recovered += 1
+            except Exception:
+                pass
+    print(f"[Integrity] Recovered and mirrored {recovered}/{len(missing_from_storage)} PDFs from university server.", flush=True)
 
 def run_sync(trigger_type="manual"):
     start_time = datetime.now(timezone.utc)
@@ -791,12 +849,18 @@ def run_sync(trigger_type="manual"):
             existing_target_urls.add(cdn_url)
             existing_target_names.add(fn)
 
-            if ftype == "QP" and not target_paper.get("has_qp"):
-                target_paper["has_qp"] = True
-                target_paper["qp_url"] = cdn_url
-            elif ftype == "SCHEME" and not target_paper.get("has_scheme"):
-                target_paper["has_scheme"] = True
-                target_paper["scheme_url"] = cdn_url
+            if ftype == "QP":
+                if not target_paper.get("has_qp"):
+                    target_paper["has_qp"] = True
+                    target_paper["qp_url"] = cdn_url
+                    target_paper["mgu_qp_url"] = furl
+                    target_paper["raw_qp_url"] = f"{RAW_BASE}/{fn}"
+            elif ftype == "SCHEME":
+                if not target_paper.get("has_scheme"):
+                    target_paper["has_scheme"] = True
+                    target_paper["scheme_url"] = cdn_url
+                    target_paper["mgu_scheme_url"] = furl
+                    target_paper["raw_scheme_url"] = f"{RAW_BASE}/{fn}" 
 
             new_items_logged.append({
                 "exam_id": str(eid),
@@ -881,6 +945,9 @@ def run_sync(trigger_type="manual"):
         json.dump(stats, f, indent=2, ensure_ascii=False)
     with open(os.path.join(PUB_DATA_DIR, "stats.json"), "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
+
+    # 8.5. Verify all PDF files are mirrored locally
+    verify_and_download_missing_files(papers_db)
 
     # 9. Sync remote storage repo
     if total_new_files > 0:

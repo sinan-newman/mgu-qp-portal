@@ -1008,13 +1008,29 @@ const AiNotesStudio = {
 
         // Filter out model question papers as solutions/schemes are not available for model papers
         let papers = (data.papers || []).filter(p => 
-            !('model' in String(p.paper_id || '').toLowerCase()) && 
-            !('model' in String(p.paper_title || '').toLowerCase())
-        );
+            !String(p.paper_id || '').toLowerCase().includes('model') && 
+            !String(p.paper_title || '').toLowerCase().includes('model')
+        ).map(p => {
+            const rawSections = Array.isArray(p.sections) ? p.sections : [];
+            const filteredSections = rawSections.map(s => {
+                const qs = Array.isArray(s.questions) ? s.questions : [];
+                const filteredQs = qs.filter(q => 
+                    !String(q.source_exam || '').toLowerCase().includes('model') &&
+                    !String(q.source || '').toLowerCase().includes('model')
+                );
+                return { ...s, questions: filteredQs };
+            }).filter(s => s.questions.length > 0);
+
+            return {
+                ...p,
+                sections: filteredSections
+            };
+        }).filter(p => p.sections && p.sections.length > 0);
+
         if (!papers || papers.length === 0) {
             const allQ = (data.questions || []).filter(q => 
-                !('model' in String(q.source_exam || '').toLowerCase()) &&
-                !('model' in String(q.source || '').toLowerCase())
+                !String(q.source_exam || '').toLowerCase().includes('model') &&
+                !String(q.source || '').toLowerCase().includes('model')
             );
             const secA = allQ.filter(q => q.part === 'PART_A');
             const secB = allQ.filter(q => q.part === 'PART_B');
@@ -1318,7 +1334,7 @@ const AiNotesStudio = {
                             </div>
                             <div class="tp-grid-item">
                                 <span class="tp-grid-label">Question Coverage</span>
-                                <span class="tp-grid-val">${papers.reduce((acc, p) => acc + p.sections.reduce((sacc, s) => sacc + s.questions.length, 0), 0)} Questions (100% Solved)</span>
+                                <span class="tp-grid-val">${papers.reduce((acc, p) => acc + (p.sections || []).reduce((sacc, s) => sacc + (s.questions ? s.questions.length : 0), 0), 0)} Questions (100% Solved)</span>
                             </div>
                         </div>
 
@@ -1332,7 +1348,7 @@ const AiNotesStudio = {
                                     <li>
                                         <span class="font-bold text-[#1E3A8A] dark:text-blue-400">Paper ${idx + 1}:</span>
                                         <span class="truncate mx-2 flex-1">${p.paper_title}</span>
-                                        <span class="font-semibold text-slate-500">${p.sections.reduce((sacc, s) => sacc + s.questions.length, 0)} Qs</span>
+                                        <span class="font-semibold text-slate-500">${(p.sections || []).reduce((sacc, s) => sacc + (s.questions ? s.questions.length : 0), 0)} Qs</span>
                                     </li>
                                 `).join('')}
                                 ${papers.length > 3 ? `
@@ -1351,11 +1367,11 @@ const AiNotesStudio = {
                 ` : ''}
 
                 ${papers.map((paper, pIdx) => {
-                    const visibleSections = paper.sections.map(sec => {
+                    const visibleSections = (paper.sections || []).map(sec => {
                         const secPart = sec.section_id.includes('SEC_A') ? 'PART_A' : (sec.section_id.includes('SEC_B') ? 'PART_B' : 'PART_C');
                         if (currentPart !== 'ALL' && secPart !== currentPart) return null;
 
-                        const matchingQuestions = sec.questions.filter(q => {
+                        const matchingQuestions = (sec.questions || []).filter(q => {
                             if (!searchQ) return true;
                             const full = (q.question + ' ' + (q.solution_html || '') + ' ' + (q.final_answer || '')).toLowerCase();
                             return full.includes(searchQ);

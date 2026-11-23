@@ -909,6 +909,14 @@ def run_sync(trigger_type="manual"):
     with open(os.path.join(PUB_DATA_DIR, "papers.json"), "w", encoding="utf-8") as f:
         json.dump(papers_db, f, indent=2, ensure_ascii=False)
 
+    # 6b. Sync Minor Discipline Syllabi & Amendments from minors.jsp
+    try:
+        from scripts.fetch_minors_syllabi import main as sync_minors
+        print("[Sync] Synchronizing Minor Discipline Syllabi from minors.jsp...", flush=True)
+        sync_minors()
+    except Exception as e:
+        print(f"[Sync] Warning: Failed to sync minor syllabi: {e}", flush=True)
+
     # 7. Record Crawl History
     crawl_history_file = os.path.join(DATA_DIR, "crawl_history.json")
     crawl_history = []

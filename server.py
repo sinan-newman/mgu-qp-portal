@@ -265,6 +265,24 @@ class PortalRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_json_response(CACHE["model_papers"] or [])
             return
 
+        if path == "/api/syllabi":
+            fpath = os.path.join(DATA_DIR, "mgu_syllabi.json")
+            if os.path.exists(fpath):
+                with open(fpath, "r", encoding="utf-8") as f:
+                    self.send_json_response(json.load(f))
+                    return
+            self.send_json_response({"programs": [], "minors": []})
+            return
+
+        if path == "/api/minors-syllabi":
+            fpath = os.path.join(DATA_DIR, "mgu_minors_syllabi.json")
+            if os.path.exists(fpath):
+                with open(fpath, "r", encoding="utf-8") as f:
+                    self.send_json_response(json.load(f))
+                    return
+            self.send_json_response({"minors": []})
+            return
+
         if path == "/api/papers":
             search_query = params.get("search", [""])[0].strip().lower()
             dept = params.get("dept", [""])[0].strip().upper()

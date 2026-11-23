@@ -2211,7 +2211,48 @@ const App = {
             'BTT': 'BTTM (Hons)',
             'ZGY': 'BSc (Hons) Zoology',
             'ZOO': 'BSc (Hons) Zoology',
-            'ZIM': 'BSc (Hons) Zoology and Industrial Microbiology (Double Major Programme)'
+            'ZIM': 'BSc (Hons) Zoology and Industrial Microbiology (Double Major Programme)',
+
+            // 39 Minor Disciplines from cap.mgu.ac.in/mguugp/minors.jsp
+            'ADN': 'Art & Design (Minor)',
+            'AHY': 'Art History (Minor)',
+            'BLW': 'Business Laws (Minor)',
+            'BST': 'Business Studies (Minor)',
+            'CDG': 'Communication Design (Minor)',
+            'CMA': 'Computer Applications (Minor)',
+            'CST': 'Cultural Studies in Tamil (Minor)',
+            'DVC': 'Devolopment Communication (Minor)',
+            'DMD': 'Digital Media (Minor)',
+            'DMP': 'Digital Media Production (Minor)',
+            'EVS': 'Environmental Studies (Minor)',
+            'FIM': 'Fitness Management (Minor)',
+            'FNN': 'Food Nutrition (Minor)',
+            'FHI': 'Functional Hindi (Minor)',
+            'GMF': 'Garment Manufacturing (Minor)',
+            'GRA': 'Graphic Art (Minor)',
+            'HTC': 'Horticulture (Minor)',
+            'HBM': 'Hospitality Business Management (Minor)',
+            'HPY': 'Human Physiology (Minor)',
+            'IAM': 'Industrial Automation (Minor)',
+            'ICH': 'Industrial Chemistry (Minor)',
+            'LSC': 'Language Science (Minor)',
+            'LST': 'Language Studies (Minor)',
+            'LIS': 'Library & Information Science (Minor)',
+            'LGS': 'Linguistics (Minor)',
+            'LIH': 'English Literary History (Minor)',
+            'MOS': 'Mobile System (Minor)',
+            'NBC': 'Nutritional Biochemistry (Minor)',
+            'PEG': 'Petroleum Engineering (Minor)',
+            'PEJ': 'Print & Electronic Journalism (Minor)',
+            'SAT': 'Sequential Art (Minor)',
+            'SAC': 'Strength & Conditioning (Minor)',
+            'TXL': 'Textiles (Minor)',
+            'TRS': 'Translation Studies (Minor)',
+            'VID': 'Visual Design (Minor)',
+            'CVM': 'Computer Knowledge (Minor)',
+            'TTP': 'Comparative Study (Minor)',
+            'PTP': 'Heritage Studies (Minor)',
+            'SHP': 'Literature Studies (Minor)'
         };
 
         const target = EXACT_MAP[code];
@@ -2219,6 +2260,10 @@ const App = {
             const found = list.find(p => p.program && p.program.toLowerCase().includes(target.toLowerCase()));
             if (found) return found;
         }
+
+        // Direct code match in syllabi catalog (including 39 minor disciplines)
+        const directCodeMatch = list.find(p => p.code && p.code.toUpperCase() === code);
+        if (directCodeMatch) return directCodeMatch;
 
         if (name) {
             const found = list.find(p => {
@@ -2244,6 +2289,27 @@ const App = {
         const deptCode = (course.dept_code || course.parent_dept || '').toUpperCase();
         const deptName = (course.dept_name || course.parent_dept_name || '').toLowerCase();
         const title = (course.title || '').toLowerCase();
+        const isMinor = Boolean(course.is_minor || course.minor_name);
+        const minorName = (course.minor_name || '').toLowerCase();
+        const list = this.syllabi || [];
+
+        // 1. If course is a Minor course, prioritize Minor Discipline Syllabus & Amendments from minors.jsp
+        if (isMinor) {
+            if (deptCode) {
+                const found = list.find(p => p.is_minor && p.code && p.code.toUpperCase() === deptCode);
+                if (found) return found;
+            }
+            if (minorName) {
+                const found = list.find(p => p.is_minor && p.program && (p.program.toLowerCase().includes(minorName) || minorName.includes(p.program.toLowerCase().replace(' (minor)', ''))));
+                if (found) return found;
+            }
+            // Check course code prefix
+            const ccMatch = (course.course_code || '').match(/MG\d[A-Z]{3}([A-Z]{3})\d+/);
+            if (ccMatch) {
+                const found = list.find(p => p.is_minor && p.code && p.code.toUpperCase() === ccMatch[1].toUpperCase());
+                if (found) return found;
+            }
+        }
 
         const DEPT_MAP = {
             'STA': 'Statistics', 'MAT': 'Mathematics', 'PHY': 'Physics', 'CHE': 'Chemistry',
@@ -2264,7 +2330,6 @@ const App = {
         };
 
         const target = DEPT_MAP[deptCode];
-        const list = this.syllabi || [];
 
         if (target) {
             const found = list.find(p => p.program && p.program.toLowerCase().includes(target.toLowerCase()));
@@ -2451,15 +2516,25 @@ const App = {
                     ` : ''}
 
                     <!-- Clean Inline Syllabus Action -->
-                    <div class="mt-2 pt-2 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between text-[11px]">
-                        <span class="text-slate-400 font-medium">${course.dept_name || 'Department'}</span>
+                    <div class="mt-2 pt-2 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between text-[11px] gap-2 flex-wrap">
+                        <span class="text-slate-400 font-medium truncate">${course.parent_dept_name || course.dept_name || 'Department'}</span>
                         ${(() => {
                             const syl = this.getCourseSyllabus(course);
                             if (!syl || !syl.main_syllabus) return '';
+                            const hasAmendments = syl.links && syl.links.length > 0;
+                            const isMinor = Boolean(course.is_minor || syl.is_minor);
+                            const sylCode = syl.code || course.dept_code || course.parent_dept || '';
                             return `
-                                <button onclick="App.previewSyllabus(null, '${course.dept_code || course.parent_dept || ''}', 'FULL')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Full Discipline Syllabus (from cap.mgu.ac.in)">
-                                    <i class="bi bi-book-half"></i> Programme Syllabus
-                                </button>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="App.previewSyllabus(null, '${sylCode}', 'FULL')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Official Discipline Syllabus (cap.mgu.ac.in)">
+                                        <i class="bi bi-book-half"></i> ${isMinor ? 'Minor Syllabus' : 'Programme Syllabus'}
+                                    </button>
+                                    ${hasAmendments ? `
+                                        <button onclick="App.previewSyllabus(null, '${sylCode}', 'AMENDMENTS')" class="text-purple-600 dark:text-purple-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Official University Amendment Orders (${syl.links.length})">
+                                            <i class="bi bi-patch-check"></i> <span class="hidden sm:inline">Amendments</span> (${syl.links.length})
+                                        </button>
+                                    ` : ''}
+                                </div>
                             `;
                         })()}
                     </div>
@@ -3593,13 +3668,23 @@ const App = {
                                     <i class="bi bi-bookmark-star-fill"></i>
                                 </div>
                                 <div>
-                                    <div class="flex items-center gap-2">
-                                        <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
-                                            Minor: ${minor.name}
-                                        </h4>
-                                        <span class="font-mono text-xs font-bold px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-900/70 text-pink-800 dark:text-pink-200 border border-pink-200 dark:border-pink-800">
-                                            ${minor.code}
-                                        </span>
+                                    <div>
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                                                Minor: ${minor.name}
+                                            </h4>
+                                            <span class="font-mono text-xs font-bold px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-900/70 text-pink-800 dark:text-pink-200 border border-pink-200 dark:border-pink-800">
+                                                ${minor.code}
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-2 mt-1.5 flex-wrap">
+                                            <button onclick="App.previewSyllabus(null, '${minor.code}', 'FULL')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 transition flex items-center gap-1 shadow-2xs cursor-pointer" title="View Official Minor Discipline Syllabus">
+                                                <i class="bi bi-book-half"></i> Minor Syllabus
+                                            </button>
+                                            <button onclick="App.previewSyllabus(null, '${minor.code}', 'AMENDMENTS')" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/60 dark:hover:bg-purple-900/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 transition flex items-center gap-1 shadow-2xs cursor-pointer" title="View Official Minor Amendments & Orders">
+                                                <i class="bi bi-patch-check"></i> Amendments
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

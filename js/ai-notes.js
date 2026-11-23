@@ -171,7 +171,12 @@ const AiNotesStudio = {
             }
         });
 
-        const list = Array.from(map.values());
+        // Strictly exclude courses that only have model question papers
+        // (Model papers lack official university valuation schemes and solutions, hence excluded from AI Notes)
+        const list = Array.from(map.values()).filter(c => {
+            return Boolean(c.exam_papers && c.exam_papers.length > 0);
+        });
+
         list.sort((a, b) => {
             if (a.semester !== b.semester) return a.semester - b.semester;
             return (a.course_code || a.title).localeCompare(b.course_code || b.title);
@@ -201,7 +206,7 @@ const AiNotesStudio = {
                             Solved Question Papers & Valuation Scheme Solutions
                         </h2>
                         <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                            Every question from previous year university exams and model papers solved question-by-question strictly according to the official MGU Scheme of Valuation. Duplicate questions across series are automatically skipped. Aligned with the official MGU syllabus from 
+                            Every question from genuine previous year university examinations solved question-by-question strictly according to the official MGU Scheme of Valuation. Model question papers without schemes are excluded to maintain verified solution integrity. Duplicate questions across series are automatically skipped. Aligned with the official MGU syllabus from 
                             <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" rel="noopener" class="text-amber-300 hover:underline font-semibold inline-flex items-center gap-1">
                                 cap.mgu.ac.in <i class="bi bi-box-arrow-up-right text-[10px]"></i>
                             </a>.
@@ -542,7 +547,7 @@ const AiNotesStudio = {
             const meta = this.state.aiNotesIndex ? this.state.aiNotesIndex[c.course_code] : null;
 
             const qpCount = (c.exam_papers || []).length;
-            const modelCount = (c.model_papers || []).length;
+            // Model question papers excluded as they lack university valuation schemes
             const hasScheme = meta ? meta.has_official_scheme : (c.exam_papers || []).some(ep => ep.has_scheme);
             const totalSolved = meta ? meta.total_questions : (qpCount * 22 || 22);
             const skipped = meta ? meta.repeating_skipped : 0;
@@ -1001,10 +1006,16 @@ const AiNotesStudio = {
             return `<ul class="list-disc list-inside space-y-1.5 my-1 text-xs sm:text-sm text-slate-700 dark:text-slate-300">${formattedLis}</ul>`;
         };
 
-        // Determine papers list or synthesize from questions
-        let papers = data.papers || [];
+        // Filter out model question papers as solutions/schemes are not available for model papers
+        let papers = (data.papers || []).filter(p => 
+            !('model' in String(p.paper_id || '').toLowerCase()) && 
+            !('model' in String(p.paper_title || '').toLowerCase())
+        );
         if (!papers || papers.length === 0) {
-            const allQ = data.questions || [];
+            const allQ = (data.questions || []).filter(q => 
+                !('model' in String(q.source_exam || '').toLowerCase()) &&
+                !('model' in String(q.source || '').toLowerCase())
+            );
             const secA = allQ.filter(q => q.part === 'PART_A');
             const secB = allQ.filter(q => q.part === 'PART_B');
             const secC = allQ.filter(q => q.part === 'PART_C');

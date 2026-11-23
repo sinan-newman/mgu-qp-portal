@@ -312,11 +312,14 @@ const App = {
     },
 
     updateBookmarkCountBadge() {
-        const el = document.getElementById('bookmarkCountBadge');
-        if (el) {
-            el.textContent = this.bookmarks.size;
-            el.classList.toggle('hidden', this.bookmarks.size === 0);
-        }
+        const count = this.bookmarks.size;
+        ['bookmarkCountBadge', 'topBookmarkCountBadge', 'mobileBookmarkCountBadge'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = count;
+                el.classList.toggle('hidden', count === 0);
+            }
+        });
     },
 
     setButtonLoading(btn, isLoading, loadingText = 'Processing...') {
@@ -1402,8 +1405,13 @@ const App = {
         if (aiMatch) {
             const rawCode = aiMatch[1] ? decodeURIComponent(aiMatch[1].trim()) : null;
             this.switchTab('ai-notes', false);
-            if (rawCode && window.AiNotesStudio) {
-                window.AiNotesStudio.selectCourse(rawCode);
+            if (rawCode) {
+                document.title = `${rawCode} | AI Study Notes | MGU FYUGP Archive`;
+                if (window.AiNotesStudio) {
+                    window.AiNotesStudio.selectCourse(rawCode);
+                }
+            } else {
+                document.title = 'AI Study Notes | MGU FYUGP Archive';
             }
             return;
         }
@@ -1468,13 +1476,82 @@ const App = {
     switchTab(tab, updateHash = true) {
         this.state.activeTab = tab;
 
-        // Ensure hero and main nav tabs are visible on top-level tabs
-        document.getElementById('heroSection')?.classList.remove('hidden');
-        document.getElementById('mainNavTabsContainer')?.classList.remove('hidden');
-        document.getElementById('deptDetailContainer')?.classList.add('hidden');
-        document.getElementById('adminPageSection')?.classList.add('hidden');
+        const heroSection = document.getElementById('heroSection');
+        const mainNavTabsContainer = document.getElementById('mainNavTabsContainer');
+        const deptDetailContainer = document.getElementById('deptDetailContainer');
+        const adminPageSection = document.getElementById('adminPageSection');
+        const papersSection = document.getElementById('papersSection');
+        const departmentsSection = document.getElementById('departmentsSection');
+        const filterControls = document.getElementById('filterControlsSection');
+        const aiNotesSection = document.getElementById('aiNotesSection');
 
-        // Update nav button active classes
+        if (deptDetailContainer) deptDetailContainer.classList.add('hidden');
+        if (adminPageSection) adminPageSection.classList.add('hidden');
+
+        // State Isolation: AI Notes renders as a clean, textbook-grade study view without hero or unrelated sections
+        if (tab === 'ai-notes') {
+            if (heroSection) heroSection.classList.add('hidden');
+            if (mainNavTabsContainer) mainNavTabsContainer.classList.add('hidden');
+            if (papersSection) papersSection.classList.add('hidden');
+            if (departmentsSection) departmentsSection.classList.add('hidden');
+            if (filterControls) filterControls.classList.add('hidden');
+            if (aiNotesSection) {
+                aiNotesSection.classList.remove('hidden');
+                if (window.AiNotesStudio) {
+                    window.AiNotesStudio.renderSection();
+                    if (!window.AiNotesStudio.state.activeCourse && window.AiNotesStudio.state.coursesList.length > 0) {
+                        window.AiNotesStudio.selectCourse(window.AiNotesStudio.state.coursesList[0].course_code || window.AiNotesStudio.state.coursesList[0].title);
+                    }
+                }
+            }
+            document.title = 'AI Study Notes | MGU FYUGP Archive';
+            if (updateHash && !window.location.hash.startsWith('#/ai-notes')) {
+                this.currentRoute = '#/ai-notes';
+                window.location.hash = '#/ai-notes';
+            }
+        } else {
+            // Restore hero and main nav tabs for general examination archive browsing
+            if (heroSection) heroSection.classList.remove('hidden');
+            if (mainNavTabsContainer) mainNavTabsContainer.classList.remove('hidden');
+            if (aiNotesSection) aiNotesSection.classList.add('hidden');
+
+            if (tab === 'departments') {
+                document.title = 'Departments | MGU FYUGP Question Papers & Schemes';
+                if (updateHash && window.location.hash !== '#/departments' && window.location.hash !== '') {
+                    this.currentRoute = '#/departments';
+                    window.location.hash = '#/departments';
+                }
+                if (papersSection) papersSection.classList.add('hidden');
+                if (departmentsSection) departmentsSection.classList.remove('hidden');
+                if (filterControls) filterControls.classList.add('hidden');
+                document.getElementById('deptListContainer')?.classList.remove('hidden');
+                this.deptState.activeDept = null;
+            } else if (tab === 'papers') {
+                document.title = 'All Question Papers & Schemes | MGU FYUGP Archive';
+                if (updateHash && window.location.hash !== '#/papers') {
+                    this.currentRoute = '#/papers';
+                    window.location.hash = '#/papers';
+                }
+                if (papersSection) papersSection.classList.remove('hidden');
+                if (departmentsSection) departmentsSection.classList.add('hidden');
+                if (filterControls) filterControls.classList.remove('hidden');
+                this.state.currentPage = 1;
+                this.applyFilters();
+            } else if (tab === 'bookmarks') {
+                document.title = 'Saved Question Papers | MGU FYUGP Archive';
+                if (updateHash && window.location.hash !== '#/bookmarks' && window.location.hash !== '#/saved') {
+                    this.currentRoute = '#/bookmarks';
+                    window.location.hash = '#/bookmarks';
+                }
+                if (papersSection) papersSection.classList.remove('hidden');
+                if (departmentsSection) departmentsSection.classList.add('hidden');
+                if (filterControls) filterControls.classList.remove('hidden');
+                this.state.currentPage = 1;
+                this.applyFilters();
+            }
+        }
+
+        // Synchronize in-page main nav tabs (if visible)
         document.querySelectorAll('.nav-tab-btn').forEach(btn => {
             const isActive = btn.dataset.tab === tab;
             if (isActive) {
@@ -1484,67 +1561,25 @@ const App = {
             }
         });
 
-        // Hide/Show containers
-        const papersSection = document.getElementById('papersSection');
-        const departmentsSection = document.getElementById('departmentsSection');
-        const filterControls = document.getElementById('filterControlsSection');
-        const aiNotesSection = document.getElementById('aiNotesSection');
+        // Synchronize desktop unified top nav buttons
+        document.querySelectorAll('.top-nav-btn').forEach(btn => {
+            const isActive = btn.dataset.topTab === tab || (tab === 'bookmarks' && btn.dataset.topTab === 'bookmarks');
+            if (isActive) {
+                btn.className = 'top-nav-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg transition flex items-center gap-1.5 bg-blue-600 text-white shadow-xs';
+            } else {
+                btn.className = 'top-nav-btn px-3.5 py-1.5 text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition flex items-center gap-1.5';
+            }
+        });
 
-        if (tab === 'departments') {
-            document.title = 'Mahatma Gandhi University • FYUGP Question Papers and Schemes';
-            if (updateHash && window.location.hash !== '#/departments' && window.location.hash !== '') {
-                this.currentRoute = '#/departments';
-                window.location.hash = '#/departments';
+        // Synchronize mobile sticky sub-nav buttons
+        document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
+            const isActive = btn.dataset.mobileTab === tab;
+            if (isActive) {
+                btn.className = 'mobile-nav-btn flex-1 py-1.5 px-2 text-center text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-xs transition flex items-center justify-center gap-1.5';
+            } else {
+                btn.className = 'mobile-nav-btn flex-1 py-1.5 px-2 text-center text-xs font-medium rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition flex items-center justify-center gap-1.5';
             }
-            if (papersSection) papersSection.classList.add('hidden');
-            if (departmentsSection) departmentsSection.classList.remove('hidden');
-            if (filterControls) filterControls.classList.add('hidden');
-            if (aiNotesSection) aiNotesSection.classList.add('hidden');
-            document.getElementById('deptListContainer')?.classList.remove('hidden');
-            this.deptState.activeDept = null;
-        } else if (tab === 'papers') {
-            document.title = 'All Question Papers & Schemes - MGU FYUGP';
-            if (updateHash && window.location.hash !== '#/papers') {
-                this.currentRoute = '#/papers';
-                window.location.hash = '#/papers';
-            }
-            if (papersSection) papersSection.classList.remove('hidden');
-            if (departmentsSection) departmentsSection.classList.add('hidden');
-            if (filterControls) filterControls.classList.remove('hidden');
-            if (aiNotesSection) aiNotesSection.classList.add('hidden');
-            this.state.currentPage = 1;
-            this.applyFilters();
-        } else if (tab === 'bookmarks') {
-            document.title = 'Saved Question Papers - MGU FYUGP';
-            if (updateHash && window.location.hash !== '#/bookmarks' && window.location.hash !== '#/saved') {
-                this.currentRoute = '#/bookmarks';
-                window.location.hash = '#/bookmarks';
-            }
-            if (papersSection) papersSection.classList.remove('hidden');
-            if (departmentsSection) departmentsSection.classList.add('hidden');
-            if (filterControls) filterControls.classList.remove('hidden');
-            if (aiNotesSection) aiNotesSection.classList.add('hidden');
-            this.state.currentPage = 1;
-            this.applyFilters();
-        } else if (tab === 'ai-notes') {
-            document.title = 'AI Notes Studio • MGU FYUGP Question Papers & Revision Notes';
-            if (updateHash && !window.location.hash.startsWith('#/ai-notes')) {
-                this.currentRoute = '#/ai-notes';
-                window.location.hash = '#/ai-notes';
-            }
-            if (papersSection) papersSection.classList.add('hidden');
-            if (departmentsSection) departmentsSection.classList.add('hidden');
-            if (filterControls) filterControls.classList.add('hidden');
-            if (aiNotesSection) {
-                aiNotesSection.classList.remove('hidden');
-                if (window.AiNotesStudio) {
-                    window.AiNotesStudio.renderSection();
-                    if (!window.AiNotesStudio.state.activeCourse && window.AiNotesStudio.state.coursesList.length > 0) {
-                        window.AiNotesStudio.selectCourse(window.AiNotesStudio.state.coursesList[0].course_code);
-                    }
-                }
-            }
-        }
+        });
     },
 
     openAiNotesForCourse(courseCode, courseTitle) {

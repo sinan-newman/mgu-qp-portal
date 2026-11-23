@@ -627,6 +627,8 @@ const PDFViewer = {
         }
 
         if (filename && filename.endsWith('.pdf')) {
+            // Raw GitHub delivers immediately with CORS headers even before CDN edge purge
+            candidates.push('https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf/' + filename);
             candidates.push('https://cdn.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
             candidates.push('https://fastly.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
             candidates.push('https://gcore.jsdelivr.net/gh/sinan-newman/mgu-qp-storage@main/pdf/' + filename);
@@ -634,8 +636,6 @@ const PDFViewer = {
 
         if (matchingFile && matchingFile.raw_url) {
             candidates.push(matchingFile.raw_url);
-        } else if (filename && filename.endsWith('.pdf')) {
-            candidates.push('https://raw.githubusercontent.com/sinan-newman/mgu-qp-storage/main/pdf/' + filename);
         }
 
         // Direct university and CORS proxies fallback

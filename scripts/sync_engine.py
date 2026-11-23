@@ -447,6 +447,17 @@ def sync_storage_repo():
         git_exe = shutil.which("git") or "git"
 
     token = os.environ.get("STORAGE_PAT") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+    if not token and os.path.exists(os.path.join(PROJECT_DIR, ".env")):
+        try:
+            with open(os.path.join(PROJECT_DIR, ".env"), "r", encoding="utf-8") as env_f:
+                for line in env_f:
+                    if "=" in line and not line.strip().startswith("#"):
+                        k, v = line.strip().split("=", 1)
+                        if k.strip() in ["STORAGE_PAT", "GH_TOKEN", "GITHUB_TOKEN"]:
+                            token = v.strip()
+                            break
+        except Exception:
+            pass
     git_env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
 
     if not os.path.exists(STORAGE_DIR):
@@ -471,7 +482,7 @@ def sync_storage_repo():
         import subprocess
         # Check untracked or modified files in storage
         status = subprocess.check_output([git_exe, "-C", STORAGE_DIR, "status", "-s"], text=True, timeout=30)
-        untracked = [line.strip().replace("?? ", "").replace("M ", "").strip() for line in status.splitlines() if "pdf/DOC-" in line or "pdf/QP_" in line or "pdf/SCHEME_" in line]
+        untracked = [line.strip()[2:].strip() for line in status.splitlines() if line.strip().endswith('.pdf')]
         if not untracked:
             print("[Storage Push] Storage repository is up to date.", flush=True)
             return

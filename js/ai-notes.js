@@ -234,11 +234,23 @@ const AiNotesStudio = {
                 </div>
             </div>
 
+            <!-- Mobile View Switcher Pill (Visible only on < lg screens) -->
+            <div class="lg:hidden flex items-center bg-slate-200/80 dark:bg-slate-800 p-1 rounded-xl mt-4 mb-2 shadow-2xs">
+                <button type="button" id="aiMobileCoursesTabBtn" onclick="AiNotesStudio.toggleMobileView('courses')" class="flex-1 py-2 text-center text-xs font-semibold rounded-lg bg-indigo-600 text-white shadow-xs transition flex items-center justify-center gap-1.5">
+                    <i class="bi bi-collection"></i>
+                    <span>Browse Courses</span>
+                </button>
+                <button type="button" id="aiMobileNotesTabBtn" onclick="AiNotesStudio.toggleMobileView('notes')" class="flex-1 py-2 text-center text-xs font-medium rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center justify-center gap-1.5">
+                    <i class="bi bi-book-half"></i>
+                    <span>View Notes</span>
+                </button>
+            </div>
+
             <!-- Main Work Area: Left Courses List + Right Solved Paper View -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4 lg:mt-6 items-start">
                 
                 <!-- Left Sidebar: Course Selector & Filters -->
-                <div class="lg:col-span-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm p-4 flex flex-col h-[780px] sticky top-20">
+                <div id="aiNotesSidebar" class="lg:col-span-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm p-4 flex flex-col h-[780px] sticky top-20">
                     <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-700">
                         <h3 class="font-bold text-sm text-slate-800 dark:text-slate-100 flex items-center gap-2">
                             <i class="bi bi-journal-bookmark-fill text-indigo-600 dark:text-indigo-400"></i>
@@ -261,27 +273,40 @@ const AiNotesStudio = {
                         />
                     </div>
 
-                    <!-- Filter Dropdowns (Semester + Dept) -->
+                    <!-- Filter Dropdowns (Semesters 1-8 + Dept) & Reset -->
                     <div class="grid grid-cols-2 gap-2 mt-2">
                         <select 
                             id="aiNotesSemesterFilter"
                             onchange="AiNotesStudio.handleSemesterChange(this.value)"
-                            class="w-full text-[11px] p-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                            class="w-full text-[11px] p-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-1 focus:ring-indigo-500 font-medium"
                         >
-                            <option value="ALL">All Semesters</option>
+                            <option value="ALL">All Semesters (1–8)</option>
                             <option value="1">Semester 1</option>
                             <option value="2">Semester 2</option>
                             <option value="3">Semester 3</option>
                             <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
                         </select>
 
                         <select 
                             id="aiNotesDeptFilter"
                             onchange="AiNotesStudio.handleDeptChange(this.value)"
-                            class="w-full text-[11px] p-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                            class="w-full text-[11px] p-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-1 focus:ring-indigo-500 font-medium"
                         >
                             <option value="ALL">All Departments</option>
                         </select>
+                    </div>
+
+                    <!-- Reset & Active Filter Pills -->
+                    <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100 dark:border-slate-700/60 text-[11px]">
+                        <span class="text-slate-500 dark:text-slate-400">Hierarchical FYUGP Filter</span>
+                        <button type="button" onclick="AiNotesStudio.resetFilters()" class="text-indigo-600 dark:text-indigo-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer">
+                            <i class="bi bi-arrow-counterclockwise text-[10px]"></i>
+                            <span>Reset Filters</span>
+                        </button>
                     </div>
 
                     <!-- Scrollable Course Cards List -->
@@ -291,7 +316,7 @@ const AiNotesStudio = {
                 </div>
 
                 <!-- Right Area: Solved Question Paper & Scheme Studio -->
-                <div class="lg:col-span-8 flex flex-col gap-4">
+                <div id="aiNotesContent" class="lg:col-span-8 flex flex-col gap-4">
                     <div id="aiNotesMainContainer" class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden min-h-[650px] flex flex-col">
                         <!-- Populated by renderCourseDocument() or Empty State -->
                         <div class="p-12 text-center my-auto flex flex-col items-center justify-center">
@@ -405,16 +430,54 @@ const AiNotesStudio = {
         const select = document.getElementById('aiNotesDeptFilter');
         if (!select) return;
 
-        const depts = new Set();
+        const deptCounts = new Map();
         this.state.coursesList.forEach(c => {
-            if (c.dept_name && c.dept_name !== 'General') {
-                depts.add(c.dept_name);
-            }
+            const dName = c.dept_name && c.dept_name !== 'General' ? c.dept_name : (c.parent_dept_name || 'General');
+            deptCounts.set(dName, (deptCounts.get(dName) || 0) + 1);
         });
 
-        const sortedDepts = Array.from(depts).sort();
+        const sortedDepts = Array.from(deptCounts.keys()).sort();
         select.innerHTML = '<option value="ALL">All Departments</option>' + 
-            sortedDepts.map(d => `<option value="${d}">${d}</option>`).join('');
+            sortedDepts.map(d => `<option value="${d}">${d} (${deptCounts.get(d)})</option>`).join('');
+    },
+
+    resetFilters() {
+        this.state.searchQuery = '';
+        this.state.selectedSemester = 'ALL';
+        this.state.selectedDept = 'ALL';
+        this.state.inPaperSearch = '';
+
+        const sInput = document.getElementById('aiNotesCourseSearch');
+        if (sInput) sInput.value = '';
+
+        const semSelect = document.getElementById('aiNotesSemesterFilter');
+        if (semSelect) semSelect.value = 'ALL';
+
+        const deptSelect = document.getElementById('aiNotesDeptFilter');
+        if (deptSelect) deptSelect.value = 'ALL';
+
+        this.renderCoursesList();
+    },
+
+    toggleMobileView(view = 'notes') {
+        const sidebar = document.getElementById('aiNotesSidebar');
+        const content = document.getElementById('aiNotesContent');
+        const coursesBtn = document.getElementById('aiMobileCoursesTabBtn');
+        const notesBtn = document.getElementById('aiMobileNotesTabBtn');
+
+        if (!sidebar || !content) return;
+
+        if (view === 'courses') {
+            sidebar.classList.remove('hidden');
+            content.classList.add('hidden');
+            if (coursesBtn) coursesBtn.className = 'flex-1 py-2 text-center text-xs font-semibold rounded-lg bg-indigo-600 text-white shadow-xs transition flex items-center justify-center gap-1.5';
+            if (notesBtn) notesBtn.className = 'flex-1 py-2 text-center text-xs font-medium rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center justify-center gap-1.5';
+        } else {
+            sidebar.classList.add('hidden');
+            content.classList.remove('hidden');
+            if (notesBtn) notesBtn.className = 'flex-1 py-2 text-center text-xs font-semibold rounded-lg bg-indigo-600 text-white shadow-xs transition flex items-center justify-center gap-1.5';
+            if (coursesBtn) coursesBtn.className = 'flex-1 py-2 text-center text-xs font-medium rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center justify-center gap-1.5';
+        }
     },
 
     handleSearch(q) {
@@ -562,6 +625,20 @@ const AiNotesStudio = {
         }
 
         this.renderCoursesList();
+        
+        // Update document title and URL hash for direct sharing
+        if (course.course_code) {
+            document.title = `${course.course_code} - ${course.title} | AI Study Notes | MGU FYUGP Archive`;
+            if (window.location.hash !== `#/ai-notes/${course.course_code}`) {
+                history.replaceState(null, '', `#/ai-notes/${course.course_code}`);
+            }
+        }
+
+        // On mobile (< 1024px), switch view directly to notes
+        if (window.innerWidth < 1024) {
+            this.toggleMobileView('notes');
+        }
+
         this.generateNotes(course, false);
     },
 
@@ -595,20 +672,52 @@ const AiNotesStudio = {
         const container = document.getElementById('aiNotesMainContainer');
         if (container) {
             container.innerHTML = `
-                <div class="p-12 text-center my-auto flex flex-col items-center justify-center space-y-4">
-                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-2xl shadow-inner animate-pulse">
-                        <i class="bi bi-file-earmark-check-fill animate-bounce text-indigo-600"></i>
+                <!-- High-Fidelity Skeleton Loader matching exact exam paper document layout -->
+                <div class="p-6 sm:p-8 space-y-5 animate-pulse">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-700 gap-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-24 h-6 rounded-md bg-indigo-200 dark:bg-indigo-900/60"></div>
+                                <div class="w-32 h-5 rounded-md bg-slate-200 dark:bg-slate-700"></div>
+                            </div>
+                            <div class="w-64 sm:w-96 h-6 rounded-md bg-slate-200 dark:bg-slate-700"></div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-28 h-9 rounded-xl bg-indigo-200 dark:bg-indigo-900/50"></div>
+                            <div class="w-20 h-9 rounded-xl bg-slate-200 dark:bg-slate-700"></div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-extrabold text-slate-800 dark:text-slate-100 text-sm sm:text-base">
-                            Loading Solved Previous Year Question Papers & Valuation Schemes...
-                        </h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 max-w-sm mt-1">
-                            Extracting genuine university exam questions for ${course.course_code}, applying official MGU Valuation Scheme value points, and filtering duplicates.
-                        </p>
+
+                    <!-- Trust Signal Skeleton -->
+                    <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2">
+                        <div class="w-3/4 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                        <div class="w-1/2 h-3.5 rounded bg-slate-200 dark:bg-slate-700"></div>
                     </div>
-                    <div class="w-48 h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
-                        <div class="h-full bg-indigo-600 rounded-full animate-[shimmer_1.5s_infinite] w-full"></div>
+
+                    <!-- Question Boxes Skeletons -->
+                    <div class="space-y-4 pt-2">
+                        <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-800">
+                            <div class="p-3 bg-slate-50 dark:bg-slate-750 border-b border-slate-200 dark:border-slate-700 flex justify-between">
+                                <div class="w-28 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                                <div class="w-12 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                            </div>
+                            <div class="p-4 space-y-2">
+                                <div class="w-full h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                                <div class="w-4/5 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                                <div class="w-3/5 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-950/40 mt-3"></div>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-800">
+                            <div class="p-3 bg-slate-50 dark:bg-slate-750 border-b border-slate-200 dark:border-slate-700 flex justify-between">
+                                <div class="w-28 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                                <div class="w-12 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                            </div>
+                            <div class="p-4 space-y-2">
+                                <div class="w-11/12 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                                <div class="w-3/4 h-4 rounded bg-slate-200 dark:bg-slate-700"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `;
@@ -919,13 +1028,33 @@ const AiNotesStudio = {
         container.innerHTML = `
             <!-- Document Header Toolbar (Screen Only) -->
             <div id="aiNotesDocHeader" class="p-4 sm:p-5 bg-slate-50 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-700 flex flex-col gap-3 sticky top-0 z-20 backdrop-blur print:hidden">
+                <!-- Academic Breadcrumb -->
+                <div class="flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-slate-400 font-medium overflow-x-auto pb-0.5">
+                    <span class="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer flex items-center gap-1" onclick="App.switchTab('departments')">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>Departments</span>
+                    </span>
+                    <span>›</span>
+                    <span class="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" onclick="App.selectDepartment('${course.dept_code || course.parent_dept || ''}')">
+                        ${dept}
+                    </span>
+                    <span>›</span>
+                    <span class="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" onclick="AiNotesStudio.handleSemesterChange('${sem}')">
+                        Semester ${sem}
+                    </span>
+                    <span>›</span>
+                    <span class="font-mono font-bold text-slate-700 dark:text-slate-200">
+                        ${code}
+                    </span>
+                </div>
+
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <div>
                         <div class="flex items-center gap-2">
                             <span class="font-mono font-bold text-xs text-white bg-[#1E3A8A] px-2.5 py-0.5 rounded shadow-xs">
                                 ${code}
                             </span>
-                            <span class="text-xs font-semibold text-slate-500">
+                            <span class="text-xs font-semibold text-slate-600 dark:text-slate-400">
                                 Semester ${sem} • ${dept}
                             </span>
                         </div>
@@ -995,6 +1124,57 @@ const AiNotesStudio = {
                             class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs focus:outline-none focus:ring-1 focus:ring-blue-600"
                         />
                     </div>
+                </div>
+            </div>
+
+            <!-- Direct Archive Cross-Links & Trust Signals Banner (Screen Only) -->
+            <div class="px-4 sm:px-6 pt-4 pb-0 no-print print:hidden space-y-3">
+                <!-- Trust Signal & Exam Alignment Banner -->
+                <div class="p-3 sm:p-4 rounded-xl bg-blue-50/90 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-900/60 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs shadow-2xs">
+                    <div class="flex items-start sm:items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm shrink-0 shadow-2xs">
+                            <i class="bi bi-patch-check-fill text-amber-300"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5 flex-wrap">
+                                <span>Verified MGU FYUGP Curriculum & Valuation Scheme Alignment</span>
+                                <span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">AI-Assisted Synthesis</span>
+                            </div>
+                            <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5">
+                                Exam Pattern: Part A (2M Definitions) • Part B (6M Short Essays) • Part C (10M Essays) | Max Marks: ${data.max_marks || this.state.examMarks || 70} | Duration: 2 Hours
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button type="button" onclick="App.openFeedbackModal('report', '${course.dept_code || course.parent_dept || ''}', '${sem}', '${code}', '${(title || '').replace(/'/g, "\\'")}')" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
+                            <i class="bi bi-flag-fill text-rose-500"></i>
+                            <span>Suggest Edit / Report Error</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cross-Links Toolbar: Direct links to Question Paper PDF, Scheme PDF, Syllabus -->
+                <div class="flex flex-wrap items-center gap-2 text-xs">
+                    <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mr-1">Archive Links:</span>
+                    ${(course.exam_papers && course.exam_papers.length > 0) ? `
+                        ${course.exam_papers[0].has_qp ? `
+                            <button type="button" onclick="App.previewPaper(this, ${JSON.stringify(course.exam_papers[0]).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                <span>Question Paper PDF</span>
+                            </button>
+                        ` : ''}
+                        ${course.exam_papers[0].has_scheme ? `
+                            <button type="button" onclick="App.previewPaper(this, ${JSON.stringify(course.exam_papers[0]).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
+                                <i class="bi bi-journal-check"></i>
+                                <span>Valuation Scheme PDF</span>
+                            </button>
+                        ` : ''}
+                    ` : ''}
+                    <a href="${data.syllabus_url || 'https://cap.mgu.ac.in/mguugp/syllabus.jsp'}" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition">
+                        <i class="bi bi-book"></i>
+                        <span>Official Syllabus (cap.mgu.ac.in)</span>
+                        <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                    </a>
                 </div>
             </div>
 

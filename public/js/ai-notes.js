@@ -1242,9 +1242,6 @@ const AiNotesStudio = {
                   .tp-grid-item { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 10px; }
                   .tp-grid-label { display: block; font-size: 7pt; color: #64748B; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
                   .tp-grid-val { display: block; font-size: 8.5pt; font-weight: 700; color: #1E293B; margin-top: 1px; }
-                  .tp-seal { background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 6px; padding: 8px 12px; margin: 10px 0; text-align: left; }
-                  .tp-seal-head { display: flex; align-items: center; gap: 5px; color: #065F46; font-size: 8pt; font-weight: 800; letter-spacing: 0.4px; margin-bottom: 2px; }
-                  .tp-seal-body { font-size: 7.5pt; color: #047857; line-height: 1.35; margin: 0; }
                   .tp-papers-box { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px 12px; margin-bottom: 8px; text-align: left; }
                   .tp-papers-title { font-size: 7pt; font-weight: 800; color: #475569; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 4px; }
                   .tp-papers-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3px; }
@@ -1325,18 +1322,7 @@ const AiNotesStudio = {
                             </div>
                         </div>
 
-                        <!-- Valuation Scheme Calibration Seal -->
-                        <div class="tp-seal">
-                            <div class="tp-seal-head">
-                                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>100% CALIBRATED TO OFFICIAL SCHEMES OF VALUATION</span>
-                            </div>
-                            <p class="tp-seal-body">
-                                Every question across all model papers and previous year university examinations is resolved without choice omissions. Solutions integrate stage-wise step marks, mathematical proofs, derivations, and official evaluation keys issued by the Controller of Examinations.
-                            </p>
-                        </div>
+
 
                         <!-- Papers Included Table -->
                         <div class="tp-papers-box">

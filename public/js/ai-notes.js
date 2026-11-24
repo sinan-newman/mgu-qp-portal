@@ -1,5 +1,5 @@
 /**
- * MGU FYUGP AI Notes Studio – Solved Previous Year Question Papers & Valuation Schemes
+ * MGU FYUGP Q & A Studio – Examination Questions & Schemes of Valuation
  * Solves all university examination question papers and model papers strictly using the
  * official Mahatma Gandhi University Schemes of Valuation and official syllabus:
  * https://cap.mgu.ac.in/mguugp/syllabus.jsp
@@ -171,10 +171,9 @@ const AiNotesStudio = {
             }
         });
 
-        // Strictly exclude courses that only have model question papers
-        // (Model papers lack official university valuation schemes and solutions, hence excluded from AI Notes)
+        // Include all courses with authentic university exam papers or model question papers
         const list = Array.from(map.values()).filter(c => {
-            return Boolean(c.exam_papers && c.exam_papers.length > 0);
+            return Boolean((c.exam_papers && c.exam_papers.length > 0) || (c.model_papers && c.model_papers.length > 0));
         });
 
         list.sort((a, b) => {
@@ -199,15 +198,15 @@ const AiNotesStudio = {
                     <!-- Left Headline -->
                     <div class="max-w-2xl">
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/25 text-indigo-200 border border-indigo-400/30 mb-3 backdrop-blur">
-                            <i class="bi bi-patch-check-fill text-amber-300"></i> MGU FYUGP Official Valuation Schemes & Question Papers
+                            <i class="bi bi-question-diamond-fill text-amber-300"></i> MGU FYUGP Examination Q & A
                             <span class="px-1.5 py-0.2 bg-emerald-600 text-white text-[9px] rounded font-bold uppercase">2024 Scheme</span>
                             <span class="px-1.5 py-0.2 bg-indigo-500/80 text-white text-[9px] rounded font-bold uppercase tracking-wider">Beta</span>
                         </div>
                         <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
-                            Solved Question Papers & Valuation Scheme Solutions
+                            University Questions & Official Valuation Schemes
                         </h2>
                         <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                            Every question from genuine previous year university examinations solved question-by-question strictly according to the official MGU Scheme of Valuation. Model question papers without schemes are excluded to maintain verified solution integrity. Duplicate questions across series are automatically skipped. Aligned with the official MGU syllabus from 
+                            Every question from genuine previous year university examinations paired strictly with the official MGU Scheme of Valuation. Model question papers presented as-is without synthetic point generation. Duplicate questions across series are automatically skipped. Aligned with the official MGU syllabus from 
                             <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" rel="noopener" class="text-amber-300 hover:underline font-semibold inline-flex items-center gap-1">
                                 cap.mgu.ac.in <i class="bi bi-box-arrow-up-right text-[10px]"></i>
                             </a>.
@@ -1312,7 +1311,7 @@ const AiNotesStudio = {
                         <div class="tp-divider"></div>
 
                         <!-- Document Type Badge -->
-                        <div class="tp-badge">Official Solved Study Guide & Valuation Manual</div>
+                        <div class="tp-badge">Official Examination Questions & Schemes of Valuation (Q & A)</div>
 
                         <!-- Course Code & Title -->
                         <div class="tp-code">${code}</div>
@@ -1361,7 +1360,7 @@ const AiNotesStudio = {
                         </div>
 
                         <div class="tp-footer">
-                            Mahatma Gandhi University FYUGP &bull; Publication-Grade Reference Manual &bull; Confidential Scheme Integration
+                            Mahatma Gandhi University FYUGP &bull; Examination Questions & Official Valuation Schemes &bull; Model Paper Curriculum Reference
                         </div>
                     </div>
                 </div>
@@ -1404,19 +1403,31 @@ const AiNotesStudio = {
                                     <div class="questions-list">
                                         ${sec.matchingQuestions.map(q => {
                                             const cleanQ = cleanText(q.question);
-                                            const solBody = formatOptimizedSolution(q.solution_html, cleanQ);
-                                            const finalAns = solBody ? getFinalAns(q) : '';
+                                            const finalAns = getFinalAns(q);
                                             return `
                                                 <div class="q-box">
                                                     <div class="q-header">
-                                                        <span class="q-num">Q${q.number}.</span> ${cleanQ}
+                                                        <span class="q-num">Q${q.number || q.global_number || ''}.</span> ${cleanQ}
+                                                        ${q.marks ? `<span class="marks-badge font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold ml-1.5">(${q.marks} Marks)</span>` : ''}
                                                     </div>
-                                                    ${solBody ? `
                                                     <div class="q-body">
-                                                        ${solBody}
-                                                        ${finalAns ? `<div class="final-ans">Final Answer: ${finalAns}</div>` : ''}
+                                                        ${finalAns ? `
+                                                            <div class="final-ans">
+                                                                <div class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5 mb-1">
+                                                                    <i class="bi bi-patch-check-fill text-emerald-600 dark:text-emerald-400"></i>
+                                                                    <span>Official Scheme of Valuation / Key</span>
+                                                                </div>
+                                                                <div class="text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-100 font-sans leading-relaxed">
+                                                                    ${finalAns}
+                                                                </div>
+                                                            </div>
+                                                        ` : `
+                                                            <div class="p-2.5 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                                                                <i class="bi bi-info-circle text-slate-400"></i>
+                                                                <span>Official Scheme of Valuation / Answer Key not yet released by Controller of Examinations for this question.</span>
+                                                            </div>
+                                                        `}
                                                     </div>
-                                                    ` : ''}
                                                 </div>
                                             `;
                                         }).join('')}
@@ -1426,6 +1437,62 @@ const AiNotesStudio = {
                         </div>
                     `;
                 }).join('')}
+
+                ${(course.model_papers && course.model_papers.length > 0) ? `
+                    <!-- Official Model Question Papers Section (Presented As-Is) -->
+                    <div class="model-paper-block mt-10 pt-8 border-t-2 border-indigo-100 dark:border-indigo-900/60 page-break-inside-avoid">
+                        <div class="p-4 sm:p-5 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800/70 mb-5">
+                            <div class="flex items-center gap-2 mb-1.5">
+                                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-indigo-600 text-white uppercase tracking-wider">
+                                    Official Curriculum
+                                </span>
+                                <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100">
+                                    📑 Model Question Paper (Official FYUGP Curriculum)
+                                </h3>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Official Mahatma Gandhi University Model Question Paper — Presented as-is directly from the university curriculum release. Evaluation schemes are not issued by the university for model papers.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            ${course.model_papers.map(m => `
+                                <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-indigo-100 dark:border-slate-700 shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                    <div class="min-w-0">
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/70 text-indigo-800 dark:text-indigo-200">
+                                                ${m.paper_type === 'PRACTICAL' ? 'Practical Model Paper' : 'Theory Model Paper'}
+                                            </span>
+                                            <span class="text-xs text-slate-500 dark:text-slate-400">
+                                                ${m.pages ? `${m.pages} Pages` : 'Official Release'}
+                                            </span>
+                                        </div>
+                                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm truncate" title="${m.title}">
+                                            ${m.title || 'Official Model Question Paper'}
+                                        </h4>
+                                    </div>
+
+                                    <div class="flex items-center gap-2 shrink-0">
+                                        <button onclick="PDFViewer.openDirect('${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model Question Paper'}', '${code}', '', '', true)" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs flex items-center gap-1.5 transition cursor-pointer" title="Preview Model Question Paper PDF">
+                                            <i class="bi bi-eye"></i> View PDF
+                                        </button>
+                                        <button onclick="PDFViewer.downloadDirect('${m.cdn_url || m.url}', '${m.title ? m.title.replace(/'/g, "\\'") : 'Model_Paper'}', '${code}')" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-600 shadow-2xs flex items-center gap-1.5 transition cursor-pointer" title="Download Model Question Paper PDF">
+                                            <i class="bi bi-download"></i> Download PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${papers.length === 0 && (!course.model_papers || course.model_papers.length === 0) ? `
+                    <div class="p-6 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-center">
+                        <i class="bi bi-clock-history text-3xl text-amber-600 dark:text-amber-400 mb-2"></i>
+                        <h4 class="font-bold text-sm text-slate-900 dark:text-slate-100">Examination Papers Awaited</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Official university exam papers and valuation schemes for this course have not yet been conducted or released.</p>
+                    </div>
+                ` : ''}
 
             </div>
         `;
@@ -1503,7 +1570,7 @@ const AiNotesStudio = {
         const cleanCode = (course.course_code || 'MGU').replace(/[^a-zA-Z0-9_-]/g, '_');
         const cleanTitle = (course.title || 'Solved_Papers').replace(/[^a-zA-Z0-9_-]/g, '_');
         const marks = this.state.examMarks || 70;
-        const filename = `${cleanCode}_${cleanTitle}_${marks}M_Solved_PYQ_Notes.pdf`;
+        const filename = `${cleanCode}_${cleanTitle}_QA_Valuation_Schemes.pdf`;
 
         const btn = document.getElementById('downloadPdfBtn');
         const originalHtml = btn ? btn.innerHTML : '';

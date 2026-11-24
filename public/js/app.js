@@ -2387,11 +2387,9 @@ const App = {
                         <div class="flex items-center gap-1.5 shrink-0">
                             <button 
                                 onclick="App.openAiNotesForCourse('${course.course_code || ''}', '${course.title ? course.title.replace(/'/g, "\\'") : ''}')" 
-                                title="Generate AI Study Notes & Exam Blueprint" 
-                                class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs"
-                            >
-                                <i class="bi bi-stars text-indigo-500"></i>
-                                <span class="hidden sm:inline">AI Notes</span>
+                                title="View Questions & Valuation Schemes" class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs">
+                                <i class="bi bi-question-diamond-fill text-indigo-500"></i>
+                                <span class="hidden sm:inline">Q & A</span>
                             </button>
                             <button 
                                 data-bm-id="${firstPaper.id}"
@@ -2551,11 +2549,9 @@ const App = {
                         <div class="flex items-center gap-1.5">
                             <button 
                                 onclick="App.openAiNotesForCourse('${p.course_code || ''}', '${p.title ? p.title.replace(/'/g, "\\'") : ''}')" 
-                                title="Generate AI Study Notes & Exam Blueprint" 
-                                class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs"
-                            >
-                                <i class="bi bi-stars text-indigo-500"></i>
-                                <span class="hidden sm:inline">AI Notes</span>
+                                title="View Questions & Valuation Schemes" class="px-2.5 py-1 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shadow-2xs">
+                                <i class="bi bi-question-diamond-fill text-indigo-500"></i>
+                                <span class="hidden sm:inline">Q & A</span>
                             </button>
                             ${isAdmin ? `
                                 <button 

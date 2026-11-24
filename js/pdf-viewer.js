@@ -176,6 +176,8 @@ const PDFViewer = {
             this.schemeTabBtn.title = 'View Scheme of Valuation / Key PDF';
             if (isModel) {
                 this.schemeTabBtn.classList.add('hidden');
+            } else {
+                this.schemeTabBtn.classList.remove('hidden');
             }
         }
     },

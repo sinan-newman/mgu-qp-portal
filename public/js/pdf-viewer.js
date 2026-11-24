@@ -129,19 +129,42 @@ const PDFViewer = {
         });
     },
 
+    isModelPaper(doc = this.currentDoc) {
+        if (!doc) return false;
+        if (doc.is_model || doc.is_model_paper) return true;
+        const ptype = String(doc.paper_type || '').toUpperCase();
+        if (ptype === 'MODEL' || ptype === 'PRACTICAL') return true;
+        if (doc.id && String(doc.id).toLowerCase().startsWith('model_')) return true;
+        if (doc.model_id && String(doc.model_id).toLowerCase().startsWith('model_')) return true;
+        if (doc.title && /model\s*(question)?\s*paper/i.test(doc.title)) return true;
+        if (doc.qp_url && /MODEL_/i.test(doc.qp_url)) return true;
+        return false;
+    },
+
     restorePaperTabs() {
         this.isSyllabusMode = false;
         this.currentSyllabus = null;
         this.syllabusCode = '';
         this.previewingAmendment = null;
 
+        const isModel = this.isModelPaper(this.currentDoc);
+
         if (this.qpTabBtn) {
-            this.qpTabBtn.innerHTML = `
-                <i class="bi bi-file-earmark-text"></i>
-                <span class="hidden sm:inline">Question Paper</span>
-                <span class="sm:hidden">QP</span>
-            `;
-            this.qpTabBtn.title = 'View Question Paper PDF';
+            if (isModel) {
+                this.qpTabBtn.innerHTML = `
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span class="hidden sm:inline">Model Question Paper</span>
+                    <span class="sm:hidden">Model QP</span>
+                `;
+                this.qpTabBtn.title = 'View Official Model Question Paper PDF';
+            } else {
+                this.qpTabBtn.innerHTML = `
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span class="hidden sm:inline">Question Paper</span>
+                    <span class="sm:hidden">QP</span>
+                `;
+                this.qpTabBtn.title = 'View Question Paper PDF';
+            }
         }
 
         if (this.schemeTabBtn) {
@@ -151,6 +174,9 @@ const PDFViewer = {
                 <span class="sm:hidden">Scheme</span>
             `;
             this.schemeTabBtn.title = 'View Scheme of Valuation / Key PDF';
+            if (isModel) {
+                this.schemeTabBtn.classList.add('hidden');
+            }
         }
     },
 
@@ -161,6 +187,8 @@ const PDFViewer = {
         this.zoomScale = 1.0;
         this.rotation = 0;
         this.fitToWidthMode = true;
+
+        const isModel = this.isModelPaper(doc);
 
         // Ensure clean state isolation between question paper and syllabus mode
         this.restorePaperTabs();
@@ -176,22 +204,25 @@ const PDFViewer = {
         }
 
         if (this.metaEl) {
+            const modelTag = isModel ? `<span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300 text-xs px-2 py-0.5 rounded font-mono font-semibold">Model Paper</span>` : '';
             const qpTag = doc.qp_code ? `<span class="bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200 text-xs px-2 py-0.5 rounded font-mono font-medium">QP: ${doc.qp_code}</span>` : '';
             const codeTag = doc.course_code ? `<span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-900/60 dark:text-indigo-200 text-xs px-2 py-0.5 rounded font-mono font-semibold">${doc.course_code}</span>` : '';
             const semTag = `<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">${doc.semester_label || ('Semester ' + (doc.semester || 1))}</span>`;
             const deptTag = `<span class="text-xs text-slate-600 dark:text-slate-300">${doc.dept_name || doc.parent_dept_name || 'MGU FYUGP'}</span>`;
-            this.metaEl.innerHTML = `${qpTag} ${codeTag} ${semTag} • ${deptTag}`;
+            this.metaEl.innerHTML = `${modelTag} ${qpTag} ${codeTag} ${semTag} • ${deptTag}`.trim();
         }
 
-        // Check availability of QP vs Scheme
+        // Check availability of QP vs Scheme (schemes are never available for model papers)
         const hasQP = Boolean(doc.qp_url || doc.has_qp || (doc.files && doc.files.some(f => f.type === 'QP')));
-        const hasScheme = Boolean(doc.scheme_url || doc.has_scheme || (doc.files && doc.files.some(f => f.type === 'SCHEME')));
+        const hasScheme = !isModel && Boolean(doc.scheme_url || doc.has_scheme || (doc.files && doc.files.some(f => f.type === 'SCHEME')));
 
         if (this.qpTabBtn) this.qpTabBtn.classList.toggle('hidden', !hasQP);
         if (this.schemeTabBtn) this.schemeTabBtn.classList.toggle('hidden', !hasScheme);
 
-        // Auto-select available tab if requested is missing
-        if (defaultType === 'QP' && !hasQP && hasScheme) {
+        // Auto-select available tab if requested is missing or if model paper
+        if (isModel) {
+            this.activeType = 'QP';
+        } else if (defaultType === 'QP' && !hasQP && hasScheme) {
             this.activeType = 'SCHEME';
         } else if (defaultType === 'SCHEME' && !hasScheme && hasQP) {
             this.activeType = 'QP';
@@ -610,6 +641,10 @@ const PDFViewer = {
             else if (type === 'SCHEME') this.switchSyllabusTab('AMENDMENTS');
             return;
         }
+        if (type === 'SCHEME' && this.isModelPaper(this.currentDoc)) {
+            // Model question papers never have schemes of valuation
+            return;
+        }
         if (this.activeType === type) return;
         this.activeType = type;
         this.renderViewer();
@@ -744,13 +779,22 @@ const PDFViewer = {
 
         // Update tab styles
         if (this.qpTabBtn && this.schemeTabBtn) {
+            const isModel = this.isModelPaper(this.currentDoc);
+            const hasScheme = !isModel && Boolean(this.currentDoc && (this.currentDoc.scheme_url || this.currentDoc.has_scheme || (this.currentDoc.files && this.currentDoc.files.some(f => f.type === 'SCHEME'))));
+            const hasQP = Boolean(this.currentDoc && (this.currentDoc.qp_url || this.currentDoc.has_qp || (this.currentDoc.files && this.currentDoc.files.some(f => f.type === 'QP'))));
+
             if (isQP) {
-                this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-blue-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
+                const qpBg = isModel ? 'bg-indigo-600' : 'bg-blue-600';
+                this.qpTabBtn.className = `px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md ${qpBg} text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition`;
                 this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
             } else {
                 this.schemeTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-md bg-emerald-600 text-white shadow-xs flex items-center gap-1 sm:gap-1.5 transition';
                 this.qpTabBtn.className = 'px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 flex items-center gap-1 sm:gap-1.5 transition';
             }
+
+            // Strictly preserve visibility states (prevents className assignment from clearing hidden)
+            this.qpTabBtn.classList.toggle('hidden', !hasQP);
+            this.schemeTabBtn.classList.toggle('hidden', !hasScheme);
         }
 
         // Show loading spinner & reset view containers
@@ -982,7 +1026,8 @@ const PDFViewer = {
         if (this.downloadBtn) {
             this.downloadBtn.onclick = () => {
                 const safeCode = (doc.course_code || 'MGU').replace(/[^a-zA-Z0-9_-]/g, '');
-                const safeType = activeType === 'QP' ? 'Question_Paper' : 'Valuation_Scheme';
+                const isModel = this.isModelPaper(doc);
+                const safeType = isModel ? 'Model_Paper' : (activeType === 'QP' ? 'Question_Paper' : 'Valuation_Scheme');
                 const filename = `${safeCode}_${safeType}.pdf`;
 
                 if (blob) {
@@ -1120,7 +1165,7 @@ const PDFViewer = {
         return false;
     },
 
-    openDirect(url, title = 'Document Preview', code = '', mguUrl = '', rawUrl = '') {
+    openDirect(url, title = 'Document Preview', code = '', mguUrl = '', rawUrl = '', isModel = true) {
         const dummyDoc = {
             title: title,
             course_code: code,
@@ -1131,12 +1176,14 @@ const PDFViewer = {
             raw_qp_url: rawUrl,
             has_qp: true,
             has_scheme: false,
+            is_model: isModel,
+            paper_type: isModel ? 'MODEL' : 'QP',
             files: [{ 
                 type: 'QP', 
                 url: url, 
                 mgu_url: mguUrl, 
                 raw_url: rawUrl, 
-                label: 'Question Paper' 
+                label: isModel ? 'Model Question Paper' : 'Question Paper' 
             }]
         };
         this.open(dummyDoc, 'QP');
@@ -1160,6 +1207,7 @@ const PDFViewer = {
         }
         this.activeBlob = null;
         this.pdfDoc = null;
+        this.currentDoc = null;
 
         // Reset syllabus mode and restore default paper tabs
         this.restorePaperTabs();

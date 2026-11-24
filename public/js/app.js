@@ -2515,29 +2515,6 @@ const App = {
                         </div>
                     ` : ''}
 
-                    <!-- Clean Inline Syllabus Action -->
-                    <div class="mt-2 pt-2 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between text-[11px] gap-2 flex-wrap">
-                        <span class="text-slate-400 font-medium truncate">${course.parent_dept_name || course.dept_name || 'Department'}</span>
-                        ${(() => {
-                            const syl = this.getCourseSyllabus(course);
-                            if (!syl || !syl.main_syllabus) return '';
-                            const hasAmendments = syl.links && syl.links.length > 0;
-                            const isMinor = Boolean(course.is_minor || syl.is_minor);
-                            const sylCode = syl.code || course.dept_code || course.parent_dept || '';
-                            return `
-                                <div class="flex items-center gap-2">
-                                    <button onclick="App.previewSyllabus(null, '${sylCode}', 'FULL')" class="text-emerald-600 dark:text-emerald-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Official Discipline Syllabus (cap.mgu.ac.in)">
-                                        <i class="bi bi-book-half"></i> ${isMinor ? 'Minor Syllabus' : 'Programme Syllabus'}
-                                    </button>
-                                    ${hasAmendments ? `
-                                        <button onclick="App.previewSyllabus(null, '${sylCode}', 'AMENDMENTS')" class="text-purple-600 dark:text-purple-400 hover:underline font-semibold flex items-center gap-1 cursor-pointer" title="View Official University Amendment Orders (${syl.links.length})">
-                                            <i class="bi bi-patch-check"></i> <span class="hidden sm:inline">Amendments</span> (${syl.links.length})
-                                        </button>
-                                    ` : ''}
-                                </div>
-                            `;
-                        })()}
-                    </div>
                 </div>
             </div>
         `;
@@ -2681,31 +2658,6 @@ const App = {
                     </div>
                 ` : ''}
 
-                <!-- OFFICIAL SYLLABUS SECTION (AFTER MODEL QUESTION PAPER) -->
-                ${(() => {
-                    const syl = this.getCourseSyllabus(p);
-                    if (!syl || !syl.main_syllabus) return '';
-                    const sylUrl = syl.main_syllabus;
-                    const sylTitle = `Syllabus - ${syl.program || p.title}`;
-                    return `
-                        <div class="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2 text-xs">
-                            <div class="flex items-center gap-1.5 min-w-0">
-                                <i class="bi bi-book-half text-emerald-600 dark:text-emerald-400 text-xs"></i>
-                                <span class="text-[11px] font-bold text-emerald-800 dark:text-emerald-300 truncate" title="${syl.program}">
-                                    📖 Syllabus: ${syl.program}
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 shrink-0">
-                                <button onclick="App.previewSyllabus(null, '${p.dept_code || p.parent_dept || ''}', 'FULL')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus">
-                                    <i class="bi bi-eye"></i> View
-                                </button>
-                                <a href="${sylUrl}" target="_blank" rel="noopener" class="p-0.5 text-xs text-slate-500 hover:text-emerald-600 transition" title="Open Syllabus Link">
-                                    <i class="bi bi-box-arrow-up-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    `;
-                })()}
             </div>
         `;
     },
@@ -2805,20 +2757,6 @@ const App = {
                                                     </div>
                                                 ` : ''}
 
-                                                <!-- OFFICIAL SYLLABUS IN TABLE (AFTER MODEL QUESTION PAPER) -->
-                                                ${(() => {
-                                                    const syl = this.getCourseSyllabus(course);
-                                                    if (!syl || !syl.main_syllabus) return '';
-                                                    const sylUrl = syl.main_syllabus;
-                                                    const sylTitle = `Syllabus - ${syl.program || course.title}`;
-                                                    return `
-                                                        <div class="pt-1 border-t border-slate-100 dark:border-slate-700/50">
-                                                            <button onclick="App.previewSyllabus(null, '${course.dept_code || course.parent_dept || ''}', 'FULL')" class="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xs flex items-center gap-1 transition" title="Preview Official Syllabus: ${syl.program}">
-                                                                <i class="bi bi-book-half"></i> Syllabus
-                                                            </button>
-                                                        </div>
-                                                    `;
-                                                })()}
                                             </div>
                                         </td>
                                         <td class="py-3 px-4 text-right">

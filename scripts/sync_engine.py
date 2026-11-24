@@ -37,6 +37,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 # Root paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+if PROJECT_DIR not in sys.path:
+    sys.path.insert(0, PROJECT_DIR)
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
 PUB_DATA_DIR = os.path.join(PROJECT_DIR, "public", "data")
 LOCAL_UPLOADS_DIR = os.path.join(PROJECT_DIR, "uploads")

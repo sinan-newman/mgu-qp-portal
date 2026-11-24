@@ -100,12 +100,24 @@ const PDFViewer = {
             }, { passive: true });
         }
 
-        // Tab click listeners
+        // Tab click listeners (context-aware: Paper mode vs Syllabus mode)
         if (this.qpTabBtn) {
-            this.qpTabBtn.addEventListener('click', () => this.switchTab('QP'));
+            this.qpTabBtn.addEventListener('click', () => {
+                if (this.isSyllabusMode) {
+                    this.switchSyllabusTab('FULL');
+                } else {
+                    this.switchTab('QP');
+                }
+            });
         }
         if (this.schemeTabBtn) {
-            this.schemeTabBtn.addEventListener('click', () => this.switchTab('SCHEME'));
+            this.schemeTabBtn.addEventListener('click', () => {
+                if (this.isSyllabusMode) {
+                    this.switchSyllabusTab('AMENDMENTS');
+                } else {
+                    this.switchTab('SCHEME');
+                }
+            });
         }
 
         // Window resize re-fits width
@@ -117,6 +129,31 @@ const PDFViewer = {
         });
     },
 
+    restorePaperTabs() {
+        this.isSyllabusMode = false;
+        this.currentSyllabus = null;
+        this.syllabusCode = '';
+        this.previewingAmendment = null;
+
+        if (this.qpTabBtn) {
+            this.qpTabBtn.innerHTML = `
+                <i class="bi bi-file-earmark-text"></i>
+                <span class="hidden sm:inline">Question Paper</span>
+                <span class="sm:hidden">QP</span>
+            `;
+            this.qpTabBtn.title = 'View Question Paper PDF';
+        }
+
+        if (this.schemeTabBtn) {
+            this.schemeTabBtn.innerHTML = `
+                <i class="bi bi-journal-check"></i>
+                <span class="hidden sm:inline">Scheme / Key</span>
+                <span class="sm:hidden">Scheme</span>
+            `;
+            this.schemeTabBtn.title = 'View Scheme of Valuation / Key PDF';
+        }
+    },
+
     open(doc, defaultType = 'QP') {
         if (!doc) return;
         this.currentDoc = doc;
@@ -124,6 +161,14 @@ const PDFViewer = {
         this.zoomScale = 1.0;
         this.rotation = 0;
         this.fitToWidthMode = true;
+
+        // Ensure clean state isolation between question paper and syllabus mode
+        this.restorePaperTabs();
+
+        if (this.iframe) {
+            this.iframe.src = 'about:blank';
+            this.iframe.classList.add('hidden');
+        }
 
         // Set Title & Meta
         if (this.titleEl) {
@@ -560,6 +605,11 @@ const PDFViewer = {
     },
 
     switchTab(type) {
+        if (this.isSyllabusMode) {
+            if (type === 'QP') this.switchSyllabusTab('FULL');
+            else if (type === 'SCHEME') this.switchSyllabusTab('AMENDMENTS');
+            return;
+        }
         if (this.activeType === type) return;
         this.activeType = type;
         this.renderViewer();
@@ -686,6 +736,11 @@ const PDFViewer = {
 
     async renderViewer() {
         const isQP = this.activeType === 'QP';
+
+        // Always ensure tab labels reflect Question Paper & Scheme
+        if (!this.isSyllabusMode) {
+            this.restorePaperTabs();
+        }
 
         // Update tab styles
         if (this.qpTabBtn && this.schemeTabBtn) {
@@ -1097,6 +1152,7 @@ const PDFViewer = {
         }
         if (this.iframe) {
             this.iframe.src = 'about:blank';
+            this.iframe.classList.add('hidden');
         }
         if (this.activeBlobUrl) {
             try { URL.revokeObjectURL(this.activeBlobUrl); } catch (e) {}
@@ -1104,6 +1160,9 @@ const PDFViewer = {
         }
         this.activeBlob = null;
         this.pdfDoc = null;
+
+        // Reset syllabus mode and restore default paper tabs
+        this.restorePaperTabs();
     }
 };
 

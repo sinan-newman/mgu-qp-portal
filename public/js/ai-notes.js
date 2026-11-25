@@ -200,7 +200,6 @@ const AiNotesStudio = {
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/25 text-indigo-200 border border-indigo-400/30 mb-3 backdrop-blur">
                             <i class="bi bi-question-diamond-fill text-amber-300"></i> MGU FYUGP Examination Q & A
                             <span class="px-1.5 py-0.2 bg-emerald-600 text-white text-[9px] rounded font-bold uppercase">2024 Scheme</span>
-                            <span class="px-1.5 py-0.2 bg-indigo-500/80 text-white text-[9px] rounded font-bold uppercase tracking-wider">Beta</span>
                         </div>
                         <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
                             University Questions & Official Valuation Schemes

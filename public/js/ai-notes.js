@@ -1150,21 +1150,6 @@ const AiNotesStudio = {
 
             <!-- Direct Archive Cross-Links & Trust Signals Banner (Screen Only) -->
             <div class="px-4 sm:px-6 pt-4 pb-0 no-print print:hidden space-y-3">
-                <!-- Trust Signal & Exam Alignment Banner -->
-                <div class="p-3 sm:p-4 rounded-xl bg-blue-50/90 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-900/60 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs shadow-2xs">
-                    <div class="flex items-start sm:items-center gap-2.5">
-                        <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm shrink-0 shadow-2xs">
-                            <i class="bi bi-patch-check-fill text-amber-300"></i>
-                        </div>
-                        <div>
-                            <div class="font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5 flex-wrap">
-                                <span>Verified MGU FYUGP Curriculum & Valuation Scheme Alignment</span>
-                                <span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">AI-Assisted Synthesis</span>
-                            </div>
-                            <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5">
-                                Exam Pattern: Part A (2M Definitions) • Part B (6M Short Essays) • Part C (10M Essays) | Max Marks: ${data.max_marks || this.state.examMarks || 70} | Duration: 2 Hours
-                            </div>
-                        </div>
                     </div>
                     <div class="flex items-center gap-2 shrink-0">
                         <button type="button" onclick="App.openFeedbackModal('report', '${course.dept_code || course.parent_dept || ''}', '${sem}', '${code}', '${(title || '').replace(/'/g, "\\'")}')" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
@@ -1488,6 +1473,14 @@ const AiNotesStudio = {
                     </div>
                 ` : ''}
 
+            </div>
+
+            <!-- Report Error / Missing Footer (Screen Only) -->
+            <div class="px-6 sm:px-10 py-4 bg-slate-50 dark:bg-slate-800/60 border-t border-slate-200 dark:border-slate-700 flex items-center justify-end no-print print:hidden">
+                <button type="button" onclick="App.openFeedbackModal('report', '${course.dept_code || course.parent_dept || ''}', '${sem}', '${code}', '${(title || '').replace(/'/g, "\\'")}')" class="px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
+                    <i class="bi bi-flag-fill text-rose-500"></i>
+                    <span>Report Error / Missing</span>
+                </button>
             </div>
         `;
 

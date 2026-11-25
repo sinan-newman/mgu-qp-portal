@@ -127,19 +127,6 @@
                         <span class="hidden sm:inline">Feedback</span>
                     </button>
 
-                    <!-- Bookmarks Tab Shortcut -->
-                    <button onclick="App.switchTab('bookmarks')" class="relative px-2 sm:px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 transition flex items-center gap-1 sm:gap-1.5 shrink-0 min-h-[36px]" title="View Saved Question Papers">
-                        <i class="bi bi-star-fill text-amber-500"></i>
-                        <span class="hidden sm:inline">Saved</span>
-                        <span id="bookmarkCountBadge" class="hidden ml-0.5 px-1.5 py-0.2 bg-amber-500 text-white rounded-full text-[10px] font-bold">0</span>
-                    </button>
-
-                    <!-- Q & A Shortcut Button -->
-                    <button onclick="App.switchTab('ai-notes')" class="relative px-2 sm:px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition flex items-center gap-1 sm:gap-1.5 shrink-0 min-h-[36px]" title="University Examination Questions & Valuation Schemes (Q & A)">
-                        <i class="bi bi-question-diamond-fill text-indigo-600 dark:text-indigo-400"></i>
-                        <span class="hidden sm:inline">Q & A</span>
-                    </button>
-
                     <!-- Admin Shortcut Button (Hidden in public view, visible only when logged in) -->
                     <button id="adminNavBtn" onclick="App.openAdminPage()" class="hidden px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700 transition flex items-center gap-1.5" title="Admin Control Center">
                         <i class="bi bi-shield-lock-fill text-emerald-600"></i>

@@ -1148,41 +1148,6 @@ const AiNotesStudio = {
                 </div>
             </div>
 
-            <!-- Direct Archive Cross-Links & Trust Signals Banner (Screen Only) -->
-            <div class="px-4 sm:px-6 pt-4 pb-0 no-print print:hidden space-y-3">
-                    </div>
-                    <div class="flex items-center gap-2 shrink-0">
-                        <button type="button" onclick="App.openFeedbackModal('report', '${course.dept_code || course.parent_dept || ''}', '${sem}', '${code}', '${(title || '').replace(/'/g, "\\'")}')" class="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
-                            <i class="bi bi-flag-fill text-rose-500"></i>
-                            <span>Suggest Edit / Report Error</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Cross-Links Toolbar: Direct links to Question Paper PDF, Scheme PDF, Syllabus -->
-                <div class="flex flex-wrap items-center gap-2 text-xs">
-                    <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mr-1">Archive Links:</span>
-                    ${(course.exam_papers && course.exam_papers.length > 0) ? `
-                        ${course.exam_papers[0].has_qp ? `
-                            <button type="button" onclick="App.previewPaper(this, ${JSON.stringify(course.exam_papers[0]).replace(/"/g, '&quot;')}, 'QP')" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
-                                <i class="bi bi-file-earmark-pdf"></i>
-                                <span>Question Paper PDF</span>
-                            </button>
-                        ` : ''}
-                        ${course.exam_papers[0].has_scheme ? `
-                            <button type="button" onclick="App.previewPaper(this, ${JSON.stringify(course.exam_papers[0]).replace(/"/g, '&quot;')}, 'SCHEME')" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition cursor-pointer">
-                                <i class="bi bi-journal-check"></i>
-                                <span>Valuation Scheme PDF</span>
-                            </button>
-                        ` : ''}
-                    ` : ''}
-                    <a href="${data.syllabus_url || 'https://cap.mgu.ac.in/mguugp/syllabus.jsp'}" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 font-semibold text-xs shadow-2xs flex items-center gap-1.5 transition">
-                        <i class="bi bi-book"></i>
-                        <span>Official Syllabus (cap.mgu.ac.in)</span>
-                        <i class="bi bi-box-arrow-up-right text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
 
             <!-- PDF Printable Area (Exact Style & Structure Specified by User) -->
             <div id="aiNotesPrintArea" class="p-6 sm:p-10 text-slate-800 dark:text-slate-200 leading-relaxed text-xs sm:text-sm">

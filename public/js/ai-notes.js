@@ -191,49 +191,19 @@ const AiNotesStudio = {
 
         container.innerHTML = `
             <!-- Top Hero Banner -->
-            <div class="no-print print:hidden relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8 shadow-xl border border-indigo-800/50">
+            <div class="no-print print:hidden relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-900 via-indigo-950 to-slate-900 text-white p-5 sm:p-6 shadow-xl border border-indigo-800/50">
                 <div class="absolute -right-10 -bottom-10 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
                 
-                <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                     <!-- Left Headline -->
                     <div class="max-w-2xl">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/25 text-indigo-200 border border-indigo-400/30 mb-3 backdrop-blur">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/25 text-indigo-200 border border-indigo-400/30 mb-2.5 backdrop-blur">
                             <i class="bi bi-question-diamond-fill text-amber-300"></i> MGU FYUGP Examination Q & A
                             <span class="px-1.5 py-0.2 bg-emerald-600 text-white text-[9px] rounded font-bold uppercase">2024 Scheme</span>
                         </div>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
+                        <h2 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-tight">
                             University Questions & Official Valuation Schemes
                         </h2>
-                        <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                            Every question from genuine previous year university examinations paired strictly with the official MGU Scheme of Valuation. Model question papers presented as-is without synthetic point generation. Duplicate questions across series are automatically skipped. Aligned with the official MGU syllabus from 
-                            <a href="https://cap.mgu.ac.in/mguugp/syllabus.jsp" target="_blank" rel="noopener" class="text-amber-300 hover:underline font-semibold inline-flex items-center gap-1">
-                                cap.mgu.ac.in <i class="bi bi-box-arrow-up-right text-[10px]"></i>
-                            </a>.
-                        </p>
-
-                        <!-- Highlights Pill Strip -->
-                        <div class="flex flex-wrap items-center gap-2 mt-4 text-[11px]">
-                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-slate-200 border border-white/15 flex items-center gap-1.5">
-                                <i class="bi bi-file-earmark-pdf-fill text-rose-400"></i> Direct PDF Download (.pdf)
-                            </span>
-                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-slate-200 border border-white/15 flex items-center gap-1.5">
-                                <i class="bi bi-check-circle-fill text-emerald-400"></i> Real Questions & Official Schemes
-                            </span>
-                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-slate-200 border border-white/15 flex items-center gap-1.5">
-                                <i class="bi bi-funnel-fill text-amber-400"></i> Repeating Questions Filtered
-                            </span>
-                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-slate-200 border border-white/15 flex items-center gap-1.5">
-                                <i class="bi bi-layers-fill text-sky-400"></i> Part A, Part B & Part C
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Right Controls / Settings Status -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
-                        <button onclick="AiNotesStudio.openSettingsModal()" class="px-4 py-2.5 rounded-xl text-xs font-semibold bg-white/10 hover:bg-white/15 border border-white/20 text-white transition flex items-center justify-center gap-2 backdrop-blur shadow-sm cursor-pointer">
-                            <i class="bi bi-gear-fill text-indigo-300"></i>
-                            <span>Settings</span>
-                        </button>
                     </div>
                 </div>
             </div>

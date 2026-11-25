@@ -879,29 +879,54 @@ const AiNotesStudio = {
                 .trim();
         };
 
-        // Helper: Format math formulas ensuring balanced KaTeX delimiters
+        // Helper: Whitelist of valid KaTeX math macros so non-math backslashes (file paths, \newcommand, legacy fonts) are never wrapped as math
+        const KATEX_MACRO_RE = /\\(?:d?frac|tfrac|sqrt|partial|i*int|oint|sum|prod|lim|infty|alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega|sin|cos|tan|cot|sec|csc|arcsin|arccos|arctan|sinh|cosh|tanh|log|ln|exp|det|dim|ker|deg|gcd|max|min|sup|inf|begin|end|left|right|cdot|times|div|pm|mp|leq?|geq?|neq?|approx|equiv|sim|simeq|cong|propto|in|notin|subseteq?|supseteq?|cup|cap|setminus|emptyset|varnothing|forall|exists|neg|land|lor|implies|iff|to|rightarrow|leftarrow|leftrightarrow|Rightarrow|Leftarrow|Leftrightarrow|mapsto|vec|hat|bar|tilde|overline|underline|text|mathrm|mathbf|mathbb|mathcal|boldsymbol|quad|qquad|pmatrix|bmatrix|vmatrix|cases|aligned|binom|nabla|hbar|ell|ldots|cdots|vdots|ddots|degree|angle|perp|parallel)\b/;
+
+        // Helper: Format math formulas ensuring balanced KaTeX delimiters and no nested/HTML-corrupted math
         const formatMathInString = (str) => {
             if (!str || typeof str !== 'string') return '';
             let s = str.trim();
             if (!s) return '';
 
-            // Already enclosed in standard math delimiters
-            if ((s.startsWith('$$') && s.endsWith('$$')) || 
-                (s.startsWith('$') && s.endsWith('$')) ||
-                (s.startsWith('\\(') && s.endsWith('\\)')) ||
-                (s.startsWith('\\[') && s.endsWith('\\]'))) {
+            // Strip any accidental HTML tags inside math delimiters
+            if ((s.startsWith('$') && s.endsWith('$')) && /<[a-zA-Z\/][^>]*>/.test(s)) {
+                s = s.replace(/<[^>]+>/g, '').trim();
+                if (/^Option\s/i.test(s) && !KATEX_MACRO_RE.test(s)) {
+                    s = s.replace(/^\$+|\$+$/g, '').trim();
+                }
+            }
+
+            // Unwrap outer $$...$$ if it contains nested $...$ inline math
+            s = s.replace(/\$\$([\s\S]*?)\$\$/g, (full, inner) => {
+                if (inner.includes('$')) {
+                    return inner.split(/(\$[^$]+\$)/).map((part, idx) =>
+                        idx % 2 === 0 ? part.replace(/\\q?quad\b/g, '  ') : part
+                    ).join('').trim();
+                }
+                return full;
+            });
+
+            // Fix plain TeX \matrix{...} to \begin{matrix}...\end{matrix}
+            s = s.replace(/\\matrix\s*\{/g, '\\begin{matrix}').replace(/\\endmatrix/g, '\\end{matrix}');
+
+            // Already enclosed or already contains math delimiters — do not double-wrap
+            if (s.includes('$') || s.includes('\\(') || s.includes('\\[')) {
                 return s;
             }
 
-            const hasLatexMacro = /\\[a-zA-Z]{2,}/.test(s);
+            // Never wrap strings with HTML, unescaped %/#, or non-KaTeX LaTeX meta-commands
+            if (/<[a-zA-Z\/][^>]*>/.test(s) || /(?:^|[^\\])[%#]/.test(s) || /\\(?:newcommand|renewcommand|documentclass|usepackage)\b/.test(s)) {
+                return s;
+            }
+
+            const hasLatexMacro = KATEX_MACRO_RE.test(s);
             const hasSubSuper = /[a-zA-Z]_{[^{}]+}|[a-zA-Z]\^[0-9{]/.test(s);
-            const hasMathEq = /[a-zA-Z0-9_\^\(\)]+\s*=\s*[-+]?[a-zA-Z0-9_\^\(\)\\]+/.test(s);
+            const hasMathEq = /^[a-zA-Z0-9_\^\(\)\\{}\s+\-*\/=.,]+$/.test(s) && /[a-zA-Z0-9_\^\(\)]+\s*=\s*[-+]?[a-zA-Z0-9_\^\(\)\\]+/.test(s);
             const hasSymbols = /[±×÷·≤≥≠≈∞∫∑√∂]/.test(s);
 
             if (hasLatexMacro || hasSubSuper || (hasMathEq && (hasSymbols || s.includes('\\')))) {
-                if (s.includes('\\frac') || s.includes('\\partial') || s.includes('\\int') || 
-                    s.includes('\\matrix') || s.includes('\\begin') || s.includes('\\quad') || 
-                    s.includes('\\qquad') || s.includes('\n')) {
+                if (s.includes('\\frac') || s.includes('\\partial') || s.includes('\\int') ||
+                    s.includes('\\begin') || s.includes('\\quad') || s.includes('\\qquad') || s.includes('\n')) {
                     const cleanMath = s.replace(/^\$\$|\$\$$|^\\\[|\\\]$/g, '').trim();
                     return `$$${cleanMath}$$`;
                 }
@@ -1402,7 +1427,7 @@ const AiNotesStudio = {
                                     <!-- Individual Question Containers -->
                                     <div class="questions-list">
                                         ${sec.matchingQuestions.map(q => {
-                                            const cleanQ = cleanText(q.question);
+                                            const cleanQ = formatMathInString(cleanText(q.question));
                                             const finalAns = getFinalAns(q);
                                             return `
                                                 <div class="q-box">
@@ -1505,12 +1530,39 @@ const AiNotesStudio = {
         const el = rootEl || document.getElementById('aiNotesPrintArea');
         if (!el) return;
 
-        // Auto-heal text nodes that contain raw un-delimited LaTeX macros
+        const SAFE_KATEX_MACRO_RE = /\\(?:d?frac|tfrac|sqrt|partial|i*int|oint|sum|prod|lim|infty|alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega|sin|cos|tan|cot|sec|csc|arcsin|arccos|arctan|sinh|cosh|tanh|log|ln|exp|det|dim|ker|deg|gcd|max|min|sup|inf|begin|end|left|right|cdot|times|div|pm|mp|leq?|geq?|neq?|approx|equiv|sim|simeq|cong|propto|in|notin|subseteq?|supseteq?|cup|cap|setminus|emptyset|varnothing|forall|exists|neg|land|lor|implies|iff|to|rightarrow|leftarrow|leftrightarrow|Rightarrow|Leftarrow|Leftrightarrow|mapsto|vec|hat|bar|tilde|overline|underline|text|mathrm|mathbf|mathbb|mathcal|boldsymbol|quad|qquad|pmatrix|bmatrix|vmatrix|cases|aligned|binom|nabla|hbar|ell|ldots|cdots|vdots|ddots|degree|angle|perp|parallel)\b/;
+
+        // Auto-heal text nodes that contain raw un-delimited LaTeX macros or nested $$...$$
         const healRawMathText = (node) => {
             if (node.nodeType === Node.TEXT_NODE) {
-                const text = node.nodeValue;
-                if (text && !text.includes('$') && !text.includes('\\(') && !text.includes('\\[') && !text.includes('&nbsp;')) {
-                    if (/\\[a-zA-Z]{2,}|[a-zA-Z]_{[^{}]+}/.test(text)) {
+                let text = node.nodeValue;
+                if (!text) return;
+
+                // Unwrap outer $$...$$ if it contains nested $...$
+                if (text.includes('$$')) {
+                    const fixed = text.replace(/\$\$([\s\S]*?)\$\$/g, (full, inner) => {
+                        if (inner.includes('$')) {
+                            return inner.split(/(\$[^$]+\$)/).map((part, idx) =>
+                                idx % 2 === 0 ? part.replace(/\\q?quad\b/g, '  ') : part
+                            ).join('').trim();
+                        }
+                        return full;
+                    });
+                    if (fixed !== text) {
+                        node.nodeValue = fixed;
+                        text = fixed;
+                    }
+                }
+
+                if (!text.includes('$') && !text.includes('\\(') && !text.includes('\\[') && !text.includes('&nbsp;')) {
+                    const hasSafeMacro = SAFE_KATEX_MACRO_RE.test(text);
+                    const hasSubSuper = /[a-zA-Z]_{[^{}]+}/.test(text);
+                    const hasMetaCmd = /\\(?:newcommand|renewcommand|documentclass|usepackage)\b/.test(text);
+                    const hasUnsafeChars = /(?:^|[^\\])[%#]/.test(text) || (text.includes('&') && !text.includes('\\begin'));
+                    const openBraces = (text.match(/\{/g) || []).length;
+                    const closeBraces = (text.match(/\}/g) || []).length;
+
+                    if ((hasSafeMacro || hasSubSuper) && !hasMetaCmd && !hasUnsafeChars && openBraces === closeBraces) {
                         const parent = node.parentElement;
                         if (parent && !parent.closest('.katex') && !parent.closest('.katex-display') && !['SCRIPT', 'STYLE', 'CODE', 'PRE', 'TEXTAREA'].includes(parent.tagName)) {
                             node.nodeValue = `$${text.trim()}$`;
@@ -1541,11 +1593,17 @@ const AiNotesStudio = {
                         ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"],
                         throwOnError: false
                     });
+                    // Convert any failed KaTeX error spans into clean plain text so nothing renders in red
+                    el.querySelectorAll('.katex-error').forEach(errSpan => {
+                        const txt = document.createTextNode(errSpan.textContent || '');
+                        errSpan.replaceWith(txt);
+                    });
                 } catch (e) {
                     console.warn('KaTeX render error:', e);
                 }
             }
         };
+
 
         if (window.renderMathInElement) {
             render();
